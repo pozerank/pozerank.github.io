@@ -1,0 +1,43 @@
+# Site settings
+title: Mehmet Cem Yücel
+description: 'Mehmet Cem Yücel, En yalın haliyle... İlgili keywordler: Microservices, Event Sourcing, CQRS, Blockchain, Redis, MongoDB, Kafka, Kubernates, Hadoop, Spring Boot, Spring Cloud, AWS, Docker, Elastic Search'
+url: 'http://joshgerdes.com/jekyll-uno'
+baseurl: '/blog'
+google_analytics: 'UA-134372019-1'
+disqus_shortname: 'mehmetcemyucel'
+
+author:
+  name: 'mehmet cem yücel'
+  email: mehmetcemyucel@outlook.com
+  twitter_username: mehmetcemyucel
+  facebook_username: m.cem.yucel
+  github_username:  mehmetcemyucel
+  linkedin_username:  mehmetcemyucel
+
+defaults:
+  -
+    scope:
+      path: ''
+      type: 'posts'
+    values:
+        layout: 'post'
+
+# Build settings
+destination: _site
+paginate: 10
+permalink: /:year/:title/
+markdown: kramdown
+highlighter: rouge
+
+sass:
+    sass_dir: _sass
+    style: compressed
+
+kramdown:
+  # use Github Flavored Markdown
+  input: GFM
+  # do not replace newlines by <br>s
+  hard_wrap: false
+
+plugins: ['jekyll-paginate']
+exclude: ['README.md', 'Gemfile', 'Gemfile.lock', 'screenshot.png']
