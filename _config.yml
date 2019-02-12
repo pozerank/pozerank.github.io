@@ -1,7 +1,7 @@
 # Site settings
 title: Mehmet Cem Yücel
 description: 'Mehmet Cem Yücel, En yalın haliyle... İlgili keywordler: Microservices, Event Sourcing, CQRS, Blockchain, Redis, MongoDB, Kafka, Kubernates, Hadoop, Spring Boot, Spring Cloud, AWS, Docker, Elastic Search'
-url: 'http://joshgerdes.com/jekyll-uno'
+url: 'https://pozerank.github.io'
 baseurl: '/blog'
 google_analytics: 'UA-134372019-1'
 disqus_shortname: 'mehmetcemyucel'
