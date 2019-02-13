@@ -1,5 +1,5 @@
 # Site settings
-title: Mehmet Cem Yücel Mikroservis Spring Boot Blockchain Cloud AWS
+title: Mehmet Cem Yücel
 description: 'Mehmet Cem Yücel, En yalın haliyle... İlgili keywordler: Microservices, Event Sourcing, CQRS, Blockchain, Redis, MongoDB, Kafka, Kubernates, Hadoop, Spring Boot, Spring Cloud, AWS, Docker, Elastic Search'
 url: 'https://pozerank.github.io'
 baseurl: ''
@@ -7,7 +7,7 @@ google_analytics: 'UA-134372019-1'
 disqus_shortname: 'mehmetcemyucel'
 
 author:
-  name: 'mehmet cem yücel'
+  name: 'Mehmet Cem Yücel'
   email: mehmetcemyucel@outlook.com
   twitter_username: mehmetcemyucel
   facebook_username: m.cem.yucel
