@@ -1,6 +1,6 @@
 # Site settings
 title: Mehmet Cem Yücel
-description: 'En yalın haliyle paylaşım platformu.<br/> Java Cloud Mikroservis Spring Boot NoSQL Kafka Dağıtık Sistemler Big Data ve Blockchain hakkında karalamalarım'
+description: 'En yalın haliyle paylaşım platformu<br/> Java Cloud Mikroservis Spring Boot NoSQL Kafka Dağıtık Sistemler Big Data ve Blockchain hakkında karalamalarım'
 keywords: 'Mehmet, Cem, Yücel, Mikroservis, Docker, Event Sourcing, CQRS, Blockchain, MongoDB, Kafka, Kubernates, Hadoop, Spring Boot, Spring, Java, JVM, Cloud, AWS, nedir, nasıl, yapılır, örnek, kod, proje, kuyruk, cache, log, framework, Türkçe, servis, uygulama'
 url: 'http://www.mehmetcemyucel.com'
 baseurl: ''
