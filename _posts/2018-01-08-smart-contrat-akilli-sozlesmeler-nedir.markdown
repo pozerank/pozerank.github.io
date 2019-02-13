@@ -1,7 +1,7 @@
 ---
 title:  "Smart Contract Akıllı Sözleşmeler Nedir?"
 date:   2018-01-08 12:04:23
-categories: [blockchainturk.net, blockchain, smart contracts]
+categories: [blockchain, smart contracts]
 tags: [smart, contract, akıllı, sözleşme, nedir, Distributed, Legder, Blockchain, Bitcoin, utxo, Block, Mehmet Cem Yücel, Mehmet, Cem, Yucel, Yücel, blockchainturk, blockchainturk.net]
 ---
 

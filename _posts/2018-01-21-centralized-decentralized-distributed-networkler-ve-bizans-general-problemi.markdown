@@ -1,7 +1,7 @@
 ---
 title:  "Centralized-Decentralized-Distributed Networkler ve Bizans General Problemi"
 date:   2018-01-21 12:04:23
-categories: [blockchainturk.net, blockchain]
+categories: [blockchain]
 tags: [cryptocurrency, centralized, decentralized, distributed, consensus, network, byzantine, bizans, general, örnek, nedir, Distributed, Legder, Blockchain, Bitcoin, Block, Mehmet Cem Yücel, Mehmet, Cem, Yucel, Yücel, blockchainturk, blockchainturk.net]
 ---
 

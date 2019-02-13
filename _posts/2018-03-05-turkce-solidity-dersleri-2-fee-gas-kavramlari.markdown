@@ -1,7 +1,7 @@
 ---
 title:  "Türkçe Solidity Dersleri -2- Fee, Gas Kavramları"
 date:   2018-03-05 12:04:23
-categories: [blockchainturk.net, blockchain, smart contracts]
+categories: [blockchain, smart contracts]
 tags: [solidity, fee, gas, contract, cryptocurrency, centralized, decentralized, distributed, örnek, sanal, para, dijital, kripto, byzantine, bizans, general, java, nedir, Distributed, Legder, Blockchain, Bitcoin, utxo, Block, Mehmet Cem Yücel, Mehmet, Cem, Yucel, Yücel, blockchainturk, blockchainturk.net]
 ---
 

@@ -1,7 +1,7 @@
 ---
 title:  "Java ile Örnek Proof of Work Gerçekleştirimi ve Mining"
 date:   2018-01-02 12:04:23
-categories: [blockchainturk.net, blockchain, java]
+categories: [blockchain, java]
 tags: [proof, of, work, örnek, nedir, Distributed, Legder, Blockchain, Bitcoin, Block, Mehmet Cem Yücel, Mehmet, Cem, Yucel, Yücel, blockchainturk, blockchainturk.net]
 ---
 Bugün Bitcoin’in temelinde yatan Proof of Work yaklaşımını inceleyip basit bir block sınıfı gerçekleştirimini Java’da inceleyeceğiz. Bu yazımızdaki amacımız herşeyiyle birebir aynı bir gerçekleştirim yapmaktan çok valid bir hashin nasıl oluşturulduğu, bu işlemin zorluğu ve bütün proof of mekanizmasının çözülmesi zor bir probleme dayandırıldığını gösterebilmektir.

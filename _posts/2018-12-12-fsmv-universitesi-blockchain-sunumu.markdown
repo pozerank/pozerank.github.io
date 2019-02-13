@@ -1,7 +1,7 @@
 ---
 title:  "FSMV Üniversitesi Blockchain Sunumu"
 date:   2018-12-12 12:04:23
-categories: [blockchainturk.net, blockchain]
+categories: [blockchain]
 tags: [üniversite, sunum, blockchain, contract, cryptocurrency, centralized, decentralized, distributed, sanal, para, dijital, kripto, byzantine, bizans, general, Distributed, Legder, Bitcoin, Block, Mehmet Cem Yücel, Mehmet, Cem, Yucel, Yücel, blockchainturk, blockchainturk.net]
 ---
 

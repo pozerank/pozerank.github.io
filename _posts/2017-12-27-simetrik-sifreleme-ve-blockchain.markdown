@@ -1,7 +1,7 @@
 ---
 title:  "Simetrik Şifreleme ve Blockchain"
 date:   2017-12-27 12:04:23
-categories: [blockchainturk.net, blockchain, security]
+categories: [blockchain, security]
 tags: [DLT, encryption, şifreleme, simetrik, asimetrik, anahtarlama, Distributed, Legder, Blockchain, Bitcoin, Block, Mehmet Cem Yücel, Mehmet, Cem, Yucel, Yücel, blockchainturk, blockchainturk.net]
 ---
 

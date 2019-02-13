@@ -1,7 +1,7 @@
 ---
 title:  "Proof of Stake Teknik İnceleme"
 date:   2018-01-16 12:04:23
-categories: [blockchainturk.net, blockchain]
+categories: [blockchain]
 tags: [cryptocurrency, proof, of, stake, pok, pow, work, java, nedir, Distributed, Legder, Blockchain, Bitcoin, utxo, Block, Mehmet Cem Yücel, Mehmet, Cem, Yucel, Yücel, blockchainturk, blockchainturk.net]
 ---
 
