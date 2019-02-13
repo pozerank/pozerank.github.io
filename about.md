@@ -15,6 +15,7 @@ Geliştirmek ve üretmekten zevk alırım. En basit işe bile hakkını vermeye 
 - *2013 - Akbank*
 - *2010 - Turkcell*
 - *2006 - Ege Üniversitesi Bilgisayar Mühendisliği*
+
 ---
 
 ## İlgi alanlarım
