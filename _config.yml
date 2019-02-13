@@ -1,10 +1,13 @@
 # Site settings
 title: Mehmet Cem Yücel
-description: 'Mehmet Cem Yücel Mikroservis Docker Event Sourcing CQRS Blockchain Redis MongoDB Kafka Kubernates Hadoop Spring Boot Java JVM Cloud AWS'
+description: 'En yalın haliyle paylaşım platformu. Java Cloud Mikroservis Spring Boot NoSQL Kafka Dağıtık Sistemler Big Data ve Blockchain hakkında karalamalarım'
+keywords: 'Mehmet, Cem, Yücel, Mikroservis, Docker, Event Sourcing, CQRS, Blockchain, Redis, MongoDB, Kafka, Kubernates, Hadoop, Spring Boot, Spring, Java, JVM, Cloud, AWS'
 url: 'http://www.mehmetcemyucel.com'
 baseurl: ''
 google_analytics: 'UA-134372019-2'
 disqus_shortname: 'mehmetcemyucel'
+language: Turkish
+revisit-after: 14 days
 
 author:
   name: 'Mehmet Cem Yücel'
