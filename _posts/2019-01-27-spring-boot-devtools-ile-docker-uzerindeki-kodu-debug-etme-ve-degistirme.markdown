@@ -3,6 +3,7 @@ title:  "Spring Boot Devtools ile Docker Üzerindeki Kodu Debug Etme ve Değişt
 date:   2019-01-27 15:04:23
 categories: [java, spring, spring boot, docker, maven, microservices]
 tags: [Spring Boot, Spring, Devtools, Docker, Debug, Debugging, Mehmet, Cem, Yücel, Mehmet Cem Yücel, Yucel, Twelve Factor, Microservices, Mikroservis, nedir, örnek, Nasıl, yapılır, reload ]
+image: https://cdn-images-1.medium.com/max/150/1*nf9ajj-L2uZ2ztybaLHMWA.jpeg
 ---
 
 Şu cümleyi mutlaka duymuşuzdur ya da bizzat söylemişizdir; “Ama benim makinemde çalışıyordu!”. Kodumuz kendi makinemizde çalışırken test ortamına gittiğinde çalışmamasının sebebi acaba neydi? Cevap: Kod aynıydı, ama ya gerisi?

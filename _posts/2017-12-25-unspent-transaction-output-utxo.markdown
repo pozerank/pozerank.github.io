@@ -3,6 +3,7 @@ title:  "Unspent Transaction Output UTXO"
 date:   2017-12-25 22:04:23
 categories: [blockchain]
 tags: [DLT, unspent, transaction, output, Distributed, Legder, Blockchain, Bitcoin, utxo, Block, Mehmet Cem Yücel, Mehmet, Cem, Yucel, Yücel, blockchainturk, blockchainturk.net]
+image: https://cdn-images-1.medium.com/max/150/1*xFpHRPhxSWbQZoLTxRk8og.png
 ---
 Birçok blockchain örneğinin temelinde yatan bir konuyla yazı dizisine devam ediyoruz. Bugünün konusu Unspent Transaction Output (UTXO). “Ödenmemiş İşlem Çıktısı” diye çevirmek tam içime sinmese de yine en iyi çeviri bu olur sanırım.
 

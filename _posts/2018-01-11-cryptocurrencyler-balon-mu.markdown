@@ -3,6 +3,7 @@ title:  "Cryptocurrencyler ve Değer Anlayışı Balon Mu?"
 date:   2018-01-11 12:04:23
 categories: [blockchain]
 tags: [cryptocurrency, digital, para, örnek, nedir, Distributed, Legder, Blockchain, Bitcoin,  Block, Mehmet Cem Yücel, Mehmet, Cem, Yucel, Yücel, blockchainturk, blockchainturk.net]
+image: https://cdn-images-1.medium.com/max/150/1*Jp8ajkGPZN3zBo5jL8dXtg.jpeg
 ---
 
 Cryptocurrency’lerin balon olup olmadığını konuşmak için öncesinde değer algısını konuşmak gerekir. En basit haliyle dile getirmek gerekirse toplulukların ortak olarak değer verdiği şey değerlidir. Kulağa saçma gibi geliyor olabilir, birazdan örnekleriyle basit bir dilde açıklayacağız. Ve bu değerler genellikle dünya üzerinde varlığı sınırlı şeyler üzerinden gerçekleşir...

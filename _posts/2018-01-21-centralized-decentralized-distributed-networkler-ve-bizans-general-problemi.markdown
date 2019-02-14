@@ -3,6 +3,7 @@ title:  "Centralized-Decentralized-Distributed Networkler ve Bizans General Prob
 date:   2018-01-21 12:04:23
 categories: [blockchain]
 tags: [cryptocurrency, centralized, decentralized, distributed, consensus, network, byzantine, bizans, general, örnek, nedir, Distributed, Legder, Blockchain, Bitcoin, Block, Mehmet Cem Yücel, Mehmet, Cem, Yucel, Yücel, blockchainturk, blockchainturk.net]
+image: https://cdn-images-1.medium.com/max/150/1*veQ2_LO2geVmGhwFGc7o9A.jpeg
 ---
 
 Bugün değineceğimiz konu blockchain teknolojilerini incelemeye başlayan birçok kişinin kafasında ilk oluşan soruyu barındırıyor; nasıl oluyor da kötü niyetli insanlar böylesi bir sistemi manipüle edemiyor? Bu sorunun cevabını bulabilmek için bugün:

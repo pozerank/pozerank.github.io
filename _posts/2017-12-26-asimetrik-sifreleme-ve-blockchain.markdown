@@ -3,6 +3,7 @@ title:  "Asimetrik Şifreleme ve Blockchain"
 date:   2017-12-26 12:04:23
 categories: [blockchain, security]
 tags: [DLT, encryption, şifreleme, simetrik, asimetrik, anahtarlama, Distributed, Legder, Blockchain, Bitcoin, Block, Mehmet Cem Yücel, Mehmet, Cem, Yucel, Yücel, blockchainturk, blockchainturk.net]
+image: https://cdn-images-1.medium.com/max/150/1*pUyqVMAKs2GknumbLB9K7w.jpeg
 ---
 
 Simetrik Şifremele (Symmetric Encryption) konusuna <a style="font-weight:bold" href="https://medium.com/blockchainturk/980c1cbd7a12?utm_source=mehmetcemyucel.com&utm_medium=refferal&utm_campaign=blog" target="_blank">burada</a> değinmiştik. Bugün ise konunun devamı niteliğinde asimetrik şifreleme algoritmaları ve örnek bir blockchain kurgusu üzerindeki kullanım noktaları ve amaçlarını ortaya koymaya çalışacağız.

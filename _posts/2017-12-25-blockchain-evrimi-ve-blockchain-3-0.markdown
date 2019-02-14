@@ -3,6 +3,7 @@ title:  "Blockchain Evrimi ve Blockchain 3.0"
 date:   2017-12-25 22:04:23
 categories: [blockchain]
 tags: [Distributed, Legder, Blockchain, Bitcoin, utxo, Block, Mehmet Cem Yücel, Mehmet, Cem, Yucel, Yücel, blockchainturk, blockchainturk.net]
+image: https://cdn-images-1.medium.com/max/150/1*ITEGfqVQIwkwrYALodhjIA.jpeg
 ---
 Aslında bu konu Web 1.0'a kadar dayanıyor. Kullanıcıların statik web sitelerinden ihtiyacı olan bilgileri alıp gittiği, kullanıcı etkileşiminin hiç olmadığı zamanlardan şu anda Web 3.0 ile kullanıcıya özel deneyimin ve etkileşimin sağlandığı dönemdeyiz. Nasıl mı, bir alışveriş sitesinde bir ürünü incelediğinizde 1 hafta boyunca bütün sitelerde o ürünün reklamlarını görüyorsanız siz de o kervanın bir yolcusu oldunuz demektir.
 
