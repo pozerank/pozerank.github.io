@@ -3,9 +3,11 @@ layout: default
 ---
 <h1>Hakkımda:</h1>
 
-<section class="post">
+  <section class="post">
     {{ content }}
-</section>
+</section>   
+
+
 
 <div class="navigation-wrapper">
     <nav class="cover-navigation navigation--social--about">
@@ -16,15 +18,6 @@ layout: default
           <li class="navigation__item">
             <a href="http://twitter.com/{{ site.author.twitter_username }}" title="@{{ site.author.twitter_username }} on Twitter" target="_blank">
               <i class="icon icon-social-twitter"></i>
-            </a>
-          </li>
-        {% endif %}
-
-        {% if site.author.facebook_username %}
-          <!-- Facebook -->
-          <li class="navigation__item">
-            <a href="http://fb.me/{{ site.author.facebook_username }}" title="{{ site.author.facebook_username }} on Facebook" target="_blank">
-              <i class="icon icon-social-facebook"></i>
             </a>
           </li>
         {% endif %}
@@ -47,6 +40,15 @@ layout: default
           </li>
         {% endif %}
 
+        {% if site.author.stackoverflow_username %}
+          <!-- Facebook -->
+          <li class="navigation__item">
+            <a href="https://stackoverflow.com/story/{{ site.author.stackoverflow_username }}" title="{{ site.author.stackoverflow_username }} on Stackoverflow" target="_blank">
+              <i class="icon icon-social-stack-overflow"></i>
+            </a>
+          </li>
+        {% endif %}
+
         {% if site.author.email %}
           <!-- Email -->
           <li class="navigation__item">
@@ -56,12 +58,7 @@ layout: default
           </li>
         {% endif %}
 
-        <!-- RSS -->
-        <li class="navigation__item">
-          <a href="{{ site.baseurl }}/feed.xml" title="Subscribe" target="_blank">
-            <i class="icon icon-rss"></i>
-          </a>
-        </li>
 
         </ul>
       </nav>
+</div>

@@ -51,4 +51,4 @@ Farklı yemekleri yapmak, tatmak çok hoşuma gider. Deneysel lezzetleri merak e
 
 ---
 
-İletişim için [admin\[at\]mehmetcemyucel.com](mailto:admin@mehmetcemyucel.com) ya da [mehmetcemyucel[at]outlook.com](mailto:mehmetcemyucel@outlook.com) adreslerini kullanabilirsiniz. Aşağıdaki simgeleri tıklayarak da bana farklı platformlarda erişebilirsiniz. Her konuda iletişime geçmekten çekinmeyin.
+İletişim için [admin\[at\]mehmetcemyucel.com](mailto:admin@mehmetcemyucel.com) ya da [mehmetcemyucel[at]outlook.com](mailto:mehmetcemyucel@outlook.com) adreslerini kullanabilirsiniz. Sosyal medya simgeleri tıklayarak da bana farklı platformlarda erişebilirsiniz. Her konuda iletişime geçmekten çekinmeyin.

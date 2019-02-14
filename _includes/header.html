@@ -47,16 +47,6 @@
               </li>
             {% endif %}
 
-            {% if site.author.facebook_username %}
-              <!-- Facebook -->
-              <li class="navigation__item">
-                <a href="http://fb.me/{{ site.author.facebook_username }}" title="{{ site.author.facebook_username }} on Facebook" target="_blank">
-                  <i class="icon icon-social-facebook"></i>
-                  <span class="label">Facebook</span>
-                </a>
-              </li>
-            {% endif %}
-
             {% if site.author.linkedin_username %}
               <!-- LinkedIn -->
               <li class="navigation__item">
@@ -76,6 +66,15 @@
                 </a>
               </li>
             {% endif %}
+
+            {% if site.author.stackoverflow_username %}
+          <!-- Facebook -->
+          <li class="navigation__item">
+            <a href="https://stackoverflow.com/story/{{ site.author.stackoverflow_username }}" title="{{ site.author.stackoverflow_username }} on Stackoverflow" target="_blank">
+              <i class="icon icon-social-stack-overflow"></i>
+            </a>
+          </li>
+        {% endif %}
 
             {% if site.author.email %}
               <!-- Email -->
