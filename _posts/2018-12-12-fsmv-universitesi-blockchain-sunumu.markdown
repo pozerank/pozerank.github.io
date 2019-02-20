@@ -8,6 +8,8 @@ image: https://cdn-images-1.medium.com/max/150/1*FOSTit_q9bjS-26yrO9CSg.jpeg
 
 8 Aralık’ta FSM Vakıf Üniversitesi’nde düzenlenen <a style="font-weight:bold" href="http://bilisim.io?utm_source=mehmetcemyucel.com&utm_medium=refferal&utm_campaign=blog" target="_blank">bilisim.io</a> etkinliğinde Blockchain hakkında konuştuk.
 
+Sunumun videosuna [bilisim.io youtube sayfasından](https://youtu.be/d5lv2a_Tx2o?t=1245) erişebilirsiniz.
+
 Sonraki etkinlerde görüşmek üzere
 ![](https://cdn-images-1.medium.com/max/800/1*FOSTit_q9bjS-26yrO9CSg.jpeg)
 
