@@ -1,6 +1,6 @@
 ---
 title:  "Mikroservisler-Service Mesh Nedir"
-date:   2019-02-24 20:04:23
+date:   2019-02-24 15:04:23
 categories: [microservices, cloud, mimari]
 tags: [Microservice, Mikroservis, Nedir, Türkçe, Örnek, example, service, mesh, Nasıl, Mehmet Cem Yücel, Mehmet, Cem, Yücel, Yucel,]
 image: https://cdn-images-1.medium.com/max/150/0*FhgA8Ersxk6Tr40r.jpg
