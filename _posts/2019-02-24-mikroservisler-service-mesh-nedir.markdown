@@ -2,7 +2,7 @@
 title:  "Mikroservisler-Service Mesh Nedir"
 date:   2019-02-24 15:04:23
 categories: [microservices, cloud, mimari]
-tags: [Microservice, Mikroservis, Nedir, Türkçe, Örnek, example, service, mesh, Nasıl, Mehmet Cem Yücel, Mehmet, Cem, Yücel, Yucel,]
+tags: [Service, Mesh Microservice, Mikroservis, circuit breaker, load balancer, kubernetes, istio,sidevar proxy, Nedir, Türkçe, Örnek, example, Nasıl, Mehmet Cem Yücel, Mehmet, Cem, Yücel, Yucel,]
 image: https://cdn-images-1.medium.com/max/150/0*FhgA8Ersxk6Tr40r.jpg
 ---
 Service Mesh tanımı; cevabında sidecar proxy, service discovery, orchestration framework, load balancing, circiut breaker pattern gibi konuları barındıran kavram. İlk cümle her ne kadar kompleks gelse de en yalın haliyle anlatmaya çalışacağım.
