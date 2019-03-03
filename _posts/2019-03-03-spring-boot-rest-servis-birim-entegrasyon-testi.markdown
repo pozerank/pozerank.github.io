@@ -5,8 +5,6 @@ categories: [microservices, java, spring, test]
 tags: [rest, get, post, entegrasyon, integration, test, MockMvc, birim, unit, Service, Microservice, Mikroservis,  Nedir, Türkçe, Örnek, example, Nasıl, Mehmet Cem Yücel, Mehmet, Cem, Yücel, Yucel,]
 image: https://lh3.googleusercontent.com/Esv5RJA-BRT4PJcyjrApSFqRVLpDxef7CAd5oEgVEZao785R8GKuG-NKbQduwGCms0_RitOF_s8=s150
 ---
-# Spring Boot Rest Servis Entegrasyon Testi
-## Giriş
 
 Hepimiz Rest servisleri uygulamalarımızda yoğun olarak kullanıyoruz. Peki, bu servislerin entegrasyon testlerini yazarken sıklıkla yapılan o hataya siz de düşüyor olabilir misiniz? Bugün bir Spring Boot uygulamasında Rest servislere 2 farklı test yazımını inceleyeceğiz. Birisi gerçekten bir integration testi, diğeri de tüm Spring Context'ini ayağa kaldırarak yapılan uçtan uca testi örnekleyecek.
 
@@ -29,7 +27,7 @@ Buradan itibaren kodumuza dönelim. Bir RestController'ımız, bir de onun kulla
 
 <script src="https://gist.github.com/mehmetcemyucel/606444790323514dea3e6bf7ea3ce6f5.js"></script>
 
-Post metod açan bu sınıfımızın testini nasıl yazmalıyız? Google'da "spring boot rest test" anahtar kelimeleri ile aramamızı yaptığımızda çıkan 5 site aşağıdaki gibi. Bunlardan birisi de Spring'in kendi sitesi :)
+Post metod açan bu sınıfımızın testini nasıl yazmalıyız? Google'da "spring boot rest test" anahtar kelimeleri ile aramamızı yaptığımızda çıkan 5 site aşağıdaki gibi. Bunlardan ikisi de Spring'in kendi sitesi :)
 
 ![Google Search](https://lh3.googleusercontent.com/dstgHKOQQXWRTHdU7F0zOvOu-EYR1NnNkkk7Va6L4d_lD228VhHM8bxtp77h4cuZkVRxiXxpOLQ=s800 "Google")
 
@@ -40,11 +38,11 @@ Bu 5 sitedeki yöntemler aşağı yukarı aynı. Autowire edilmiş bir MockMvc i
 Bu test sınıfındaki kodu 5 farklı kez çalıştırdım ve ortalama sonlanma süresi olarak **2.186 ms** süresine ulaştım. Bir entegrasyon testi için uzun bir süre. Bu süreyi kısaltmak için neler yapılabilir? Gerçekten de tüm web contexti ayağa kaldırmak zorunda mıyız?
 
 ## MockMvc Standalone Builder
-Yeni yöntemimizle yapacağımız değişiklikler şunlardır;
+Önerdiğim yeni yöntemimizde yapacağımız değişiklikler şunlar olacak;
 1. Tüm web contexti ayağa kaldırmaktan vazgeç, sadece RestController'ımı kaldır
 2. Controller'ımın bağımlı olduğu bean'leri ayağa kaldırma, yerine ben onları mocklayacağım.
 
-Bu değişikliklerle kodumuz aşağıdaki gibi olacak:
+Bu değişikliklerle kodumuz aşağıdaki gibi oldu:
 
 <script src="https://gist.github.com/mehmetcemyucel/4cd1ddd05562b916e0c38ceed1eb6dbd.js"></script>
 
@@ -52,15 +50,24 @@ Bu kodu 5 kez çalıştırdığımda da ortalama çalışma süresi olarak **556
 
 Sonuç olarak testlerimizin hızlı olarak sonuçlanabilmesi için maksimum izolasyon ve minimum bağımlılığı aklımızdan çıkartmamalıyız. Bu ihtiyaçlarınız için kullanabileceğiniz birkaç test frameworkünü de yazarak yazımı sonlandırıyorum.
 
-[Junit](http://junit.org/):  defacto standart
-[Spring Test](https://docs.spring.io/spring/docs/5.1.5.RELEASE/spring-framework-reference/testing.html#integration-testing):  Boot uygulamaları için utilityler
-[Mockito](http://mockito.org/): dependency'leri mocklamak için 
-[AssertJ](https://joel-costigliola.github.io/assertj/): akıcı bir dille test yazabilmek için
-[Wiremock](http://wiremock.org/):  harici bir servisi stublamak için kütüphane
-[Hamcrast](http://hamcrest.org/JavaHamcrest/): matcher objeler için test kütüphanesi
+[Junit](http://junit.org/):  Defacto standart (spring-boot-starter-test'in bir parçası)
+
+[Spring Test](https://docs.spring.io/spring/docs/5.1.5.RELEASE/spring-framework-reference/testing.html#integration-testing):  Boot uygulamaları için utilityler (spring-boot-starter-test'in bir parçası)
+
+[Mockito](http://mockito.org/): Dependency'leri mocklamak için (spring-boot-starter-test'in bir parçası)
+
+[AssertJ](https://joel-costigliola.github.io/assertj/): Akıcı bir dille test yazabilmek için (spring-boot-starter-test'in bir parçası)
+
+[Wiremock](http://wiremock.org/):  Harici bir servisi stublamak için kütüphane
+
+[Hamcrast](http://hamcrest.org/JavaHamcrest/): Matcher objeler için test kütüphanesi (spring-boot-starter-test'in bir parçası)
+
 [Pact](https://docs.pact.io/): Consumer Drivent Contract testleri için kütüphane
-[JsonAssert](https://github.com/skyscreamer/JSONassert): JSON için assertion kütüphanesi
+
+[JsonAssert](https://github.com/skyscreamer/JSONassert): JSON için assertion kütüphanesi (spring-boot-starter-test'in bir parçası)
+
 [Selenium](http://docs.seleniumhq.org/):  UI üzerinden end to end testler yazmak için kütüphane
+
 [Rest-assured](https://github.com/rest-assured/rest-assured): Rest apiler üzerinden end to end testler yazmak için kütüphane
 
 Sonraki yazılarda görüşmek üzere
