@@ -46,7 +46,9 @@ Bu değişikliklerle kodumuz aşağıdaki gibi oldu:
 
 <script src="https://gist.github.com/mehmetcemyucel/4cd1ddd05562b916e0c38ceed1eb6dbd.js"></script>
 
-Bu kodu 5 kez çalıştırdığımda da ortalama çalışma süresi olarak **556 ms** olarak ölçtüm. Neredeyse 4'te biri sürede kodumun çalışırlığını test edebilmiş oldum.
+Bu kodu 5 kez çalıştırdığımda da ortalama çalışma süresi olarak **556 ms** olarak ölçtüm. Neredeyse 4'te biri sürede kodumun çalışırlığını test edebilmiş oldum. Kodlara aşağıdaki adresten erişebilirsiniz.
+
+https://github.com/mehmetcemyucel/springboot-rest-int-test
 
 Sonuç olarak testlerimizin hızlı olarak sonuçlanabilmesi için maksimum izolasyon ve minimum bağımlılığı aklımızdan çıkartmamalıyız. Bu ihtiyaçlarınız için kullanabileceğiniz birkaç test frameworkünü de yazarak yazımı sonlandırıyorum.
 
