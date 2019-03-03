@@ -10,6 +10,8 @@ image: https://cdn-images-1.medium.com/max/150/1*FOSTit_q9bjS-26yrO9CSg.jpeg
 
 Sunumun videosuna [bilisim.io youtube sayfasından](https://youtu.be/d5lv2a_Tx2o?t=1245) erişebilirsiniz. 
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/d5lv2a_Tx2o?start=1245" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 Sonraki etkinlerde görüşmek üzere
-![](https://cdn-images-1.medium.com/max/800/1*FOSTit_q9bjS-26yrO9CSg.jpeg)
+
 
