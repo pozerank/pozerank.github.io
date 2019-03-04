@@ -50,6 +50,8 @@ Bu kodu 5 kez çalıştırdığımda da ortalama çalışma süresi olarak **556
 
 https://github.com/mehmetcemyucel/springboot-rest-int-test
 
+Yazıyı bitirmeden yine de şunları not etmekte fayda var. Bu yazıda kıyasladığım örnekler her bir servis için ayrı ayrı context ayağa kaldırma ile standalone yapılandırma arasındaki farkı içeriyor. Test edeceğiniz servis sayısı ile bağlantılı olmak üzere başka alternatifler de mevcut, örneğin 30 servis için tek context ayağa kaldırıp tüm testleri tek bir context ile tamamladığınızda her defasında mock üretme maliyetine girmediğinizden dolayı total süre daha düşük çıkabilir. Özetle, tek bir doğru yok, senaryoya göre doğru tercih veya tercihler var.
+
 Sonuç olarak testlerimizin hızlı olarak sonuçlanabilmesi için maksimum izolasyon ve minimum bağımlılığı aklımızdan çıkartmamalıyız. Bu ihtiyaçlarınız için kullanabileceğiniz birkaç test frameworkünü de yazarak yazımı sonlandırıyorum.
 
 [Junit](http://junit.org/):  Defacto standart (spring-boot-starter-test'in bir parçası)
