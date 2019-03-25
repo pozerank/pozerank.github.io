@@ -6,9 +6,9 @@ tags: [rest, get, post, entegrasyon, integration, test, MockMvc, birim, unit, Se
 image: https://cdn-images-1.medium.com/max/150/0*PI13arzqtcC-oXBh.jpg
 ---
 
-Yazıyı Medium'da okumak için; https://medium.com/mehmetcemyucel/junit-rule-ve-classrule-annotationlari-aa9b799ab31f
-
 Bugün birim test(unit test) ve entegrasyon testleri(integration test) yazıyorsanız hayatınıza renk katacağını inandığım bir konuyu kaleme alacağım. Junit4'te var olan ancak az bilinen @Rule ve @ClassRule annotationlarının ne olduklarını ve bunlarla neler yapabileceğimizi örneklerle incelemeye başlayalım.
+
+Yazıyı Medium'da okumak için; https://medium.com/mehmetcemyucel/junit-rule-ve-classrule-annotationlari-aa9b799ab31f
 
 > Tüm yazılım geliştiricilerin bilmesi gereken temel prensipler vardır, bunlara KISS, DRY, YAGNI, vb örnek verilebilir. Ama gözden kaçan bir nokta, bunların sadece business taşıyan kodlar için geçerli olduğu düşünülür. Ya test kodları? **Örneğin _Don’t Repeat Yourself_(DRY) gerçekten de test kodları için de önemli bir konu değil midir?**
 
