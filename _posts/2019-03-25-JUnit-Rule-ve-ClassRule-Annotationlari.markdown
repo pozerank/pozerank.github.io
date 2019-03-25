@@ -2,7 +2,7 @@
 title:  "JUnit - @Rule ve @ClassRule Annotationları"
 date:   2019-03-03 15:04:23
 categories: [java, test]
-tags: [rest, get, post, entegrasyon, integration, test, MockMvc, birim, unit, Service, Microservice, Mikroservis,  Nedir, Türkçe, Örnek, example, Nasıl, Mehmet Cem Yücel, Mehmet, Cem, Yücel, Yucel,]
+tags: [Junit, ClassRule, Rule, RuleChain, ExternalResource, ExpectedException, Watchman, TemporaryFolder, DRY, YAGNI, KISS, Mockito, nedir, Örnek, Nasıl, Mehmet Cem Yücel, Mehmet, Cem, Yücel, Yucel]
 image: https://cdn-images-1.medium.com/max/150/0*PI13arzqtcC-oXBh.jpg
 ---
 
