@@ -2,7 +2,7 @@
 title:  "Access Management 5-Spring RestTemplate Feign Keycloak"
 date:   2020-05-25 21:04:23
 categories: [mimari, security]
-tags: [Keycloak, Feign, client, Spring, Boot, RestTemplate, OAuth2, SAML, , Ldap, OIDC, OAuth, OpenID, Connect, authentication, Authorization, Spring, Security, Mehmet Cem Yücel, Mehmet, Cem, Yücel, nedir, örnek, türkçe, Nasıl yapılır, nedir, Örnek]
+tags: [Keycloak, Feign, client, Spring, Boot, RestTemplate, OAuth2, SAML, Ldap, OIDC, OAuth, OpenID, Connect, authentication, Authorization, Spring, Security, Mehmet Cem Yücel, Mehmet, Cem, Yücel, nedir, örnek, türkçe, Nasıl yapılır, nedir, Örnek]
 image: https://cdn-images-1.medium.com/max/150/0*knMgRQMoNMWQciZs.jpg
 ---
 
