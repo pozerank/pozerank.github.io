@@ -1,7 +1,7 @@
 ---
 title:  "MapStruct ile SpringBoot Obje Dönüşümü"
 date:   2019-07-16 15:04:23
-categories: [java, test, spring spring boot, maven]
+categories: [java, test, spring, spring boot, maven]
 tags: [Spring, MapStruct, Mapper, ObjectMapper, Boot, Nasıl yapılır, nedir, Örnek, Nasıl, Mehmet Cem Yücel, Mehmet, Cem, Yücel, Yucel]
 image: https://miro.medium.com/max/150/1*9DhTKcVmIApp1AXoGZ4A4A.png
 ---
