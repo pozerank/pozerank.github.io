@@ -128,17 +128,18 @@ Yukarıdaki örneklerde de anlattığımız gibi, @Rule ve @ClassRule annotation
 
 Sonraki yazılarda görüşmek üzere
 
-*En yalın haliyle
-**Mehmet Cem Yücel***
+*En yalın haliyle*
+
+**Mehmet Cem Yücel**
 
 ----------
 
-Bu yazılar ilgilinizi çekebilir:      [Bir Yazılımcının Bilmesi Gereken 15 Madde](https://www.mehmetcemyucel.com/2019/bir-yazilimcinin-bilmesi-gereken-15-madde/)
+**_Bu yazılar ilgilinizi çekebilir:_**     
 
  - [Bir Yazılımcının Bilmesi Gereken 15 Madde](https://www.mehmetcemyucel.com/2019/bir-yazilimcinin-bilmesi-gereken-15-madde/)
  - [Spring Boot Devtools ile Docker Üzerindeki Kodu Debug Etme ve Değiştirme](https://www.mehmetcemyucel.com/2019/spring-boot-devtools-ile-docker-uzerindeki-kodu-debug-etme-ve-degistirme/)
  - [_Spring Boot Rest Servis Entegrasyon Testi_](https://medium.com/mehmetcemyucel/spring-boot-rest-birim-entegrasyon-testi-43a7f9354a33)
 
-Blockchain teknolojisi ile ilgileniyor iseniz bunlar da hoşunuza gidebilir:      
+**_Blockchain teknolojisi ile ilgileniyor iseniz bunlar da hoşunuza gidebilir:_** 
 
  - [BlockchainTurk.net yazıları](https://www.mehmetcemyucel.com/categories/#blockchain)

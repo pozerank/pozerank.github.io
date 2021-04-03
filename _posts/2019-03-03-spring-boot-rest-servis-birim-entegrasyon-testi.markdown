@@ -76,8 +76,9 @@ Sonuç olarak testlerimizin hızlı olarak sonuçlanabilmesi için maksimum izol
 
 Sonraki yazılarda görüşmek üzere
 
-*En yalın haliyle
-**Mehmet Cem Yücel***
+*En yalın haliyle*
+
+**Mehmet Cem Yücel**
 
 --- 
 
