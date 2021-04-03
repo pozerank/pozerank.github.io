@@ -64,20 +64,24 @@ Yazının sonuna gelirken, service mesh ürünlerine birkaç örnek verelim. [En
 
 Sonraki yazılarda görüşmek üzere
 
-En yalın haliyle
+Sonraki yazılarda görüşmek üzere
 
-Mehmet Cem Yücel
+*En yalın haliyle*
+
+**Mehmet Cem Yücel**
 
 ---
 
 **_Bu yazılar ilgilinizi çekebilir:_**
 
-[Bir Yazılımcının Bilmesi Gereken 15 Madde](https://www.mehmetcemyucel.com/2019/bir-yazilimcinin-bilmesi-gereken-15-madde/)
-
-[Spring Boot Devtools ile Docker Üzerindeki Kodu Debug Etme ve Değiştirme](https://www.mehmetcemyucel.com/2019/spring-boot-devtools-ile-docker-uzerindeki-kodu-debug-etme-ve-degistirme/)
-
-[Spring Boot Property’lerini Jasypt ile Şifrelemek](https://www.mehmetcemyucel.com/2019/spring-boot-propertylerini-jasypt-ile-sifrelemek/)
+ - [Bir Yazılımcının Bilmesi Gereken 15
+   Madde](https://www.mehmetcemyucel.com/2019/bir-yazilimcinin-bilmesi-gereken-15-madde/)
+ - [Spring Boot Devtools ile Docker Üzerindeki Kodu Debug Etme ve
+   Değiştirme](https://www.mehmetcemyucel.com/2019/spring-boot-devtools-ile-docker-uzerindeki-kodu-debug-etme-ve-degistirme/)
+ - [Spring Boot Property’lerini Jasypt ile
+   Şifrelemek](https://www.mehmetcemyucel.com/2019/spring-boot-propertylerini-jasypt-ile-sifrelemek/)
 
 _Blockchain teknolojisi ile ilgileniyor iseniz bunlar da hoşunuza gidebilir:_
 
-[BlockchainTurk.net yazıları](https://www.mehmetcemyucel.com/categories/#blockchain)
+ - [BlockchainTurk.net   
+   yazıları](https://www.mehmetcemyucel.com/categories/#blockchain)
