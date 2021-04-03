@@ -9,8 +9,8 @@ Okumaya, öğrenmeye ve devamlı gelişmeye inanan; bilgiye ve insana saygıya �
 
 
 ## Çalışma Geçmişim
-- *2020 - Cigna   
-- *2019 - Trendyol
+- *2020 - Cigna*   
+- *2019 - Trendyol*
 - *2017 - Kredi Kayıt Bürosu*
 - *2013 - Akbank*
 - *2010 - Turkcell*
@@ -41,4 +41,4 @@ Okumaya, öğrenmeye ve devamlı gelişmeye inanan; bilgiye ve insana saygıya �
 
 ---
 
-İletişim için [admin\[at\]mehmetcemyucel.com](mailto:admin@mehmetcemyucel.com) ya da [mehmetcemyucel[at]outlook.com](mailto:mehmetcemyucel@outlook.com) adreslerini kullanabilirsiniz. Sosyal medya simgeleri tıklayarak da bana farklı platformlarda erişebilirsiniz. Her konuda iletişime geçmekten çekinmeyin.
+İletişim için [admin@mehmetcemyucel.com](mailto:admin@mehmetcemyucel.com) ya da [mehmetcemyucel@outlook.com](mailto:mehmetcemyucel@outlook.com) adreslerini kullanabilir ya da sosyal medya üzerinden her konuda iletişime geçebilirsiniz.
