@@ -6,11 +6,10 @@ tags: [Junit, ClassRule, Rule, RuleChain, ExternalResource, ExpectedException, W
 image: https://cdn-images-1.medium.com/max/150/0*PI13arzqtcC-oXBh.jpg
 ---
 
+
 Bugün birim test(unit test) ve entegrasyon testleri(integration test) yazıyorsanız hayatınıza renk katacağını inandığım bir konuyu kaleme alacağım. Junit4'te var olan ancak az bilinen @Rule ve @ClassRule annotationlarının ne olduklarını ve bunlarla neler yapabileceğimizi örneklerle incelemeye başlayalım.
 
-Yazıyı Medium'da okumak için; https://medium.com/mehmetcemyucel/junit-rule-ve-classrule-annotationlari-aa9b799ab31f
-
-> Tüm yazılım geliştiricilerin bilmesi gereken temel prensipler vardır, bunlara KISS, DRY, YAGNI, vb örnek verilebilir. Ama gözden kaçan bir nokta, bunların sadece business taşıyan kodlar için geçerli olduğu düşünülür. Ya test kodları? **Örneğin _Don’t Repeat Yourself_(DRY) gerçekten de test kodları için de önemli bir konu değil midir?**
+*"Tüm yazılım geliştiricilerin bilmesi gereken temel prensipler vardır, bunlara KISS, DRY, YAGNI, vb örnek verilebilir. Ama gözden kaçan bir nokta, bunların sadece business taşıyan kodlar için geçerli olduğu düşünülür. Ya test kodları? **Örneğin _Don’t Repeat Yourself_(DRY) gerçekten de test kodları için de önemli bir konu değil midir?***"
 
 ![](https://cdn-images-1.medium.com/max/800/0*PI13arzqtcC-oXBh.jpg)
 
@@ -18,15 +17,15 @@ Rule kavramını ilk duyduğunuzda aklınıza ne geldi? Muhtemelen kelime anlam�
 
 Ama aklınıza muhtemel gelen başka soru işaretleri de vardır. Örneğin;
 
-> Ben zaten bu tarz ihtiyaçlarımı zaten @Before ve @BeforeClass annotationlarını kullanarak da karşılayabiliyordum, niçin böyle bir yapı mevcut?
+*"Ben zaten bu tarz ihtiyaçlarımı zaten @Before ve @BeforeClass annotationlarını kullanarak da karşılayabiliyordum, niçin böyle bir yapı mevcut?"*
 
 sorusu aklınızdan geçiyor olabilir. Veya
 
-> Ben zaten kurallarımı bir test metodumun içerisinde kurgulayarak zaten testimi kodluyorum, niçin metod dışına çekme ihtiyacım olsun ki?
+*"Ben zaten kurallarımı bir test metodumun içerisinde kurgulayarak zaten testimi kodluyorum, niçin metod dışına çekme ihtiyacım olsun ki?"*
 
 gibi sorulara sahipseniz doğru yoldayız. Öncelikle JUnit içerisindeki halihazırda tanımlı kuralları inceleyerek başlayıp, sonrasında custom rule’lar ile neler yapabileceğimizi inceleyeceğiz. Tekrar eden birçok ihtiyacı merkezi şekilde çözmenin yollarını göreceğiz. Eğer rule’suz hali mümkün ise nasıl yapılabileceğini de örnek olarak verip kazanımı gözlemlemeye çalışalım.
 
-> NOT: Rule’unuzu @Rule annotation’ı ile metodlara, @ClassRule annotation’ı ile sınıflara bağlayabilirsiniz.
+"*NOT: Rule’unuzu @Rule annotation’ı ile metodlara, @ClassRule annotation’ı ile sınıflara bağlayabilirsiniz.*"
 
 ### Timeout
 
@@ -129,21 +128,17 @@ Yukarıdaki örneklerde de anlattığımız gibi, @Rule ve @ClassRule annotation
 
 Sonraki yazılarda görüşmek üzere
 
-En yalın haliyle
-
-Mehmet Cem Yücel
+*En yalın haliyle
+**Mehmet Cem Yücel***
 
 ----------
 
-> Bu yazılar ilgilinizi çekebilir:  
->   
-> [Bir Yazılımcının Bilmesi Gereken 15 Madde](https://www.mehmetcemyucel.com/2019/bir-yazilimcinin-bilmesi-gereken-15-madde/)
+Bu yazılar ilgilinizi çekebilir:      [Bir Yazılımcının Bilmesi Gereken 15 Madde](https://www.mehmetcemyucel.com/2019/bir-yazilimcinin-bilmesi-gereken-15-madde/)
 
-> [Spring Boot Devtools ile Docker Üzerindeki Kodu Debug Etme ve Değiştirme](https://www.mehmetcemyucel.com/2019/spring-boot-devtools-ile-docker-uzerindeki-kodu-debug-etme-ve-degistirme/)
+ - [Bir Yazılımcının Bilmesi Gereken 15 Madde](https://www.mehmetcemyucel.com/2019/bir-yazilimcinin-bilmesi-gereken-15-madde/)
+ - [Spring Boot Devtools ile Docker Üzerindeki Kodu Debug Etme ve Değiştirme](https://www.mehmetcemyucel.com/2019/spring-boot-devtools-ile-docker-uzerindeki-kodu-debug-etme-ve-degistirme/)
+ - [_Spring Boot Rest Servis Entegrasyon Testi_](https://medium.com/mehmetcemyucel/spring-boot-rest-birim-entegrasyon-testi-43a7f9354a33)
 
-> [_Spring Boot Rest Servis Entegrasyon Testi_](https://medium.com/mehmetcemyucel/spring-boot-rest-birim-entegrasyon-testi-43a7f9354a33)
+Blockchain teknolojisi ile ilgileniyor iseniz bunlar da hoşunuza gidebilir:      
 
-> Blockchain teknolojisi ile ilgileniyor iseniz bunlar da hoşunuza gidebilir:  
->   
-> [BlockchainTurk.net yazıları](https://www.mehmetcemyucel.com/categories/#blockchain)
-
+ - [BlockchainTurk.net yazıları](https://www.mehmetcemyucel.com/categories/#blockchain)
