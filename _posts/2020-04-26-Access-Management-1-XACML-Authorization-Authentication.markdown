@@ -6,6 +6,10 @@ tags: [XACML, SSO, Politika, Policy, Keycloak, OAuth2, OAuth, OpenID, Connect, P
 image: https://miro.medium.com/max/150/1*AevTigjmr7CmH-RV_OtzNA.png
 ---
 
+Uygulama erişim kontrolü başlıklarına değineceğimiz birkaç yazıdan oluşacak serimizin ilkinde mimari olarak erişim kontrolünün [**XACML**](http://docs.oasis-open.org/xacml/3.0/xacml-3.0-core-spec-os-en.html)  ile nasıl ele alındığını inceleyeceğiz.
+
+---
+
 **--SERİNİN DİĞER YAZILARI--**
 
  - [1-XACML Authorization Authentication](https://www.mehmetcemyucel.com/2020/Access-Management-1-XACML-Authorization-Authentication/)
@@ -16,7 +20,6 @@ image: https://miro.medium.com/max/150/1*AevTigjmr7CmH-RV_OtzNA.png
 
 ---
 
-Uygulama erişim kontrolü başlıklarına değineceğimiz birkaç yazıdan oluşacak serimizin ilkinde mimari olarak erişim kontrolünün [**XACML**](http://docs.oasis-open.org/xacml/3.0/xacml-3.0-core-spec-os-en.html)  ile nasıl ele alındığını inceleyeceğiz.
 
 İkinci yazımızda [**OAuth Protokolü**](https://oauth.net/), [**OpenID**](https://openid.net/) ve [**OpenID Connect**](https://openid.net/connect/) yaklaşımlarını inceleyeceğiz. Nedenleri ve sonuçlarıyla dünden bugüne nasıl evrimleştiğini, hangi teknolojilerin hayatımıza dahil olduğunu göreceğiz.
 

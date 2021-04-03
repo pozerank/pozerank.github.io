@@ -6,10 +6,10 @@ tags: [Garbage, Collector, Oracle, Hotspot, OpenJDK, Quarkus, Amazon, Corretto, 
 image: https://miro.medium.com/max/150/1*gp7kdBQxRzDUmAMRa74LEg.png
 ---
 
+19 Aralık’ta JUG İstanbul ile yaptığımız sohbete Spotify veya ITunes Podcast’ler aracılığıyla aşağıdaki linklerden erişebilirsiniz. Ayrıca sohbette bahsi geçen teknolojilerin linklerini kaynakça olması amacıyla aşağıda topluyorum.
 
 ![](https://miro.medium.com/max/750/1*gp7kdBQxRzDUmAMRa74LEg.png)
 
-19 Aralık’ta JUG İstanbul ile yaptığımız sohbete Spotify veya ITunes Podcast’ler aracılığıyla aşağıdaki linklerden erişebilirsiniz. Ayrıca sohbette bahsi geçen teknolojilerin linklerini kaynakça olması amacıyla aşağıda topluyorum.
 
 [ITunes Podcast](https://podcasts.apple.com/tr/podcast/alternatif-jvmler-ve-javan%C4%B1n-gelece%C4%9Fi/id1476927966?i=1000460327428)
 

@@ -5,6 +5,13 @@ categories: [mimari, security]
 tags: [SAML, SSO, Single Sign On, Keycloak, Kerberos, OAuth2, OAuth, OpenID, Connect, Protokol, authentication, LDAP, Federation, Ticket, Active, Mehmet Cem Yücel, Mehmet, Cem, Yücel, nedir, örnek, türkçe, Nasıl yapılır, nedir, Örnek]
 image: https://miro.medium.com/max/150/0*tA4cZb1i9Mxds-Uz
 ---
+
+[İlk yazımızda](https://www.mehmetcemyucel.com/2020/Access-Management-1-XACML-Authorization-Authentication/) bir uygulamaya erişim isteğinde bulunulduğunda gerçekleşen adımlardan bahsettik. [Sonraki yazımızda](https://www.mehmetcemyucel.com/2020/Access-Management-2-OpenID-OAuth2-OpenID-Connect/) farklı erişim senaryoları için kullandığımız teknolojilerin nasıl evrimleştiğinden bahsettik. Bugün Federated Authentication kullanan diğer bir sektör standardı olan **Security Assertion Markup Language (SAML)** ve **Single Sign On (SSO)** ile yazımıza başlayalım.
+
+![single sign on sso](https://miro.medium.com/max/1020/0*tA4cZb1i9Mxds-Uz)
+
+---
+
 **--SERİNİN DİĞER YAZILARI--**
 
  - [1-XACML Authorization Authentication](https://www.mehmetcemyucel.com/2020/Access-Management-1-XACML-Authorization-Authentication/)
@@ -14,9 +21,6 @@ image: https://miro.medium.com/max/150/0*tA4cZb1i9Mxds-Uz
  - [5-Spring Boot ve Keycloak](https://www.mehmetcemyucel.com/2020/Access-Management-5-Spring-RestTemplate-Feign-Keycloak/)
 
 ---
-[İlk yazımızda](https://www.mehmetcemyucel.com/2020/Access-Management-1-XACML-Authorization-Authentication/) bir uygulamaya erişim isteğinde bulunulduğunda gerçekleşen adımlardan bahsettik. [Sonraki yazımızda](https://www.mehmetcemyucel.com/2020/Access-Management-2-OpenID-OAuth2-OpenID-Connect/) farklı erişim senaryoları için kullandığımız teknolojilerin nasıl evrimleştiğinden bahsettik. Bugün Federated Authentication kullanan diğer bir sektör standardı olan **Security Assertion Markup Language (SAML)** ve **Single Sign On (SSO)** ile yazımıza başlayalım.
-
-![single sign on sso](https://miro.medium.com/max/1020/0*tA4cZb1i9Mxds-Uz)
 
 **SAML**, kullanıcıların uygulama bazında login sessionlarının ayrı bir contextte tutulmasıyla oluşturulmuş bir **Single Sign On(SSO)** standardıdır. Burada SSO yu açmak gerekirse, bir uygulamaya login olduğunuzda aynı contextte çalışan diğer uygulamalara tekrardan login olmanıza gerek kalmayacağıdır. Örneğin bir şirkette çalışıyorsunuz ve bilgisayarınıza giriş yapabilmek için Domain’e veya Active Directory’e şifrenizle login oldunuz. O andan itibaren artık intranet uygulamalarında portal uygulamasına veya insan kaynakları uygulamasına tekrardan şifre girmenize gerek kalmadan uygulamaların sizi tanımasına verilen isimdir. Basit anlamda bir SSO aşağıdaki gibi çalışabilir
 

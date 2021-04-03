@@ -7,14 +7,12 @@ image: https://miro.medium.com/max/150/1*9DhTKcVmIApp1AXoGZ4A4A.png
 ---
 
 
-
+Bu yazımızda [**MapStruct**](http://mapstruct.org/)  isimli `Java Bean Mapper` kütüphanesini ve [**Spring**](https://spring.io/)  ile kullanımını inceleyeceğiz.
 
 ![](https://miro.medium.com/max/6250/1*9DhTKcVmIApp1AXoGZ4A4A.png)
 [](http://luman.io/meaning-not-mechanics%E2%80%8A-%E2%80%8Aa-human-approach-organizational-transformation/)
 
 # 1. Giriş
-
-Bu yazımızda [**MapStruct**](http://mapstruct.org/)  isimli `Java Bean Mapper` kütüphanesini ve [**Spring**](https://spring.io/)  ile kullanımını inceleyeceğiz.
 
 Kodlama yaparken ihtiyaç duyduğumuz bilgileri nesnelerimizin içerisindeki alanlarda tutarız. Nesneye dayalı programlama paradigmasına göre yaptığımız tüm tasarımlar dış dünya ile iletişim noktasına geldiğimizde birebir örtüşmeyebilir. Devraldığınız bir projede tasarladığınız bir [**POJO**](https://en.wikipedia.org/wiki/Plain_old_Java_object)(Plain Old Java Object), veritabanındaki varlık modeliyle(`**ER**``: Entity Relationship Model`) örtüşmeyebileceği gibi dış servislerden aldığınız DTO (Data Transfer Object) nesneler de sizin iç tasarımınızla birebir örtüşmeyecektir. Bu gibi durumlarda birden fazla obje katmanları (`entity`, `DTO`, `vb`..) yaratarak kendi kodumuzu dış dünyanın etkilerinden korumaya çalışırız. Ancak her ihtiyaç duyduğumuzda bu nesneleri birbirlerine dönüştürmek geliştirme maliyeti açısından zaman çalan bir işlemdir.
 

@@ -6,6 +6,12 @@ tags: [Keycloak, Feign, client, Spring, Boot, RestTemplate, OAuth2, SAML, Ldap, 
 image: https://cdn-images-1.medium.com/max/150/0*knMgRQMoNMWQciZs.jpg
 ---
 
+Access Management serimizin son yazısında Spring Boot RestTemplate ve OpenFeign Client kullanarak Keycloak üzerinde kolaylıkla OpenIdConnect ve OAuth2 ile nasıl kimlik doğrulama yapılır bunu inceleyeceğiz.
+
+![](https://miro.medium.com/max/1825/0*knMgRQMoNMWQciZs.jpg)
+
+---
+
 **--SERİNİN DİĞER YAZILARI--**
 
  - [1-XACML Authorization Authentication](https://www.mehmetcemyucel.com/2020/Access-Management-1-XACML-Authorization-Authentication/)
@@ -15,10 +21,6 @@ image: https://cdn-images-1.medium.com/max/150/0*knMgRQMoNMWQciZs.jpg
  - [5-Spring Boot ve Keycloak](https://www.mehmetcemyucel.com/2020/Access-Management-5-Spring-RestTemplate-Feign-Keycloak/)
 
 ---
-
-Access Management serimizin son yazısında Spring Boot RestTemplate ve OpenFeign Client kullanarak Keycloak üzerinde kolaylıkla OpenIdConnect ve OAuth2 ile nasıl kimlik doğrulama yapılır bunu inceleyeceğiz.
-
-![](https://miro.medium.com/max/1825/0*knMgRQMoNMWQciZs.jpg)
 
 # 1.0 Senaryo
 
@@ -138,7 +140,7 @@ Application.yml’dan okuduğumuz değerlerle yapılandırmamızı yapıyoruz.
 
 <script src="https://gist.github.com/mehmetcemyucel/3d4c9e544ca12577a91baad328d7e825.js"></script>
 
-# **4.0 Testler**
+# 4.0 Testler
 
 Sonuçları gözlemlemek için [bu yazımda bahsettiğim](https://medium.com/mehmetcemyucel/spring-boot-rest-birim-entegrasyon-testi-43a7f9354a33) rest servis entegrasyon testi yöntemlerini de kullanabilirsiniz. Farkettiğiniz üzere ben bu yazımda doğrudan browserdan deneyerek gözlemlemeyi tercih ettim. Sonuç olarak 2si **restTemplate**, 2si **feingClient** olmak üzere deneyeceğimiz 4 farklı servis çağırımımız var. Aşağıya sonuçlarını ekliyorum.
 

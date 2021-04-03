@@ -5,6 +5,8 @@ categories: [java, docker, jvm, spring, spring boot, quarkus, microservices, clo
 tags: [Quarkus, Java, Spring, Boot, GraalVM, Mikroservis, Microservice, Kubernetes, Ahead of Time, Just in Time, Compiler, native, image, docker, nedir, örnek, türkçe, memory, elastic, Nasıl yapılır, nedir, Örnek, Nasıl, Mehmet Cem Yücel, Mehmet, Cem, Yücel, Yucel]
 image: https://miro.medium.com/max/150/0*mf0v1GtnXoEpVUN9.jpg
 ---
+Bu yazımızda Java'nın tarihi gelişimini, günümüzde bulunduğu yeri, mikroservis mimarilere uyumunu ve GraalVM, LLVM ve Quarkus'un nasıl alternatifler yarattığından bahsedeceğiz.
+
 # 1. Neden Java
 
 Java yaklaşık 20 yıl önce ilk defa ortaya çıktığında büyük bir probleme çözüm getirme vaadiyle yazılımcıların dikkatini çekmişti. Vaat şuydu, bir yazılımcı farklı mimarilere sahip donanımların nasıl çalıştığını bilmesine gerek kalmayacaktı. Ve bütün bu ortamlar için ayrı ayrı kod yazmayacak, tek kod tüm ortamlarda çalışabilecekti. Bunu _“Write once, run anywhere”_ mottosuyla ifade ettiler. Derlenen kod [JVM](https://en.wikipedia.org/wiki/Java_virtual_machine) ismi verilen bir sanal makine üzerinde çalıştırılacaktı. Bu sayede geliştiriciler işletim sistemi, donanım ve benzeri ortamsal farklılıklardan etkilenmeyecekti.

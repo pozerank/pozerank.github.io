@@ -6,6 +6,15 @@ tags: [SAML, SSO, Single Sign On, Keycloak, Kerberos, OAuth2, OAuth, OpenID, Con
 image: https://miro.medium.com/max/150/0*ipuyew2--zak9w2i.png
 ---
 
+
+[İlk yazımızda](https://www.mehmetcemyucel.com/2020/Access-Management-1-XACML-Authorization-Authentication/) Authorization ve Authetication kavramlarından bahsetmiştik. Bir uygulamaya gelen erişim isteğinin ne şekilde işlenerek sonuçlandığından bahsettik. Gündelik yaşamda duymaya aşina olduğumuz bu iki tanımı neredeyse her uygulamada bir arada kullanıyoruz. Sosyal medya hesaplarımızdan mail adreslerimize, forumlardan üye olduğumuz sitelere kadar her yerde bir üyeliğimiz, kullanıcı adımız ve şifremiz, var. Aklımızda tutmamız gereken o kadar kullanıcı adı ve şifremiz var ki bunları saklamak için password manager uygulamaları kullanmamız gerekiyor.
+
+
+![](https://miro.medium.com/max/640/0*H5weENf3rnm2dhaz)
+
+---
+
+
 **--SERİNİN DİĞER YAZILARI--**
 
  - [1-XACML Authorization Authentication](https://www.mehmetcemyucel.com/2020/Access-Management-1-XACML-Authorization-Authentication/)
@@ -15,11 +24,6 @@ image: https://miro.medium.com/max/150/0*ipuyew2--zak9w2i.png
  - [5-Spring Boot ve Keycloak](https://www.mehmetcemyucel.com/2020/Access-Management-5-Spring-RestTemplate-Feign-Keycloak/)
 
 ---
-
-[İlk yazımızda](https://www.mehmetcemyucel.com/2020/Access-Management-1-XACML-Authorization-Authentication/) Authorization ve Authetication kavramlarından bahsetmiştik. Bir uygulamaya gelen erişim isteğinin ne şekilde işlenerek sonuçlandığından bahsettik. Gündelik yaşamda duymaya aşina olduğumuz bu iki tanımı neredeyse her uygulamada bir arada kullanıyoruz. Sosyal medya hesaplarımızdan mail adreslerimize, forumlardan üye olduğumuz sitelere kadar her yerde bir üyeliğimiz, kullanıcı adımız ve şifremiz, var. Aklımızda tutmamız gereken o kadar kullanıcı adı ve şifremiz var ki bunları saklamak için password manager uygulamaları kullanmamız gerekiyor.
-
-
-![](https://miro.medium.com/max/640/0*H5weENf3rnm2dhaz)
 
 Bu karmaşayı gidermek için **2005** yılında **Brad Fitzpatrick** tarafından [**OpenID**](https://openid.net/) isimli bir kimlik doğrulama protokolü için çalışıyordu. Aynı şekilde **2006** yılında da [**Twitter**](https://twitter.com)  bu konuda çalışmalarını hızlandırmıştı. Yaklaşım şuydu, her üyelik sistemi gerektiren siteye yeni bir kullanıcı adı/şifresi yaratmak yerine OpenID’de yaratılan bir kimlikle tüm diğer sitelerde üyelik ve login gerçekleştirilebilecekti.
 

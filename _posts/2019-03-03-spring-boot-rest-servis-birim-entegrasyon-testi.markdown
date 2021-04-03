@@ -8,8 +8,7 @@ image: https://lh3.googleusercontent.com/Esv5RJA-BRT4PJcyjrApSFqRVLpDxef7CAd5oEg
 
 Hepimiz Rest servisleri uygulamalarımızda yoğun olarak kullanıyoruz. Peki, bu servislerin entegrasyon testlerini yazarken sıklıkla yapılan o hataya siz de düşüyor olabilir misiniz? Bugün bir Spring Boot uygulamasında Rest servislere 2 farklı test yazımını inceleyeceğiz. Birisi gerçekten bir integration testi, diğeri de tüm Spring Context'ini ayağa kaldırarak yapılan uçtan uca testi örnekleyecek.
 
-![
-](https://lh3.googleusercontent.com/Esv5RJA-BRT4PJcyjrApSFqRVLpDxef7CAd5oEgVEZao785R8GKuG-NKbQduwGCms0_RitOF_s8=s800 "Darth Vader")
+![](https://lh3.googleusercontent.com/Esv5RJA-BRT4PJcyjrApSFqRVLpDxef7CAd5oEgVEZao785R8GKuG-NKbQduwGCms0_RitOF_s8=s800 "Darth Vader")
 
 ## Test Piramidi
 Test piramidinin en tabanında birim testler(unit tests) bulunur. Sonrasında entegrasyon testleri(integration tests), kontrat testleri(contract tests), arayüz testleri(UI tests) diye devam eder. Bu testler ile ilgili [Martin Fowler'ın yazısını](https://martinfowler.com/articles/practical-test-pyramid.html) okumanızı tavsiye ederim. 
