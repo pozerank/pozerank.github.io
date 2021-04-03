@@ -40,7 +40,7 @@ Yukarıdaki cümleye bakılırsa **herhangi bir yerde çalıştırılabilmesi** 
 
 Yazılan Java kodunun farklı işletim sistemlerinde, mimarilerde çalışabilmesi için aslında hatrı sayılır şeylerden feragat edilmesi gerekmektedir. Derlenmiş kodumuzun çalıştırılmasından sorumlu [Java Runtime Environment](https://www.java.com/en/download/faq/whatis_java.xml)’da(JRE) bu sebepten çok fazla kaynak ve kod bulunmaktadır. **Örneğin** [**OpenJDK**](https://wiki.openjdk.java.net/)**’nın base image’ı 250MB’dan daha büyüktür**. Şirketler genellikle mikroservis mimariye uygun kod geliştirebilmek için [**Spring**](https://spring.io/) **teknolojilerini kullanarak kod geliştirdiği varsayımı ile ilerlersek kodumuzun çalışabildiği containerın boyutu en azından yaklaşık 450–500MB’lar civarında olacaktır.** Bu boyutlar [disposability](https://www.mehmetcemyucel.com/2019/twelve-factor-nedir-turkce-ornek/) prensibinden dolayı tercih etmediğimiz bir durumdur. Çünkü büyük boyutlardaki containerların ayağa kalkması uzun sürmektedir. Peki ne yapabiliriz? Sırtımızdaki yükten nasıl kurtulabiliriz?
 
-# 3.1 Just in Time (JIT) vs Ahead of Time (AOT) Compilers
+## 3.1 Just in Time (JIT) vs Ahead of Time (AOT) Compilers
 
 Bu noktada derleyiciler hakkında daha detaylı bilgi paylaşmam gerekiyor. Derleyiciler yazılan kodun işlemcinin anbladığı makine koduna çevrilmesinden sorumlu yapılardır. Derleyicileri kabaca iki gruba ayırmak mümkün; `**Just in Time**`  `**(JIT)**` ve `**Ahead of Time (AOT)**` derleyiciler.
 
@@ -58,11 +58,11 @@ GraalVM kullandığı JIT derleyicisinin daha performanslı olduğu iddiasına s
 
 Sırtımızdaki yükten nasıl kurtulacağız dediğimiz sorumuzu hatırlarsınız. İşte GraalVM bizim için bu noktada kurtarıcı olarak ortaya çıkıyor. Doğrudan makine koduna derlenmiş kodlar sayesinde **uygulamanın açılışı hızlı gerçekleşecek**. Ve çalışması esnasında yapılan istatistik toplama, optimizasyon için runtimeda yapılan HotSpot derlemeler vb tüm süreçlerden bizi kurtaracak. Bunların yanında kodun tam performans çalışabilmesi için gereken **JVM’in ısınma süresi**(istatistik toplama vs hotspot derlemelerin aldığı zaman) tarih oluyor, **kod çok hızlı bir şekilde ayağa kalkarken yüksek performansla doğrudan çalışmaya başlıyor**. Hayat çok güzel değil mi :)
 
-# 4.1 Gerçekten Sihirli Değnek Mi?
+## 4.1 Gerçekten Sihirli Değnek Mi?
 
 GraalVM bir önceki başlıkta sunulan her şeyi sunuyor. Ancak native image kullanacaksanız bir kısıtımız var. Zaten dikkatli gözler farketmiştir. **Native image runtime’da sürpriz sevmez!** Nasıl çalışacağı runtime’a çıkmadan önce net olarak tanımlanmış kodlar ancak optimize edilebilir ve makine koduna çevrilebilir. **Yani özetle,** [**native image**](https://www.graalvm.org/docs/reference-manual/aot-compilation/) **kullanacaksanız** [**reflection**](https://en.wikipedia.org/wiki/Reflection_(computer_programming)) **kullanamazsınız!**
 
-# 4.2 Ya Spring Boot?
+## 4.2 Ya Spring Boot?
 
 Bildiğiniz gibi Spring, [Inversion of Control](https://en.wikipedia.org/wiki/Inversion_of_control) (IoC) prensibi ile çalışmaktadır. Diğer adıyla [Dependency Injection](https://en.wikipedia.org/wiki/Dependency_injection) (DI) olarak bildiğimiz yapıda tanımladığımız singleton Spring Bean’leri `ApplicationContext`tarafından preload edilir ve runtime’da ne zaman `getBean()` metodu çağırılırsa `lazy loading` ile `BeanFactory` tarafından bean örneği yaratılır. Bütün bu süreçte de bildiğiniz gibi reflection kullanılmaktadır :) Yani eğer native image kullanma düşüncesindeyseniz çalışma mantığını düşündüğümüzde Spring bunun için uyumlu bir seçenek olmayacaktır. Spring ile native image kullanmayı sağlamak için farklı projelere rastlayabilirsiniz, şu an için verimli bir çözüm olmamakla birlikte belki de çözüm için farklı alternatifleri düşünmenin vakti gelmiştir, ne dersiniz?
 
@@ -155,9 +155,9 @@ Mikroservis mimariler ile uğraşıyorsanız optimizasyon, daha iyileştirme, da
 
 Sonraki yazılarda görüşmek üzere
 
-*En yalın haliyle*
+***En yalın haliyle***
 
-**Mehmet Cem Yücel**
+[**Mehmet Cem Yücel**](https://www.mehmetcemyucel.com)
 
 ---
 
@@ -170,4 +170,7 @@ Sonraki yazılarda görüşmek üzere
 **Blockchain teknolojisi ile ilgileniyor iseniz bunlar da hoşunuza gidebilir:**
 
  - [BlockchainTurk.net yazıları](https://www.mehmetcemyucel.com/categories/#blockchain)
+
+---
+
 

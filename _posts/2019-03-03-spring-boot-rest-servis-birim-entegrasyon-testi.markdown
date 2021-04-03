@@ -76,9 +76,9 @@ Sonuç olarak testlerimizin hızlı olarak sonuçlanabilmesi için maksimum izol
 
 Sonraki yazılarda görüşmek üzere
 
-*En yalın haliyle*
+***En yalın haliyle***
 
-**Mehmet Cem Yücel**
+[**Mehmet Cem Yücel**](https://www.mehmetcemyucel.com)
 
 --- 
 
@@ -92,3 +92,4 @@ Sonraki yazılarda görüşmek üzere
 
  - [BlockchainTurk.net yazıları](https://www.mehmetcemyucel.com/categories/#blockchain)
 
+---

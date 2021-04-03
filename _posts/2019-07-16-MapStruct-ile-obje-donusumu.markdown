@@ -128,9 +128,9 @@ Java diğer mapper toollarıyla kıyaslandığında MapStruct performansıyla de
 
 Projenin kodlarına [buradan](https://github.com/mehmetcemyucel/mapstruct) erişebilirsiniz. Sonraki yazılarda görüşmek üzere.
 
-*En yalın haliyle*
+***En yalın haliyle***
 
-**Mehmet Cem Yücel**
+[**Mehmet Cem Yücel**](https://www.mehmetcemyucel.com)
 
 ---
 
@@ -145,4 +145,4 @@ Projenin kodlarına [buradan](https://github.com/mehmetcemyucel/mapstruct) eriş
 
  - [_BlockchainTurk.net  yazıları_](https://www.mehmetcemyucel.com/categories/#blockchain)
 
-
+---

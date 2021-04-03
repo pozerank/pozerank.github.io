@@ -128,9 +128,9 @@ Yukarıdaki örneklerde de anlattığımız gibi, @Rule ve @ClassRule annotation
 
 Sonraki yazılarda görüşmek üzere
 
-*En yalın haliyle*
+***En yalın haliyle***
 
-**Mehmet Cem Yücel**
+[**Mehmet Cem Yücel**](https://www.mehmetcemyucel.com)
 
 ----------
 
@@ -143,3 +143,5 @@ Sonraki yazılarda görüşmek üzere
 **_Blockchain teknolojisi ile ilgileniyor iseniz bunlar da hoşunuza gidebilir:_** 
 
  - [BlockchainTurk.net yazıları](https://www.mehmetcemyucel.com/categories/#blockchain)
+
+---
