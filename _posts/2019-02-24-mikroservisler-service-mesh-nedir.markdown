@@ -64,8 +64,9 @@ Yazının sonuna gelirken, service mesh ürünlerine birkaç örnek verelim. [En
 
 Sonraki yazılarda görüşmek üzere
 
-*En yalın haliyle
-**Mehmet Cem Yücel***
+*En yalın haliyle*
+
+**Mehmet Cem Yücel**
 
 ---
 
