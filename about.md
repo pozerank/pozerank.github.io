@@ -5,12 +5,12 @@ permalink: /about/
 robots: all
 ---
 ## Mehmet Cem Yücel
-Okumaya, öğrenmeye ve devamlı gelişmeye inanan; bilgiye ve insana saygıya önem veren bir kişiyim. Bilgi paylaşımının önemine inanıyorum, bu sebeple 2009'dan beri blog yazarak bilgi ve tecrübelerimi aktarmayı tercih ediyorum. Zaman zaman farklı konularla ilgili üniversitelerde de sunumlar yapıyorum.
+Okumaya, öğrenmeye ve devamlı gelişmeye inanan; bilgiye ve insana saygıya önem veren bir kişiyim. Bilgi paylaşımının önemine inanıyorum, bu sebeple 2009'dan beri farklı yollarla bilgi ve tecrübelerimi aktarmayı tercih ediyorum. 
 
 
-Geliştirmek ve üretmekten zevk alırım. En basit işe bile hakkını vermeye gayret gösteririm. Gelecekte bir gün *'sonraki developerın'* sol kulağımı çınlatmamasına özen gösteririm.
-
-## Çalışma Geçmişim  
+## Çalışma Geçmişim
+- *2020 - Cigna   
+- *2019 - Trendyol
 - *2017 - Kredi Kayıt Bürosu*
 - *2013 - Akbank*
 - *2010 - Turkcell*
@@ -38,16 +38,6 @@ Geliştirmek ve üretmekten zevk alırım. En basit işe bile hakkını vermeye 
 - [Hadoop](https://hadoop.apache.org/), [Spark](https://spark.apache.org/), [Flume](https://flume.apache.org/), [Sqoop](http://sqoop.apache.org/), [Impala](https://impala.apache.org/), [Storm](http://storm.apache.org/)
 - [Blockchain & Smart Contracts](http://blockchainturk.net/) ([R3 Corda](https://www.r3.com/corda-platform/), [Hyperledger](https://www.hyperledger.org/), [Solidity](https://solidity.readthedocs.io/))
 
-## Hobilerim
-
-Küçük yaşlardan beridir müzikle iç içeyim; gitar, piano, bağlama ve ud çalıyorum. Yine kendimi bildiğimden beridir sporla iç içeyim. Bir kısmını da vakti zamanında lisanslı olarak oynadım; bisiklet, voleybol, basketbol, masatenisi ve langırt hobilerim arasında. Ayrıca tiyatroyu severim, özellikle de izleyenlerin karşısındayken :) Birkaç kez sahneye çıkmışlığım var.
-
-Farklı yemekleri yapmak, tatmak çok hoşuma gider. Deneysel lezzetleri merak eder ve denerim. Hatta denetirim :) Her ne kadar bir süredir sağlık problemlerimden dolayı içemesem de 3. nesil kahve dünyası da keşvetmekten zevk aldığım bir alan. 
-
-## Bloglarım
-
-- [www.mehmetcemyucel.com](https://www.mehmetcemyucel.com/)
-- [BlockchainTurk.net](http://BlockchainTurk.net)
 
 ---
 
