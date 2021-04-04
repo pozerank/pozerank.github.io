@@ -216,11 +216,11 @@ Daha detaylı bilgi için kitaba [buradan](https://content.pivotal.io/ebooks/bey
 
 ---
 
-**_Bu yazılar ilgilinizi çekebilir:_**   
+***Bu yazılar ilgilinizi çekebilir:***   
  - [Spring Boot Devtools ile Docker Üzerindeki Kodu Debug Etme ve Değiştirme](https://www.mehmetcemyucel.com/2019/spring-boot-devtools-ile-docker-uzerindeki-kodu-debug-etme-ve-degistirme/)
  - [Spring Boot ile SLF4J ve Log4J Loglama Altyapısı](https://www.mehmetcemyucel.com/2019/spring-boot-ile-loglama-altyapisi/)
 
-***_Blockchain teknolojisi ile ilgileniyor iseniz bunlar da hoşunuza gidebilir:_***
+***Blockchain teknolojisi ile ilgileniyor iseniz bunlar da hoşunuza gidebilir:***
 
  - [BlockchainTurk.net yazıları](https://www.mehmetcemyucel.com/categories/#blockchain)
 
