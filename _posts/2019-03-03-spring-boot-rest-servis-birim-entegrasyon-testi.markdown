@@ -10,7 +10,7 @@ Hepimiz Rest servisleri uygulamalarımızda yoğun olarak kullanıyoruz. Peki, b
 
 ![](https://lh3.googleusercontent.com/Esv5RJA-BRT4PJcyjrApSFqRVLpDxef7CAd5oEgVEZao785R8GKuG-NKbQduwGCms0_RitOF_s8=s800 "Darth Vader")
 
-# 1 Test Piramidi
+# 1. Test Piramidi
 Test piramidinin en tabanında birim testler(unit tests) bulunur. Sonrasında entegrasyon testleri(integration tests), kontrat testleri(contract tests), arayüz testleri(UI tests) diye devam eder. Bu testler ile ilgili [Martin Fowler'ın yazısını](https://martinfowler.com/articles/practical-test-pyramid.html) okumanızı tavsiye ederim. 
 
 
@@ -18,7 +18,7 @@ Test piramidinin en tabanında birim testler(unit tests) bulunur. Sonrasında en
 
 Bu piramidin en güçlü olması gereken yeri tabii ki tabanıdır. Taban katmanının gücü üzerine üzerine diğer katmanlar yerleşir. Bu sebeple en geniş kapsamlı testleri birim testlerde kodlarız. Bu testlerimizin adetlerinin çok olmasından dolayı hızlı çalışmaları lazımdır. Örneğin bir CI/CD pipeline'ında kodunuz build edilirken bu testleriniz çalıştırılacaktır. Bir mikroservis mimaride ancak 3 dakikada deploy olabilen kod sahibi olmak bir çok problemi doğuracaktır. Bu sebeple özellikle birim testleri hiçbir bağımlılık olmadan çalışabilmelidir. Entegrasyon testlerinin de doğru mock, fake, spy veya stub yöntemleri ile izolasyonu mutlaka sağlanmalıdır.
 
-# 2 REST Entegrasyon Testi
+# 2. REST Entegrasyon Testi
 
 Buradan itibaren kodumuza dönelim. Bir RestController'ımız, bir de onun kullandığı başka bir Spring Bean sınıfımız olsun.
 
@@ -38,7 +38,7 @@ Bu 5 sitedeki yöntemler aşağı yukarı aynı. Autowire edilmiş bir MockMvc i
 
 Bu test sınıfındaki kodu 5 farklı kez çalıştırdım ve ortalama sonlanma süresi olarak **2.186 ms** süresine ulaştım. Bir entegrasyon testi için uzun bir süre. Bu süreyi kısaltmak için neler yapılabilir? Gerçekten de tüm web contexti ayağa kaldırmak zorunda mıyız?
 
-## 2.2 MockMvc Standalone Builder
+## 2.2. MockMvc Standalone Builder
 Önerdiğim yeni yöntemimizde yapacağımız değişiklikler şunlar olacak;
 1. Tüm web contexti ayağa kaldırmaktan vazgeç, sadece RestController'ımı kaldır
 2. Controller'ımın bağımlı olduğu bean'leri ayağa kaldırma, yerine ben onları mocklayacağım.
@@ -51,7 +51,7 @@ Bu kodu 5 kez çalıştırdığımda da ortalama çalışma süresi olarak **556
 
 https://github.com/mehmetcemyucel/springboot-rest-int-test
 
-# 3 Sonuç ve Kütüphaneler
+# 3. Sonuç ve Kütüphaneler
 
 Yazıyı bitirmeden yine de şunları not etmekte fayda var. Bu yazıda kıyasladığım örnekler her bir servis için ayrı ayrı context ayağa kaldırma ile standalone yapılandırma arasındaki farkı içeriyor. Test edeceğiniz servis sayısı ile bağlantılı olmak üzere başka alternatifler de mevcut, örneğin 30 servis için tek context ayağa kaldırıp tüm testleri tek bir context ile tamamladığınızda her defasında mock üretme maliyetine girmediğinizden dolayı total süre daha düşük çıkabilir. Özetle, tek bir doğru yok, senaryoya göre doğru tercih veya tercihler var.
 

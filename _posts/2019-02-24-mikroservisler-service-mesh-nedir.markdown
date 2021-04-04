@@ -11,7 +11,7 @@ Service Mesh tanımı; cevabında sidecar proxy, service discovery, orchestratio
 
 ![](https://miro.medium.com/max/813/0*FhgA8Ersxk6Tr40r.jpg)
 
-# 1 Giriş
+# 1. Giriş
 
 Mikroservis mimariye uygun kodladığınız bir projeniz olsun. Örneğin çok geniş ürün gruplarının satışını yaptığınız bir sitemiz var. Sitemizde hediyelik eşyadan bebek malzemelerine, elektronik aletlerden basılı yayıncılığa kadar ürün grupları var. Böyle bir sitenin tahminen ihtiyaç duyacağı servisler aşağıdaki gibi olacaktır.
 
@@ -21,20 +21,20 @@ Mikroservis mimariye uygun kodladığınız bir projeniz olsun. Örneğin çok g
 -   Sipariş oluşturma
 -   Ödeme
 
-# 2 Mikroservislerde Darboğaz
+# 2. Mikroservislerde Darboğaz
 
 Bir uygulama mikroservislere parçalanırken dikkat edilmesi gereken 7-8 madde vardır. Yukarıdaki servisleri oluştururken hiçbir aggregate’ı dikkate almadım çünkü bu yazıda değinmek istediğim konu bunlar değil. Burada şu an için dikkat etmemiz gereken, bir işlem için birbirlerine bağımlı servislerin varlığı. Ve bir serviste yaşanacak bir darboğazın o servise bağımlı diğer servislerde yaşatacağı handikap.
 
 Sitenizde bir dönem kampanyası oluşturdunuz, örneğin anneler gününe özel %20 indirim bilgisini tüm müşterilerinize duyurdunuz. Sitenizdeki tekil ziyaretçi sayısındaki artışa bağlı olarak normalde herhangi bir sıkışma yaşamayan uygulamanızın Arama & Listeleme ve Stok Yönetimi servislerinde sıkışmalar, gecikmeler söz konusu olmaya başladı. Hatta stok yönetim servisleri o kadar gecikmeye başladılar ki bu servisi tüketen listeleme servislerinde timeouta bağlı hatalar gözlenmeye başladı. Peki, listeleme servisimiz stok sorgulama servisinden timeoutlar almaya başlarsa ne yapmalı?
 
-# 3 Proxy Nedir
+# 3. Proxy Nedir
 
 Bu noktada bir mola verip proxy kavramından söz etmem gerekiyor. Kişisel bilgisayarımız ile bir haber sitesine doğrudan erişip o siteden güncel haberleri okumamız mümkün. Ancak pek çok şirkette internete çıkış proxy sunucular üzerinden gerçekleştirilmektedir. Proxy(vekil) sunucular örneğin bir siteye erişmek istediğimizde **request&response trafiğinde araya girip** bizim adımıza siteye erişip bilgileri temin eden ve bu bilgileri tarafımıza aktaran sunuculardır. Güvenlik, caching gibi amaçlarla kullanılabilirler. Caching açısından faydaya bakacak olursak, sabahları X haber sitesine giren 20 çalışan için her defasında gerçekten siteye trafik yaratılmak zorunda kalmamış olduk. İlk trafikten sonraki 19 istek doğrudan proxy’nin cacheinden kullanıcıların bilgisayarlarına dönüşü sağlanmış oldu.
 
 
 ![](https://miro.medium.com/max/625/0*FZkc32z64ZVwh228.png)
 
-# 4 Bottleneck Problem
+# 4. Bottleneck Problem
 
 Tekrar konumuza dönelim. Listeleme servisi stok servisinden timeoutlar almaya başladı. Bu noktada yeni containerlar ayağa kaldırmak akla gelen ilk çözüm olsa da duruma kaynakları artırmadan yaklaşalım. Neler yapabiliriz?
 
@@ -46,7 +46,7 @@ Tekrar konumuza dönelim. Listeleme servisi stok servisinden timeoutlar almaya b
 
 Aslında yukarıda bahsettiğim çözüm Circuit Breaker Pattern’ine ait durum diyagramı. Bu diyagramı teoride bir developerın kodlaması mümkün. Ancak her bir servis için bu kadar kodlamanın yapılması maliyet. Ayrıca servis sayısı arttıkça bunu yönetmek bir kaosa dönüşecek. Ve bu high level dil seviyesinde yapıldığı için servisler arası iletişimde yavaşlamalar söz konusu olmaya başlayacak.
 
-# 5 Service Mesh Nedir Nasıl Çalışır
+# 5. Service Mesh Nedir Nasıl Çalışır
 
 Service Mesh aslında bir servisin düşünmesi gereken birçok non-functional problemlerin çözümünü sunan bir mimari katman. Yani yukarıdaki bottleneck problem başlığındaki örnekte sıralanan çözümleri developerın kodlama yapmasına gerek kalmadan çözüm olarak sunan bir yapı. Peki, mevcut kodda bir değişiklik yapmadan bunca çözüm nasıl çalışıyor?
 
