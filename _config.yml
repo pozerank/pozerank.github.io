@@ -6,7 +6,7 @@ url: 'https://www.mehmetcemyucel.com'
 baseurl: ''
 google_analytics: 'UA-134372019-2'
 disqus_shortname: 'mehmetcemyucel'
-language: Turkish
+language: tr
 revisit-after: 14 days
 environment: production
 author:
