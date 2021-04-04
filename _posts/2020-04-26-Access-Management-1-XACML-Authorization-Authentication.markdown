@@ -20,7 +20,7 @@ Uygulama erişim kontrolü başlıklarına değineceğimiz birkaç yazıdan olu�
 
 ---
 
-# 1. Access Management Serisi
+## 1. Access Management Serisi
 
 İkinci yazımızda [**OAuth Protokolü**](https://oauth.net/), [**OpenID**](https://openid.net/) ve [**OpenID Connect**](https://openid.net/connect/) yaklaşımlarını inceleyeceğiz. Nedenleri ve sonuçlarıyla dünden bugüne nasıl evrimleştiğini, hangi teknolojilerin hayatımıza dahil olduğunu göreceğiz.
 
@@ -35,13 +35,13 @@ Beşinci ve son yazımızda da [**Keycloak**](https://www.keycloak.org/) ile [**
 
 Güvenli erişim problemini en başından incelemeye başlayalım. Bir uygulamanın sunduğu kaynaklara(servisler, ekranlar vb) erişirken herkesin sistem üzerinde her işi gerçekleştirebilmesini tercih etmeyiz. Bu tercihlerimizi **Erişim Politikaları (Access Policy)** ile yönetmeye çalışırız. Örneğin bir insan kaynakları uygulamamız olduğunu düşünelim. Kullanıcıların birbirlerinin maaş bilgilerini görebildiği, değiştirebildiği bir uygulamayı sanırım hiçbir şirket kullanmayı tercih etmezdi. Uygulamaya girişlerin ve girdikten sonra da farklı kaynaklara erişimlerin kontrol altında tutulmasını isteriz.
 
-# 2. Authentication - Authorization
+## 2. Authentication - Authorization
 
 Öncelikle herkesin bu insan kaynakları uygulamasına giriş yapamaması bekleriz. Örneğin dış kaynak olarak çalışan, bordrosu başka bir şirkette olan, performans yönetimi kendi şirketi tarafından yapılan çalışma arkadaşlarımızın bu uygulamaya giriş yapmayacak şekilde uyarlanması gerekir. Bu işlemi **Kimlik Doğrulama (Authentication)** adımı ile gerçekleştirebiliriz. Yetkisi olmayan kullanıcılar uygulamaya giriş yapamayacaktır.
 
 Sonrasında uygulamamıza giriş yapabilecek iki farklı ekibimiz olduğunu varsayalım. Birisi giriş ve güncellemeleri yapabilen İnsan Kaynakları ekibindeki arkadaşlarımız, diğeri de buradaki bilgileri takip eden, readonly olarak kullanan diğer bir Yazılım Ekibindeki arkadaşlarımız olsun. İki ekip de authentication adımını başarıyla tamamladıktan sonra uygulamanın farklı özelliklerini kullanabilir durumda olmalıdır. İşte bu noktada da **Yetkilendirme (Authorization)** adımı devreye girmektedir. Farklı kullanıcıların veya kullanıcı gruplarının uygulamanın hangi kaynaklarını ne ölçüde tüketebileceğinin tanımları bu adımda kontrol edilerek yetkisiz erişimlerin önüne geçilmeye çalışılmaktadır. Peki bu tanımlar ve kontroller nasıl gerçekleştirilmektedir?
 
-# 3. XACML
+## 3. XACML
 
 2003 yılında OASIS tarafından **Genişletilebilir Erişim Kontrolü Biçimlendirme Dili (XACML)** isimli bir standart yayımlandı. Bu standart, bir sisteme iletilen farklı niteliklerdeki erişim isteklerinin kural tabanlı politikalar tarafından nasıl esnek bir şekilde kontrol edileceğini tanımlayan mimari yaklaşımı içeriyordu. Tanım karışık geldiyse, özetle her türlü erişim isteğini kontrollü bir şekilde nasıl yönetilebileceğini tanımlayan mimari bir yaklaşımdı.
 
@@ -52,7 +52,7 @@ Tanımlanmış sınırlar ile kastettiğimiz kavramı biraz daha açalım. Bir e
 -   **Rules** (Kurallar)
 -   **Policy** (Politika) veya birden fazla politikadan oluşan **Policy Set** (Politika Seti)
 
-## 3.1. Kurallar (Rules)
+### 3.1. Kurallar (Rules)
 
 **Kurallar**, erişimin sağlanabilmesi için gerekli şartları tanımlar. Bunun için
 
@@ -62,7 +62,7 @@ Tanımlanmış sınırlar ile kastettiğimiz kavramı biraz daha açalım. Bir e
 
 Örneğin uygulama üzerindeki /img/* altındaki kaynaklara **(targets)** readonly erişmek için **(conditions)** user rolüne sahip olunması **(conditions)** gerekir. Koşullar **(Obligations)** sağlanırsa erişim verilir **(advices)**, sağlanamazda istek reddedilir **(advices)**.
 
-## 3.2. Politikalar (Policies)
+### 3.2. Politikalar (Policies)
 
 **Politika**, bir ya da birden fazla kuralın birleşiminden oluşur. **Politika Setleri** ise birden fazla politikanın veya politika setinin oluşturduğu gruba verilen addır.
 
@@ -76,27 +76,27 @@ Tanımlanmış sınırlar ile kastettiğimiz kavramı biraz daha açalım. Bir e
 
 ![](https://miro.medium.com/max/1155/1*7uQjo-WaAeJ-pyVYBupHdQ.png)
 
-### 3.2.1. Policy Administration Point (PAP)
+#### 3.2.1. Policy Administration Point (PAP)
 
 **PAP**; uygulamanızın kaynaklarına erişim için gelen isteklerin nasıl işlenebileceğini, politikaları tanımladığınız nokta.
 
-### 3.2.2. Policy Retrieval Point (PRP)
+#### 3.2.2. Policy Retrieval Point (PRP)
 
 **PRP** (Policy Retrieval Point); tanımladığınız erişim yetkisi ilkelerinin, politikaların saklandığı nokta. Bir dosya sistemi veya genellikle bir veritabanı olabilir.
 
-### 3.2.3. Policy Enforcement Point (PEP)
+#### 3.2.3. Policy Enforcement Point (PEP)
 
 **PEP**; uygulamamızın kaynaklarına erişim için gelen istekleri karşılayan nokta. Bu nokta gelen isteğin niteliklerini PDP’ye iletir ve ondan gelen cevaba göre isteğe izin verir veya reddeder.
 
-### 3.2.4. Policy Decision Point (PDP)
+#### 3.2.4. Policy Decision Point (PDP)
 
 **PDP**; PEP’ten gelen erişim isteklerini PRP’deki politikalarla ve PIP’teki ekstra niteliklerle çarpıştırıp erişimin sağlanıp sağlanmayacağının kararını veren nokta.
 
-### 3.2.5. Policy Information Point (PIP)
+#### 3.2.5. Policy Information Point (PIP)
 
 **PIP**; sistemin geneline dair ekstra niteliklerin bulunduğu policy bazında tutulmayan bilgilerin bulunduğu nokta.
 
-## 3.3. Örnek Akış
+### 3.3. Örnek Akış
 
 ![](https://miro.medium.com/max/1690/0*I7Y-E74GSBmPQXMS.png)
 
@@ -122,7 +122,7 @@ Tanımlanmış sınırlar ile kastettiğimiz kavramı biraz daha açalım. Bir e
 
 <script src="https://gist.github.com/mehmetcemyucel/9c3a2ce90c5e111ec4f383514aef5fb5.js"></script>
 
-# 4. Sonuç
+## 4. Sonuç
 
 Sonraki yazımızda **OAuth Protokolü, OpenID ve OpenID Connect** kavramlarını inceleyeceğiz. Yazıya [buradan](https://www.mehmetcemyucel.com/2020/Access-Management-2-OpenID-OAuth2-OpenID-Connect/) erişebilirsiniz.
 

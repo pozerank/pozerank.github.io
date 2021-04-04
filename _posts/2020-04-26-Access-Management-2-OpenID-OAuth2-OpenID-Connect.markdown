@@ -24,7 +24,7 @@ image: https://miro.medium.com/max/150/0*ipuyew2--zak9w2i.png
 
 ---
 
-# 1. OpenID Devrimi
+## 1. OpenID Devrimi
 
 Gündelik yaşamda duymaya aşina olduğumuz bu iki tanımı neredeyse her uygulamada bir arada kullanıyoruz. Sosyal medya hesaplarımızdan mail adreslerimize, forumlardan üye olduğumuz sitelere kadar her yerde bir üyeliğimiz, kullanıcı adımız ve şifremiz, var. Aklımızda tutmamız gereken o kadar kullanıcı adı ve şifremiz var ki bunları saklamak için password manager uygulamaları kullanmamız gerekiyor.
 
@@ -36,7 +36,7 @@ Kullanıcı bir foruma üye olmak istediğinde OpenID kimliğiyle üye olacaktı
 
 ![](https://miro.medium.com/max/970/1*eyGITOaY4c1wj8fyCa-zSw.png)
 
-# 2. Yelp Tehlikesi
+## 2. Yelp Tehlikesi
 
 Bu çalışmalar devam ederken 2007 yılında ilgili ilginç bir gelişme yaşanmıştı. Eski [**PayPal**](https://www.paypal.com)  çalışanları **Jeremy Stoppelman** ve **Russel Simmons**’un bir girişimi olan [**Yelp**](https://www.yelp.com/), yerel işletmeler hakkında kullanıcıların deneyimlerini paylaştıkları bir site geliştirdiler. Sitenin kullanımını artırabilmek için önemli bir nokta vardı, insanlar kendi çevresindeki arkadaşlarının yorumlarını daha çok önemsiyorlardı. Bir şekilde üye profillerin kendi arkadaş çevresindeki kişilerle etkileşiminin artırılması gerekiyordu ancak kimin kiminle arkadaş olduğu bilinmiyordu.
 
@@ -46,7 +46,7 @@ O zaman için büyük bir hamle yaparak üyelik sisteminde bir farklılık yarat
 
 Gerçekten de bütün bu uğraşlar sonuç buldu. Hatta o kadar çok insan sonuçlarını düşünmeden bu sistemi kullandı ki oluşan güvenlik açığı büyük şirketlerin tepkisini çekti. Tehlike şuydu; kullanıcılar authentication amacıyla verdikleri gerçek hesap kullanıcı ve şifreleri ile Yelp uygulamasına sınırsız erişim yetkisi veriyorlardı. Yelp bu bilgilerle kullanıcıların tüm maillerine, konuşma geçmişlerine, iletişim bilgilerine, güvenlik tercihlerine ve daha nicelerine erişim yetkisi elde ediyordu. Aslında ihtiyaç duyulan sadece arkadaş listesine erişebilmek iken kullanıcının tüm tercihlerini değiştirebilecek bir yetkiye sahip olmak doğru kurgulanmamış bir authorization kurgusundan başka bir şey değildi.
 
-# 3. Oauth Hamlesi
+## 3. Oauth Hamlesi
 
 Birkaç yıl önce çalışmaları başlatılan OpenID projesi açık bir standart olmadığı sebebiyle **2007** yılında kurulan **OAuth Discussion Group** açık protokol için taslak bir öneri yazma çalışmalarına başladı. Yelp senaryosuyla karşı karşıya kaldığı zamanlara denk gelen Google, bu çalışmalardan haberdar olduğunda destekleyerek süreci hızlandırdılar. Aynı senenin **Aralık** ayında [**OAuth Core 1.0 Protokol Şablonu**](https://oauth.net/core/1.0/) yayımlandı. İlerleyen süreçte kullanımın kolaylığı ve hedef teknolojilerin çeşitliliği gözetilerek yenilenen [**OAuth 2.0 Framework**](http://tools.ietf.org/html/rfc6749#section-4.4.2)’ü **2012 Ekim**’de yayımlandı.
 
@@ -60,13 +60,13 @@ Buradaki farklılık, artık belirli bilgilere erişime kullanıcının onay ver
 
 ![](https://miro.medium.com/max/950/1*thIslnlOrMO0FUCagfZMwA.png)
 
-# 4. Oauth2
+## 4. Oauth2
 
 ![](https://miro.medium.com/max/375/0*UV6qnowEJIvXlUI-.png)
 
 Zaman içerisinde ihtiyaçlar dahilinde Oauth 2.0 bir framework olarak ortaya koyuldu. Teknolojik çeşitliliğe ve kullanımın kolaylaştırılması odaklı gelişen versiyonda halen amaç aynı. Erişimin ve yetkilendirmenin sitelere direkt olarak kullanıcı adı/şifresi vermeksizin, erişimin bilgilerini barındıran bir token yapısıyla süreçleri yönetebilmek. Bu süreçleri OAuth 2.0 dört adet tanımla ele alıyor.
 
-## 4.1. Oauth2 Authorization Code Flow Örnek
+### 4.1. Oauth2 Authorization Code Flow Örnek
 
 ![](https://miro.medium.com/max/1594/1*jTDazKqC_J4-sed62C69oA.png)
 
@@ -78,7 +78,7 @@ Kullanıcı browser’ı aracılığıyla Yelp’e login olmak istediğinde Yelp
 
 Önemli olarak belirtmekte fayda var. Yukarıdaki akış en çok kullanılan OAuth2 akışlarından birisi olan **Authorization Code Flow** akışı. 3 Farklı flow daha bulunmaktadır. Bunlar, **Client Credentials Code Flow, Implicit Code Flow ve Resource Owner Password Credentials Code Flow**’dur.
 
-# 5. OpenID Connect
+## 5. OpenID Connect
 
 ![](https://miro.medium.com/max/375/0*ipuyew2--zak9w2i.png)
 
@@ -88,7 +88,7 @@ Bütün bu protokollerin, frameworklerin üzerine 2014'te [**OpenID Connect (OID
 -   **OAuth** kullanıcının kaynaklarına erişimi kontrol eden(authorization)
 -   **OpenID Connect** de yukarıdaki iki maddenin toplamını gerçekleştiren frameworktür.
 
-# 6. Sonuç
+## 6. Sonuç
 
 Sonraki yazımızda aynı OpenID Connect gibi **Federated Authentication** kullanan diğer bir **Access Management** standardı olan **SAML**’a ve çalışma prensiplerine**, User Federation, Kerberos, SSO** kavramlarına değineceğiz. Yazıya [buradan](https://www.mehmetcemyucel.com/2020/Access-Management-3-SSO-SAML-Kerberos-User-Federation/) erişebilirsiniz.
 

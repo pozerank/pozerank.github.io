@@ -22,13 +22,13 @@ Access Management serimizin son yazısında Spring Boot RestTemplate ve OpenFeig
 
 ---
 
-# 1. Senaryo
+## 1. Senaryo
 
 Uygulamamız ve test senaryomuz şu şekilde olacak. İki rest servis ayağa kaldıracağız. İki servisi de ayrı roller çağırabilir durumda olacak. Uygulamamızın client’ına sadece 1 role yetki vereceğiz. Bu yetkiyle 1. servisi çağırabildiğini, 2. servise ise unauthorized aldığını gözlemleyeceğiz. Bu çağırımları hem restTemplate ile hem de feign client ile yapacağız. Bütün bu süreci kolaylaştırmak için bir tane de bu servislerin çağırımının yapıldığı bir ayrı bir servis ayağa kaldıracağız.
 
-# 2. Ortam Kurulumu
+## 2. Ortam Kurulumu
 
-## 2.1. Keycloak on Docker
+### 2.1. Keycloak on Docker
 
 Ben pratik olması açısından Keycloak’u Docker üzerinde ayağa kaldıracağım. Dilerseniz sitesindeki [diğer yöntemlerle](https://www.keycloak.org/getting-started) de ayağa kaldırabilirsiniz. Komut satırından çalıştıracağımız script;
 
@@ -48,7 +48,7 @@ Bu noktadan sonra [http://localhost:8080](http://localhost:8080) 'e gittiğimizd
 
 Docker komutuna verdiğimiz **kullanıcı adı** ve **şifre** ile giriş yapıyoruz.
 
-## 2.2. Realm
+### 2.2. Realm
 
 ![](https://miro.medium.com/max/1599/1*s5CNmgh4VPZUGwT_smyxBg.png)
 
@@ -56,7 +56,7 @@ Realm’imizi yaratıyoruz. Kabaca birbirleriyle etkileşim içerisinde olacak u
 
 ![](https://miro.medium.com/max/1603/1*AIxIp1js0VkCAduCDrCKag.png)
 
-## 2.3. Roles
+### 2.3. Roles
 
 Sırada rollerimizi yaratma adımımız var. İki role, user-role ve user2-role yaratacağız. Bunun için menüden **Roles** başlığına gidiyoruz.
 
@@ -70,7 +70,7 @@ Sırada rollerimizi yaratma adımımız var. İki role, user-role ve user2-role 
 
 ![](https://miro.medium.com/max/1600/1*Pn1M0g7Xne6Gz0P9RfVWxA.png)
 
-## 2.4. Client
+### 2.4. Client
 
 Artık uygulamamızın bağlanacağı bilgileri vereceğimiz Client’ımızı yaratmaya geçebiliriz. **Client** başlığını tıkladığımızda aşağıdaki gibi bir ekran geliyor.
 
@@ -92,7 +92,7 @@ Son olarak **Credentials** tabına giderek uygulamamız için yaratılan **Secre
 
 ![](https://miro.medium.com/max/1599/1*IyaUMl3klJMNCkb98BI6UA.png)
 
-# 3. Spring Boot Uygulaması
+## 3. Spring Boot Uygulaması
 
 Şimdi geçelim Spring Boot uygulamamıza. Spring Initializr’dan yeni bir uygulama alıyoruz. **Pom.xml**’imizin son durumu aşağıdaki gibi olmalı.
 
@@ -106,13 +106,13 @@ Sonrasında bir Controller yaratalım. İki farklı rol tarafından tüketilebil
 
 **userRoleService** metodu Keycloak’ta yarattığımız rollerden **user-role**’e sahip olan client’lar tarafından çağırabilir. **userRole2Service** metodu ise sadece **user2-role**’e sahip clientlar tarafından çağırılabilir. Hatırlarsanız uygulamamız için yarattığımız client’a sadece ilk rolü tanımlamıştık. Madem öyle artık uygulamamızın **application.properties** dosyasının içerisinde Keycloak’u yapılandırmaya geçebiliriz.
 
-## 3.2. Application.properties
+### 3.2. Application.properties
 
 <script src="https://gist.github.com/mehmetcemyucel/4124f1335a090f432a14ecbea73a3db8.js"></script>
 
 Hatırlarsanız Keycloak ile uygulamamızın portlarını değiştireceğimizden bahsetmiştik. Bunun yanısıra Keycloak tarafından ihtiyaç duyulacak özellikler **keycloak** ile başlıyor. Uygulamamıza yaratılan client’ın adı, realmi gibi bilgiler burada bulunuyor. **auth-config** ile başlayan yapılandırmaları ise biz birazdan hem restTemplate’ımızı hem de FeignClient’ımızı konfigüre ederken kullanacağız.
 
-## 3.3. Keycloak Configuration
+### 3.3. Keycloak Configuration
 
 Uygulamamızın Keycloak’u ve uygulamamıza erişim yöntemlerini yapılandırmak için aşağıdaki sınıfa ihtiyacımız var.
 
@@ -120,7 +120,7 @@ Uygulamamızın Keycloak’u ve uygulamamıza erişim yöntemlerini yapılandır
 
 Burada **PreAuthorize** annotation’ı kullanılan servislerin haricinde tüm servislere erişim hakkı vermemizin sebebi birazdan controller’ımıza ekleyeceğimiz yeni metodların direk erişilebilir olmasını istememizden kaynaklanıyor.
 
-## 3.4. Test Rest Services
+### 3.4. Test Rest Services
 
 Controller’ımıza birkaç yapılandırma ekleyerek ilk eklediğimiz servisleri hızlıca deneyebileceğimiz servisler yaratıyoruz.
 
@@ -128,39 +128,39 @@ Controller’ımıza birkaç yapılandırma ekleyerek ilk eklediğimiz servisler
 
 test-rest-template servisine geçeceğimiz servis ismiyle ilk iki servisi direk çağırabiliriz. **FeignServiceClient** interface’inde de yine ilk yarattığımız servislerin imzaları bulunuyor. Bunları çağırabilmek için de test-feign-1 ve test-feign-2 servislerini yarattık. Ancak bunları çağırmadan önce restTemplate’ımızı ve FeignClient’ımızı OAuth2 kullanmak üzere yapılandırmamız gerekiyor.
 
-## 3.5. RestTemplate Configuration
+### 3.5. RestTemplate Configuration
 
 Application.yml’dan okuduğumuz değerlerle yapılandırmamızı yapıyoruz.
 
 <script src="https://gist.github.com/mehmetcemyucel/e2bbe04188fe24c982db5aebc84deb01.js"></script>
 
-## 3.6. Feign Client Configuration
+### 3.6. Feign Client Configuration
 
 Application.yml’dan okuduğumuz değerlerle yapılandırmamızı yapıyoruz.
 
 <script src="https://gist.github.com/mehmetcemyucel/3d4c9e544ca12577a91baad328d7e825.js"></script>
 
-# 4. Testler
+## 4. Testler
 
 Sonuçları gözlemlemek için [bu yazımda bahsettiğim](https://medium.com/mehmetcemyucel/spring-boot-rest-birim-entegrasyon-testi-43a7f9354a33) rest servis entegrasyon testi yöntemlerini de kullanabilirsiniz. Farkettiğiniz üzere ben bu yazımda doğrudan browserdan deneyerek gözlemlemeyi tercih ettim. Sonuç olarak 2si **restTemplate**, 2si **feingClient** olmak üzere deneyeceğimiz 4 farklı servis çağırımımız var. Aşağıya sonuçlarını ekliyorum.
 
-## 4.1. RestTemplate Authorized
+### 4.1. RestTemplate Authorized
 
 ![](https://miro.medium.com/max/696/1*FEY06jm12WgP7IhoW9vNxw.png)
 
-## 4.2. RestTemplate Unauthorized
+### 4.2. RestTemplate Unauthorized
 
 ![](https://miro.medium.com/max/741/1*qwhViagic8PQEd6sRJTXkw.png)
 
-## 4.3. Feign Client Authorized
+### 4.3. Feign Client Authorized
 
 ![](https://miro.medium.com/max/554/1*nas7-fEnQjP9hMX3EjHudA.png)
 
-## 4.4. Feign Client Unauthorized
+### 4.4. Feign Client Unauthorized
 
 ![](https://miro.medium.com/max/715/1*9DKU9ZfQIeD1bX5f_L4QHA.png)
 
-# 5. Sonuç
+## 5. Sonuç
 
 Yukarıdaki gibi bir entegrasyon ile Keycloak olsun olmasın tüm OAuth2 entegrasyonlarınızı kolay bir şekilde halledebilirsiniz. Refresh token, access token, veya expire konularını düşünmenize gerek kalmadan size hızlı entegrasyon sağlayacaktır. Keycloak ile bunun authorization kısmını da hazır ekranları aracılığıyla zahmetsizce yönetme imkanınız olacaktır. Uygulamanın kodlarına [buradan](https://github.com/mehmetcemyucel/springboot-keycloak) erişebilirsiniz.
 
