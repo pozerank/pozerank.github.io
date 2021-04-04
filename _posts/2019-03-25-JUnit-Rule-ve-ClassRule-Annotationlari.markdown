@@ -9,7 +9,7 @@ Bugün birim test(unit test) ve entegrasyon testleri(integration test) yazıyors
 
 ## 1. Giriş
 
-*"Tüm yazılım geliştiricilerin bilmesi gereken temel prensipler vardır, bunlara KISS, DRY, YAGNI, vb örnek verilebilir. Ama gözden kaçan bir nokta, bunların sadece business taşıyan kodlar için geçerli olduğu düşünülür. Ya test kodları? **Örneğin _Don’t Repeat Yourself_(DRY) gerçekten de test kodları için de önemli bir konu değil midir?***"
+>"Tüm yazılım geliştiricilerin bilmesi gereken temel prensipler vardır, bunlara KISS, DRY, YAGNI, vb örnek verilebilir. Ama gözden kaçan bir nokta, bunların sadece business taşıyan kodlar için geçerli olduğu düşünülür. Ya test kodları? **Örneğin _Don’t Repeat Yourself_(DRY) gerçekten de test kodları için de önemli bir konu değil midir?**"
 
 ![](https://cdn-images-1.medium.com/max/800/0*PI13arzqtcC-oXBh.jpg)
 
@@ -17,15 +17,15 @@ Rule kavramını ilk duyduğunuzda aklınıza ne geldi? Muhtemelen kelime anlam�
 
 Ama aklınıza muhtemel gelen başka soru işaretleri de vardır. Örneğin;
 
-*"Ben zaten bu tarz ihtiyaçlarımı zaten @Before ve @BeforeClass annotationlarını kullanarak da karşılayabiliyordum, niçin böyle bir yapı mevcut?"*
+>"Ben zaten bu tarz ihtiyaçlarımı zaten @Before ve @BeforeClass annotationlarını kullanarak da karşılayabiliyordum, niçin böyle bir yapı mevcut?"
 
 sorusu aklınızdan geçiyor olabilir. Veya
 
-*"Ben zaten kurallarımı bir test metodumun içerisinde kurgulayarak zaten testimi kodluyorum, niçin metod dışına çekme ihtiyacım olsun ki?"*
+>"Ben zaten kurallarımı bir test metodumun içerisinde kurgulayarak zaten testimi kodluyorum, niçin metod dışına çekme ihtiyacım olsun ki?"
 
 gibi sorulara sahipseniz doğru yoldayız. Öncelikle JUnit içerisindeki halihazırda tanımlı kuralları inceleyerek başlayıp, sonrasında custom rule’lar ile neler yapabileceğimizi inceleyeceğiz. Tekrar eden birçok ihtiyacı merkezi şekilde çözmenin yollarını göreceğiz. Eğer rule’suz hali mümkün ise nasıl yapılabileceğini de örnek olarak verip kazanımı gözlemlemeye çalışalım.
 
-"*NOT: Rule’unuzu @Rule annotation’ı ile metodlara, @ClassRule annotation’ı ile sınıflara bağlayabilirsiniz.*"
+>**NOT: Rule’unuzu @Rule annotation’ı ile metodlara, @ClassRule annotation’ı ile sınıflara bağlayabilirsiniz.**
 
 ## 2. Kurallar (Rules)
 

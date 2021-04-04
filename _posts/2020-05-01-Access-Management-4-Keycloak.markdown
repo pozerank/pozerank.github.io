@@ -24,7 +24,7 @@ image: https://miro.medium.com/max/150/0*n4KiIGqzdC2PX4QU.png
 ![keycloak](https://miro.medium.com/max/1250/0*n4KiIGqzdC2PX4QU.png)
 
 
-*_«Keycloak is an open source Identity and Access Management solution aimed at modern applications and services. It makes it easy to secure applications and services with little to no code.»_*
+>"Keycloak is an open source Identity and Access Management solution aimed at modern applications and services. It makes it easy to secure applications and services with little to no code."
 
 2018 Mart’ında [JBoss Community](https://developer.jboss.org/welcome) tarafından [Red Hat](https://www.redhat.com/en)’in katkılarıyla başlatılan [Keycloak](https://www.keycloak.org/), minimum kodla ya da hiç kod geliştirmeden uygulamalara erişim kontrolü için açık kaynak bir çözüm olarak kendisini tanımlıyor. Aşağıda yeteneklerinden bahsederken önceki 3 yazımızda bahsettiğimiz standartları da referans olarak ekleyeceğim.
 
