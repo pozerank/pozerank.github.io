@@ -6,12 +6,24 @@ tags: [üniversite, sunum, blockchain, contract, cryptocurrency, centralized, de
 image: https://cdn-images-1.medium.com/max/150/1*FOSTit_q9bjS-26yrO9CSg.jpeg
 ---
 
-8 Aralık’ta FSM Vakıf Üniversitesi’nde düzenlenen <a style="font-weight:bold" href="http://bilisim.io?utm_source=mehmetcemyucel.com&utm_medium=refferal&utm_campaign=blog" target="_blank">bilisim.io</a> etkinliğinde Blockchain hakkında konuştuk. 
+![](https://miro.medium.com/max/1999/1*FOSTit_q9bjS-26yrO9CSg.jpeg)
 
-Sunumun videosuna [bilisim.io youtube sayfasından](https://youtu.be/d5lv2a_Tx2o?t=1245) erişebilirsiniz. 
+8 Aralık’ta FSM Vakıf Üniversitesi’nde düzenlenen [bilisim.io](http://bilisim.io/) etkinliğinde Blockchain hakkında konuştuk. Etkinliğin video kaydına [buradan](https://www.youtube.com/watch?v=d5lv2a_Tx2o) erişebilirsiniz.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/d5lv2a_Tx2o?start=1245" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+***En yalın haliyle***
 
-Sonraki etkinlerde görüşmek üzere
+[**Mehmet Cem Yücel**](https://www.mehmetcemyucel.com)
+
+---
+
+**_Bu yazılar ilgilinizi çekebilir:_**
+
+ - [Spring Boot ile SLF4J ve Log4J Loglama Altyapısı](https://www.mehmetcemyucel.com/2019/spring-boot-ile-loglama-altyapisi/)
+ - [Twelve Factor Nedir Türkçe ve Java Örnekleri](https://www.mehmetcemyucel.com/2019/twelve-factor-nedir-turkce-ornek/)
+
+**_Blockchain teknolojisi ile ilgileniyor iseniz bunlar da hoşunuza gidebilir:_**
+
+ - [BlockchainTurk.net yazıları](https://www.mehmetcemyucel.com/categories/#blockchain)
+---
 
 
