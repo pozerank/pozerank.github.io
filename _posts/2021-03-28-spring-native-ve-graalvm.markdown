@@ -1,8 +1,8 @@
 ---
 title:  "Spring Native ve GraalVM"
 date:   2021-03-28 13:04:23
-categories: [mimari, java, spring, jvm, spring boot, maven, graalVm]
-tags: [Nativa, Spring Native, Java, Spring, Boot, GraalVM, Mikroservis, Microservice, Kubernetes, Ahead of Time, Just in Time, Compiler, native, image, docker, nedir, örnek, türkçe,  Nasıl yapılır, nedir, Örnek, Nasıl, Mehmet Cem Yücel, Mehmet, Cem, Yücel, Yucel]
+categories: [mimari, java, spring, jvm, spring boot, maven, graalvm]
+tags: [native, spring native, java, spring boot, graalvm, mikroservis, microservice, kubernetes, ahead of time, just in time, compiler, native, image, docker, nedir, örnek, türkçe,  nasıl yapılır, mehmet cem yücel]
 image: https://miro.medium.com/max/150/0*rSA-gwY01_KDq7Nk
 ---
 

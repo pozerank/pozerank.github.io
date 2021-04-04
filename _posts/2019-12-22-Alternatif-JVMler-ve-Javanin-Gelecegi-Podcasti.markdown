@@ -1,8 +1,8 @@
 ---
 title:  "Alternatif JVM’ler ve Javanın Geleceği Podcasti"
 date:   2019-12-22 15:04:23
-categories: [java, jvm, quarkus, microservices, graalVm, mimari]
-tags: [Garbage, Collector, Oracle, Hotspot, OpenJDK, Quarkus, Amazon, Corretto, OpenJ9, GraalVM, LLVM, Java, JVM, Podcast, Mehmet Cem Yücel, Mehmet, Cem, Yücel, Ahead of Time, Just in Time, Compiler, native, image, docker, nedir, örnek, türkçe, memory, elastic, Nasıl yapılır, nedir, Örnek]
+categories: [java, jvm, quarkus, microservices, graalvm, mimari]
+tags: [podcast, istanbul, jug, garbage, collector, hotspot, openjdk, quarkus, amazon, corretto, openj9, graalvm, llvm, java, jvm, podcast, ahead of time, just in time, nedir, örnek, türkçe, nasıl yapılır, mehmet cem yücel]
 image: https://miro.medium.com/max/150/1*gp7kdBQxRzDUmAMRa74LEg.png
 ---
 
@@ -10,57 +10,56 @@ image: https://miro.medium.com/max/150/1*gp7kdBQxRzDUmAMRa74LEg.png
 
 ![](https://miro.medium.com/max/750/1*gp7kdBQxRzDUmAMRa74LEg.png)
 
+# 1 Podcast Linkleri
 
 [ITunes Podcast](https://podcasts.apple.com/tr/podcast/alternatif-jvmler-ve-javan%C4%B1n-gelece%C4%9Fi/id1476927966?i=1000460327428)
 
 [Spoify](https://open.spotify.com/episode/2J0RwiuqalbFsUt5mWXLc4)
 
-# Linkler:
+# 2 Bahsedilen Teknolojiler
 
-## Garbage First (G1) Garbage Collector:
+## 2.1 Garbage First (G1) Garbage Collector:
 
 [_https://www.oracle.com/technetwork/tutorials/tutorials-1876574.html_](https://openjdk.java.net/groups/hotspot/)
 
-## Z Garbage Collector (ZGC):
+## 2.2 Z Garbage Collector (ZGC):
 
 [https://wiki.openjdk.java.net/display/zgc/Main](https://wiki.openjdk.java.net/display/zgc/Main)
 
 
-## Oracle Hotspot:
+## 2.3 Oracle Hotspot:
 
 [https://www.oracle.com/technetwork/java/javase/tech/index-jsp-136373.html](https://www.oracle.com/technetwork/java/javase/tech/index-jsp-136373.html)
 
 
-
-## OpenJDK Hotspot:
+## 2.4 OpenJDK Hotspot:
 
 [https://openjdk.java.net/groups/hotspot/](https://openjdk.java.net/groups/hotspot/)
 
 
-## LLVM:
+## 2.5 LLVM:
 
 [https://llvm.org/docs/tutorial/](https://llvm.org/docs/tutorial/)
 
 
-## GraalVM:
+## 2.6 GraalVM:
 
 [https://www.graalvm.org/docs/](https://www.graalvm.org/docs/)
 
 
-## OpenJ9:
+## 2.7 OpenJ9:
 
 [https://www.eclipse.org/openj9/docs/](https://www.eclipse.org/openj9/docs/)
 
 
-## Amazon Corretto:
+## 2.8 Amazon Corretto:
 
 [_https://docs.aws.amazon.com/corretto/_](https://docs.aws.amazon.com/corretto/)
 
-## Quarkus:
+## 2.9 Quarkus:
 
 [https://quarkus.io/](https://quarkus.io/)
 
-Görüşmek üzere
 
 ***En yalın haliyle***
 

@@ -2,7 +2,7 @@
 title:  "MapStruct ile SpringBoot Obje Dönüşümü"
 date:   2019-07-16 15:04:23
 categories: [java, test, spring, spring boot, maven]
-tags: [Spring, MapStruct, Mapper, ObjectMapper, Boot, Nasıl yapılır, nedir, Örnek, Nasıl, Mehmet Cem Yücel, Mehmet, Cem, Yücel, Yucel]
+tags: [spring boot, spring, mapstruct, mapper, object mapper, nasıl yapılır, nedir, örnek, nasıl, mehmet cem yücel]
 image: https://miro.medium.com/max/150/1*9DhTKcVmIApp1AXoGZ4A4A.png
 ---
 
@@ -12,13 +12,13 @@ Bu yazımızda [**MapStruct**](http://mapstruct.org/)  isimli `Java Bean Mapper`
 ![](https://miro.medium.com/max/6250/1*9DhTKcVmIApp1AXoGZ4A4A.png)
 [](http://luman.io/meaning-not-mechanics%E2%80%8A-%E2%80%8Aa-human-approach-organizational-transformation/)
 
-# 1. Giriş
+# 1 Giriş
 
 Kodlama yaparken ihtiyaç duyduğumuz bilgileri nesnelerimizin içerisindeki alanlarda tutarız. Nesneye dayalı programlama paradigmasına göre yaptığımız tüm tasarımlar dış dünya ile iletişim noktasına geldiğimizde birebir örtüşmeyebilir. Devraldığınız bir projede tasarladığınız bir [**POJO**](https://en.wikipedia.org/wiki/Plain_old_Java_object)(Plain Old Java Object), veritabanındaki varlık modeliyle(`**ER**``: Entity Relationship Model`) örtüşmeyebileceği gibi dış servislerden aldığınız DTO (Data Transfer Object) nesneler de sizin iç tasarımınızla birebir örtüşmeyecektir. Bu gibi durumlarda birden fazla obje katmanları (`entity`, `DTO`, `vb`..) yaratarak kendi kodumuzu dış dünyanın etkilerinden korumaya çalışırız. Ancak her ihtiyaç duyduğumuzda bu nesneleri birbirlerine dönüştürmek geliştirme maliyeti açısından zaman çalan bir işlemdir.
 
 **MapStruct** bu ihtiyacımızı derleme zamanında kolayca karşılayan ve bizim için mapper sınıfları yaratan bir kütüphane. Arayüzler aracılığıyla  kaynak ve hedef `**POJO**`  sınıflarının nasıl eşitleneceğini tasarlayabilirsiniz. Başka bir yöntem olarak sadece annotationlar kullanarak `**Spring**`  ile bu işi nasıl inceleyeceğimizi aşağıda inceleyeceğiz.
 
-# 2. Bağımlılıklar
+# 2 Bağımlılıklar
 
 Maven için `pom.xml` dosyasına aşağıdaki bağımlılığı ve yapılandırmayı ekliyoruz.
 
@@ -28,7 +28,7 @@ Bağımlılıkların yanı sıra eklememiz gereken bir yapılandırma daha var. 
 
 <script src="https://gist.github.com/mehmetcemyucel/f0e3debe8fd7758e2261b3707ce9f68a.js"></script>
 
-# 3. Klonlayıcı
+# 3 Klonlayıcı
 
 ## 3.1 POJO Sınıfı
 
@@ -50,7 +50,7 @@ Bir nesne örneği yaratıp mapper’a klonlattığımızda aynı değerlere sah
 
 <script src="https://gist.github.com/mehmetcemyucel/9bc8c5cf9c5565769bed3c16ca06661b.js"></script>
 
-# 4. Kalıtıcı
+# 4 Kalıtıcı
 
 Herhangi bir kalıtım hiyerarşisinde olmasa dahi aynı isimli alanlara ve getter/setterlara sahip iki sınıf arasında kolay bir dönüşüm yapılabilir.
 
@@ -74,7 +74,7 @@ Aşağıdaki testleri çalıştırarak senaryomuzun çalıştığını gözlemle
 
 <script src="https://gist.github.com/mehmetcemyucel/afe34f23c9e7b2a921315438e5979ec6.js"></script>
 
-# 5. Alan Alan Eşitleyici
+# 5 Alan Alan Eşitleyici
 
 Aynı veri tipindeki farklı field isimlerine sahip sınıfları eşitlemek de mümkündür. Bunun için aşağıdaki sınıfları oluşturalım.
 
@@ -96,7 +96,7 @@ Değişken isimlerimiz farklı ancak alan tiplerimiz aynı ise aşağıdaki gibi
 
 <script src="https://gist.github.com/mehmetcemyucel/0e50cd8367fb5fe2a2881686ccdc58c7.js"></script>
 
-# 6. Tip Dönüştürücü
+# 6 Tip Dönüştürücü
 
 Sadece aynı tipte olması gerekmeksizin farklı değerlere ve isimlere sahip sınıfları da birbirlerine dönüştürmemiz mümkündür.
 
@@ -116,7 +116,7 @@ Yukarıdaki mapperdaki gibi formatını verdiğimiz bir Instant, Date gibi tarih
 
 <script src="https://gist.github.com/mehmetcemyucel/4dc6c8c3f63995d6d305981de8abf99f.js"></script>
 
-# 7. Sonuç
+# 7 Sonuç
 
 Giriş niteliğindeki bu yazının haricinde MapStruct’ın farklı birçok mappingi yapabildiğini hatırlatmakta fayda var. `Expression`_’_lar ile mappingler yapabileceğiniz gibi `has a` ilişkisine sahip sınıflarda da mappinler yapabilirsiniz. Veya `Abstract` sınıflar ile tamamen `manuel mapping`ler de yapabilirsiniz.
 
@@ -124,7 +124,8 @@ MapStruct bütün bu özelliklerin dışında `Lombok` ,`Kotlin`, `Gradle`, `JPA
 
 Java diğer mapper toollarıyla kıyaslandığında MapStruct performansıyla denemeye başlamak için çok şey vaadediyor. Bu kıyaslamalarla ilgili örnek bir yazıya [buradan](https://www.baeldung.com/java-performance-mapping-frameworks) ulaşabilirsiniz.
 
-Projenin kodlarına [buradan](https://github.com/mehmetcemyucel/mapstruct) erişebilirsiniz. Sonraki yazılarda görüşmek üzere.
+Projenin kodlarına [buradan](https://github.com/mehmetcemyucel/mapstruct) erişebilirsiniz. 
+
 
 ***En yalın haliyle***
 

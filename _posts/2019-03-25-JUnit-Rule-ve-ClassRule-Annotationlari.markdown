@@ -2,11 +2,12 @@
 title:  "JUnit - @Rule ve @ClassRule Annotationları"
 date:   2019-03-03 15:04:23
 categories: [java, test]
-tags: [Junit, ClassRule, Rule, RuleChain, ExternalResource, ExpectedException, Watchman, TemporaryFolder, DRY, YAGNI, KISS, Mockito, nedir, Örnek, Nasıl, Mehmet Cem Yücel, Mehmet, Cem, Yücel, Yucel]
+tags: [junit, classrule, rule, rulechain, externalresource, expectedexception, watchman, temporaryfolder, dry, yagni, kiss, mockito, nedir, örnek, nasıl, mehmet cem yücel]
 image: https://cdn-images-1.medium.com/max/150/0*PI13arzqtcC-oXBh.jpg
 ---
-
 Bugün birim test(unit test) ve entegrasyon testleri(integration test) yazıyorsanız hayatınıza renk katacağını inandığım bir konuyu kaleme alacağım. Junit4'te var olan ancak az bilinen @Rule ve @ClassRule annotationlarının ne olduklarını ve bunlarla neler yapabileceğimizi örneklerle incelemeye başlayalım.
+
+# 1 Giriş
 
 *"Tüm yazılım geliştiricilerin bilmesi gereken temel prensipler vardır, bunlara KISS, DRY, YAGNI, vb örnek verilebilir. Ama gözden kaçan bir nokta, bunların sadece business taşıyan kodlar için geçerli olduğu düşünülür. Ya test kodları? **Örneğin _Don’t Repeat Yourself_(DRY) gerçekten de test kodları için de önemli bir konu değil midir?***"
 
@@ -26,7 +27,9 @@ gibi sorulara sahipseniz doğru yoldayız. Öncelikle JUnit içerisindeki haliha
 
 "*NOT: Rule’unuzu @Rule annotation’ı ile metodlara, @ClassRule annotation’ı ile sınıflara bağlayabilirsiniz.*"
 
-### Timeout
+# 2 Kurallar (Rules)
+
+## 2.1 Timeout
 
 Bildiğiniz gibi yazdığımız testlere maksimum çalışacakları süre mutlaka vermemiz gereken bir bilgi. Çünkü sadece çalışan testin veya test double’ının uzun sürmesi halinde bir şeyler yolunda gitmiyor olabilir, bu da atlanılmaması gereken bir konudur.
 
@@ -43,7 +46,7 @@ Eğer yukarıdaki gibi her metodun üzerinde tek tek vermek istemiyorsanız ve s
 
 <script src="https://gist.github.com/mehmetcemyucel/6c9f9fa59f9961c6dbb365641e2ace60.js"></script>
 
-### TemporaryFolder
+## 2.2 TemporaryFolder
 
 Eğer file i/o testleriniz varsa geçici dosyalar yaratmanız, bunları test sonrasında temizlemeniz sizin için hayattan bezdirici olabilir. Özellikle de iç içe folderlara ihtiyacınız varsa işler çığrından çıkabilir. Buradaki tüm süreci kendiniz yönetecekseniz en basit haliyle muhtemelen şu şekilde bir kod yazmanız gerekli.
 
@@ -53,19 +56,19 @@ Eğer bu süreçlerle hiç uğraşmayayım, hızlıca asıl odaklanmam gereken k
 
 <script src="https://gist.github.com/mehmetcemyucel/4696c95e3921de093efacbb471fe21f4.js"></script>
 
-### RuleChain
+## 2.3 RuleChain
 
 Her bir testinizi çevreleyen rulelar dizisi oluşturmak isterseniz RuleChain tam size göre! Kullanımını aşağıda görebilirsiniz. (bağımlı olunan LoggingRule sınıfına custom rule örneğinden erişebilirsiniz.)
 
 <script src="https://gist.github.com/mehmetcemyucel/a0187cffacaf3a2ec447580ea4f6cb63.js"></script>
 
-### Watchman (TestWatcher)
+## 2.4 Watchman (TestWatcher)
 
 Çalışan testlerinizin lifecycle’ındaki her bir statü durumunda aksiyonlar almanızı sağlayabilecek yetenekli bir rule. Testlerinizin çalışma durumunu raporlayabilir, adımları custom kodlarınızla zenginleştirebilirsiniz.
 
 <script src="https://gist.github.com/mehmetcemyucel/c4b692786826d019cce0718eddf5e322.js"></script>
 
-### ExpectedException
+## 2.5 ExpectedException
 
 Bir test metodunda exception senaryosunu test etmek istediğinizde birçok farklı yol mevcut. İyi bir opsiyon olmasa da try-catch bloğu ile kontrollerinizi yapabileceğiniz gibi AssertJ gibi kütüphaneler ile daha komplike exception kontrollerini kolayca yapabilirsiniz. Ancak bir kütüphane kullanmadığımızı varsayarsak en optimum exception kontrolü aşağıdakine benzer bir yapıda olacaktır.
 
@@ -75,13 +78,13 @@ Yukarıdakine alternatif olarak bunu ExpectedException kuralı ile aşağıdaki 
 
 <script src="https://gist.github.com/mehmetcemyucel/cd353046d55a9a41af1aa7ac8823e321.js"></script>
 
-### TestName
+## 2.6 TestName
 
 Bu rule @TestRule rule’unun biraz özelleşmiş hali. Çalışmakta olan testin metodunun adını test çalışırken almanızı sağlıyor. Farklı kullanım alanları sizin hayal gücünüze kalmış.
 
 <script src="https://gist.github.com/mehmetcemyucel/2b822beab375677d342b0b9410f0c1ff.js"></script>
 
-### Custom Rule - LoggingRule
+## 2.7 Custom Rule - LoggingRule
 
 Aslında hazır kurallar yukarıdakilerden ibaret değil, diğer Rule’lara [JUnit takımının wikisinden](https://github.com/junit-team/junit4/wiki/Rules) erişebilirsiniz. Farkındaysanız Rule’lar tekrarlayan ihtiyaçları test metodu veya test sınıfı seviyesinde izole etmek için güzel bir yöntem. Buradan itibaren birkaç tane kompleks kullanım senaryolarına örnek vereceğim.
 
@@ -89,7 +92,7 @@ Custom bir rule yazmak için ihtiyacımız TestRule interface’ini ve onun appl
 
 <script src="https://gist.github.com/mehmetcemyucel/4932ee2ee8e715ac4a7441d4f9df23bb.js"></script>
 
-### Custom Rule - MockInitRule
+## 2.8 Custom Rule - MockInitRule
 
 Başka bir örnek olarak mocklarınızın initiation işlemini ortaklaştıran bir rule yazabilirsiniz. Örneğin bir servisiniz ve bu servisinizin bağımlı olduğu başka bir servisiniz olsun.
 
@@ -107,7 +110,7 @@ Ayrıca tekrar kullanılabilir bir davranış seti oluşturmak istiyorsak da yuk
 
 <script src="https://gist.github.com/mehmetcemyucel/6eca28313c990ace0f165b4aab404c33.js"></script>
 
-### ExternalResource
+## 2.9 ExternalResource
 
 Son örnek olarak **ExternalResource** kavramından bahsedelim. Örneğin testlerinizin öncesinde ayağa kaldırmanız gereken bir sunucu var, bir resource var. Bu resource sizin testleriniz kapsamında otomatize edebildiğiniz bir şey değil. İşte bu noktada ExternalResource ile bir rule tanımlayıp ihtiyaçlarınızı bu yol ile halledebilirsiniz. Örnek kodumuz;
 
@@ -121,11 +124,10 @@ Ve son olarak çıktımız;
 
 <script src="https://gist.github.com/mehmetcemyucel/7c7293d69147ea1161b16cff95edb06e.js"></script>
 
-### SONUÇ
+# 3 SONUÇ
 
 Yukarıdaki örneklerde de anlattığımız gibi, @Rule ve @ClassRule annotationlarının geniş kullanım alanları mevcut. Tekrar kullanılabilir test yazmak, test sınırlarını genişletmek, yazılmış testlerin statelerini yakından takip edebilmek ve mevcut testlerle yapamadığımız dış kaynakların başlatılması ve sonlandırılması gibi alanlarda kullanılabileceği gibi tamamen custom rule’lar yazarak yapabileceklerimizin sınırlarını ortadan da kaldırabiliriz.
 
-Sonraki yazılarda görüşmek üzere
 
 ***En yalın haliyle***
 

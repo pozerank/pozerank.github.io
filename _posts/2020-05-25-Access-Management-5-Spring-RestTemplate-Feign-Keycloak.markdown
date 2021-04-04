@@ -2,7 +2,7 @@
 title:  "Access Management 5-Spring RestTemplate Feign Keycloak"
 date:   2020-05-25 21:04:23
 categories: [mimari, security]
-tags: [Keycloak, Feign, client, Spring, Boot, RestTemplate, OAuth2, SAML, Ldap, OIDC, OAuth, OpenID, Connect, authentication, Authorization, Spring, Security, Mehmet Cem Yücel, Mehmet, Cem, Yücel, nedir, örnek, türkçe, Nasıl yapılır, nedir, Örnek]
+tags: [keycloak, feign, client, spring, boot, resttemplate, oauth2, ldap, oidc, oauth, openid, connect, authentication, authorization, spring, security, nedir, örnek, türkçe, nasıl yapılır, mehmet cem yücel]
 image: https://cdn-images-1.medium.com/max/150/0*knMgRQMoNMWQciZs.jpg
 ---
 
@@ -22,11 +22,11 @@ Access Management serimizin son yazısında Spring Boot RestTemplate ve OpenFeig
 
 ---
 
-# 1.0 Senaryo
+# 1 Senaryo
 
 Uygulamamız ve test senaryomuz şu şekilde olacak. İki rest servis ayağa kaldıracağız. İki servisi de ayrı roller çağırabilir durumda olacak. Uygulamamızın client’ına sadece 1 role yetki vereceğiz. Bu yetkiyle 1. servisi çağırabildiğini, 2. servise ise unauthorized aldığını gözlemleyeceğiz. Bu çağırımları hem restTemplate ile hem de feign client ile yapacağız. Bütün bu süreci kolaylaştırmak için bir tane de bu servislerin çağırımının yapıldığı bir ayrı bir servis ayağa kaldıracağız.
 
-# 2.0 Ortam Kurulumu
+# 2 Ortam Kurulumu
 
 ## 2.1 Keycloak on Docker
 
@@ -92,7 +92,7 @@ Son olarak **Credentials** tabına giderek uygulamamız için yaratılan **Secre
 
 ![](https://miro.medium.com/max/1599/1*IyaUMl3klJMNCkb98BI6UA.png)
 
-# 3.0 Spring Boot Uygulaması
+# 3 Spring Boot Uygulaması
 
 Şimdi geçelim Spring Boot uygulamamıza. Spring Initializr’dan yeni bir uygulama alıyoruz. **Pom.xml**’imizin son durumu aşağıdaki gibi olmalı.
 
@@ -140,7 +140,7 @@ Application.yml’dan okuduğumuz değerlerle yapılandırmamızı yapıyoruz.
 
 <script src="https://gist.github.com/mehmetcemyucel/3d4c9e544ca12577a91baad328d7e825.js"></script>
 
-# 4.0 Testler
+# 4 Testler
 
 Sonuçları gözlemlemek için [bu yazımda bahsettiğim](https://medium.com/mehmetcemyucel/spring-boot-rest-birim-entegrasyon-testi-43a7f9354a33) rest servis entegrasyon testi yöntemlerini de kullanabilirsiniz. Farkettiğiniz üzere ben bu yazımda doğrudan browserdan deneyerek gözlemlemeyi tercih ettim. Sonuç olarak 2si **restTemplate**, 2si **feingClient** olmak üzere deneyeceğimiz 4 farklı servis çağırımımız var. Aşağıya sonuçlarını ekliyorum.
 
@@ -160,11 +160,10 @@ Sonuçları gözlemlemek için [bu yazımda bahsettiğim](https://medium.com/meh
 
 ![](https://miro.medium.com/max/715/1*9DKU9ZfQIeD1bX5f_L4QHA.png)
 
-# 5.0 Sonuç
+# 5 Sonuç
 
 Yukarıdaki gibi bir entegrasyon ile Keycloak olsun olmasın tüm OAuth2 entegrasyonlarınızı kolay bir şekilde halledebilirsiniz. Refresh token, access token, veya expire konularını düşünmenize gerek kalmadan size hızlı entegrasyon sağlayacaktır. Keycloak ile bunun authorization kısmını da hazır ekranları aracılığıyla zahmetsizce yönetme imkanınız olacaktır. Uygulamanın kodlarına [buradan](https://github.com/mehmetcemyucel/springboot-keycloak) erişebilirsiniz.
 
-Sonraki yazılarda görüşmek üzere
 
 ***En yalın haliyle***
 
