@@ -67,13 +67,13 @@ Daha detaylı bilgiler için başarılı bir dokümantasyon sayfaları mevcut. [
 
 **_Bu yazılar ilgilinizi çekebilir:_**
 
- - [_Bir Yazılımcının Bilmesi Gereken 15 Madde_](https://www.mehmetcemyucel.com/2019/bir-yazilimcinin-bilmesi-gereken-15-madde/)
- - [_Spring ve Java Hantal Mı — GraalVM ve Quarkus’a Giriş_](https://www.mehmetcemyucel.com/2019/Spring-ve-Java-Hantal-Mi-GraalVM-ve-Quarkus-Inceleme/)
- - [_Mikroservisler-Service Mesh Nedir_](https://www.mehmetcemyucel.com/2019/mikroservisler-service-mesh-nedir/)
- - [_12 Factor Nedir Türkçe ve Java Örnekleri_](https://www.mehmetcemyucel.com/2019/twelve-factor-nedir-turkce-ornek/)
+ - [Bir Yazılımcının Bilmesi Gereken 15 Madde](https://www.mehmetcemyucel.com/2019/bir-yazilimcinin-bilmesi-gereken-15-madde/)
+ - [Spring ve Java Hantal Mı — GraalVM ve Quarkus’a Giriş](https://www.mehmetcemyucel.com/2019/Spring-ve-Java-Hantal-Mi-GraalVM-ve-Quarkus-Inceleme/)
+ - [Mikroservisler-Service Mesh Nedir](https://www.mehmetcemyucel.com/2019/mikroservisler-service-mesh-nedir/)
+ - [12 Factor Nedir Türkçe ve Java Örnekleri](https://www.mehmetcemyucel.com/2019/twelve-factor-nedir-turkce-ornek/)
 
 **_Blockchain teknolojisi ile ilgileniyor iseniz bunlar da hoşunuza gidebilir:_**
 
- - [_BlockchainTurk.net yazıları_](https://www.mehmetcemyucel.com/categories/#blockchain)
+ - [BlockchainTurk.net yazıları](https://www.mehmetcemyucel.com/categories/#blockchain)
 
 ---

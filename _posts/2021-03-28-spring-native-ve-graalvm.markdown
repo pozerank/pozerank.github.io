@@ -6,7 +6,7 @@ tags: [native, spring native, java, spring boot, graalvm, mikroservis, microserv
 image: https://miro.medium.com/max/150/0*rSA-gwY01_KDq7Nk
 ---
 
-[_“Spring ve Java Hantal Mı - GraalVM ve Quarkus’a Giriş”_](https://www.mehmetcemyucel.com/2019/Spring-ve-Java-Hantal-Mi-GraalVM-ve-Quarkus-Inceleme/)  yazımızda Java’nın tüm platformlarda çalışabilmesi için göz yumduğu şeylerden ve buna bir çözüm olarak ortaya atılan [GraalVM](https://www.graalvm.org/)’den ve nasıl çalıştığından bahsetmiştik. GraalVM’in [Spring dünyası](https://spring.io/) ile birlikte çalışabilmesinin güç olduğuna değinmiş ve [Quarkus](https://quarkus.io/) ile neler yapılabileceğini incelemiştik.
+[“Spring ve Java Hantal Mı - GraalVM ve Quarkus’a Giriş”](https://www.mehmetcemyucel.com/2019/Spring-ve-Java-Hantal-Mi-GraalVM-ve-Quarkus-Inceleme/) yazımızda Java’nın tüm platformlarda çalışabilmesi için göz yumduğu şeylerden ve buna bir çözüm olarak ortaya atılan [GraalVM](https://www.graalvm.org/)’den ve nasıl çalıştığından bahsetmiştik. GraalVM’in [Spring dünyası](https://spring.io/) ile birlikte çalışabilmesinin güç olduğuna değinmiş ve [Quarkus](https://quarkus.io/) ile neler yapılabileceğini incelemiştik.
 
 Aradan geçen yaklaşık 1,5 senelik süre zarfında Spring cephesinde bu konu hakkında gelişmeler oldu. Bugünkü yazımızın konusunu oluşturan bu gelişmeleri, birlikte çalışmasının neden güç olduğunu ve buna çözüm olarak nelerin yapıldığını birlikte inceleyelim.
 
@@ -88,7 +88,6 @@ Sonraki yazımızda bir Spring Native projesinin nasıl ayağa kaldırılabilece
 ***Ayrıca diğer kaynaklar(referans)***
 
  - [https://docs.spring.io/spring-framework/docs/3.0.0.M3/reference/html/ch08s06.html](https://docs.spring.io/spring-framework/docs/3.0.0.M3/reference/html/ch08s06.html)
-
  - [https://docs.spring.io/spring-native/docs/current/reference/htmlsingle](https://docs.spring.io/spring-native/docs/current/reference/htmlsingle)
 
 ---
