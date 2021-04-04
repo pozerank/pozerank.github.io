@@ -2,7 +2,7 @@
 title:  "Cryptocurrencyler ve Değer Anlayışı Balon Mu?"
 date:   2018-01-11 12:04:23
 categories: [blockchain]
-tags: [cryptocurrency, digital, para, örnek, nedir, Distributed, Legder, Blockchain, Bitcoin,  Block, Mehmet Cem Yücel, Mehmet, Cem, Yucel, Yücel, blockchainturk, blockchainturk.net]
+tags: [cryptocurrency, digital, para, örnek, nedir, distributed, legder, blockchain, bitcoin, block, blockchainturk, blockchainturk.net]
 image: https://cdn-images-1.medium.com/max/150/1*Jp8ajkGPZN3zBo5jL8dXtg.jpeg
 ---
 

@@ -2,57 +2,51 @@
 title:  "Eclipse Conditional Breakpoint"
 date:   2015-01-19 20:04:23
 categories: [ide, tools]
-tags: [ java, jvm, eclipse, debug, debugging, koşullu, şartlı, conditional, breakpoint, mehmetcemyucel, mehmet, cem, yücel, yucel]
+tags: [ java, jvm, eclipse, debug, debugging, koşullu, şartlı, conditional, breakpoint]
 ---
-
 
 Genelde kodda değişiklik yaparak çözme yoluna gittiğimiz ama aslında hazır bir özellikle işin içinden kolayca çıkabileceğimiz bir özelliği paylaşmak istiyorum.  
   
 Örneğin bir kodunuz var. Kodun içerisindeki bir değişken, istediğiniz spesifik bir değere eşit olduğunda [debug](http://en.wikipedia.org/wiki/Debugging) etmek istiyorsunuz. Aşağıda 13. satırdaki System.out.println metoduna bir [breakpoint](http://en.wikipedia.org/wiki/Breakpoint) koymak istiyorum ama sadece i değeri 59 olduğu zaman işlemlerimi gözlemlemek istiyorum. Kodumuzu  
   
-  
 
-package com.cem;
 
-import java.util.Random;
+	import java.util.Random;
 
-public class Test {
+	public class Test {
 
- public static void main(String[] args) {
+	 public static void main(String[] args) {
 
-  int i = 0;
-  Random random = new Random();
-  while (true) {
-   i = random.nextInt(100);
-   if (i == 59) {
-    ...
-   }
-  }
- }
+	  int i = 0;
+	  Random random = new Random();
+	  while (true) {
+	   i = random.nextInt(100);
+	   if (i == 59) {
+		...
+	   }
+	  }
+	 }
 
-}
+	}
 
 genelde bu şekilde değiştirip if'in içerisine girince neler olduğunu görerek devam ederiz dediğinizi duyar gibiyim :)  
   
 O zaman if'siz, yalın haliyle kodumuzun görüntüsü aslında şöyle bir şey olduğunu varsayalım.  
 
-package com.cem;
 
-import java.util.Random;
+	public class Test {
 
-public class Test {
+	 public static void main(String[] args) {
 
- public static void main(String[] args) {
-
-  int i = 0;
-  Random random = new Random();
-  while (true) {
-   i = random.nextInt(100);
-   System.out.println("Hello world");
-   ...
-  }
- }
-}
+	  int i = 0;
+	  Random random = new Random();
+	  while (true) {
+	   i = random.nextInt(100);
+	   System.out.println("Hello world");
+	   ...
+	  }
+	 }
+	}
 
 i değişkeni 59 değerini aldığında 13 nolu satıra koyacağım breakpoint'e takılmasını ve ilerleyen kodları adım adım ilerlemek istediğimizi varsayalım. yapacağımız işlem şu şekilde:  
   
@@ -65,7 +59,22 @@ i değişkeni 59 değerini aldığında 13 nolu satıra koyacağım breakpoint'e
 [![](http://1.bp.blogspot.com/-h1IuED8LuXU/VL0XW3WgMTI/AAAAAAAAAh4/ASCn4jti_Tw/s1600/breakpoint2.png)](http://1.bp.blogspot.com/-h1IuED8LuXU/VL0XW3WgMTI/AAAAAAAAAh4/ASCn4jti_Tw/s1600/breakpoint2.png)
 
   
-  
 Bunları yaptıktan sonra koşul sağlandığı zaman çalışan thread kesilip [breakpointte](http://en.wikipedia.org/wiki/Breakpoint) emrinize amade bekler durumda oluyor.  
   
-Bol kodlu günler !
+***En yalın haliyle***
+
+[**Mehmet Cem Yücel**](https://www.mehmetcemyucel.com)
+
+---
+
+**_Bu yazılar ilgilinizi çekebilir:_**
+
+ - [Bir Yazılımcının Bilmesi Gereken 15 Madde](https://www.mehmetcemyucel.com/2019/bir-yazilimcinin-bilmesi-gereken-15-madde/)
+ - [Spring Boot Devtools ile Docker Üzerindeki Kodu Debug Etme ve Değiştirme](https://www.mehmetcemyucel.com/2019/spring-boot-devtools-ile-docker-uzerindeki-kodu-debug-etme-ve-degistirme/)
+ - [Spring Boot Property’lerini Jasypt ile Şifrelemek](https://www.mehmetcemyucel.com/2019/spring-boot-propertylerini-jasypt-ile-sifrelemek/)
+
+**_Blockchain teknolojisi ile ilgileniyor iseniz bunlar da hoşunuza gidebilir:_**
+
+ - [BlockchainTurk.net yazıları](https://www.mehmetcemyucel.com/categories/#blockchain)
+
+---

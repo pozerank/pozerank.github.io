@@ -2,10 +2,9 @@
 title:  "Otomatik Fare Kontrolü"
 date:   2010-02-18 20:04:23
 categories: [microsoft, c#]
-tags: [ fare,kontrol,event,mouse,com nesneleri,kütüphane,dll,otomatik,tıkla,interopservices, API, balık, besleme,cem, com nesneleri, dll, event, fare, fishville, kontrol, kütüphane, mehmet, mouse, otomatik, tıkla, tıklama, yücel]
+tags: [fare, kontrol, interop services, API]
 ---
-
-
+Bugün interop servisleri aracılığıyla windows işletim sistemi üzerinde fare hareketlerini kontrol etme örneği yapacağız.
 
 Konumuza giriş yapalım. Gün boyunca bilgisayarda tekrar tekrar yaptığınız şeyler oluyordur elbet. Farenizin belirli aralıklarla ekranın bir noktasını tıklaması gerektiği ve “keşke bunu benim yerime birisi yapsaydı” dediğiniz şeyler olmuştur. Kendimden örnek vermem gerekirse, Facebook’ta Fishville isimli bir oyun var belki duymuşsunuzdur. Bu tür oyunlarla pek aram olmamasına rağmen son 2 gündür bu oyun sardı ve tam manasıyla sürekli onunla uğraşıyorum. Oyunda belirli aralıklarla balıklarınızı beslemek zorundasınız, yoksa ölüyorlar. Ve her zaman bilgisayar başında olamıyorsunuz, dışarı çıkmanız gerektiğinde veya başka işlerle meşguliyetinizde bir de bakıyorsunuz balıklar mefta :))) Bu belirli aralıklarla balık besleme işi de tam bir angarya!! Angarya olduğu kadar sevimsiz gelen bu işlerimizi otomatikleştirmemiz de mümkün ise niçin yapmayalım :)  
   
@@ -63,8 +62,26 @@ Geri kalan ıvır zıvır methotlar da burada :P Burada dikkat çekmek istediği
   
 Umarım faydalı olmuştur. Başka makalelerde görüşmek üzere. Aşağıda projeye ait dosyalar bulunmaktadır.  
 
-> Programın çalıştırılabilir haline ulaşmak için  [burayı](http://pozerank.uuuq.com/MouseClickEvent(exe).rar)  tıklayabilirsiniz.
+ - Programın çalıştırılabilir haline ulaşmak için    [burayı](http://pozerank.uuuq.com/MouseClickEvent(exe).rar)    tıklayabilirsiniz.
 
-> Programın proje dosyasına ulaşmak için  [burayı](http://pozerank.uuuq.com/MouseClickEvent.rar)  tıklayabilirsiniz.
+- Programın proje dosyasına ulaşmak için  [burayı](http://pozerank.uuuq.com/MouseClickEvent.rar)  tıklayabilirsiniz.
 
-Fishville oyunu oynayanlar için balık besleme programı için de [burayı](http://pozerank.uuuq.com/FishVille%20Programi.rar) tıklayabilirsiniz :))
+- Fishville oyunu oynayanlar için balık besleme programı için de [burayı](http://pozerank.uuuq.com/FishVille%20Programi.rar) tıklayabilirsiniz :))
+
+***En yalın haliyle***
+
+[**Mehmet Cem Yücel**](https://www.mehmetcemyucel.com)
+
+---
+
+**_Bu yazılar ilgilinizi çekebilir:_**
+
+ - [Bir Yazılımcının Bilmesi Gereken 15 Madde](https://www.mehmetcemyucel.com/2019/bir-yazilimcinin-bilmesi-gereken-15-madde/)
+ - [Spring Boot Devtools ile Docker Üzerindeki Kodu Debug Etme ve Değiştirme](https://www.mehmetcemyucel.com/2019/spring-boot-devtools-ile-docker-uzerindeki-kodu-debug-etme-ve-degistirme/)
+ - [Spring Boot Property’lerini Jasypt ile Şifrelemek](https://www.mehmetcemyucel.com/2019/spring-boot-propertylerini-jasypt-ile-sifrelemek/)
+
+**_Blockchain teknolojisi ile ilgileniyor iseniz bunlar da hoşunuza gidebilir:_**
+
+ - [BlockchainTurk.net yazıları](https://www.mehmetcemyucel.com/categories/#blockchain)
+
+---

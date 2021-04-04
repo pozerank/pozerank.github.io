@@ -2,7 +2,7 @@
 title:  "Hash Fonksiyonları ve Blockchain"
 date:   2017-12-28 12:04:23
 categories: [blockchain, security]
-tags: [hash, fonksiyon, nedir, örnek, blockchain, bitcoin, Distributed, Legder, Block, Mehmet Cem Yücel, Mehmet, Cem, Yucel, Yücel, blockchainturk, blockchainturk.net]
+tags: [hash, fonksiyon, nedir, örnek, blockchain, bitcoin, distributed, legder, block, blockchainturk, blockchainturk.net]
 image: https://cdn-images-1.medium.com/max/150/1*EPyEPIIU2NmpqufwBAPTBQ.jpeg
 ---
 

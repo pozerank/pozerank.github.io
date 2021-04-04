@@ -2,7 +2,7 @@
 title:  "Dağıtık Uygulamalar İçin İşletim Sistemi AragonOS"
 date:   2018-02-26 12:04:23
 categories: [blockchain]
-tags: [ nedir, örnek, sanal,  kripto, Distributed, Legder, Blockchain, Bitcoin, Mehmet Cem Yücel, Mehmet, Cem, Yucel, Yücel, blockchainturk, blockchainturk.net]
+tags: [sanal, kripto, distributed, legder, blockchain, bitcoin,  blockchainturk, blockchainturk.net]
 image: https://cdn-images-1.medium.com/max/150/1*B3whQzJCrXdbHdyIu0-1Dw.png
 ---
 

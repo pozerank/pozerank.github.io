@@ -2,7 +2,7 @@
 title:  "Bitcoin, Blockchain, Distributed Ledger Technology"
 date:   2017-12-25 20:04:23
 categories: [blockchain]
-tags: [DLT, Distributed, Legder, Blockchain, Bitcoin, Genesis, Block, Mehmet Cem Yücel, Mehmet, Cem, Yucel, Yücel, Satoshi, blockchainturk, blockchainturk.net, hyperledger]
+tags: [dlt, distributed, legder, blockchain, bitcoin, genesis, block, satoshi, blockchainturk, blockchainturk.net, hyperledger]
 image: https://cdn-images-1.medium.com/max/150/1*JBV7VVSxXvoZ97b0-FAMFA.png
 ---
 Bitcoin uzun sayılabilecek bir süredir hayatımızda. Ancak son birkaç aydır yaşanan gelişmelerle birlikte artık sokakta yürürken 7den 70e birçok kişiden duyabileceğimiz bir konu haline geldi. O kadar ki duyduğumuz bazı hikayeler şehir efsanelerine varacak seviyelere ulaştı.

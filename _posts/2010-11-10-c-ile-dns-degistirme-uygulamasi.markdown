@@ -2,7 +2,7 @@
 title:  "C# ile DNS Degistirme Uygulaması"
 date:   2010-11-10 20:04:23
 categories: [microsoft, c#]
-tags: [ c#, c, sharp, dns, değiştirme, nedir, mehmetcemyucel, mehmet, cem, yücel, yucel, regedit]
+tags: [c#, c, dns, değiştirme, regedit]
 ---
 
 Bildiğiniz gibi [Youtube](http://www.youtube.com/) video paylaşım sitesine erişim ülkemizde engellendikten sonra bu kervana [Google](http://www.google.com.tr/) servisleri de eklenmişti. Bu durum elbette site ve servislere erişebilmeyeceğimiz anlamına gelmiyor. Erişebilmek için yöntemler de zaten birçoğumuz tarafından biliniyor. Bunlardan birisi tünel kavramı. Bazı siteler bizim ilgili siteyle kendi üzerinden bağlanmamız konusunda yardımcı oluyor. Bu sitelerden en popüler olanlarından birisi [KTunnel](http://www.ktunnel.com/) mesela. Bir başka yol bilgisayarımızın [sunucu dosyasını](http://tr.wikipedia.org/wiki/Sunucu_dosyas%C4%B1) düzenlemekten geçiyor.  
@@ -252,6 +252,20 @@ Resim 14: DNS Adresi Ekleme
 
 Bütün bu işlemlerden sonra programımız bitti :) Şu anda regeditten ağ bağdaştırıcılarının listesini çekip ekrana basabilen, DNS adreslerini saklayabilen, istediğimiz bağdaştırıcının DNS adresini değiştirebildiğimiz, eski ayarlarına tekrar dönebildiğimiz bir programımız var. Proje Visual Studio 2010 ile yapıldı. Framework olarak .NET 4.0 Client Profile çalıştırabilmek için yeterli olacaktır. Projeyi kısa bir boşluğumda gerçekleştirdim, daha da geliştirilebilir bir durumda. Projenin source kodunu da yakın zaman içerisinde paylaşıyor olacağım.
 
-  
+***En yalın haliyle***
 
-Herkese bol kodlu günler, tekrar görüşmek üzere.
+[**Mehmet Cem Yücel**](https://www.mehmetcemyucel.com)
+
+---
+
+**_Bu yazılar ilgilinizi çekebilir:_**
+
+ - [Bir Yazılımcının Bilmesi Gereken 15 Madde](https://www.mehmetcemyucel.com/2019/bir-yazilimcinin-bilmesi-gereken-15-madde/)
+ - [Spring Boot Devtools ile Docker Üzerindeki Kodu Debug Etme ve Değiştirme](https://www.mehmetcemyucel.com/2019/spring-boot-devtools-ile-docker-uzerindeki-kodu-debug-etme-ve-degistirme/)
+ - [Spring Boot Property’lerini Jasypt ile Şifrelemek](https://www.mehmetcemyucel.com/2019/spring-boot-propertylerini-jasypt-ile-sifrelemek/)
+
+**_Blockchain teknolojisi ile ilgileniyor iseniz bunlar da hoşunuza gidebilir:_**
+
+ - [BlockchainTurk.net yazıları](https://www.mehmetcemyucel.com/categories/#blockchain)
+
+---

@@ -2,19 +2,18 @@
 title:  "Eclipse Formatter On Off"
 date:   2015-11-09 20:04:23
 categories: [ide, tools]
-tags: [ java, jvm, formatter, on, off, sql, style,  mehmetcemyucel, mehmet, cem, yücel, yucel, eclipse, ide]
+tags: [ java, jvm, formatter, on, off, sql, style, eclipse, ide]
 ---
+
 Eclipse'in formatter özelliği developerlar için tartışmasız bir nimet. O kadar ki kodlama yaparken iki satır kod yazdıktan sonraki ilk refleksim  
   
-CTRL+A  
-CTRL+Shift+F  
-CTRL+S .  
+	CTRL+A  
+	CTRL+Shift+F  
+	CTRL+S .  
   
 Yani tüm kodu seç, formatla ve kaydet. Window > Preferences > Java > Code Style > Formatter altında yer alan menüden farklı formatlama profilleri yaratabilirsiniz, güncelleyebilirsiniz.  
   
-Formatter her ne kadar kullanışlı bir araç olsa da kimi zaman kodumuzun bazı parçalarının formatlanMAmasını isteriz. Özellikle de DAO'lar içerisinde yer alan SQL stringleri formatlandığında SQL'in kendi formatına değil, Eclipse'in diğer kodlarımız için oluşturduğu her satır için atanan karakter adedine göre formatladığı için SQL'i okumak söz konusu olduğunda çileden çıkaran bir durumla karşılaşabiliyoruz. En basitinden bir örnek verelim;  
-  
-  
+Formatter her ne kadar kullanışlı bir araç olsa da kimi zaman kodumuzun bazı parçalarının formatlanMAmasını isteriz. Özellikle de DAO'lar içerisinde yer alan SQL stringleri formatlandığında SQL'in kendi formatına değil, Eclipse'in diğer kodlarımız için oluşturduğu her satır için atanan karakter adedine göre formatladığı için SQL'i okumak söz konusu olduğunda çileden çıkaran bir durumla karşılaşabiliyoruz. En basitinden bir örnek verelim;    
 
 [![](http://2.bp.blogspot.com/-PSupSxj9ua4/VkBYCfI1yEI/AAAAAAAAAkk/ZShg-uWRhoM/s1600/1.JPG)](http://2.bp.blogspot.com/-PSupSxj9ua4/VkBYCfI1yEI/AAAAAAAAAkk/ZShg-uWRhoM/s1600/1.JPG)
 
@@ -37,3 +36,21 @@ Artık comment olarak bu keywordleri kullandığımız aralık formatter tarafı
   
 
 [![](http://1.bp.blogspot.com/-DHintpZuZQA/VkBZmiBG84I/AAAAAAAAAlE/EBHhoRCqF4A/s1600/4.JPG)](http://1.bp.blogspot.com/-DHintpZuZQA/VkBZmiBG84I/AAAAAAAAAlE/EBHhoRCqF4A/s1600/4.JPG)
+
+***En yalın haliyle***
+
+[**Mehmet Cem Yücel**](https://www.mehmetcemyucel.com)
+
+---
+
+**_Bu yazılar ilgilinizi çekebilir:_**
+
+ - [Bir Yazılımcının Bilmesi Gereken 15 Madde](https://www.mehmetcemyucel.com/2019/bir-yazilimcinin-bilmesi-gereken-15-madde/)
+ - [Spring Boot Devtools ile Docker Üzerindeki Kodu Debug Etme ve Değiştirme](https://www.mehmetcemyucel.com/2019/spring-boot-devtools-ile-docker-uzerindeki-kodu-debug-etme-ve-degistirme/)
+ - [Spring Boot Property’lerini Jasypt ile Şifrelemek](https://www.mehmetcemyucel.com/2019/spring-boot-propertylerini-jasypt-ile-sifrelemek/)
+
+**_Blockchain teknolojisi ile ilgileniyor iseniz bunlar da hoşunuza gidebilir:_**
+
+ - [BlockchainTurk.net yazıları](https://www.mehmetcemyucel.com/categories/#blockchain)
+
+---

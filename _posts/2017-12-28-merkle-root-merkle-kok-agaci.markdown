@@ -2,7 +2,7 @@
 title:  "Merkle Root Merkle Kök Ağacı"
 date:   2017-12-28 12:04:23
 categories: [blockchain]
-tags: [DLT, merkle, root, kök, ağacı, Distributed, Legder, Blockchain, Bitcoin, utxo, Block, Mehmet Cem Yücel, Mehmet, Cem, Yucel, Yücel, blockchainturk, blockchainturk.net]
+tags: [dlt, merkle, root, kök, ağacı, distributed, legder, blockchain, bitcoin, utxo, block, blockchainturk, blockchainturk.net]
 image: https://cdn-images-1.medium.com/max/150/0*JKeTzfaJAjzXq_Lq.PNG
 ---
 

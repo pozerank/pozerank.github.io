@@ -1,8 +1,8 @@
 ---
 title:  "java.lang.OutOfMemoryError"
 date:   2010-11-25 20:04:23
-categories: [java, jvm, hata çözümü]
-tags: [ java, outofmemoryerror, nedir, mehmetcemyucel, mehmet, cem, yücel, yucel, lang]
+categories: [java, jvm]
+tags: [java, outofmemoryerror, hata, exception, error]
 ---
 
 Programlar bilgisayarlarımıza ilk kurulduklarında hangi argümanlara göre çalışacaklarına kendileri karar verirler. **Default** olarak gelen bu değerler her zaman uygulamamızın doğasına uygun olmayabilir. Örneğin enterprise uygulamalar üzerinde çalışıyorsak bu bu başlangıç değerleri projemizin isteğini karşılamıyor olabilir. Daha **fazla bellek alanı** tahsis etmemiz, işlemciyi isteklerimize uygun olarak kullanmak isteyebiliriz. Hatta belirlediğimiz uygulamaların bu kaynakları ne şekillerde paylaşacaklarını ayarlamamız da gerekebilir.  
@@ -35,8 +35,24 @@ Run >> Debug Configurations a girdiğimizi varsayalım. Uygulamamızı varolan m
 
   
 
-> -Xms512m -Xmx1024m -XX:CompileThreshold=8000 -XX:PermSize=96m -XX:MaxPermSize=256m
+ -Xms512m -Xmx1024m -XX:CompileThreshold=8000 -XX:PermSize=96m -XX:MaxPermSize=256m
 
 parametreleri yapıştırılmalıdır. Buradaki "-Xms512m -Xmx1024m" argümanları uygulama sunucusu için ayrılan Heap miktarlarını ifade ederken "-XX:PermSize=96m -XX:MaxPermSize=256m" argümanları da PermGen alanının düzenlenmesi için kullanılmaktadır. Kendi RAM miktarınıza göre ayarlamanızı yapabilirsiniz. Ben 2 GB lık RAM in bulunduğu bilgisayarımda heap için 512m ve 1024m kullanırken PermGen için 256m ve 512m kullanıyorum.  
   
-İyi çalışmalar herkese, tekrar görüşmek üzere.
+***En yalın haliyle***
+
+[**Mehmet Cem Yücel**](https://www.mehmetcemyucel.com)
+
+---
+
+**_Bu yazılar ilgilinizi çekebilir:_**
+
+ - [Bir Yazılımcının Bilmesi Gereken 15 Madde](https://www.mehmetcemyucel.com/2019/bir-yazilimcinin-bilmesi-gereken-15-madde/)
+ - [Spring Boot Devtools ile Docker Üzerindeki Kodu Debug Etme ve Değiştirme](https://www.mehmetcemyucel.com/2019/spring-boot-devtools-ile-docker-uzerindeki-kodu-debug-etme-ve-degistirme/)
+ - [Spring Boot Property’lerini Jasypt ile Şifrelemek](https://www.mehmetcemyucel.com/2019/spring-boot-propertylerini-jasypt-ile-sifrelemek/)
+
+**_Blockchain teknolojisi ile ilgileniyor iseniz bunlar da hoşunuza gidebilir:_**
+
+ - [BlockchainTurk.net yazıları](https://www.mehmetcemyucel.com/categories/#blockchain)
+
+---

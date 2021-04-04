@@ -2,7 +2,7 @@
 title:  "Türkçe Solidity Dersleri - 1"
 date:   2018-02-27 12:04:23
 categories: [blockchain, smart contracts]
-tags: [solidity, cryptocurrency, centralized, decentralized, distributed, örnek, nedir, sanal, para, dijital, kripto, Distributed, Legder, Blockchain, Bitcoin, Block, Mehmet Cem Yücel, Mehmet, Cem, Yucel, Yücel, blockchainturk, blockchainturk.net]
+tags: [solidity, cryptocurrency, centralized, decentralized, distributed, sanal, para, dijital, kripto, distributed, legder, blockchain, bitcoin, block,  blockchainturk, blockchainturk.net]
 image: https://cdn-images-1.medium.com/max/150/1*bkQ65Bgo5_4Fi0BnsDYO1A.jpeg
 ---
 Ethereum, decentralized uygulamaların üzerinde çalışabileceği herkese açık bir blockchain geliştirme platformudur. Tamamen açık kaynak kodlu olan bir projedir. 2013'te Vitalik Buterin tarafından duyurulduğunda kendisini Bitcoin’den farklı olarak tekrar tekrar programlanabilen ve kompleks iş kurallarını işletebilen bir proje olarak tanımladı. Bitcoin’i bir rakip olarak tanımlamaktan çok Blockchain 2.0'ın tanımını ortaya koymuş oldu.

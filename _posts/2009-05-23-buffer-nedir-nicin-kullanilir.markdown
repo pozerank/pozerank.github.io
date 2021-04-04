@@ -2,7 +2,7 @@
 title:  "Buffer Nedir Niçin Kullanılır"
 date:   2009-05-23 20:04:23
 categories: [hardware, mimari]
-tags: [bellek, hardware, buffer, kullanılır, nedir, niçin, saha, tampon, Mehmet Cem Yücel, Mehmet, Cem, Yucel, Yücel]
+tags: [bellek, hardware, buffer, saha, tampon, türkçe, yazılım, blog, blogger, mehmet cem yücel]
 ---
 
 Buffer (tampon saha), verilerin IO işlemlerinden sonra belleğe yazılmadan önce uğradıkları bir sahadır. Bufferlar IO işlemi sırasında kullanıcının beklemesini engellemek için kullanılırlar. Bellekten okumak ve belleğe yazmak maliyetli bir işlemdir. Sistemi yorar ve hız olarak yavaştır. IO aygıtlarından gelen veriler bu sebeple önce bir havuzda toplanır. Böylece bu havuz belirli miktarlarda dolduktan sonra toplu olarak belleğe yazılır. Bu sisteme performans kazandıran bir harekettir.  
@@ -12,3 +12,21 @@ Buffer (tampon saha), verilerin IO işlemlerinden sonra belleğe yazılmadan ön
 Bu olayı bir örnekle pekiştirelim. Günümüzde neredeyse herkesin artık bir fotoğraf makinesi veya fotoğraf çeken aygıtları vardır. Ortalama çözünürlüklü bir fotoğraf çekildiğini varsayalım. Bu fotoğrafın ortalama boyutu 2,5-4 MB arasında olması beklenir. Bu boyuttaki verinin belleğe alınması da tahmin edileceği gibi uzun bir zaman alacaktır. İşte buffer sayesinde veriler bir taraftan belleğe kaydedilirken diğer taraftan bufferımızın boyutuna göre başka resimler de çekebilme olanağını elde etmiş oluyoruz. Hem zamandan kazanmış oluyoruz hem de arka planda sistemi az sayıda çok miktar verilerle çağırdığımızdan sistemi daha az yormuş oluyoruz.  
   
 Mevcut bufferımızın büyüklüğü ile bizim ardı ardına yapabileceğimiz iş sayısı artış gösterebilmektedir. Bu sebeple bufferın büyüklüğünün fazla olması lehimize bir durumdur.
+
+***En yalın haliyle***
+
+[**Mehmet Cem Yücel**](https://www.mehmetcemyucel.com)
+
+---
+
+**_Bu yazılar ilgilinizi çekebilir:_**
+
+ - [Bir Yazılımcının Bilmesi Gereken 15 Madde](https://www.mehmetcemyucel.com/2019/bir-yazilimcinin-bilmesi-gereken-15-madde/)
+ - [Spring Boot Devtools ile Docker Üzerindeki Kodu Debug Etme ve Değiştirme](https://www.mehmetcemyucel.com/2019/spring-boot-devtools-ile-docker-uzerindeki-kodu-debug-etme-ve-degistirme/)
+ - [Spring Boot Property’lerini Jasypt ile Şifrelemek](https://www.mehmetcemyucel.com/2019/spring-boot-propertylerini-jasypt-ile-sifrelemek/)
+
+**_Blockchain teknolojisi ile ilgileniyor iseniz bunlar da hoşunuza gidebilir:_**
+
+ - [BlockchainTurk.net yazıları](https://www.mehmetcemyucel.com/categories/#blockchain)
+
+---

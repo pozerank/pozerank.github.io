@@ -2,9 +2,8 @@
 title:  "Chain Of Responsibility Design Pattern"
 date:   2014-02-20 20:04:23
 categories: [java, design patterns]
-tags: [ java, jvm, design, tasarım, patterns, paternleri, mehmetcemyucel, mehmet, cem, yücel, yucel, chain, responsibility]
+tags: [java, design, tasarım, patterns, paternleri, chain, responsibility]
 ---
-
 
 Bugün behavioral(davranışsal) bir design pattern(tasarım şablonu) olan Chain of Responsibility(Sorumluluk Zinciri) inceliyor ve örnek yapıyor olacağız.  
   
@@ -15,9 +14,6 @@ Bugün behavioral(davranışsal) bir design pattern(tasarım şablonu) olan Chai
 Senaryomuz bir araç yıkamacılarında geçiyor. Müşteriler araçlarını getirip yıkanması üzere yıkamacıya bırakıyor. Gelen her aracın tipine göre bazı farklı yıkanma adımları olacaktır, örneğin bir motosikletin iç yıkaması olmayacağı gibi bir otobüsün bagaj temizliği de herhangi bir arabanın bagaj temizliğinden farklı olacaktır. Peki bu farklı tipleri nasıl ayırt edecek sonrasında nasıl davranışlarımızı gerçekleştireceğiz?  
   
 Hemen modellerimizi yaratarak işe başlayalım. Abstract bir Arac sınıfı ve bu sınıfı kalıtan Otobus, Araba ve Motosiklet sınıfları yaratıyorum. İlk adımda görüntümüz aşağıdaki şekilde;  
-  
-
-  
 
 [![](http://1.bp.blogspot.com/-tH5k7-5ytdU/UwX4vsogBxI/AAAAAAAAAeg/mHiAvFk1g28/s1600/1.PNG)](http://1.bp.blogspot.com/-tH5k7-5ytdU/UwX4vsogBxI/AAAAAAAAAeg/mHiAvFk1g28/s1600/1.PNG)
 
@@ -68,4 +64,20 @@ Uygulamanın kodlarına aşağıdaki adresten erişebilirsiniz.
 
 [https://github.com/mehmetcemyucel/blog/tree/master/ChainOfResponsibility](https://github.com/mehmetcemyucel/blog/tree/master/ChainOfResponsibility)
 
-Tekrar görüşmek üzere..
+***En yalın haliyle***
+
+[**Mehmet Cem Yücel**](https://www.mehmetcemyucel.com)
+
+---
+
+**_Bu yazılar ilgilinizi çekebilir:_**
+
+ - [Bir Yazılımcının Bilmesi Gereken 15 Madde](https://www.mehmetcemyucel.com/2019/bir-yazilimcinin-bilmesi-gereken-15-madde/)
+ - [Spring Boot Devtools ile Docker Üzerindeki Kodu Debug Etme ve Değiştirme](https://www.mehmetcemyucel.com/2019/spring-boot-devtools-ile-docker-uzerindeki-kodu-debug-etme-ve-degistirme/)
+ - [Spring Boot Property’lerini Jasypt ile Şifrelemek](https://www.mehmetcemyucel.com/2019/spring-boot-propertylerini-jasypt-ile-sifrelemek/)
+
+**_Blockchain teknolojisi ile ilgileniyor iseniz bunlar da hoşunuza gidebilir:_**
+
+ - [BlockchainTurk.net yazıları](https://www.mehmetcemyucel.com/categories/#blockchain)
+
+---

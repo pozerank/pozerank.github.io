@@ -2,7 +2,7 @@
 title:  "JVM Memory Usage OutOfMemoryError"
 date:   2015-08-05 20:04:23
 categories: [java, jvm, mimari]
-tags: [ java, jvm, heap, memory bellek, mehmetcemyucel, mehmet, cem, yücel, yucel, outofmemoryerror, yönetimi]
+tags: [ java, jvm, heap, memory, bellek, outofmemoryerror]
 ---
 
 
@@ -40,58 +40,58 @@ Bu instance içerisinde 3 tane metodla ilgileneceğiz. Bu metodlar  byte cinsind
 
 Aşağıda kodumuzun ilk parçasında uygulamamız açıldığındaki mevcut değerlerimizi göreceğiz. Sonra bellek üzerinde yer kaplayan değişkenler yaratıp sonra bellekte ne şekilde değişiklikler gerçekleştiğini gözlemleyeceğiz.
 
->package com.cem;
->
->import java.util.ArrayList;
->import java.util.List;
->
->public class FreeMemory {
->
->private static final int MEGABYTE_CONSTANT = 1024 * 1024;
->
-> public static void main(String[] args) {
-  long freeMemory = Runtime.getRuntime().freeMemory() / MEGABYTE_CONSTANT;
-  long totalMemory = Runtime.getRuntime().totalMemory() / MEGABYTE_CONSTANT;
-  long maxMemory = Runtime.getRuntime().maxMemory() / MEGABYTE_CONSTANT;
->
->  System.out.println("freeMemory=\t" + freeMemory);
-  System.out.println("totalMemory=\t" + totalMemory + " (initial heap miktari)");
-  System.out.println("maxMemory=\t" + maxMemory);
->
->List fillHeapList = new ArrayList();
->
->  for (int i = 0; i < 1000000; i++) {
-   fillHeapList.add(String.valueOf(9999));
-  }
->
- > System.out.println("\nKOD CALISTI\n");
->
- > freeMemory = Runtime.getRuntime().freeMemory() / MEGABYTE_CONSTANT;
-  totalMemory = Runtime.getRuntime().totalMemory() / MEGABYTE_CONSTANT;
-  maxMemory = Runtime.getRuntime().maxMemory() / MEGABYTE_CONSTANT;
->
- >System.out.println("freeMemory=\t" + freeMemory);
-  System.out.println("totalMemory=\t" + totalMemory + " (initial degerleri astiktan sonraki allocate edilen heap miktari)");
-  System.out.println("maxMemory=\t" + maxMemory);
->
- > System.out.println("\nVM'in kullamakta oldugu miktar=\t" + (totalMemory - freeMemory));
- }
-}
+ package com.cem;
+ 
+ import java.util.ArrayList;
+ import java.util.List;
+ 
+	public class FreeMemory {
+	 
+	  private static final int MEGABYTE_CONSTANT = 1024 * 1024;
+	 
+	  public static void main(String[] args) {
+		 long freeMemory = Runtime.getRuntime().freeMemory() / MEGABYTE_CONSTANT;
+		 long totalMemory = Runtime.getRuntime().totalMemory() / MEGABYTE_CONSTANT;
+		 long maxMemory = Runtime.getRuntime().maxMemory() / MEGABYTE_CONSTANT;
+		 
+		 System.out.println("freeMemory=\t" + freeMemory);
+		 System.out.println("totalMemory=\t" + totalMemory + " (initial heap miktari)");
+		 System.out.println("maxMemory=\t" + maxMemory);
+		 
+		 List fillHeapList = new ArrayList();
+		 
+		 for (int i = 0; i < 1000000; i++) {
+		  fillHeapList.add(String.valueOf(9999));
+		 }
+	 
+		 System.out.println("\nKOD CALISTI\n");
+	 
+		 freeMemory = Runtime.getRuntime().freeMemory() / MEGABYTE_CONSTANT;
+		 totalMemory = Runtime.getRuntime().totalMemory() / MEGABYTE_CONSTANT;
+		 maxMemory = Runtime.getRuntime().maxMemory() / MEGABYTE_CONSTANT;
+		 
+		 System.out.println("freeMemory=\t" + freeMemory);
+		 System.out.println("totalMemory=\t" + totalMemory + " (initial degerleri astiktan sonraki allocate edilen heap miktari)");
+		 System.out.println("maxMemory=\t" + maxMemory);
+	 
+		 System.out.println("\nVM'in kullamakta oldugu miktar=\t" + (totalMemory - freeMemory));
+	  }
+	}
 
   
   
 Çıktımız aşağıdaki gibi;  
   
 
->freeMemory= 14
-totalMemory= 15 (initial heap miktari)
-maxMemory= 247
+	freeMemory= 14
+	totalMemory= 15 (initial heap miktari)
+	maxMemory= 247
 
 KOD CALISTI
 
-freeMemory= 68
-totalMemory= 120 (initial degerleri astiktan sonraki allocate edilen heap miktari)
-maxMemory= 247
+	freeMemory= 68
+	totalMemory= 120 (initial degerleri astiktan sonraki allocate edilen heap miktari)
+	maxMemory= 247
 
 VM'in kullamakta oldugu miktar= 52
 
@@ -111,7 +111,23 @@ Kodlarımıza da aşağıdaki linkte
   
 [https://github.com/mehmetcemyucel/blog/tree/master/FreeMemory](https://github.com/mehmetcemyucel/blog/tree/master/FreeMemory)
 
-  
+***En yalın haliyle***
+
+[**Mehmet Cem Yücel**](https://www.mehmetcemyucel.com)
+
+---
+
+**_Bu yazılar ilgilinizi çekebilir:_**
+
+ - [Bir Yazılımcının Bilmesi Gereken 15 Madde](https://www.mehmetcemyucel.com/2019/bir-yazilimcinin-bilmesi-gereken-15-madde/)
+ - [Spring Boot Devtools ile Docker Üzerindeki Kodu Debug Etme ve Değiştirme](https://www.mehmetcemyucel.com/2019/spring-boot-devtools-ile-docker-uzerindeki-kodu-debug-etme-ve-degistirme/)
+ - [Spring Boot Property’lerini Jasypt ile Şifrelemek](https://www.mehmetcemyucel.com/2019/spring-boot-propertylerini-jasypt-ile-sifrelemek/)
+
+**_Blockchain teknolojisi ile ilgileniyor iseniz bunlar da hoşunuza gidebilir:_**
+
+ - [BlockchainTurk.net yazıları](https://www.mehmetcemyucel.com/categories/#blockchain)
+
+---
 
 Referanslar
 
@@ -122,3 +138,5 @@ Referanslar
 3.[java.lang.OutOfMemoryError](http://www.mehmetcemyucel.com/2010/11/javalangoutofmemoryerror.html)  
 
 4.[Eclipse VM Arguments](http://www.mehmetcemyucel.com/2015/08/eclipse-vm-arguments.html)
+
+---
