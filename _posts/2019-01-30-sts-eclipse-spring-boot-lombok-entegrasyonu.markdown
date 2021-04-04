@@ -38,3 +38,4 @@ Bu işlemler sonrasında Eclipse’i baştan başlatmanız ve gerekirse projeler
 
  - [BlockchainTurk.net yazıları](https://www.mehmetcemyucel.com/categories/#blockchain)
 
+---

@@ -5,6 +5,7 @@ categories: [java, docker, jvm, spring, spring boot, quarkus, microservices, clo
 tags: [quarkus, java, spring boot, graalvm, mikroservis, microservice, kubernetes, ahead of time, aot, just in time, jit, compiler, native, image, docker, türkçe, yazılım, blog, blogger, nedir, örnek, nasıl yapılır, mehmet cem yücel]
 image: https://miro.medium.com/max/150/0*mf0v1GtnXoEpVUN9.jpg
 ---
+
 Bu yazımızda Java'nın tarihi gelişimini, günümüzde bulunduğu yeri, mikroservis mimarilere uyumunu ve GraalVM, LLVM ve Quarkus'un nasıl alternatifler yarattığından bahsedeceğiz.
 
 ## 1. Neden Java

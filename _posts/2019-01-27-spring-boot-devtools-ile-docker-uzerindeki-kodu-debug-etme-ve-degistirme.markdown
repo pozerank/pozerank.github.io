@@ -117,4 +117,5 @@ Projenin kodlarına [buradan](https://github.com/mehmetcemyucel/springboot-devto
 **_Blockchain teknolojisi ile ilgileniyor iseniz bunlar da hoşunuza gidebilir:_**
 
  - [BlockchainTurk.net yazıları](https://www.mehmetcemyucel.com/categories/#blockchain)
+
 ---

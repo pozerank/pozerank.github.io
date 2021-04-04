@@ -5,6 +5,7 @@ categories: [java, test]
 tags: [junit, classrule, rule, rulechain, dry, yagni, kiss, mockito, türkçe, yazılım, blog, blogger, nedir, örnek, nasıl yapılır, mehmet cem yücel]
 image: https://cdn-images-1.medium.com/max/150/0*PI13arzqtcC-oXBh.jpg
 ---
+
 Bugün birim test(unit test) ve entegrasyon testleri(integration test) yazıyorsanız hayatınıza renk katacağını inandığım bir konuyu kaleme alacağım. Junit4'te var olan ancak az bilinen @Rule ve @ClassRule annotationlarının ne olduklarını ve bunlarla neler yapabileceğimizi örneklerle incelemeye başlayalım.
 
 ## 1. Giriş

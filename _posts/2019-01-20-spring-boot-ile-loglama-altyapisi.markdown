@@ -194,4 +194,5 @@ Yukarıda örnekleri verilmiş koda [https://github.com/mehmetcemyucel/springboo
 **_Blockchain teknolojisi ile ilgileniyor iseniz bunlar da hoşunuza gidebilir:_**
 
  - [BlockchainTurk.net yazıları](https://www.mehmetcemyucel.com/categories/#blockchain)
+
 ---
