@@ -2,7 +2,7 @@
 title:  "Access Management 4-Keycloak"
 date:   2020-05-01 21:04:23
 categories: [mimari, security]
-tags: [keycloak, sso, oauth2, saml, kerberos, ldap, oidc, oauth, openid connect, authentication, authorization, security, nedir, türkçe, nasıl yapılır, örnek, mehmet cem yücel]
+tags: [keycloak, authentication, authorization, sso, oauth2, saml, kerberos, ldap, oidc, oauth, openid connect, security, türkçe, yazılım, blog, blogger, nedir, örnek, nasıl yapılır, mehmet cem yücel]
 image: https://miro.medium.com/max/150/0*n4KiIGqzdC2PX4QU.png
 ---
 Önceki yazılarımızda öğrendiğimiz terminolojilerin somut örneklerini bu yazımızda Keycloak üzerinden inceleyeceğiz. Beşinci ve son yazımızda da Spring Boot ile Keycloak’u kullanarak Authentication/Authorization örnekleri yapacağız.
