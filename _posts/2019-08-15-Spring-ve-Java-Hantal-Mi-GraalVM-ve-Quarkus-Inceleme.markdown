@@ -33,7 +33,7 @@ Mikroservisler hayatımıza girdiğinden bu yana [Docker](https://www.docker.com
 
 Son birkaç cümle aslında bugünkü yazımızın çıkış noktasını oluşturuyor. Bir kez daha irdeleyelim.
 
-"*Uygulamamıza ait kodlar, ihtiyaç uyduğu işletim sistemi kaynakları ve harici kütüphaneler ile birlikte tek bir image’ın içerisinde paketlenebilir; bir container olarak **herhangi bir yerde** çalıştırılabilir.*"
+>"Uygulamamıza ait kodlar, ihtiyaç uyduğu işletim sistemi kaynakları ve harici kütüphaneler ile birlikte tek bir image’ın içerisinde paketlenebilir; bir container olarak **herhangi bir yerde** çalıştırılabilir."
 
 Yukarıdaki cümleye bakılırsa **herhangi bir yerde çalıştırılabilmesi** cümlesi ile **eğer containerized bir ortamınız mevcut ise Java’nın senelerdir en güçlü yanı olarak tanıttığı özelliğe artık ihtiyacınız olmadığı** yorumunu doğuruyor. Bu noktada sorulması gereken soru şu; Java her yerde çalışabilmek uğruna nelerden vazgeçiyor? Her yerde çalışabilme gibi bir derdi olmasaydı neler daha farklı olabilirdi? Neler daha performanslı çalışırdı, paket boyutlarında ne gibi değişiklikler söz konusu olurdu?
 
@@ -90,7 +90,7 @@ Bazı rakamsal kıyasları yapmadan olmazdı. `**JDK8**` için **OpenJDK** ve **
 
 ### 6.1. Startup Testi
 
-#### 6.1.1. Startup Testi Koşullar
+#### 6.1.1. Koşullar
 
 İlk kıyasım minimum kaynak ile ayağa kalkma ve ayağa kalkış sürelerini ölçmek oldu. Oluşturduğum jar paketlerini çalıştırırken -Xmx parametresi ile memory kullanımını sıkıştırdım.
 
@@ -119,7 +119,7 @@ Quarkus projesi Spring Boot projesine kıyasla daha az kaynakla çok daha hızl�
 
 ### 6.2. Memory & CPU Testi
 
-#### 6.2.1. Memory & CPU Testi Koşullar
+#### 6.2.1. Koşullar
 
 İkinci test senaryomda yaptıklarım memory’de heap alanına yapılacak aşırı yüklemelerde response süresinin nasıl etkilendiği ve belleğin, CPU’nun ve aktif thread sayılarının [VisualVM](https://visualvm.github.io/) üzerindeki görüntülerini kıyaslamak oldu.
 
