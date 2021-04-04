@@ -25,7 +25,7 @@ sorusu aklınızdan geçiyor olabilir. Veya
 
 gibi sorulara sahipseniz doğru yoldayız. Öncelikle JUnit içerisindeki halihazırda tanımlı kuralları inceleyerek başlayıp, sonrasında custom rule’lar ile neler yapabileceğimizi inceleyeceğiz. Tekrar eden birçok ihtiyacı merkezi şekilde çözmenin yollarını göreceğiz. Eğer rule’suz hali mümkün ise nasıl yapılabileceğini de örnek olarak verip kazanımı gözlemlemeye çalışalım.
 
->**NOT: Rule’unuzu @Rule annotation’ı ile metodlara, @ClassRule annotation’ı ile sınıflara bağlayabilirsiniz.**
+**NOT: Rule’unuzu @Rule annotation’ı ile metodlara, @ClassRule annotation’ı ile sınıflara bağlayabilirsiniz.**
 
 ## 2. Kurallar (Rules)
 
