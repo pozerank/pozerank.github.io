@@ -36,7 +36,7 @@ Ben pratik olması açısından Keycloak’u Docker üzerinde ayağa kaldıraca�
 
 Bu scriptte iki environment parametresi geçiyoruz. Bunlar admin arayüzüne giriş yapabilmemiz için gereken kullanıcı adı ve şifre parametreleri. Son olarak admin konsoluna erişebilmek için da 8080 portunu expose ettik. Kısa bir süre sonra Keycloak aşağıdakine benzer bir satır ile ayağa kalktı.
 
-[org.jboss.as] (Controller Boot Thread) WFLYSRV0025: Keycloak 9.0.3 (WildFly Core 10.0.3.Final) **started in 19710ms** — Started 683 of 988 services (701 services are lazy, passive or on-demand)
+	[org.jboss.as] (Controller Boot Thread) WFLYSRV0025: Keycloak 9.0.3 (WildFly Core 10.0.3.Final) **started in 19710ms** — Started 683 of 988 services (701 services are lazy, passive or on-demand)
 
 Bu noktadan sonra [http://localhost:8080](http://localhost:8080) 'e gittiğimizde aşağıdaki gibi bir görüntü ile karşılaşıyoruz.
 
