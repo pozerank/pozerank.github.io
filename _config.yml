@@ -18,6 +18,10 @@ author:
   linkedin_username:  mehmetcemyucel
   stackoverflow_username: mehmetcemyucel
 
+google:
+  adsense:
+    publisherid: pub-3264551064582672
+
 defaults:
   -
     scope:
