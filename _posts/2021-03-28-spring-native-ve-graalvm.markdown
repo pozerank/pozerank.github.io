@@ -87,7 +87,7 @@ Sonraki yazımızda bir Spring Native projesinin nasıl ayağa kaldırılabilece
 
 ***Ayrıca diğer kaynaklar(referans)***
 
- - [https://docs.spring.io/spring-framework/docs/3.0.0.M3/reference/html/ch08s06.html](https://docs.spring.io/spring-framework/docs/3.0.0.M3/reference/html/ch08s06.html)
- - [https://docs.spring.io/spring-native/docs/current/reference/htmlsingle](https://docs.spring.io/spring-native/docs/current/reference/htmlsingle)
+ - [spring framework docs](https://docs.spring.io/spring-framework/docs/3.0.0.M3/reference/html/ch08s06.html)
+ - [spring native docs](https://docs.spring.io/spring-native/docs/current/reference/htmlsingle)
 
 ---
