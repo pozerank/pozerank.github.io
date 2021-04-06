@@ -128,7 +128,7 @@ Controller’ımıza birkaç yapılandırma ekleyerek ilk eklediğimiz servisler
 
 test-rest-template servisine geçeceğimiz servis ismiyle ilk iki servisi direk çağırabiliriz. **FeignServiceClient** interface’inde de yine ilk yarattığımız servislerin imzaları bulunuyor. Bunları çağırabilmek için de test-feign-1 ve test-feign-2 servislerini yarattık. Ancak bunları çağırmadan önce restTemplate’ımızı ve FeignClient’ımızı OAuth2 kullanmak üzere yapılandırmamız gerekiyor.
 
-{% include adsense.html %}
+{% include adshorizontal.html %}
 
 ### 3.5. RestTemplate Configuration
 
