@@ -162,17 +162,7 @@ Sonuçları gözlemlemek için [bu yazımda bahsettiğim](https://medium.com/meh
 
 ![](https://miro.medium.com/max/715/1*9DKU9ZfQIeD1bX5f_L4QHA.png)
 
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<!-- Yatay -->
-<ins class="adsbygoogle"
-     style="display:block"
-     data-ad-client="ca-pub-3264551064582672"
-     data-ad-slot="6687749939"
-     data-ad-format="auto"
-     data-full-width-responsive="true"></ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
+{% include adshorizontal.html %}
 
 ## 5. Sonuç
 
