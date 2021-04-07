@@ -75,6 +75,8 @@ Ana bir [#HighLevelLanguage](https://twitter.com/search?q=%23HighLevelLanguage "
   
 Bütün bunları yaparken toollara ihtiyacımız olacak. Kendinizi en iyi hissettiğiniz toollardan bir toolkit yaratın ve uzmanlaşın. Örn: [#Postman](https://twitter.com/search?q=%23Postman "#Postman") [#Notepad](https://twitter.com/search?q=%23Notepad "#Notepad")++ [#Excel](https://twitter.com/search?q=%23Excel "#Excel") [#powerpoint](https://twitter.com/search?q=%23powerpoint "#powerpoint") [#ditto](https://twitter.com/search?q=%23ditto "#ditto") [#mtail](https://twitter.com/search?q=%23mtail "#mtail") [#sysinternals](https://twitter.com/search?q=%23sysinternals "#sysinternals") [#DumpAnalyzer](https://twitter.com/search?q=%23DumpAnalyzer "#DumpAnalyzer") vb...
 
+{% include feed-ici-3.html %}
+
 ## 14. Takip Listesi  
   
 Gündemi sürekli takip edebilmek ve güncel kalmak için sizinle benzer kulvardaki profesyonelleri bulun, [#blog](https://twitter.com/search?q=%23blog "#blog")'larını, sosyal medyalarını takip edin. Siz de vefa borcunuzu ödemek ve kendinizden sonrakilere fayda yaratabilmek için yavaştan paylaşımlara başlayın
