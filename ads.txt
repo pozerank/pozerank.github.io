@@ -1,4 +1,4 @@
 ---
-layout: null 
+layout: null
 ---
 google.com, pub-3264551064582672, DIRECT, f08c47fec0942fa0
