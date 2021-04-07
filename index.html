@@ -20,6 +20,9 @@ robots: all
             {% endif %}
         </div>
         <hr class="post-list__divider">
+        {% if forloop.index == 5 or forloop.index == 8 %}
+          {% include feed-ici-1.html %}
+        {% endif %}
       </li>
     {% endfor %}
   </ol>
