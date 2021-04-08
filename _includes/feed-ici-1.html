@@ -1,4 +1,4 @@
-{% if jekyll.environment == "production" %}
+{% if jekyll.environment == "production" and site.adsense.opened == true and site.adsense.feed_ici.opened == true %}
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 <ins class="adsbygoogle"
      style="display:block"
@@ -9,7 +9,4 @@
 <script>
      (adsbygoogle = window.adsbygoogle || []).push({});
 </script>
-{% if site.adsense_opened == true %}
-asdddd
-{% endif %}
 {% endif %}

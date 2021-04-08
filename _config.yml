@@ -17,8 +17,18 @@ author:
   github_username:  mehmetcemyucel
   linkedin_username:  mehmetcemyucel
   stackoverflow_username: mehmetcemyucel
-adsense_opened: true
-
+adsense:
+  opened: true
+  feed_ici:
+    opened: true
+  yazi_ici:
+    opened: true
+  goruntulu:
+    opened: true
+  arama:
+    opened: true
+  
+    
 google:
   adsense:
     publisherid: pub-3264551064582672
