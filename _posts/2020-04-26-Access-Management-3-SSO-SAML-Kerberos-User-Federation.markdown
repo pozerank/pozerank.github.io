@@ -76,21 +76,23 @@ Burada ek adım olarak kullanıcının servise erişebilmesi için ihtiyaç duyd
     <h4>Bu yazılar ilgilinizi çekebilir</h4>
     <ul>
     {%- assign pageDateInSecondsInEpoch = page.date | date:"%s" | plus: 0 -%}
-    {% for post in site.related_posts limit:15 %}
+    {% assign cnt = 0 %}
+    {% for post in site.related_posts %}
       {% assign match = false %}
       {%- assign postDateInSecondsInEpoch = post.date | date:"%s" | plus: 0 -%}
       {%- if pageDateInSecondsInEpoch > postDateInSecondsInEpoch -%}
-        <p>{{pageDateInSecondsInEpoch}} buyuk {{postDateInSecondsInEpoch}}</p>
-        {% if page.categories contains category %}
-          {% for category in post.categories %}
-            {% if page.categories contains category %}
-              {% assign match = true %}
-            {% endif %}
-          {% endfor %}
-        {% endif %}  
+        {% for category in post.categories %}
+          {% if page.categories contains category %}
+            {% assign match = true %}
+          {% endif %}
+        {% endfor %}
       {% endif %}  
       {% if match %}
+        {% assign cnt = cnt | plus:1 %}
         <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+      {% endif %}
+      {% if cnt == 5 %}
+        {% break %}
       {% endif %}
     {% endfor %}
     </ul>
