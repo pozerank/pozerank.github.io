@@ -52,21 +52,4 @@ Burada ek adım olarak kullanıcının servise erişebilmesi için ihtiyaç duyd
 
 İlk 3 yazımız boyunca öğrendiğimiz kavramsal konuları somut örnekler eşliğinde Keycloak uygulama aracılığıyla deneyimleyeceğiz. İlgili yazıya [buradan](https://www.mehmetcemyucel.com/2020/Access-Management-4-Keycloak/) erişebilirsiniz.
 
-<div class="PageNavigation">
-    <p style="text-align:left; text-decoration: underline;">
-        {% if page.previous.url %}
-             <a href="{{page.previous.url}}">&laquo; OpenID OAuth2 OpenID Connect</a>
-        {% endif %}
-        {% if page.next.url %}
-            <span style="float:right; text-decoration: underline;">
-                <a href="{{page.next.url}}">Keycloak &raquo;</a>
-        </span>
-        {% endif %}
-    </p>
-</div>
-
-**_En yalın haliyle_**
-
-[**Mehmet Cem Yücel**](https://www.mehmetcemyucel.com)
-
 ---

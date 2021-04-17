@@ -15,6 +15,29 @@ layout: default
   <section class="post">
     {{ content }}
   </section>
+
+  ---
+  <div class="PageNavigation">
+    <p style="text-align:left; text-decoration: underline;">
+        {% if page.previous.url %}
+             <a href="{{page.previous.url}}">&laquo; {{page.previous.title}}</a>
+        {% endif %}
+        {% if page.next.url %}
+            <span style="float:right; text-decoration: underline;">
+                <a href="{{page.next.url}}">{{page.next.title} &raquo;</a>
+        </span>
+        {% endif %}
+    </p>
+</div>
+
+  <p style="font:italic bold;">
+    En yalın haliyle
+  
+    <a href="https://www.mehmetcemyucel.com">Mehmet Cem Yücel</a>
+  </p>
+
+  <hr>
+
   {% if site.related_posts.size >= 1 %}
   <div>
     <h4>Bu yazılar ilgilinizi çekebilir</h4>
@@ -35,19 +58,18 @@ layout: default
         {% assign cnt = cnt | plus:1 %}
         <li><a href="{{ post.url }}">{{ post.title }}</a></li>
       {% endif %}
-      {% if cnt == 6 %}
+      {% if cnt == 5 %}
         {% break %}
       {% endif %}
     {% endfor %}
     </ul>
+    <h5>Blockchain teknolojisi ile ilgileniyor iseniz bunlar da hoşunuza gidebilir</h5>
+    <ul>
+      <li><a href="https://www.mehmetcemyucel.com/categories/#blockchain">BlockchainTurk.net yazıları</a></li>
+    </ul>
+    <hr>
   </div>
 {% endif %}
-
-**_Blockchain teknolojisi ile ilgileniyor iseniz bunlar da hoşunuza gidebilir:_**
-
-- [BlockchainTurk.net yazıları](https://www.mehmetcemyucel.com/categories/#blockchain)
-
----
 
   {% include goruntulu-yatay-1.html %}
   {% if page.comments != false and site.disqus_shortname %}<section id="disqus_thread"></section><!-- /#disqus_thread -->{% endif %}
