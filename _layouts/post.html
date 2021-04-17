@@ -16,29 +16,6 @@ layout: default
     {{ content }}
   </section>
   
-
-
-<div class="PageNavigation">
-    <p style="text-align:left; text-decoration: underline;">
-        {% if page.previous.url %}
-             <a href="{{page.previous.url}}">&laquo; {{page.previous.title}}</a>
-        {% endif %}
-        {% if page.next.url %}
-            <span style="float:right; text-decoration: underline;">
-                <a href="{{page.next.url}}">{{page.next.title} &raquo;</a>
-        </span>
-        {% endif %}
-    </p>
-</div>
-
-  <p style="font:italic bold;">
-    En yalın haliyle
-  
-    <a href="https://www.mehmetcemyucel.com">Mehmet Cem Yücel</a>
-  </p>
-
-  <hr>
-
   {% if site.related_posts.size >= 1 %}
   <div>
     <h4>Bu yazılar ilgilinizi çekebilir</h4>
