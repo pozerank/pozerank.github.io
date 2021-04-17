@@ -42,6 +42,6 @@ Okumaya, öğrenmeye ve devamlı gelişmeye inanan; bilgiye ve insana saygıya �
 
 İletişim için [admin@mehmetcemyucel.com](mailto:admin@mehmetcemyucel.com) ya da [mehmetcemyucel@outlook.com](mailto:mehmetcemyucel@outlook.com) adreslerini kullanabilir ya da sosyal medya üzerinden her konuda iletişime geçebilirsiniz.
 
-{% include goruntulu-yatay-1.html %}
+{% include feed-ici-imaj-1.html %}
 
 ---

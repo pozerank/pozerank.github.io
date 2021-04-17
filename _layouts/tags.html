@@ -25,5 +25,8 @@ layout: default
         {% endif %}
       {% endfor %}
     </ul>
+    {% if forloop.index % 3 == 0 %}
+      {% include feed-ici-yazi-1.html %}
+    {% endif %}
   </div>
 {% endfor %}
