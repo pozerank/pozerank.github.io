@@ -30,6 +30,7 @@ Dördüncü yazımızda [**Keycloak**](https://www.keycloak.org/)  uygulamasınd
 
 Beşinci ve son yazımızda da [**Keycloak**](https://www.keycloak.org/) ile [**Spring Boot**](https://spring.io/projects/spring-boot) uygulamamızı [**Spring Security**](https://spring.io/projects/spring-security)**,** [**Feign Client**](https://spring.io/projects/spring-cloud-openfeign) **ve RestTemplate**’lar ile konuşturarak somut örnek gerçekleştirimi yapacağız.
 
+{% include feed-ici-1.html %}
 
 ![XACML Authentication Authorization Policy Politika Erişim](https://miro.medium.com/max/696/1*AevTigjmr7CmH-RV_OtzNA.png)
 
@@ -40,6 +41,8 @@ Güvenli erişim problemini en başından incelemeye başlayalım. Bir uygulaman
 Öncelikle herkesin bu insan kaynakları uygulamasına giriş yapamaması bekleriz. Örneğin dış kaynak olarak çalışan, bordrosu başka bir şirkette olan, performans yönetimi kendi şirketi tarafından yapılan çalışma arkadaşlarımızın bu uygulamaya giriş yapmayacak şekilde uyarlanması gerekir. Bu işlemi **Kimlik Doğrulama (Authentication)** adımı ile gerçekleştirebiliriz. Yetkisi olmayan kullanıcılar uygulamaya giriş yapamayacaktır.
 
 Sonrasında uygulamamıza giriş yapabilecek iki farklı ekibimiz olduğunu varsayalım. Birisi giriş ve güncellemeleri yapabilen İnsan Kaynakları ekibindeki arkadaşlarımız, diğeri de buradaki bilgileri takip eden, readonly olarak kullanan diğer bir Yazılım Ekibindeki arkadaşlarımız olsun. İki ekip de authentication adımını başarıyla tamamladıktan sonra uygulamanın farklı özelliklerini kullanabilir durumda olmalıdır. İşte bu noktada da **Yetkilendirme (Authorization)** adımı devreye girmektedir. Farklı kullanıcıların veya kullanıcı gruplarının uygulamanın hangi kaynaklarını ne ölçüde tüketebileceğinin tanımları bu adımda kontrol edilerek yetkisiz erişimlerin önüne geçilmeye çalışılmaktadır. Peki bu tanımlar ve kontroller nasıl gerçekleştirilmektedir?
+
+{% include feed-ici-2.html %}
 
 ## 3. XACML
 
@@ -75,6 +78,8 @@ Tanımlanmış sınırlar ile kastettiğimiz kavramı biraz daha açalım. Bir e
  - **PRP:** Policy Retrieval Point
 
 ![](https://miro.medium.com/max/1155/1*7uQjo-WaAeJ-pyVYBupHdQ.png)
+
+{% include feed-ici-3.html %}
 
 #### 3.2.1. Policy Administration Point (PAP)
 
@@ -126,8 +131,18 @@ Tanımlanmış sınırlar ile kastettiğimiz kavramı biraz daha açalım. Bir e
 
 Sonraki yazımızda **OAuth Protokolü, OpenID ve OpenID Connect** kavramlarını inceleyeceğiz. Yazıya [buradan](https://www.mehmetcemyucel.com/2020/Access-Management-2-OpenID-OAuth2-OpenID-Connect/) erişebilirsiniz.
 
+<br/>
 
-***En yalın haliyle***
+<p style="text-align:left;">
+    <a href="https://www.mehmetcemyucel.com/2019/Alternatif-JVMler-ve-Javanin-Gelecegi-Podcasti/">Alternatif JVM’ler ve Java’nın Geleceği Podcast’i</a> < Önceki Yazı 
+    <span style="float:right;">
+        Sonraki Yazı ><a href="https://www.mehmetcemyucel.com/2020/Access-Management-2-OpenID-OAuth2-OpenID-Connect/">OpenID OAuth2 OpenID Connect</a>
+    </span>
+</p>
+
+<br/>
+
+**_En yalın haliyle_**
 
 [**Mehmet Cem Yücel**](https://www.mehmetcemyucel.com)
 
@@ -135,13 +150,13 @@ Sonraki yazımızda **OAuth Protokolü, OpenID ve OpenID Connect** kavramların�
 
 **_Bu yazılar ilgilinizi çekebilir:_**
 
- - [Bir Yazılımcının Bilmesi Gereken 15 Madde](https://www.mehmetcemyucel.com/2019/bir-yazilimcinin-bilmesi-gereken-15-madde/)
- - [Spring ve Java Hantal Mı — GraalVM ve Quarkus’a Giriş](https://www.mehmetcemyucel.com/2019/Spring-ve-Java-Hantal-Mi-GraalVM-ve-Quarkus-Inceleme/)
- - [Mikroservisler-Service Mesh Nedir](https://www.mehmetcemyucel.com/2019/mikroservisler-service-mesh-nedir/)
- - [12 Factor Nedir Türkçe ve Java Örnekleri](https://www.mehmetcemyucel.com/2019/twelve-factor-nedir-turkce-ornek/)
+- [Bir Yazılımcının Bilmesi Gereken 15 Madde](https://www.mehmetcemyucel.com/2019/bir-yazilimcinin-bilmesi-gereken-15-madde/)
+- [Spring ve Java Hantal Mı — GraalVM ve Quarkus’a Giriş](https://www.mehmetcemyucel.com/2019/Spring-ve-Java-Hantal-Mi-GraalVM-ve-Quarkus-Inceleme/)
+- [Mikroservisler-Service Mesh Nedir](https://www.mehmetcemyucel.com/2019/mikroservisler-service-mesh-nedir/)
+- [12 Factor Nedir Türkçe ve Java Örnekleri](https://www.mehmetcemyucel.com/2019/twelve-factor-nedir-turkce-ornek/)
 
 **_Blockchain teknolojisi ile ilgileniyor iseniz bunlar da hoşunuza gidebilir:_**
 
- - [BlockchainTurk.net yazıları](https://www.mehmetcemyucel.com/categories/#blockchain)
+- [BlockchainTurk.net yazıları](https://www.mehmetcemyucel.com/categories/#blockchain)
 
 ---
