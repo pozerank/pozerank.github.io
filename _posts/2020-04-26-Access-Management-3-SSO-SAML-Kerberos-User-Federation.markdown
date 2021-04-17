@@ -71,12 +71,24 @@ Burada ek adım olarak kullanıcının servise erişebilmesi için ihtiyaç duyd
 
 ---
 
-**_Bu yazılar ilgilinizi çekebilir:_**
-
-- [Bir Yazılımcının Bilmesi Gereken 15 Madde](https://www.mehmetcemyucel.com/2019/bir-yazilimcinin-bilmesi-gereken-15-madde/)
-- [Spring ve Java Hantal Mı - GraalVM ve Quarkus’a Giriş](https://www.mehmetcemyucel.com/2019/Spring-ve-Java-Hantal-Mi-GraalVM-ve-Quarkus-Inceleme/)
-- [Mikroservisler-Service Mesh Nedir](https://www.mehmetcemyucel.com/2019/mikroservisler-service-mesh-nedir/)
-- [12 Factor Nedir Türkçe ve Java Örnekleri](https://www.mehmetcemyucel.com/2019/twelve-factor-nedir-turkce-ornek/)
+{% if site.related_posts.size >= 1 %}
+<div>
+  <h4>Bu yazılar ilgilinizi çekebilir</h4>
+  <ul>
+  {% for post in site.related_posts limit:5 %}
+  {% assign match = false %}
+  {% for category in post.categories %}
+    {% if page.categories contains category %}
+      {% assign match = true %}
+    {% endif %}
+  {% endfor %}
+  {% if match %}
+    <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+  {% endif %}
+{% endfor %}
+  </ul>
+</div>
+{% endif %}
 
 **_Blockchain teknolojisi ile ilgileniyor iseniz bunlar da hoşunuza gidebilir:_**
 

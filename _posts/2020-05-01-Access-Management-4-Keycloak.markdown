@@ -80,12 +80,24 @@ Daha detaylı bilgiler için başarılı bir dokümantasyon sayfaları mevcut. [
 
 ---
 
-**_Bu yazılar ilgilinizi çekebilir:_**
-
-- [Spring Boot Devtools ile Docker Üzerindeki Kodu Debug Etme ve Değiştirme](https://www.mehmetcemyucel.com/2019/spring-boot-devtools-ile-docker-uzerindeki-kodu-debug-etme-ve-degistirme/)
-- [Spring Boot Rest Servis Entegrasyon Testi](https://medium.com/mehmetcemyucel/spring-boot-rest-birim-entegrasyon-testi-43a7f9354a33)
-- [Spring Boot Property’lerini Jasypt ile Şifrelemek](https://www.mehmetcemyucel.com/2019/spring-boot-propertylerini-jasypt-ile-sifrelemek/)
-- [12 Factor Nedir Türkçe ve Java Örnekleri](https://www.mehmetcemyucel.com/2019/twelve-factor-nedir-turkce-ornek/)
+{% if site.related_posts.size >= 1 %}
+<div>
+  <h4>Bu yazılar ilgilinizi çekebilir</h4>
+  <ul>
+  {% for post in site.related_posts limit:5 %}
+  {% assign match = false %}
+  {% for category in post.categories %}
+    {% if page.categories contains category %}
+      {% assign match = true %}
+    {% endif %}
+  {% endfor %}
+  {% if match %}
+    <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+  {% endif %}
+{% endfor %}
+  </ul>
+</div>
+{% endif %}
 
 **_Blockchain teknolojisi ile ilgileniyor iseniz bunlar da hoşunuza gidebilir:_**
 

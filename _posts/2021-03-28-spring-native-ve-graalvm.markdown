@@ -90,12 +90,24 @@ Sonraki yazımızda bir Spring Native projesinin nasıl ayağa kaldırılabilece
 
 ---
 
-**_Bu yazılar ilgilinizi çekebilir:_**
-
-- [Spring Boot ve Keycloak](https://www.mehmetcemyucel.com/2020/Access-Management-5-Spring-RestTemplate-Feign-Keycloak/)
-
-- [Alternatif JVM’ler ve Java’nın Geleceği Podcast’i](https://medium.com/mehmetcemyucel/alternatif-jvmler-ve-java-nin-gelecegi-podcast-i-6c1aa175e45b)
-- [Bir Yazılımcının Bilmesi Gereken 15 Madde](https://www.mehmetcemyucel.com/2019/bir-yazilimcinin-bilmesi-gereken-15-madde/)
+{% if site.related_posts.size >= 1 %}
+<div>
+  <h4>Bu yazılar ilgilinizi çekebilir</h4>
+  <ul>
+  {% for post in site.related_posts limit:5 %}
+  {% assign match = false %}
+  {% for category in post.categories %}
+    {% if page.categories contains category %}
+      {% assign match = true %}
+    {% endif %}
+  {% endfor %}
+  {% if match %}
+    <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+  {% endif %}
+{% endfor %}
+  </ul>
+</div>
+{% endif %}
 
 ***Blockchain teknolojisi ile ilgileniyor iseniz bunlar da hoşunuza gidebilir:***
 
