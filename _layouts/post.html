@@ -16,6 +16,19 @@ layout: default
     {{ content }}
   </section>
 
+  <div class="PageNavigation">
+    <p style="text-align:left; text-decoration: underline;">
+        {% if page.previous.url %}
+             <a href="{{page.previous.url}}">&laquo; Keycloak</a>
+        {% endif %}
+        {% if page.next.url %}
+            <span style="float:right; text-decoration: underline;">
+                <a href="{{page.next.url}}">Spring Native ve GraalVM &raquo;</a>
+        </span>
+        {% endif %}
+    </p>
+</div>
+
 <p style="font:italic bold;">
   En yalın haliyle
   <br/>
