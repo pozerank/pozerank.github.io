@@ -6,7 +6,6 @@ tags: [spring boot, spring, mapstruct, mapper, object mapper, türkçe, yazılı
 image: https://miro.medium.com/max/150/1*9DhTKcVmIApp1AXoGZ4A4A.png
 ---
 
-
 Bu yazımızda [**MapStruct**](http://mapstruct.org/)  isimli `Java Bean Mapper` kütüphanesini ve [**Spring**](https://spring.io/)  ile kullanımını inceleyeceğiz.
 
 ![](https://miro.medium.com/max/6250/1*9DhTKcVmIApp1AXoGZ4A4A.png)
@@ -42,7 +41,7 @@ Bağımlılıkların yanı sıra eklememiz gereken bir yapılandırma daha var. 
 
 `clone` isimli metod ile girdisi ve çıktısı aynı olan bir interface ile bir nesnenin yeni hash ile klonunu yaratmanız MapStruct ile oldukça kolay.
 
-"***ÖNEMLİ NOT:** MapStruct arayüzlerinde tanımladığınız mapperların sınıflarının bytecode’larının oluşması için `maven clean install` komutunu çalıştırabilirsiniz. Aksi taktirde Spring byte kodu runtime da bulamayacak `ClassNotFoundException: Cannot find implementation for …..Mapper` gibi bir hata verecektir.*"
+"_**ÖNEMLİ NOT:** MapStruct arayüzlerinde tanımladığınız mapperların sınıflarının bytecode’larının oluşması için `maven clean install` komutunu çalıştırabilirsiniz. Aksi taktirde Spring byte kodu runtime da bulamayacak `ClassNotFoundException: Cannot find implementation for …..Mapper` gibi bir hata verecektir._"
 
 ### 3.3. Test Senaryosu
 
@@ -127,6 +126,15 @@ Java diğer mapper toollarıyla kıyaslandığında MapStruct performansıyla de
 Projenin kodlarına [buradan](https://github.com/mehmetcemyucel/mapstruct) erişebilirsiniz. 
 
 
+<div class="PageNavigation">
+  {% if page.previous.url %}
+    <a class="prev" href="{{page.previous.url}}">&laquo; {{page.previous.title}}</a>
+  {% endif %}
+  {% if page.next.url %}
+    <a class="next" href="{{page.next.url}}">{{page.next.title}} &raquo;</a>
+  {% endif %}
+</div>
+
 ***En yalın haliyle***
 
 [**Mehmet Cem Yücel**](https://www.mehmetcemyucel.com)
@@ -135,13 +143,13 @@ Projenin kodlarına [buradan](https://github.com/mehmetcemyucel/mapstruct) eriş
 
 **_Bu yazılar ilgilinizi çekebilir:_**
 
- - [Bir Yazılımcının Bilmesi Gereken 15  Madde](https://www.mehmetcemyucel.com/2019/bir-yazilimcinin-bilmesi-gereken-15-madde/)
- - [Spring Boot Devtools ile Docker Üzerindeki Kodu Debug Etme ve  Değiştirme](https://www.mehmetcemyucel.com/2019/spring-boot-devtools-ile-docker-uzerindeki-kodu-debug-etme-ve-degistirme/)
- - [Spring Boot Property’lerini Jasypt ile
+- [Bir Yazılımcının Bilmesi Gereken 15  Madde](https://www.mehmetcemyucel.com/2019/bir-yazilimcinin-bilmesi-gereken-15-madde/)
+- [Spring Boot Devtools ile Docker Üzerindeki Kodu Debug Etme ve  Değiştirme](https://www.mehmetcemyucel.com/2019/spring-boot-devtools-ile-docker-uzerindeki-kodu-debug-etme-ve-degistirme/)
+- [Spring Boot Property’lerini Jasypt ile
    Şifrelemek](https://www.mehmetcemyucel.com/2019/spring-boot-propertylerini-jasypt-ile-sifrelemek/)
 
 **_Blockchain teknolojisi ile ilgileniyor iseniz bunlar da hoşunuza gidebilir:_**
 
- - [BlockchainTurk.net  yazıları](https://www.mehmetcemyucel.com/categories/#blockchain)
+- [BlockchainTurk.net  yazıları](https://www.mehmetcemyucel.com/categories/#blockchain)
 
 ---
