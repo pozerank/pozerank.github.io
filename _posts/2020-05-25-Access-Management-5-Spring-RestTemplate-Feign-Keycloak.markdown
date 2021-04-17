@@ -199,6 +199,8 @@ Yukarıdaki gibi bir entegrasyon ile Keycloak olsun olmasın tüm OAuth2 entegra
 
 ---
 
+{{site.related_posts}}
+
 **_Bu yazılar ilgilinizi çekebilir:_**
 
 - [Alternatif JVM’ler ve Java’nın Geleceği Podcast’i](https://www.mehmetcemyucel.com/2019/Alternatif-JVMler-ve-Javanin-Gelecegi-Podcasti/)
@@ -211,3 +213,5 @@ Yukarıdaki gibi bir entegrasyon ile Keycloak olsun olmasın tüm OAuth2 entegra
 - [BlockchainTurk.net yazıları](https://www.mehmetcemyucel.com/categories/#blockchain)
 
 ---
+
+{{page.tags}}

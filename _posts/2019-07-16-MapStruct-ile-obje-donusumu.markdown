@@ -125,8 +125,6 @@ Java diğer mapper toollarıyla kıyaslandığında MapStruct performansıyla de
 
 Projenin kodlarına [buradan](https://github.com/mehmetcemyucel/mapstruct) erişebilirsiniz. 
 
-
-
 <div class="PageNavigation">
     <p style="text-align:left; text-decoration: underline;">
         {% if page.previous.url %}
@@ -138,6 +136,7 @@ Projenin kodlarına [buradan](https://github.com/mehmetcemyucel/mapstruct) eriş
         </span>
         {% endif %}
     </p>
+    <br/>
 </div>
 
 **_En yalın haliyle_**
