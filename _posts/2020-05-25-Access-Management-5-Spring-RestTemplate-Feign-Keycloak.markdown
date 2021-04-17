@@ -198,10 +198,24 @@ Yukarıdaki gibi bir entegrasyon ile Keycloak olsun olmasın tüm OAuth2 entegra
 [**Mehmet Cem Yücel**](https://www.mehmetcemyucel.com)
 
 ---
-
-{{site.related_posts}}
-
-**_Bu yazılar ilgilinizi çekebilir:_**
+{% if site.related_posts.size >= 1 %}
+    <div>
+    <h3>Bu yazılar ilgilinizi çekebilir</h3>
+    <ul>
+    {% for post in site.related_posts limit:5 %}
+        {% assign match = false %}
+        {% for category in post.categories %}
+            {% if page.categories contains category %}
+                {% assign match = true %}
+            {% endif %}
+        {% endfor %}
+        {% if match %}
+        <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+        {% endif %}
+    {% endfor %}
+    </ul>
+    </div>
+{% endif %}
 
 - [Alternatif JVM’ler ve Java’nın Geleceği Podcast’i](https://www.mehmetcemyucel.com/2019/Alternatif-JVMler-ve-Javanin-Gelecegi-Podcasti/)
 - [Spring ve Java Hantal Mı — GraalVM ve Quarkus’a Giriş](https://www.mehmetcemyucel.com/2019/Spring-ve-Java-Hantal-Mi-GraalVM-ve-Quarkus-Inceleme/)
