@@ -43,11 +43,7 @@ layout: default
       {% assign match = false %}
       {%- assign postDateInSecondsInEpoch = post.date | date:"%s" | plus: 0 -%}
       {%- if pageDateInSecondsInEpoch > postDateInSecondsInEpoch -%}
-        {% for category in post.categories %}
-          {% if page.categories contains category %}
-            {% assign match = true %}
-          {% endif %}
-        {% endfor %}
+        {% assign match = true %}
       {% endif %}  
       {% if match %}
         {% assign cnt = cnt | plus:1 %}
