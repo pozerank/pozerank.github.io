@@ -51,5 +51,3 @@ Burada ek adım olarak kullanıcının servise erişebilmesi için ihtiyaç duyd
 ## 2. Sonuç
 
 İlk 3 yazımız boyunca öğrendiğimiz kavramsal konuları somut örnekler eşliğinde Keycloak uygulama aracılığıyla deneyimleyeceğiz. İlgili yazıya [buradan](https://www.mehmetcemyucel.com/2020/Access-Management-4-Keycloak/) erişebilirsiniz.
-
----

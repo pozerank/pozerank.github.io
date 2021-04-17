@@ -179,5 +179,3 @@ Sonuçları gözlemlemek için [bu yazımda bahsettiğim](https://medium.com/meh
 ## 5. Sonuç
 
 Yukarıdaki gibi bir entegrasyon ile Keycloak olsun olmasın tüm OAuth2 entegrasyonlarınızı kolay bir şekilde halledebilirsiniz. Refresh token, access token, veya expire konularını düşünmenize gerek kalmadan size hızlı entegrasyon sağlayacaktır. Keycloak ile bunun authorization kısmını da hazır ekranları aracılığıyla zahmetsizce yönetme imkanınız olacaktır. Uygulamanın kodlarına [buradan](https://github.com/mehmetcemyucel/springboot-keycloak) erişebilirsiniz.
-
----
