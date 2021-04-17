@@ -26,6 +26,8 @@ image: https://cdn-images-1.medium.com/max/150/0*knMgRQMoNMWQciZs.jpg
 
 Uygulamamız ve test senaryomuz şu şekilde olacak. İki rest servis ayağa kaldıracağız. İki servisi de ayrı roller çağırabilir durumda olacak. Uygulamamızın client’ına sadece 1 role yetki vereceğiz. Bu yetkiyle 1. servisi çağırabildiğini, 2. servise ise unauthorized aldığını gözlemleyeceğiz. Bu çağırımları hem restTemplate ile hem de feign client ile yapacağız. Bütün bu süreci kolaylaştırmak için bir tane de bu servislerin çağırımının yapıldığı bir ayrı bir servis ayağa kaldıracağız.
 
+{% include feed-ici-1.html %}
+
 ## 2. Ortam Kurulumu
 
 ### 2.1. Keycloak on Docker
@@ -41,6 +43,8 @@ Bu scriptte iki environment parametresi geçiyoruz. Bunlar admin arayüzüne gir
 Bu noktadan sonra [http://localhost:8080](http://localhost:8080) 'e gittiğimizde aşağıdaki gibi bir görüntü ile karşılaşıyoruz.
 
 ![](https://miro.medium.com/max/1604/1*HfcW4RZX-vMzq_sDJGSFcw.png)
+
+{% include feed-ici-2.html %}
 
 **“Administration Console”** yazısını tıklayarak login ekranına gidiyoruz.
 
@@ -66,6 +70,8 @@ Sırada rollerimizi yaratma adımımız var. İki role, user-role ve user2-role 
 
 ![](https://miro.medium.com/max/1603/1*b7zL2z1MYVmISpLm80Tuow.png)
 
+{% include feed-ici-3.html %}
+
 İki rolü de aynı şekilde yarattıktan sonra son görüntümüz aşağıdaki gibi olmalı.
 
 ![](https://miro.medium.com/max/1600/1*Pn1M0g7Xne6Gz0P9RfVWxA.png)
@@ -80,6 +86,8 @@ Burada **Create** butonunu tıklayarak uygulamamıza client yaratacağız. Sprin
 
 ![](https://miro.medium.com/max/1600/1*kX1nqa-jFDvdaJ7leIbLXQ.png)
 
+{% include feed-ici-4.html %}
+
 Sonraki adımımızda clientımızı yapılandırmamız gerekli. Bizim senaryomuz bir frontend uygulaması tarafından **Users** login edip onların ekran üzerindeki credentiallarıyla ilgili bir deneme yapmak değil. Servislerimizin sadece uygulamamıza verilen yetkiler kapsamında çağırılabildiğini test etmek istiyoruz. Bu sebeple **Access Type** alanımızı **confidential**, **Service Accounts Enabled** ve **Authorization Enabled** alanlarını **On** yapıyoruz. Aşağıya kaydırıp **Save** butonuna tıkladıktan sonra ekranda yeni tablarımız belirecek.
 
 ![](https://miro.medium.com/max/1599/1*110ZLxjsHUM_k_1-97utGg.png)
@@ -91,6 +99,8 @@ Kaydettikten sonra çıkan **Service Account Roles** tabına geçerek uygulamam�
 Son olarak **Credentials** tabına giderek uygulamamız için yaratılan **Secret**’ı kopyalıyoruz. Bu secret’ı uygulamamıza vermemiz gerekecek.
 
 ![](https://miro.medium.com/max/1599/1*IyaUMl3klJMNCkb98BI6UA.png)
+
+{% include feed-ici-5.html %}
 
 ## 3. Spring Boot Uygulaması
 
@@ -117,6 +127,8 @@ Hatırlarsanız Keycloak ile uygulamamızın portlarını değiştireceğimizden
 Uygulamamızın Keycloak’u ve uygulamamıza erişim yöntemlerini yapılandırmak için aşağıdaki sınıfa ihtiyacımız var.
 
 <script src="https://gist.github.com/mehmetcemyucel/ea3715d26d16d87479b9bbbef772aa80.js"></script>
+
+{% include feed-ici-6.html %}
 
 Burada **PreAuthorize** annotation’ı kullanılan servislerin haricinde tüm servislere erişim hakkı vermemizin sebebi birazdan controller’ımıza ekleyeceğimiz yeni metodların direk erişilebilir olmasını istememizden kaynaklanıyor.
 

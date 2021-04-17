@@ -24,11 +24,13 @@ Java’nın sağladığı bu esneklik dönemin de şartları göz önünde bulun
 
 ![https://redmonk.com/sogrady/2019/03/20/language-rankings-1-19](https://miro.medium.com/max/1313/0*oti73UQpHd93KL66.png)
 
+{% include feed-ici-2.html %}
+
 Görünüşe göre Java halen en popüler dillerden birisi olarak hayatına devam ediyor. Peki Java bunu nasıl başarıyor?
 
 İlk günden bu yana Java yazılım diline [Java Specification Request](https://jcp.org/en/jsr/overview) (JSR) ismi verilen yeni özellikler [Java Community Process](https://www.jcp.org/en/home/index) (JCP) tarafından belirli standartlar gözetilerek eklendi. [Functional Programming](https://en.wikipedia.org/wiki/Functional_programming), [Nonblocking I/O](https://en.wikipedia.org/wiki/Non-blocking_I/O_(Java)) gibi popüler yazılım geliştirme paradigmaları da benzer şekilde dile kazandırıldı. Peki dil evrimine devam ederken JVM’de neler yaşandı? En önemli JVM fonksiyonlarından birisi olan garbage collection işlemini sağlayan yapılarda optimizasyonlar, yenilikler yapıldı. Özellikle **Java11** ile birlikte gelen [**Z Garbage Collector**](https://wiki.openjdk.java.net/display/zgc/Main) **(ZGC)** ile büyük yenilikler hayatımıza dahil oldu. [Valhalla Project](https://openjdk.java.net/projects/valhalla/) gibi kuluçka projelerle alternatif sanal makine başarımları geliştirilmeye devam ediyor. Hayat çok güzel, her şey yolunda, sistem tıkır tıkır işliyor değil mi? Peki gerçkten öyle mi?
 
-{% include feed-ici-2.html %}
+{% include feed-ici-3.html %}
 
 ## 3. Java ve Mikroservisler
 
@@ -44,7 +46,7 @@ Yukarıdaki cümleye bakılırsa **herhangi bir yerde çalıştırılabilmesi** 
 
 ![http://canacopegdl.com/file/images/cumbersome/cumbersome-13.html](https://miro.medium.com/max/633/0*mf0v1GtnXoEpVUN9.jpg)
 
-{% include feed-ici-3.html %}
+{% include feed-ici-4.html %}
 
 Yazılan Java kodunun farklı işletim sistemlerinde, mimarilerde çalışabilmesi için aslında hatrı sayılır şeylerden feragat edilmesi gerekmektedir. Derlenmiş kodumuzun çalıştırılmasından sorumlu [Java Runtime Environment](https://www.java.com/en/download/faq/whatis_java.xml)’da(JRE) bu sebepten çok fazla kaynak ve kod bulunmaktadır. **Örneğin** [**OpenJDK**](https://wiki.openjdk.java.net/)**’nın base image’ı 250MB’dan daha büyüktür**. Şirketler genellikle mikroservis mimariye uygun kod geliştirebilmek için [**Spring**](https://spring.io/) **teknolojilerini kullanarak kod geliştirdiği varsayımı ile ilerlersek kodumuzun çalışabildiği containerın boyutu en azından yaklaşık 450–500MB’lar civarında olacaktır.** Bu boyutlar [disposability](https://www.mehmetcemyucel.com/2019/twelve-factor-nedir-turkce-ornek/) prensibinden dolayı tercih etmediğimiz bir durumdur. Çünkü büyük boyutlardaki containerların ayağa kalkması uzun sürmektedir. Peki ne yapabiliriz? Sırtımızdaki yükten nasıl kurtulabiliriz?
 
@@ -78,8 +80,9 @@ GraalVM bir önceki başlıkta sunulan her şeyi sunuyor. Ancak native image kul
 
 Bildiğiniz gibi Spring, [Inversion of Control](https://en.wikipedia.org/wiki/Inversion_of_control) (IoC) prensibi ile çalışmaktadır. Diğer adıyla [Dependency Injection](https://en.wikipedia.org/wiki/Dependency_injection) (DI) olarak bildiğimiz yapıda tanımladığımız singleton Spring Bean’leri `ApplicationContext`tarafından preload edilir ve runtime’da ne zaman `getBean()` metodu çağırılırsa `lazy loading` ile `BeanFactory` tarafından bean örneği yaratılır. Bütün bu süreçte de bildiğiniz gibi reflection kullanılmaktadır :) Yani eğer native image kullanma düşüncesindeyseniz çalışma mantığını düşündüğümüzde Spring bunun için uyumlu bir seçenek olmayacaktır. Spring ile native image kullanmayı sağlamak için farklı projelere rastlayabilirsiniz, şu an için verimli bir çözüm olmamakla birlikte belki de çözüm için farklı alternatifleri düşünmenin vakti gelmiştir, ne dersiniz?
 
-## 5. Quarkus
+{% include feed-ici-5.html %}
 
+## 5. Quarkus
 
 ![](https://miro.medium.com/max/1040/0*GIhOwWtCvkPXqmsB.jpg)
 
@@ -105,12 +108,13 @@ Spring projesi ayağa kalkabilmek için **minimum 13MB belleğe** ihtiyaç duydu
 
 ![](https://miro.medium.com/max/1664/1*K2DMyYUbp_JFhq3HlRdVww.png)
 
+{% include feed-ici-6.html %}
+
 **Aynı kaynakla (13MB) Quarkus projesi**ni JIT derleyici ile HotSpot modda ayağa kaldırdığımda ortalama **ayağa kalkma süresi 600ms civarlarında** dolaştı.
 
 ![](https://miro.medium.com/max/1151/1*e-uspi-oPHqJ817_Q-unUw.png)
 
 Yine **JIT derleyici ile Quarkus projesinin ayağa kalkabilmesi için ise minimum 7MB’lık bir memory** yeterli oldu. Bu kaynakla **ortalama ayağa kalkış süresi 1sn** civarlarındaydı.
-
 
 ![](https://miro.medium.com/max/1149/1*-6Ob17UwYBBOxh5MtOVl8w.png)
 
@@ -136,6 +140,8 @@ Quarkus projesi Spring Boot projesine kıyasla daha az kaynakla çok daha hızl�
 
 ![](https://miro.medium.com/max/1920/1*V82jjUN0yydgeQ7dEvHKvA.png)
 
+{% include feed-ici-1.html %}
+
 Ortalama 50MB heap ile açılan uygulama isteği aldığı anda yaklaşık 250 MB’lara ulaştı. Elastic’in took süresi 1sn idi. Network üzerindeki trafik sonlandığı ve tüm datanın uygulama üzerine bindiği anda **maksimum kullanılan bellek 2,5GB**’ları gördü. Uygulama açılışından itibaren ortalama **52 live thread** ile tüm süreci yönetti ve **23 tane** [**daemon thread**](https://www.mehmetcemyucel.com/2015/java-daemon-thread/) vardı. Yaptığım 10 denemenin ortalaması tetikleme anından itibaren response’un String’e alınması **ortalama 36sn** sürdü.
 
 Kod:
@@ -144,9 +150,9 @@ Kod:
 
 ##### 6.2.1.2. Quarkus Memory & CPU
 
-![](https://miro.medium.com/max/60/1*6D5jJShqv8pY8nTUkv47KA.png?q=20)
-
 ![](https://miro.medium.com/max/1923/1*6D5jJShqv8pY8nTUkv47KA.png)
+
+{% include feed-ici-2.html %}
 
 Ortalama 50MB heap ile açılan uygulama isteği aldığı anda yaklaşık 250 MB’lara ulaştı. Elastic’in took süresi 1sn idi. Network üzerindeki trafik sonlandığı ve tüm datanın uygulama üzerine bindiği anda **maksimum kullanılan bellek 700MB**’ları gördü ancak **çok hızlı şekilde bu bellek alanını iade etti**. 15 thread ile açılan uygulama istek anından itibaren **ortalama 29 live thread** ile tüm süreci yönetti ve **12 tane daemon thread** vardı. Yaptığım 10 denemenin ortalaması tetikleme anından itibaren response’un String’e alınması **ortalama 19sn** sürdü.
 
