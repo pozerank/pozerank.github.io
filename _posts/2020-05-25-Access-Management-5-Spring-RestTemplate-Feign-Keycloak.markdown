@@ -182,12 +182,14 @@ Yukarıdaki gibi bir entegrasyon ile Keycloak olsun olmasın tüm OAuth2 entegra
 
 <br/>
 
-<p style="text-align:left;">
-    <a href="https://www.mehmetcemyucel.com/2020/Access-Management-4-Keycloak">Keycloak</a> < Önceki Yazı 
-    <span style="float:right;">
-        Sonraki Yazı > <a href="https://www.mehmetcemyucel.com/2021/spring-native-ve-graalvm/">Spring Native ve GraalVM</a>
-    </span>
-</p>
+<div class="PageNavigation">
+  {% if page.previous.url %}
+    <a class="prev" href="{{page.previous.url}}">&laquo;&laquo; Keycloak</a>
+  {% endif %}
+  {% if page.next.url %}
+    <a class="next" href="{{page.next.url}}">Spring Native ve GraalVM &raquo; &raquo;</a>
+  {% endif %}
+</div>
 
 <br/>
 
