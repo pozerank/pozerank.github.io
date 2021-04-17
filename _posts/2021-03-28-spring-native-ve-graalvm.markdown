@@ -72,13 +72,13 @@ Pom.xml dosyasındaki son dikkat edilmesi gereken nokta ise versiyonlar. Şu and
 Sonraki yazımızda bir Spring Native projesinin nasıl ayağa kaldırılabileceğini, IDE yapılandırmalarını, derlemeyi, Native Hint’lerini, proje performans karşılaştırmalarını ve son olarak hangi Spring Starter’ları ve çevresel Cloud Starter’ları ile birlikte kullanılabileceğini inceleyeceğiz.
 
 <div class="PageNavigation">
-    <p style="text-align:left;">
+    <p style="text-align:left; text-decoration: underline;">
         {% if page.previous.url %}
-            &laquo; <a href="{{page.previous.url}}">SSO SAML Kerberos User Federation</a>
+             <a href="{{page.previous.url}}">&laquo; SSO SAML Kerberos User Federation</a>
         {% endif %}
         {% if page.next.url %}
-            <span style="float:right;">
-                Sonraki Yazı ><a href="{{page.next.url}}">Spring Boot ve Keycloak &raquo;</a>
+            <span style="float:right; text-decoration: underline;">
+                Sonraki Yazı ><a href="{{page.next.url}}"> &raquo;</a>
         </span>
         {% endif %}
     </p>

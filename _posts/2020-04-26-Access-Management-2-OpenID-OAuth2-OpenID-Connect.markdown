@@ -98,16 +98,18 @@ Bütün bu protokollerin, frameworklerin üzerine 2014'te [**OpenID Connect (OID
 
 Sonraki yazımızda aynı OpenID Connect gibi **Federated Authentication** kullanan diğer bir **Access Management** standardı olan **SAML**’a ve çalışma prensiplerine**, User Federation, Kerberos, SSO** kavramlarına değineceğiz. Yazıya [buradan](https://www.mehmetcemyucel.com/2020/Access-Management-3-SSO-SAML-Kerberos-User-Federation/) erişebilirsiniz.
 
-<br/>
-
-<p style="text-align:left;">
-    <a href="https://www.mehmetcemyucel.com/2020/Access-Management-1-XACML-Authorization-Authentication/">XACML Authorization Authentication</a> < Önceki Yazı
-    <span style="float:right;">
-        Sonraki Yazı > <a href="https://www.mehmetcemyucel.com/2020/Access-Management-3-SSO-SAML-Kerberos-User-Federation">SSO SAML Kerberos User Federation</a>
-    </span>
-</p>
-
-<br/>
+<div class="PageNavigation">
+    <p style="text-align:left; text-decoration: underline;">
+        {% if page.previous.url %}
+             <a href="{{page.previous.url}}">&laquo; XACML Authorization Authentication</a>
+        {% endif %}
+        {% if page.next.url %}
+            <span style="float:right; text-decoration: underline;">
+                Sonraki Yazı ><a href="{{page.next.url}}">SSO SAML Kerberos User Federation &raquo;</a>
+        </span>
+        {% endif %}
+    </p>
+</div>
 
 **_En yalın haliyle_**
 

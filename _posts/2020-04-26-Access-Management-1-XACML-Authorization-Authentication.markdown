@@ -131,16 +131,18 @@ Tanımlanmış sınırlar ile kastettiğimiz kavramı biraz daha açalım. Bir e
 
 Sonraki yazımızda **OAuth Protokolü, OpenID ve OpenID Connect** kavramlarını inceleyeceğiz. Yazıya [buradan](https://www.mehmetcemyucel.com/2020/Access-Management-2-OpenID-OAuth2-OpenID-Connect/) erişebilirsiniz.
 
-<br/>
-
-<p style="text-align:left;">
-    <a href="https://www.mehmetcemyucel.com/2019/Alternatif-JVMler-ve-Javanin-Gelecegi-Podcasti/">Alternatif JVM’ler ve Java’nın Geleceği Podcast’i</a> < Önceki Yazı 
-    <span style="float:right;">
-        Sonraki Yazı ><a href="https://www.mehmetcemyucel.com/2020/Access-Management-2-OpenID-OAuth2-OpenID-Connect/">OpenID OAuth2 OpenID Connect</a>
-    </span>
-</p>
-
-<br/>
+<div class="PageNavigation">
+    <p style="text-align:left; text-decoration: underline;">
+        {% if page.previous.url %}
+             <a href="{{page.previous.url}}">&laquo; Java’nın Geleceği Podcast’i</a>
+        {% endif %}
+        {% if page.next.url %}
+            <span style="float:right; text-decoration: underline;">
+                Sonraki Yazı ><a href="{{page.next.url}}">OpenID OAuth2 OpenID Connect &raquo;</a>
+        </span>
+        {% endif %}
+    </p>
+</div>
 
 **_En yalın haliyle_**
 

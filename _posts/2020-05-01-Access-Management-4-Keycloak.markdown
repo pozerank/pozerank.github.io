@@ -61,16 +61,18 @@ Keycloak’ı kullanmak isterseniz bir [java runtime](https://www.keycloak.org/g
 
 Daha detaylı bilgiler için başarılı bir dokümantasyon sayfaları mevcut. [Buradan](https://www.keycloak.org/documentation) inceleyebilirsiniz. Beşinci ve son yazımızda Spring Boot ile Keycloak’u kullanarak Authentication/Authorization örnekleri yapacağız. Yazıya buradan erişebilirsiniz.
 
-<br/>
-
-<p style="text-align:left;">
-    <a href="https://www.mehmetcemyucel.com/2020/Access-Management-3-SSO-SAML-Kerberos-User-Federation">SSO SAML Kerberos User Federation</a> < Önceki Yazı 
-    <span style="float:right;">
-        Sonraki Yazı ><a href="https://www.mehmetcemyucel.com/2020/Access-Management-5-Spring-RestTemplate-Feign-Keycloak">Spring Boot ve Keycloak</a>
-    </span>
-</p>
-
-<br/>
+<div class="PageNavigation">
+    <p style="text-align:left; text-decoration: underline;">
+        {% if page.previous.url %}
+             <a href="{{page.previous.url}}">&laquo; SSO SAML Kerberos User Federation</a>
+        {% endif %}
+        {% if page.next.url %}
+            <span style="float:right; text-decoration: underline;">
+                Sonraki Yazı ><a href="{{page.next.url}}">Spring Boot ve Keycloak &raquo;</a>
+        </span>
+        {% endif %}
+    </p>
+</div>
 
 **_En yalın haliyle_**
 

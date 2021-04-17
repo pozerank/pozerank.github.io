@@ -56,16 +56,20 @@ image: https://miro.medium.com/max/150/1*gp7kdBQxRzDUmAMRa74LEg.png
 
 [https://quarkus.io/](https://quarkus.io/)
 
-<br/>
+---
 
-<p style="text-align:left;">
-    <a href="https://www.mehmetcemyucel.com/2019/Spring-ve-Java-Hantal-Mi-GraalVM-ve-Quarkus-Inceleme/">Spring ve Java Hantal Mı — GraalVM ve Quarkus’a Giriş</a> < Önceki Yazı
-    <span style="float:right;">
-        Sonraki Yazı ><a href="https://www.mehmetcemyucel.com/2020/Access-Management-1-XACML-Authorization-Authentication/">XACML Authorization Authentication</a>
-    </span>
-</p>
-
-<br/>
+<div class="PageNavigation">
+    <p style="text-align:left; text-decoration: underline;">
+        {% if page.previous.url %}
+             <a href="{{page.previous.url}}">&laquo; Spring ve Java Hantal Mı</a>
+        {% endif %}
+        {% if page.next.url %}
+            <span style="float:right; text-decoration: underline;">
+                Sonraki Yazı ><a href="{{page.next.url}}">XACML Authorization Authentication &raquo;</a>
+        </span>
+        {% endif %}
+    </p>
+</div>
 
 **_En yalın haliyle_**
 

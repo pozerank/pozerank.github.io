@@ -180,18 +180,18 @@ Sonuçları gözlemlemek için [bu yazımda bahsettiğim](https://medium.com/meh
 
 Yukarıdaki gibi bir entegrasyon ile Keycloak olsun olmasın tüm OAuth2 entegrasyonlarınızı kolay bir şekilde halledebilirsiniz. Refresh token, access token, veya expire konularını düşünmenize gerek kalmadan size hızlı entegrasyon sağlayacaktır. Keycloak ile bunun authorization kısmını da hazır ekranları aracılığıyla zahmetsizce yönetme imkanınız olacaktır. Uygulamanın kodlarına [buradan](https://github.com/mehmetcemyucel/springboot-keycloak) erişebilirsiniz.
 
-<br/>
-
 <div class="PageNavigation">
-  {% if page.previous.url %}
-    <a class="prev" href="{{page.previous.url}}">&laquo;&laquo; Keycloak</a>
-  {% endif %}
-  {% if page.next.url %}
-    <a style="text-align: right;" href="{{page.next.url}}">Spring Native ve GraalVM &raquo; &raquo;</a>
-  {% endif %}
+    <p style="text-align:left; text-decoration: underline;">
+        {% if page.previous.url %}
+             <a href="{{page.previous.url}}">&laquo; Keycloak</a>
+        {% endif %}
+        {% if page.next.url %}
+            <span style="float:right; text-decoration: underline;">
+                Sonraki Yazı ><a href="{{page.next.url}}">Spring Native ve GraalVM &raquo;</a>
+        </span>
+        {% endif %}
+    </p>
 </div>
-
-<br/>
 
 **_En yalın haliyle_**
 

@@ -5,23 +5,40 @@ categories: [hardware, mimari]
 tags: [dma, hardware, direct, access, memory]
 ---
 
-DMA( Direct Access Memory), bellek ile diğer aygıtlar arasındaki veri iletişimi için kullanılan bir yapıdır. Avantajı, bu veri iletişimini sağlarken merkezi işlem birimini kısmen devre dışı bırakarak veri akışını hızlandırmak ve merkezi işlem birimini daha az meşgul etmektir. Böylece merkezi işlem birimi veri akışında temel unsur olmaktan çıkıp diğer süreçlere fırsat tanıyabilecek, öbür taraftan veri akışı da daha kısa bir yol dolaşmış olacağından dolayı hızlanmış olacaktır.  
-  
-Bir örnekle açıklamak gerekirse, örneğin oyun oynarken bilgisayarımız görüntü aygıtlarını donanımsal olarak kullanacaktır. Oyun çalışma zamanında bellekten çalışacak ve görüntülerin ekranda oluşması için sürekli ekran kartıyla iletişim içerisinde olması gerekecektir. Böyle bir durumda bellek ile ekran kartı arasında veri paylaşımı, sürekli giden ve gelen paketler sistemi yoracaktır. Bellek bir veriye ihtiyacı olduğu anda merkezi işlem birimi aracılığıyla bunu ekran kartına iletmeli, ekran kartımız da cevabını aynı yolla belleğe göndermelidir. Bu durumda merkezi işlem biriminin fazlasıyla meşgul olacağı aşikârdır. Meşgul olan merkezi işlem birimi diğer süreçlere fırsat tanıyamayacağı için süreçler beklemede kalacak, bu işlerin gecikmesine ve sistemin şişmesine sebep olacaktır. Tabii ki bu da istenen bir durum değildir.  
-  
-İşte bu durumu engellemek için DMA yaklaşımı öne sürülmüştür. Bu yaklaşımda temel amaç veri transferi sırasında merkezi işlem birimini aradan çıkartmaktır. Normal bir veri akışında veride hiçbir işlem yapılmayacak olsa bile merkezi işlem birimine uğrayan veriler bu yaklaşımda doğrudan bellek ile aygıt arasında kurulan bir yolda ilerleyeceklerdir. Peki, bu yoldan merkezi işlem biriminin haberi olmayacak mı?  
-  
+DMA( Direct Access Memory), bellek ile diğer aygıtlar arasındaki veri iletişimi için kullanılan bir yapıdır. Avantajı, bu veri iletişimini sağlarken merkezi işlem birimini kısmen devre dışı bırakarak veri akışını hızlandırmak ve merkezi işlem birimini daha az meşgul etmektir. Böylece merkezi işlem birimi veri akışında temel unsur olmaktan çıkıp diğer süreçlere fırsat tanıyabilecek, öbür taraftan veri akışı da daha kısa bir yol dolaşmış olacağından dolayı hızlanmış olacaktır.
+
+Bir örnekle açıklamak gerekirse, örneğin oyun oynarken bilgisayarımız görüntü aygıtlarını donanımsal olarak kullanacaktır. Oyun çalışma zamanında bellekten çalışacak ve görüntülerin ekranda oluşması için sürekli ekran kartıyla iletişim içerisinde olması gerekecektir. Böyle bir durumda bellek ile ekran kartı arasında veri paylaşımı, sürekli giden ve gelen paketler sistemi yoracaktır. Bellek bir veriye ihtiyacı olduğu anda merkezi işlem birimi aracılığıyla bunu ekran kartına iletmeli, ekran kartımız da cevabını aynı yolla belleğe göndermelidir. Bu durumda merkezi işlem biriminin fazlasıyla meşgul olacağı aşikârdır. Meşgul olan merkezi işlem birimi diğer süreçlere fırsat tanıyamayacağı için süreçler beklemede kalacak, bu işlerin gecikmesine ve sistemin şişmesine sebep olacaktır. Tabii ki bu da istenen bir durum değildir.
+
+{% include feed-ici-yazi-1.html %}
+
+İşte bu durumu engellemek için DMA yaklaşımı öne sürülmüştür. Bu yaklaşımda temel amaç veri transferi sırasında merkezi işlem birimini aradan çıkartmaktır. Normal bir veri akışında veride hiçbir işlem yapılmayacak olsa bile merkezi işlem birimine uğrayan veriler bu yaklaşımda doğrudan bellek ile aygıt arasında kurulan bir yolda ilerleyeceklerdir. Peki, bu yoldan merkezi işlem biriminin haberi olmayacak mı?
+
 İşlemin gerçekleşişi şöyledir;  
   
 - Bellekten veya belleğe veri transferi isteği doğar.  
 - Bu transfer isteği veri akış bilgileriyle birlikte(veri uzunluğu, nereden nereye gittiği, hangi hızda transfer edileceği gibi) merkezi işlem birimine iletilir.  
 - Merkezi işlem birimi aldığı istek ve isteğin verileri doğrultusunda DMA’ya veri akışının başlatılması için emir verir.  
 - Veri akışı bittiğinde akışı sonlandıran aygıt merkezi işlem birimine bir kesme ile bunu haber verir.  
-- Merkezi işlem birimi bu kesme doğrultusunda DMA’yı ya sonlandırır ya da ona başka bir işlem emri verir.  
-  
+- Merkezi işlem birimi bu kesme doğrultusunda DMA’yı ya sonlandırır ya da ona başka bir işlem emri verir.
+
+{% include feed-ici-imaj-1.html %}
+
 Yukarıda da görüldüğü gibi merkezi işlem birimi DMA’yı yarattıktan sonra başka süreçlerle ilgilenebilmiş, böylece sistem işleyişine devam edebilmiştir. Bilgisayarlarımızda 8 adet DMA kanalı bulunmaktadır. İlk 4ü 8 bitlik, diğer 16 bitlik veriyi taşıyabilmektedir. Merkezi işlem birimi aynı anda birden fazla DMA yaratamaz çünkü böyle bir durumda verilerin transfer edileceği adreslerde çakışmalar olacaktır. Bu sebeple DMA’yı kullanacak olan işlemler birbirlerini beklemek zorundadır.
 
-***En yalın haliyle***
+<div class="PageNavigation">
+    <p style="text-align:left; text-decoration: underline;">
+        {% if page.previous.url %}
+             <a href="{{page.previous.url}}">&laquo; Buffer Nedir?</a>
+        {% endif %}
+        {% if page.next.url %}
+            <span style="float:right; text-decoration: underline;">
+                Sonraki Yazı ><a href="{{page.next.url}}">Otomatik Mouse Kontrolü Nasıl Yapılır? &raquo;</a>
+        </span>
+        {% endif %}
+    </p>
+</div>
+
+**_En yalın haliyle_**
 
 [**Mehmet Cem Yücel**](https://www.mehmetcemyucel.com)
 
@@ -29,12 +46,12 @@ Yukarıda da görüldüğü gibi merkezi işlem birimi DMA’yı yarattıktan so
 
 **_Bu yazılar ilgilinizi çekebilir:_**
 
- - [Bir Yazılımcının Bilmesi Gereken 15 Madde](https://www.mehmetcemyucel.com/2019/bir-yazilimcinin-bilmesi-gereken-15-madde/)
- - [Spring Boot Devtools ile Docker Üzerindeki Kodu Debug Etme ve Değiştirme](https://www.mehmetcemyucel.com/2019/spring-boot-devtools-ile-docker-uzerindeki-kodu-debug-etme-ve-degistirme/)
- - [Spring Boot Property’lerini Jasypt ile Şifrelemek](https://www.mehmetcemyucel.com/2019/spring-boot-propertylerini-jasypt-ile-sifrelemek/)
+- [Bir Yazılımcının Bilmesi Gereken 15 Madde](https://www.mehmetcemyucel.com/2019/bir-yazilimcinin-bilmesi-gereken-15-madde/)
+- [Spring Boot Devtools ile Docker Üzerindeki Kodu Debug Etme ve Değiştirme](https://www.mehmetcemyucel.com/2019/spring-boot-devtools-ile-docker-uzerindeki-kodu-debug-etme-ve-degistirme/)
+- [Spring Boot Property’lerini Jasypt ile Şifrelemek](https://www.mehmetcemyucel.com/2019/spring-boot-propertylerini-jasypt-ile-sifrelemek/)
 
 **_Blockchain teknolojisi ile ilgileniyor iseniz bunlar da hoşunuza gidebilir:_**
 
- - [BlockchainTurk.net yazıları](https://www.mehmetcemyucel.com/categories/#blockchain)
+- [BlockchainTurk.net yazıları](https://www.mehmetcemyucel.com/categories/#blockchain)
 
 ---

@@ -113,6 +113,8 @@ body {
   display: block;
   width: auto;
   overflow: hidden;
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
 
 .PageNavigation a {
