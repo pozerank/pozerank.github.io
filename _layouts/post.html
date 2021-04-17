@@ -28,18 +28,14 @@ layout: default
         {% endif %}
     </p>
 </div>
-
-<p style="font:italic bold;">
-  En yalın haliyle
-  <br/>
-  <a  style="font:bold;" href="https://www.mehmetcemyucel.com">Mehmet Cem Yücel</a>
-</p>
-
-<hr>
   
   {% if site.related_posts.size >= 1 %}
   <div>
-    <h5>Bu yazılar ilgilinizi çekebilir</h5>
+    <br/>
+    <hr class="solid">
+	<br/>
+    <h6>Bu yazılar ilgilinizi çekebilir</h6>
+	<br/>
     <ul>
     {%- assign pageDateInSecondsInEpoch = page.date | date:"%s" | plus: 0 -%}
     {% assign cnt = 0 %}
@@ -62,7 +58,8 @@ layout: default
       {% endif %}
     {% endfor %}
     </ul>
-    <h5>Blockchain teknolojisi ile ilgileniyor iseniz bunlar da hoşunuza gidebilir</h5>
+    <h6>Blockchain teknolojisi ile ilgileniyor iseniz bunlar da hoşunuza gidebilir</h6>
+	<br/>
     <ul>
       <li><a href="https://www.mehmetcemyucel.com/categories/#blockchain">BlockchainTurk.net yazıları</a></li>
     </ul>
