@@ -6,7 +6,7 @@ tags: [keycloak,authentication, authorization, feign, client, spring, boot, rest
 image: https://cdn-images-1.medium.com/max/150/0*knMgRQMoNMWQciZs.jpg
 ---
 
-Access Management serimizin son yazısında Spring Boot RestTemplate ve OpenFeign Client kullanarak Keycloak üzerinde kolaylıkla OpenIdConnect ve OAuth2 ile nasıl kimlik doğrulama yapılır bunu inceleyeceğiz.
+Önceki yazımızda [Keycloak](https://www.mehmetcemyucel.com/2020/Access-Management-4-Keycloak/)'tan bahsettiğimiz  **Access Management** serimizin son yazısında Spring Boot RestTemplate ve OpenFeign Client kullanarak Keycloak üzerinde kolaylıkla OpenIdConnect ve OAuth2 ile nasıl kimlik doğrulama yapılır bunu inceleyeceğiz.
 
 ![](https://miro.medium.com/max/1825/0*knMgRQMoNMWQciZs.jpg)
 
@@ -14,11 +14,11 @@ Access Management serimizin son yazısında Spring Boot RestTemplate ve OpenFeig
 
 **--SERİNİN DİĞER YAZILARI--**
 
- - [1-XACML Authorization Authentication](https://www.mehmetcemyucel.com/2020/Access-Management-1-XACML-Authorization-Authentication/)
- - [2-OpenID OAuth2 OpenID Connect](https://www.mehmetcemyucel.com/2020/Access-Management-2-OpenID-OAuth2-OpenID-Connect/)
- - [3-SSO SAML Kerberos User Federation](https://www.mehmetcemyucel.com/2020/Access-Management-3-SSO-SAML-Kerberos-User-Federation/)
- - [4-Keycloak](https://www.mehmetcemyucel.com/2020/Access-Management-4-Keycloak/)
- - [5-Spring Boot ve Keycloak](https://www.mehmetcemyucel.com/2020/Access-Management-5-Spring-RestTemplate-Feign-Keycloak/)
+- [1-XACML Authorization Authentication](https://www.mehmetcemyucel.com/2020/Access-Management-1-XACML-Authorization-Authentication/)
+- [2-OpenID OAuth2 OpenID Connect](https://www.mehmetcemyucel.com/2020/Access-Management-2-OpenID-OAuth2-OpenID-Connect/)
+- [3-SSO SAML Kerberos User Federation](https://www.mehmetcemyucel.com/2020/Access-Management-3-SSO-SAML-Kerberos-User-Federation/)
+- [4-Keycloak](https://www.mehmetcemyucel.com/2020/Access-Management-4-Keycloak/)
+- [5-Spring Boot ve Keycloak](https://www.mehmetcemyucel.com/2020/Access-Management-5-Spring-RestTemplate-Feign-Keycloak/)
 
 ---
 
@@ -168,8 +168,18 @@ Sonuçları gözlemlemek için [bu yazımda bahsettiğim](https://medium.com/meh
 
 Yukarıdaki gibi bir entegrasyon ile Keycloak olsun olmasın tüm OAuth2 entegrasyonlarınızı kolay bir şekilde halledebilirsiniz. Refresh token, access token, veya expire konularını düşünmenize gerek kalmadan size hızlı entegrasyon sağlayacaktır. Keycloak ile bunun authorization kısmını da hazır ekranları aracılığıyla zahmetsizce yönetme imkanınız olacaktır. Uygulamanın kodlarına [buradan](https://github.com/mehmetcemyucel/springboot-keycloak) erişebilirsiniz.
 
+<br/>
 
-***En yalın haliyle***
+<p style="text-align:left;">
+    <a href="https://www.mehmetcemyucel.com/2020/Access-Management-4-Keycloak">Keycloak</a> < Önceki Yazı 
+    <span style="float:right;">
+        Sonraki Yazı > <a href="https://www.mehmetcemyucel.com/2021/spring-native-ve-graalvm/">Spring Native ve GraalVM</a>
+    </span>
+</p>
+
+<br/>
+
+**_En yalın haliyle_**
 
 [**Mehmet Cem Yücel**](https://www.mehmetcemyucel.com)
 
@@ -177,13 +187,13 @@ Yukarıdaki gibi bir entegrasyon ile Keycloak olsun olmasın tüm OAuth2 entegra
 
 **_Bu yazılar ilgilinizi çekebilir:_**
 
- - [Bir Yazılımcının Bilmesi Gereken 15 Madde](https://www.mehmetcemyucel.com/2019/bir-yazilimcinin-bilmesi-gereken-15-madde/)
- - [Spring ve Java Hantal Mı — GraalVM ve Quarkus’a Giriş](https://www.mehmetcemyucel.com/2019/Spring-ve-Java-Hantal-Mi-GraalVM-ve-Quarkus-Inceleme/)
- - [Mikroservisler-Service Mesh Nedir](https://www.mehmetcemyucel.com/2019/mikroservisler-service-mesh-nedir/)
- - [12 Factor Nedir Türkçe ve Java Örnekleri](https://www.mehmetcemyucel.com/2019/twelve-factor-nedir-turkce-ornek/)
+- [Alternatif JVM’ler ve Java’nın Geleceği Podcast’i](https://www.mehmetcemyucel.com/2019/Alternatif-JVMler-ve-Javanin-Gelecegi-Podcasti/)
+- [Spring ve Java Hantal Mı — GraalVM ve Quarkus’a Giriş](https://www.mehmetcemyucel.com/2019/Spring-ve-Java-Hantal-Mi-GraalVM-ve-Quarkus-Inceleme/)
+- [MapStruct ile SpringBoot Obje Dönüşümü](https://www.mehmetcemyucel.com/2019/MapStruct-ile-obje-donusumu/)
+- [Mikroservisler-Service Mesh Nedir](https://www.mehmetcemyucel.com/2019/mikroservisler-service-mesh-nedir/)
 
 **_Blockchain teknolojisi ile ilgileniyor iseniz bunlar da hoşunuza gidebilir:_**
 
- - [BlockchainTurk.net yazıları](https://www.mehmetcemyucel.com/categories/#blockchain)
+- [BlockchainTurk.net yazıları](https://www.mehmetcemyucel.com/categories/#blockchain)
 
 ---

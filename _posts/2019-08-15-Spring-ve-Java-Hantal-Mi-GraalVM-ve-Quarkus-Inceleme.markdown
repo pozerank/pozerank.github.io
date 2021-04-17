@@ -15,6 +15,8 @@ Java yaklaşık 20 yıl önce ilk defa ortaya çıktığında büyük bir proble
 
 ![https://www.shkuri.com/sales-tips](https://miro.medium.com/max/1081/0*UUBgFXRohHc9S-CS)
 
+{% include feed-ici-1.html %}
+
 ## 2. Günümüzde Java
 
 Java’nın sağladığı bu esneklik dönemin de şartları göz önünde bulundurulduğunda yazılım geliştiricilerin en tercih ettiği yazılım dillerinden birisi olmayı başardı. Peki halen bu şekilde mi devam ediyor? Bunun için güncel dillerin popülaritesi ile ilgili bir araştırma yaptım. Bu araştırmayı yaparken araştırma şirketlerince yapılan anketlerin taraflı olabileceği düşüncesini de dikkate aldım. Karşıma çıkan ve en tarafsız olduğunu hissettiğim çalışma [Redmonk](https://redmonk.com/) tarafından 2019 Q1'de yapılmıştı. [Stack Overflow](https://stackoverflow.com/) ve [Github](https://github.com/)’daki popülerlikler üzerinden yapılan çalışmanın grafiği aşağıdaki gibi:
@@ -25,6 +27,8 @@ Java’nın sağladığı bu esneklik dönemin de şartları göz önünde bulun
 Görünüşe göre Java halen en popüler dillerden birisi olarak hayatına devam ediyor. Peki Java bunu nasıl başarıyor?
 
 İlk günden bu yana Java yazılım diline [Java Specification Request](https://jcp.org/en/jsr/overview) (JSR) ismi verilen yeni özellikler [Java Community Process](https://www.jcp.org/en/home/index) (JCP) tarafından belirli standartlar gözetilerek eklendi. [Functional Programming](https://en.wikipedia.org/wiki/Functional_programming), [Nonblocking I/O](https://en.wikipedia.org/wiki/Non-blocking_I/O_(Java)) gibi popüler yazılım geliştirme paradigmaları da benzer şekilde dile kazandırıldı. Peki dil evrimine devam ederken JVM’de neler yaşandı? En önemli JVM fonksiyonlarından birisi olan garbage collection işlemini sağlayan yapılarda optimizasyonlar, yenilikler yapıldı. Özellikle **Java11** ile birlikte gelen [**Z Garbage Collector**](https://wiki.openjdk.java.net/display/zgc/Main) **(ZGC)** ile büyük yenilikler hayatımıza dahil oldu. [Valhalla Project](https://openjdk.java.net/projects/valhalla/) gibi kuluçka projelerle alternatif sanal makine başarımları geliştirilmeye devam ediyor. Hayat çok güzel, her şey yolunda, sistem tıkır tıkır işliyor değil mi? Peki gerçkten öyle mi?
+
+{% include feed-ici-2.html %}
 
 ## 3. Java ve Mikroservisler
 
@@ -39,6 +43,8 @@ Son birkaç cümle aslında bugünkü yazımızın çıkış noktasını oluştu
 Yukarıdaki cümleye bakılırsa **herhangi bir yerde çalıştırılabilmesi** cümlesi ile **eğer containerized bir ortamınız mevcut ise Java’nın senelerdir en güçlü yanı olarak tanıttığı özelliğe artık ihtiyacınız olmadığı** yorumunu doğuruyor. Bu noktada sorulması gereken soru şu; Java her yerde çalışabilmek uğruna nelerden vazgeçiyor? Her yerde çalışabilme gibi bir derdi olmasaydı neler daha farklı olabilirdi? Neler daha performanslı çalışırdı, paket boyutlarında ne gibi değişiklikler söz konusu olurdu?
 
 ![http://canacopegdl.com/file/images/cumbersome/cumbersome-13.html](https://miro.medium.com/max/633/0*mf0v1GtnXoEpVUN9.jpg)
+
+{% include feed-ici-3.html %}
 
 Yazılan Java kodunun farklı işletim sistemlerinde, mimarilerde çalışabilmesi için aslında hatrı sayılır şeylerden feragat edilmesi gerekmektedir. Derlenmiş kodumuzun çalıştırılmasından sorumlu [Java Runtime Environment](https://www.java.com/en/download/faq/whatis_java.xml)’da(JRE) bu sebepten çok fazla kaynak ve kod bulunmaktadır. **Örneğin** [**OpenJDK**](https://wiki.openjdk.java.net/)**’nın base image’ı 250MB’dan daha büyüktür**. Şirketler genellikle mikroservis mimariye uygun kod geliştirebilmek için [**Spring**](https://spring.io/) **teknolojilerini kullanarak kod geliştirdiği varsayımı ile ilerlersek kodumuzun çalışabildiği containerın boyutu en azından yaklaşık 450–500MB’lar civarında olacaktır.** Bu boyutlar [disposability](https://www.mehmetcemyucel.com/2019/twelve-factor-nedir-turkce-ornek/) prensibinden dolayı tercih etmediğimiz bir durumdur. Çünkü büyük boyutlardaki containerların ayağa kalkması uzun sürmektedir. Peki ne yapabiliriz? Sırtımızdaki yükten nasıl kurtulabiliriz?
 

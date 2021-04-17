@@ -14,11 +14,11 @@ image: https://miro.medium.com/max/150/0*tA4cZb1i9Mxds-Uz
 
 **--SERİNİN DİĞER YAZILARI--**
 
- - [1-XACML Authorization Authentication](https://www.mehmetcemyucel.com/2020/Access-Management-1-XACML-Authorization-Authentication/)
- - [2-OpenID OAuth2 OpenID Connect](https://www.mehmetcemyucel.com/2020/Access-Management-2-OpenID-OAuth2-OpenID-Connect/)
- - [3-SSO SAML Kerberos User Federation](https://www.mehmetcemyucel.com/2020/Access-Management-3-SSO-SAML-Kerberos-User-Federation/)
- - [4-Keycloak](https://www.mehmetcemyucel.com/2020/Access-Management-4-Keycloak/)
- - [5-Spring Boot ve Keycloak](https://www.mehmetcemyucel.com/2020/Access-Management-5-Spring-RestTemplate-Feign-Keycloak/)
+- [1-XACML Authorization Authentication](https://www.mehmetcemyucel.com/2020/Access-Management-1-XACML-Authorization-Authentication/)
+- [2-OpenID OAuth2 OpenID Connect](https://www.mehmetcemyucel.com/2020/Access-Management-2-OpenID-OAuth2-OpenID-Connect/)
+- [3-SSO SAML Kerberos User Federation](https://www.mehmetcemyucel.com/2020/Access-Management-3-SSO-SAML-Kerberos-User-Federation/)
+- [4-Keycloak](https://www.mehmetcemyucel.com/2020/Access-Management-4-Keycloak/)
+- [5-Spring Boot ve Keycloak](https://www.mehmetcemyucel.com/2020/Access-Management-5-Spring-RestTemplate-Feign-Keycloak/)
 
 ---
 
@@ -34,6 +34,8 @@ Tekrar SAML’a dönecek olursak, XML bazlı çalışan bu güvenlik protokolü 
 
 ![SAML Authentication Process](https://miro.medium.com/max/1345/1*7zleRist5o_p8NJtbZf5oA.png)
 
+{% include feed-ici-1.html %}
+
 Farkettiyseniz bir önceki yazımızdaki bahsettiğimiz OAuth2'deki authorization akışına çok benzemekle birlikte burada farklı olarak login credential veya secret doğrulama işlemi sadece delege edilen bir identity provider tarafından değil bir Active Directory gibi kullanıcı veritabanıyla birlikte identity provider ile federe şekilde, birlikte gerçekleştirilmesidir. Bu **Federated Authentication’**a bir örnektir. Burada kullanıcının bilgilerinin **LDAP, Active Directory veya DBMS** gibi sistemlerden edinilerek kullanılmasına da **User Federation** ismi verilir.
 
 ### 1.2. Kerberos Akışı
@@ -42,12 +44,24 @@ SAML’ı kullanan sistemlerden birisi de **Kerberos**’tur. Kerberos, tamamen 
 
 ![Kerberos Authentication Process](https://miro.medium.com/max/971/1*VsOhg01a3Gr1qma4Mcv3hQ.png)
 
+{% include feed-ici-2.html %}
+
 Burada ek adım olarak kullanıcının servise erişebilmesi için ihtiyaç duyduğu bileti alabilmek için bilet sağlayan bir bilet alması gerekir. Bu bilet sağlayan bilet de Identity Provider tarafından kullanıcının kendi şifresi tarafından anahtarlanmıştır ve kullanıcı gerçekten doğru kullanıcı ise sadece çözülebilecek ve bilet sağlayan bilet ortaya çıkacaktır. Bu bileti çözen kullanıcı servise erişebilmek için ihtiyaç duyacağı bileti Identity Provider’dan edinebilecektir.
 
 ## 2. Sonuç
 
 İlk 3 yazımız boyunca öğrendiğimiz kavramsal konuları somut örnekler eşliğinde Keycloak uygulama aracılığıyla deneyimleyeceğiz. İlgili yazıya [buradan](https://www.mehmetcemyucel.com/2020/Access-Management-4-Keycloak/) erişebilirsiniz.
 
+<br/>
+
+<p style="text-align:left;">
+    <a href="https://www.mehmetcemyucel.com/2020/Access-Management-2-OpenID-OAuth2-OpenID-Connect/">OpenID OAuth2 OpenID Connect</a> < Önceki Yazı 
+    <span style="float:right;">
+        Sonraki Yazı > <a href="https://www.mehmetcemyucel.com/2020/Access-Management-4-Keycloak">Keycloak</a>
+    </span>
+</p>
+
+<br/>
 
 ***En yalın haliyle***
 
@@ -57,13 +71,13 @@ Burada ek adım olarak kullanıcının servise erişebilmesi için ihtiyaç duyd
 
 **_Bu yazılar ilgilinizi çekebilir:_**
 
- - [Bir Yazılımcının Bilmesi Gereken 15 Madde](https://www.mehmetcemyucel.com/2019/bir-yazilimcinin-bilmesi-gereken-15-madde/)
- - [Spring ve Java Hantal Mı — GraalVM ve Quarkus’a Giriş](https://www.mehmetcemyucel.com/2019/Spring-ve-Java-Hantal-Mi-GraalVM-ve-Quarkus-Inceleme/)
- - [Mikroservisler-Service Mesh Nedir](https://www.mehmetcemyucel.com/2019/mikroservisler-service-mesh-nedir/)
- - [12 Factor Nedir Türkçe ve Java Örnekleri](https://www.mehmetcemyucel.com/2019/twelve-factor-nedir-turkce-ornek/)
+- [Bir Yazılımcının Bilmesi Gereken 15 Madde](https://www.mehmetcemyucel.com/2019/bir-yazilimcinin-bilmesi-gereken-15-madde/)
+- [Spring ve Java Hantal Mı - GraalVM ve Quarkus’a Giriş](https://www.mehmetcemyucel.com/2019/Spring-ve-Java-Hantal-Mi-GraalVM-ve-Quarkus-Inceleme/)
+- [Mikroservisler-Service Mesh Nedir](https://www.mehmetcemyucel.com/2019/mikroservisler-service-mesh-nedir/)
+- [12 Factor Nedir Türkçe ve Java Örnekleri](https://www.mehmetcemyucel.com/2019/twelve-factor-nedir-turkce-ornek/)
 
 **_Blockchain teknolojisi ile ilgileniyor iseniz bunlar da hoşunuza gidebilir:_**
 
- - [BlockchainTurk.net yazıları](https://www.mehmetcemyucel.com/categories/#blockchain)
+- [BlockchainTurk.net yazıları](https://www.mehmetcemyucel.com/categories/#blockchain)
 
 ---

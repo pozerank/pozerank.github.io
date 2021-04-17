@@ -11,11 +11,11 @@ image: https://miro.medium.com/max/150/0*n4KiIGqzdC2PX4QU.png
 
 **--SERİNİN DİĞER YAZILARI--**
 
- - [1-XACML Authorization Authentication](https://www.mehmetcemyucel.com/2020/Access-Management-1-XACML-Authorization-Authentication/)
- - [2-OpenID OAuth2 OpenID Connect](https://www.mehmetcemyucel.com/2020/Access-Management-2-OpenID-OAuth2-OpenID-Connect/)
- - [3-SSO SAML Kerberos User Federation](https://www.mehmetcemyucel.com/2020/Access-Management-3-SSO-SAML-Kerberos-User-Federation/)
- - [4-Keycloak](https://www.mehmetcemyucel.com/2020/Access-Management-4-Keycloak/)
- - [5-Spring Boot ve Keycloak](https://www.mehmetcemyucel.com/2020/Access-Management-5-Spring-RestTemplate-Feign-Keycloak/)
+- [1-XACML Authorization Authentication](https://www.mehmetcemyucel.com/2020/Access-Management-1-XACML-Authorization-Authentication/)
+- [2-OpenID OAuth2 OpenID Connect](https://www.mehmetcemyucel.com/2020/Access-Management-2-OpenID-OAuth2-OpenID-Connect/)
+- [3-SSO SAML Kerberos User Federation](https://www.mehmetcemyucel.com/2020/Access-Management-3-SSO-SAML-Kerberos-User-Federation/)
+- [4-Keycloak](https://www.mehmetcemyucel.com/2020/Access-Management-4-Keycloak/)
+- [5-Spring Boot ve Keycloak](https://www.mehmetcemyucel.com/2020/Access-Management-5-Spring-RestTemplate-Feign-Keycloak/)
 
 ---
 
@@ -36,6 +36,8 @@ Keycloak, en temel yeteneği olan [Single Sign On(SSO)](https://medium.com/mehme
 
 OIDC protokolü üzerinden çok sayıda dil için [adapter](https://www.keycloak.org/docs/latest/securing_apps/index.html#openid-connect-3)’ı barındırıyor. Java adapterları içerisinde JBoss, Tomcat, Jetty, Wildfly gibi sunucular için adapterların yanısıra Spring Boot, Spring Security, Java Servlet Filter, CLI/Desktop App, Pure Java App için de adapterlar bulunuyor.
 
+{% include feed-ici-1.html %}
+
 ## 4. Entegrasyonlar
 
 [Kerberos](https://medium.com/mehmetcemyucel/dcc56682bdb2) bridge yeteneği sayesinde bir Kerberos sunucusuna login olmuş kullanıcıyı otomatik olarak authenticate edebilmektedir. Aynı zamanda [User Federation](https://medium.com/mehmetcemyucel/dcc56682bdb2) özelliği sayesinde LDAP ve Active Directory sunucularındaki kullanıcıları eşzamanlayarak kullanabilmek mümkün.
@@ -50,6 +52,8 @@ Bütün bu işlemleri kendi arayüzü aracılığıyla gerçekleştirebilirsiniz
 
 ![](https://miro.medium.com/max/1041/0*Xx4tAv-JfKtR9tVX.png)
 
+{% include feed-ici-2.html %}
+
 ## 6. Ortamlar ve Dökümanlar
 
 Keycloak’ı kullanmak isterseniz bir [java runtime](https://www.keycloak.org/getting-started/getting-started-zip) aracılığıyla ilgili paketleri indirerek kullanmaya başlayabileceğiniz gibi, [Docker](https://www.keycloak.org/getting-started/getting-started-docker), [Kubernetes](https://www.keycloak.org/getting-started/getting-started-kube), [Openshift](https://www.keycloak.org/getting-started/getting-started-openshift) ve [Podman](https://www.keycloak.org/getting-started/getting-started-podman) için de hızlıca kullanabileceğiniz yönlendirmeler linklerde mevcut. Bu linklerdeki açıklamalar ve yönlendirmeler yeterli olacağından bu yazının içeriğinde bunlardan bahsetmeyeceğim.
@@ -58,8 +62,18 @@ Keycloak’ı kullanmak isterseniz bir [java runtime](https://www.keycloak.org/g
 
 Daha detaylı bilgiler için başarılı bir dokümantasyon sayfaları mevcut. [Buradan](https://www.keycloak.org/documentation) inceleyebilirsiniz. Beşinci ve son yazımızda Spring Boot ile Keycloak’u kullanarak Authentication/Authorization örnekleri yapacağız. Yazıya buradan erişebilirsiniz.
 
+<br/>
 
-***En yalın haliyle***
+<p style="text-align:left;">
+    <a href="www.mehmetcemyucel.com/2020/Access-Management-3-SSO-SAML-Kerberos-User-Federation">SSO SAML Kerberos User Federation</a> < Önceki Yazı 
+    <span style="float:right;">
+        Sonraki Yazı ><a href="https://www.mehmetcemyucel.com/2020/Access-Management-5-Spring-RestTemplate-Feign-Keycloak">Spring Boot ve Keycloak</a>
+    </span>
+</p>
+
+<br/>
+
+**_En yalın haliyle_**
 
 [**Mehmet Cem Yücel**](https://www.mehmetcemyucel.com)
 
@@ -67,13 +81,13 @@ Daha detaylı bilgiler için başarılı bir dokümantasyon sayfaları mevcut. [
 
 **_Bu yazılar ilgilinizi çekebilir:_**
 
- - [Bir Yazılımcının Bilmesi Gereken 15 Madde](https://www.mehmetcemyucel.com/2019/bir-yazilimcinin-bilmesi-gereken-15-madde/)
- - [Spring ve Java Hantal Mı — GraalVM ve Quarkus’a Giriş](https://www.mehmetcemyucel.com/2019/Spring-ve-Java-Hantal-Mi-GraalVM-ve-Quarkus-Inceleme/)
- - [Mikroservisler-Service Mesh Nedir](https://www.mehmetcemyucel.com/2019/mikroservisler-service-mesh-nedir/)
- - [12 Factor Nedir Türkçe ve Java Örnekleri](https://www.mehmetcemyucel.com/2019/twelve-factor-nedir-turkce-ornek/)
+- [Spring Boot Devtools ile Docker Üzerindeki Kodu Debug Etme ve Değiştirme](https://www.mehmetcemyucel.com/2019/spring-boot-devtools-ile-docker-uzerindeki-kodu-debug-etme-ve-degistirme/)
+- [Spring Boot Rest Servis Entegrasyon Testi](https://medium.com/mehmetcemyucel/spring-boot-rest-birim-entegrasyon-testi-43a7f9354a33)
+- [Spring Boot Property’lerini Jasypt ile Şifrelemek](https://www.mehmetcemyucel.com/2019/spring-boot-propertylerini-jasypt-ile-sifrelemek/)
+- [12 Factor Nedir Türkçe ve Java Örnekleri](https://www.mehmetcemyucel.com/2019/twelve-factor-nedir-turkce-ornek/)
 
 **_Blockchain teknolojisi ile ilgileniyor iseniz bunlar da hoşunuza gidebilir:_**
 
- - [BlockchainTurk.net yazıları](https://www.mehmetcemyucel.com/categories/#blockchain)
+- [BlockchainTurk.net yazıları](https://www.mehmetcemyucel.com/categories/#blockchain)
 
 ---

@@ -45,7 +45,6 @@ Farkettiyseniz SimplePojo sınıfındaki metodumuzda değişiklikler gerçekleş
 
 [https://start.spring.io/](https://start.spring.io/) sitesinden inceleme amacıyla **Spring Native Beta** projesi yaratalım. Dependencies’i tıkladığımızda aşağıdaki gibi en başta geldiğini görebiliriz.
 
-
 ![Spring Native proje oluşturma](https://miro.medium.com/max/1503/1*uPfmqByjfzpW8Y6iBFrpTg.png)
 
 [Önceki yazıda](https://www.mehmetcemyucel.com/2019/Spring-ve-Java-Hantal-Mi-GraalVM-ve-Quarkus-Inceleme/) **Just in Time** (JIT) derleyici ile **Ahead of Time** (AOT) derleyicilerin farklarından bahsetmiştik. JIT derleyicilerde dynamic proxying yapmak mümkün iken AOT derleyiciler çalışacağı platforma bağımlı kod ürettiklerinden dolayı runtime’da sürpriz(lazy loading) sevmezler. Her şeyin **build zamanında** netleştirilmesi ve native image’ın buna göre oluşturulması gerekmektedir. Spring Native projesinin ilk majör farkı burada başlamaktadır.
@@ -56,6 +55,8 @@ Bu durumda Spring Bean’leri arası bindinglerinin tamamlanabilmesi için bir �
 
 Burada dikkat çeken 3 nokta bulunuyor. İlki Spring Boot Maven Plugin’deki image builder eki. Bu configuration sayesinde GraalVM tarafından çalıştırılacak native image çıktısı oluşturulabilecek. Bu plugin’in ekstra yapılandırmaları ve kullanımı için [burayı](https://docs.spring.io/spring-native/docs/current/reference/htmlsingle/#native-image-options) inceleyebilirsiniz.
 
+{% include feed-ici-1.html %}
+
 <script src="https://gist.github.com/mehmetcemyucel/6a3cbc883a4113f238216fa2e29527ff.js"></script>
 
 İkinci nokta, Ahead of Time(AOT) derlemesi için yeni bir Maven Plugin’i. Bu plugin build anında Spring stereotype annotation’larını ve aslına bakılırsa tüm bean yapılandırmalarını [GraalVM’in manuel reflection yapılandırmasının](https://www.graalvm.org/reference-manual/native-image/Reflection/#manual-configuration) içerisine eklemeyi sağlayan plugin olarak düşünebiliriz. Bu plugin’in tetiklenmesi için kullanabileceğiniz maven goal’ü aşağıda da görebileceğiniz gibi `mvn spring-aot:generate` dir. Diğer konfigürasyonları için [burayı](https://docs.spring.io/spring-native/docs/current/reference/htmlsingle/#spring-aot-configuration) inceleyebilirsiniz.
@@ -64,10 +65,19 @@ Burada dikkat çeken 3 nokta bulunuyor. İlki Spring Boot Maven Plugin’deki im
 
 Pom.xml dosyasındaki son dikkat edilmesi gereken nokta ise versiyonlar. Şu anda Spring Native projesinin son versiyonu 0.9.1 versiyonu, Spring Boot 2.4.4'ü destekliyor. Java 8 ve 11 versiyonları ve GraalVM’in 21.0.0 versiyonu destekli. GraalVM’in Spring desteği verdiği versiyonlar [bu adresten](https://github.com/oracle/graal/labels/spring) Spring tag’ine sahip versiyonlar üzerinden takip edilebilir.
 
+{% include feed-ici-2.html %}
+
 ## 4. Sonuç
 
 Sonraki yazımızda bir Spring Native projesinin nasıl ayağa kaldırılabileceğini, IDE yapılandırmalarını, derlemeyi, Native Hint’lerini, proje performans karşılaştırmalarını ve son olarak hangi Spring Starter’ları ve çevresel Cloud Starter’ları ile birlikte kullanılabileceğini inceleyeceğiz.
 
+<br/>
+
+<p style="text-align:left;">
+    <a href="https://www.mehmetcemyucel.com/2020/Access-Management-5-Spring-RestTemplate-Feign-Keycloak">Spring Boot ve Keycloak</a> < Önceki Yazı 
+</p>
+
+<br/>
 
 ***En yalın haliyle***
 
@@ -75,19 +85,20 @@ Sonraki yazımızda bir Spring Native projesinin nasıl ayağa kaldırılabilece
 
 ---
 
-**_Bu yazılar ilgilinizi çekebilir:_**   
+**_Bu yazılar ilgilinizi çekebilir:_**
 
- - [Bir Yazılımcının Bilmesi Gereken 15 Madde](https://www.mehmetcemyucel.com/2019/bir-yazilimcinin-bilmesi-gereken-15-madde/)
- - [Access Management 4-Keycloak](https://medium.com/mehmetcemyucel/access-management-4-keycloak-d76b31f97624)
- - [Alternatif JVM’ler ve Java’nın Geleceği Podcast’i](https://medium.com/mehmetcemyucel/alternatif-jvmler-ve-java-nin-gelecegi-podcast-i-6c1aa175e45b)
+- [Spring Boot ve Keycloak](https://www.mehmetcemyucel.com/2020/Access-Management-5-Spring-RestTemplate-Feign-Keycloak/)
+
+- [Alternatif JVM’ler ve Java’nın Geleceği Podcast’i](https://medium.com/mehmetcemyucel/alternatif-jvmler-ve-java-nin-gelecegi-podcast-i-6c1aa175e45b)
+- [Bir Yazılımcının Bilmesi Gereken 15 Madde](https://www.mehmetcemyucel.com/2019/bir-yazilimcinin-bilmesi-gereken-15-madde/)
 
 ***Blockchain teknolojisi ile ilgileniyor iseniz bunlar da hoşunuza gidebilir:***
 
- - [BlockchainTurk.net yazıları](https://www.mehmetcemyucel.com/categories/#blockchain)
+- [BlockchainTurk.net yazıları](https://www.mehmetcemyucel.com/categories/#blockchain)
 
 ***Ayrıca diğer kaynaklar(referans)***
 
- - [spring framework docs](https://docs.spring.io/spring-framework/docs/3.0.0.M3/reference/html/ch08s06.html)
- - [spring native docs](https://docs.spring.io/spring-native/docs/current/reference/htmlsingle)
+- [spring framework docs](https://docs.spring.io/spring-framework/docs/3.0.0.M3/reference/html/ch08s06.html)
+- [spring native docs](https://docs.spring.io/spring-native/docs/current/reference/htmlsingle)
 
 ---

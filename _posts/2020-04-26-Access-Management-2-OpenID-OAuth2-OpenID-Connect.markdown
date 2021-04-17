@@ -8,19 +8,17 @@ image: https://miro.medium.com/max/150/0*ipuyew2--zak9w2i.png
 
 [İlk yazımızda](https://www.mehmetcemyucel.com/2020/Access-Management-1-XACML-Authorization-Authentication/) Authorization ve Authetication kavramlarından bahsetmiştik. Bir uygulamaya gelen erişim isteğinin ne şekilde işlenerek sonuçlandığından bahsettik. Bu yazımızda geçmişte neler yaşandı, ihtiyaç duyuldu ve bugüne nasıl evrildik konusuna değineceğiz.
 
-
 ![](https://miro.medium.com/max/640/0*H5weENf3rnm2dhaz)
 
 ---
 
-
 **--SERİNİN DİĞER YAZILARI--**
 
- - [1-XACML Authorization Authentication](https://www.mehmetcemyucel.com/2020/Access-Management-1-XACML-Authorization-Authentication/)
- - [2-OpenID OAuth2 OpenID Connect](https://www.mehmetcemyucel.com/2020/Access-Management-2-OpenID-OAuth2-OpenID-Connect/)
- - [3-SSO SAML Kerberos User Federation](https://www.mehmetcemyucel.com/2020/Access-Management-3-SSO-SAML-Kerberos-User-Federation/)
- - [4-Keycloak](https://www.mehmetcemyucel.com/2020/Access-Management-4-Keycloak/)
- - [5-Spring Boot ve Keycloak](https://www.mehmetcemyucel.com/2020/Access-Management-5-Spring-RestTemplate-Feign-Keycloak/)
+- [1-XACML Authorization Authentication](https://www.mehmetcemyucel.com/2020/Access-Management-1-XACML-Authorization-Authentication/)
+- [2-OpenID OAuth2 OpenID Connect](https://www.mehmetcemyucel.com/2020/Access-Management-2-OpenID-OAuth2-OpenID-Connect/)
+- [3-SSO SAML Kerberos User Federation](https://www.mehmetcemyucel.com/2020/Access-Management-3-SSO-SAML-Kerberos-User-Federation/)
+- [4-Keycloak](https://www.mehmetcemyucel.com/2020/Access-Management-4-Keycloak/)
+- [5-Spring Boot ve Keycloak](https://www.mehmetcemyucel.com/2020/Access-Management-5-Spring-RestTemplate-Feign-Keycloak/)
 
 ---
 
@@ -36,6 +34,8 @@ Kullanıcı bir foruma üye olmak istediğinde OpenID kimliğiyle üye olacaktı
 
 ![](https://miro.medium.com/max/970/1*eyGITOaY4c1wj8fyCa-zSw.png)
 
+{% include feed-ici-1.html %}
+
 ## 2. Yelp Tehlikesi
 
 Bu çalışmalar devam ederken 2007 yılında ilgili ilginç bir gelişme yaşanmıştı. Eski [**PayPal**](https://www.paypal.com)  çalışanları **Jeremy Stoppelman** ve **Russel Simmons**’un bir girişimi olan [**Yelp**](https://www.yelp.com/), yerel işletmeler hakkında kullanıcıların deneyimlerini paylaştıkları bir site geliştirdiler. Sitenin kullanımını artırabilmek için önemli bir nokta vardı, insanlar kendi çevresindeki arkadaşlarının yorumlarını daha çok önemsiyorlardı. Bir şekilde üye profillerin kendi arkadaş çevresindeki kişilerle etkileşiminin artırılması gerekiyordu ancak kimin kiminle arkadaş olduğu bilinmiyordu.
@@ -49,6 +49,8 @@ Gerçekten de bütün bu uğraşlar sonuç buldu. Hatta o kadar çok insan sonu�
 ## 3. Oauth Hamlesi
 
 Birkaç yıl önce çalışmaları başlatılan OpenID projesi açık bir standart olmadığı sebebiyle **2007** yılında kurulan **OAuth Discussion Group** açık protokol için taslak bir öneri yazma çalışmalarına başladı. Yelp senaryosuyla karşı karşıya kaldığı zamanlara denk gelen Google, bu çalışmalardan haberdar olduğunda destekleyerek süreci hızlandırdılar. Aynı senenin **Aralık** ayında [**OAuth Core 1.0 Protokol Şablonu**](https://oauth.net/core/1.0/) yayımlandı. İlerleyen süreçte kullanımın kolaylığı ve hedef teknolojilerin çeşitliliği gözetilerek yenilenen [**OAuth 2.0 Framework**](http://tools.ietf.org/html/rfc6749#section-4.4.2)’ü **2012 Ekim**’de yayımlandı.
+
+{% include feed-ici-2.html %}
 
 ![](https://miro.medium.com/max/225/0*Wl7CHlfKPE49XS1U.png)
 
@@ -66,6 +68,8 @@ Buradaki farklılık, artık belirli bilgilere erişime kullanıcının onay ver
 
 Zaman içerisinde ihtiyaçlar dahilinde Oauth 2.0 bir framework olarak ortaya koyuldu. Teknolojik çeşitliliğe ve kullanımın kolaylaştırılması odaklı gelişen versiyonda halen amaç aynı. Erişimin ve yetkilendirmenin sitelere direkt olarak kullanıcı adı/şifresi vermeksizin, erişimin bilgilerini barındıran bir token yapısıyla süreçleri yönetebilmek. Bu süreçleri OAuth 2.0 dört adet tanımla ele alıyor.
 
+{% include feed-ici-2.html %}
+
 ### 4.1. Oauth2 Authorization Code Flow Örnek
 
 ![](https://miro.medium.com/max/1594/1*jTDazKqC_J4-sed62C69oA.png)
@@ -78,22 +82,34 @@ Kullanıcı browser’ı aracılığıyla Yelp’e login olmak istediğinde Yelp
 
 Önemli olarak belirtmekte fayda var. Yukarıdaki akış en çok kullanılan OAuth2 akışlarından birisi olan **Authorization Code Flow** akışı. 3 Farklı flow daha bulunmaktadır. Bunlar, **Client Credentials Code Flow, Implicit Code Flow ve Resource Owner Password Credentials Code Flow**’dur.
 
+{% include feed-ici-3.html %}
+
 ## 5. OpenID Connect
 
 ![](https://miro.medium.com/max/375/0*ipuyew2--zak9w2i.png)
 
 Bütün bu protokollerin, frameworklerin üzerine 2014'te [**OpenID Connect (OIDC)**](https://openid.net/connect/) isimli **OpenID Foundation** tarafından geliştirilen bir framework ortaya koyuldu. OAuth 2.0'deki akışlar örnek alınarak ve ek adımlar eklenerek **Delegated Authorization** yerine **Federated Authentication**’ın kullanıldığı bir framework olarak tanıtıldı. Özetle:
 
--   **OpenID** kullanıcının kimliğini doğrulayan(authentication)
--   **OAuth** kullanıcının kaynaklarına erişimi kontrol eden(authorization)
--   **OpenID Connect** de yukarıdaki iki maddenin toplamını gerçekleştiren frameworktür.
+- **OpenID** kullanıcının kimliğini doğrulayan(authentication)
+- **OAuth** kullanıcının kaynaklarına erişimi kontrol eden(authorization)
+- **OpenID Connect** de yukarıdaki iki maddenin toplamını gerçekleştiren frameworktür.
 
 ## 6. Sonuç
 
 Sonraki yazımızda aynı OpenID Connect gibi **Federated Authentication** kullanan diğer bir **Access Management** standardı olan **SAML**’a ve çalışma prensiplerine**, User Federation, Kerberos, SSO** kavramlarına değineceğiz. Yazıya [buradan](https://www.mehmetcemyucel.com/2020/Access-Management-3-SSO-SAML-Kerberos-User-Federation/) erişebilirsiniz.
 
+<br/>
 
-***En yalın haliyle***
+<p style="text-align:left;">
+    <a href="https://www.mehmetcemyucel.com/2020/Access-Management-1-XACML-Authorization-Authentication/">XACML Authorization Authentication</a> < Önceki Yazı 
+    <span style="float:right;">
+        Sonraki Yazı > <a href="www.mehmetcemyucel.com/2020/Access-Management-3-SSO-SAML-Kerberos-User-Federation">SSO SAML Kerberos User Federation</a> 
+    </span>
+</p>
+
+<br/>
+
+**_En yalın haliyle_**
 
 [**Mehmet Cem Yücel**](https://www.mehmetcemyucel.com)
 
@@ -101,13 +117,13 @@ Sonraki yazımızda aynı OpenID Connect gibi **Federated Authentication** kulla
 
 **_Bu yazılar ilgilinizi çekebilir:_**
 
- - [Bir Yazılımcının Bilmesi Gereken 15 Madde](https://www.mehmetcemyucel.com/2019/bir-yazilimcinin-bilmesi-gereken-15-madde/)
- - [Spring ve Java Hantal Mı — GraalVM ve Quarkus’a Giriş](https://www.mehmetcemyucel.com/2019/Spring-ve-Java-Hantal-Mi-GraalVM-ve-Quarkus-Inceleme/)
- - [Mikroservisler-Service Mesh Nedir](https://www.mehmetcemyucel.com/2019/mikroservisler-service-mesh-nedir/)
- - [12 Factor Nedir Türkçe ve Java Örnekleri](https://www.mehmetcemyucel.com/2019/twelve-factor-nedir-turkce-ornek/)
+- [Spring Boot Devtools ile Docker Üzerindeki Kodu Debug Etme ve Değiştirme](https://www.mehmetcemyucel.com/2019/spring-boot-devtools-ile-docker-uzerindeki-kodu-debug-etme-ve-degistirme/)
+- [Spring ve Java Hantal Mı - GraalVM ve Quarkus’a Giriş](https://www.mehmetcemyucel.com/2019/Spring-ve-Java-Hantal-Mi-GraalVM-ve-Quarkus-Inceleme/)
+- [Spring Boot Property’lerini Jasypt ile Şifrelemek](https://www.mehmetcemyucel.com/2019/spring-boot-propertylerini-jasypt-ile-sifrelemek/)
+- [Mikroservisler-Service Mesh Nedir](https://www.mehmetcemyucel.com/2019/mikroservisler-service-mesh-nedir/)
 
 **_Blockchain teknolojisi ile ilgileniyor iseniz bunlar da hoşunuza gidebilir:_**
 
- - [BlockchainTurk.net yazıları](https://www.mehmetcemyucel.com/categories/#blockchain)
+- [BlockchainTurk.net yazıları](https://www.mehmetcemyucel.com/categories/#blockchain)
 
 ---
