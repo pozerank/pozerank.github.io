@@ -97,35 +97,3 @@ Bütün bu protokollerin, frameworklerin üzerine 2014'te [**OpenID Connect (OID
 ## 6. Sonuç
 
 Sonraki yazımızda aynı OpenID Connect gibi **Federated Authentication** kullanan diğer bir **Access Management** standardı olan **SAML**’a ve çalışma prensiplerine**, User Federation, Kerberos, SSO** kavramlarına değineceğiz. Yazıya [buradan](https://www.mehmetcemyucel.com/2020/Access-Management-3-SSO-SAML-Kerberos-User-Federation/) erişebilirsiniz.
-
-<div class="PageNavigation">
-    <p style="text-align:left; text-decoration: underline;">
-        {% if page.previous.url %}
-             <a href="{{page.previous.url}}">&laquo; XACML Authorization Authentication</a>
-        {% endif %}
-        {% if page.next.url %}
-            <span style="float:right; text-decoration: underline;">
-                <a href="{{page.next.url}}">SSO SAML Kerberos User Federation &raquo;</a>
-        </span>
-        {% endif %}
-    </p>
-</div>
-
-**_En yalın haliyle_**
-
-[**Mehmet Cem Yücel**](https://www.mehmetcemyucel.com)
-
----
-
-**_Bu yazılar ilgilinizi çekebilir:_**
-
-- [Spring Boot Devtools ile Docker Üzerindeki Kodu Debug Etme ve Değiştirme](https://www.mehmetcemyucel.com/2019/spring-boot-devtools-ile-docker-uzerindeki-kodu-debug-etme-ve-degistirme/)
-- [Spring ve Java Hantal Mı - GraalVM ve Quarkus’a Giriş](https://www.mehmetcemyucel.com/2019/Spring-ve-Java-Hantal-Mi-GraalVM-ve-Quarkus-Inceleme/)
-- [Spring Boot Property’lerini Jasypt ile Şifrelemek](https://www.mehmetcemyucel.com/2019/spring-boot-propertylerini-jasypt-ile-sifrelemek/)
-- [Mikroservisler-Service Mesh Nedir](https://www.mehmetcemyucel.com/2019/mikroservisler-service-mesh-nedir/)
-
-**_Blockchain teknolojisi ile ilgileniyor iseniz bunlar da hoşunuza gidebilir:_**
-
-- [BlockchainTurk.net yazıları](https://www.mehmetcemyucel.com/categories/#blockchain)
-
----

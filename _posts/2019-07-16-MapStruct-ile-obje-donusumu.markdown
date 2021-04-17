@@ -124,36 +124,3 @@ MapStruct bütün bu özelliklerin dışında `Lombok` ,`Kotlin`, `Gradle`, `JPA
 Java diğer mapper toollarıyla kıyaslandığında MapStruct performansıyla denemeye başlamak için çok şey vaadediyor. Bu kıyaslamalarla ilgili örnek bir yazıya [buradan](https://www.baeldung.com/java-performance-mapping-frameworks) ulaşabilirsiniz.
 
 Projenin kodlarına [buradan](https://github.com/mehmetcemyucel/mapstruct) erişebilirsiniz. 
-
-<div class="PageNavigation">
-    <p style="text-align:left; text-decoration: underline;">
-        {% if page.previous.url %}
-             <a href="{{page.previous.url}}">&laquo; JUnit Rule Annotation'ı</a>
-        {% endif %}
-        {% if page.next.url %}
-            <span style="float:right; text-decoration: underline;">
-                <a href="{{page.next.url}}">Spring ve Java Hantal Mı? &raquo;</a>
-        </span>
-        {% endif %}
-    </p>
-    <br/>
-</div>
-
-**_En yalın haliyle_**
-
-[**Mehmet Cem Yücel**](https://www.mehmetcemyucel.com)
-
----
-
-**_Bu yazılar ilgilinizi çekebilir:_**
-
-- [Bir Yazılımcının Bilmesi Gereken 15  Madde](https://www.mehmetcemyucel.com/2019/bir-yazilimcinin-bilmesi-gereken-15-madde/)
-- [Spring Boot Devtools ile Docker Üzerindeki Kodu Debug Etme ve  Değiştirme](https://www.mehmetcemyucel.com/2019/spring-boot-devtools-ile-docker-uzerindeki-kodu-debug-etme-ve-degistirme/)
-- [Spring Boot Property’lerini Jasypt ile
-   Şifrelemek](https://www.mehmetcemyucel.com/2019/spring-boot-propertylerini-jasypt-ile-sifrelemek/)
-
-**_Blockchain teknolojisi ile ilgileniyor iseniz bunlar da hoşunuza gidebilir:_**
-
-- [BlockchainTurk.net  yazıları](https://www.mehmetcemyucel.com/categories/#blockchain)
-
----

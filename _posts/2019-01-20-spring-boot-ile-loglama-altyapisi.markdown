@@ -180,19 +180,3 @@ En son olarak `mvn clean test` komutu ile yazdığımız testin çalışıp çal
 	PS C:\dvlp\workspaces\basicWorkspace\mcy-sb-slf4j-log4j2>
 
 Yukarıda örnekleri verilmiş koda [https://github.com/mehmetcemyucel/springboot-slf4j-log4j2](https://github.com/mehmetcemyucel/springboot-slf4j-log4j2) adresinden ulaşabilirsiniz.
-
-
-***En yalın haliyle***
-
-[**Mehmet Cem Yücel**](https://www.mehmetcemyucel.com)
-
----
-
- - [Spring Boot Devtools ile Docker Üzerindeki Kodu Debug Etme ve Değiştirme](https://www.mehmetcemyucel.com/2019/spring-boot-devtools-ile-docker-uzerindeki-kodu-debug-etme-ve-degistirme/)
- - [Twelve Factor Nedir Türkçe ve Java Örnekleri](https://www.mehmetcemyucel.com/2019/twelve-factor-nedir-turkce-ornek/)
-
-**_Blockchain teknolojisi ile ilgileniyor iseniz bunlar da hoşunuza gidebilir:_**
-
- - [BlockchainTurk.net yazıları](https://www.mehmetcemyucel.com/categories/#blockchain)
-
----

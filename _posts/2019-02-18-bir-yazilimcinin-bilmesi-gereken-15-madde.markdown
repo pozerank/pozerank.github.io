@@ -84,22 +84,3 @@ Gündemi sürekli takip edebilmek ve güncel kalmak için sizinle benzer kulvard
 ## 15. OpenSource Contribution  
   
 Başkalarının kodlarını okumak sizi çok hızlı geliştirir. Bu sebeple open source community projelerine contributor olun. Ekmekte tuzunuz olsun.
-
-
-***En yalın haliyle***
-
-[**Mehmet Cem Yücel**](https://www.mehmetcemyucel.com)
-
----
-
-**_Bu yazılar ilgilinizi çekebilir:_**
-
- - [_Spring ve Java Hantal Mı — GraalVM ve Quarkus’a Giriş_](https://www.mehmetcemyucel.com/2019/Spring-ve-Java-Hantal-Mi-GraalVM-ve-Quarkus-Inceleme/)
- - [Spring Boot Devtools ile Docker Üzerindeki Kodu Debug Etme ve Değiştirme](https://www.mehmetcemyucel.com/2019/spring-boot-devtools-ile-docker-uzerindeki-kodu-debug-etme-ve-degistirme/)
- - [Spring Boot Property’lerini Jasypt ile Şifrelemek](https://www.mehmetcemyucel.com/2019/spring-boot-propertylerini-jasypt-ile-sifrelemek/)
-
-**_Blockchain teknolojisi ile ilgileniyor iseniz bunlar da hoşunuza gidebilir:_**
-
- - [BlockchainTurk.net yazıları](https://www.mehmetcemyucel.com/categories/#blockchain)
-
----

@@ -128,22 +128,3 @@ Ve son olarak çıktımız;
 ## 3. SONUÇ
 
 Yukarıdaki örneklerde de anlattığımız gibi, @Rule ve @ClassRule annotationlarının geniş kullanım alanları mevcut. Tekrar kullanılabilir test yazmak, test sınırlarını genişletmek, yazılmış testlerin statelerini yakından takip edebilmek ve mevcut testlerle yapamadığımız dış kaynakların başlatılması ve sonlandırılması gibi alanlarda kullanılabileceği gibi tamamen custom rule’lar yazarak yapabileceklerimizin sınırlarını ortadan da kaldırabiliriz.
-
-
-***En yalın haliyle***
-
-[**Mehmet Cem Yücel**](https://www.mehmetcemyucel.com)
-
-----------
-
-**_Bu yazılar ilgilinizi çekebilir:_**     
-
- - [Bir Yazılımcının Bilmesi Gereken 15 Madde](https://www.mehmetcemyucel.com/2019/bir-yazilimcinin-bilmesi-gereken-15-madde/)
- - [Spring Boot Devtools ile Docker Üzerindeki Kodu Debug Etme ve Değiştirme](https://www.mehmetcemyucel.com/2019/spring-boot-devtools-ile-docker-uzerindeki-kodu-debug-etme-ve-degistirme/)
- - [_Spring Boot Rest Servis Entegrasyon Testi_](https://medium.com/mehmetcemyucel/spring-boot-rest-birim-entegrasyon-testi-43a7f9354a33)
-
-**_Blockchain teknolojisi ile ilgileniyor iseniz bunlar da hoşunuza gidebilir:_** 
-
- - [BlockchainTurk.net yazıları](https://www.mehmetcemyucel.com/categories/#blockchain)
-
----

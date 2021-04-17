@@ -8,7 +8,6 @@ image: https://cdn-images-1.medium.com/max/150/1*nxoL5MIJYyvW60mkAPZpLw.jpeg
 
 Bu yazımızda [**Spotify Maven Plugin**](https://github.com/spotify/docker-maven-plugin)’ini kullanarak Spring Boot projemizden Docker imajımızı yaratacağız.
 
-
 ![Dockerize with Maven](https://miro.medium.com/max/2066/1*nxoL5MIJYyvW60mkAPZpLw.jpeg)
 
 ## 1. Yapılandırma
@@ -31,22 +30,3 @@ Bu işlem sonrasında `docker images` komutu ile imajınızın yaratıldığın�
 
 	REPOSITORY                  TAG    IMAGE ID     CREATED        SIZE  
 	mcy-sb-dockerize-with-maven latest 10c6c96315ff 2 seconds ago 143MB
-
-
-***En yalın haliyle***
-
-[**Mehmet Cem Yücel**](https://www.mehmetcemyucel.com)
-
----
-
-**_Bu yazılar ilgilinizi çekebilir:_**
-
- - [Spring Boot Devtools ile Docker Üzerindeki Kodu Debug Etme ve Değiştirme](https://www.mehmetcemyucel.com/2019/spring-boot-devtools-ile-docker-uzerindeki-kodu-debug-etme-ve-degistirme/)
- - [Spring Boot ile SLF4J ve Log4J Loglama Altyapısı](https://www.mehmetcemyucel.com/2019/spring-boot-ile-loglama-altyapisi/)
- - [Twelve Factor Nedir Türkçe ve Java Örnekleri](https://www.mehmetcemyucel.com/2019/twelve-factor-nedir-turkce-ornek/)
-
-**_Blockchain teknolojisi ile ilgileniyor iseniz bunlar da hoşunuza gidebilir:_**
-
- - [BlockchainTurk.net yazıları](https://www.mehmetcemyucel.com/categories/#blockchain)
-
----

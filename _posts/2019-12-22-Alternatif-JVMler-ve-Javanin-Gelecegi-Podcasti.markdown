@@ -55,36 +55,3 @@ image: https://miro.medium.com/max/150/1*gp7kdBQxRzDUmAMRa74LEg.png
 ### 2.9. Quarkus
 
 [https://quarkus.io/](https://quarkus.io/)
-
----
-
-<div class="PageNavigation">
-    <p style="text-align:left; text-decoration: underline;">
-        {% if page.previous.url %}
-             <a href="{{page.previous.url}}">&laquo; Spring ve Java Hantal Mı</a>
-        {% endif %}
-        {% if page.next.url %}
-            <span style="float:right; text-decoration: underline;">
-                <a href="{{page.next.url}}">XACML Authorization Authentication &raquo;</a>
-        </span>
-        {% endif %}
-    </p>
-</div>
-
-**_En yalın haliyle_**
-
-[**Mehmet Cem Yücel**](https://www.mehmetcemyucel.com)
-
----
-
-***Bu yazılar ilgilinizi çekebilir:***
-
-- [Spring Boot Devtools ile Docker Üzerindeki Kodu Debug Etme ve Değiştirme](https://www.mehmetcemyucel.com/2019/spring-boot-devtools-ile-docker-uzerindeki-kodu-debug-etme-ve-degistirme/)
-- [Mikroservisler-Service Mesh Nedir](https://www.mehmetcemyucel.com/2019/mikroservisler-service-mesh-nedir/)
-- [12 Factor Nedir Türkçe ve Java Örnekleri](https://www.mehmetcemyucel.com/2019/twelve-factor-nedir-turkce-ornek/)
-
-***Blockchain teknolojisi ile ilgileniyor iseniz bunlar da hoşunuza gidebilir:***
-
-- [BlockchainTurk.net yazıları](https://www.mehmetcemyucel.com/categories/#blockchain)
-
----

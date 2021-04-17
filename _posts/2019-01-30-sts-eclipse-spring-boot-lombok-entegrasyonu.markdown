@@ -20,22 +20,3 @@ Bu işlemler sonrasında Eclipse’i baştan başlatmanız ve gerekirse projeler
 ## 2. Sonuç
 
 [Buradan](https://projectlombok.org/) Lombok anasayfasına gidip neler yapabileceğinizi inceleyebilirsiniz. Yetenekleri stabil ve deneysel olarak ikiye ayrılıyor, deneysel olanları kullanmak sizin tercihinize kalmış. Sınıfların oluşan bytecode’larını decompile ederek Lombok’un aslında neler yaptığını da inceleyebilirsiniz. Nasıl decompile edeceğim diyorsanız başarılı bir decompiler da [burada](http://jd.benow.ca/).
-
-
-***En yalın haliyle***
-
-[**Mehmet Cem Yücel**](https://www.mehmetcemyucel.com)
-
----
-
-**_Bu yazılar ilgilinizi çekebilir:_**
-
- - [Spring Boot Devtools ile Docker Üzerindeki Kodu Debug Etme ve Değiştirme](https://www.mehmetcemyucel.com/2019/spring-boot-devtools-ile-docker-uzerindeki-kodu-debug-etme-ve-degistirme/)
- - [Spring Boot ile SLF4J ve Log4J Loglama Altyapısı](https://www.mehmetcemyucel.com/2019/spring-boot-ile-loglama-altyapisi/)
- - [Twelve Factor Nedir Türkçe ve Java Örnekleri](https://www.mehmetcemyucel.com/2019/twelve-factor-nedir-turkce-ornek/)
-
-**_Blockchain teknolojisi ile ilgileniyor iseniz bunlar da hoşunuza gidebilir:_**
-
- - [BlockchainTurk.net yazıları](https://www.mehmetcemyucel.com/categories/#blockchain)
-
----

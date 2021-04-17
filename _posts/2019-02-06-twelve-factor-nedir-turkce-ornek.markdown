@@ -203,32 +203,8 @@ Developer geliştirim esnasında bu işi elle çalıştırabilir. Ancak sonraki 
 
 2012'de 12 Factor paylaşılmış olsa da o günden bu güne eklenmesi ihtiyaç duyulan başka maddeler de olmuştur. Sektörün önde gelen isimlerinden Pivotal firmasında Solution Architect olarak çalışan Kevin Hoffman’ın kitabında ek 3 başlık daha ele alınmaktadır. Bu 3 başlık;
 
--   API First
--   Telemetry
--   Authentication &amp; Authorization başlıklarıdır
+- API First
+- Telemetry
+- Authentication &amp; Authorization başlıklarıdır
 
 Daha detaylı bilgi için kitaba [buradan](https://content.pivotal.io/ebooks/beyond-the-12-factor-app) ulaşabilirsiniz.
-
-
-***En yalın haliyle***
-
-[**Mehmet Cem Yücel**](https://www.mehmetcemyucel.com)
-
----
-
-***Bu yazılar ilgilinizi çekebilir:***   
- - [Spring Boot Devtools ile Docker Üzerindeki Kodu Debug Etme ve Değiştirme](https://www.mehmetcemyucel.com/2019/spring-boot-devtools-ile-docker-uzerindeki-kodu-debug-etme-ve-degistirme/)
- - [Spring Boot ile SLF4J ve Log4J Loglama Altyapısı](https://www.mehmetcemyucel.com/2019/spring-boot-ile-loglama-altyapisi/)
-
-***Blockchain teknolojisi ile ilgileniyor iseniz bunlar da hoşunuza gidebilir:***
-
- - [BlockchainTurk.net yazıları](https://www.mehmetcemyucel.com/categories/#blockchain)
-
-***Ayrıca diğer kaynaklar:***
-
- - [https://12factor.net](https://12factor.net)
- - [https://content.pivotal.io/blog/beyond-the-twelve-factor-app](https://content.pivotal.io/blog/beyond-the-twelve-factor-app)
- - [https://dzone.com/articles/12-factors-and-beyond-in-java](https://dzone.com/articles/12-factors-and-beyond-in-java)
- - [https://en.wikipedia.org/wiki/Twelve-Factor_App_methodology](https://en.wikipedia.org/wiki/Twelve-Factor_App_methodology)
-
----

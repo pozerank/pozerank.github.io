@@ -100,22 +100,3 @@ Artık yeni rest çağırımlarımızda 11. satıra koyduğumuz breakpoint yard�
 ![](https://miro.medium.com/max/400/1*eDcZaJFt_33o_e_OOaO6Nw.jpeg)
 
 Projenin kodlarına [buradan](https://github.com/mehmetcemyucel/springboot-devtools-dockerized) ulaşabilirsiniz.
-
-
-
-***En yalın haliyle***
-
-[**Mehmet Cem Yücel**](https://www.mehmetcemyucel.com)
-
----
-
-**_Bu yazılar ilgilinizi çekebilir:_**
-
- - [Spring Boot ile SLF4J ve Log4J Loglama Altyapısı](https://www.mehmetcemyucel.com/2019/spring-boot-ile-loglama-altyapisi/)
- - [Twelve Factor Nedir Türkçe ve Java Örnekleri](https://www.mehmetcemyucel.com/2019/twelve-factor-nedir-turkce-ornek/)
-
-**_Blockchain teknolojisi ile ilgileniyor iseniz bunlar da hoşunuza gidebilir:_**
-
- - [BlockchainTurk.net yazıları](https://www.mehmetcemyucel.com/categories/#blockchain)
-
----

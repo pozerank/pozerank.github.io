@@ -130,35 +130,3 @@ Tanımlanmış sınırlar ile kastettiğimiz kavramı biraz daha açalım. Bir e
 ## 4. Sonuç
 
 Sonraki yazımızda **OAuth Protokolü, OpenID ve OpenID Connect** kavramlarını inceleyeceğiz. Yazıya [buradan](https://www.mehmetcemyucel.com/2020/Access-Management-2-OpenID-OAuth2-OpenID-Connect/) erişebilirsiniz.
-
-<div class="PageNavigation">
-    <p style="text-align:left; text-decoration: underline;">
-        {% if page.previous.url %}
-             <a href="{{page.previous.url}}">&laquo; Java’nın Geleceği Podcast’i</a>
-        {% endif %}
-        {% if page.next.url %}
-            <span style="float:right; text-decoration: underline;">
-                <a href="{{page.next.url}}">OpenID OAuth2 OpenID Connect &raquo;</a>
-        </span>
-        {% endif %}
-    </p>
-</div>
-
-**_En yalın haliyle_**
-
-[**Mehmet Cem Yücel**](https://www.mehmetcemyucel.com)
-
----
-
-**_Bu yazılar ilgilinizi çekebilir:_**
-
-- [Bir Yazılımcının Bilmesi Gereken 15 Madde](https://www.mehmetcemyucel.com/2019/bir-yazilimcinin-bilmesi-gereken-15-madde/)
-- [Spring ve Java Hantal Mı — GraalVM ve Quarkus’a Giriş](https://www.mehmetcemyucel.com/2019/Spring-ve-Java-Hantal-Mi-GraalVM-ve-Quarkus-Inceleme/)
-- [Mikroservisler-Service Mesh Nedir](https://www.mehmetcemyucel.com/2019/mikroservisler-service-mesh-nedir/)
-- [12 Factor Nedir Türkçe ve Java Örnekleri](https://www.mehmetcemyucel.com/2019/twelve-factor-nedir-turkce-ornek/)
-
-**_Blockchain teknolojisi ile ilgileniyor iseniz bunlar da hoşunuza gidebilir:_**
-
-- [BlockchainTurk.net yazıları](https://www.mehmetcemyucel.com/categories/#blockchain)
-
----

@@ -12,7 +12,6 @@ Bu yazımızda Java'nın tarihi gelişimini, günümüzde bulunduğu yeri, mikro
 
 Java yaklaşık 20 yıl önce ilk defa ortaya çıktığında büyük bir probleme çözüm getirme vaadiyle yazılımcıların dikkatini çekmişti. Vaat şuydu, bir yazılımcı farklı mimarilere sahip donanımların nasıl çalıştığını bilmesine gerek kalmayacaktı. Ve bütün bu ortamlar için ayrı ayrı kod yazmayacak, tek kod tüm ortamlarda çalışabilecekti. Bunu _“Write once, run anywhere”_ mottosuyla ifade ettiler. Derlenen kod [JVM](https://en.wikipedia.org/wiki/Java_virtual_machine) ismi verilen bir sanal makine üzerinde çalıştırılacaktı. Bu sayede geliştiriciler işletim sistemi, donanım ve benzeri ortamsal farklılıklardan etkilenmeyecekti.
 
-
 ![https://www.shkuri.com/sales-tips](https://miro.medium.com/max/1081/0*UUBgFXRohHc9S-CS)
 
 {% include feed-ici-yazi-1.html %}
@@ -20,7 +19,6 @@ Java yaklaşık 20 yıl önce ilk defa ortaya çıktığında büyük bir proble
 ## 2. Günümüzde Java
 
 Java’nın sağladığı bu esneklik dönemin de şartları göz önünde bulundurulduğunda yazılım geliştiricilerin en tercih ettiği yazılım dillerinden birisi olmayı başardı. Peki halen bu şekilde mi devam ediyor? Bunun için güncel dillerin popülaritesi ile ilgili bir araştırma yaptım. Bu araştırmayı yaparken araştırma şirketlerince yapılan anketlerin taraflı olabileceği düşüncesini de dikkate aldım. Karşıma çıkan ve en tarafsız olduğunu hissettiğim çalışma [Redmonk](https://redmonk.com/) tarafından 2019 Q1'de yapılmıştı. [Stack Overflow](https://stackoverflow.com/) ve [Github](https://github.com/)’daki popülerlikler üzerinden yapılan çalışmanın grafiği aşağıdaki gibi:
-
 
 ![https://redmonk.com/sogrady/2019/03/20/language-rankings-1-19](https://miro.medium.com/max/1313/0*oti73UQpHd93KL66.png)
 
@@ -169,22 +167,3 @@ Kod:
 ## 7. Sonuç
 
 Mikroservis mimariler ile uğraşıyorsanız optimizasyon, daha iyileştirme, daha az maliyetle daha fazla performans gibi konular için alternatif teknolojileri takip etmek ve deneyimlemek gerekiyor. Quarkus ve GraalVM bu teknolojilerden deneyimlemenin de ötesinde gelecek günlerde hayatımızın büyük birer parçası olacak gibi gözüküyor. Deneyimlemenizi şiddetle tavsiye ederim.
-
-
-***En yalın haliyle***
-
-[**Mehmet Cem Yücel**](https://www.mehmetcemyucel.com)
-
----
-
-**Bu yazılar ilgilinizi çekebilir:**
-
- - [Bir Yazılımcının Bilmesi Gereken 15 Madde](https://www.mehmetcemyucel.com/2019/bir-yazilimcinin-bilmesi-gereken-15-madde/)
- - [MapStruct ile SpringBoot Obje Dönüşümü](https://www.mehmetcemyucel.com/2019/MapStruct-ile-obje-donusumu/)
- - [Spring Boot Devtools ile Docker Üzerindeki Kodu Debug Etme ve Değiştirme](https://www.mehmetcemyucel.com/2019/spring-boot-devtools-ile-docker-uzerindeki-kodu-debug-etme-ve-degistirme/)
-
-**Blockchain teknolojisi ile ilgileniyor iseniz bunlar da hoşunuza gidebilir:**
-
- - [BlockchainTurk.net yazıları](https://www.mehmetcemyucel.com/categories/#blockchain)
-
----

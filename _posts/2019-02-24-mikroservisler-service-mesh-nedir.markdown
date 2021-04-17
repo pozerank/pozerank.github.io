@@ -65,22 +65,3 @@ Biz yazımıza en yeni yaklaşım olan `Sidecar Proxy` ‘leri açıklayarak dev
 ## 5. Sonuç ve Teknolojiler
 
 Yazının sonuna gelirken, service mesh ürünlerine birkaç örnek verelim. [Envoy](https://www.envoyproxy.io/) ve [Istio](https://istio.io/) sidecar proxyi ilk kullanan ürünler. Bunların haricinde [Conduit](https://conduit.io/) yakın zamanda [Linkerd](https://linkerd.io/) ile yollarını birleştirdiler. [Kong](https://konghq.com/solutions/service-mesh/) da yine başarılı bir service mesh ürünü.
-
-
-***En yalın haliyle***
-
-[**Mehmet Cem Yücel**](https://www.mehmetcemyucel.com)
-
----
-
-**_Bu yazılar ilgilinizi çekebilir:_**
-
- - [Bir Yazılımcının Bilmesi Gereken 15 Madde](https://www.mehmetcemyucel.com/2019/bir-yazilimcinin-bilmesi-gereken-15-madde/)
- - [Spring Boot Devtools ile Docker Üzerindeki Kodu Debug Etme ve Değiştirme](https://www.mehmetcemyucel.com/2019/spring-boot-devtools-ile-docker-uzerindeki-kodu-debug-etme-ve-degistirme/)
- - [Spring Boot Property’lerini Jasypt ile Şifrelemek](https://www.mehmetcemyucel.com/2019/spring-boot-propertylerini-jasypt-ile-sifrelemek/)
-
-**_Blockchain teknolojisi ile ilgileniyor iseniz bunlar da hoşunuza gidebilir:_**
-
- - [BlockchainTurk.net yazıları](https://www.mehmetcemyucel.com/categories/#blockchain)
-
----
