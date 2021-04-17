@@ -17,10 +17,6 @@ Uygulamanızı uygulama sunucusunda deploy ederken, veya uygulamamız runtime'da
 
 _Heap Alanı_
 
-  
-
-  
-
 [![](http://4.bp.blogspot.com/_-PvBeE2cwcg/TO5B_VS9jnI/AAAAAAAAAWk/E7SW0BuEaIA/s1600/2.PNG)](http://4.bp.blogspot.com/_-PvBeE2cwcg/TO5B_VS9jnI/AAAAAAAAAWk/E7SW0BuEaIA/s1600/2.PNG)
 
 _PermGen Alanı_
@@ -39,20 +35,3 @@ Run >> Debug Configurations a girdiğimizi varsayalım. Uygulamamızı varolan m
 
 parametreleri yapıştırılmalıdır. Buradaki "-Xms512m -Xmx1024m" argümanları uygulama sunucusu için ayrılan Heap miktarlarını ifade ederken "-XX:PermSize=96m -XX:MaxPermSize=256m" argümanları da PermGen alanının düzenlenmesi için kullanılmaktadır. Kendi RAM miktarınıza göre ayarlamanızı yapabilirsiniz. Ben 2 GB lık RAM in bulunduğu bilgisayarımda heap için 512m ve 1024m kullanırken PermGen için 256m ve 512m kullanıyorum.  
   
-***En yalın haliyle***
-
-[**Mehmet Cem Yücel**](https://www.mehmetcemyucel.com)
-
----
-
-**_Bu yazılar ilgilinizi çekebilir:_**
-
- - [Bir Yazılımcının Bilmesi Gereken 15 Madde](https://www.mehmetcemyucel.com/2019/bir-yazilimcinin-bilmesi-gereken-15-madde/)
- - [Spring Boot Devtools ile Docker Üzerindeki Kodu Debug Etme ve Değiştirme](https://www.mehmetcemyucel.com/2019/spring-boot-devtools-ile-docker-uzerindeki-kodu-debug-etme-ve-degistirme/)
- - [Spring Boot Property’lerini Jasypt ile Şifrelemek](https://www.mehmetcemyucel.com/2019/spring-boot-propertylerini-jasypt-ile-sifrelemek/)
-
-**_Blockchain teknolojisi ile ilgileniyor iseniz bunlar da hoşunuza gidebilir:_**
-
- - [BlockchainTurk.net yazıları](https://www.mehmetcemyucel.com/categories/#blockchain)
-
----

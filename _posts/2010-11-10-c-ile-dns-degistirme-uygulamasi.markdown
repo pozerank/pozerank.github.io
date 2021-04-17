@@ -251,21 +251,3 @@ Resim 14: DNS Adresi Ekleme
   
 
 Bütün bu işlemlerden sonra programımız bitti :) Şu anda regeditten ağ bağdaştırıcılarının listesini çekip ekrana basabilen, DNS adreslerini saklayabilen, istediğimiz bağdaştırıcının DNS adresini değiştirebildiğimiz, eski ayarlarına tekrar dönebildiğimiz bir programımız var. Proje Visual Studio 2010 ile yapıldı. Framework olarak .NET 4.0 Client Profile çalıştırabilmek için yeterli olacaktır. Projeyi kısa bir boşluğumda gerçekleştirdim, daha da geliştirilebilir bir durumda. Projenin source kodunu da yakın zaman içerisinde paylaşıyor olacağım.
-
-***En yalın haliyle***
-
-[**Mehmet Cem Yücel**](https://www.mehmetcemyucel.com)
-
----
-
-**_Bu yazılar ilgilinizi çekebilir:_**
-
- - [Bir Yazılımcının Bilmesi Gereken 15 Madde](https://www.mehmetcemyucel.com/2019/bir-yazilimcinin-bilmesi-gereken-15-madde/)
- - [Spring Boot Devtools ile Docker Üzerindeki Kodu Debug Etme ve Değiştirme](https://www.mehmetcemyucel.com/2019/spring-boot-devtools-ile-docker-uzerindeki-kodu-debug-etme-ve-degistirme/)
- - [Spring Boot Property’lerini Jasypt ile Şifrelemek](https://www.mehmetcemyucel.com/2019/spring-boot-propertylerini-jasypt-ile-sifrelemek/)
-
-**_Blockchain teknolojisi ile ilgileniyor iseniz bunlar da hoşunuza gidebilir:_**
-
- - [BlockchainTurk.net yazıları](https://www.mehmetcemyucel.com/categories/#blockchain)
-
----

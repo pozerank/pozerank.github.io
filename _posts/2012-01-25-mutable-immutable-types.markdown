@@ -61,21 +61,3 @@ Peki B işleminde ne yapıyoruz? StringBuffer sınıfı [JDK](http://en.wikipedi
 `sb.insert(sb.length(), [eklenecek string])
 `şeklinde işlem gerçekleştirilir. Özetle burada yapılan yeni bir string alıp değerleri orada tutmak değil, varolan stringin kapasitesi artırılıp sonuna insert edilmesidir. Kapasitenin artırılması  [JVM](http://en.wikipedia.org/wiki/Java_virtual_machine)  tarafından otomatik olarak gerçekleştirilmektedir. Bu işlem asenkron olarak işlemektedir.`  
 `Aynı işlemi  [thread safe](http://en.wikipedia.org/wiki/Thread_safety) olmayarak gerçekleştiren bir sınıf JDK 1.5 ile gelmiştir. Adı  [StringBuilder](http://docs.oracle.com/javase/1.5.0/docs/api/java/lang/StringBuilder.html)'dır. Kısacası StringBuilder sınıfı StringBufferdan çok ufak bir miktar daha hızlıdır, aradaki hız farkı senkronizasyon için harcanan vakittir. Concatenation'dan çok çok daha hızlı olduğunu yine hatırlatmakta fayda var.`  
-
-***En yalın haliyle***
-
-[**Mehmet Cem Yücel**](https://www.mehmetcemyucel.com)
-
----
-
-**_Bu yazılar ilgilinizi çekebilir:_**
-
- - [Bir Yazılımcının Bilmesi Gereken 15 Madde](https://www.mehmetcemyucel.com/2019/bir-yazilimcinin-bilmesi-gereken-15-madde/)
- - [Spring Boot Devtools ile Docker Üzerindeki Kodu Debug Etme ve Değiştirme](https://www.mehmetcemyucel.com/2019/spring-boot-devtools-ile-docker-uzerindeki-kodu-debug-etme-ve-degistirme/)
- - [Spring Boot Property’lerini Jasypt ile Şifrelemek](https://www.mehmetcemyucel.com/2019/spring-boot-propertylerini-jasypt-ile-sifrelemek/)
-
-**_Blockchain teknolojisi ile ilgileniyor iseniz bunlar da hoşunuza gidebilir:_**
-
- - [BlockchainTurk.net yazıları](https://www.mehmetcemyucel.com/categories/#blockchain)
-
----
