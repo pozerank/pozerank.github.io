@@ -101,9 +101,9 @@ Sonraki yazımızda aynı OpenID Connect gibi **Federated Authentication** kulla
 <br/>
 
 <p style="text-align:left;">
-    <a href="https://www.mehmetcemyucel.com/2020/Access-Management-1-XACML-Authorization-Authentication/">XACML Authorization Authentication</a> < Önceki Yazı 
+    <a href="https://www.mehmetcemyucel.com/2020/Access-Management-1-XACML-Authorization-Authentication/">XACML Authorization Authentication</a> < Önceki Yazı
     <span style="float:right;">
-        Sonraki Yazı > <a href="www.mehmetcemyucel.com/2020/Access-Management-3-SSO-SAML-Kerberos-User-Federation">SSO SAML Kerberos User Federation</a> 
+        Sonraki Yazı > <a href="https://www.mehmetcemyucel.com/2020/Access-Management-3-SSO-SAML-Kerberos-User-Federation">SSO SAML Kerberos User Federation</a>
     </span>
 </p>
 
