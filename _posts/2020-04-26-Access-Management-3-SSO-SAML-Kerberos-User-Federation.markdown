@@ -34,7 +34,7 @@ Tekrar SAML’a dönecek olursak, XML bazlı çalışan bu güvenlik protokolü 
 
 ![SAML Authentication Process](https://miro.medium.com/max/1345/1*7zleRist5o_p8NJtbZf5oA.png)
 
-{% include feed-ici-1.html %}
+{% include feed-ici-yazi-1.html %}
 
 Farkettiyseniz bir önceki yazımızdaki bahsettiğimiz OAuth2'deki authorization akışına çok benzemekle birlikte burada farklı olarak login credential veya secret doğrulama işlemi sadece delege edilen bir identity provider tarafından değil bir Active Directory gibi kullanıcı veritabanıyla birlikte identity provider ile federe şekilde, birlikte gerçekleştirilmesidir. Bu **Federated Authentication’**a bir örnektir. Burada kullanıcının bilgilerinin **LDAP, Active Directory veya DBMS** gibi sistemlerden edinilerek kullanılmasına da **User Federation** ismi verilir.
 
@@ -44,7 +44,7 @@ SAML’ı kullanan sistemlerden birisi de **Kerberos**’tur. Kerberos, tamamen 
 
 ![Kerberos Authentication Process](https://miro.medium.com/max/971/1*VsOhg01a3Gr1qma4Mcv3hQ.png)
 
-{% include feed-ici-2.html %}
+{% include feed-ici-yazi-2.html %}
 
 Burada ek adım olarak kullanıcının servise erişebilmesi için ihtiyaç duyduğu bileti alabilmek için bilet sağlayan bir bilet alması gerekir. Bu bilet sağlayan bilet de Identity Provider tarafından kullanıcının kendi şifresi tarafından anahtarlanmıştır ve kullanıcı gerçekten doğru kullanıcı ise sadece çözülebilecek ve bilet sağlayan bilet ortaya çıkacaktır. Bu bileti çözen kullanıcı servise erişebilmek için ihtiyaç duyacağı bileti Identity Provider’dan edinebilecektir.
 

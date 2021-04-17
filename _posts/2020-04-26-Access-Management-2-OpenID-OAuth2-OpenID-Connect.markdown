@@ -34,7 +34,7 @@ Kullanıcı bir foruma üye olmak istediğinde OpenID kimliğiyle üye olacaktı
 
 ![](https://miro.medium.com/max/970/1*eyGITOaY4c1wj8fyCa-zSw.png)
 
-{% include feed-ici-1.html %}
+{% include feed-ici-yazi-1.html %}
 
 ## 2. Yelp Tehlikesi
 
@@ -50,7 +50,7 @@ Gerçekten de bütün bu uğraşlar sonuç buldu. Hatta o kadar çok insan sonu�
 
 Birkaç yıl önce çalışmaları başlatılan OpenID projesi açık bir standart olmadığı sebebiyle **2007** yılında kurulan **OAuth Discussion Group** açık protokol için taslak bir öneri yazma çalışmalarına başladı. Yelp senaryosuyla karşı karşıya kaldığı zamanlara denk gelen Google, bu çalışmalardan haberdar olduğunda destekleyerek süreci hızlandırdılar. Aynı senenin **Aralık** ayında [**OAuth Core 1.0 Protokol Şablonu**](https://oauth.net/core/1.0/) yayımlandı. İlerleyen süreçte kullanımın kolaylığı ve hedef teknolojilerin çeşitliliği gözetilerek yenilenen [**OAuth 2.0 Framework**](http://tools.ietf.org/html/rfc6749#section-4.4.2)’ü **2012 Ekim**’de yayımlandı.
 
-{% include feed-ici-2.html %}
+{% include feed-ici-yazi-2.html %}
 
 ![](https://miro.medium.com/max/225/0*Wl7CHlfKPE49XS1U.png)
 
@@ -68,7 +68,7 @@ Buradaki farklılık, artık belirli bilgilere erişime kullanıcının onay ver
 
 Zaman içerisinde ihtiyaçlar dahilinde Oauth 2.0 bir framework olarak ortaya koyuldu. Teknolojik çeşitliliğe ve kullanımın kolaylaştırılması odaklı gelişen versiyonda halen amaç aynı. Erişimin ve yetkilendirmenin sitelere direkt olarak kullanıcı adı/şifresi vermeksizin, erişimin bilgilerini barındıran bir token yapısıyla süreçleri yönetebilmek. Bu süreçleri OAuth 2.0 dört adet tanımla ele alıyor.
 
-{% include feed-ici-2.html %}
+{% include feed-ici-yazi-2.html %}
 
 ### 4.1. Oauth2 Authorization Code Flow Örnek
 
@@ -82,7 +82,7 @@ Kullanıcı browser’ı aracılığıyla Yelp’e login olmak istediğinde Yelp
 
 Önemli olarak belirtmekte fayda var. Yukarıdaki akış en çok kullanılan OAuth2 akışlarından birisi olan **Authorization Code Flow** akışı. 3 Farklı flow daha bulunmaktadır. Bunlar, **Client Credentials Code Flow, Implicit Code Flow ve Resource Owner Password Credentials Code Flow**’dur.
 
-{% include feed-ici-3.html %}
+{% include feed-ici-yazi-3.html %}
 
 ## 5. OpenID Connect
 

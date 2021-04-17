@@ -26,7 +26,7 @@ image: https://cdn-images-1.medium.com/max/150/0*knMgRQMoNMWQciZs.jpg
 
 Uygulamamız ve test senaryomuz şu şekilde olacak. İki rest servis ayağa kaldıracağız. İki servisi de ayrı roller çağırabilir durumda olacak. Uygulamamızın client’ına sadece 1 role yetki vereceğiz. Bu yetkiyle 1. servisi çağırabildiğini, 2. servise ise unauthorized aldığını gözlemleyeceğiz. Bu çağırımları hem restTemplate ile hem de feign client ile yapacağız. Bütün bu süreci kolaylaştırmak için bir tane de bu servislerin çağırımının yapıldığı bir ayrı bir servis ayağa kaldıracağız.
 
-{% include feed-ici-1.html %}
+{% include feed-ici-yazi-1.html %}
 
 ## 2. Ortam Kurulumu
 
@@ -44,7 +44,7 @@ Bu noktadan sonra [http://localhost:8080](http://localhost:8080) 'e gittiğimizd
 
 ![](https://miro.medium.com/max/1604/1*HfcW4RZX-vMzq_sDJGSFcw.png)
 
-{% include feed-ici-2.html %}
+{% include feed-ici-yazi-2.html %}
 
 **“Administration Console”** yazısını tıklayarak login ekranına gidiyoruz.
 
@@ -70,7 +70,7 @@ Sırada rollerimizi yaratma adımımız var. İki role, user-role ve user2-role 
 
 ![](https://miro.medium.com/max/1603/1*b7zL2z1MYVmISpLm80Tuow.png)
 
-{% include feed-ici-3.html %}
+{% include feed-ici-yazi-3.html %}
 
 İki rolü de aynı şekilde yarattıktan sonra son görüntümüz aşağıdaki gibi olmalı.
 
@@ -86,7 +86,7 @@ Burada **Create** butonunu tıklayarak uygulamamıza client yaratacağız. Sprin
 
 ![](https://miro.medium.com/max/1600/1*kX1nqa-jFDvdaJ7leIbLXQ.png)
 
-{% include feed-ici-4.html %}
+{% include feed-ici-imaj-1.html %}
 
 Sonraki adımımızda clientımızı yapılandırmamız gerekli. Bizim senaryomuz bir frontend uygulaması tarafından **Users** login edip onların ekran üzerindeki credentiallarıyla ilgili bir deneme yapmak değil. Servislerimizin sadece uygulamamıza verilen yetkiler kapsamında çağırılabildiğini test etmek istiyoruz. Bu sebeple **Access Type** alanımızı **confidential**, **Service Accounts Enabled** ve **Authorization Enabled** alanlarını **On** yapıyoruz. Aşağıya kaydırıp **Save** butonuna tıkladıktan sonra ekranda yeni tablarımız belirecek.
 
@@ -100,7 +100,7 @@ Son olarak **Credentials** tabına giderek uygulamamız için yaratılan **Secre
 
 ![](https://miro.medium.com/max/1599/1*IyaUMl3klJMNCkb98BI6UA.png)
 
-{% include feed-ici-5.html %}
+{% include feed-ici-imaj-2.html %}
 
 ## 3. Spring Boot Uygulaması
 
@@ -128,7 +128,7 @@ Uygulamamızın Keycloak’u ve uygulamamıza erişim yöntemlerini yapılandır
 
 <script src="https://gist.github.com/mehmetcemyucel/ea3715d26d16d87479b9bbbef772aa80.js"></script>
 
-{% include feed-ici-6.html %}
+{% include feed-ici-imaj-3.html %}
 
 Burada **PreAuthorize** annotation’ı kullanılan servislerin haricinde tüm servislere erişim hakkı vermemizin sebebi birazdan controller’ımıza ekleyeceğimiz yeni metodların direk erişilebilir olmasını istememizden kaynaklanıyor.
 
@@ -140,7 +140,7 @@ Controller’ımıza birkaç yapılandırma ekleyerek ilk eklediğimiz servisler
 
 test-rest-template servisine geçeceğimiz servis ismiyle ilk iki servisi direk çağırabiliriz. **FeignServiceClient** interface’inde de yine ilk yarattığımız servislerin imzaları bulunuyor. Bunları çağırabilmek için de test-feign-1 ve test-feign-2 servislerini yarattık. Ancak bunları çağırmadan önce restTemplate’ımızı ve FeignClient’ımızı OAuth2 kullanmak üzere yapılandırmamız gerekiyor.
 
-{% include feed-ici-1.html %}
+{% include feed-ici-yazi-1.html %}
 
 ### 3.5. RestTemplate Configuration
 
@@ -174,7 +174,7 @@ Sonuçları gözlemlemek için [bu yazımda bahsettiğim](https://medium.com/meh
 
 ![](https://miro.medium.com/max/715/1*9DKU9ZfQIeD1bX5f_L4QHA.png)
 
-{% include feed-ici-2.html %}
+{% include feed-ici-yazi-2.html %}
 
 ## 5. Sonuç
 

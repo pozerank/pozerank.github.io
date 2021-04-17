@@ -55,7 +55,7 @@ Bu durumda Spring Bean’leri arası bindinglerinin tamamlanabilmesi için bir �
 
 Burada dikkat çeken 3 nokta bulunuyor. İlki Spring Boot Maven Plugin’deki image builder eki. Bu configuration sayesinde GraalVM tarafından çalıştırılacak native image çıktısı oluşturulabilecek. Bu plugin’in ekstra yapılandırmaları ve kullanımı için [burayı](https://docs.spring.io/spring-native/docs/current/reference/htmlsingle/#native-image-options) inceleyebilirsiniz.
 
-{% include feed-ici-1.html %}
+{% include feed-ici-yazi-1.html %}
 
 <script src="https://gist.github.com/mehmetcemyucel/6a3cbc883a4113f238216fa2e29527ff.js"></script>
 
@@ -65,7 +65,7 @@ Burada dikkat çeken 3 nokta bulunuyor. İlki Spring Boot Maven Plugin’deki im
 
 Pom.xml dosyasındaki son dikkat edilmesi gereken nokta ise versiyonlar. Şu anda Spring Native projesinin son versiyonu 0.9.1 versiyonu, Spring Boot 2.4.4'ü destekliyor. Java 8 ve 11 versiyonları ve GraalVM’in 21.0.0 versiyonu destekli. GraalVM’in Spring desteği verdiği versiyonlar [bu adresten](https://github.com/oracle/graal/labels/spring) Spring tag’ine sahip versiyonlar üzerinden takip edilebilir.
 
-{% include feed-ici-2.html %}
+{% include feed-ici-yazi-2.html %}
 
 ## 4. Sonuç
 

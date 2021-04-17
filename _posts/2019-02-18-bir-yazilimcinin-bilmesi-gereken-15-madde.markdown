@@ -33,7 +33,7 @@ Birçok farklı tool var; [#Clearcase](https://twitter.com/search?q=%23Clearcase
   
 Veri saklamak için çok alternatif var. Ancak RDBMS'ler halen en yoğun kullanılanılanları. Bu nedenle [#OLAP](https://twitter.com/search?q=%23OLAP "#OLAP"), [#OLTP](https://twitter.com/search?q=%23OLTP "#OLTP"); tasarım prensiperi([#Normalization](https://twitter.com/search?q=%23Normalization "#Normalization"), [#BCNF](https://twitter.com/search?q=%23BCNF "#BCNF")); SQL ve bir [#ORM](https://twitter.com/search?q=%23ORM "#ORM") toolunu bilmekte fayda var. Sonrasında [#NoSQL](https://twitter.com/search?q=%23NoSQL "#NoSQL") dünyasına yelken açılmalı
 
-{% include feed-ici-1.html %}
+{% include feed-ici-yazi-1.html %}
 
 ## 5. Algorithm Complexity Analysis  
   
@@ -61,7 +61,7 @@ En az design patterns kadar önemli ama bir o kadar atlanılan kavramlar. [#SOLI
   
 Testin kodlanması şart, özellikle de mikroservis mimarilere adım atıyorsanız. [#TDD](https://twitter.com/search?q=%23TDD "#TDD") bu yüzden çok iyi bir seçim. Bunu uygulayamasanız bile en azından birim ve entegrasyon testlerini yazmalısınız. [#JUnit](https://twitter.com/search?q=%23JUnit "#JUnit") [#DBUnit](https://twitter.com/search?q=%23DBUnit "#DBUnit") [#Selenium](https://twitter.com/search?q=%23Selenium "#Selenium") [#Mockito](https://twitter.com/search?q=%23Mockito "#Mockito") [#AssertJ](https://twitter.com/search?q=%23AssertJ "#AssertJ") [#Jmeter](https://twitter.com/search?q=%23Jmeter "#Jmeter")
 
-{% include feed-ici-2.html %}
+{% include feed-ici-yazi-2.html %}
 
 ## 11. Unix - Linux  
   
@@ -75,7 +75,7 @@ Ana bir [#HighLevelLanguage](https://twitter.com/search?q=%23HighLevelLanguage "
   
 Bütün bunları yaparken toollara ihtiyacımız olacak. Kendinizi en iyi hissettiğiniz toollardan bir toolkit yaratın ve uzmanlaşın. Örn: [#Postman](https://twitter.com/search?q=%23Postman "#Postman") [#Notepad](https://twitter.com/search?q=%23Notepad "#Notepad")++ [#Excel](https://twitter.com/search?q=%23Excel "#Excel") [#powerpoint](https://twitter.com/search?q=%23powerpoint "#powerpoint") [#ditto](https://twitter.com/search?q=%23ditto "#ditto") [#mtail](https://twitter.com/search?q=%23mtail "#mtail") [#sysinternals](https://twitter.com/search?q=%23sysinternals "#sysinternals") [#DumpAnalyzer](https://twitter.com/search?q=%23DumpAnalyzer "#DumpAnalyzer") vb...
 
-{% include feed-ici-3.html %}
+{% include feed-ici-yazi-3.html %}
 
 ## 14. Takip Listesi  
   

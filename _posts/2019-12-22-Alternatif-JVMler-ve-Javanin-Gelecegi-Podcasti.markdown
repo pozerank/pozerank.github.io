@@ -10,7 +10,7 @@ image: https://miro.medium.com/max/150/1*gp7kdBQxRzDUmAMRa74LEg.png
 
 ![](https://miro.medium.com/max/750/1*gp7kdBQxRzDUmAMRa74LEg.png)
 
-{% include feed-ici-1.html %}
+{% include feed-ici-yazi-1.html %}
 
 ## 1. Podcast Linkleri
 

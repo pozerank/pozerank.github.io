@@ -35,7 +35,7 @@ Keycloak, en temel yeteneği olan [Single Sign On(SSO)](https://medium.com/mehme
 
 OIDC protokolü üzerinden çok sayıda dil için [adapter](https://www.keycloak.org/docs/latest/securing_apps/index.html#openid-connect-3)’ı barındırıyor. Java adapterları içerisinde JBoss, Tomcat, Jetty, Wildfly gibi sunucular için adapterların yanısıra Spring Boot, Spring Security, Java Servlet Filter, CLI/Desktop App, Pure Java App için de adapterlar bulunuyor.
 
-{% include feed-ici-1.html %}
+{% include feed-ici-yazi-1.html %}
 
 ## 4. Entegrasyonlar
 
@@ -51,7 +51,7 @@ Bütün bu işlemleri kendi arayüzü aracılığıyla gerçekleştirebilirsiniz
 
 ![](https://miro.medium.com/max/1041/0*Xx4tAv-JfKtR9tVX.png)
 
-{% include feed-ici-2.html %}
+{% include feed-ici-yazi-2.html %}
 
 ## 6. Ortamlar ve Dökümanlar
 

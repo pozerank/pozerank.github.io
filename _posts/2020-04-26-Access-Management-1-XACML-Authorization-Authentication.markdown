@@ -30,7 +30,7 @@ Dördüncü yazımızda [**Keycloak**](https://www.keycloak.org/)  uygulamasınd
 
 Beşinci ve son yazımızda da [**Keycloak**](https://www.keycloak.org/) ile [**Spring Boot**](https://spring.io/projects/spring-boot) uygulamamızı [**Spring Security**](https://spring.io/projects/spring-security)**,** [**Feign Client**](https://spring.io/projects/spring-cloud-openfeign) **ve RestTemplate**’lar ile konuşturarak somut örnek gerçekleştirimi yapacağız.
 
-{% include feed-ici-1.html %}
+{% include feed-ici-yazi-1.html %}
 
 ![XACML Authentication Authorization Policy Politika Erişim](https://miro.medium.com/max/696/1*AevTigjmr7CmH-RV_OtzNA.png)
 
@@ -42,7 +42,7 @@ Güvenli erişim problemini en başından incelemeye başlayalım. Bir uygulaman
 
 Sonrasında uygulamamıza giriş yapabilecek iki farklı ekibimiz olduğunu varsayalım. Birisi giriş ve güncellemeleri yapabilen İnsan Kaynakları ekibindeki arkadaşlarımız, diğeri de buradaki bilgileri takip eden, readonly olarak kullanan diğer bir Yazılım Ekibindeki arkadaşlarımız olsun. İki ekip de authentication adımını başarıyla tamamladıktan sonra uygulamanın farklı özelliklerini kullanabilir durumda olmalıdır. İşte bu noktada da **Yetkilendirme (Authorization)** adımı devreye girmektedir. Farklı kullanıcıların veya kullanıcı gruplarının uygulamanın hangi kaynaklarını ne ölçüde tüketebileceğinin tanımları bu adımda kontrol edilerek yetkisiz erişimlerin önüne geçilmeye çalışılmaktadır. Peki bu tanımlar ve kontroller nasıl gerçekleştirilmektedir?
 
-{% include feed-ici-2.html %}
+{% include feed-ici-yazi-2.html %}
 
 ## 3. XACML
 
@@ -79,7 +79,7 @@ Tanımlanmış sınırlar ile kastettiğimiz kavramı biraz daha açalım. Bir e
 
 ![](https://miro.medium.com/max/1155/1*7uQjo-WaAeJ-pyVYBupHdQ.png)
 
-{% include feed-ici-3.html %}
+{% include feed-ici-yazi-3.html %}
 
 #### 3.2.1. Policy Administration Point (PAP)
 
