@@ -15,10 +15,18 @@ layout: default
   <section class="post">
     {{ content }}
   </section>
+
+<p style="font:italic bold;">
+  En yalın haliyle
+
+  <a href="https://www.mehmetcemyucel.com">Mehmet Cem Yücel</a>
+</p>
+
+<hr>
   
   {% if site.related_posts.size >= 1 %}
   <div>
-    <h4>Bu yazılar ilgilinizi çekebilir</h4>
+    <h5>Bu yazılar ilgilinizi çekebilir</h5>
     <ul>
     {%- assign pageDateInSecondsInEpoch = page.date | date:"%s" | plus: 0 -%}
     {% assign cnt = 0 %}
