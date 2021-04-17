@@ -91,22 +91,31 @@ Sonraki yazımızda bir Spring Native projesinin nasıl ayağa kaldırılabilece
 ---
 
 {% if site.related_posts.size >= 1 %}
-<div>
-  <h4>Bu yazılar ilgilinizi çekebilir</h4>
-  <ul>
-  {% for post in site.related_posts limit:5 %}
-  {% assign match = false %}
-  {% for category in post.categories %}
-    {% if page.categories contains category %}
-      {% assign match = true %}
-    {% endif %}
-  {% endfor %}
-  {% if match %}
-    <li><a href="{{ post.url }}">{{ post.title }}</a></li>
-  {% endif %}
-{% endfor %}
-  </ul>
-</div>
+  <div>
+    <h4>Bu yazılar ilgilinizi çekebilir</h4>
+    <ul>
+    {%- assign pageDateInSecondsInEpoch = page.date | date:"%s" | plus: 0 -%}
+    {% assign cnt = 0 %}
+    {% for post in site.related_posts %}
+      {% assign match = false %}
+      {%- assign postDateInSecondsInEpoch = post.date | date:"%s" | plus: 0 -%}
+      {%- if pageDateInSecondsInEpoch > postDateInSecondsInEpoch -%}
+        {% for category in post.categories %}
+          {% if page.categories contains category %}
+            {% assign match = true %}
+          {% endif %}
+        {% endfor %}
+      {% endif %}  
+      {% if match %}
+        {% assign cnt = cnt | plus:1 %}
+        <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+      {% endif %}
+      {% if cnt == 6 %}
+        {% break %}
+      {% endif %}
+    {% endfor %}
+    </ul>
+  </div>
 {% endif %}
 
 ***Blockchain teknolojisi ile ilgileniyor iseniz bunlar da hoşunuza gidebilir:***
