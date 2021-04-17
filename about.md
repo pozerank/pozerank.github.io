@@ -5,11 +5,10 @@ permalink: /about/
 robots: all
 ---
 ## Mehmet Cem Yücel
-Okumaya, öğrenmeye ve devamlı gelişmeye inanan; bilgiye ve insana saygıya önem veren bir kişiyim. Bilgi paylaşımının önemine inanıyorum, bu sebeple 2009'dan beri farklı yollarla bilgi ve tecrübelerimi aktarmayı tercih ediyorum. 
-
+Okumaya, öğrenmeye ve devamlı gelişmeye inanan; bilgiye ve insana saygıya önem veren bir kişiyim. Bilgi paylaşımının önemine inanıyorum, bu sebeple 2009'dan beri farklı yollarla bilgi ve tecrübelerimi aktarmayı tercih ediyorum.
 
 ## Çalışma Geçmişim
-- *2020 - Cigna*   
+- *2020 - Cigna*
 - *2019 - Trendyol*
 - *2017 - Kredi Kayıt Bürosu*
 - *2013 - Akbank*
@@ -42,3 +41,7 @@ Okumaya, öğrenmeye ve devamlı gelişmeye inanan; bilgiye ve insana saygıya �
 ---
 
 İletişim için [admin@mehmetcemyucel.com](mailto:admin@mehmetcemyucel.com) ya da [mehmetcemyucel@outlook.com](mailto:mehmetcemyucel@outlook.com) adreslerini kullanabilir ya da sosyal medya üzerinden her konuda iletişime geçebilirsiniz.
+
+{% include goruntulu-yatay-1.html %}
+
+---

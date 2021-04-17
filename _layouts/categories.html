@@ -23,6 +23,9 @@ layout: default
               <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
             </li>
         {% endif %}
+        {% if forloop.index == 2 %}
+          {% include feed-ici-yazi-1.html %}
+        {% endif %}
       {% endfor %}
     </ul>
   </div>
