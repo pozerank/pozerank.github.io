@@ -76,12 +76,11 @@ Burada ek adım olarak kullanıcının servise erişebilmesi için ihtiyaç duyd
     <h4>Bu yazılar ilgilinizi çekebilir</h4>
     <ul>
     {%- assign pageDateInSecondsInEpoch = page.date | date:"%s" | plus: 0 -%}
-    {{pageDateInSecondsInEpoch}}
-    {% for post in site.related_posts limit:5 %}
+    {% for post in site.related_posts limit:15 %}
       {% assign match = false %}
       {%- assign postDateInSecondsInEpoch = post.date | date:"%s" | plus: 0 -%}
-      {{postDateInSecondsInEpoch}}
       {%- if pageDateInSecondsInEpoch > postDateInSecondsInEpoch -%}
+        <p>{{pageDateInSecondsInEpoch}} buyuk {{postDateInSecondsInEpoch}}</p>
         {% if page.categories contains category %}
           {% for category in post.categories %}
             {% if page.categories contains category %}
