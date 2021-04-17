@@ -73,13 +73,18 @@ Sonraki yazımızda bir Spring Native projesinin nasıl ayağa kaldırılabilece
 
 <br/>
 
-<p style="text-align:left;">
-    <a href="https://www.mehmetcemyucel.com/2020/Access-Management-5-Spring-RestTemplate-Feign-Keycloak">Spring Boot ve Keycloak</a> < Önceki Yazı 
-</p>
+<div class="PageNavigation">
+  {% if page.previous.url %}
+    <a class="prev" href="{{page.previous.url}}">&laquo; Spring Boot ve Keycloak</a>
+  {% endif %}
+  {% if page.next.url %}
+    <a class="next" href="{{page.next.url}}">{{page.next.title}} &raquo;</a>
+  {% endif %}
+</div>
 
 <br/>
 
-***En yalın haliyle***
+**_En yalın haliyle_**
 
 [**Mehmet Cem Yücel**](https://www.mehmetcemyucel.com)
 
