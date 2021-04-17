@@ -24,7 +24,7 @@ Mevcut bufferımızın büyüklüğü ile bizim ardı ardına yapabileceğimiz i
         {% endif %}
         {% if page.next.url %}
             <span style="float:right; text-decoration: underline;">
-                Sonraki Yazı ><a href="{{page.next.url}}">DMA Direct Access Memory Nedir? &raquo;</a>
+                <a href="{{page.next.url}}">DMA Direct Access Memory Nedir? &raquo;</a>
         </span>
         {% endif %}
     </p>

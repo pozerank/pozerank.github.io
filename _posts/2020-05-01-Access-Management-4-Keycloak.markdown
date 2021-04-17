@@ -68,7 +68,7 @@ Daha detaylı bilgiler için başarılı bir dokümantasyon sayfaları mevcut. [
         {% endif %}
         {% if page.next.url %}
             <span style="float:right; text-decoration: underline;">
-                Sonraki Yazı ><a href="{{page.next.url}}">Spring Boot ve Keycloak &raquo;</a>
+                <a href="{{page.next.url}}">Spring Boot ve Keycloak &raquo;</a>
         </span>
         {% endif %}
     </p>

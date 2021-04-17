@@ -59,7 +59,7 @@ Burada ek adım olarak kullanıcının servise erişebilmesi için ihtiyaç duyd
         {% endif %}
         {% if page.next.url %}
             <span style="float:right; text-decoration: underline;">
-                Sonraki Yazı ><a href="{{page.next.url}}">Keycloak &raquo;</a>
+                <a href="{{page.next.url}}">Keycloak &raquo;</a>
         </span>
         {% endif %}
     </p>

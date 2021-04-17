@@ -187,7 +187,7 @@ Yukarıdaki gibi bir entegrasyon ile Keycloak olsun olmasın tüm OAuth2 entegra
         {% endif %}
         {% if page.next.url %}
             <span style="float:right; text-decoration: underline;">
-                Sonraki Yazı ><a href="{{page.next.url}}">Spring Native ve GraalVM &raquo;</a>
+                <a href="{{page.next.url}}">Spring Native ve GraalVM &raquo;</a>
         </span>
         {% endif %}
     </p>

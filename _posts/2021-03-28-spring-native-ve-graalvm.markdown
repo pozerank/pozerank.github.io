@@ -78,7 +78,7 @@ Sonraki yazımızda bir Spring Native projesinin nasıl ayağa kaldırılabilece
         {% endif %}
         {% if page.next.url %}
             <span style="float:right; text-decoration: underline;">
-                Sonraki Yazı ><a href="{{page.next.url}}"> &raquo;</a>
+                <a href="{{page.next.url}}"> &raquo;</a>
         </span>
         {% endif %}
     </p>

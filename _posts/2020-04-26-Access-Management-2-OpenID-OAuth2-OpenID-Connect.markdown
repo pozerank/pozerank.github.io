@@ -105,7 +105,7 @@ Sonraki yazımızda aynı OpenID Connect gibi **Federated Authentication** kulla
         {% endif %}
         {% if page.next.url %}
             <span style="float:right; text-decoration: underline;">
-                Sonraki Yazı ><a href="{{page.next.url}}">SSO SAML Kerberos User Federation &raquo;</a>
+                <a href="{{page.next.url}}">SSO SAML Kerberos User Federation &raquo;</a>
         </span>
         {% endif %}
     </p>

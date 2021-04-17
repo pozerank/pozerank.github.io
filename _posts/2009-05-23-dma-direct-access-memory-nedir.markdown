@@ -32,7 +32,7 @@ Yukarıda da görüldüğü gibi merkezi işlem birimi DMA’yı yarattıktan so
         {% endif %}
         {% if page.next.url %}
             <span style="float:right; text-decoration: underline;">
-                Sonraki Yazı ><a href="{{page.next.url}}">Otomatik Mouse Kontrolü Nasıl Yapılır? &raquo;</a>
+                <a href="{{page.next.url}}">Otomatik Mouse Kontrolü Nasıl Yapılır? &raquo;</a>
         </span>
         {% endif %}
     </p>

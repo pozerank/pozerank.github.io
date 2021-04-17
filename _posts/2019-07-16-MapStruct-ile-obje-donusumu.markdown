@@ -126,16 +126,21 @@ Java diğer mapper toollarıyla kıyaslandığında MapStruct performansıyla de
 Projenin kodlarına [buradan](https://github.com/mehmetcemyucel/mapstruct) erişebilirsiniz. 
 
 
+
 <div class="PageNavigation">
-  {% if page.previous.url %}
-    <a class="prev" href="{{page.previous.url}}">&laquo; {{page.previous.title}}</a>
-  {% endif %}
-  {% if page.next.url %}
-    <a class="next" href="{{page.next.url}}">{{page.next.title}} &raquo;</a>
-  {% endif %}
+    <p style="text-align:left; text-decoration: underline;">
+        {% if page.previous.url %}
+             <a href="{{page.previous.url}}">&laquo; JUnit Rule Annotation'ı</a>
+        {% endif %}
+        {% if page.next.url %}
+            <span style="float:right; text-decoration: underline;">
+                <a href="{{page.next.url}}">Spring ve Java Hantal Mı? &raquo;</a>
+        </span>
+        {% endif %}
+    </p>
 </div>
 
-***En yalın haliyle***
+**_En yalın haliyle_**
 
 [**Mehmet Cem Yücel**](https://www.mehmetcemyucel.com)
 

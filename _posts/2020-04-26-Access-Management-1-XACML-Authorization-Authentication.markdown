@@ -138,7 +138,7 @@ Sonraki yazımızda **OAuth Protokolü, OpenID ve OpenID Connect** kavramların�
         {% endif %}
         {% if page.next.url %}
             <span style="float:right; text-decoration: underline;">
-                Sonraki Yazı ><a href="{{page.next.url}}">OpenID OAuth2 OpenID Connect &raquo;</a>
+                <a href="{{page.next.url}}">OpenID OAuth2 OpenID Connect &raquo;</a>
         </span>
         {% endif %}
     </p>

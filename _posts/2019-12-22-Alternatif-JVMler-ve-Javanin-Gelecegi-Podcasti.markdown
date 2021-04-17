@@ -65,7 +65,7 @@ image: https://miro.medium.com/max/150/1*gp7kdBQxRzDUmAMRa74LEg.png
         {% endif %}
         {% if page.next.url %}
             <span style="float:right; text-decoration: underline;">
-                Sonraki Yazı ><a href="{{page.next.url}}">XACML Authorization Authentication &raquo;</a>
+                <a href="{{page.next.url}}">XACML Authorization Authentication &raquo;</a>
         </span>
         {% endif %}
     </p>
