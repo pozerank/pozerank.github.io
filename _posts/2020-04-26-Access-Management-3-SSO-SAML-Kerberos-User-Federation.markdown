@@ -72,27 +72,30 @@ Burada ek adım olarak kullanıcının servise erişebilmesi için ihtiyaç duyd
 ---
 
 {% if site.related_posts.size >= 1 %}
-<div>
-  <h4>Bu yazılar ilgilinizi çekebilir</h4>
-  <ul>
-  {%- assign pageDateInSecondsInEpoch = page.date | date:"%s" | plus: 0 -%}
-  {% for post in site.related_posts limit:5 %}
-    {% assign match = false %}
-    {%- assign postDateInSecondsInEpoch = post.date | date:"%s" | plus: 0 -%}
-    {%- if pageDateInSecondsInEpoch > postDateInSecondsInEpoch -%}
-      {% if page.categories contains category %}
-        {% for category in post.categories %}
-          {% if page.categories contains category %}
-            {% assign match = true %}
-          {% endif %}
-        {% endfor %}
+  <div>
+    <h4>Bu yazılar ilgilinizi çekebilir</h4>
+    <ul>
+    {%- assign pageDateInSecondsInEpoch = page.date | date:"%s" | plus: 0 -%}
+    {{pageDateInSecondsInEpoch}}
+    {% for post in site.related_posts limit:5 %}
+      {% assign match = false %}
+      {%- assign postDateInSecondsInEpoch = post.date | date:"%s" | plus: 0 -%}
+      {{postDateInSecondsInEpoch}}
+      {%- if pageDateInSecondsInEpoch > postDateInSecondsInEpoch -%}
+        {% if page.categories contains category %}
+          {% for category in post.categories %}
+            {% if page.categories contains category %}
+              {% assign match = true %}
+            {% endif %}
+          {% endfor %}
+        {% endif %}  
+      {% endif %}  
       {% if match %}
-    {% endif %}
-    <li><a href="{{ post.url }}">{{ post.title }}</a></li>
-  {% endif %}
-{% endfor %}
-  </ul>
-</div>
+        <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+      {% endif %}
+    {% endfor %}
+    </ul>
+  </div>
 {% endif %}
 
 **_Blockchain teknolojisi ile ilgileniyor iseniz bunlar da hoşunuza gidebilir:_**
