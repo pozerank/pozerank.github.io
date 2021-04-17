@@ -75,14 +75,19 @@ Burada ek adım olarak kullanıcının servise erişebilmesi için ihtiyaç duyd
 <div>
   <h4>Bu yazılar ilgilinizi çekebilir</h4>
   <ul>
+  {%- assign pageDateInSecondsInEpoch = page.date | date:"%s" | plus: 0 -%}
   {% for post in site.related_posts limit:5 %}
-  {% assign match = false %}
-  {% for category in post.categories %}
-    {% if page.categories contains category %}
-      {% assign match = true %}
+    {% assign match = false %}
+    {%- assign postDateInSecondsInEpoch = post.date | date:"%s" | plus: 0 -%}
+    {%- if pageDateInSecondsInEpoch > postDateInSecondsInEpoch -%}
+      {% if page.categories contains category %}
+        {% for category in post.categories %}
+          {% if page.categories contains category %}
+            {% assign match = true %}
+          {% endif %}
+        {% endfor %}
+      {% if match %}
     {% endif %}
-  {% endfor %}
-  {% if match %}
     <li><a href="{{ post.url }}">{{ post.title }}</a></li>
   {% endif %}
 {% endfor %}
