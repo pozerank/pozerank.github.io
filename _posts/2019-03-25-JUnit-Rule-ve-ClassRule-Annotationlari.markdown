@@ -57,6 +57,8 @@ Eğer bu süreçlerle hiç uğraşmayayım, hızlıca asıl odaklanmam gereken k
 
 <script src="https://gist.github.com/mehmetcemyucel/4696c95e3921de093efacbb471fe21f4.js"></script>
 
+{% include feed-ici-yazi-1.html %}
+
 ### 2.3. RuleChain
 
 Her bir testinizi çevreleyen rulelar dizisi oluşturmak isterseniz RuleChain tam size göre! Kullanımını aşağıda görebilirsiniz. (bağımlı olunan LoggingRule sınıfına custom rule örneğinden erişebilirsiniz.)
@@ -69,6 +71,8 @@ Her bir testinizi çevreleyen rulelar dizisi oluşturmak isterseniz RuleChain ta
 
 <script src="https://gist.github.com/mehmetcemyucel/c4b692786826d019cce0718eddf5e322.js"></script>
 
+{% include feed-ici-yazi-2.html %}
+
 ### 2.5. ExpectedException
 
 Bir test metodunda exception senaryosunu test etmek istediğinizde birçok farklı yol mevcut. İyi bir opsiyon olmasa da try-catch bloğu ile kontrollerinizi yapabileceğiniz gibi AssertJ gibi kütüphaneler ile daha komplike exception kontrollerini kolayca yapabilirsiniz. Ancak bir kütüphane kullanmadığımızı varsayarsak en optimum exception kontrolü aşağıdakine benzer bir yapıda olacaktır.
@@ -78,6 +82,8 @@ Bir test metodunda exception senaryosunu test etmek istediğinizde birçok farkl
 Yukarıdakine alternatif olarak bunu ExpectedException kuralı ile aşağıdaki şekilde yapabiliriz. Bu örnekte herhangi bir utility kullanmadan exception mesajlarını da test edebildik. Dilerseniz Hamcrast Matchers sınıflarını da expect metoduyla kullanabilirsiniz. Burada bir detay, exception alındıktan sonra metodun çalıştırılmasına devam edilmeyecektir. Bu sebeple aşağıdaki örnek metodların sonlarındaki fail satırları çalışmayacak, testler başarılı sonlanacaktır.
 
 <script src="https://gist.github.com/mehmetcemyucel/cd353046d55a9a41af1aa7ac8823e321.js"></script>
+
+{% include feed-ici-yazi-3.html %}
 
 ### 2.6 TestName
 
@@ -93,6 +99,8 @@ Custom bir rule yazmak için ihtiyacımız TestRule interface’ini ve onun appl
 
 <script src="https://gist.github.com/mehmetcemyucel/4932ee2ee8e715ac4a7441d4f9df23bb.js"></script>
 
+{% include feed-ici-imaj-1.html %}
+
 ### 2.8. Custom Rule - MockInitRule
 
 Başka bir örnek olarak mocklarınızın initiation işlemini ortaklaştıran bir rule yazabilirsiniz. Örneğin bir servisiniz ve bu servisinizin bağımlı olduğu başka bir servisiniz olsun.
@@ -107,6 +115,8 @@ Burada @Mock annotationı ile işaretlenen servisin instance’ının bağlanmas
 
 <script src="https://gist.github.com/mehmetcemyucel/175f4f3eb47f10e1d7402f843deccc15.js"></script>
 
+{% include feed-ici-imaj-2.html %}
+
 Ayrıca tekrar kullanılabilir bir davranış seti oluşturmak istiyorsak da yukarıdaki MockInitRule sınıfını extend eden bir sınıf yazabiliriz. Constructorda davranış setini verdiğimiz taktirde artık tekrar tekrar kullanabileceğimiz bir mock setini hazırlamış oluruz.
 
 <script src="https://gist.github.com/mehmetcemyucel/6eca28313c990ace0f165b4aab404c33.js"></script>
@@ -120,6 +130,8 @@ Son örnek olarak **ExternalResource** kavramından bahsedelim. Örneğin testle
 Bunu kullanan testimiz;
 
 <script src="https://gist.github.com/mehmetcemyucel/fac4cc94b1255cc49c8c703a05c76653.js"></script>
+
+{% include feed-ici-imaj-3.html %}
 
 Ve son olarak çıktımız;
 

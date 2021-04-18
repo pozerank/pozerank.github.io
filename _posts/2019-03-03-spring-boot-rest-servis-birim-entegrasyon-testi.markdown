@@ -26,9 +26,13 @@ Buradan itibaren kodumuza dönelim. Bir RestController'ımız, bir de onun kulla
 
 <script src="https://gist.github.com/mehmetcemyucel/606444790323514dea3e6bf7ea3ce6f5.js"></script>
 
+{% include feed-ici-yazi-1.html %}
+
 Post metod açan bu sınıfımızın testini nasıl yazmalıyız? Google'da "spring boot rest test" anahtar kelimeleri ile aramamızı yaptığımızda çıkan 5 site aşağıdaki gibi. Bunlardan ikisi de Spring'in kendi sitesi :)
 
 ![Google Search](https://lh3.googleusercontent.com/dstgHKOQQXWRTHdU7F0zOvOu-EYR1NnNkkk7Va6L4d_lD228VhHM8bxtp77h4cuZkVRxiXxpOLQ=s800 "Google")
+
+{% include feed-ici-imaj-1.html %}
 
 ### 2.1 Web Context Entegrasyon Testi
 
@@ -46,6 +50,8 @@ Bu test sınıfındaki kodu 5 farklı kez çalıştırdım ve ortalama sonlanma 
 Bu değişikliklerle kodumuz aşağıdaki gibi oldu:
 
 <script src="https://gist.github.com/mehmetcemyucel/4cd1ddd05562b916e0c38ceed1eb6dbd.js"></script>
+
+{% include feed-ici-yazi-2.html %}
 
 Bu kodu 5 kez çalıştırdığımda da ortalama çalışma süresi olarak **556 ms** olarak ölçtüm. Neredeyse 4'te biri sürede kodumun çalışırlığını test edebilmiş oldum. Kodlara aşağıdaki adresten erişebilirsiniz.
 

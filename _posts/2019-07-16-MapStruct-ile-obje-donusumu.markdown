@@ -23,6 +23,8 @@ Maven için `pom.xml` dosyasına aşağıdaki bağımlılığı ve yapılandırm
 
 <script src="https://gist.github.com/mehmetcemyucel/fd06abdfce325c53f8f67b42d5d091ad.js"></script>
 
+{% include feed-ici-yazi-1.html %}
+
 Bağımlılıkların yanı sıra eklememiz gereken bir yapılandırma daha var. MapStruct derleme zamanında çalışan bir araç. Biz bu yazımızda `Spring Boot` ile `annotation`’lar aracılığı ile bu toolu nasıl kullanabileceğimizi inceliyoruz. Bu sebeple Spring Boot Maven Plugin’inin annotation processor’lerine MapStruct’ın processor’unu eklememiz lazım. Bu sayede Spring Boot Maven Plugin’i derleme esnasında MapStruct Interface’leri tarayıp birazdan yapacağımız yapılandırmaların yönlendirmesinde yeni sınıflar oluşturulmasını sağlayacak.
 
 <script src="https://gist.github.com/mehmetcemyucel/f0e3debe8fd7758e2261b3707ce9f68a.js"></script>
@@ -49,6 +51,8 @@ Bir nesne örneği yaratıp mapper’a klonlattığımızda aynı değerlere sah
 
 <script src="https://gist.github.com/mehmetcemyucel/9bc8c5cf9c5565769bed3c16ca06661b.js"></script>
 
+{% include feed-ici-yazi-2.html %}
+
 ## 4. Kalıtıcı
 
 Herhangi bir kalıtım hiyerarşisinde olmasa dahi aynı isimli alanlara ve getter/setterlara sahip iki sınıf arasında kolay bir dönüşüm yapılabilir.
@@ -61,6 +65,8 @@ Kaynak sınıf olarak `InheritDTO` , hedef sınıf olarak `InheritObject` sını
 
 <script src="https://gist.github.com/mehmetcemyucel/f444985b48c6add585c1791f220bfbd3.js"></script>
 
+{% include feed-ici-yazi-3.html %}
+
 ### 4.2. Inherit Arayüzü
 
 <script src="https://gist.github.com/mehmetcemyucel/56ba92b030a1bec9de65201d650328b1.js"></script>
@@ -72,6 +78,8 @@ Farkındaysanız hedef sınıfımızda kaynak sınıfımızda bulunmayan alanlar
 Aşağıdaki testleri çalıştırarak senaryomuzun çalıştığını gözlemleyebiliriz.
 
 <script src="https://gist.github.com/mehmetcemyucel/afe34f23c9e7b2a921315438e5979ec6.js"></script>
+
+{% include feed-ici-imaj-1.html %}
 
 ## 5. Alan Alan Eşitleyici
 
@@ -89,6 +97,8 @@ Değişken isimlerimiz farklı ancak alan tiplerimiz aynı ise aşağıdaki gibi
 
 <script src="https://gist.github.com/mehmetcemyucel/2534c4ec908a3445bbc3d0ae9a6111a7.js"></script>
 
+{% include feed-ici-imaj-2.html %}
+
 @Mappings annotation’ı ile tek tek hangi alanın hedef sınıftaki hangi alana eşitlenmesini istediğimizi belirtiyoruz.
 
 ### 5.3. Test Senaryosu
@@ -104,6 +114,8 @@ Sadece aynı tipte olması gerekmeksizin farklı değerlere ve isimlere sahip s�
 <script src="https://gist.github.com/mehmetcemyucel/cd14bf48628bf990c07dfe1859ef9b56.js"></script>
 
 <script src="https://gist.github.com/mehmetcemyucel/c9a20b0db9137fa3deca41dcc8e845ed.js"></script>
+
+{% include feed-ici-imaj-3.html %}
 
 ### 6.2. Mapper Arayüzü
 

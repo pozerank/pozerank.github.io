@@ -16,6 +16,8 @@ Cevap mikroservis mimarinin olmazsa olmazları olarak tanımlanan [12 Factor](ht
 
 > “Konfigürasyonun kodlanabilir olması ortamsal farklılıkları ortadan kaldırır. Komplikasyon riskini minimize eder ve kompleksiteyi düşürür.“
 
+{% include feed-ici-yazi-1.html %}
+
 ## 1. Sanallaştırma Teknolojileri ve Ortam Yönetimi
 
 Sanallaştırma ve container teknolojileri bu noktada imdadımıza yetişiyor. Container teknolojisi olarak Docker kullandığımız için yazının bu noktasından sonra için keyword tercihlerimi bu yönde kullanarak devam edeceğim.
@@ -32,6 +34,8 @@ Teknik kısma geldik. İlk önce [Spring Boot Devtools](https://docs.spring.io/s
 
 Spring Boot Devtools’un yaptıkları sadece bunlar değil. [Live Reload](https://docs.spring.io/spring-boot/docs/current/reference/html/using-boot-devtools.html#using-boot-devtools-livereload) özelliği ile önyüz geliştirimi yapanlar için source’daki değişiklik durumunda sayfayı reload ederek güncel durumu alabilmek için bizim refreshment yapmamızı zorunluluk olmaktan çıkarıyor. Bunu React’taki Hot Reload’dan ayırmamız lazım, Live Reload statelerdeki değişimleri takip edip sayfanın belirli parçalarını yenilemek yerine sayfayı reload etmeyi tercih eder. Bu özelliği kullanabilmek için Chrome’da [RemoteLiveReload](https://chrome.google.com/webstore/detail/remotelivereload/jlppknnillhjgiengoigajegdpieppei) extensionını edinmeniz gerekli.
 
+{% include feed-ici-yazi-2.html %}
+
 ## 3. Örnek Kod
 
 ### 3.1 Pom.xml 
@@ -42,6 +46,8 @@ Artık kod örneğimize geçebiliriz. Devtools’u etkinleştirmek için projemi
 Projemize bir rest uç açıyoruz. Bu uçtan sorgulamalar yaparak kodumuzun son durumunu takip edeceğiz.
 
 <script src="https://gist.github.com/mehmetcemyucel/3fe9b905a941b05017405f22e9eeb94d.js"></script>
+
+{% include feed-ici-imaj-1.html %}
 
 ### 3.2 Code Reload & Restart
 
@@ -74,10 +80,10 @@ Maven ile oluşturduğumuz jardan Dockerfile aracılığı ile kendi imajımız�
 
 
 ![](https://miro.medium.com/max/1214/1*54ZjXLKuAcYiKUBm_bZ30Q.gif)
+
 ### 3.5 Runtime Konfigürasyonu
 
 Artık elimizde Docker’da çalışan, REST servis sunan bir Spring Boot uygulamamız var. O zaman STS ile bağımsız olarak çalışan bu uygulamamızı STS üzerinden nasıl runtime’da değiştirebileceğimizi gösterebiliriz. Bunun için STS’de Run menüsünün altında Run Configurations tabındaki Java Application başlığı altına geliyoruz. Sağ tıklayarak New Configuration yaratacağız. Yapmamız gereken Spring Boot uygulamamız için default olarak gösterilen Main Class tercihimizi remote uygulamamızı yönetmemizi sağlayacak başka bir startup classı ile değiştirmek. Main class kısmına `org.springframework.boot.devtools.RemoteSpringApplication` yazıyoruz. Sonrasında da Arguments tabında program argumanlarına standalone çalışan uygulamamızın Remote bağlantılar için dinlediği adresi yazıyoruz(default olarak 8080 remote reload için dinleme yapılan adrestir).
-
 
 ![remote reloading ayarlama](https://miro.medium.com/max/1395/1*eM7ghMUSviWrngVfwn0UnA.gif)
 
@@ -85,10 +91,12 @@ Artık kodu değiştirme kısmını deneyebiliriz. RestController sınıfımızd
 
 
 ![](https://miro.medium.com/max/1389/1*pbuZgiYs7WzCVJlw3m5Bng.gif)
+
+{% include feed-ici-imaj-1.html %}
+
 ### 3.6 Remote Debugging
 
 Kodumuzun reload’ını başardık ancak remote debugging henüz ayarlanmadı. Bunun için hatırlarsanız yukarıda 8001 portunu remote debugging için yapılandırmıştık. Debugging’i açmak için ise aşağıdaki şekilde bir STS’de debug configurations altında Remote Java Application altına aşağıdaki şekilde bir yapılandırma yapmamız gerekiyor. Bu yaptığımız işlemi remote reload çalışmaktayken debugging stack’inin kodumuz ile bağlanması olarak özetleyebiliriz.
-
 
 ![remote debugging yapılandırması](https://miro.medium.com/max/1386/1*hgkRIzH4vroqBcoKNgDk2Q.gif)
 

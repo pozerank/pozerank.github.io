@@ -64,11 +64,11 @@ Bir java uygulamasından örnek verelim. 3 geliştirici 3 farklı **feature**’
 
 Bu süreci kontrol altında tutabilmek ve şeffaflaştırabilmek için bir **dependency isolation**(bağımlılık izolasyonu) araçlarına ihtiyaç duyulmaktadır. Örneğin bir [**Spring Boot**](https://projects.spring.io/spring-boot/) uygulaması paketleyeceğiz. Örnek pom.xml;
 
-
 ![](https://miro.medium.com/max/654/0*H27yPvItT4k-UnFz.png)
 
-Bu dependency hiyerarşisi için [**Maven**](https://maven.apache.org/)  aracı bu süreci paketleme aşamasında izolasyonu şu şekilde sağlamaktadır;
+{% include feed-ici-yazi-1.html %}
 
+Bu dependency hiyerarşisi için [**Maven**](https://maven.apache.org/)  aracı bu süreci paketleme aşamasında izolasyonu şu şekilde sağlamaktadır;
 
 ![](https://miro.medium.com/max/850/0*iuhWU9r0Z-noi91H.png)
 
@@ -102,6 +102,8 @@ Bir uygulamanın çalışabilmek için ihtiyaç duyguğu tüm servislere **backi
 
 
 ![Backing Services (12factor.net)](https://miro.medium.com/max/800/0*tqFQCbfKO01R5sN1.png)
+
+{% include feed-ici-yazi-2.html %}
 
 Bir uygulama eğer destek servisi kullanıyorsa bunu mutlaka config içerisinde belirtmesi/yapılandırması gerekir. Sebebi, uygulama runtimeda servis aldığı provider’ı değiştirmeyi tercih ederse bunu kod değiştirmeden yapabilmesi gerekmektedir, bunu da config üzerindeki yapılandırmayı değiştirerek sağlar. Hatta yapılan bu config değişikliği uygulama restart olmadan uygulanabilir durumda olmalıdır.
 
@@ -142,6 +144,8 @@ Peki stateless ve sharing nothing prensiplerine yönelik sistemimizi tasarladık
 
 Process’lerle ilgili son bir dipnot, buffering kullanımı yukarıdaki hiçbir prensiple çakışmamaktadır. Yani uygulamanızda bir dosya download veya upload edecekseniz, bu dosyanın bufferlanarak transferinin gerçekleşmesi yukarıdaki prensiplerin hiçbirisine aykırı değildir, gerçekleştirilmesinde bir sakınca yoktur.
 
+{% include feed-ici-yazi-3.html %}
+
 # 7. Port Binding (Port Bağlama)
 
 Web uygulamaları çoğu zaman çalışabilmek için bir **container**a(taşıyıcı) ihtiyaç duyarlar, Java dünyasından örnek verirsek Tomcat bir web container’dır. Yazdığımız bir uygulama Tomcat üzerinden publish edileceğinde hangi porttan yayın yapacağı gibi yapılandırmaların yapılması gerekecektir. 12 Factor bir uygulama tamamen bağımsız, kendi kendine servisi sunabilecek, belirli portları dinleyebilecek şekilde container üzerinde runtime injectionlara, yapılandırmalara ihtiyaç duymadan çalışabilmelidir. Özetle bir uygulamanın containerla çalışabilmesi üzere yapılandırmaların development aşamasında yapılması gerekmektedir.
@@ -158,6 +162,8 @@ Spring Boot gibi **uber jar** export eden yapılar bu ihtiyacın çözümünü k
 Aslında concurrency’nin konularının bir kısmına önceki başlıklarda değindik. Bir uygulama en az 1 processten oluşmaktadır. Tabii ki ölçeklenebilir bir sistemde bu process sayısı 1 ile kalmayacaktır. Uygulama geliştirici uygulamasındaki farklı processleri tiplerine göre gruplandırarak farklı iş yüklerini ayrı ayrı yönetmeyi tercih edebilir. Örneğin ön yüz ile ilgili processleri web processleri olarak gruplandırıp ve ölçeklendirip, backend’de daha uzun süren işlemleri worker process grubu altında toplayarak ayrı şekilde ölçeklendirecek bir mimari kurgulayabilir.
 
 Örneğin uygulamamızın [**slashdot-effect**](https://www.google.com.tr/url?sa=t&rct=j&q=&esrc=s&source=web&cd=1&cad=rja&uact=8&ved=0ahUKEwidppHasOvZAhVMjCwKHXQfDnkQFggoMAA&url=https%3A%2F%2Ftr.wikipedia.org%2Fwiki%2FSlashdot_etkisi&usg=AOvVaw1C0-ZUS0-qxr_UP85O7bvg)’e maruz kaldığını varsayalım. Uygulamanın processlerini bu şekilde ele almak yoğun yük altında bu sistemin **bottleneck**(dar boğaz) yaşadığı process grubunda ölçekleri büyüterek eldeki işlem gücü kaynağının sıkışan noktada kullanılması konusunda esneklik sağlayacaktır. Ayrıca processler çökmüş veya cevap veremez hale gelmiş ise, ürettiği output streamlere(loglar) göre stabilitesi bozulmuş ise süreç yönetici araçlar veya kişilerce kapatılabilecek, tekrar başlatılabilecek yapıda kurgulanmalıdır. Son olarak 12 Factor bir uygulamada processler **daemon** olarak tanımlanmamalıdır. Daemon kavramı ile ilgili yazıma [buradan](http://www.mehmetcemyucel.com/2015/08/java-daemon-thread.html) göz atabilirsiniz.
+
+{% include feed-ici-imaj-1.html %}
 
 # 9. Disposability (Kullanıma Hazır Olma Durumu)
 
@@ -182,6 +188,8 @@ Bu farklılıkların mevcut sistemde problemlere yol açtığından dolayı 12 F
 -   Development ve Production ortamları arasındaki araçlar mümkün olduğunca aynı tutulmalı, farklılık minimize edilmeldir.
 
 <script src="https://gist.github.com/mehmetcemyucel/176564085f316fef2b5b6835a06aab91.js"></script>
+
+{% include feed-ici-yazi-1.html %}
 
 Özellikle development ortamının production ortamıyla aynı şekilde kurgulanması zor gibi gözükse de günümüzdeki container teknolojileri(Vagrant, Docker gibi) sayesinde bu büyük bir problem olmaktan çıkmıştır. Buraya yapılan yatırım continuous deployment’ın faydasıyla kıyaslandığında daha düşüktür.
 

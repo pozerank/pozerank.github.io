@@ -8,7 +8,6 @@ image: https://cdn-images-1.medium.com/max/150/1*9oEKN6s0vnoxVTmjuFgymw.png
 
 Bir Spring Boot projemiz var. Projemize ait application.properties dosyasının içerisinde veritabanına bağlanırken kullandığımız kullanıcı adı/şifre gibi hassas bir veri var. Bu verinin açık olarak dosyada durması bir problem, güvenlik açığı teşkil ediyor. Bugünkü yazımız böyle hassas bilgilerin encrypted bir şekilde saklanabilmesi için [Jasypt](http://www.jasypt.org/) kütüphanesi ile Spring Boot properties’i birlikte nasıl kullanabileceğimiz hakkında olacak.
 
-
 ![](https://miro.medium.com/max/2400/1*9oEKN6s0vnoxVTmjuFgymw.png)
 
 ## 1. Jasypt Nedir
@@ -36,6 +35,8 @@ Bu durumda iken `mcy.person` property’sini dosyada açık olarak tutmamayı te
 ### 2.1. Jasypt ile Şifreleme
 
 ![](https://miro.medium.com/max/423/1*nWyb91sUqINvkWgXofspDA.png)
+
+{% include feed-ici-yazi-1.html %}
 
 	λ C:\dvlp\tools\jasypt-1.9.2\bin\encrypt.batUSAGE: encrypt.bat [ARGUMENTS]* Arguments must apply to format:“arg1=value1 arg2=value2 arg3=value3 …”* Required arguments:input  
 	 password* Optional arguments:verbose  
@@ -67,6 +68,8 @@ Bu output bizim kullanacağımız değer. `cem` içeriğine sahip değişkenimiz
 
 <script src="https://gist.github.com/mehmetcemyucel/77244e9148fc75ff0c7cc03aa6ae27ca.js"></script>
 
+{% include feed-ici-imaj-1.html %}
+
 ### 2.2. Şifrelenmiş Değerin Spring'e Paylaşımı
 Kodumuzu bu haliyle tekrar çalıştırdığımızda karşımıza bir hata geliyor.
 
@@ -88,6 +91,8 @@ Bu şekilde kodumuzu tekrar çalıştırdığımızda konsol çıktımız aşağ
 Dilerseniz kullanılan şifreleme algoritmasını, argüman alma şeklini aşağıdaki gibi custom encryptor tanımlayarak tamamen kontrolünüze de alabilirsiniz.
 
 <script src="https://gist.github.com/mehmetcemyucel/ea932a25248b6a8cc72e16034c02d939.js"></script>
+
+{% include feed-ici-imaj-2.html %}
 
 Bu noktada belirtmemde fayda olan bir konu var. Bu property’ler sadece Spring Boot startup sonrasındaki argümanlarda kullanılmak zorunda değil. Örneğin startup esnasında AutoConfigurable bean’leriniz ayağa kalkacak ve burada gerekli parametreleriniz var ise bunlar da decrpyted olarak bean yaratılma anında kodunuza dahil oluyorlar. Yani daha somut örneğiyle Spring Data JPA kullanıyorsunuz ve DB connection bilgileri size Configuration sınıfınız içerisinde decrpyted olarak lazım ize EncryptablePropertySourceConverter bu configuration sınıfınız çalışmadan gerekli argümanların decryption işlemlerini tamamlayıp size değerlerinizin kullanılabilir hallerini sunuyor.
 

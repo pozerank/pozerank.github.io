@@ -34,6 +34,8 @@ Spring Boot varsayılan loglama çözümü olarak Logback ile entegre gelir. `sp
 	      <scope>compile</scope>  
 	    </dependency>
 
+{% include feed-ici-yazi-1.html %}
+
 Buradan 2 yorum çıkıyor. Birincisi Spring Boot projemiz şu anda varsayılan olarak logback ile çalışır durumda hazır geliyor. İkincisi, sfl4j ve log4j kullanmak istiyorsak da dependencyler mevcut. Log4j’nin ne olduğunu aşağı yukarı biliyoruz ancak Slf4j ne acaba?
 
 > Slf4j, bizleri loglama frameworklerinden yalıtan, bağımsız olarak çalışmamızı sağlayan bir arayüzdür. Örneğin Logback kullanırken bir paketin altındaki LoggerFactory’e bağımlılığınız olur. Sonraki bir zaman Log4j’ye geçilmek istenirse tüm sınıflarınızdaki factory’lerinizi tek tek Log4j’ye ait factory ile değiştirilmesi gerekir (her sınıfın üzerinde constant olarak tanımlanan Logger instance’ı). Slf4j’nin görevi burada başlar. Spesifik frameworklere ait sınıflara bağımlı olmak yerine kendi sınıflarına bağımlı kılarak bizleri arka tarafta hangi loglama frameworkü olduğundan bihaber tutarak loglama yapılabilmesini sağlar.
@@ -50,6 +52,8 @@ Aşağıdaki tarzda bir yapılandırma dosyasını ister yml, ister properties, 
 
 <script src="https://gist.github.com/mehmetcemyucel/b02ec6977fd40c93d2cb0d38cb2de6ca.js"></script>
 
+{% include feed-ici-yazi-2.html %}
+
 Projemiz şu anda Log4j2 ile çalışmaya hazır durumda. Slf4j’yi kullanarak Factory’sinden aldığımız Logger’lar aracılığıyla artık tanımladığımız appenderlarımıza loglarımızı basabiliriz. Ancak tam da burada bir katman daha kullanacağım. Bu katman işimizi kolaylaştıracak ve static logger tanımlama adımını annotation seviyesine taşıyacak. Bunun için Spring Boot communitysi tarafından yoğunca kullanılan ve `start-spring-io` da sunduğu [Project Lombok](https://projectlombok.org/) ’a ait bir özelliğini kullanacağım. Lombok’u IDE’niz ile nasıl entegre edebileceğinize [bu yazıdan](https://medium.com/mehmetcemyucel/sts-eclipse-spring-boot-lombok-entegrasyonu-6cdf18a8ee2d) bakabilirsiniz.
 
 Eğer aşağıdaki özelliği kullanmasaydım aşağıdaki kodu tüm sınıflarıma yazmam gerekecekti(hayır zorunda değilim dediğinizi duyar gibiyim ancak stacktrace’lerin loglama frameworkünde düzgün oluşabilmesi için önerilen best practice budur).
@@ -59,6 +63,8 @@ Eğer aşağıdaki özelliği kullanmasaydım aşağıdaki kodu tüm sınıflar�
 [@Slf4j](https://projectlombok.org/features/log) annotation’ı aracılığıyla yukarıdaki kod yerine sadece annotation ile loglamamı yapabiliyorum.
 
 <script src="https://gist.github.com/mehmetcemyucel/5690c9b7443d1475fdcb75f87f6e7054.js"></script>
+
+{% include feed-ici-yazi-3.html %}
 
 Adım adım ilerlemeye devam ediyoruz, şu anda boot projemiz Logback yerine Log4j2 ile loglama yapabiliyor, yapılandırması tamamlandı, slf4j arayüz olarak kullanılabiliyor ve bunu lombok aracılığı ile zahmetsizce yapıyoruz. Son bir problemimiz kaldı. Projenin resource’ları içerisinde bulunan yapılandırma dosyamız jar export ettiğimiz anda jar’ın içerisinde kalıyor ve jarımızın dışarıdan yapılandırılabilmesi güçleşiyor. Dilerseniz tüm yapılandırmayı runtime’da yapmanız, appenderlarınızı dinamik bir şekilde root loggera bağlamanız da mümkün. Ya da [Spring Boot Admin](https://github.com/codecentric/spring-boot-admin)’i aktifleştirerek loglama frameworkünden bağımsız olarak admin arayüzü üzerinden sadece birkaç tıklamayla paket seviyesindeki loglama levelları ile de oynayabilirsiniz. Ancak bu yazımızda sadece Log4j2'nin yapılandırma dosyasını standalone jar olarak export edilmiş Spring Boot executable’ından çıkarmayı ve dışarıdan yapılandırmasını sağlayacağız.
 
@@ -116,6 +122,8 @@ Sonrasında pom.xml dosyamızın olduğu yerde `mvn clean install -DskipTests` k
 /target altında oluşan jarımızın içeriğine bakalım. ‘…’ folder’ının altında resources altında bulundurduğumuz dosyaların olduğunu görüyoruz, log4j2-spring.xml dosyası da pom.xml’de belirttiğimiz gibi paketten exclude edilmiş.
 
 ![](https://miro.medium.com/max/1020/1*_60BDrlYohZgyxWj55HfiQ.png)
+
+{% include feed-ici-imaj-1.html %}
 
 Dosyamız pakette olmadığından dolayı jarımız ile aynı pathte veya jarın classpath’inde bulunduğu taktirde boot projemiz ayağa kalkarken bu dosyayı bulup sağlıklı bir şekilde yapılandırmasını tamamlayacaktır. Farklı path’te konumlandıracaksanız jar execute ederken classpath nasıl set edilir şeklinde bir arama ile ilgili yöntemlere ulaşabilirsiniz.
 
