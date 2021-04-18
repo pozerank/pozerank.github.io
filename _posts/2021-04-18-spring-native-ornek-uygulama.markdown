@@ -39,6 +39,8 @@ Uygulamamıza geri dönelim. Yukarıda bahsettiğimiz birkaç starter’ı kulla
 -   bu servislere basit bir authentication kurgusu için `spring-boot-starter-security`
 -   toolkit olarak da `lombok` kullanacak şekilde projemi yarattım. Java 1.8i tercih ettim. Pom’umuzun son durumu aşağıdaki gibi oldu.
 
+<script src="https://gist.github.com/mehmetcemyucel/69b1aea6c2a4fac44ee467e7680a8a57.js"></script>
+
 ### Projenin Çalıştırılması
 
 Projenizi bu haliyle “**Run”** butonuna basıp çalıştırırsak aşağıdaki gibi bir hata alırız. Örneğin çalıştırdığımda aşağıdaki hatayı aldım.
@@ -144,9 +146,19 @@ Sonrasında da uygulamamız ayağa kalkıyor.
 
 Basit bir in-memory authentication kurgusu yapalım.
 
+<script src="https://gist.github.com/mehmetcemyucel/5401b47b3dce0b935c34ad2b638b0e6e.js"></script>
+
 Yine basit bir Controller ile CRUD işlemlerini Spring Data JPA ile in-memory H2 DB’sine indirelim.
 
+<script src="https://gist.github.com/mehmetcemyucel/22a97277456b1ecacbb72242ea1c6d17.js"></script>
+
+<script src="https://gist.github.com/mehmetcemyucel/b86acf6dc5baf875f8a72b54bd81be31.js"></script>
+
+<script src="https://gist.github.com/mehmetcemyucel/699c9b40f41c818cf52aba49d5a173d2.js"></script>
+
 Dikkat edilmesi gereken bir nokta, cglib proxy’leri artık desteği verilemediği için @SpringBootApplication annotationı içerisinde default true olarak set edilmiş durumda bulunan `proxyBeanMethods` değerinin false olarak değiştirilmesi gereklidir.
+
+<script src="https://gist.github.com/mehmetcemyucel/b73e590a6e3893718738a879cfc3a35c.js"></script>
 
 Kodumuz kaba haliyle bu şekilde. Şimdi uygulamamızın build işlemi sonrasında ne kadar sürede açıldığına bakalım. Uygulamamızı paketleyip java -jar ile çalıştırıyoruz
 
@@ -392,6 +404,8 @@ Logdaki sonraki bold kısımlar GraalVM’in native kodu oluşturduğu kısımla
 
 ![](https://cdn-images-1.medium.com/max/800/1*68K2L6In4rGELacTZTCJEQ.png)
 
+{% include feed-ici-imaj-2.html %}
+
 Yeni imajımızı çalıştıralım. Komutumuz:
 
 `docker run -p 8081:8081 spring-native-example:0.0.1-SNAPSHOT`
@@ -405,6 +419,12 @@ Yeni imajımızı çalıştıralım. Komutumuz:
 	 … 16 common frames omitted
 
 Hatırlarsanız **native kodun runtime’da sürpriz sevmediği**nden bahsetmiştik. WebSecurity sınıfında **EnableGlobalMethodSecurity** annotationı ile açtığımız ve Controller sınıfında endpointlerin başlarında kullandığını **PrePost Security Role Controllerları** ile kullandığımız **Spring Expression Language**(SpEL) tam olarak native kodun sevmediği bir sürpriz :) Çünkü bu senaryoda SpEL çalışırken Dynamic Proxyler kullanarak runtimeda gelen isteğin sahibi olan clientın belirtilen authoritye sahip olup olmadığını controllerdaki method execute edilmeden kontrol ederek işlemin devam etmesini veya clientın 403 Forbidden hatası dönülmesini sağlıyor. Bütün bu paragrafta yazdıklarım SpEL desteklenmiyor gibi algılanmaması konusunda bir not düşmekte fayda var, lakin uygulamanın footprint’ini düşürmek için AOT plugin’ine verilebilecek optimizasyonlardan birisi de SpEL’in devre dışı bırakılması. Detaylar için [buradaki](https://docs.spring.io/spring-native/docs/current/reference/htmlsingle/#spring-aot-configuration) konfigürasyonlara göz atabilirsiniz. Bu kod parçasından kurtulmak için kodumuzda aşağıdaki değişiklikleri yapıyoruz.
+
+<script src="https://gist.github.com/mehmetcemyucel/e173101affb6642f879dd9c7b7b0369a.js"></script>
+
+<script src="https://gist.github.com/mehmetcemyucel/7fb60ed2f99cb6ff87a8483871056318.js"></script>
+
+{% include feed-ici-yazi-3.html %}
 
 Bu değişikliklerden pom.xml’de versiyonumuzu 0.0.2-SNAPSHOT olarak güncelledikten sonra mvn clean spring-boot:build-image komutuyla tekrar native imajımızı derletiyoruz. Image’ımız aşağıdaki gibi oluşuyor. Yeni imajımızı çalıştırıyoruz.
 
