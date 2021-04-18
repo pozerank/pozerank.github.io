@@ -14,7 +14,7 @@ Tabii farklı uygulama alanlarının mevcut olması yavaş yavaş yazılım geli
 
 Bu sebeplerden bu altyapıları birer servis olarak sunmak bütün cloud platformlarının dikkatini çekti. Sektörün raporlarına önemle takip ettiği ünlü araştırma firması Gartner,  [raporlarında](https://www.gartner.com/smarterwithgartner/a-snapshot-of-an-emerging-blockchain-services-market/) da blockchain servislerine önem vermiş durumda. Şu an için bilinen aktörlerin içerisinde Amazon, Microsoft Azure Blockchain, IBM Bluemix, Deloitte, Oracle ve SAP bulunuyor.
 
-![](https://miro.medium.com/max/800/1*GTH5stiGuROW4Lt9C8x9sA.png)
+![](https://miro.medium.com/max/800	/1*GTH5stiGuROW4Lt9C8x9sA.png)
 
 **Amazon**, Digital Curreny Group ile yaptığı anlaşma ile AWS üzerinden hizmet sunmayı planlıyor. İlgili yazıya  [buradan](https://www.forbes.com/sites/laurashin/2016/05/02/amazon-steps-up-blockchain-commitment-web-services-partners-with-digital-currency-group/#432f15aa34cd) ulaşabilirsiniz.
 
