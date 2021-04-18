@@ -5,9 +5,10 @@ categories: [blockchain]
 tags: [dlt, futures, distributed, legder, blockchain, bitcoin, block, blockchainturk]
 image: https://cdn-images-1.medium.com/max/150/1*nd56s97FhQYI_5l4uJYb1A.jpeg
 ---
-Blockchain dünyası ve bu dünyadaki örnekler çok hızlı değişiyor.<a style="font-weight:bold" href="https://medium.com/blockchainturk/4f1af18ef619?utm_source=mehmetcemyucel.com&utm_medium=refferal&utm_campaign=blog" target="_blank">Buradaki</a> yazımızda Blockchain 1.0 olarak tanımladığımız currency aktarımı sağlayan Bitcoin’e <a style="font-weight:bold" href="http://www.cmegroup.com/trading/bitcoin-futures.html?utm_source=mehmetcemyucel.com&utm_medium=refferal&utm_campaign=blog" target="_blank">CME Group</a> BTC borsasında yeni bir özellik hayata geçti. Aslında hayata geçen bir smart contract örneğinin chainin kendi döngüsü dışında hayata geçirilmiş versiyonu da denebilir, bu özellik gelecek bir tarihte belirlenen bir tutardan Bitcoin alım ve satım yapma anlaşmasını yapabilmeye olanak sağlıyor.
+Blockchain dünyası ve bu dünyadaki örnekler çok hızlı değişiyor.  [Buradaki](https://medium.com/blockchainturk/blockchain-evrimi-ve-blockchain-3-0-4f1af18ef619) yazımızda Blockchain 1.0 olarak tanımladığımız currency aktarımı sağlayan Bitcoin’e  [CME Group](http://www.cmegroup.com/trading/bitcoin-futures.html)  BTC borsasında yeni bir özellik hayata geçti. Aslında hayata geçen bir smart contract örneğinin chainin kendi döngüsü dışında hayata geçirilmiş versiyonu da denebilir, bu özellik gelecek bir tarihte belirlenen bir tutardan Bitcoin alım ve satım yapma anlaşmasını yapabilmeye olanak sağlıyor.
 
-Yazının devamı için
-<a style="font-weight:bold" href="https://medium.com/blockchainturk/1d5174d1f6a9?utm_source=mehmetcemyucel.com&utm_medium=refferal&utm_campaign=blog" target="_blank">tıklayın...</a>
+![](https://miro.medium.com/max/660/1*nd56s97FhQYI_5l4uJYb1A.jpeg)
 
-![](https://cdn-images-1.medium.com/max/800/1*nd56s97FhQYI_5l4uJYb1A.jpeg)
+Bildiğiniz gibi Ethereum gibi smart contractlara izin veren sistemlerde contractın gerçekleştiğini doğrulayan servislerin işlem tarihinin geldiğini, o tarihte de contractta yazılı olan tutar üzerinden alım-satım emrini işleme koyabileceğini biliyoruz. CME grup tam olarak bu şekilde ileri vadeli işlem yapılabilmesine izin veren bir sistemin kendi borsaları üzerinde kullanılabileceğini duyurdu ve bu sisteme Bitcoin Futures ismini verdi. Bu gelişme Bitcoin’in kendi altyapısında yapılmış bir değişiklik olmamakla beraber geleceğin neleri getireceği de tabii ki bilinmez. Yeni doğduğu varsayılabilecek(4 sene) dijital paranın evriminin çok hızlı gerçekleştiği de gözden kaçırılmaması gereken önemli bir diğer nokta.
+
+Yazılarımızın devamlılığını sağlayabilmemiz için lütfen yorumlarınızı iletmeyi unutmayınız. Ve bizi  [**LinkedIn**](http://linkedin.com/groups/13568839)  ve  [**Facebook’ta**](https://www.facebook.com/blockchainturknet/) takip edin, topluluğumuzun bir parçası olun.
