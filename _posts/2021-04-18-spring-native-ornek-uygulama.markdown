@@ -477,4 +477,4 @@ Bu değişikliklerden pom.xml’de versiyonumuzu 0.0.2-SNAPSHOT olarak güncelle
 
 Bu kez uygulamamız sıkıntısız şekilde ayağa kalktı. **10 denemenin sonucunda yaklaşık 3,5–4 sn’ler civarında** ayağa kalkan standart uygulamamız native olarak derlendiğinde **0.275sn’de** ayağa kalktı. Yine buradaki **10 denemenin ortalamasının 0.3 sn’ler civarında** ölçümledim. Özetle yaklaşık **10–12 kat** daha hızlı uygulama açılışı gözlemledik.
 
-Uzunca bir yazı oldu, burada ara verip bir sonraki yazıda oluşturduğumuz endpointler üzerinden performans karşılaştırmalarını yapacağız. Yukarıdaki ve bütün bu testler esnasında kullanılan kodların son versiyonunu da o yazıda Github üzerinden paylaşacağım. Ayrıca yukarıdaki örnekte SpEL kodlarından alternatif bir yöntemle kurtulmuş olsak da henüz desteklenmeyen starterlar için veya yaşanılan başka problemlerde çözüm amacıyla kullanılabilecek Hints kavramından da sonraki yazıda değinmeyi düşünüyorum.
+Yukarıda değindiğimiz bütün kodlara https://github.com/mehmetcemyucel/spring-native adresinden erişebilirsiniz.
