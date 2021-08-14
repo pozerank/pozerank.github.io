@@ -39,6 +39,8 @@ Hepimiz uygulamalarımızın birbirleri ile haberleşebilmesi için Rest Servisl
 
 	    **URI örneği:** [https://mehmetcemyucel.com/v1/customers/orders](https://mehmetcemyucel.com/customers/orders)
 	    **header örneği:** x-api-version=1
+		
+{% include feed-ici-yazi-1.html %}
 
 ## Resource Modeling (Path)
 
@@ -99,6 +101,8 @@ Sunucu tarafındaki MVC patternindeki Controller ile karıştırılmaması gerek
 	    POST …/delete-user {“id”:1234} //body
 	    DELETE …/deleteUser/1234
 	    POST …/users/1234/delete
+		
+{% include feed-ici-yazi-2.html %}
 
 ## URI Query Design (Query)
 Query komponenti URI’ye tanımlanan kanak objelerle(controller, document, collection, store) yakından bağlantılıdır. Filtreleme, arama, pagination ve sıralama yapmak için kullanılabilecekleri gibi controllera input geçmek için de kullanılabilirler. Örneğin;
@@ -116,6 +120,8 @@ https://mehmetcemyucel.com/users/123456/send-sms?text=welcome ile de içeriği w
 	    **örnek:** GET …/users?pageSize=25&pageStartIndex=50
 
 -   **14#** Collection veya Store sonuçlarının Sorting’i için kullanılmalıdır.
+
+{% include feed-ici-yazi-3.html %}
 
 ## HTTP Metotları Etkileşimi
 
@@ -165,6 +171,8 @@ PATCH metodu bir kaynağa kısmi değişiklikler uygulamak için kullanılır.
     < Content-Type: text/html  
     <!doctype html><head><meta charset="utf-8"><title>Greeting</title></head>   
     <body><div id="greeting">Hello   World!</div></body></html>
+
+{% include feed-ici-imaj-2.html %}
 
 ### HTTP Metotları Etkileşimi Kuralları
 
