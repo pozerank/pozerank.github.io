@@ -221,6 +221,8 @@ PATCH metodu bir kaynağa kısmi değişiklikler uygulamak için kullanılır.
 -   **36#** 404 Not Found kodu client’ın istek yaptığı uriyi Rest Api’nin bir resource a eşleyemediğinde kullanması gerekmektedir.
 -   **37#** 500 Internal Server Error Uygulama seviyesinde alınan hataların dönüldüğü en generic hata kodudur.
 
+{% include feed-ici-yazi-1.html %}
+
 ## Metadata Tasarımı (Headers)
 
 ### text/plain
