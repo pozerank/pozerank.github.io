@@ -13,7 +13,7 @@ image: https://miro.medium.com/max/150/1*hV308VnNWS1xlrSaztOHkw.png
 -   Monitoring (prometheus & go-kit)
 -   Open-api/Swagger desteği (swaggo)
 
-![Building RESTful APIs in Golang. Let's see how to setup project for… | by  Martin Heinz | Towards Data Science](https://miro.medium.com/proxy/1*hV308VnNWS1xlrSaztOHkw.png)
+![](https://miro.medium.com/max/1400/1*hV308VnNWS1xlrSaztOHkw.png)
 
 ## HTTP Router
 
