@@ -51,15 +51,15 @@ Db entegrasyonu da benzer yapılandırma parametreleri ile sağlanıyor. Farklı
 
 {% include feed-ici-yazi-2.html %}
 
-Serinin sonraki yazısı **API Yönetimi**  hakkında,  [buradan](https://mehmetcemyucel.com/golang-api-management)  erişebilirsiniz.
+Serinin sonraki yazısı **API Yönetimi**  hakkında,  [buradan](https://mehmetcemyucel.com/2022/golang-api-management)  erişebilirsiniz.
 
 Serinin tüm yazılarına aşağıdaki linkler aracılığıyla erişebilirsiniz.
 
-1. [Golang ile Uçtan Uca Proje Yapımı Serisi](https://mehmetcemyucel.com/go-ile-uctan-uca-proje-yapimi-serisi)
-2. [Golang Configuration Management](https://mehmetcemyucel.com/golang-configuration-management)
-3. [Golang Central Logging Management](https://mehmetcemyucel.com/golang-central-logging-management)
-4. [Golang DB Migration - RDBMS & ORM Integration](https://mehmetcemyucel.com/golang-db-migration-rdbms-orm-integration)
-5. [Golang API Management](https://mehmetcemyucel.com/golang-api-management)
-6. [Golang Message Broker - Object Mapping - Testing](https://mehmetcemyucel.com/golang-message-broker-object-mapper-testing)
+1. [Golang ile Uçtan Uca Proje Yapımı Serisi](https://mehmetcemyucel.com/2022/go-ile-uctan-uca-proje-yapimi-serisi)
+2. [Golang Configuration Management](https://mehmetcemyucel.com/2022/golang-configuration-management)
+3. [Golang Central Logging Management](https://mehmetcemyucel.com/2022/golang-central-logging-management)
+4. [Golang DB Migration - RDBMS & ORM Integration](https://mehmetcemyucel.com/2022/golang-db-migration-rdbms-orm-integration)
+5. [Golang API Management](https://mehmetcemyucel.com/2022/golang-api-management)
+6. [Golang Message Broker - Object Mapping - Testing](https://mehmetcemyucel.com/2022/golang-message-broker-object-mapper-testing)
 
 Yukarıda değindiğimiz bütün kodlara https://github.com/mehmetcemyucel/blog/tree/master/demo adresinden erişebilirsiniz.

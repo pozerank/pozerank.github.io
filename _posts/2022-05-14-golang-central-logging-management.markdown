@@ -74,15 +74,15 @@ Uygulamamızı başlatıp  `http://localhost:9000`  bağlandığımızda  `logto
 
 Access logları uygulamaya yapılan her türlü isteğin ve cevabının loglandığı loglardır. Serinin  **API Management**  yazısında bu konunun nasıl ele alınabileceği ile ilgili detaya ulaşabilirsiniz.
 
-Serinin sonraki yazısı  **DB Migration ve RDBMS Entegrasyonu**  hakkında,  [buradan](https://medium.com/@mehmetcemyucel/golang-db-migration-rdbms-orm-integration-62dd1fbfea7e?source=friends_link&sk=c3184660d6e2cb8c83036f743d034190)  erişebilirsiniz.
+Serinin sonraki yazısı  **DB Migration ve RDBMS Entegrasyonu**  hakkında,  [buradan](https://mehmetcemyucel.com/2022/golang-db-migration-rdbms-orm-integration)  erişebilirsiniz.
 
 Serinin tüm yazılarına aşağıdaki linkler aracılığıyla erişebilirsiniz.
 
-1. [Golang ile Uçtan Uca Proje Yapımı Serisi](https://mehmetcemyucel.com/go-ile-uctan-uca-proje-yapimi-serisi)
-2. [Golang Configuration Management](https://mehmetcemyucel.com/golang-configuration-management)
-3. [Golang Central Logging Management](https://mehmetcemyucel.com/golang-central-logging-management)
-4. [Golang DB Migration - RDBMS & ORM Integration](https://mehmetcemyucel.com/golang-db-migration-rdbms-orm-integration)
-5. [Golang API Management](https://mehmetcemyucel.com/golang-api-management)
-6. [Golang Message Broker - Object Mapping - Testing](https://mehmetcemyucel.com/golang-message-broker-object-mapper-testing)
+1. [Golang ile Uçtan Uca Proje Yapımı Serisi](https://mehmetcemyucel.com/2022/go-ile-uctan-uca-proje-yapimi-serisi)
+2. [Golang Configuration Management](https://mehmetcemyucel.com/2022/golang-configuration-management)
+3. [Golang Central Logging Management](https://mehmetcemyucel.com/2022/golang-central-logging-management)
+4. [Golang DB Migration - RDBMS & ORM Integration](https://mehmetcemyucel.com/2022/golang-db-migration-rdbms-orm-integration)
+5. [Golang API Management](https://mehmetcemyucel.com/2022/golang-api-management)
+6. [Golang Message Broker - Object Mapping - Testing](https://mehmetcemyucel.com/2022/golang-message-broker-object-mapper-testing)
 
 Yukarıda değindiğimiz bütün kodlara https://github.com/mehmetcemyucel/blog/tree/master/demo adresinden erişebilirsiniz.

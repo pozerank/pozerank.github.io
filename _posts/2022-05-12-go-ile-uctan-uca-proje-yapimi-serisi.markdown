@@ -11,29 +11,29 @@ Go dilini öğrenmek hızlı ve zevkli. İlk denemelerinizi yaptınız, dile kab
 
 Bu yazımızda Go dilinin best practicelerini merkezimize koyarak ihtiyaç duyulan entegrasyonları basit bir projede gerçekleştirip kullanabileceğiniz şablon bir proje yapısı ortaya koymaya çalışacağız. Aşağıdaki tercihler yapılırken birçok POC ve testler yapılarak seçimler yapıldı. Ancak teknoloji sürekli gelişiyor, değişiyor. Tercihinize göre ekleme çıkarma yapabileceğiniz bir şablon oluşturmaya çalışacağız, sizin de katkılarınızla bu şablonu daha kullanışlı hale getirebiliriz. Birkaç yazıdan oluşan bu seride konuşacağımız başlıklar;
 
- 1. Yazı: [Golang ile Uçtan Uca Proje Yapımı Serisi](https://mehmetcemyucel.com/go-ile-uctan-uca-proje-yapimi-serisi)
+ 1. Yazı: [Golang ile Uçtan Uca Proje Yapımı Serisi](https://mehmetcemyucel.com/2022/go-ile-uctan-uca-proje-yapimi-serisi)
  	 - Go projelerinin dinamiği 
  	 - Proje yapısı ve klasör ağacı ([best-practices](https://github.com/golang-standards/project-layout))
- 2. Yazı: [Golang Configuration Management](https://mehmetcemyucel.com/golang-configuration-management)
+ 2. Yazı: [Golang Configuration Management](https://mehmetcemyucel.com/2022/golang-configuration-management)
 	- Konfigürasyon yönetimi ([Viper](https://github.com/spf13/viper))
 		- Environment variables ile
 		- Merkezi konfigürasyon sunucusu ile ([Spring Cloud Config Server](https://cloud.spring.io/spring-cloud-config/reference/html/))
 		- File (yaml)
-3. Yazı: [Golang Central Logging Management](https://mehmetcemyucel.com/golang-central-logging-management)
+3. Yazı: [Golang Central Logging Management](https://mehmetcemyucel.com/2022/golang-central-logging-management)
 	- Loglama ([Zap](https://github.com/uber-go/zap))
 		- Merkezi loglama ([Filebeat](https://www.elastic.co/beats/filebeat) + [Logstash](https://www.elastic.co/logstash/))
 		- Alternatif merkezi loglama ([Kafka](https://kafka.apache.org/))
 		- Access logging ([Echo](https://echo.labstack.com/))
-4. Yazı: [Golang DB Migration - RDBMS & ORM Integration](https://mehmetcemyucel.com/golang-db-migration-rdbms-orm-integration)
+4. Yazı: [Golang DB Migration - RDBMS & ORM Integration](https://mehmetcemyucel.com/2022/golang-db-migration-rdbms-orm-integration)
 	- Db migration ([Migrate](https://github.com/golang-migrate/migrate))
 	- RDBMS entegrasyonu ([Postgre](https://www.postgresql.org/))
 		- Orm ([Gorm](https://gorm.io/index.html))
-5. Yazı: [Golang API Management](https://mehmetcemyucel.com/golang-api-management)
+5. Yazı: [Golang API Management](https://mehmetcemyucel.com/2022/golang-api-management)
 	- Monitoring ([Prometheus](https://prometheus.io/) & [Go-kit](https://gokit.io/))
 	- Http router ([Echo](https://echo.labstack.com/))
 	- Http package ([Fasthttp](https://github.com/valyala/fasthttp))
 	- Open-api/Swagger desteği ([Swaggo](https://github.com/swaggo/swag))
-6. Yazı: [Golang Message Broker — Object Mapping — Testing](https://mehmetcemyucel.com/golang-message-broker-object-mapper-testing)
+6. Yazı: [Golang Message Broker — Object Mapping — Testing](https://mehmetcemyucel.com/2022/golang-message-broker-object-mapper-testing)
 	- Message broker ([Sarama](https://github.com/Shopify/sarama))
 	- Object mapping ([Xconv](https://github.com/howcrazy/xconv))
 	- Testing
@@ -63,15 +63,15 @@ Aşağıdaki main fonksiyonundaki gibi uygulamamızı ve bağımlılıkları ilm
 
 Şimdilik comment-out’lu kısıma takılmayalım, onları Swagger başlığı altında inceleyeceğiz. Bağımlılıklarımızı, bunların nasıl yönetileceğini adım adım yaratarak başlıyoruz.
 
-Serinin sonraki yazısı **Konfigürasyon Yönetimi** hakkında, [buradan](https://mehmetcemyucel.com/golang-configuration-management) erişebilirsiniz.
+Serinin sonraki yazısı **Konfigürasyon Yönetimi** hakkında, [buradan](https://mehmetcemyucel.com/2022/golang-configuration-management) erişebilirsiniz.
 
 Serinin tüm yazılarına aşağıdaki linkler aracılığıyla erişebilirsiniz.
 
-1. [Golang ile Uçtan Uca Proje Yapımı Serisi](https://mehmetcemyucel.com/go-ile-uctan-uca-proje-yapimi-serisi)
-2. [Golang Configuration Management](https://mehmetcemyucel.com/golang-configuration-management)
-3. [Golang Central Logging Management](https://mehmetcemyucel.com/golang-central-logging-management)
-4. [Golang DB Migration - RDBMS & ORM Integration](https://mehmetcemyucel.com/golang-db-migration-rdbms-orm-integration)
-5. [Golang API Management](https://mehmetcemyucel.com/golang-api-management)
-6. [Golang Message Broker - Object Mapping - Testing](https://mehmetcemyucel.com/golang-message-broker-object-mapper-testing)
+1. [Golang ile Uçtan Uca Proje Yapımı Serisi](https://mehmetcemyucel.com/2022/go-ile-uctan-uca-proje-yapimi-serisi)
+2. [Golang Configuration Management](https://mehmetcemyucel.com/2022/golang-configuration-management)
+3. [Golang Central Logging Management](https://mehmetcemyucel.com/2022/golang-central-logging-management)
+4. [Golang DB Migration - RDBMS & ORM Integration](https://mehmetcemyucel.com/2022/golang-db-migration-rdbms-orm-integration)
+5. [Golang API Management](https://mehmetcemyucel.com/2022/golang-api-management)
+6. [Golang Message Broker - Object Mapping - Testing](https://mehmetcemyucel.com/2022/golang-message-broker-object-mapper-testing)
 
 Yukarıda değindiğimiz bütün kodlara https://github.com/mehmetcemyucel/blog/tree/master/demo adresinden erişebilirsiniz.
