@@ -8,6 +8,7 @@ robots: all
 Okumaya, öğrenmeye ve devamlı gelişmeye inanan; bilgiye ve insana saygıya önem veren bir kişiyim. Bilgi paylaşımının önemine inanıyorum, bu sebeple 2009'dan beri farklı yollarla bilgi ve tecrübelerimi aktarmayı tercih ediyorum.
 
 ## Çalışma Geçmişim
+- *2022 - N11.com*
 - *2020 - Cigna*
 - *2019 - Trendyol*
 - *2017 - Kredi Kayıt Bürosu*
