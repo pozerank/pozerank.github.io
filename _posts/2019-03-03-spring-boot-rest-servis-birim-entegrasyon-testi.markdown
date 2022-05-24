@@ -3,12 +3,12 @@ title:  "Spring Boot Rest Servis Entegrasyon Testi"
 date:   2019-03-03 15:04:23
 categories: [microservices, java, spring, test]
 tags: [rest, entegrasyon, integration, test, mockmvc, unit, service, microservice, mikroservis, türkçe, yazılım, blog, blogger, nedir, örnek, nasıl yapılır, mehmet cem yücel]
-image: https://lh3.googleusercontent.com/Esv5RJA-BRT4PJcyjrApSFqRVLpDxef7CAd5oEgVEZao785R8GKuG-NKbQduwGCms0_RitOF_s8=s150
+image: https://cdn-images-1.medium.com/max/150/1*3DEG7NE6l9h0XIiivEne8Q.jpeg
 ---
 
 Hepimiz Rest servisleri uygulamalarımızda yoğun olarak kullanıyoruz. Peki, bu servislerin entegrasyon testlerini yazarken sıklıkla yapılan o hataya siz de düşüyor olabilir misiniz? Bugün bir Spring Boot uygulamasında Rest servislere 2 farklı test yazımını inceleyeceğiz. Birisi gerçekten bir integration testi, diğeri de tüm Spring Context'ini ayağa kaldırarak yapılan uçtan uca testi örnekleyecek.
 
-![](https://lh3.googleusercontent.com/Esv5RJA-BRT4PJcyjrApSFqRVLpDxef7CAd5oEgVEZao785R8GKuG-NKbQduwGCms0_RitOF_s8=s800 "Darth Vader")
+![](https://cdn-images-1.medium.com/max/873/1*3DEG7NE6l9h0XIiivEne8Q.jpeg)
 
 ## 1. Test Piramidi
 Test piramidinin en tabanında birim testler(unit tests) bulunur. Sonrasında entegrasyon testleri(integration tests), kontrat testleri(contract tests), arayüz testleri(UI tests) diye devam eder. Bu testler ile ilgili [Martin Fowler'ın yazısını](https://martinfowler.com/articles/practical-test-pyramid.html) okumanızı tavsiye ederim. 
@@ -26,11 +26,9 @@ Buradan itibaren kodumuza dönelim. Bir RestController'ımız, bir de onun kulla
 
 <script src="https://gist.github.com/mehmetcemyucel/606444790323514dea3e6bf7ea3ce6f5.js"></script>
 
-{% include feed-ici-yazi-1.html %}
-
 Post metod açan bu sınıfımızın testini nasıl yazmalıyız? Google'da "spring boot rest test" anahtar kelimeleri ile aramamızı yaptığımızda çıkan 5 site aşağıdaki gibi. Bunlardan ikisi de Spring'in kendi sitesi :)
 
-![Google Search](https://lh3.googleusercontent.com/dstgHKOQQXWRTHdU7F0zOvOu-EYR1NnNkkk7Va6L4d_lD228VhHM8bxtp77h4cuZkVRxiXxpOLQ=s800 "Google")
+![](https://cdn-images-1.medium.com/max/873/1*R1g_-Lyj95XwmNAbK3ElnQ.png)
 
 {% include feed-ici-imaj-1.html %}
 
