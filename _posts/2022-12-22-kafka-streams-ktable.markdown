@@ -2,7 +2,7 @@
 title:  "Kafka Streams KTable"
 date:   2022-12-22 11:00:00
 categories: [mimari, microservices, java, spring, spring boot]
-tags: [kafka, streams, ktable, api, design, best, practices, http, service, message broker, design, tasarım, topic, queue, mikroservis, microservice, kubernetes,  türkçe, yazılım, blog, nedir, örnek, nasıl yapılır, mehmet cem yücel]
+tags: [kafka, streams, ktable, rocksdb, rocks, store, topic, queue, design, best, practices, service, message broker, design, tasarım, mikroservis, microservice, kubernetes,  türkçe, yazılım, blog, nedir, örnek, nasıl yapılır, mehmet cem yücel]
 image: https://miro.medium.com/max/150/0*DowA3KXXNQ-W6i1b
 ---
 

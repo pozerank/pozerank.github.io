@@ -2,7 +2,7 @@
 title:  "Kafka Streams Windowing"
 date:   2022-12-26 11:00:00
 categories: [mimari, microservices, java, spring, spring boot]
-tags: [kafka, streams, ktable, api, design, best, practices, http, service, message broker, design, tasarım, topic, queue, mikroservis, microservice, kubernetes,  türkçe, yazılım, blog, nedir, örnek, nasıl yapılır, mehmet cem yücel]
+tags: [kafka, streams, topic, tumbling, sliding, windowing, stateful, operations, api, best, practices, service, message broker, design, tasarım, queue, mikroservis, microservice, türkçe, yazılım, blog, nedir, örnek, nasıl yapılır, mehmet cem yücel]
 image: https://miro.medium.com/max/150/0*Dg0Gr6w92tALzjGh.webp
 ---
 
