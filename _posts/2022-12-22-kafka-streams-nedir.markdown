@@ -20,6 +20,9 @@ Aklınıza şu geliyor olabilir, ben zaten Kafka ile ihtiyacım olan şeyleri ge
 
 ![](https://miro.medium.com/max/1400/1*gNhxKQM1FtjzVsJf0UVTkg.png)
 
+{% include feed-ici-yazi-1.html %}
+
+
 ## Kafka Giriş ve Kurulum
 
 Yazı boyunca aynı dili konuşabilmemiz için bazı kavramların üzerinden geçelim.
@@ -71,6 +74,9 @@ public class KafkaConfig {
 Apache Kafka key-value ikilileri ile çalışır. Key ve valuelar transfer edilebilmeleri için serileştirilmeye ihtiyaçları vardır. Projemize eklediğimiz bağımlılıkların içerisindeki Serdes sınıfında bazı hazır serializerlar vardır. Kompleks objeler için Custom Serdes’ler yaratabilirsiniz. JSON, Avro veya Protobuf kullanıyorsanız yine hazır Serdes’ler mevcut.
 
 ![](https://miro.medium.com/max/1244/1*B-Fa4UW_2b9dAuiPzc9sXA.png)
+
+{% include feed-ici-yazi-2.html %}
+
 
 ## Kafka Streams 
 
@@ -129,6 +135,8 @@ Son adım olarak da output topic inin içerisinde maplenerek değişmiş haliyle
 Aynı işlemi 10000 recordu için tekrarladığımızda filterdan geçemediği için sonraki adım gerçekleşmemiş oldu.
 
 ![](https://miro.medium.com/max/778/1*RRDCwXqfXQkZKo9myyXxFg.png)
+
+{% include feed-ici-yazi-1.html %}
 
 
 Bunlar basit bir streaming örneğiydi. Bu girişin ardından  [sonraki yazımızda](https://www.mehmetcemyucel.com/2022/kafka-streams-ktable)  asıl faydayı sağlayacağımız KTable konusuna değineceğiz.

@@ -15,6 +15,9 @@ Kafka Streamsin son yazısında Windowing konusunu inceleyeceğiz.
 
 ![](https://miro.medium.com/max/1000/0*Dg0Gr6w92tALzjGh.png)
 
+{% include feed-ici-yazi-1.html %}
+
+
 Farklı stateful operasyonlarda yaptığımız özet veriler sürekli olarak artmakta ve birbirinin sonuna eklenmekteydi. Sonsuz miktardaki artış gerçekten istediğimiz bir durum mu yoksa örneği saydırma yapıyorsak belirli aralıkların saydırılması bizim için daha mı anlam ifade ediyor? Yürüyen merdiven örneğimizden yola çıkalım, haftanın her günü artan adetlerde merdiven başına geçen kişi sayısını toplatmak yerine gün gün bu değeri elde etmek daha anlamlı olabilir.
 
 > Windowlar  **TimeWindowedStream**  yaratırlar, KTable’larla değil KStreamlerle ilgili bir kavramdır. Her stream gibi sonradan table’a bir stateful operasyon aracılığıyla çevrilebilir.
@@ -98,6 +101,9 @@ Başka bir örneği de ardarda değerler emit ettirdiğimizde neler reducer’ı
 
 51 geçe itibariyle de artık kayda erişemez duruma geldik. Key’i ilk store’a sokan sürenin windowu o keyi update eden tüm recordlar için de geçerli oldu.
 
+{% include feed-ici-yazi-2.html %}
+
+
 ## Sliding
 
 Tahmin ettiğiniz gibi bu kez ilk gelen kayıtla sınırlandırdığımız bir time windowu yerine aynı key için farklı windowlara sahip birden fazla value söz konusu olacak. Önemli nokta, window u halen geçerli olan kaydın güncellenmeye devam edeceği konusu. Örnekle inceleyelim.
@@ -144,6 +150,8 @@ Yeni dağıtımdan sonra 3. kaydı gönderdiğimizde de bu şekilde
 Son bir kayıt daha gönderiyoruz ancak bu süre zarfında ilkinin geçerliliği sona erdiği için artık o value responseda dönmeyecek.
 
 ![](https://miro.medium.com/max/1400/1*fJBWgs1rvx3lv2VGtBfPFw.png)
+
+{% include feed-ici-yazi-1.html %}
 
 Kafka Streams serimizin burada sonuna geldik. Sonraki yazılarda/serilerde tekrar görüşmek üzere.
 

@@ -15,6 +15,8 @@ image: https://miro.medium.com/max/150/0*jZhKkFZoAWCuZzs0.webp
 
 ![](https://miro.medium.com/max/1400/0*jZhKkFZoAWCuZzs0.jpg)
 
+{% include feed-ici-yazi-1.html %}
+
 Logged-in eventlerinin basıldığı bir topic imizin olduğunu varsayalım. Hangi kullanıcı ne kadar kez login olmuş bu bilgiyi bir noktada saymak isteyebilirsiniz. Veya alışveriş merkezlerinin girişlerinde, yürüyen merdivenlerin başlangıcında lazerli bir hareket sensörü olduğu dikkatinizi çekmiştir. AVM’ye kaç kişi girdi, diğer katlara kaç kişi gitti, kat değişimi esnasında hangi yürüyen merdiven daha çok kullanıldı gibi bilgilerin sayımını yapmak ve mağaza kira fiyatlarına etki edebilecek bir istatistik toplamak isteyebilirsiniz. İşte bu bilgiler gelen recordların bazı operasyonlardan geçirilerek özetlerinin state olarak saklanması ile mümkün olabilir. Burada hatırlatmam gereken nokta, artık direk direk streame gelen recordlarla uğraşmıyoruz, bu recordları bir şekilde grupluyor ve bu gruplar üzerinde bir metadata üretiyoruz ve saklıyoruz. Kafka Streams 3 operasyonla(reduce, count ve aggregate) bu işlemi sağlıyor. Bu 3 operasyonun da dönüş tipi KTable’dır, dolayısı ile store işlemi bu şekilde sağlanmaktadır.
 
 ## Reduce
@@ -68,6 +70,8 @@ Muhtemelen akla gelen soru, yeni gelen kayıtların son durumu ne olacak sorusu.
 Cevabı aşağıdaki gibi. Aslında cache ile store arasında bir fark bulunmuyor, sadece belirli periyotlarda bir emit ediliyor.
 
 ![](https://miro.medium.com/max/1400/1*Hh0SDvPp2V0wcleGXbbNrA.png)
+
+{% include feed-ici-yazi-2.html %}
 
 ## Aggregation
 
@@ -144,6 +148,9 @@ Aslında bu sonuçta ne elde etmek istediğinize göre değişen ve tercihlerimi
 Changelog topic inin çıktısı reducer örneğindeki output’a bastığımız nihai stream in çıktısı ile aynı.
 
 ![](https://miro.medium.com/max/1400/1*tJ7DQNAubsVniMZraN20CA.png)
+
+{% include feed-ici-yazi-1.html %}
+
 
 Son yazımızda Windowing konusunu inceleyerek Kafka Streams yazı dizimizi tamamlayacağız.
 

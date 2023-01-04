@@ -15,6 +15,9 @@ image: https://miro.medium.com/max/150/0*DowA3KXXNQ-W6i1b
 
 ![](https://miro.medium.com/max/818/0*DowA3KXXNQ-W6i1b)
 
+{% include feed-ici-yazi-1.html %}
+
+
 ## Kafka Streams
 
 İlk yazımızda Kafka’nın key-value ikilileri ile çalıştığından bahsetmiştik ancak producerda gönderdiğimiz recordlarda hiç key kullanmamıştık. Hatta consoleda key leri null olarak gözlemlemiştik.
@@ -58,6 +61,7 @@ public class KTableExample {
     }  
 }
 ```
+{% include feed-ici-yazi-2.html %}
 
 
 Sonrasında key1 anahtarıyla 10002 değerini producerımızdan gönderiyoruz.
@@ -105,6 +109,9 @@ public class StoreRestController {
     }  
 }
 ```
+
+{% include feed-ici-yazi-1.html %}
+
 
 Store’umuza erişip key’imizle arama yapıp sonucunu dönecek bir servis açtık. Browserdan bir istekle deneyelim.
 
