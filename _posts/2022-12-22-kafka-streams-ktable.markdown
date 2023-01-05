@@ -28,6 +28,10 @@ Bu kez producer’ımızı farklı şekilde açıyoruz ve bir seperator ile ayr�
 
 ![](https://miro.medium.com/max/1400/1*9krBuC6l5L9JHkJFTQdKQA.png)
 
+```bash
+bin/kafka-console-producer.sh --broker-list localhost:9092 --topic  basic-stream-input-topic --property "parse.key=true" --property "key.separator=:"
+```
+
 ![](https://miro.medium.com/max/1400/1*03YyrrYfnvqTVdWxCt4a-Q.png)
 
 Key değerimiz bu kez null yerine dolu bir değer içeriyor.

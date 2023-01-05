@@ -122,13 +122,9 @@ public class BasicStream {
 
 Bu akışı yönetebilmek için input topic ine bir producer yaratacağız. Çıktıyı gözlemlemek için de output topic ine bir consumer açacağız.
 
-![](https://miro.medium.com/max/1400/1*84xj9q4VK2hXEMqoM-r8wg.png)
-
 ```bash
 bin/kafka-console-producer.sh --topic basic-stream-input-topic --bootstrap-server localhost:9092
 ```
-
-![](https://miro.medium.com/max/1400/1*DredRERq0vx00QkNw12Zhw.png)
 
 ```bash
 bin/kafka-console-consumer.sh --topic basic-stream-output-topic --from-beginning --bootstrap-server localhost:9092
