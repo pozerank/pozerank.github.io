@@ -35,6 +35,12 @@ Kafka’yı ayağa kaldırmak için  [https://kafka.apache.org/quickstart](https
 
 ![](https://miro.medium.com/max/1400/1*TuWEWPWj3GDDaXiIxuOwZQ.png)
 
+```bash
+KAFKA_CLUSTER_ID="$(bin/kafka-storage.sh random-uuid)"
+bin/kafka-storage.sh format -t $KAFKA_CLUSTER_ID -c config/kraft/server.properties
+bin/kafka-server-start.sh config/kraft/server.properties
+```
+
 Tek Broker’lı Kafka Cluster’ımız demo için artık hazır. 9092 portundan bootstrap serverımız yayın yaparak oluşturduğumuz cluster hakkında metadata paylaşımında bulunuyor. Bu veri içerisinde topic’ler, onların partition’ları, bu partitionlar için leader brokerlar gibi bilgiler yer alıyor. Bir Spring Boot projesi yaratalım.
 
 ![](https://miro.medium.com/max/1400/1*2ycPS60teyl4n7Kjzn7FBg.png)
@@ -84,6 +90,11 @@ Artık konfigürasyonumuz hazır olduğuna göre önce topiclerimizi yaratalım,
 
 ![](https://miro.medium.com/max/1400/1*r60WGvq7MCfx9HmOTZR8Ww.png)
 
+```bash
+bin/kafka-topics.sh --create --topic basic-stream-input-topic --bootstrap-server localhost:9092
+bin/kafka-topics.sh --create --topic basic-stream-output-topic --bootstrap-server localhost:9092
+```
+
 Declerative programlama ile daha önce uğraşanlar için çok da yabancı olmayan fonksiyonları görüyoruz.
 
 ```java
@@ -113,9 +124,15 @@ Bu akışı yönetebilmek için input topic ine bir producer yaratacağız. Çı
 
 ![](https://miro.medium.com/max/1400/1*84xj9q4VK2hXEMqoM-r8wg.png)
 
+```bash
+bin/kafka-console-producer.sh --topic basic-stream-input-topic --bootstrap-server localhost:9092
+```
 
 ![](https://miro.medium.com/max/1400/1*DredRERq0vx00QkNw12Zhw.png)
 
+```bash
+bin/kafka-console-consumer.sh --topic basic-stream-output-topic --from-beginning --bootstrap-server localhost:9092
+```
 
 Test etmek için 10002 içerikli bir recordu produce request olarak ilettik.
 
