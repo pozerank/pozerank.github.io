@@ -1,165 +1,102 @@
 ---
-title:  "Kafka Streams Windowing"
-date:   2022-12-26 11:00:00
-categories: [mimari, microservices, java, spring, spring boot]
-tags: [kafka, streams, topic, tumbling, sliding, windowing, stateful, operations, api, best, practices, service, message broker, design, tasarım, queue, mikroservis, microservice, türkçe, yazılım, blog, nedir, örnek, nasıl yapılır, mehmet cem yücel]
-image: https://miro.medium.com/max/150/0*Dg0Gr6w92tALzjGh.webp
+title:  "Kullanıcı Şifrelerini Bu Şekilde Saklamayın"
+date:   2023-07-10 12:00:00
+categories: [mimari, security, tools]
+tags: [encryption, hashing, digest, SHA-256, SHA512, MD5, güvenilir mi, rainbow tables, salt, salting, tuzlama, peppering, schema, vault, türkçe, mehmet cem yücel]
+image: https://miro.medium.com/v2/resize:fit:150/1*51yiQNFp5KyP3ncI5-zVJA.jpeg
 ---
 
-Kafka Streamsin son yazısında Windowing konusunu inceleyeceğiz.
 
-1.  Yazı:  [Kafka Streams Nedir](https://www.mehmetcemyucel.com/2022/kafka-streams-nedir)
-2.  Yazı:  [Kafka Streams KTable](https://www.mehmetcemyucel.com/2022/kafka-streams-ktable)
-3.  Yazı:  [Kafka Streams Stateful Operations](https://www.mehmetcemyucel.com/2022/kafka-streams-stateful-operations)
-4.  Yazı:  [Kafka Streams Windowing](https://www.mehmetcemyucel.com/2022/kafka-streams-windowing)
+Son kullanıcı şifrelerinin güvenli bir şekilde saklanması önemli konulardan birisi. Bu noktada oluşacak bir sızıntı hem kullanıcılarımıza hem de regülasyonlara karşı kurumlarımızı zor duruma düşürebilir. Bu sebeple bugün hem mimari hem de yazılımsal açılardan yapılan bazı hataları ve best practice’lerini inceleyeceğiz.
 
-![](https://miro.medium.com/max/1000/0*Dg0Gr6w92tALzjGh.png)
+-   Encryption / Hashing
+-   Rainbow Tables / Salting & Peppering
+-   Auth Schema Seperation
+-   Work Factors
+-   Vaults
+
+![](https://miro.medium.com/v2/resize:fit:1400/1*51yiQNFp5KyP3ncI5-zVJA.jpeg)
 
 {% include feed-ici-yazi-1.html %}
 
+# Encrypting Yerine Hash Fonksiyonu Kullanın
 
-Farklı stateful operasyonlarda yaptığımız özet veriler sürekli olarak artmakta ve birbirinin sonuna eklenmekteydi. Sonsuz miktardaki artış gerçekten istediğimiz bir durum mu yoksa örneği saydırma yapıyorsak belirli aralıkların saydırılması bizim için daha mı anlam ifade ediyor? Yürüyen merdiven örneğimizden yola çıkalım, haftanın her günü artan adetlerde merdiven başına geçen kişi sayısını toplatmak yerine gün gün bu değeri elde etmek daha anlamlı olabilir.
+Hep duyduğunuz bir başlık ve yazımızı kalabalıklaştıracak olsa da halen örneklerini gördüğüm için değinmeden geçmeyeceğim.
 
-> Windowlar  **TimeWindowedStream**  yaratırlar, KTable’larla değil KStreamlerle ilgili bir kavramdır. Her stream gibi sonradan table’a bir stateful operasyon aracılığıyla çevrilebilir.
+Yöntemi ne olursa olsun bir değer ilk haline döndürülebilecek şekilde işleniyor ve saklanıyorsa o değer tekrar ilk haline çevrilebilir. Yani encrypt edilen bir değer decrypt edilebilir. Bunun farklı örneklerine ve yöntemlerine  [buradan](https://www.mehmetcemyucel.com/2017/simetrik-sifreleme-ve-blockchain/)  ve  [buradan](https://www.mehmetcemyucel.com/2017/asimetrik-sifreleme-ve-blockchain/)  detaylı şekilde ulaşabilirsiniz. Dolayısıyla plain haline dönüştürülebilen bir şifre her zaman güvenlik riskini barındırır.
 
-**Session**  henüz Spring Boot’ta implementasyonu olan bir windowing fonksiyonu olmadığından ve  **hopping**  de deprecated olarak ele alındığından biz  **tubmling**  ve  **sliding**  fonksiyonlarını ele alacağız.
+Encryption yerine  [Hash Fonksiyonları](https://www.mehmetcemyucel.com/2017/hash-fonksiyonlari-ve-blockchain/)nı kullandığımızda şifre tekrar ilk haline döndürülemeyecek bir değere dönüştürülür(digest) ve bu haliyle saklanır. Kullanıcının şifresi sistemde doğrulanma ihtiyacı duyulduğunda kullanıcı şifresini girer, aynı yöntemle hashleme yapılarak sistemde kayıtlı hash ile karşılaştırılarak kontrol edilir. Eğer iki değer birbiriyle örtüşüyorsa doğrulama başarılı olur.
 
-## Tumbling
+Buradan şöyle bir sonuç da otomatik olarak ortaya çıkıyor. Şifremi Unuttum gibi akışlarda artık kullanıcıya şifre hatırlatmak mümkün olmayacaktır. Bunun yerine yeni şifre girebilmesi için güvenli bir akış oluşturulmalıdır. Demek ki size gerçekten unuttuğunuz şifrenizi açık olarak geri dönen veya hatırlatabilen bir sistem kullanmak zorunda kalıyorsanız o sistem güvenli değildir ve kullanacağınız şifrenizi de buna göre belirleyin!
 
-Tumbling ilk windowing yaklaşımımız. Kodumuzu birlikte inceleyelim.
-
-```java
-@Component  
-public class TumblingExample {  
-  
-    private static final Serde<String> STRING_SERDE = Serdes.String();  
-    private static final String INPUT_TOPIC = "tumbling-input-topic";  
-  
-    @Autowired  
-    void buildPipeline(StreamsBuilder streamsBuilder) {  
-        KStream<String, String> messageStream = streamsBuilder.stream(INPUT_TOPIC, Consumed.with(STRING_SERDE, STRING_SERDE));  
-        Reducer<String> reducer = (String val1, String val2) -> val1 + val2;  
-        Duration windowSize = Duration.ofMinutes(3);  
-        TimeWindows tumblingWindow = TimeWindows.ofSizeWithNoGrace(windowSize);  
-  
-        messageStream  
-                .peek((key, val) -> System.out.println("1. Step key: " + key + ", val: " + val))  
-                .groupByKey()  
-                .windowedBy(tumblingWindow)  
-                .reduce(reducer, Materialized.as("tumbling"))  
-                .toStream()  
-                .peek((key, val) -> System.out.println("2. Step key: " + key.key() + " "  
-                        + key.window().startTime().toString() + " - " + key.window().endTime().toString() + ", val: " + val));  
-    }  
-}
-```
-
-![](https://miro.medium.com/max/1400/1*NCNC0_byaP-jbuH-Xkc11g.png)
-
-Topic’imizden okuduğumuz aynı keye sahip 2 kaydımız olduğunu düşünelim, streami groupBy ve reduce işlemlerinden geçirdiğimizde önceki yazımızdan da hatırlayacağınız gibi bu 2 değeri reducer’daki fonksiyondan geçirip bize store’da saklanacak şekilde sunuyordu. Yani key1'in güncel değeri 1122 olarak saklanacaktı.
-
-![](https://miro.medium.com/max/1400/1*co3on66N0msMFN3L0n71YA.png)
-
-Peki biz tumblingWindow ile bu fonksiyonu değiştirdiğimizde neler oldu? WindowSize olarak ilettiğimiz değer kaydın ne kadar süreyle geçerli olacağı bilgisi. Yani bu 1122 değeri emit edildikten sonra 3 dakikalık zaman aralığı için geçerli olacak. Kaydı store’dan sorgulamak için bir Rest Controller yazalım.
-
-```java
-@GetMapping("/timestamp/{store}/{key}")  
-public String ktable2(@PathVariable String store, @PathVariable String key) {  
-    KafkaStreams kafkaStreams = factoryBean.getKafkaStreams();  
-    ReadOnlyWindowStore<Object, Object> pairs = kafkaStreams  
-            .store(StoreQueryParameters.fromNameAndType(store, QueryableStoreTypes.windowStore()));  
-    String result = "";  
-    Instant timeFrom = Instant.now().minusSeconds(180); // beginning of time = oldest available  
-    Instant timeTo = Instant.now(); // now (in processing-time)  
-    WindowStoreIterator<Object> keyPair = pairs.fetch(key, timeFrom, timeTo);  
-    while (keyPair.hasNext()) {  
-        KeyValue<Long, Object> pair = keyPair.next();  
-        result += new Date(pair.key) + " " + pair.value.toString() + "</br>";  
-    }  
-    return result;  
-}
-```
-
-
-![](https://miro.medium.com/max/1400/1*BGN5WR-JS-U9PHk-1wYn6g.png)
-
-39 geçeden itibaren 3 dakika boyunca geçerli olacak ve aynı sorgulamayı 42 geçe itibariyle sorguladığımızda bu key e ait bir değer dönmeyecek.
-
-![](https://miro.medium.com/max/1400/1*-SmvDOrw49it01bkxmGS1A.png)
-
-Başka bir örneği de ardarda değerler emit ettirdiğimizde neler reducer’ımızdan gelen değerlerin nasıl değişeceğine bakarak inceleyelim. 33 ve 44 kayırlarını farklı emitlerin içerisine girecek şekilde ard arda gönderelim ve ilk 33 recordunun window u biteceği zamanda yeni record 55 i gönderelim.
-
-![](https://miro.medium.com/max/1400/1*1ST_iMGAilx4j9mQq4PA-Q.png)
-
-48 geçe ilk recordu gönderdiğimizde storedaki key3 ün değeri 33 oldu.
-
-![](https://miro.medium.com/max/1400/1*KYv9tiWI75B5SolFx0hKQA.png)
-
-49 geçe ilk recordu gönderdiğimizde ise storedaki keyin değeri reducerın çıktısı olan 3344 olarak güncellendi ama ilk windowun süresi uzamadı.
-
-![](https://miro.medium.com/max/1400/1*nA3SAEG7cKXIcBw2032AIg.png)
-
-51 geçe itibariyle de artık kayda erişemez duruma geldik. Key’i ilk store’a sokan sürenin windowu o keyi update eden tüm recordlar için de geçerli oldu.
+Secure Hash Algorithm 1 (SHA-1) ve MD5 collision problemi bulunduğu için güvensiz olarak tanımlanan hash algoritmaları. Bu algoritmalar yerine SHA-256, SHA-512 gibi algoritmaların kullanılması önerilebilir.
 
 {% include feed-ici-yazi-2.html %}
 
+# Hashleyerek Sakladık, Güvende Miyiz?
 
-## Sliding
+Peki şifrelerimizi hashleyerek sakladık, kendimizi artık güvende hissedebilir miyiz? Sorumuzun cevabı, evet daha iyi bir noktadayız ancak henüz güvenli hissetmemeliyiz.
 
-Tahmin ettiğiniz gibi bu kez ilk gelen kayıtla sınırlandırdığımız bir time windowu yerine aynı key için farklı windowlara sahip birden fazla value söz konusu olacak. Önemli nokta, window u halen geçerli olan kaydın güncellenmeye devam edeceği konusu. Örnekle inceleyelim.
+Örneğin bir sızıntı yaşandı ve kullanıcı tablomuz attackerların eline geçti. Tablomuzda kullanıcıların sadece hashli digestleri bulunduğundan ve bu değerler geri çevrilemediğinden dolayı kendimizi güvende hissedebiliriz. Ancak üzerinde düşünmemiz gereken başka noktalar var.
 
-```java
-@Component  
-public class SlidingExample {  
-  
-    private static final Serde<String> STRING_SERDE = Serdes.String();  
-    private static final String INPUT_TOPIC = "sliding-input-topic";  
-  
-    @Autowired  
-    void buildPipeline(StreamsBuilder streamsBuilder) {  
-        KStream<String, String> messageStream = streamsBuilder.stream(INPUT_TOPIC, Consumed.with(STRING_SERDE, STRING_SERDE));  
-        Reducer<String> reducer = (String val1, String val2) -> val1 + val2;  
-        Duration timeDifference = Duration.ofMinutes(3);  
-        Duration afterWindowEnd = Duration.ofMinutes(1);  
-        SlidingWindows slidingWindow = SlidingWindows.ofTimeDifferenceAndGrace(timeDifference, afterWindowEnd);  
-  
-        messageStream  
-                .peek((key, val) -> System.out.println("1. Step key: " + key + ", val: " + val))  
-                .groupByKey()  
-                .windowedBy(slidingWindow)  
-                .reduce(reducer, Materialized.as("sliding"))  
-                .toStream()  
-                .peek((key, val) -> System.out.println("2. Step key: " + key.key() + " "  
-                        + key.window().startTime().toString() + " - " + key.window().endTime().toString() + ", val: " + val));  
-    }  
-}
-```
+Farkındaysanız hashing her input için tekil bir digest oluşturma mantığına dayanıyor. Buradan şu sonuç çıkabilir, en sık kullanılan şifre kombinasyonlarını(dictionary) bir hashing algoritmasından geçirerek bir tablo(Rainbow Tables) üretebilirim. Bu tablonun ilk kolonunda sık kullanılan bir şifrenin açık halini, diğer kolonunda da digesti saklarsam ve sızdığım sistemdeki hashleri bu tablodaki digestlar içerisinde bulabilirsem şifrenin açık halini de bilebilirim.
 
-İlk kaydımızı gönderelim.
+Örnek olması için aşağıdaki siteden “password” içerikli şifremi md5 ile hashletiyorum.
 
-![](https://miro.medium.com/max/1400/1*mNJPWYI5VPlGl7s_0L1k4A.png)
+![](https://miro.medium.com/v2/resize:fit:1400/1*dTTRSPjzB4hVhjEMHo3ySw.png)
 
-Emit edildikten sonra 1 dakika attıktan sonra 2. kaydı gönderdiğimizde görüntü şu şekilde oluyor.
+İnternet üzerinde her gün büyümeye devam eden çok büyük rainbow tablelar mevcut. Farklı algoritmalar, farklı input karakter setleri için TB’larca veriyi arayıp verilen hashin ilk halini bulmak çok zor değil. Yukarıdaki oluşan MD5 hashi kopyalayıp bu tür bir sitede arattığımda oluşan sonuca bakalım.
 
-![](https://miro.medium.com/max/1400/1*FLWev1O7-z9CMuZqbG6wMg.png)
+![](https://miro.medium.com/v2/resize:fit:1400/1*T5hcNMteeBx1OHrenojhjg.png)
 
-Yeni dağıtımdan sonra 3. kaydı gönderdiğimizde de bu şekilde
+Bu sebeple bu hashlerin üzerinde biraz daha fazla düşünmeye ihtiyacımız var.
 
-![](https://miro.medium.com/max/1400/1*yZfko_sKy3hQ1oEX6fy4Dg.png)
+# Salting & Peppering
 
-Son bir kayıt daha gönderiyoruz ancak bu süre zarfında ilkinin geçerliliği sona erdiği için artık o value responseda dönmeyecek.
+Salting mantığı, kullanıcının şifresini hashlemeden önce başına random bir karakter setinin eklenmesi mantığından geliyor. Hemen yine örnekten bakalım.
 
-![](https://miro.medium.com/max/1400/1*fJBWgs1rvx3lv2VGtBfPFw.png)
+![](https://miro.medium.com/v2/resize:fit:1400/1*KOXt01QtM8MnrV-BSsQ7Zw.png)
+
+Bu kez passwordü hashlemeden önce random bir seti passwordün başına ekleyerek hash değerini oluşturdum. Oluşan hashi rainbow tableda aratalım.
+
+![](https://miro.medium.com/v2/resize:fit:1400/1*u3hgN_eMuDbGUv0HxYl56Q.png)
+
+Farkındaysanız bu kez hashimiz bulunamadı. Çünkü salt+password kombinasyonu çok da karşılaşılan bir kombinasyon değil ve benim denediğim sitedeki table’da bir karşılığı olmadığından açık hali bulunamadı. Ancak bu daha geniş rainbow tablelarda bulunmayacağı anlamına gelmeyecektir. Genellikle bu tarz devasa tablolar ücretli ve/veya daha az kişinin kullanımına açık olacaktır. Ayrıca password ile salt iç içe olduğundan sadece padding yapılmadan bir algoritma ile salt ile passwordün iç içe girdiği bir kombinasyon da yaratabiliriz. Örneğin passwordün her karakterinden sonra random bir karakter ekleyerek saltu karakter seviyesinde iç içe geçirebiliriz.
+
+Kafanızda şu soru oluşmuş olabilir, peki salt nerede saklanacak? User tablosundaki hash’inizin yanında bir kolon açarak açık olarak saklamanızda bir sakınca yok. Çünkü bir attacker ın saltu ve hashi bilmesi şifrenin açık haline erişebilmek için yeterli değil.
+
+Yine de eşeği daha da sağlam kazığa bağlayalım derseniz, passwordün sonuna aynı saltlamada olduğu gibi bir değer daha ekler ve bu değeri de db yerine farklı bir persistency unitte saklamayı tercih ederseniz(file system, object storage vb) bu da peppering olarak isimlendiriliyor.
+
+# Auth Schema Ayırma
+
+Güvenlik konusu her zaman katman katman ele alınır. Bir sistemdeki kullanıcıların salting/peppering’den geçmiş güvenli bir algoritma tarafından yaratılmış hashli credentiallarının açığa çıkması kurum açısından bir prestij kaybı yaratsa da attackerların sisteme o kullanıcılar gibi giriş yapıp onların hesaplarından işlem gerçekleştirmeleri gibi kaotik problemlerle kıyaslandığında çok daha hafif sayılabilecek bir durumdur. Bir katman ele geçirilse de sonraki daha kritik katmanlar bir şekilde güvende kalacaktır.
+
+Benzer şekilde bir sistemin dışarıdan en saldırıya açık endpointleri auth kontrolünün yapıldığı ilk doğrulama servisleridir. Çünkü tokenization ile korunduğunu varsaydığımız bir sistemde fonksiyonel servislere erişim kimlik doğrulamasından geçirilerek kazanılan bir token sayesinde güvenlik altına alınabilir. Ancak token veren servisin güvenliği nasıl sağlanacak? Örneğin sql injectiona açık bir login servisinde attacker injection ile credential kontrolünü bypass edip doğrudan db seviyesinde tablolara erişim sağlayabilir. Böyle bir durumda attackerın yapacağı ilk hamle erişebildiği kadar functional veriye erişip, bunlardan kendisine çıkar sağlamak olabilir. Sonrasında da insafına bağlı olarak sessizce izini sistemden silerek ortadan kaybolabilir veya daha da kötüsü erişimi dahilindeki tüm verileri silerek sistemi cevapsız hale düşürebilir. Disk dumplarının ne kadar sağlıklı alındığına, dumptan dönme süresine, consistencynin tekrar sağlanması, oluşan veri kaybının tolerasyonuna bağlı olarak bu sistem kesintisi günleri bulabilir.
+
+İşte bu gibi senaryoların riskini minimize etmek için kritik sistemlerdeki Auth tablolarını sistemin fonksiyonel gereksinimlerini karşılayan db schemasından izole etmek ve ayrı bir schemada konumlandırmak iyi bir tercihtir. Güvenlik sebeplerinin yanı sıra operasyonel yönetim ihtiyaçlarında da erişimi kısıtlı ve izole tutmak faydalı olacaktır.
+
+# Work Factors
+
+Farkettiyseniz güvenlik kavramı attackerın gözüyle bakıldığında sürekli bir şeyleri daha da zorlaştırmak ve ihtimalleri düşürmek üzerine kurulu. Hiçbir sistem %100 güvenli değildir ancak yapacağınız basit bir hamle ile attackera günler, haftalar kaybettirebilirsiniz. Bu gibi durumlarda da genellikle attackerlar başka sistemlere gözünü kaydırmaya başlayacaktır.
+
+Work Factors de benzer bir amaca hizmet ediyor. Bir passwordü hashlediğinizde ortaya çıkan sonucu kullanmak yerine bu çıktıyı tekrar input yapıp n kez bu döngüyü tekrarlamanız faktörü artıran bir unsur olacaktır. Hatta bu yöntemi algoritmasının temel parçası haline getiren hashing algoritmaları da hali hazırda bulunuyor(PBKDF2 vb).
+
+Buradaki temel mantık, hashlemenin daha uzun sürmesi bu tarz bir algoritmanın kullanıldığı rainbow table ların hızlı ve kolayca büyüyememesini sağlayacaktır. Dolayısıyla oluşan hashlerin açık halinin bulunması zorlaşacaktır.
+
+Dikkat edilmesi gereken bir nokta, hashlemenin bir zaman & cpu maliyeti var ve operasyonu aksatmayacak şekilde konfigürasyon tercihlerinin yapılması önemli. Örneğin Django default iterasyon sayısı olarak 30.000 kullanıyor. Attackerların işini zorlaştırmak için katlanılan maliyetler operasyonel çalışmamızı sekteye uğratmamalıdır.
 
 {% include feed-ici-yazi-1.html %}
 
-Kafka Streams serimizin burada sonuna geldik. Sonraki yazılarda/serilerde tekrar görüşmek üzere.
+# Vaultlar
 
-Serinin diğer yazıları için
+Son olarak, vaultlar apayrı bir yazının konusu olabilecek kadar geniş bir konu olsa da kısaca bahsetmekte yarar bulunuyor. Vaultlar identity ve access management için uçtan uca düşünülmüş bağımsız çözümlerdir. İşinizin doğası bu tarz bir ürünle çalışmaya uygun ise kullanıcı yönetimini uygulamanızdan bağımsız ayrı bir noktada yönetmek birçok açıdan avantaj sağlayabilir. Vaultlar sadece password için değil sertifikalar, güvenliği kritik dosyalar, API anahtarları, db şifreleri gibi daha geniş kullanım alanlarına sahiptir. Farklı senaryolar kurgulayabilirsiniz, örneğin bir vault u unseal edebilmek için 3 farklı kişinin passwordü sırayla girilirse vault açılır vb gibi.
 
-1.  Yazı:  [Kafka Streams Nedir](https://www.mehmetcemyucel.com/2022/kafka-streams-nedir)
-2.  Yazı:  [Kafka Streams KTable](https://www.mehmetcemyucel.com/2022/kafka-streams-ktable)
-3.  Yazı:  [Kafka Streams Stateful Operations](https://www.mehmetcemyucel.com/2022/kafka-streams-stateful-operations)
-4.  Yazı:  [Kafka Streams Windowing](https://www.mehmetcemyucel.com/2022/kafka-streams-windowing)
+Güvenlik sadece yazılımda değil mimaride de dikkatli değerlendirilmesi gereklidir. Örneğin networkte açık olarak taşınan bir credential risk teşkil edebilir. Veya uygulamanın memorysinde açık olarak bulunan bir password anlık alınan bir dump ile attacker tarafından elde edilebilir. Bu sebeplerle hassas bilgilerin uçtan uca gizli olarak kullanılması/tüketilmesi gerekir. Vaultlar sorumluluğu tam olarak bu gibi konular olan uygulamalar olduklarından bu detaylar noktaları da kapsayacak şekilde geliştirilmişlerdir. Daha detaylı incelemek için birkaç vault örneği;
 
-Projenin kodlarına  [buradan](https://github.com/mehmetcemyucel/kafka-streams)  erişebilirsiniz.
+-   [https://www.vaultproject.io/](https://www.vaultproject.io/)
+-   [https://www.cyberark.com/](https://www.cyberark.com/)
+-   [https://www.beyondtrust.com/](https://www.beyondtrust.com/)
+
+# Sonuç
+
+Yazıda bahsettiğimiz başlıklara dikkat etmek birçok açıdan uygulamalarımızı daha güvenilir hale getirecektir. Ancak her gün yeni güvenlik açıkları ortaya çıktığı için  [OWASP](https://owasp.org/)  web sitesini takip etmeyi unutmayın.
