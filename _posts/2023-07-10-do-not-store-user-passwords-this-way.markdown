@@ -16,9 +16,8 @@ One of the most critical topics in software development is secure storage of pas
 
 ![](https://miro.medium.com/v2/resize:fit:1400/0*noOeyOHQ_1V_SjmA.jpeg)
 
-{% include feed-ici-yazi-1.html %}
 
-# Use Hash Functions Instead of Encryption
+## Use Hash Functions Instead of Encryption
 
 Encryption is a two way function. Thats mean, you can retrieve plain text.  [Symmetric](https://www-mehmetcemyucel-com.translate.goog/2017/simetrik-sifreleme-ve-blockchain/?_x_tr_sl=tr&_x_tr_tl=en&_x_tr_hl=tr&_x_tr_pto=wapp)  and  [asymmetric](https://www-mehmetcemyucel-com.translate.goog/2017/asimetrik-sifreleme-ve-blockchain/?_x_tr_sl=tr&_x_tr_tl=en&_x_tr_hl=tr&_x_tr_pto=wapp)  encryption methods can be explored through links. If a password becomes readable again, it poses a security risk.
 
@@ -30,7 +29,7 @@ SHA-1 and MD5 hash algorithms are not secure because of collision problems. You 
 
 {% include feed-ici-yazi-2.html %}
 
-# Hash Ok, Are We Safe Now?
+## Hash Ok, Are We Safe Now?
 
 Not yet. We have new problems.
 
@@ -46,7 +45,7 @@ There are many rainbow tables on the internet. I will search my hash value at th
 
 This is proof that hash functions alone are not sufficient. Because we cannot guarantee that end users will always create secure passwords.
 
-# Salting & Peppering
+## Salting & Peppering
 
 The concept of salting involves adding a randomly generated character set as a prefix to sensitive data. Let’s examine the example.
 
@@ -58,7 +57,9 @@ I added a random value as a prefix to password and generated hash with this valu
 
 This time hash value can not be founded. Because this combination is not a “most used password” combination now. By doing this, sensitive data is prefixed with a randomly generated character set, which is known as  **salting**. You can store salt value with a new column in database. Additionally if you prefer same thing as postfix and store value in file system/object storage, that called as  **peppering**.
 
-# Separation of Auth Schema
+{% include feed-ici-yazi-1.html %}
+
+## Separation of Auth Schema
 
 Security of a system must be designed layer by layer, as an onion. If an attacker gets access to a layer, other layers must be still safe.
 
@@ -66,7 +67,7 @@ Imagine that, we have a system that secured by JWT tokens. All of our business s
 
 For this reason we prefer to separate auth tables to different db schema. This isolation has one more advantage. With this isolation you can decrease risk of internal users. You can keep this scheme under control by allowing access to a limited number of people.
 
-# Work Factors
+## Work Factors
 
 By the simplest definition, running hash function n times with output as input of previous execution. There are different algorithms that uses this logic internally(PBKDF2 etc).
 
@@ -74,7 +75,7 @@ The main purpose of this method is to increase CPU cost and making it more diffi
 
 {% include feed-ici-yazi-1.html %}
 
-# Vaults
+## Vaults
 
 Vaults are big topic that can be explained in a different story but i will provide a brief summary. Vaults are ID and access management tools. Not only passwords, you can store certificates, sensitive files, API keys, DB passwords etc. You can generate access scenarios to this assets, e.g “there should be 3 different user tokens to unseal vault”.
 
@@ -84,6 +85,6 @@ Security is not only software issue, at the same time it is an architecture issu
 -   [https://www.cyberark.com/](https://www.cyberark.com/)
 -   [https://www.beyondtrust.com/](https://www.beyondtrust.com/)
 
-# Conclusion
+## Conclusion
 
 Don’t forget to keep up with the  [OWASP](https://owasp.org/)  website as new vulnerabilities are emerging every day.

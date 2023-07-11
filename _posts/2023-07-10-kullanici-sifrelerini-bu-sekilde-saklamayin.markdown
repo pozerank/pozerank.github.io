@@ -17,9 +17,7 @@ Son kullanıcı şifrelerinin güvenli bir şekilde saklanması önemli konulard
 
 ![](https://miro.medium.com/v2/resize:fit:1400/1*51yiQNFp5KyP3ncI5-zVJA.jpeg)
 
-{% include feed-ici-yazi-1.html %}
-
-# Encrypting Yerine Hash Fonksiyonu Kullanın
+## Encrypting Yerine Hash Fonksiyonu Kullanın
 
 Hep duyduğunuz bir başlık ve yazımızı kalabalıklaştıracak olsa da halen örneklerini gördüğüm için değinmeden geçmeyeceğim.
 
@@ -33,7 +31,7 @@ Secure Hash Algorithm 1 (SHA-1) ve MD5 collision problemi bulunduğu için güve
 
 {% include feed-ici-yazi-2.html %}
 
-# Hashleyerek Sakladık, Güvende Miyiz?
+## Hashleyerek Sakladık, Güvende Miyiz?
 
 Peki şifrelerimizi hashleyerek sakladık, kendimizi artık güvende hissedebilir miyiz? Sorumuzun cevabı, evet daha iyi bir noktadayız ancak henüz güvenli hissetmemeliyiz.
 
@@ -51,7 +49,7 @@ Farkındaysanız hashing her input için tekil bir digest oluşturma mantığın
 
 Bu sebeple bu hashlerin üzerinde biraz daha fazla düşünmeye ihtiyacımız var.
 
-# Salting & Peppering
+## Salting & Peppering
 
 Salting mantığı, kullanıcının şifresini hashlemeden önce başına random bir karakter setinin eklenmesi mantığından geliyor. Hemen yine örnekten bakalım.
 
@@ -67,7 +65,9 @@ Kafanızda şu soru oluşmuş olabilir, peki salt nerede saklanacak? User tablos
 
 Yine de eşeği daha da sağlam kazığa bağlayalım derseniz, passwordün sonuna aynı saltlamada olduğu gibi bir değer daha ekler ve bu değeri de db yerine farklı bir persistency unitte saklamayı tercih ederseniz(file system, object storage vb) bu da peppering olarak isimlendiriliyor.
 
-# Auth Schema Ayırma
+{% include feed-ici-yazi-1.html %}
+
+## Auth Schema Ayırma
 
 Güvenlik konusu her zaman katman katman ele alınır. Bir sistemdeki kullanıcıların salting/peppering’den geçmiş güvenli bir algoritma tarafından yaratılmış hashli credentiallarının açığa çıkması kurum açısından bir prestij kaybı yaratsa da attackerların sisteme o kullanıcılar gibi giriş yapıp onların hesaplarından işlem gerçekleştirmeleri gibi kaotik problemlerle kıyaslandığında çok daha hafif sayılabilecek bir durumdur. Bir katman ele geçirilse de sonraki daha kritik katmanlar bir şekilde güvende kalacaktır.
 
@@ -75,7 +75,7 @@ Benzer şekilde bir sistemin dışarıdan en saldırıya açık endpointleri aut
 
 İşte bu gibi senaryoların riskini minimize etmek için kritik sistemlerdeki Auth tablolarını sistemin fonksiyonel gereksinimlerini karşılayan db schemasından izole etmek ve ayrı bir schemada konumlandırmak iyi bir tercihtir. Güvenlik sebeplerinin yanı sıra operasyonel yönetim ihtiyaçlarında da erişimi kısıtlı ve izole tutmak faydalı olacaktır.
 
-# Work Factors
+## Work Factors
 
 Farkettiyseniz güvenlik kavramı attackerın gözüyle bakıldığında sürekli bir şeyleri daha da zorlaştırmak ve ihtimalleri düşürmek üzerine kurulu. Hiçbir sistem %100 güvenli değildir ancak yapacağınız basit bir hamle ile attackera günler, haftalar kaybettirebilirsiniz. Bu gibi durumlarda da genellikle attackerlar başka sistemlere gözünü kaydırmaya başlayacaktır.
 
@@ -87,7 +87,7 @@ Dikkat edilmesi gereken bir nokta, hashlemenin bir zaman & cpu maliyeti var ve o
 
 {% include feed-ici-yazi-1.html %}
 
-# Vaultlar
+## Vaultlar
 
 Son olarak, vaultlar apayrı bir yazının konusu olabilecek kadar geniş bir konu olsa da kısaca bahsetmekte yarar bulunuyor. Vaultlar identity ve access management için uçtan uca düşünülmüş bağımsız çözümlerdir. İşinizin doğası bu tarz bir ürünle çalışmaya uygun ise kullanıcı yönetimini uygulamanızdan bağımsız ayrı bir noktada yönetmek birçok açıdan avantaj sağlayabilir. Vaultlar sadece password için değil sertifikalar, güvenliği kritik dosyalar, API anahtarları, db şifreleri gibi daha geniş kullanım alanlarına sahiptir. Farklı senaryolar kurgulayabilirsiniz, örneğin bir vault u unseal edebilmek için 3 farklı kişinin passwordü sırayla girilirse vault açılır vb gibi.
 
@@ -97,6 +97,6 @@ Güvenlik sadece yazılımda değil mimaride de dikkatli değerlendirilmesi gere
 -   [https://www.cyberark.com/](https://www.cyberark.com/)
 -   [https://www.beyondtrust.com/](https://www.beyondtrust.com/)
 
-# Sonuç
+## Sonuç
 
 Yazıda bahsettiğimiz başlıklara dikkat etmek birçok açıdan uygulamalarımızı daha güvenilir hale getirecektir. Ancak her gün yeni güvenlik açıkları ortaya çıktığı için  [OWASP](https://owasp.org/)  web sitesini takip etmeyi unutmayın.
