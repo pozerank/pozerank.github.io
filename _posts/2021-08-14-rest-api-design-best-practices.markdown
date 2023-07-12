@@ -172,8 +172,6 @@ PATCH metodu bir kaynağa kısmi değişiklikler uygulamak için kullanılır.
     <!doctype html><head><meta charset="utf-8"><title>Greeting</title></head>   
     <body><div id="greeting">Hello   World!</div></body></html>
 
-{% include feed-ici-imaj-2.html %}
-
 ### HTTP Metotları Etkileşimi Kuralları
 
 -   **15#** GET ve POST metodları diğer http metodlarının ihtiyacını karşılamak üzere kullanılmamalıdır. Her metod kendi amacıyla kullanılmalıdır.

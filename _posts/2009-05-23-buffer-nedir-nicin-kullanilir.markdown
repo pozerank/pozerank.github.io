@@ -13,6 +13,4 @@ Buffer (tampon saha), verilerin IO işlemlerinden sonra belleğe yazılmadan ön
 
 Bu olayı bir örnekle pekiştirelim. Günümüzde neredeyse herkesin artık bir fotoğraf makinesi veya fotoğraf çeken aygıtları vardır. Ortalama çözünürlüklü bir fotoğraf çekildiğini varsayalım. Bu fotoğrafın ortalama boyutu 2,5-4 MB arasında olması beklenir. Bu boyuttaki verinin belleğe alınması da tahmin edileceği gibi uzun bir zaman alacaktır. İşte buffer sayesinde veriler bir taraftan belleğe kaydedilirken diğer taraftan bufferımızın boyutuna göre başka resimler de çekebilme olanağını elde etmiş oluyoruz. Hem zamandan kazanmış oluyoruz hem de arka planda sistemi az sayıda çok miktar verilerle çağırdığımızdan sistemi daha az yormuş oluyoruz.
 
-{% include feed-ici-imaj-2.html %}
-
 Mevcut bufferımızın büyüklüğü ile bizim ardı ardına yapabileceğimiz iş sayısı artış gösterebilmektedir. Bu sebeple bufferın büyüklüğünün fazla olması lehimize bir durumdur.

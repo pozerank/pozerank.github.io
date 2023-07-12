@@ -44,8 +44,6 @@ Yukarıdaki cümleye bakılırsa **herhangi bir yerde çalıştırılabilmesi** 
 
 ![http://canacopegdl.com/file/images/cumbersome/cumbersome-13.html](https://miro.medium.com/max/633/0*mf0v1GtnXoEpVUN9.jpg)
 
-{% include feed-ici-imaj-1.html %}
-
 Yazılan Java kodunun farklı işletim sistemlerinde, mimarilerde çalışabilmesi için aslında hatrı sayılır şeylerden feragat edilmesi gerekmektedir. Derlenmiş kodumuzun çalıştırılmasından sorumlu [Java Runtime Environment](https://www.java.com/en/download/faq/whatis_java.xml)’da(JRE) bu sebepten çok fazla kaynak ve kod bulunmaktadır. **Örneğin** [**OpenJDK**](https://wiki.openjdk.java.net/)**’nın base image’ı 250MB’dan daha büyüktür**. Şirketler genellikle mikroservis mimariye uygun kod geliştirebilmek için [**Spring**](https://spring.io/) **teknolojilerini kullanarak kod geliştirdiği varsayımı ile ilerlersek kodumuzun çalışabildiği containerın boyutu en azından yaklaşık 450–500MB’lar civarında olacaktır.** Bu boyutlar [disposability](https://www.mehmetcemyucel.com/2019/twelve-factor-nedir-turkce-ornek/) prensibinden dolayı tercih etmediğimiz bir durumdur. Çünkü büyük boyutlardaki containerların ayağa kalkması uzun sürmektedir. Peki ne yapabiliriz? Sırtımızdaki yükten nasıl kurtulabiliriz?
 
 ### 3.1. Just in Time (JIT) vs Ahead of Time (AOT) Compilers
@@ -78,8 +76,6 @@ GraalVM bir önceki başlıkta sunulan her şeyi sunuyor. Ancak native image kul
 
 Bildiğiniz gibi Spring, [Inversion of Control](https://en.wikipedia.org/wiki/Inversion_of_control) (IoC) prensibi ile çalışmaktadır. Diğer adıyla [Dependency Injection](https://en.wikipedia.org/wiki/Dependency_injection) (DI) olarak bildiğimiz yapıda tanımladığımız singleton Spring Bean’leri `ApplicationContext`tarafından preload edilir ve runtime’da ne zaman `getBean()` metodu çağırılırsa `lazy loading` ile `BeanFactory` tarafından bean örneği yaratılır. Bütün bu süreçte de bildiğiniz gibi reflection kullanılmaktadır :) Yani eğer native image kullanma düşüncesindeyseniz çalışma mantığını düşündüğümüzde Spring bunun için uyumlu bir seçenek olmayacaktır. Spring ile native image kullanmayı sağlamak için farklı projelere rastlayabilirsiniz, şu an için verimli bir çözüm olmamakla birlikte belki de çözüm için farklı alternatifleri düşünmenin vakti gelmiştir, ne dersiniz?
 
-{% include feed-ici-imaj-2.html %}
-
 ## 5. Quarkus
 
 ![](https://miro.medium.com/max/1040/0*GIhOwWtCvkPXqmsB.jpg)
@@ -105,8 +101,6 @@ Bazı rakamsal kıyasları yapmadan olmazdı. `**JDK8**` için **OpenJDK** ve **
 Spring projesi ayağa kalkabilmek için **minimum 13MB belleğe** ihtiyaç duydu. Bu minimum bellek ile ayağa kalkarken **ayağa kalkış süresi yaklaşık 4–4,5 sn** aralığında sürdü.
 
 ![](https://miro.medium.com/max/1664/1*K2DMyYUbp_JFhq3HlRdVww.png)
-
-{% include feed-ici-imaj-3.html %}
 
 **Aynı kaynakla (13MB) Quarkus projesi**ni JIT derleyici ile HotSpot modda ayağa kaldırdığımda ortalama **ayağa kalkma süresi 600ms civarlarında** dolaştı.
 

@@ -10,8 +10,6 @@ Projelerimde artık olmazsa olmaz haline gelen Lombok’u Spring Tool Suite veya
 
 ![](https://miro.medium.com/max/1500/1*v_NiWtOaQEt5plnvrPLf_g.jpeg)
 
-{% include feed-ici-imaj-1.html %}
-
 ## 1. Lombok IDE Entegrasyonu
 
 Gelelim Eclipse’imize Lombok’u entegre etmeye. [Project Lombok](https://projectlombok.org/download) sayfasına gidip son versiyonu indiriyoruz. Dosyamızı indirdiğimiz dizinde `java -jar lombok.jar` komutunu çalıştırarak Lombok arayüzünü açıyoruz. Açılan pencerede `Specify Location` butonunu tıklayarak Eclipse’imizin bulunduğu dizini(exe dosyasının bulunduğu yer) göstererek IDE’s alanında Eclipse’imizin görünmesini sağlıyoruz. Sonrasında `Install/Update` butonu ile işlemimizi tamamlıyoruz.

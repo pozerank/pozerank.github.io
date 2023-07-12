@@ -79,8 +79,6 @@ Aşağıdaki testleri çalıştırarak senaryomuzun çalıştığını gözlemle
 
 <script src="https://gist.github.com/mehmetcemyucel/afe34f23c9e7b2a921315438e5979ec6.js"></script>
 
-{% include feed-ici-imaj-1.html %}
-
 ## 5. Alan Alan Eşitleyici
 
 Aynı veri tipindeki farklı field isimlerine sahip sınıfları eşitlemek de mümkündür. Bunun için aşağıdaki sınıfları oluşturalım.
@@ -97,8 +95,6 @@ Değişken isimlerimiz farklı ancak alan tiplerimiz aynı ise aşağıdaki gibi
 
 <script src="https://gist.github.com/mehmetcemyucel/2534c4ec908a3445bbc3d0ae9a6111a7.js"></script>
 
-{% include feed-ici-imaj-2.html %}
-
 @Mappings annotation’ı ile tek tek hangi alanın hedef sınıftaki hangi alana eşitlenmesini istediğimizi belirtiyoruz.
 
 ### 5.3. Test Senaryosu
@@ -114,8 +110,6 @@ Sadece aynı tipte olması gerekmeksizin farklı değerlere ve isimlere sahip s�
 <script src="https://gist.github.com/mehmetcemyucel/cd14bf48628bf990c07dfe1859ef9b56.js"></script>
 
 <script src="https://gist.github.com/mehmetcemyucel/c9a20b0db9137fa3deca41dcc8e845ed.js"></script>
-
-{% include feed-ici-imaj-3.html %}
 
 ### 6.2. Mapper Arayüzü
 

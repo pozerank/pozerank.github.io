@@ -30,8 +30,6 @@ Post metod açan bu sınıfımızın testini nasıl yazmalıyız? Google'da "spr
 
 ![](https://cdn-images-1.medium.com/max/873/1*R1g_-Lyj95XwmNAbK3ElnQ.png)
 
-{% include feed-ici-imaj-1.html %}
-
 ### 2.1 Web Context Entegrasyon Testi
 
 Bu 5 sitedeki yöntemler aşağı yukarı aynı. Autowire edilmiş bir MockMvc ile ya tüm Spring Application Context ayağa kaldırılıyor, ya da sadece Web Context ve bu context'e bağımlı beanler ayağa kaldırılıyor. Ben tüm application context yerine daha hızlı olan sadece web contexti ve bunlara bağlı beanleri ayağa kaldıracak şekilde aşağıdaki test sınıfını yazdım.

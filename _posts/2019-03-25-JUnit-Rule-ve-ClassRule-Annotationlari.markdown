@@ -99,8 +99,6 @@ Custom bir rule yazmak için ihtiyacımız TestRule interface’ini ve onun appl
 
 <script src="https://gist.github.com/mehmetcemyucel/4932ee2ee8e715ac4a7441d4f9df23bb.js"></script>
 
-{% include feed-ici-imaj-1.html %}
-
 ### 2.8. Custom Rule - MockInitRule
 
 Başka bir örnek olarak mocklarınızın initiation işlemini ortaklaştıran bir rule yazabilirsiniz. Örneğin bir servisiniz ve bu servisinizin bağımlı olduğu başka bir servisiniz olsun.
@@ -115,8 +113,6 @@ Burada @Mock annotationı ile işaretlenen servisin instance’ının bağlanmas
 
 <script src="https://gist.github.com/mehmetcemyucel/175f4f3eb47f10e1d7402f843deccc15.js"></script>
 
-{% include feed-ici-imaj-2.html %}
-
 Ayrıca tekrar kullanılabilir bir davranış seti oluşturmak istiyorsak da yukarıdaki MockInitRule sınıfını extend eden bir sınıf yazabiliriz. Constructorda davranış setini verdiğimiz taktirde artık tekrar tekrar kullanabileceğimiz bir mock setini hazırlamış oluruz.
 
 <script src="https://gist.github.com/mehmetcemyucel/6eca28313c990ace0f165b4aab404c33.js"></script>
@@ -130,8 +126,6 @@ Son örnek olarak **ExternalResource** kavramından bahsedelim. Örneğin testle
 Bunu kullanan testimiz;
 
 <script src="https://gist.github.com/mehmetcemyucel/fac4cc94b1255cc49c8c703a05c76653.js"></script>
-
-{% include feed-ici-imaj-3.html %}
 
 Ve son olarak çıktımız;
 

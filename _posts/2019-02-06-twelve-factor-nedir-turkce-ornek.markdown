@@ -163,8 +163,6 @@ Aslında concurrency’nin konularının bir kısmına önceki başlıklarda de�
 
 Örneğin uygulamamızın [**slashdot-effect**](https://www.google.com.tr/url?sa=t&rct=j&q=&esrc=s&source=web&cd=1&cad=rja&uact=8&ved=0ahUKEwidppHasOvZAhVMjCwKHXQfDnkQFggoMAA&url=https%3A%2F%2Ftr.wikipedia.org%2Fwiki%2FSlashdot_etkisi&usg=AOvVaw1C0-ZUS0-qxr_UP85O7bvg)’e maruz kaldığını varsayalım. Uygulamanın processlerini bu şekilde ele almak yoğun yük altında bu sistemin **bottleneck**(dar boğaz) yaşadığı process grubunda ölçekleri büyüterek eldeki işlem gücü kaynağının sıkışan noktada kullanılması konusunda esneklik sağlayacaktır. Ayrıca processler çökmüş veya cevap veremez hale gelmiş ise, ürettiği output streamlere(loglar) göre stabilitesi bozulmuş ise süreç yönetici araçlar veya kişilerce kapatılabilecek, tekrar başlatılabilecek yapıda kurgulanmalıdır. Son olarak 12 Factor bir uygulamada processler **daemon** olarak tanımlanmamalıdır. Daemon kavramı ile ilgili yazıma [buradan](http://www.mehmetcemyucel.com/2015/08/java-daemon-thread.html) göz atabilirsiniz.
 
-{% include feed-ici-imaj-1.html %}
-
 # 9. Disposability (Kullanıma Hazır Olma Durumu)
 
 12 Factor bir uygulamada processler anlık bir tetikleme ile başlatılabilir veya durdurulabilir yapıda olmalıdır. Kendisine gelen requestleri de kayıpsız şekilde işleyebilmelidir. Çok basit gibi gözüken bu cümle aslında bir o kadar komplekstir.

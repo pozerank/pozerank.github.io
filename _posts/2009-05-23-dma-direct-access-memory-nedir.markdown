@@ -21,6 +21,4 @@ Bir örnekle açıklamak gerekirse, örneğin oyun oynarken bilgisayarımız gö
 - Veri akışı bittiğinde akışı sonlandıran aygıt merkezi işlem birimine bir kesme ile bunu haber verir.  
 - Merkezi işlem birimi bu kesme doğrultusunda DMA’yı ya sonlandırır ya da ona başka bir işlem emri verir.
 
-{% include feed-ici-imaj-1.html %}
-
 Yukarıda da görüldüğü gibi merkezi işlem birimi DMA’yı yarattıktan sonra başka süreçlerle ilgilenebilmiş, böylece sistem işleyişine devam edebilmiştir. Bilgisayarlarımızda 8 adet DMA kanalı bulunmaktadır. İlk 4ü 8 bitlik, diğer 16 bitlik veriyi taşıyabilmektedir. Merkezi işlem birimi aynı anda birden fazla DMA yaratamaz çünkü böyle bir durumda verilerin transfer edileceği adreslerde çakışmalar olacaktır. Bu sebeple DMA’yı kullanacak olan işlemler birbirlerini beklemek zorundadır.

@@ -86,8 +86,6 @@ Burada **Create** butonunu tıklayarak uygulamamıza client yaratacağız. Sprin
 
 ![](https://miro.medium.com/max/1600/1*kX1nqa-jFDvdaJ7leIbLXQ.png)
 
-{% include feed-ici-imaj-1.html %}
-
 Sonraki adımımızda clientımızı yapılandırmamız gerekli. Bizim senaryomuz bir frontend uygulaması tarafından **Users** login edip onların ekran üzerindeki credentiallarıyla ilgili bir deneme yapmak değil. Servislerimizin sadece uygulamamıza verilen yetkiler kapsamında çağırılabildiğini test etmek istiyoruz. Bu sebeple **Access Type** alanımızı **confidential**, **Service Accounts Enabled** ve **Authorization Enabled** alanlarını **On** yapıyoruz. Aşağıya kaydırıp **Save** butonuna tıkladıktan sonra ekranda yeni tablarımız belirecek.
 
 ![](https://miro.medium.com/max/1599/1*110ZLxjsHUM_k_1-97utGg.png)
@@ -99,8 +97,6 @@ Kaydettikten sonra çıkan **Service Account Roles** tabına geçerek uygulamam�
 Son olarak **Credentials** tabına giderek uygulamamız için yaratılan **Secret**’ı kopyalıyoruz. Bu secret’ı uygulamamıza vermemiz gerekecek.
 
 ![](https://miro.medium.com/max/1599/1*IyaUMl3klJMNCkb98BI6UA.png)
-
-{% include feed-ici-imaj-2.html %}
 
 ## 3. Spring Boot Uygulaması
 
@@ -127,8 +123,6 @@ Hatırlarsanız Keycloak ile uygulamamızın portlarını değiştireceğimizden
 Uygulamamızın Keycloak’u ve uygulamamıza erişim yöntemlerini yapılandırmak için aşağıdaki sınıfa ihtiyacımız var.
 
 <script src="https://gist.github.com/mehmetcemyucel/ea3715d26d16d87479b9bbbef772aa80.js"></script>
-
-{% include feed-ici-imaj-3.html %}
 
 Burada **PreAuthorize** annotation’ı kullanılan servislerin haricinde tüm servislere erişim hakkı vermemizin sebebi birazdan controller’ımıza ekleyeceğimiz yeni metodların direk erişilebilir olmasını istememizden kaynaklanıyor.
 

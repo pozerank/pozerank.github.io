@@ -70,8 +70,6 @@ Burada projenin Spring AOT tarafından derlenmeye çalışıldığını ancak ha
 
 ![](https://cdn-images-1.medium.com/max/800/1*mj3FdOe2RvDPDNssaTJuxA.png)
 
-{% include feed-ici-imaj-1.html %}
-
 Şu anda IntelliJ’nin Run butonuna bastığımızda ilk önce yukarıda yapılandırmasını yaptığımız build çalışıyor.
 
 	-Dmaven.multiModuleProjectDirectory=C:\Users\PC\Desktop\mcy\spring-native-example -Dmaven.home=C:\dvlp\intellij\plugins\maven\lib\maven3 -Dclassworlds.conf=C:\dvlp\intellij\plugins\maven\lib\maven3\bin\m2.conf -Dmaven.ext.class.path=C:\dvlp\intellij\plugins\maven\lib\maven-event-listener.jar -Dfile.encoding=UTF-8 -classpath C:\dvlp\intellij\plugins\maven\lib\maven3\boot\plexus-classworlds-2.6.0.jar org.codehaus.classworlds.Launcher -Didea.version2019.2.3 org.springframework.experimental:spring-aot-maven-plugin:0.9.1:generate  
@@ -403,8 +401,6 @@ Bu işlem esnasında ortam değişkenleri, sertifikalar için trustedstore yapı
 Logdaki sonraki bold kısımlar GraalVM’in native kodu oluşturduğu kısımlar. Burada yapılan işlemler başka bir yazımızın konusu olabilir. Sonrasında da image layerları hazırlanıp imajımızın son hali oluşturuluyor. Oluşan imajımızı docker images komutu ile görebiliriz.
 
 ![](https://cdn-images-1.medium.com/max/800/1*68K2L6In4rGELacTZTCJEQ.png)
-
-{% include feed-ici-imaj-2.html %}
 
 Yeni imajımızı çalıştıralım. Komutumuz:
 
