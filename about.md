@@ -1,24 +1,25 @@
 ---
 layout: about
-title: Hakkımda
+title: About
 permalink: /about/
 robots: all
 ---
 ## Mehmet Cem Yücel
-Okumaya, öğrenmeye ve devamlı gelişmeye inanan; bilgiye ve insana saygıya önem veren bir kişiyim. Bilgi paylaşımının önemine inanıyorum, bu sebeple 2009'dan beri farklı yollarla bilgi ve tecrübelerimi aktarmayı tercih ediyorum.
+I believe in reading, learning, and continuous improvement; I am someone who values knowledge and respects others. I believe in the importance of sharing information, which is why since 2009, I have chosen to share my knowledge and experiences through various means.
 
-## Çalışma Geçmişim
+## Experiences
+- *2022 - Akinon*
 - *2022 - N11.com*
 - *2020 - Cigna*
 - *2019 - Trendyol*
-- *2017 - Kredi Kayıt Bürosu*
+- *2017 - Credit Bureau of Turkey*
 - *2013 - Akbank*
 - *2010 - Turkcell*
-- *2006 - Ege Üniversitesi Bilgisayar Mühendisliği*
+- *2006 - Ege University Computer Engineering*
 
 ---
 
-## İlgi alanlarım
+## Interests
 
 - Cloud Computing ve Microservice Architecture
 	- [CQRS](https://martinfowler.com/bliki/CQRS.html), [Event Sourcing](https://martinfowler.com/eaaDev/EventSourcing.html), Distributed Systems & Management
@@ -41,8 +42,6 @@ Okumaya, öğrenmeye ve devamlı gelişmeye inanan; bilgiye ve insana saygıya �
 
 ---
 
-İletişim için [admin@mehmetcemyucel.com](mailto:admin@mehmetcemyucel.com) ya da [mehmetcemyucel@outlook.com](mailto:mehmetcemyucel@outlook.com) adreslerini kullanabilir ya da sosyal medya üzerinden her konuda iletişime geçebilirsiniz.
-
-{% include feed-ici-imaj-1.html %}
+For communication [mehmetcemyucel@outlook.com](mailto:mehmetcemyucel@outlook.com) 
 
 ---
