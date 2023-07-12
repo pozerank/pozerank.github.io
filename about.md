@@ -8,13 +8,13 @@ robots: all
 I believe in reading, learning, and continuous improvement; I am someone who values knowledge and respects others. I believe in the importance of sharing information, which is why since 2009, I have chosen to share my knowledge and experiences through various means.
 
 ## Experiences
-- *2022 - Akinon*
-- *2022 - N11.com*
-- *2020 - Cigna*
-- *2019 - Trendyol*
-- *2017 - Credit Bureau of Turkey*
-- *2013 - Akbank*
-- *2010 - Turkcell*
+- *2022 - Akinon - (e-commerce provider)*
+- *2022 - N11.com - (e-commerce)*
+- *2020 - Cigna - (insurance)*
+- *2019 - Trendyol - (e-commerce)*
+- *2017 - Credit Bureau of Turkey - (banking)*
+- *2013 - Akbank - (banking)*
+- *2010 - Turkcell - (telecommunication)*
 - *2006 - Ege University Computer Engineering*
 
 ---
