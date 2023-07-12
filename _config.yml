@@ -20,11 +20,11 @@ author:
 adsense:
   opened: true
   feed_ici:
-    opened: true
+    opened: false
   yazi_ici:
-    opened: true
+    opened: false
   goruntulu:
-    opened: true
+    opened: false
   arama:
     opened: true
   
