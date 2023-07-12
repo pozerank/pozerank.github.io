@@ -1,7 +1,7 @@
 ---
 title:  "Alternatif JVM’ler ve Javanın Geleceği Podcasti"
 date:   2019-12-22 15:04:23
-categories: [java, jvm, quarkus, microservices, graalvm, mimari]
+categories: [java, jvm, quarkus, microservices, graalvm, architecture]
 tags: [podcast, istanbul, jug, garbage, collector, hotspot, openjdk, quarkus, amazon, corretto, openj9, graalvm, llvm, java, jvm, podcast, ahead of time, just in time, türkçe, yazılım, blog, blogger, nedir, örnek, nasıl yapılır, mehmet cem yücel]
 image: https://miro.medium.com/max/150/1*gp7kdBQxRzDUmAMRa74LEg.png
 ---

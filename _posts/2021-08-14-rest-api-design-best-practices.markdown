@@ -1,7 +1,7 @@
 ---
 title:  "Rest Api Design Best Practices"
 date:   2021-08-14 21:24:23
-categories: [mimari, java, spring, jvm, spring boot]
+categories: [architecture, java, spring, jvm, spring boot]
 tags: [rest, api, design, best, practices, http, service, web service, rest service, design, tasarım, java, spring boot, mikroservis, microservice, kubernetes,  türkçe, yazılım, blog, blogger, nedir, örnek, nasıl yapılır, mehmet cem yücel]
 image: https://miro.medium.com/max/150/1*mdijc3xUzEbA2XuyBW5SWg.png
 ---

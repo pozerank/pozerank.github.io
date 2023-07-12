@@ -1,7 +1,7 @@
 ---
 title:  "Golang Api Management"
 date:   2022-05-16 10:00:00
-categories: [mimari, go, microservices]
+categories: [architecture, go, microservices]
 tags: [go, golang, rest, api, design, best, practices, http, service, web service, design, tasarım, java, spring boot, mikroservis, microservice, kubernetes,  türkçe, yazılım, blog, blogger, nedir, örnek, nasıl yapılır, mehmet cem yücel]
 image: https://miro.medium.com/max/150/1*hV308VnNWS1xlrSaztOHkw.png
 ---

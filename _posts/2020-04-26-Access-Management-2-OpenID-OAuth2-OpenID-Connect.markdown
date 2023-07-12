@@ -1,7 +1,7 @@
 ---
 title:  "Access Management 2-OpenID OAuth2 OpenID Connect"
 date:   2020-04-26 19:04:23
-categories: [mimari, security]
+categories: [architecture, security]
 tags: [sso, authentication, authorization, single sign on, keycloak, kerberos, oauth2, oauth, openid connect, protokol, federation, türkçe, yazılım, blog, blogger, nedir, örnek, nasıl yapılır, mehmet cem yücel]
 image: https://miro.medium.com/max/150/0*ipuyew2--zak9w2i.png
 ---

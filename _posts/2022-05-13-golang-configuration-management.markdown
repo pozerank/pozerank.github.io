@@ -1,7 +1,7 @@
 ---
 title:  "Golang Configuration Management"
 date:   2022-05-13 10:00:00
-categories: [mimari, go, microservices]
+categories: [architecture, go, microservices]
 tags: [go, golang, rest, api, design, best, practices, http, service, web service, design, tasarım, java, spring boot, mikroservis, microservice, kubernetes,  türkçe, yazılım, blog, blogger, nedir, örnek, nasıl yapılır, mehmet cem yücel]
 image: https://miro.medium.com/max/150/0*mOD5OS5YTXwx-Vd-.png
 ---

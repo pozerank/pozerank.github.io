@@ -1,7 +1,7 @@
 ---
 title:  "Access Management 3-SSO SAML Kerberos User Federation"
 date:   2020-04-26 21:04:23
-categories: [mimari, security]
+categories: [architecture, security]
 tags: [sso, authentication, authorization, single sign on, keycloak, kerberos, oauth2, oauth, openid, connect, ldap, federation, türkçe, yazılım, blog, blogger, nedir, örnek, nasıl yapılır, mehmet cem yücel]
 image: https://miro.medium.com/max/150/0*tA4cZb1i9Mxds-Uz
 ---

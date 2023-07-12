@@ -1,7 +1,7 @@
 ---
 title:  "Do Not Store User Passwords in This Way"
 date:   2023-07-10 11:00:00
-categories: [mimari, security, tools, english]
+categories: [architecture, security, tools, english]
 tags: [user credentials, store, passwords, encryption, decryption hashing, digest, SHA-256, SHA512, MD5, is safe, rainbow tables, salt, salting, peppering, schema, vault, english, mehmet cem yucel]
 image: https://miro.medium.com/v2/resize:fit:150/1*51yiQNFp5KyP3ncI5-zVJA.jpeg
 ---

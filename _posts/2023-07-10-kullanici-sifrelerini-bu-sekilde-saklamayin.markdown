@@ -1,7 +1,7 @@
 ---
 title:  "Kullanıcı Şifrelerini Bu Şekilde Saklamayın"
 date:   2023-07-10 12:00:00
-categories: [mimari, security, tools]
+categories: [architecture, security, tools]
 tags: [encryption, hashing, digest, SHA-256, SHA512, MD5, güvenilir mi, rainbow tables, salt, salting, tuzlama, peppering, schema, vault, türkçe, mehmet cem yücel]
 image: https://miro.medium.com/v2/resize:fit:150/1*51yiQNFp5KyP3ncI5-zVJA.jpeg
 ---

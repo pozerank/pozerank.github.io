@@ -1,7 +1,7 @@
 ---
 title:  "Access Management 1-XACML Authorization Authentication"
 date:   2020-04-26 17:04:23
-categories: [mimari, security]
+categories: [architecture, security]
 tags: [authentication, authorization, keycloak, xacml, sso, oauth2, oauth, openid connect, protokol, spring, security, türkçe, yazılım, blog, blogger, nedir, örnek, nasıl yapılır, mehmet cem yücel]
 image: https://miro.medium.com/max/150/1*AevTigjmr7CmH-RV_OtzNA.png
 ---

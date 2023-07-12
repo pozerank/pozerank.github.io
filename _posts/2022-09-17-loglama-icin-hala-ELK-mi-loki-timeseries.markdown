@@ -1,7 +1,7 @@
 ---
 title:  "Loglama İçin Hala ELK Mı Kullanıyorsunuz 1- Loki ve Time Series Databaseler"
 date:   2022-09-17 10:00:00
-categories: [mimari, microservices]
+categories: [architecture, microservices]
 tags: [loki, elk, timeseries, api, design, best, practices, http, service, web service, design, tasarım, database, loglama, mikroservis, microservice, kubernetes,  türkçe, yazılım, blog, blogger, nedir, örnek, nasıl yapılır, mehmet cem yücel]
 image: https://miro.medium.com/max/150/1*D_Yu51tJZBK70suixBWPlQ.jpeg
 ---

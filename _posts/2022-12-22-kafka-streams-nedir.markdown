@@ -1,7 +1,7 @@
 ---
 title:  "Kafka Streams Nedir"
 date:   2022-12-22 10:00:00
-categories: [mimari, microservices, java, spring, spring boot]
+categories: [architecture, microservices, java, spring, spring boot]
 tags: [kafka, streams, topic, queue, api, design, best, practices, http, service, message broker, design, tasarım,  mikroservis, microservice, kubernetes,  türkçe, yazılım, blog, nedir, örnek, nasıl yapılır, mehmet cem yücel]
 image: https://miro.medium.com/max/150/1*gNhxKQM1FtjzVsJf0UVTkg.webp
 ---

@@ -1,7 +1,7 @@
 ---
 title:  "Spring ve Java Hantal Mı - GraalVM ve Quarkus’a Giriş"
 date:   2019-08-15 15:04:23
-categories: [java, docker, jvm, spring, spring boot, quarkus, microservices, cloud, graalvm, mimari]
+categories: [java, docker, jvm, spring, spring boot, quarkus, microservices, cloud, graalvm, architecture]
 tags: [quarkus, java, spring boot, graalvm, mikroservis, microservice, kubernetes, ahead of time, aot, just in time, jit, compiler, native, image, docker, türkçe, yazılım, blog, blogger, nedir, örnek, nasıl yapılır, mehmet cem yücel]
 image: https://miro.medium.com/max/150/0*mf0v1GtnXoEpVUN9.jpg
 ---

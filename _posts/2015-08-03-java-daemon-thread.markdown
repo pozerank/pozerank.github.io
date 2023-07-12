@@ -1,7 +1,7 @@
 ---
 title:  "Java Daemon Thread"
 date:   2015-08-03 20:04:23
-categories: [jvm, java, mimari]
+categories: [jvm, java, architecture]
 tags: [ java, jvm, daemon, thread, heap, memory bellek]
 ---
 

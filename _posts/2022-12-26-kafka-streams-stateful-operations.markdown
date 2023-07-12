@@ -1,7 +1,7 @@
 ---
 title:  "Kafka Streams Stateful Operations"
 date:   2022-12-26 10:00:00
-categories: [mimari, microservices, java, spring, spring boot]
+categories: [architecture, microservices, java, spring, spring boot]
 tags: [kafka, topic, queue, streams, stateful, operations, ktable, reduce, aggregation, count, design, best, practices, service, message broker, design, mikroservis, microservice, türkçe, yazılım, blog, nedir, örnek, nasıl yapılır, mehmet cem yücel]
 image: https://miro.medium.com/max/150/0*jZhKkFZoAWCuZzs0.webp
 ---

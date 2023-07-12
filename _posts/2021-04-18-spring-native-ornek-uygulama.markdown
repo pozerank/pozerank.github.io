@@ -1,7 +1,7 @@
 ---
 title:  "Spring Native Örnek Uygulama"
 date:   2021-04-18 13:04:23
-categories: [mimari, java, spring, jvm, spring boot, maven, graalvm]
+categories: [architecture, java, spring, jvm, spring boot, maven, graalvm]
 tags: [native, spring native, java, spring boot, graalvm, mikroservis, microservice, kubernetes, ahead of time, just in time, compiler, native, image, docker, türkçe, yazılım, blog, blogger, nedir, örnek, nasıl yapılır, mehmet cem yücel]
 image: https://cdn-images-1.medium.com/max/150/1*uPfmqByjfzpW8Y6iBFrpTg.png
 ---

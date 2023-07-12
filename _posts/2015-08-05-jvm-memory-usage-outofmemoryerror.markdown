@@ -1,7 +1,7 @@
 ---
 title:  "JVM Memory Usage OutOfMemoryError"
 date:   2015-08-05 20:04:23
-categories: [java, jvm, mimari]
+categories: [java, jvm, architecture]
 tags: [ java, jvm, heap, memory, bellek, outofmemoryerror]
 ---
 

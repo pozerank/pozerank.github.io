@@ -1,7 +1,7 @@
 ---
 title:  "Access Management 4-Keycloak"
 date:   2020-05-01 21:04:23
-categories: [mimari, security]
+categories: [architecture, security]
 tags: [keycloak, authentication, authorization, sso, oauth2, saml, kerberos, ldap, oidc, oauth, openid connect, security, türkçe, yazılım, blog, blogger, nedir, örnek, nasıl yapılır, mehmet cem yücel]
 image: https://miro.medium.com/max/150/0*n4KiIGqzdC2PX4QU.png
 ---

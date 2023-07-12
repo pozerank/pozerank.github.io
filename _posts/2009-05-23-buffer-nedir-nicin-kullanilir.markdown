@@ -1,7 +1,7 @@
 ---
 title:  "Buffer Nedir Niçin Kullanılır"
 date:   2009-05-23 20:04:23
-categories: [hardware, mimari]
+categories: [hardware, architecture]
 tags: [bellek, hardware, buffer, saha, tampon, türkçe, yazılım, blog, blogger, mehmet cem yücel]
 ---
 
