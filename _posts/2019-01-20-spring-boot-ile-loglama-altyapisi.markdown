@@ -123,6 +123,8 @@ Sonrasında pom.xml dosyamızın olduğu yerde `mvn clean install -DskipTests` k
 
 ![](https://miro.medium.com/max/1020/1*_60BDrlYohZgyxWj55HfiQ.png)
 
+{% include feed-ici-imaj-1.html %}
+
 Dosyamız pakette olmadığından dolayı jarımız ile aynı pathte veya jarın classpath’inde bulunduğu taktirde boot projemiz ayağa kalkarken bu dosyayı bulup sağlıklı bir şekilde yapılandırmasını tamamlayacaktır. Farklı path’te konumlandıracaksanız jar execute ederken classpath nasıl set edilir şeklinde bir arama ile ilgili yöntemlere ulaşabilirsiniz.
 
 En son olarak `mvn clean test` komutu ile yazdığımız testin çalışıp çalışmadığnı kontrol edebiliriz. Çıktısı aşağıdaki gibi,

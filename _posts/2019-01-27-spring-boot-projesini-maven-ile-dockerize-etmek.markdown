@@ -26,6 +26,8 @@ Bunun sebebi Docker Deamon’ın default ayarlarında güvenlik sebebiyle 2375 n
 
 Bu işlemleri tamamladıktan sonra base imaj olarak seçtiğimiz `java` imajının layerları bilgisayarımızda yoksa indirecek ve imajımız oluşacaktır. Dilerseniz `pom.xml` deki plugin’in configuration kısmında daha fazla detaylar ile özelleştirme yapabilirsiniz veya projenizin root dizininde konumlandıracağınız Dockerfile aracılığıyla build’in alınmasını sağlayabilirsiniz.
 
+{% include feed-ici-imaj-1.html %}
+
 ## 2. Sonuç
 
 Bu işlem sonrasında `docker images` komutu ile imajınızın yaratıldığını görebilirsiniz.

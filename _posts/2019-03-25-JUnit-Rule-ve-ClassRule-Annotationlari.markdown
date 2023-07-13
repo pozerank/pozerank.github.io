@@ -57,8 +57,6 @@ Eğer bu süreçlerle hiç uğraşmayayım, hızlıca asıl odaklanmam gereken k
 
 <script src="https://gist.github.com/mehmetcemyucel/4696c95e3921de093efacbb471fe21f4.js"></script>
 
-{% include feed-ici-yazi-1.html %}
-
 ### 2.3. RuleChain
 
 Her bir testinizi çevreleyen rulelar dizisi oluşturmak isterseniz RuleChain tam size göre! Kullanımını aşağıda görebilirsiniz. (bağımlı olunan LoggingRule sınıfına custom rule örneğinden erişebilirsiniz.)
@@ -70,8 +68,6 @@ Her bir testinizi çevreleyen rulelar dizisi oluşturmak isterseniz RuleChain ta
 Çalışan testlerinizin lifecycle’ındaki her bir statü durumunda aksiyonlar almanızı sağlayabilecek yetenekli bir rule. Testlerinizin çalışma durumunu raporlayabilir, adımları custom kodlarınızla zenginleştirebilirsiniz.
 
 <script src="https://gist.github.com/mehmetcemyucel/c4b692786826d019cce0718eddf5e322.js"></script>
-
-{% include feed-ici-yazi-2.html %}
 
 ### 2.5. ExpectedException
 

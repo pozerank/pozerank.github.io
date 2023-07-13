@@ -68,6 +68,8 @@ Bu output bizim kullanacağımız değer. `cem` içeriğine sahip değişkenimiz
 
 <script src="https://gist.github.com/mehmetcemyucel/77244e9148fc75ff0c7cc03aa6ae27ca.js"></script>
 
+{% include feed-ici-imaj-1.html %}
+
 ### 2.2. Şifrelenmiş Değerin Spring'e Paylaşımı
 Kodumuzu bu haliyle tekrar çalıştırdığımızda karşımıza bir hata geliyor.
 
@@ -89,6 +91,8 @@ Bu şekilde kodumuzu tekrar çalıştırdığımızda konsol çıktımız aşağ
 Dilerseniz kullanılan şifreleme algoritmasını, argüman alma şeklini aşağıdaki gibi custom encryptor tanımlayarak tamamen kontrolünüze de alabilirsiniz.
 
 <script src="https://gist.github.com/mehmetcemyucel/ea932a25248b6a8cc72e16034c02d939.js"></script>
+
+{% include feed-ici-imaj-2.html %}
 
 Bu noktada belirtmemde fayda olan bir konu var. Bu property’ler sadece Spring Boot startup sonrasındaki argümanlarda kullanılmak zorunda değil. Örneğin startup esnasında AutoConfigurable bean’leriniz ayağa kalkacak ve burada gerekli parametreleriniz var ise bunlar da decrpyted olarak bean yaratılma anında kodunuza dahil oluyorlar. Yani daha somut örneğiyle Spring Data JPA kullanıyorsunuz ve DB connection bilgileri size Configuration sınıfınız içerisinde decrpyted olarak lazım ize EncryptablePropertySourceConverter bu configuration sınıfınız çalışmadan gerekli argümanların decryption işlemlerini tamamlayıp size değerlerinizin kullanılabilir hallerini sunuyor.
 

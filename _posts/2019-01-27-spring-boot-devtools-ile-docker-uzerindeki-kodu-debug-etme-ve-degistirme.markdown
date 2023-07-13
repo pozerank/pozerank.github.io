@@ -47,6 +47,8 @@ Projemize bir rest uç açıyoruz. Bu uçtan sorgulamalar yaparak kodumuzun son 
 
 <script src="https://gist.github.com/mehmetcemyucel/3fe9b905a941b05017405f22e9eeb94d.js"></script>
 
+{% include feed-ici-imaj-1.html %}
+
 ### 3.2 Code Reload & Restart
 
 Uygulamamızı başlattıktan sonra çalışır durumda iken 11. satırdaki mesajımıza bir ekleme yapacağız. Kaydettiğimiz anda devtools bizim için projeyi otomatik olarak yeniden başlatacak.
@@ -89,6 +91,8 @@ Artık kodu değiştirme kısmını deneyebiliriz. RestController sınıfımızd
 
 
 ![](https://miro.medium.com/max/1389/1*pbuZgiYs7WzCVJlw3m5Bng.gif)
+
+{% include feed-ici-imaj-1.html %}
 
 ### 3.6 Remote Debugging
 

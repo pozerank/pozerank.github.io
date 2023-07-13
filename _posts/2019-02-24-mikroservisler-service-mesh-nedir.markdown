@@ -32,8 +32,6 @@ Bu noktada bir mola verip proxy kavramından söz etmem gerekiyor. Kişisel bilg
 
 ![](https://miro.medium.com/max/625/0*FZkc32z64ZVwh228.png)
 
-{% include feed-ici-yazi-1.html %}
-
 ## 4. Bottleneck Problem
 
 Tekrar konumuza dönelim. Listeleme servisi stok servisinden timeoutlar almaya başladı. Bu noktada yeni containerlar ayağa kaldırmak akla gelen ilk çözüm olsa da duruma kaynakları artırmadan yaklaşalım. Neler yapabiliriz?

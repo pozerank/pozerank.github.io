@@ -14,21 +14,15 @@ Java yaklaşık 20 yıl önce ilk defa ortaya çıktığında büyük bir proble
 
 ![https://www.shkuri.com/sales-tips](https://miro.medium.com/max/1081/0*UUBgFXRohHc9S-CS)
 
-{% include feed-ici-yazi-1.html %}
-
 ## 2. Günümüzde Java
 
 Java’nın sağladığı bu esneklik dönemin de şartları göz önünde bulundurulduğunda yazılım geliştiricilerin en tercih ettiği yazılım dillerinden birisi olmayı başardı. Peki halen bu şekilde mi devam ediyor? Bunun için güncel dillerin popülaritesi ile ilgili bir araştırma yaptım. Bu araştırmayı yaparken araştırma şirketlerince yapılan anketlerin taraflı olabileceği düşüncesini de dikkate aldım. Karşıma çıkan ve en tarafsız olduğunu hissettiğim çalışma [Redmonk](https://redmonk.com/) tarafından 2019 Q1'de yapılmıştı. [Stack Overflow](https://stackoverflow.com/) ve [Github](https://github.com/)’daki popülerlikler üzerinden yapılan çalışmanın grafiği aşağıdaki gibi:
 
 ![https://redmonk.com/sogrady/2019/03/20/language-rankings-1-19](https://miro.medium.com/max/1313/0*oti73UQpHd93KL66.png)
 
-{% include feed-ici-yazi-2.html %}
-
 Görünüşe göre Java halen en popüler dillerden birisi olarak hayatına devam ediyor. Peki Java bunu nasıl başarıyor?
 
 İlk günden bu yana Java yazılım diline [Java Specification Request](https://jcp.org/en/jsr/overview) (JSR) ismi verilen yeni özellikler [Java Community Process](https://www.jcp.org/en/home/index) (JCP) tarafından belirli standartlar gözetilerek eklendi. [Functional Programming](https://en.wikipedia.org/wiki/Functional_programming), [Nonblocking I/O](https://en.wikipedia.org/wiki/Non-blocking_I/O_(Java)) gibi popüler yazılım geliştirme paradigmaları da benzer şekilde dile kazandırıldı. Peki dil evrimine devam ederken JVM’de neler yaşandı? En önemli JVM fonksiyonlarından birisi olan garbage collection işlemini sağlayan yapılarda optimizasyonlar, yenilikler yapıldı. Özellikle **Java11** ile birlikte gelen [**Z Garbage Collector**](https://wiki.openjdk.java.net/display/zgc/Main) **(ZGC)** ile büyük yenilikler hayatımıza dahil oldu. [Valhalla Project](https://openjdk.java.net/projects/valhalla/) gibi kuluçka projelerle alternatif sanal makine başarımları geliştirilmeye devam ediyor. Hayat çok güzel, her şey yolunda, sistem tıkır tıkır işliyor değil mi? Peki gerçkten öyle mi?
-
-{% include feed-ici-yazi-3.html %}
 
 ## 3. Java ve Mikroservisler
 
@@ -131,8 +125,6 @@ Quarkus projesi Spring Boot projesine kıyasla daha az kaynakla çok daha hızl�
 ##### 6.2.1.1. Spring Boot Memory & CPU
 
 ![](https://miro.medium.com/max/1920/1*V82jjUN0yydgeQ7dEvHKvA.png)
-
-{% include feed-ici-yazi-1.html %}
 
 Ortalama 50MB heap ile açılan uygulama isteği aldığı anda yaklaşık 250 MB’lara ulaştı. Elastic’in took süresi 1sn idi. Network üzerindeki trafik sonlandığı ve tüm datanın uygulama üzerine bindiği anda **maksimum kullanılan bellek 2,5GB**’ları gördü. Uygulama açılışından itibaren ortalama **52 live thread** ile tüm süreci yönetti ve **23 tane** [**daemon thread**](https://www.mehmetcemyucel.com/2015/java-daemon-thread/) vardı. Yaptığım 10 denemenin ortalaması tetikleme anından itibaren response’un String’e alınması **ortalama 36sn** sürdü.
 

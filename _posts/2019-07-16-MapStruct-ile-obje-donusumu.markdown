@@ -23,8 +23,6 @@ Maven için `pom.xml` dosyasına aşağıdaki bağımlılığı ve yapılandırm
 
 <script src="https://gist.github.com/mehmetcemyucel/fd06abdfce325c53f8f67b42d5d091ad.js"></script>
 
-{% include feed-ici-yazi-1.html %}
-
 Bağımlılıkların yanı sıra eklememiz gereken bir yapılandırma daha var. MapStruct derleme zamanında çalışan bir araç. Biz bu yazımızda `Spring Boot` ile `annotation`’lar aracılığı ile bu toolu nasıl kullanabileceğimizi inceliyoruz. Bu sebeple Spring Boot Maven Plugin’inin annotation processor’lerine MapStruct’ın processor’unu eklememiz lazım. Bu sayede Spring Boot Maven Plugin’i derleme esnasında MapStruct Interface’leri tarayıp birazdan yapacağımız yapılandırmaların yönlendirmesinde yeni sınıflar oluşturulmasını sağlayacak.
 
 <script src="https://gist.github.com/mehmetcemyucel/f0e3debe8fd7758e2261b3707ce9f68a.js"></script>
@@ -50,8 +48,6 @@ Bağımlılıkların yanı sıra eklememiz gereken bir yapılandırma daha var. 
 Bir nesne örneği yaratıp mapper’a klonlattığımızda aynı değerlere sahip yeni bir nesne dönecektir.
 
 <script src="https://gist.github.com/mehmetcemyucel/9bc8c5cf9c5565769bed3c16ca06661b.js"></script>
-
-{% include feed-ici-yazi-2.html %}
 
 ## 4. Kalıtıcı
 
