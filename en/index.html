@@ -2,6 +2,14 @@
 layout: default
 ---
 <div class="main-post-list">
-<h1>Hello</h1>
+<h1>Kl</h1>
+  <ol class="post-list">
+    {% for post in paginator.posts %}
+      <li>
+        {{ post.title }}
+      </li>
+    {% endfor %}
+  </ol>
+
 
 </div>
