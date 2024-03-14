@@ -7,7 +7,7 @@ image: https://miro.medium.com/v2/resize:fit:150/1*51yiQNFp5KyP3ncI5-zVJA.jpeg
 ---
 
 
-Son kullanıcı şifrelerinin güvenli bir şekilde saklanması önemli konulardan birisi. Bu noktada oluşacak bir sızıntı hem kullanıcılarımıza hem de regülasyonlara karşı kurumlarımızı zor duruma düşürebilir. Bu sebeple bugün hem mimari hem de yazılımsal açılardan yapılan bazı hataları ve best practice’lerini inceleyeceğiz.
+Son kullanıcı şifrelerinin güvenli bir şekilde saklanması önemli konulardan birisi. Bu noktada oluşacak bir sızıntı hem kullanıcılarımıza hem de regülasyonlara karşı kurumlarımızı zor duruma düşürebilir. Bu sebeple bugün hem mimari hem de yazılımsal açılardan yapılan bazı hataları ve best practicelerini inceleyeceğiz.
 
 -   Encryption / Hashing
 -   Rainbow Tables / Salting & Peppering
