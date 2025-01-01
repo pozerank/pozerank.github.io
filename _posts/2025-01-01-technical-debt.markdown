@@ -14,7 +14,6 @@ Geçtiğimiz sene başladığım eğitim macerasına bu sene de hız kesmeden de
 
 ![](https://miro.medium.com/v2/resize:fit:1400/1*7sqtjRMVm0lAytRPMIC01g.png)
 
-
 Bu kanalı niçin açtığım, kimlere hitap ettiği, ne tür içerikler olacağı gibi konuları paylaştığım “[**Niçin Technical Debt**](https://www.youtube.com/watch?v=FbUHty6yB0k)” videosuna göz atmak isteyebilirsiniz.
 
 Eğer içerikler hoşunuza giderse birlikte büyüyebilmek için zaten artık ezbere bilinen :) bazı şeyleri sizden rica edeceğim. Ayrıca aktif bir yön çizebilmek için de yorumlarınızla feedbacklerinize ihtiyacım olacak.
