@@ -40,6 +40,7 @@ Random ve Timestamp yöntemlerinin kombinasyonu ile UUID üretimini ifade eder. 
 # Ek Detaylar
 
 Aşağıdaki videoda  **ID**,  **Unique ID**,  **Universally Unique ID**  kavramlarını ve ayrıca:
+
 - UUID Çözüm Uzayı
 - Entropi
 - Collision
