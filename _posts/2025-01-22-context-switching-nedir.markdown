@@ -20,7 +20,7 @@ Buradaki en büyük kayıp context switchingden kaynaklanan kayıp. Bir mimarlı
 
 Olayın diğer yönü de CPU üzerinde yaşanan context switching konusu. Ama onu burada anlatmaktansa teknik açıdan adım adım ele aldığım videoyu aşağıya bırakıyorum. İlgilenenler göz atabilir.
 
-[![Context Switching: Performansı Artırmanın Yolları ve Multitasking'in Sırları?](https://img.youtube.com/vi/CJ_8Cd8WxyI/0.jpg)](https://www.youtube.com/watch?v=CJ_8Cd8WxyI)
+[![Context Switching: Performansı Artırmanın Yolları ve Multitasking'in Sırları?](https://img.youtube.com/vi/yLh9hAuBPr8/0.jpg)](https://www.youtube.com/watch?v=yLh9hAuBPr8)
 
 Sonuç olarak genelde refleks hep değişime mesafeli yaklaşıp var olanı koruma yöneliminde oluyor. Buna ister safe area diyin ister başka bir şey. Ancak içinizi rahatlatmak için omzunuzla kulağınız arasına yerleştirdiğiniz telefonu araç telefonuna bağlayarak konuyu çözüme ulaştırdığınız kanısına varmayın. Kısa süreli bir görüşme riski minimal tutabilir lakin sürekli yaşanan bu multitasking durumu bugün veya yarın, ya kendinize ya da trafikteki başka bir kişiye o zararı vermenize sebebiyet verecek.
 
