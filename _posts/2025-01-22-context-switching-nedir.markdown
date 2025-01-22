@@ -1,8 +1,8 @@
 ---
-title:  "UUID'yi Doğru Kullanıyor Musunuz?"
-date:   2025-01-15 12:00:00
-categories: [architecture, microservices]
-tags: [uuid, uuid v4, uuid v7, collision, entropi, entropy, determinism, determinizm, nasıl yapılır, technical, debt, technicaldebt, mehmetcemyucel, türkçe, mehmet cem yücel]
+title:  "Context Switch Nedir?"
+date:   2025-01-22 12:00:00
+categories: [management, agile]
+tags: [context switch, cpu, context switching, nedir, nasıl yapılır, technical, debt, technicaldebt, mehmetcemyucel, türkçe, mehmet cem yücel]
 image: https://miro.medium.com/v2/resize:fit:150/0*OY_UArzB24N2vguf.png
 ---
 
