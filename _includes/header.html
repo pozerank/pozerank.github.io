@@ -42,6 +42,14 @@
           <nav class="cover-navigation navigation--social">
             <ul class="navigation">
 
+              {% if site.author.youtube_username %}
+              <!-- Youtube -->
+              <li class="navigation__item">
+                <a href="https://youtube.com/@{{ site.author.youtube_username }}" title="{{ site.author.youtube_username }} on Youtube" target="_blank">
+                  <i class="icon icon-social-youtube"></i>
+                </a>
+              </li>
+              {% endif %}
             {% if site.author.twitter_username %}
               <!-- Twitter -->
               <li class="navigation__item">
