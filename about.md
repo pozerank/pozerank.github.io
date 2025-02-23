@@ -9,7 +9,7 @@ I believe in reading, learning, and continuous improvement; I am someone who val
 
 ## Experiences
 - *2022 - ~ Akinon - (e-commerce provider)*
-- *2024 - ~ Robot Dreams - (instructor @e-learning)
+- *2024 - ~ Robot Dreams - (instructor @e-learning)*
 - *2022 - 2022 N11.com - (e-commerce)*
 - *2020 - 2022 Cigna - (insurance)*
 - *2019 - 20200 Trendyol - (e-commerce)*
