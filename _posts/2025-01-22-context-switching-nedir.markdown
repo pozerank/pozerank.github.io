@@ -12,7 +12,7 @@ Beynimiz bir konu ile uğraşırken 5 duyu organımızdan gelen uyaranlara ek es
 
 Her zaman sınavımızı yemekle vermeyebiliriz, bazen gün içerisinde gelen farklı işler de bizi context switchinge sürükleyebilir. Her işin kendi çapında acelesi ve dinamizmi de olabilir. Ancak yapılan araştırmalar şunu gösteriyor ki aynı anda yapılan birden fazla iş hem iş kalitesini düşürmüş hem de totaldeki yapılan işlerin tek tek yapılsa tamamlanacağı süreden daha uzun sürede tamamlanabilmiş.  [Gerald Weinberg’ın Quality Software Management](https://www.amazon.com/Quality-Software-Management-Vol-Congruent/dp/0932633285)  kitabından aşağıdaki tabloyu paylaşıyorum.
 
-![](https://miro.medium.com/v2/resize:fit:1216/0*OY_UArzB24N2vguf.png)
+![](/images/2025-01-22-context-switching-nedir/0_OY_UArzB24N2vguf.png)
 
 scrum.org
 

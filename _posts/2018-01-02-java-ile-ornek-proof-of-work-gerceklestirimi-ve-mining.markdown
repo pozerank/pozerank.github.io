@@ -8,7 +8,7 @@ image: https://cdn-images-1.medium.com/max/150/1*16MNLKRn_jkLv8xBEA6oIw.png
 
 Bugün Bitcoin’in temelinde yatan Proof of Work yaklaşımını inceleyip basit bir block sınıfı gerçekleştirimini Java’da inceleyeceğiz. Bu yazımızdaki amacımız herşeyiyle birebir aynı bir gerçekleştirim yapmaktan çok valid bir hashin nasıl oluşturulduğu, bu işlemin zorluğu ve bütün proof of mekanizmasının çözülmesi zor bir probleme dayandırıldığını gösterebilmektir.
 
-![](https://miro.medium.com/max/1073/1*16MNLKRn_jkLv8xBEA6oIw.png)
+![](/images/2018-01-02-java-ile-ornek-proof-of-work-gerceklestirimi-ve-mining/1_16MNLKRn_jkLv8xBEA6oIw.png)
 
 Hash fonksiyonlarını  [buradaki](https://medium.com/blockchainturk/hash-fonksiyonlar%C4%B1-ve-blockchain-59da61356e9) yazımızda incelemiştik. Bu fonksiyonlar bizim için bugün önemli olacak. Çünkü bütün mesele defalarca hash code üretmekten geçiyor desek yalan olmaz. Bu sebeple öncelikle hash fonksiyonlarını anlattığımız yazıyı okumadıysanız okumanızı tavsiye ederim. Eğer okuduysanız hadi başlayalım.
 
@@ -31,19 +31,19 @@ Bu metodumuz bize ihtiyaç duyduğumuz hash’i üretecek. Ancak herhangi bir ha
 
 Bu kodumuzu bir jUnit testiyle test ettiğimizde aşağıdaki gibi bir görüntü oluşuyor.
 
-![](https://miro.medium.com/max/800/1*Ok806xuJvLrFwq0gUaincQ.png)
+![](/images/2018-01-02-java-ile-ornek-proof-of-work-gerceklestirimi-ve-mining/1_Ok806xuJvLrFwq0gUaincQ.png)
 
 block testi katsayı 4
 
 Ekran görüntüsünde de görüldüğü gibi blockumuz için valid bir hash oluşturmak için tam  **223.009**  kez deneme yapmamız gerekmiş ve anca bu kadar deneme sonunda başında 0000 ile başlayan bir hash kod üretebilmişiz. Bu işleme gündelik hayatta sıkça duymaya alıştığımız  **mining** ismi veriliyor. Şimdi bu güvenilirlik katsayısını 5 yaparak tekrar deneyelim.
 
-![](https://miro.medium.com/max/800/1*Tr_GtjIRR4AjpP9tI29oHg.png)
+![](/images/2018-01-02-java-ile-ornek-proof-of-work-gerceklestirimi-ve-mining/1_Tr_GtjIRR4AjpP9tI29oHg.png)
 
 block testi katsayı 5
 
 Bu kez  **2.042.861**  kez deneme yapması gerekti. Yaklaşık 9 katı sayılabilecek kez daha fazla deneme ile denk geldi. Son bir kez bu katsayıyı 6 yaparak denediğimizde de
 
-![](https://miro.medium.com/max/800/1*RCYQR3LKCyF1naPG3FfUyA.png)
+![](/images/2018-01-02-java-ile-ornek-proof-of-work-gerceklestirimi-ve-mining/1_RCYQR3LKCyF1naPG3FfUyA.png)
 
 bu kez  **8.142.875**  denemede ancak valid bir hash oluşturmayı başardık. Buradaki varmaya çalıştığımız nokta, güvenilirlik katsayısı ne kadar büyürse bu hashi elde etmemizin kat ve kat daha da zorlaşacağı. Akıllara gelen bir diğer soru ise bu güvenilirlik katsayısının kaç olacağının nasıl belirlendiği. Örnek olarak Bitcoin’den devam etmek gerekirse, o ana kadar oluşturulmuş block sayısı ile orantılı artan bir algoritma bir sonraki block için güvenilirlik katsayısının kaç 0 ile başlayacağını belirliyor. Bu yazı yazılırken dağıtılan en son  [block](https://blockchain.info/tr/block/0000000000000000008fb0076e72a93d532c259956490a1bf493dc0abd265205) 18 adet 0 ile başlıyordu ve nonce değeri 1.547.561.758 idi.
 

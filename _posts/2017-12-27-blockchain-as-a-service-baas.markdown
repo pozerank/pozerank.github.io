@@ -7,14 +7,14 @@ image: https://cdn-images-1.medium.com/max/150/1*CZ8sloO2sJRL8hbgI992fQ.png
 ---
 
 Blockchain kavramı Bitcoin ile birlikte dünyanın gündeminde yerini bulsa da aslında Distributed Ledger kavramı uzunca bir süredir akademik çevrelerde de konuşulan bir konu. Crypto currency konusu ilgileri şu anda üzerinde tutuyor ancak asıl değerli konu büyümekte olan blockchain ekosistemi herhangi bir değer algısının dağıtık olarak saklanabileceği konusunda hemfikir olunması. Bu da blockchaini gelecek günlerde çok farklı örnek uygulamalarla göreceğimiz anlamına geliyor.
-![](https://miro.medium.com/max/440/1*CZ8sloO2sJRL8hbgI992fQ.png)
+![](/images/2017-12-27-blockchain-as-a-service-baas/1_CZ8sloO2sJRL8hbgI992fQ.png)
 
 
 Tabii farklı uygulama alanlarının mevcut olması yavaş yavaş yazılım geliştirme ve startup ekosisteminin dikkatini de buraya çeviriyor. Her gün farklı uygulama örneklerinin lansmanlarını duyduğumuz bir zamandayız, bu da farklı blockchain altyapılarına olan merakı artırıyor. R3 Corda, Hyperledger Fabric, Chain Core, Quorum gibi farklı örnekler ile business ihtiyaçları karşılayan uygulamalar çıkarmak için piyasadaki hazır blockchain altyapısını farklı bakış açılarından sunan örnekler.Bu örneklerin şu an için ortak problemi, henüz gelişmekte olan bir teknolojik kavramlardan bahsettiğimi için yapılandırması, kullanması şu an için nispeten meşakkatli ürünler olması.
 
 Bu sebeplerden bu altyapıları birer servis olarak sunmak bütün cloud platformlarının dikkatini çekti. Sektörün raporlarına önemle takip ettiği ünlü araştırma firması Gartner,  [raporlarında](https://www.gartner.com/smarterwithgartner/a-snapshot-of-an-emerging-blockchain-services-market/) da blockchain servislerine önem vermiş durumda. Şu an için bilinen aktörlerin içerisinde Amazon, Microsoft Azure Blockchain, IBM Bluemix, Deloitte, Oracle ve SAP bulunuyor.
 
-![](https://miro.medium.com/max/800	/1*GTH5stiGuROW4Lt9C8x9sA.png)
+![](/images/2017-12-27-blockchain-as-a-service-baas/1_GTH5stiGuROW4Lt9C8x9sA.png)
 
 **Amazon**, Digital Curreny Group ile yaptığı anlaşma ile AWS üzerinden hizmet sunmayı planlıyor. İlgili yazıya  [buradan](https://www.forbes.com/sites/laurashin/2016/05/02/amazon-steps-up-blockchain-commitment-web-services-partners-with-digital-currency-group/#432f15aa34cd) ulaşabilirsiniz.
 

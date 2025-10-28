@@ -53,10 +53,10 @@ i değişkeni 59 değerini aldığında 13 nolu satıra koyacağım breakpoint'e
 - Eclipse'de "debug" perspektifine geçiyoruz. (Window>Open Perspective>Debug)  
 - [Breakpoints](http://en.wikipedia.org/wiki/Breakpoint) sekmesinde koyduğumuz breakpointi bulup sağ tıklıyoruz.  
 - Breakpoint Properties'i açıyoruz.  
-[![](http://1.bp.blogspot.com/-yIOxrCBYDyo/VL0XMle2wgI/AAAAAAAAAhw/ebTwvsMDslo/s1600/breakpoint.png)](http://1.bp.blogspot.com/-yIOxrCBYDyo/VL0XMle2wgI/AAAAAAAAAhw/ebTwvsMDslo/s1600/breakpoint.png)- Conditional checkbox'ını seçiyoruz ve aşağıda aktifleşen alana condition'umuzu yazıyoruz.  
+[![](/images/2015-01-19-eclipse-conditional-breakpoint/breakpoint.png)](/images/2015-01-19-eclipse-conditional-breakpoint/breakpoint.png)- Conditional checkbox'ını seçiyoruz ve aşağıda aktifleşen alana condition'umuzu yazıyoruz.  
   
 
-[![](http://1.bp.blogspot.com/-h1IuED8LuXU/VL0XW3WgMTI/AAAAAAAAAh4/ASCn4jti_Tw/s1600/breakpoint2.png)](http://1.bp.blogspot.com/-h1IuED8LuXU/VL0XW3WgMTI/AAAAAAAAAh4/ASCn4jti_Tw/s1600/breakpoint2.png)
+[![](/images/2015-01-19-eclipse-conditional-breakpoint/breakpoint2.png)](/images/2015-01-19-eclipse-conditional-breakpoint/breakpoint2.png)
 
   
 Bunları yaptıktan sonra koşul sağlandığı zaman çalışan thread kesilip [breakpointte](http://en.wikipedia.org/wiki/Breakpoint) emrinize amade bekler durumda oluyor.  

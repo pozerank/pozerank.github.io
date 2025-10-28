@@ -13,7 +13,7 @@ Uygulamanızı uygulama sunucusunda deploy ederken, veya uygulamamız runtime'da
   
   
 
-[![](http://1.bp.blogspot.com/_-PvBeE2cwcg/TO5Bx_69ikI/AAAAAAAAAWg/C13IQFwDdLU/s1600/Capture.PNG)](http://1.bp.blogspot.com/_-PvBeE2cwcg/TO5Bx_69ikI/AAAAAAAAAWg/C13IQFwDdLU/s1600/Capture.PNG)
+[![](/images/2010-11-09-transaction-marked-as-rollbackonly/Capture.PNG)](/images/2010-11-09-transaction-marked-as-rollbackonly/Capture.PNG)
 
 _Heap Alanı_
 
@@ -21,7 +21,7 @@ _Heap Alanı_
 
   
 
-[![](http://4.bp.blogspot.com/_-PvBeE2cwcg/TO5B_VS9jnI/AAAAAAAAAWk/E7SW0BuEaIA/s1600/2.PNG)](http://4.bp.blogspot.com/_-PvBeE2cwcg/TO5B_VS9jnI/AAAAAAAAAWk/E7SW0BuEaIA/s1600/2.PNG)
+[![](/images/2010-11-09-transaction-marked-as-rollbackonly/2.PNG)](/images/2010-11-09-transaction-marked-as-rollbackonly/2.PNG)
 
 _PermGen Alanı_
 

@@ -8,7 +8,7 @@ image: https://miro.medium.com/max/150/1*9DhTKcVmIApp1AXoGZ4A4A.png
 
 Bu yazımızda [**MapStruct**](http://mapstruct.org/)  isimli `Java Bean Mapper` kütüphanesini ve [**Spring**](https://spring.io/)  ile kullanımını inceleyeceğiz.
 
-![](https://miro.medium.com/max/6250/1*9DhTKcVmIApp1AXoGZ4A4A.png)
+![](/images/2019-07-16-MapStruct-ile-obje-donusumu/1_9DhTKcVmIApp1AXoGZ4A4A.png)
 [](http://luman.io/meaning-not-mechanics%E2%80%8A-%E2%80%8Aa-human-approach-organizational-transformation/)
 
 ## 1. Giriş

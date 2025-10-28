@@ -32,11 +32,11 @@ Dynamic proxying’i daha iyi anlamak için bir örnek üzerinde inceleyelim.
 
 <script src="https://gist.github.com/mehmetcemyucel/9321ed43d64861f78fba18d69053ea7b.js"></script>
 
-![https://docs.spring.io/spring-framework/docs/3.0.0.M3/reference/html/images/aop-proxy-plain-pojo-call.png](https://miro.medium.com/max/585/0*OykR-WXKzbxfHFYK.png)
+![https://docs.spring.io/spring-framework/docs/3.0.0.M3/reference/html/images/aop-proxy-plain-pojo-call.png](/images/2021-03-28-spring-native-ve-graalvm/0_OykR-WXKzbxfHFYK.png)
 
 Bunun yerine tüm kontrolün bir dynamic proxy aracılığıyla Spring’e devredildiği senaryo için aşağıdaki örnek incelenebilir.
 
-![https://docs.spring.io/spring-framework/docs/3.0.0.M3/reference/html/images/aop-proxy-call.png](https://miro.medium.com/max/635/0*Tnc7upVkLUrnai_S.png)
+![https://docs.spring.io/spring-framework/docs/3.0.0.M3/reference/html/images/aop-proxy-call.png](/images/2021-03-28-spring-native-ve-graalvm/0_Tnc7upVkLUrnai_S.png)
 <script src="https://gist.github.com/mehmetcemyucel/bf5e02c78570d6d1a3baa670f62be33d.js"></script>
 
 Farkettiyseniz SimplePojo sınıfındaki metodumuzda değişiklikler gerçekleşti. Ancak bizim yazdığımız kodlarda bu şekilde bir implementasyon yapmıyoruz, proxy sınıflarından haberdar olmadan geliştirimlerimizi yapıyoruz. İşte bu noktada Spring AOP devreye girerek az önce bahsettiğimiz dinamik sınıf değişikliklerini gerçekleştiriyor ve belleğe bu şekilde yüklenmesi gibi fonksiyonları yerine getiriyor.
@@ -45,7 +45,7 @@ Farkettiyseniz SimplePojo sınıfındaki metodumuzda değişiklikler gerçekleş
 
 [https://start.spring.io/](https://start.spring.io/) sitesinden inceleme amacıyla **Spring Native Beta** projesi yaratalım. Dependencies’i tıkladığımızda aşağıdaki gibi en başta geldiğini görebiliriz.
 
-![Spring Native proje oluşturma](https://miro.medium.com/max/1503/1*uPfmqByjfzpW8Y6iBFrpTg.png)
+![Spring Native proje oluşturma](/images/2021-03-28-spring-native-ve-graalvm/1_uPfmqByjfzpW8Y6iBFrpTg.png)
 
 [Önceki yazıda](https://www.mehmetcemyucel.com/2019/Spring-ve-Java-Hantal-Mi-GraalVM-ve-Quarkus-Inceleme/) **Just in Time** (JIT) derleyici ile **Ahead of Time** (AOT) derleyicilerin farklarından bahsetmiştik. JIT derleyicilerde dynamic proxying yapmak mümkün iken AOT derleyiciler çalışacağı platforma bağımlı kod ürettiklerinden dolayı runtime’da sürpriz(lazy loading) sevmezler. Her şeyin **build zamanında** netleştirilmesi ve native image’ın buna göre oluşturulması gerekmektedir. Spring Native projesinin ilk majör farkı burada başlamaktadır.
 

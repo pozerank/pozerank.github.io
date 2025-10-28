@@ -8,7 +8,7 @@ image: https://cdn-images-1.medium.com/max/150/1*bkQ65Bgo5_4Fi0BnsDYO1A.jpeg
 
 Smart contractlara değindiğimiz yazılarımızdan sonra Solidity ile smart contractlara eğilmeye başlayacağız. Tamamen Türkçe olarak devam ettirmeyi planladığımız bu dersleri zaman ilerledikçe videolarını çekip ücretsiz olarak Udemy üzerinde yayınlama planlarımızın olduğunu söyledikten sonra giriş yapabiliriz.
 
-![](https://miro.medium.com/max/1280/1*bkQ65Bgo5_4Fi0BnsDYO1A.jpeg)
+![](/images/2018-02-27-turkce-solidity-dersleri-1/1_bkQ65Bgo5_4Fi0BnsDYO1A.jpeg)
 
 Girişimiz hızlı olacak. Blockchain konsepti hakkında bilgi seviyemiz iyi ise hızlıca ilerleyeceğiz, eksik olduğunu düşündüğünüz konular varsa blogdaki Blockchain’e Giriş ve Teknik Yazılar başlıklarındaki yazıları öncelikle okumanızı tavsiye ediyorum.
 

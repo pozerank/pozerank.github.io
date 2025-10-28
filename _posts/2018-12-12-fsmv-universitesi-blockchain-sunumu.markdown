@@ -6,7 +6,7 @@ tags: [blockchain, solidity, fsmv-universitesi, smart-contracts, consensus, etki
 image: https://cdn-images-1.medium.com/max/150/1*FOSTit_q9bjS-26yrO9CSg.jpeg
 ---
 
-![](https://miro.medium.com/max/1999/1*FOSTit_q9bjS-26yrO9CSg.jpeg)
+![](/images/2018-12-12-fsmv-universitesi-blockchain-sunumu/1_FOSTit_q9bjS-26yrO9CSg.jpeg)
 
 8 Aralık’ta FSM Vakıf Üniversitesi’nde düzenlenen [bilisim.io](http://bilisim.io/) etkinliğinde Blockchain hakkında konuştuk. Etkinliğin video kaydına aşağıdan erişebilirsiniz.
 

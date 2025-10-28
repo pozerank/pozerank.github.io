@@ -13,7 +13,7 @@ Bir yazılımcının bilmesi gerekenler konulu [Twitter'daki paylaştığım bir
 Bir yazılım geliştiricinin bilmesi gerekenlerle ilgili 15 maddelik flood geliyor.. Mümkün olduğunca fazla keywordü bir araya toplamaya çalıştım.  
 Hadi Başlıyoruz!  
 
-![](https://cdn-images-1.medium.com/max/800/1*8uAU58KQ17hL28KJhTA1dA.jpeg)
+![](/images/2019-02-18-bir-yazilimcinin-bilmesi-gereken-15-madde/1_8uAU58KQ17hL28KJhTA1dA.jpeg)
   
 [#Developer](https://twitter.com/search?q=%23Developer "#Developer") [#Software](https://twitter.com/search?q=%23Software "#Software") [#Java](https://twitter.com/search?q=%23Java "#Java") [#code](https://twitter.com/search?q=%23code "#code") [#kod](https://twitter.com/search?q=%23kod "#kod") [#yazılım](https://twitter.com/search?q=%23yazılım "#yazılım") [#development](https://twitter.com/search?q=%23development "#development") [#computer](https://twitter.com/search?q=%23computer "#computer") [#bilgisayar](https://twitter.com/search?q=%23bilgisayar "#bilgisayar") [#tool](https://twitter.com/search?q=%23tool "#tool") [#PC](https://twitter.com/search?q=%23PC "#PC") [#IT](https://twitter.com/search?q=%23IT "#IT") [#web](https://twitter.com/search?q=%23web "#web") [#tech](https://twitter.com/search?q=%23tech "#tech") [#data](https://twitter.com/search?q=%23data "#data")
 

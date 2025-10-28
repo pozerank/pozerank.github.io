@@ -13,7 +13,7 @@ Kodlamaya başlamadan önce dikkat etmemiz gereken bir konu, bu çalışma henü
 
 O zaman versiyonlarımızla başlayalım. Bu yazıyı yazarken Spring Native projesinin son versiyonu `0.9.1` idi. Bu versiyon üzerinden bir Spring Boot projesi ayağa kaldırarak demomuzu gerçekleştirelim. `0.9.1` Spring Native’in desteklediği Spring Boot versiyonumuz `2.4.4`'tür. Bu bilgileri aklımızdan bilmemize gerek yok çünkü [https://start.spring.io/](https://start.spring.io/) sitesi üzerinden Spring Native projesi ayağa kaldırmaya çalıştığınızda otomatik olarak bu versiyonlar uyumlu versiyonlar olarak yaratılacak.
 
-![](https://cdn-images-1.medium.com/max/800/1*uPfmqByjfzpW8Y6iBFrpTg.png)
+![](/images/2021-04-18-spring-native-ornek-uygulama/1_uPfmqByjfzpW8Y6iBFrpTg.png)
 
 {% include feed-ici-yazi-1.html %}
 
@@ -39,7 +39,7 @@ Uygulamamıza geri dönelim. Yukarıda bahsettiğimiz birkaç starter’ı kulla
 -   bu servislere basit bir authentication kurgusu için `spring-boot-starter-security`
 -   toolkit olarak da `lombok` kullanacak şekilde projemi yarattım. Java 1.8i tercih ettim. Pom’umuzun son durumu aşağıdaki gibi oldu.
 
-<script src="https://gist.github.com/mehmetcemyucel/69b1aea6c2a4fac44ee467e7680a8a57.js"></script>
+<script src="/images/2021-04-18-spring-native-ornek-uygulama/69b1aea6c2a4fac44ee467e7680a8a57.js"></script>
 
 ### Projenin Çalıştırılması
 
@@ -68,7 +68,7 @@ Projenizi bu haliyle “**Run”** butonuna basıp çalıştırırsak aşağıda
 
 Burada projenin Spring AOT tarafından derlenmeye çalışıldığını ancak hata aldığını iletiyor. `mvn spring-aot:generate` komutuyla paketleme yapılarak çalıştırılabilir. Ancak her build öncesi manuel işlemden kurtulmak bir işlem yapmamız gerekiyor. Örneğin ben IntelliJ kullanıyorum, IntelliJ’nin maven tabında Plugins>>spring-aot>>spring-aot:generate goal’ünün üzerine sağ tıklayıp “Execute Before Build” seçerek her buildin öncesinde pom’umuzda ekli aot maven plugini ile build’in alınmasını sağlıyoruz.
 
-![](https://cdn-images-1.medium.com/max/800/1*mj3FdOe2RvDPDNssaTJuxA.png)
+![](/images/2021-04-18-spring-native-ornek-uygulama/1_mj3FdOe2RvDPDNssaTJuxA.png)
 
 Şu anda IntelliJ’nin Run butonuna bastığımızda ilk önce yukarıda yapılandırmasını yaptığımız build çalışıyor.
 
@@ -144,19 +144,19 @@ Sonrasında da uygulamamız ayağa kalkıyor.
 
 Basit bir in-memory authentication kurgusu yapalım.
 
-<script src="https://gist.github.com/mehmetcemyucel/5401b47b3dce0b935c34ad2b638b0e6e.js"></script>
+<script src="/images/2021-04-18-spring-native-ornek-uygulama/5401b47b3dce0b935c34ad2b638b0e6e.js"></script>
 
 Yine basit bir Controller ile CRUD işlemlerini Spring Data JPA ile in-memory H2 DB’sine indirelim.
 
-<script src="https://gist.github.com/mehmetcemyucel/22a97277456b1ecacbb72242ea1c6d17.js"></script>
+<script src="/images/2021-04-18-spring-native-ornek-uygulama/22a97277456b1ecacbb72242ea1c6d17.js"></script>
 
-<script src="https://gist.github.com/mehmetcemyucel/b86acf6dc5baf875f8a72b54bd81be31.js"></script>
+<script src="/images/2021-04-18-spring-native-ornek-uygulama/b86acf6dc5baf875f8a72b54bd81be31.js"></script>
 
-<script src="https://gist.github.com/mehmetcemyucel/699c9b40f41c818cf52aba49d5a173d2.js"></script>
+<script src="/images/2021-04-18-spring-native-ornek-uygulama/699c9b40f41c818cf52aba49d5a173d2.js"></script>
 
 Dikkat edilmesi gereken bir nokta, cglib proxy’leri artık desteği verilemediği için @SpringBootApplication annotationı içerisinde default true olarak set edilmiş durumda bulunan `proxyBeanMethods` değerinin false olarak değiştirilmesi gereklidir.
 
-<script src="https://gist.github.com/mehmetcemyucel/b73e590a6e3893718738a879cfc3a35c.js"></script>
+<script src="/images/2021-04-18-spring-native-ornek-uygulama/b73e590a6e3893718738a879cfc3a35c.js"></script>
 
 Kodumuz kaba haliyle bu şekilde. Şimdi uygulamamızın build işlemi sonrasında ne kadar sürede açıldığına bakalım. Uygulamamızı paketleyip java -jar ile çalıştırıyoruz
 
@@ -229,7 +229,7 @@ Bunun sebebi Docker’da image yaratılırken yetersiz bellekten dolayı **Out o
 
 Bu problemi aşabilmek için yapmamız gereken Docker uygulamasının ayarlarına gidip kullanabileceği memory miktarını yükseltmek olacak.
 
-![](https://cdn-images-1.medium.com/max/800/1*Tw05hSjA6-azCwLgr-p-hQ.png)
+![](/images/2021-04-18-spring-native-ornek-uygulama/1_Tw05hSjA6-azCwLgr-p-hQ.png)
 
 {% include feed-ici-yazi-2.html %}
 
@@ -400,7 +400,7 @@ Bu işlem esnasında ortam değişkenleri, sertifikalar için trustedstore yapı
 
 Logdaki sonraki bold kısımlar GraalVM’in native kodu oluşturduğu kısımlar. Burada yapılan işlemler başka bir yazımızın konusu olabilir. Sonrasında da image layerları hazırlanıp imajımızın son hali oluşturuluyor. Oluşan imajımızı docker images komutu ile görebiliriz.
 
-![](https://cdn-images-1.medium.com/max/800/1*68K2L6In4rGELacTZTCJEQ.png)
+![](/images/2021-04-18-spring-native-ornek-uygulama/1_68K2L6In4rGELacTZTCJEQ.png)
 
 Yeni imajımızı çalıştıralım. Komutumuz:
 
@@ -416,15 +416,15 @@ Yeni imajımızı çalıştıralım. Komutumuz:
 
 Hatırlarsanız **native kodun runtime’da sürpriz sevmediği**nden bahsetmiştik. WebSecurity sınıfında **EnableGlobalMethodSecurity** annotationı ile açtığımız ve Controller sınıfında endpointlerin başlarında kullandığını **PrePost Security Role Controllerları** ile kullandığımız **Spring Expression Language**(SpEL) tam olarak native kodun sevmediği bir sürpriz :) Çünkü bu senaryoda SpEL çalışırken Dynamic Proxyler kullanarak runtimeda gelen isteğin sahibi olan clientın belirtilen authoritye sahip olup olmadığını controllerdaki method execute edilmeden kontrol ederek işlemin devam etmesini veya clientın 403 Forbidden hatası dönülmesini sağlıyor. Bütün bu paragrafta yazdıklarım SpEL desteklenmiyor gibi algılanmaması konusunda bir not düşmekte fayda var, lakin uygulamanın footprint’ini düşürmek için AOT plugin’ine verilebilecek optimizasyonlardan birisi de SpEL’in devre dışı bırakılması. Detaylar için [buradaki](https://docs.spring.io/spring-native/docs/current/reference/htmlsingle/#spring-aot-configuration) konfigürasyonlara göz atabilirsiniz. Bu kod parçasından kurtulmak için kodumuzda aşağıdaki değişiklikleri yapıyoruz.
 
-<script src="https://gist.github.com/mehmetcemyucel/e173101affb6642f879dd9c7b7b0369a.js"></script>
+<script src="/images/2021-04-18-spring-native-ornek-uygulama/e173101affb6642f879dd9c7b7b0369a.js"></script>
 
-<script src="https://gist.github.com/mehmetcemyucel/7fb60ed2f99cb6ff87a8483871056318.js"></script>
+<script src="/images/2021-04-18-spring-native-ornek-uygulama/7fb60ed2f99cb6ff87a8483871056318.js"></script>
 
 {% include feed-ici-yazi-3.html %}
 
 Bu değişikliklerden pom.xml’de versiyonumuzu 0.0.2-SNAPSHOT olarak güncelledikten sonra mvn clean spring-boot:build-image komutuyla tekrar native imajımızı derletiyoruz. Image’ımız aşağıdaki gibi oluşuyor. Yeni imajımızı çalıştırıyoruz.
 
-![](https://cdn-images-1.medium.com/max/800/1*KjK-IT8-J2JTlWdHVN9Tdg.png)
+![](/images/2021-04-18-spring-native-ornek-uygulama/1_KjK-IT8-J2JTlWdHVN9Tdg.png)
 
 	C:\Users\PC\Desktop\mcy\spring-native-example>docker run -p 8081:8081 spring-native-example:0.0.2-SNAPSHOT  
 	2021–03–29 05:21:53.059 INFO 1 — — [ main] o.s.nativex.NativeListener : This application is bootstrapped with code generated with Spring AOT

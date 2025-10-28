@@ -8,7 +8,7 @@ image: https://miro.medium.com/max/150/0*d70VvJL7EhiARvgS.png
 
 “Golang ile Uçtan Uca Proje Yapımı Serisi” 6. yazısında Go’da Kafka ile nasıl iletişim kurulabileceğinden, object mappingin nasıl yapılabileceğinden ve belki de en önemlisi test nasıl yazılabileceğinden bahsedeceğiz.
 
-![](https://miro.medium.com/max/1104/0*d70VvJL7EhiARvgS.png)
+![](/images/2022-05-17-golang-message-broker-object-mapper-testing/0_d70VvJL7EhiARvgS.png)
 
 ## Message Broker
 

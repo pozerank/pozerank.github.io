@@ -11,7 +11,7 @@ image: https://miro.medium.com/max/150/0*u2bTNB7kf_jjWm9s.jpeg
 -   Filebeat + ELK Stack
 -   Kafka
 
-![](https://miro.medium.com/max/1400/0*u2bTNB7kf_jjWm9s.jpeg)
+![](/images/2022-05-14-golang-central-logging-management/0_u2bTNB7kf_jjWm9s.jpeg)
 
 
 Log yönetimi kritik bir konu. Live a kodunuzu aldınız ama performans problemi yaşıyorsunuz. Veya müşterilerinizden problem bilgileri geliyor ama siz hangi senaryoda ve nasıl gerçekleştiği hakkında bilgi sahibi değilsiniz. İşte bu noktalarda yaşayan kodunuzun sizinle iletişim kurabilmesinin en önemli yolu iyi yönetilen loglardan geçiyor.
@@ -47,7 +47,7 @@ Uygulamanın root dizininden aşağıdaki komutla docker-compose umuzu ayağa ka
 
 Başarılı şekilde ayağa kalktığında  `http://localhost:5601`  ile elastic’in konsoluna düşebiliriz.  `elastic/changeme`  username passwordleri ile girdiğimizde bizden index in name pattern ini girmemizi isteyecek. Pattern olarak  `logstash-*`  olarak giriş yapıp index için de  `@timestamp`  seçerseniz Kibana>Discover altında tanımladığınız index üzerinden tüm loglarınıza erişebilmeye başlayacaksınız.
 
-![](https://miro.medium.com/max/1400/1*xmicWSxzwtmxkJ_fioQCtQ.png)
+![](/images/2022-05-14-golang-central-logging-management/1_xmicWSxzwtmxkJ_fioQCtQ.png)
 
 {% include feed-ici-yazi-2.html %}
 
@@ -68,7 +68,7 @@ Cluster olarak da ayağa kaldırabileceğiniz şekilde hazırladığım compose 
 
 Uygulamamızı başlatıp  `http://localhost:9000`  bağlandığımızda  `logtopic`  isimli topic in altında uygulamamızın loglarının yer aldığını görebilirsiniz. Bu logları  [Kafka Connect](https://docs.confluent.io/platform/current/connect/index.html)  gibi araçlarla istediğiniz merkezi log yönetimi tooluna aktarımını gerçekleştirebilirsiniz.
 
-![](https://miro.medium.com/max/1400/1*LxMPpAoPPuUOrYfbBClOEw.png)
+![](/images/2022-05-14-golang-central-logging-management/1_LxMPpAoPPuUOrYfbBClOEw.png)
 
 ## Access Log Management
 

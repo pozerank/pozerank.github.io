@@ -17,7 +17,7 @@ Ancak yeni bir konu hakkında öğrenmeye başladığımızda ana dilde girişi 
 Aşağıdaki konu kendi sitesinde Türkçe olarak da yer almaktadır. Ancak çeviri akıcı bir dilde olmadığından ve anlaşılmasının nispeten güç olmasından dolayı daha yakın olduğumuz örneklerle farklı kaynaklardan da zenginleştirerek kaleme aldım. Aşağıdaki incelemelerde kavramların hem Türkçe hem İngilizce’sini açıklamalı olarak kullanmaya çalıştım. Temel terimlerin İngilizce karşılıklarının da bilinmesinin, en azından jargona hakim olunmasının faydası olacaktır.
 
 
-![12 Factor App](https://miro.medium.com/max/873/1*A0OnarMzmEUJWQeHTHCgig.png)
+![12 Factor App](/images/2019-02-06-twelve-factor-nedir-turkce-ornek/1_A0OnarMzmEUJWQeHTHCgig.png)
 
 12 Factor kendisini gündelik hayatta yaşanan problemlere karşı tecrübeler ve deneyimlerin oluşturduğu öneriler olarak tanımlamaktadır. Bu önerileri tanımladığı kavramlar üzerinden vermektedir. İnceleyeceğimiz 12 madde aşağıdaki gibidir;
 
@@ -51,7 +51,7 @@ Aşağıdaki konu kendi sitesinde Türkçe olarak da yer almaktadır. Ancak çev
 12 factor uygulamanın kodları bir sürüm takip sistemi tarafından yönetilmelidir. Sürüm takip sistemine örnek olarak [Git](https://git-scm.com/), [Subversion](https://subversion.apache.org/) verilebilir. Sürüm takip sistemine kısaca **_repo_** denilmektedir. **Codebase** ise bir repoda saklanan uygulamamıza ait kodlar bütünüdür. Burada kritik konu, bir uygulama ile codebase arasında her zaman 1'e 1 (1:1) bir ilişki olmalıdır. Diğer senaryolarda:
 
 
-![Codebase (12factor.net)](https://miro.medium.com/max/400/0*S0AmBMr45StqJSi-.png)
+![Codebase (12factor.net)](/images/2019-02-06-twelve-factor-nedir-turkce-ornek/0_S0AmBMr45StqJSi-.png)
 
 -   Eğer bir uygulamanın birden fazla codebase’i varsa aslında o bir uygulama değildir, farklı modüllere ve/veya process’lere sahip dağıtık bir sistemdir. Ve her bir process kendi içerisinde ayrı ayrı 12 factor’e uyumlu olmalıdır.
 -   Eğer birden fazla uygulama tek bir codebase’i kullanıyorsa yine problem mevcuttur. Burada akla gelen ilk şey util tarzı kod yapılarının mevcudiyetidir. Bu tarz kodlar ayrı birer kütüphane haline getirilmesi ve bağımlılığın(bknz Dependencies) tanımlanması gerekir.
@@ -64,20 +64,20 @@ Bir java uygulamasından örnek verelim. 3 geliştirici 3 farklı **feature**’
 
 Bu süreci kontrol altında tutabilmek ve şeffaflaştırabilmek için bir **dependency isolation**(bağımlılık izolasyonu) araçlarına ihtiyaç duyulmaktadır. Örneğin bir [**Spring Boot**](https://projects.spring.io/spring-boot/) uygulaması paketleyeceğiz. Örnek pom.xml;
 
-![](https://miro.medium.com/max/654/0*H27yPvItT4k-UnFz.png)
+![](/images/2019-02-06-twelve-factor-nedir-turkce-ornek/0_H27yPvItT4k-UnFz.png)
 
 {% include feed-ici-yazi-1.html %}
 
 Bu dependency hiyerarşisi için [**Maven**](https://maven.apache.org/)  aracı bu süreci paketleme aşamasında izolasyonu şu şekilde sağlamaktadır;
 
-![](https://miro.medium.com/max/850/0*iuhWU9r0Z-noi91H.png)
+![](/images/2019-02-06-twelve-factor-nedir-turkce-ornek/0_iuhWU9r0Z-noi91H.png)
 
 Bu sayede dependency hiyerarşisinde hangi jar neye bağımlı bunun izolasyonu ve tanımı sağlanabilmektedir. Bu tanım **dependency decleration**(bağımlılık tanımlama) ile yapılmaktadır. Tanımlaması yapılmamış hiçbir bağımlılık uygulamanın içerisinde bulunmamalıdır.
 
 Örnek olarak Eclipse üzerinde Maven kullanıyorsanız tanıdık gelecek **Dependency Hierarchy**(bağımlılık hiyerarşisi) örneğini verebiliriz. Dependency decleration’ın çıktısı olarak verilebilecek aşağıdaki ekran görüntüsü, uygulama üzerinde geliştirim yapmaya başlayacak yeni geliştiriciler için çok önemlidir. Codebase’in kolay ve hızlı bir şekilde derlenebilir hale gelmesi için değerli bir argümandır.
 
 ![Dependency Hierarchy
-](https://miro.medium.com/max/800/0*W8gLDt38EwGMGzT6.jpg)
+](/images/2019-02-06-twelve-factor-nedir-turkce-ornek/0_W8gLDt38EwGMGzT6.jpg)
 
 
 Bağımlılıklarla ilgili son konu, örneğin **curl** gibi sistem araçlarına ihtiyacımız varsa birçok sistemde zaten halihazırda bu aracın var olduğuna güvenerek ilerlenmemesi gerektiğidir. Var olan aracın versiyonunun uygulamamızla uyumlu olacağının garantisi olmadığı gibi bu araç o sistemde hiç var olmayadabilir. Bu sebeple uygulama eğer bir sistem aracına ihtiyaç duyuyorsa aynı diğer bağımlılıklar gibi bu araçların da uygulamaya sağlanması gerekmektedir.
@@ -101,7 +101,7 @@ Son olarak dev-test-prod gibi farklı ortamlarda farklı isimlerle ele alınan y
 Bir uygulamanın çalışabilmek için ihtiyaç duyguğu tüm servislere **backing**  **service**(destek servisi) olarak tanımlabilir. Bir uygulama dışarıdan servis alıyorsa bu servisler yerel servislerden ayrı tutulmaz. Tümü bir bütün olarak ele alınır. Aşağıdaki örnekte MySQL, eMail, Amazon S3, Twitter birer destek servisidir.
 
 
-![Backing Services (12factor.net)](https://miro.medium.com/max/800/0*tqFQCbfKO01R5sN1.png)
+![Backing Services (12factor.net)](/images/2019-02-06-twelve-factor-nedir-turkce-ornek/0_tqFQCbfKO01R5sN1.png)
 
 {% include feed-ici-yazi-2.html %}
 
@@ -113,7 +113,7 @@ Bir uygulama eğer destek servisi kullanıyorsa bunu mutlaka config içerisinde 
 
 Bir codebase 3 aşamada **deploya**(dağıtıma) dönüşebilir;
 
-![Build Release Run (12factor.net)](https://miro.medium.com/max/500/0*U3DHlTMRePCdDzvA.png)
+![Build Release Run (12factor.net)](/images/2019-02-06-twelve-factor-nedir-turkce-ornek/0_U3DHlTMRePCdDzvA.png)
 
 -   **Build(derleme):** Kodların çalıştırılabilir bir pakete dönüştürüldüğü aşamadır. Bu aşama kodun versiyonlama aracındaki commitlenmiş versiyonu ve bağımlılıklarının bir araya getirilerek binarylerin compile edildiği aşamadır.
 -   **Release(sürümleme):** derlemenin çıktısı ile mevcut ortamdaki yapılandırmaların bir araya getirildiği aşamadır. Bu aşamada kod, çalışma ortamında çalışmaya hazırdır.
@@ -136,7 +136,7 @@ Bir örnekle açıklayalım. Bir müşteri oluşturma adımlarını içeren akı
 Aşağıdaki görselde browserdan yaptığınız ilk adım müşteri tanımlama 1 node’una düştü ve kimlik doğrulama 2 servisinden hizmet alarak müşteri tanımlama işleminin ilk adımını gerçekleştirdiniz. ikinci adımda ekrandan kimlik bilgilerinin toplandığını varsayalım. Bu hizmet için müşteri tanımlama nodelarından hangisine düşeceğinizin garantisi yoktur. Hatta siz birinci adımı gerçekleştirirken ekranda bilgileri girdiğiniz sürede ilk adımda hizmet aldığınız müşteri tanımlama 1 node’u kapanmış onun yerine 4 ve 5 numaralı nodelar açılmış bile olabilir. Mimarinin ölçeklenebilir olması ile ifade edilen budur; sıkışan, cevap veremez duruma gelmiş nodeların olduğu bir ortamda execution environment yeni 3 node daha eklemeyi tercih edebilir. Yatay ölçekte artan işlem gücü sistemin üzerindeki yükü dinamik olarak dengelenmeye yönlendirebilir, bu sebeple herhangi bir adımda işlem yükü olarak daha sakin bir node’a yönlendirilmeniz gayet mümkündür.
 
 
-![Dağıtık, Ölçeklenebilir Sistem](https://miro.medium.com/max/500/0*D6ztgImCZq17uNe1.png)
+![Dağıtık, Ölçeklenebilir Sistem](/images/2019-02-06-twelve-factor-nedir-turkce-ornek/0_D6ztgImCZq17uNe1.png)
 
 Birçok klasik uygulama mimarisinde **sticky session**’lar kullanılmaktadır. Sticky sessionlar load balancer’ın IP’ler veya cookieler aracılığıyla kullanıcıları tanıyıp, bir kullanıcıdan gelen requestlerin düzenli olarak tek bir sunucuya yönlendirilmesini sağlamaya yararlar. Az önce session kullanımının 12 Factor bir uygulamada olmaması gerektiğini çünkü her bir requestin hangi node’a iletileceğini bilemeyeceğimizi söylemiştik. Sticky session gibi bir kavram varsa aslında bu problemimiz çözülmüş gibi duruyor, o zaman artık session kullanabilir miyiz? Cevabımız: Hayır. Çünkü 12 Factor bir uygulama sticky session da kullanmamalıdır. Çünkü bu kez de arada bulunan load balancerın bu session verilerini sürekli tutacağını garanti altına almamız gerekir ki bu mümkün değildir. Load balancerın yaşayacağı bir problemde sticky session bilgileri kaybedilebilir, 5 adımlık bir sürecin 3. adımına gelmiş bir uygulama akışı o noktada doğru çalışmaz duruma gelebilir. Bu durum **single point of contention** prensibine aykırıdır.
 
@@ -157,7 +157,7 @@ Spring Boot gibi **uber jar** export eden yapılar bu ihtiyacın çözümünü k
 # 8. Concurrency (Eş Zamanlılık)
 
 
-![Concurrency (12factor.net)](https://miro.medium.com/max/500/0*V-OJYDRfPYq78sIM.png)
+![Concurrency (12factor.net)](/images/2019-02-06-twelve-factor-nedir-turkce-ornek/0_V-OJYDRfPYq78sIM.png)
 
 Aslında concurrency’nin konularının bir kısmına önceki başlıklarda değindik. Bir uygulama en az 1 processten oluşmaktadır. Tabii ki ölçeklenebilir bir sistemde bu process sayısı 1 ile kalmayacaktır. Uygulama geliştirici uygulamasındaki farklı processleri tiplerine göre gruplandırarak farklı iş yüklerini ayrı ayrı yönetmeyi tercih edebilir. Örneğin ön yüz ile ilgili processleri web processleri olarak gruplandırıp ve ölçeklendirip, backend’de daha uzun süren işlemleri worker process grubu altında toplayarak ayrı şekilde ölçeklendirecek bir mimari kurgulayabilir.
 

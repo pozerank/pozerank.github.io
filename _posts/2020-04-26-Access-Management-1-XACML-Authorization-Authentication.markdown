@@ -32,7 +32,7 @@ Beşinci ve son yazımızda da [**Keycloak**](https://www.keycloak.org/) ile [**
 
 {% include feed-ici-yazi-1.html %}
 
-![XACML Authentication Authorization Policy Politika Erişim](https://miro.medium.com/max/696/1*AevTigjmr7CmH-RV_OtzNA.png)
+![XACML Authentication Authorization Policy Politika Erişim](/images/2020-04-26-Access-Management-1-XACML-Authorization-Authentication/1_AevTigjmr7CmH-RV_OtzNA.png)
 
 Güvenli erişim problemini en başından incelemeye başlayalım. Bir uygulamanın sunduğu kaynaklara(servisler, ekranlar vb) erişirken herkesin sistem üzerinde her işi gerçekleştirebilmesini tercih etmeyiz. Bu tercihlerimizi **Erişim Politikaları (Access Policy)** ile yönetmeye çalışırız. Örneğin bir insan kaynakları uygulamamız olduğunu düşünelim. Kullanıcıların birbirlerinin maaş bilgilerini görebildiği, değiştirebildiği bir uygulamayı sanırım hiçbir şirket kullanmayı tercih etmezdi. Uygulamaya girişlerin ve girdikten sonra da farklı kaynaklara erişimlerin kontrol altında tutulmasını isteriz.
 
@@ -77,7 +77,7 @@ Tanımlanmış sınırlar ile kastettiğimiz kavramı biraz daha açalım. Bir e
  - **PIP**: Policy Information Point
  - **PRP:** Policy Retrieval Point
 
-![](https://miro.medium.com/max/1155/1*7uQjo-WaAeJ-pyVYBupHdQ.png)
+![](/images/2020-04-26-Access-Management-1-XACML-Authorization-Authentication/1_7uQjo-WaAeJ-pyVYBupHdQ.png)
 
 {% include feed-ici-yazi-3.html %}
 
@@ -103,13 +103,13 @@ Tanımlanmış sınırlar ile kastettiğimiz kavramı biraz daha açalım. Bir e
 
 ### 3.3. Örnek Akış
 
-![](https://miro.medium.com/max/1690/0*I7Y-E74GSBmPQXMS.png)
+![](/images/2020-04-26-Access-Management-1-XACML-Authorization-Authentication/0_I7Y-E74GSBmPQXMS.png)
 
 Örnek bir istek akışını yukarıdaki görsel üzerinden inceleyelim.
 
 1. adımda #123 kaydına ulaşmak için PEP’e istek gelir. PEP, uygulamalarımızın önündeki bir gateway olabilir, uygulamamızın kendisi olabilir veya dataya erişim önünde bağımsız bir kutu olabilir.
 
-![](https://miro.medium.com/max/664/1*OMsLkndb7h-Ts6q8ZvfpYw.png)
+![](/images/2020-04-26-Access-Management-1-XACML-Authorization-Authentication/1_OMsLkndb7h-Ts6q8ZvfpYw.png)
 
 2. adımda PEP PDP’ye #123 mesajının gönderilip gönderilemeyeceğini danışır.
 

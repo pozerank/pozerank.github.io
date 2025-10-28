@@ -10,7 +10,7 @@ image: https://cdn-images-1.medium.com/max/150/1*pUyqVMAKs2GknumbLB9K7w.jpeg
 Simetrik Şifremele (Symmetric Encryption) konusuna  [burada](https://medium.com/blockchainturk/simetrik-%C5%9Fifreleme-ve-blockchain-980c1cbd7a12)  değinmiştik. Bugün ise konunun devamı niteliğinde asimetrik şifreleme algoritmaları ve örnek bir blockchain kurgusu üzerindeki kullanım noktaları ve amaçlarını ortaya koymaya çalışacağız.
 
 
-![](https://miro.medium.com/max/800/1*pUyqVMAKs2GknumbLB9K7w.jpeg)
+![](/images/2017-12-26-asimetrik-sifreleme-ve-blockchain/1_pUyqVMAKs2GknumbLB9K7w.jpeg)
 
 Simetrik şifrelemenin aksine asimetrik şifrelemede 2 farklı anahtar vardır ki zaten adını da buradan almıştır. Bu anahtarlar public yani herkese açık ve private yani sadece kişiye özel olmak üzere isimlendirilirler. Public anahtarlar  **networkteki**(tüm katılımcıların oluşturduğu ağ)  herkese dağıtılırlar, ancak private anahtarlar sadece ve sadece kişinin kendisi tarafından bilinmelidir. Asimetrik şifreleme 2 farklı şekilde kullanılırlar:
 
@@ -28,7 +28,7 @@ Bunların haricinde encryption amacıyla kullanılmayan, sadece secret key payla
 
 Bir şifreleme standardıdır. RSA yaklaşımında Encryption-Decryption başarımı düşük olduğundan genellikle sign-verification amacıyla kullanılır. Private key mesajın imzalanması için kullanılır, oluşan özet veri mesajın açık halinin içerisine eklenerek bu şekilde gönderilir. Alıcı, kendisine gelen ana mesajı public key aracılığı ile imzalayarak kendi özetini oluşturur ve gelen mesajın içerisindeki özet veri ile karşılaştırır. Eğer iki özet veri birbirini tutuyorsa doğrulama gerçekleşmiş olur.
 
-![](https://miro.medium.com/max/513/1*GH2Y8qZxGXEgbSFRe9vtPA.gif)
+![](/images/2017-12-26-asimetrik-sifreleme-ve-blockchain/1_GH2Y8qZxGXEgbSFRe9vtPA.gif)
 
 Görsel:  [https://technet.microsoft.com/en-us/library/cc962021.aspx](https://technet.microsoft.com/en-us/library/cc962021.aspx)
 

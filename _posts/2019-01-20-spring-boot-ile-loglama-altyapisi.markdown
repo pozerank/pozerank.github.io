@@ -9,7 +9,7 @@ image: https://cdn-images-1.medium.com/max/150/1*wZTB6apo5T0lV0GljiJRBg.jpeg
 Sıfırdan bir proje yazmaya başladığımızda ele almamız gereken bir düzine konu mevcut. Güvenliği, loglaması, mesajlaşması, servis altyapısı bir çırpıda aklımıza gelenler. Bugün bu kalemlerden birisi olan hata loglama altyapısını kurgulama hakkında karalayacağım. Konumuz bir loglama frameworkünü tanıtmak olmayacak, bu tarz yazıları çokça yerde bulmak mümkün. Biz daha çok bir Spring Boot projesinde loglama yapısı oturtmaya çalıştığımızda nelere dikkat etmeliyiz sorusunun cevaplarını adım adım birlikte bulacağız.
 
 
-![Spring Boot ile Birlikte SLF4J ve LOG4J2](https://miro.medium.com/max/1500/1*wZTB6apo5T0lV0GljiJRBg.jpeg)
+![Spring Boot ile Birlikte SLF4J ve LOG4J2](/images/2019-01-20-spring-boot-ile-loglama-altyapisi/1_wZTB6apo5T0lV0GljiJRBg.jpeg)
 
 Örneğin, bir Spring Boot projemiz var ve varsayılan loglama ayarlarıyla kullanmak istemiyoruz. Mevcut yerine farklı bir loglama frameworkü kullanmayı istiyoruz, ancak ileride bundan da başka bir frameworke geçmek istersek kod seviyesinde etkilenmemeyi tercih ediyoruz. Hatta loglama ayarlarımızı, patternlerimizi projenin export edildiği jar dosyasının dışından yönetebilmek istiyoruz. Peki ne yapmalıyız?
 
@@ -121,7 +121,7 @@ Sonrasında pom.xml dosyamızın olduğu yerde `mvn clean install -DskipTests` k
 
 /target altında oluşan jarımızın içeriğine bakalım. ‘…’ folder’ının altında resources altında bulundurduğumuz dosyaların olduğunu görüyoruz, log4j2-spring.xml dosyası da pom.xml’de belirttiğimiz gibi paketten exclude edilmiş.
 
-![](https://miro.medium.com/max/1020/1*_60BDrlYohZgyxWj55HfiQ.png)
+![](/images/2019-01-20-spring-boot-ile-loglama-altyapisi/1__60BDrlYohZgyxWj55HfiQ.png)
 
 {% include feed-ici-imaj-1.html %}
 

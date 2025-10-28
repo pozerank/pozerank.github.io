@@ -8,7 +8,7 @@ image: https://miro.medium.com/max/150/1*D_Yu51tJZBK70suixBWPlQ.jpeg
 
 **Graylog**,  **ELK**,  **Splunk**… Piyasada çokça kullanılan ücretli/ücretsiz merkezi loglama çözümleri. İşin ilginci log miktarınız arttıkça bakım ve operasyonel maliyetiniz daha da artıyor. Neden diyorsanız, yazılan her satır, her kelime logun indekslenerek aranabilir olarak tutulmasının yarattığı maliyeti hatırlamamız lazım. Onlarca, yüzlerce ve hatta binlerce mikroservisinizin olduğu bir dünyada bu loglar inanılmaz boyutlara gelerek kullandığınız ürünün dikeyde değil yatayda daha farklı şekillerde ölçeklenmesi ihtiyacını yavaş yavaş kapınıza getirecek.
 
-![](https://miro.medium.com/max/700/1*D_Yu51tJZBK70suixBWPlQ.jpeg)
+![](/images/2022-09-17-loglama-icin-hala-ELK-mi-loki-timeseries/1_D_Yu51tJZBK70suixBWPlQ.jpeg)
 
 ELK kullandığımızı varsayalım. İlk refleks kullanılmayan featureları kapatmak, sıkıştırmayı artırmak, shardları ve indexleri elden geçirmek oluyor. Baktık yeterli olmuyor daha eski loglara aging uygulayarak warm ve cold indexlere kaydırmak, belki bir noktadan sonrasını tamamen arşivlemek bizi bir nebze de olsa rahatlatıyor. Ama aslında çoğu zaman yaptığımız X uygulamasının instancelarında belirli zaman aralıklarındaki logu incelemek ve spesfik kelimeler aramak. İndeksler için katlandığımız maliyetleri düşündüğümüzde acaba gerçekten de over-engineering yapıyor olabilir miyiz?
 

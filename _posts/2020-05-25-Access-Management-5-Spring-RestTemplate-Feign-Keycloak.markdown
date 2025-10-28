@@ -8,7 +8,7 @@ image: https://cdn-images-1.medium.com/max/150/0*knMgRQMoNMWQciZs.jpg
 
 Önceki yazımızda [Keycloak](https://www.mehmetcemyucel.com/2020/Access-Management-4-Keycloak/)'tan bahsettiğimiz  **Access Management** serimizin son yazısında Spring Boot RestTemplate ve OpenFeign Client kullanarak Keycloak üzerinde kolaylıkla OpenIdConnect ve OAuth2 ile nasıl kimlik doğrulama yapılır bunu inceleyeceğiz.
 
-![](https://miro.medium.com/max/1825/0*knMgRQMoNMWQciZs.jpg)
+![](/images/2020-05-25-Access-Management-5-Spring-RestTemplate-Feign-Keycloak/0_knMgRQMoNMWQciZs.jpg)
 
 ---
 
@@ -42,61 +42,61 @@ Bu scriptte iki environment parametresi geçiyoruz. Bunlar admin arayüzüne gir
 
 Bu noktadan sonra [http://localhost:8080](http://localhost:8080) 'e gittiğimizde aşağıdaki gibi bir görüntü ile karşılaşıyoruz.
 
-![](https://miro.medium.com/max/1604/1*HfcW4RZX-vMzq_sDJGSFcw.png)
+![](/images/2020-05-25-Access-Management-5-Spring-RestTemplate-Feign-Keycloak/1_HfcW4RZX-vMzq_sDJGSFcw.png)
 
 {% include feed-ici-yazi-2.html %}
 
 **“Administration Console”** yazısını tıklayarak login ekranına gidiyoruz.
 
-![](https://miro.medium.com/max/1601/1*9FMWNVIplbwouR5JW9w9wQ.png)
+![](/images/2020-05-25-Access-Management-5-Spring-RestTemplate-Feign-Keycloak/1_9FMWNVIplbwouR5JW9w9wQ.png)
 
 Docker komutuna verdiğimiz **kullanıcı adı** ve **şifre** ile giriş yapıyoruz.
 
 ### 2.2. Realm
 
-![](https://miro.medium.com/max/1599/1*s5CNmgh4VPZUGwT_smyxBg.png)
+![](/images/2020-05-25-Access-Management-5-Spring-RestTemplate-Feign-Keycloak/1_s5CNmgh4VPZUGwT_smyxBg.png)
 
 Realm’imizi yaratıyoruz. Kabaca birbirleriyle etkileşim içerisinde olacak uygulamaların bir arada olacağı bir environment gibi düşünülebilir. **Add realm** butonuna tıklayıp isim veriyoruz ve bu aşamayı sonlandırıyoruz.
 
-![](https://miro.medium.com/max/1603/1*AIxIp1js0VkCAduCDrCKag.png)
+![](/images/2020-05-25-Access-Management-5-Spring-RestTemplate-Feign-Keycloak/1_AIxIp1js0VkCAduCDrCKag.png)
 
 ### 2.3. Roles
 
 Sırada rollerimizi yaratma adımımız var. İki role, user-role ve user2-role yaratacağız. Bunun için menüden **Roles** başlığına gidiyoruz.
 
-![](https://miro.medium.com/max/1604/1*iuw1-4OLuR2qEtRvDRILPA.png)
+![](/images/2020-05-25-Access-Management-5-Spring-RestTemplate-Feign-Keycloak/1_iuw1-4OLuR2qEtRvDRILPA.png)
 
 **Add Role** butonuna basarak rolü yaratıyoruz.
 
-![](https://miro.medium.com/max/1603/1*b7zL2z1MYVmISpLm80Tuow.png)
+![](/images/2020-05-25-Access-Management-5-Spring-RestTemplate-Feign-Keycloak/1_b7zL2z1MYVmISpLm80Tuow.png)
 
 {% include feed-ici-yazi-3.html %}
 
 İki rolü de aynı şekilde yarattıktan sonra son görüntümüz aşağıdaki gibi olmalı.
 
-![](https://miro.medium.com/max/1600/1*Pn1M0g7Xne6Gz0P9RfVWxA.png)
+![](/images/2020-05-25-Access-Management-5-Spring-RestTemplate-Feign-Keycloak/1_Pn1M0g7Xne6Gz0P9RfVWxA.png)
 
 ### 2.4. Client
 
 Artık uygulamamızın bağlanacağı bilgileri vereceğimiz Client’ımızı yaratmaya geçebiliriz. **Client** başlığını tıkladığımızda aşağıdaki gibi bir ekran geliyor.
 
-![](https://miro.medium.com/max/1599/1*q-NI_6J0DgB1zhTiqS-YJQ.png)
+![](/images/2020-05-25-Access-Management-5-Spring-RestTemplate-Feign-Keycloak/1_q-NI_6J0DgB1zhTiqS-YJQ.png)
 
 Burada **Create** butonunu tıklayarak uygulamamıza client yaratacağız. Spring Boot uygulamaları default olarak 8080 portu ile ayağa kalkar. Keycloak da aynı portta ayağa kalktığı için bir çakışma olmaması için ilerleyen adımlarda uygulamamızın portunu 8088 olarak değiştireceğiz. Aşağıdaki bilgilerle uygulamamız için client’ımızı yaratıyoruz.
 
-![](https://miro.medium.com/max/1600/1*kX1nqa-jFDvdaJ7leIbLXQ.png)
+![](/images/2020-05-25-Access-Management-5-Spring-RestTemplate-Feign-Keycloak/1_kX1nqa-jFDvdaJ7leIbLXQ.png)
 
 Sonraki adımımızda clientımızı yapılandırmamız gerekli. Bizim senaryomuz bir frontend uygulaması tarafından **Users** login edip onların ekran üzerindeki credentiallarıyla ilgili bir deneme yapmak değil. Servislerimizin sadece uygulamamıza verilen yetkiler kapsamında çağırılabildiğini test etmek istiyoruz. Bu sebeple **Access Type** alanımızı **confidential**, **Service Accounts Enabled** ve **Authorization Enabled** alanlarını **On** yapıyoruz. Aşağıya kaydırıp **Save** butonuna tıkladıktan sonra ekranda yeni tablarımız belirecek.
 
-![](https://miro.medium.com/max/1599/1*110ZLxjsHUM_k_1-97utGg.png)
+![](/images/2020-05-25-Access-Management-5-Spring-RestTemplate-Feign-Keycloak/1_110ZLxjsHUM_k_1-97utGg.png)
 
 Kaydettikten sonra çıkan **Service Account Roles** tabına geçerek uygulamamıza yarattığımız rollerden **sadece user-role** rolünü veriyoruz.
 
-![](https://miro.medium.com/max/1601/1*qpkaCXzZ6oYXW-H9MPhy6g.png)
+![](/images/2020-05-25-Access-Management-5-Spring-RestTemplate-Feign-Keycloak/1_qpkaCXzZ6oYXW-H9MPhy6g.png)
 
 Son olarak **Credentials** tabına giderek uygulamamız için yaratılan **Secret**’ı kopyalıyoruz. Bu secret’ı uygulamamıza vermemiz gerekecek.
 
-![](https://miro.medium.com/max/1599/1*IyaUMl3klJMNCkb98BI6UA.png)
+![](/images/2020-05-25-Access-Management-5-Spring-RestTemplate-Feign-Keycloak/1_IyaUMl3klJMNCkb98BI6UA.png)
 
 ## 3. Spring Boot Uygulaması
 
@@ -154,19 +154,19 @@ Sonuçları gözlemlemek için [bu yazımda bahsettiğim](https://medium.com/meh
 
 ### 4.1. RestTemplate Authorized
 
-![](https://miro.medium.com/max/696/1*FEY06jm12WgP7IhoW9vNxw.png)
+![](/images/2020-05-25-Access-Management-5-Spring-RestTemplate-Feign-Keycloak/1_FEY06jm12WgP7IhoW9vNxw.png)
 
 ### 4.2. RestTemplate Unauthorized
 
-![](https://miro.medium.com/max/741/1*qwhViagic8PQEd6sRJTXkw.png)
+![](/images/2020-05-25-Access-Management-5-Spring-RestTemplate-Feign-Keycloak/1_qwhViagic8PQEd6sRJTXkw.png)
 
 ### 4.3. Feign Client Authorized
 
-![](https://miro.medium.com/max/554/1*nas7-fEnQjP9hMX3EjHudA.png)
+![](/images/2020-05-25-Access-Management-5-Spring-RestTemplate-Feign-Keycloak/1_nas7-fEnQjP9hMX3EjHudA.png)
 
 ### 4.4. Feign Client Unauthorized
 
-![](https://miro.medium.com/max/715/1*9DKU9ZfQIeD1bX5f_L4QHA.png)
+![](/images/2020-05-25-Access-Management-5-Spring-RestTemplate-Feign-Keycloak/1_9DKU9ZfQIeD1bX5f_L4QHA.png)
 
 {% include feed-ici-yazi-2.html %}
 

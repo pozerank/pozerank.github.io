@@ -12,7 +12,7 @@ Zamanla birlikte trendler değişti, hayatımız değişti. Hızla değişmeye d
 
 Geçtiğimiz sene başladığım eğitim macerasına bu sene de hız kesmeden devam ederken yeni yılda da teknik bloglamaya devam edeceğim. Asıl yeni haber, zamanla değişen koşullarla birlikte bilgi paylaşımı için artık YouTube platformunu da kullanmaya başlayacağım.  **“**[**Technical Debt**](https://youtube.com/@technicaldebt-tr?si=TuyUqh9Se5YjIaLj)**”** isminde açtığım kanalda videolarla yine paylaşımlarıma devam edeceğim.
 
-![](https://miro.medium.com/v2/resize:fit:1400/1*7sqtjRMVm0lAytRPMIC01g.png)
+![](/images/2025-01-01-technical-debt/1_7sqtjRMVm0lAytRPMIC01g.png)
 
 Bu kanalı niçin açtığım, kimlere hitap ettiği, ne tür içerikler olacağı gibi konuları paylaştığım “[**Niçin Technical Debt**](https://www.youtube.com/watch?v=FbUHty6yB0k)” videosuna göz atmak isteyebilirsiniz.
 

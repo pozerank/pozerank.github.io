@@ -22,7 +22,7 @@ Ertesi gün Çanakkale 18 Mart Üniversitesi'ndeydik. Yaklaşık 130 kişilik bi
 
   
 
-[![](http://4.bp.blogspot.com/_-PvBeE2cwcg/S4kZ8toe7rI/AAAAAAAAAKE/Ff-iv0a9w_I/s640/Cem_Sahne.JPG)](http://4.bp.blogspot.com/_-PvBeE2cwcg/S4kZ8toe7rI/AAAAAAAAAKE/Ff-iv0a9w_I/s1600-h/Cem_Sahne.JPG)
+[![](/images/2010-02-27-canakkale-18-mart-universitesi-gencsen-geleceksin/Cem_Sahne.JPG)](http://4.bp.blogspot.com/_-PvBeE2cwcg/S4kZ8toe7rI/AAAAAAAAAKE/Ff-iv0a9w_I/s1600-h/Cem_Sahne.JPG)
 
   
 
@@ -34,7 +34,7 @@ Katılımcıların anlattığım her kelimede şaşkınlıklarını gizleyememel
 
   
 
-[![](http://2.bp.blogspot.com/_-PvBeE2cwcg/S4kcw7wLJtI/AAAAAAAAAKM/oFyofxaRyCo/s640/Toplu_Fotograf.JPG)](http://2.bp.blogspot.com/_-PvBeE2cwcg/S4kcw7wLJtI/AAAAAAAAAKM/oFyofxaRyCo/s1600-h/Toplu_Fotograf.JPG)
+[![](/images/2010-02-27-canakkale-18-mart-universitesi-gencsen-geleceksin/Toplu_Fotograf.JPG)](http://2.bp.blogspot.com/_-PvBeE2cwcg/S4kcw7wLJtI/AAAAAAAAAKM/oFyofxaRyCo/s1600-h/Toplu_Fotograf.JPG)
 
   
 

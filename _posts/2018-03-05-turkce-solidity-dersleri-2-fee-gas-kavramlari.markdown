@@ -15,7 +15,7 @@ Geliştirme ortamını tanımaya başlamadan önce ilk derste bahsettiğimiz ama
 -   Contract to contract
 -   Contract to account
 
-![](https://miro.medium.com/max/640/1*K9pkxGaDtjcJidMJBFl_Cg.jpeg)
+![](/images/2018-03-05-turkce-solidity-dersleri-2-fee-gas-kavramlari/1_K9pkxGaDtjcJidMJBFl_Cg.jpeg)
 
 Derlenmiş olan bytecode EVM’ler üzerinde çalıştırılır. Bu EVM’ler minerların bilgisayarlarıdır, dolayısıyla tüm minerları gözümüzde canlandırırsak Ethereum networkü aslında global çapta çok büyük bir bilgisayara benzetilebilir. Siz bir contractı deploy ettikten sonra networke bıraktığınız anda binlerce node sizin contractınızı çalıştırmaya başlayacaktır.
 

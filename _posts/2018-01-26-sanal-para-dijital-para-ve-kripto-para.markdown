@@ -7,7 +7,7 @@ image: https://cdn-images-1.medium.com/max/150/1*fVM79n9-2msT4dNFiUjJSA.jpeg
 ---
 
 Muhtemelen bir çoğumuz sanal, dijital ve kripto para kavramlarının aynı olduğunu düşünüyoruz. Bu sebeple gün içerisinde konuşurken o sırada ağzımıza hangisi geliyorsa onu kullanıyoruz belki de. Ya aslında bu 3ü de birbirinden farklı kavarmları ifade ediyorsa? Ya bilmeden biz bu kavramları hatalı kullanıyorsak? 3ü de birbirine çok yakın kavramlar olmakla birlikte birbirlerinden farklılıkları da mevcut, gelin birlikte inceleyelim.
-![](https://miro.medium.com/max/800/1*fVM79n9-2msT4dNFiUjJSA.jpeg)
+![](/images/2018-01-26-sanal-para-dijital-para-ve-kripto-para/1_fVM79n9-2msT4dNFiUjJSA.jpeg)
 
 # Dijital Para (Digital Currency)
 
@@ -19,7 +19,7 @@ Bu kavramdan bahsetmeden önce  **Fiat Money**(İtibari Para) kavramından biraz
 
 # Sanal Para (Virtual Currency)
 
-![](https://miro.medium.com/max/800/1*n2ou-UtlBzO1-pjedAfyJQ.jpeg)
+![](/images/2018-01-26-sanal-para-dijital-para-ve-kripto-para/1_n2ou-UtlBzO1-pjedAfyJQ.jpeg)
 
 Purchase in Game
 
@@ -29,7 +29,7 @@ Doğruyu söylemek gerekirse dijital para ile sanal para arasındaki fark çok a
 
 # **Kripto Para(Crypto Currency)**
 
-![](https://miro.medium.com/max/768/1*hxZy7UkEIwzyyb1jyFeIfg.jpeg)
+![](/images/2018-01-26-sanal-para-dijital-para-ve-kripto-para/1_hxZy7UkEIwzyyb1jyFeIfg.jpeg)
 
 kriptoloji
 

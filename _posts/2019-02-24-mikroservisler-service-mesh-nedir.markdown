@@ -8,7 +8,7 @@ image: https://cdn-images-1.medium.com/max/150/0*FhgA8Ersxk6Tr40r.jpg
 
 Service Mesh tanımı; cevabında sidecar proxy, service discovery, orchestration framework, load balancing, circiut breaker pattern gibi konuları barındıran kavram. İlk cümle her ne kadar kompleks gelse de en yalın haliyle anlatmaya çalışacağım.
 
-![](https://miro.medium.com/max/813/0*FhgA8Ersxk6Tr40r.jpg)
+![](/images/2019-02-24-mikroservisler-service-mesh-nedir/0_FhgA8Ersxk6Tr40r.jpg)
 
 ## 1. Giriş
 
@@ -30,7 +30,7 @@ Sitenizde bir dönem kampanyası oluşturdunuz, örneğin anneler gününe özel
 
 Bu noktada bir mola verip proxy kavramından söz etmem gerekiyor. Kişisel bilgisayarımız ile bir haber sitesine doğrudan erişip o siteden güncel haberleri okumamız mümkün. Ancak pek çok şirkette internete çıkış proxy sunucular üzerinden gerçekleştirilmektedir. Proxy(vekil) sunucular örneğin bir siteye erişmek istediğimizde **request&response trafiğinde araya girip** bizim adımıza siteye erişip bilgileri temin eden ve bu bilgileri tarafımıza aktaran sunuculardır. Güvenlik, caching gibi amaçlarla kullanılabilirler. Caching açısından faydaya bakacak olursak, sabahları X haber sitesine giren 20 çalışan için her defasında gerçekten siteye trafik yaratılmak zorunda kalmamış olduk. İlk trafikten sonraki 19 istek doğrudan proxy’nin cacheinden kullanıcıların bilgisayarlarına dönüşü sağlanmış oldu.
 
-![](https://miro.medium.com/max/625/0*FZkc32z64ZVwh228.png)
+![](/images/2019-02-24-mikroservisler-service-mesh-nedir/0_FZkc32z64ZVwh228.png)
 
 ## 4. Bottleneck Problem
 
@@ -48,9 +48,9 @@ Aslında yukarıda bahsettiğim çözüm Circuit Breaker Pattern’ine ait durum
 
 Service Mesh aslında bir servisin düşünmesi gereken birçok non-functional problemlerin çözümünü sunan bir mimari katman. Yani yukarıdaki bottleneck problem başlığındaki örnekte sıralanan çözümleri developerın kodlama yapmasına gerek kalmadan çözüm olarak sunan bir yapı. Peki, mevcut kodda bir değişiklik yapmadan bunca çözüm nasıl çalışıyor?
 
-![](https://miro.medium.com/max/60/0*Pn9Kt0TG-V6n9_Rw.png?q=20)
+![](/images/2019-02-24-mikroservisler-service-mesh-nedir/0_Pn9Kt0TG-V6n9_Rw_1.png)
 
-![](https://miro.medium.com/max/1750/0*Pn9Kt0TG-V6n9_Rw.png)
+![](/images/2019-02-24-mikroservisler-service-mesh-nedir/0_Pn9Kt0TG-V6n9_Rw.png)
 
 {% include feed-ici-yazi-2.html %}
 

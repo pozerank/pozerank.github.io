@@ -7,7 +7,7 @@ image: https://miro.medium.com/max/150/0*rT1N2EmrbbBg8fJH.png
 ---
 Go dilini öğrenmek hızlı ve zevkli. İlk denemelerinizi yaptınız, dile kabaca aşina oldunuz hatta basit kodlarınızı yazdınız. Ancak canlıya kodu alacak kadar hazır hissediyor musunuz? Fonksiyonel olmayan ihtiyaçlarınızı da karşılayacak, kod ortamlara deploy olurken/olduğunda eliniz ayağınız olacak araçları detaylıca düşünüp projenize dahil ettiniz mi?
 
-![](https://miro.medium.com/max/1000/0*rT1N2EmrbbBg8fJH.png)
+![](/images/2022-05-12-go-ile-uctan-uca-proje-yapimi-serisi/0_rT1N2EmrbbBg8fJH.png)
 
 Bu yazımızda Go dilinin best practicelerini merkezimize koyarak ihtiyaç duyulan entegrasyonları basit bir projede gerçekleştirip kullanabileceğiniz şablon bir proje yapısı ortaya koymaya çalışacağız. Aşağıdaki tercihler yapılırken birçok POC ve testler yapılarak seçimler yapıldı. Ancak teknoloji sürekli gelişiyor, değişiyor. Tercihinize göre ekleme çıkarma yapabileceğiniz bir şablon oluşturmaya çalışacağız, sizin de katkılarınızla bu şablonu daha kullanışlı hale getirebiliriz. Birkaç yazıdan oluşan bu seride konuşacağımız başlıklar;
 
@@ -44,13 +44,13 @@ Bu yazımızda Go dilinin best practicelerini merkezimize koyarak ihtiyaç duyul
 
 Yoğunlukla **Flat** veya **Layered** olarak 2 farklı pratik tercih edilmektedir. **Flat**, tüm dosyaların direk root dizine bırakıldığı yapı, daha ufak ve granüler projeleri ifade ederken **Layered** yapı ise router, handler, domain gibi katmanların net bir şekilde birbirinden ayrıldığı daha kompleks ve büyük projelerde tercih edilen yapıdır. İkisinin de kendilerine göre avantajları ve dezavantajları vardır. İnternette karşılaştırmaları ile ilgili çokça yazı bulunuyor, dilerseniz ufak bir Googling ile detaylı örneklerini inceleyebilirsiniz. Biz Robert C. Martin’in [Clean Architecture](https://www.oreilly.com/library/view/clean-architecture-a/9780134494272/)’da bahsettiği aşağıdaki görsele uygun bir yapı oluşturacağız. Jeffrey Palermo’nun [Onion Architecture](https://jeffreypalermo.com/2008/07/the-onion-architecture-part-1/) olarak da bilinen aşağıdaki görsele yakın bir paketleme yapısı kullanacağız.
 
-![enter image description here](https://miro.medium.com/max/1400/0*O6ZSkhtDUMLmWflO.png)
+![enter image description here](/images/2022-05-12-go-ile-uctan-uca-proje-yapimi-serisi/0_O6ZSkhtDUMLmWflO.png)
 
 ## Paket Yapısı
 
 IDE olarak ben Goland kullanıyorum ancak VSCode veya herhangi bir başka tool da kullanılabilir. Proje yaratarak işe başlıyoruz, ilk başlangıç noktamız klasör yapısı. Bunun Go geliştirim takımı tarafından tanımlanmış bir standardı olmasa da Go topluluğunun tercih ettiği bir yapı artık herkes tarafından benimsenmiş ve kullanılıyor. Detay için [burayı](https://github.com/golang-standards/project-layout) inceleyebilirsiniz.
 
-![enter image description here](https://miro.medium.com/max/540/1*QUS_HdytZy0KskH-4LTXFQ.png)
+![enter image description here](/images/2022-05-12-go-ile-uctan-uca-proje-yapimi-serisi/1_QUS_HdytZy0KskH-4LTXFQ.png)
 
 {% include feed-ici-yazi-2.html %}
 

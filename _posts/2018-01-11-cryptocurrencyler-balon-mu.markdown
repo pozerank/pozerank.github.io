@@ -9,7 +9,7 @@ image: https://cdn-images-1.medium.com/max/150/1*Jp8ajkGPZN3zBo5jL8dXtg.jpeg
 
 Cryptocurrency’lerin balon olup olmadığını konuşmak için öncesinde değer algısını konuşmak gerekir. En basit haliyle dile getirmek gerekirse toplulukların ortak olarak değer verdiği şey değerlidir. Kulağa saçma gibi geliyor olabilir, birazdan örnekleriyle basit bir dilde açıklayacağız. Ve bu değerler genellikle dünya üzerinde varlığı sınırlı şeyler üzerinden gerçekleşir. Hadi bu cümlelerimizi açıklamaya başlayalım.
 
-![](https://miro.medium.com/max/800/1*Jp8ajkGPZN3zBo5jL8dXtg.jpeg)
+![](/images/2018-01-11-cryptocurrencyler-balon-mu/1_Jp8ajkGPZN3zBo5jL8dXtg.jpeg)
 
 Önce önemli bir bilgilendirme. Birazdan anlatılacak örneğin kumar kısmı değil ortak değer algısı kısmına yoğunlaşarak lütfen yazıyı okuyun!
 
@@ -17,7 +17,7 @@ Belki oynamışsınızdır, belki sadece duymuşsunuzdur. Fasulyesine poker! Kum
 
 Siz oynamaya devam ederken evinize bir 4 kişilik arkadaş grubu daha geldi, onlar da başka bir kağıt oyunu oynamak istiyor. Onlar mutfaktan nohut kaptılar onlar da nohut ile oynuyorlar. Zamanla o kadar dillere destan oldu ki bu oyunlarınız evinize duyan geliyor, duyan geliyor. Sınırlı sayıda nohuttan ve fasulyeden bir şekilde edinmeye çalışıyorlar. Fasulye masasındaki bir kişi sıkılıp artık oyundan kalkmak istiyor, elinde 30 fasulyesi var. Bu fasulyeler oyuna olan talepten dolayı o kadar değerlenmiş ki satmaya karar veriyor, 30 fasulye 150 lira diyor anında satılıyor.
 
-![](https://miro.medium.com/max/667/1*SbTDCKriAG5LoBZM14wODQ.jpeg)
+![](/images/2018-01-11-cryptocurrencyler-balon-mu/1_SbTDCKriAG5LoBZM14wODQ.jpeg)
 
 Sonra bu arkadaş biraz da nohut masasında oynayayım diyor, 30 nohut ne kadar diye soruyor, cevap 60 lira. Sonra aradaki birim fiyat farkını farkediyor, bu arkadaş akıllı. Hemen gidip bir avuç mercimek alıyor başka bir masa kuruyor. Derken bu şekilde birçok masa oluşuyor, masalarda farklı değer ölçütleri ve masadan masaya geçerken bu değer ölçütleri arasında dönüşümler ve bunların gerçek parayla olan dönüşümlerinin olduğu bir dünya ortaya çıkıyor. Günde binlerce kişi buraya gelip gidiyor. Her geçen gün kulaktan kulağa yayılıyor, daha fazla kişi geliyor. Daha fazla talebin karşılığı nohutun, fasulyenin TL karşılığı da zamanla artıyor. Hatta hatta internetin de nimetlerinden faydalanarak masalar fiziksel ortamdan kopuyor, her bir masa sanal bir kavram haline gelip masalardaki oyuncular dünyanın herhangi bir yerinden bağlanabilir hale geliyorlar.
 

@@ -12,7 +12,7 @@ image: https://miro.medium.com/max/150/0*mOD5OS5YTXwx-Vd-.png
 -   Central Configuration Server (Spring Cloud Config Server)
 -   File (application.yml)
 
-![](https://miro.medium.com/max/500/0*mOD5OS5YTXwx-Vd-.png)
+![](/images/2022-05-13-golang-configuration-management/0_mOD5OS5YTXwx-Vd-.png)
 
 
 Uygulamamız hangi ortamda çalıştığını bilmeksizin ihtiyaç duyduğu konfigürasyonu uygulama paketi dışından alarak çalışabilmesi gerekir. Projenin ve ortamın ihtiyaçlarına göre bu konfigürasyon farklı şekillerde alınabilir. 3 farklı örnek inceleyeceğiz, önerim bu yöntemlerden size uygun birisini tercih edip kodunuzda sadece onu bulundurmanız. Örnek olması için ben 3ünü de aynı kodun içerisine koyacağım.

@@ -7,7 +7,7 @@ image: https://miro.medium.com/max/150/1*mdijc3xUzEbA2XuyBW5SWg.png
 ---
 Hepimiz uygulamalarımızın birbirleri ile haberleşebilmesi için Rest Servisler sunuyoruz veya tüketiyoruz. Peki bu servisleri oluştururken best practiceleri gerçekten uyguluyor muyuz? Richardson Maturity Model’a, HTTP metotlarına, statü kodlarına, URI tasarım prensiplerine dikkat ediyor muyuz? Farklı başlıklarda bu pratikleri ele alalım.
 
-![](https://cdn-images-1.medium.com/max/1000/1*mdijc3xUzEbA2XuyBW5SWg.png)
+![](/images/2021-08-14-rest-api-design-best-practices/1_mdijc3xUzEbA2XuyBW5SWg.png)
 ## Temel Kurallar
 
 -   **1#** “/” karakteri sadece hiyerarşik ilişkileri belirtmek için kullanılır.

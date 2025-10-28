@@ -13,7 +13,7 @@ Kafka Streamsin son yazısında Windowing konusunu inceleyeceğiz.
 3.  Yazı:  [Kafka Streams Stateful Operations](https://www.mehmetcemyucel.com/2022/kafka-streams-stateful-operations)
 4.  Yazı:  [Kafka Streams Windowing](https://www.mehmetcemyucel.com/2022/kafka-streams-windowing)
 
-![](https://miro.medium.com/max/1000/0*Dg0Gr6w92tALzjGh.png)
+![](/images/2022-12-26-kafka-streams-windowing/0_Dg0Gr6w92tALzjGh.png)
 
 {% include feed-ici-yazi-1.html %}
 
@@ -54,11 +54,11 @@ public class TumblingExample {
 }
 ```
 
-![](https://miro.medium.com/max/1400/1*NCNC0_byaP-jbuH-Xkc11g.png)
+![](/images/2022-12-26-kafka-streams-windowing/1_NCNC0_byaP-jbuH-Xkc11g.png)
 
 Topic’imizden okuduğumuz aynı keye sahip 2 kaydımız olduğunu düşünelim, streami groupBy ve reduce işlemlerinden geçirdiğimizde önceki yazımızdan da hatırlayacağınız gibi bu 2 değeri reducer’daki fonksiyondan geçirip bize store’da saklanacak şekilde sunuyordu. Yani key1'in güncel değeri 1122 olarak saklanacaktı.
 
-![](https://miro.medium.com/max/1400/1*co3on66N0msMFN3L0n71YA.png)
+![](/images/2022-12-26-kafka-streams-windowing/1_co3on66N0msMFN3L0n71YA.png)
 
 Peki biz tumblingWindow ile bu fonksiyonu değiştirdiğimizde neler oldu? WindowSize olarak ilettiğimiz değer kaydın ne kadar süreyle geçerli olacağı bilgisi. Yani bu 1122 değeri emit edildikten sonra 3 dakikalık zaman aralığı için geçerli olacak. Kaydı store’dan sorgulamak için bir Rest Controller yazalım.
 
@@ -81,23 +81,23 @@ public String ktable2(@PathVariable String store, @PathVariable String key) {
 ```
 
 
-![](https://miro.medium.com/max/1400/1*BGN5WR-JS-U9PHk-1wYn6g.png)
+![](/images/2022-12-26-kafka-streams-windowing/1_BGN5WR-JS-U9PHk-1wYn6g.png)
 
 39 geçeden itibaren 3 dakika boyunca geçerli olacak ve aynı sorgulamayı 42 geçe itibariyle sorguladığımızda bu key e ait bir değer dönmeyecek.
 
-![](https://miro.medium.com/max/1400/1*-SmvDOrw49it01bkxmGS1A.png)
+![](/images/2022-12-26-kafka-streams-windowing/1_-SmvDOrw49it01bkxmGS1A.png)
 
 Başka bir örneği de ardarda değerler emit ettirdiğimizde neler reducer’ımızdan gelen değerlerin nasıl değişeceğine bakarak inceleyelim. 33 ve 44 kayırlarını farklı emitlerin içerisine girecek şekilde ard arda gönderelim ve ilk 33 recordunun window u biteceği zamanda yeni record 55 i gönderelim.
 
-![](https://miro.medium.com/max/1400/1*1ST_iMGAilx4j9mQq4PA-Q.png)
+![](/images/2022-12-26-kafka-streams-windowing/1_1ST_iMGAilx4j9mQq4PA-Q.png)
 
 48 geçe ilk recordu gönderdiğimizde storedaki key3 ün değeri 33 oldu.
 
-![](https://miro.medium.com/max/1400/1*KYv9tiWI75B5SolFx0hKQA.png)
+![](/images/2022-12-26-kafka-streams-windowing/1_KYv9tiWI75B5SolFx0hKQA.png)
 
 49 geçe ilk recordu gönderdiğimizde ise storedaki keyin değeri reducerın çıktısı olan 3344 olarak güncellendi ama ilk windowun süresi uzamadı.
 
-![](https://miro.medium.com/max/1400/1*nA3SAEG7cKXIcBw2032AIg.png)
+![](/images/2022-12-26-kafka-streams-windowing/1_nA3SAEG7cKXIcBw2032AIg.png)
 
 51 geçe itibariyle de artık kayda erişemez duruma geldik. Key’i ilk store’a sokan sürenin windowu o keyi update eden tüm recordlar için de geçerli oldu.
 
@@ -137,19 +137,19 @@ public class SlidingExample {
 
 İlk kaydımızı gönderelim.
 
-![](https://miro.medium.com/max/1400/1*mNJPWYI5VPlGl7s_0L1k4A.png)
+![](/images/2022-12-26-kafka-streams-windowing/1_mNJPWYI5VPlGl7s_0L1k4A.png)
 
 Emit edildikten sonra 1 dakika attıktan sonra 2. kaydı gönderdiğimizde görüntü şu şekilde oluyor.
 
-![](https://miro.medium.com/max/1400/1*FLWev1O7-z9CMuZqbG6wMg.png)
+![](/images/2022-12-26-kafka-streams-windowing/1_FLWev1O7-z9CMuZqbG6wMg.png)
 
 Yeni dağıtımdan sonra 3. kaydı gönderdiğimizde de bu şekilde
 
-![](https://miro.medium.com/max/1400/1*yZfko_sKy3hQ1oEX6fy4Dg.png)
+![](/images/2022-12-26-kafka-streams-windowing/1_yZfko_sKy3hQ1oEX6fy4Dg.png)
 
 Son bir kayıt daha gönderiyoruz ancak bu süre zarfında ilkinin geçerliliği sona erdiği için artık o value responseda dönmeyecek.
 
-![](https://miro.medium.com/max/1400/1*fJBWgs1rvx3lv2VGtBfPFw.png)
+![](/images/2022-12-26-kafka-streams-windowing/1_fJBWgs1rvx3lv2VGtBfPFw.png)
 
 {% include feed-ici-yazi-1.html %}
 

@@ -8,7 +8,7 @@ image: https://cdn-images-1.medium.com/max/150/1*nxoL5MIJYyvW60mkAPZpLw.jpeg
 
 Bu yazımızda [**Spotify Maven Plugin**](https://github.com/spotify/docker-maven-plugin)’ini kullanarak Spring Boot projemizden Docker imajımızı yaratacağız.
 
-![Dockerize with Maven](https://miro.medium.com/max/2066/1*nxoL5MIJYyvW60mkAPZpLw.jpeg)
+![Dockerize with Maven](/images/2019-01-27-spring-boot-projesini-maven-ile-dockerize-etmek/1_nxoL5MIJYyvW60mkAPZpLw.jpeg)
 
 ## 1. Yapılandırma
 

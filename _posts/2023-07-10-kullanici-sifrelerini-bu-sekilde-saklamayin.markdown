@@ -15,7 +15,7 @@ Son kullanıcı şifrelerinin güvenli bir şekilde saklanması önemli konulard
 -   Work Factors
 -   Vaults
 
-![](https://miro.medium.com/v2/resize:fit:1400/1*51yiQNFp5KyP3ncI5-zVJA.jpeg)
+![](/images/2023-07-10-kullanici-sifrelerini-bu-sekilde-saklamayin/1_51yiQNFp5KyP3ncI5-zVJA.jpeg)
 
 ## Encrypting Yerine Hash Fonksiyonu Kullanın
 
@@ -41,11 +41,11 @@ Farkındaysanız hashing her input için tekil bir digest oluşturma mantığın
 
 Örnek olması için aşağıdaki siteden “password” içerikli şifremi md5 ile hashletiyorum.
 
-![](https://miro.medium.com/v2/resize:fit:1400/1*dTTRSPjzB4hVhjEMHo3ySw.png)
+![](/images/2023-07-10-kullanici-sifrelerini-bu-sekilde-saklamayin/1_dTTRSPjzB4hVhjEMHo3ySw.png)
 
 İnternet üzerinde her gün büyümeye devam eden çok büyük rainbow tablelar mevcut. Farklı algoritmalar, farklı input karakter setleri için TB’larca veriyi arayıp verilen hashin ilk halini bulmak çok zor değil. Yukarıdaki oluşan MD5 hashi kopyalayıp bu tür bir sitede arattığımda oluşan sonuca bakalım.
 
-![](https://miro.medium.com/v2/resize:fit:1400/1*T5hcNMteeBx1OHrenojhjg.png)
+![](/images/2023-07-10-kullanici-sifrelerini-bu-sekilde-saklamayin/1_T5hcNMteeBx1OHrenojhjg.png)
 
 Bu sebeple bu hashlerin üzerinde biraz daha fazla düşünmeye ihtiyacımız var.
 
@@ -53,11 +53,11 @@ Bu sebeple bu hashlerin üzerinde biraz daha fazla düşünmeye ihtiyacımız va
 
 Salting mantığı, kullanıcının şifresini hashlemeden önce başına random bir karakter setinin eklenmesi mantığından geliyor. Hemen yine örnekten bakalım.
 
-![](https://miro.medium.com/v2/resize:fit:1400/1*KOXt01QtM8MnrV-BSsQ7Zw.png)
+![](/images/2023-07-10-kullanici-sifrelerini-bu-sekilde-saklamayin/1_KOXt01QtM8MnrV-BSsQ7Zw.png)
 
 Bu kez passwordü hashlemeden önce random bir seti passwordün başına ekleyerek hash değerini oluşturdum. Oluşan hashi rainbow tableda aratalım.
 
-![](https://miro.medium.com/v2/resize:fit:1400/1*u3hgN_eMuDbGUv0HxYl56Q.png)
+![](/images/2023-07-10-kullanici-sifrelerini-bu-sekilde-saklamayin/1_u3hgN_eMuDbGUv0HxYl56Q.png)
 
 Farkındaysanız bu kez hashimiz bulunamadı. Çünkü salt+password kombinasyonu çok da karşılaşılan bir kombinasyon değil ve benim denediğim sitedeki table’da bir karşılığı olmadığından açık hali bulunamadı. Ancak bu daha geniş rainbow tablelarda bulunmayacağı anlamına gelmeyecektir. Genellikle bu tarz devasa tablolar ücretli ve/veya daha az kişinin kullanımına açık olacaktır. Ayrıca password ile salt iç içe olduğundan sadece padding yapılmadan bir algoritma ile salt ile passwordün iç içe girdiği bir kombinasyon da yaratabiliriz. Örneğin passwordün her karakterinden sonra random bir karakter ekleyerek saltu karakter seviyesinde iç içe geçirebiliriz.
 

@@ -8,7 +8,7 @@ image: https://miro.medium.com/max/150/1*gp7kdBQxRzDUmAMRa74LEg.png
 
 19 Aralık’ta JUG İstanbul ile yaptığımız sohbete Spotify veya ITunes Podcast’ler aracılığıyla aşağıdaki linklerden erişebilirsiniz. Ayrıca sohbette bahsi geçen teknolojilerin linklerini kaynakça olması amacıyla aşağıda topluyorum.
 
-![](https://miro.medium.com/max/750/1*gp7kdBQxRzDUmAMRa74LEg.png)
+![](/images/2019-12-22-Alternatif-JVMler-ve-Javanin-Gelecegi-Podcasti/1_gp7kdBQxRzDUmAMRa74LEg.png)
 
 {% include feed-ici-yazi-1.html %}
 

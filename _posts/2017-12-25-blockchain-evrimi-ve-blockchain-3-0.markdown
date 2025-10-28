@@ -12,7 +12,7 @@ Online datanın miktarı zaten artmaktayken sosyal medyanın yükselişiyle veri
 
 # Blockchain 1.0 - Digital Currency
 
-![](https://miro.medium.com/max/788/1*ITEGfqVQIwkwrYALodhjIA.jpeg)
+![](/images/2017-12-25-blockchain-evrimi-ve-blockchain-3-0/1_ITEGfqVQIwkwrYALodhjIA.jpeg)
 
 Blockchain’in Doğuşu
 
@@ -20,7 +20,7 @@ Mortgage krizinden aylar sonra 3 Ocak 2009'da  **Bitcoin**’in hayata geçmesiy
 
 # Blockchain 2.0 - Smart Contracts
 
-![](https://miro.medium.com/max/800/1*cHaRozciv-DukHbmwVs72g.png)
+![](/images/2017-12-25-blockchain-evrimi-ve-blockchain-3-0/1_cHaRozciv-DukHbmwVs72g.png)
 
 Ethereum ve Smart Contract’lar
 
@@ -30,7 +30,7 @@ Smart Contract’lar araclığı ile artık sadece değer aktarımı yapılabilm
 
 # Blockchain 3.0 - Distributed Applications (Dapps)
 
-![](https://miro.medium.com/max/800/1*GJ__t-0GeA4aPEQXX6O99A.jpeg)
+![](/images/2017-12-25-blockchain-evrimi-ve-blockchain-3-0/1_GJ__t-0GeA4aPEQXX6O99A.jpeg)
 
 Dağıtık Uygulama Mimarisi (Dapps)
 

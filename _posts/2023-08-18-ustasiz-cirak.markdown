@@ -23,7 +23,7 @@ Bu ve bunun gibi onlarca soru ile örneklendirebilirim. Herkes farklı bir motiv
 
 Yaptığımız iş, mesleğimiz,  Maslow’un ihtiyaçlar hiyerarşisindeki her basamakta önemli bir yer kaplar. Çünkü buradan maaşınızı kazanıyor, bu maaşla barınıyor ve ailenizi geçindiriyorsunuz. İşinizi iyi yapan ve uyumlu birisi iseniz çevrenizde saygı görüyor ve elinizdeki altın bilezikle kendi hayallerinizi gerçekleştirecek güce sahip oluyorsunuz.
 
-![](https://miro.medium.com/v2/resize:fit:499/0*TA6_vaDeOWZ4XUc3.jpeg)
+![](/images/2023-08-18-ustasiz-cirak/0_TA6_vaDeOWZ4XUc3.jpeg)
 
 Hayatımızda bu kadar etkisi olacak kararların doğruluğundan emin olmak istemeniz gayet normal. Bunun için de çevrenizdeki güvenebileceğiniz insanların bilgi ve tecrübesine ihtiyaç duyuyorsunuz.
 

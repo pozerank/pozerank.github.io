@@ -8,7 +8,7 @@ image: https://cdn-images-1.medium.com/max/150/1*9oEKN6s0vnoxVTmjuFgymw.png
 
 Bir Spring Boot projemiz var. Projemize ait application.properties dosyasının içerisinde veritabanına bağlanırken kullandığımız kullanıcı adı/şifre gibi hassas bir veri var. Bu verinin açık olarak dosyada durması bir problem, güvenlik açığı teşkil ediyor. Bugünkü yazımız böyle hassas bilgilerin encrypted bir şekilde saklanabilmesi için [Jasypt](http://www.jasypt.org/) kütüphanesi ile Spring Boot properties’i birlikte nasıl kullanabileceğimiz hakkında olacak.
 
-![](https://miro.medium.com/max/2400/1*9oEKN6s0vnoxVTmjuFgymw.png)
+![](/images/2019-02-03-spring-boot-propertylerini-jasypt-ile-sifrelemek/1_9oEKN6s0vnoxVTmjuFgymw.png)
 
 ## 1. Jasypt Nedir
 
@@ -34,7 +34,7 @@ Bu durumda iken `mcy.person` property’sini dosyada açık olarak tutmamayı te
 
 ### 2.1. Jasypt ile Şifreleme
 
-![](https://miro.medium.com/max/423/1*nWyb91sUqINvkWgXofspDA.png)
+![](/images/2019-02-03-spring-boot-propertylerini-jasypt-ile-sifrelemek/1_nWyb91sUqINvkWgXofspDA.png)
 
 {% include feed-ici-yazi-1.html %}
 

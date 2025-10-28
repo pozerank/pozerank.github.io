@@ -5,23 +5,23 @@ categories: [blockchain, fundamentals]
 tags: [utxo, transactions, blockchain, bitcoin, mehmet-cem-yucel]
 image: https://cdn-images-1.medium.com/max/150/1*xFpHRPhxSWbQZoLTxRk8og.png
 ---
-![](https://miro.medium.com/max/550/1*xFpHRPhxSWbQZoLTxRk8og.png)
+![](/images/2017-12-25-unspent-transaction-output-utxo/1_xFpHRPhxSWbQZoLTxRk8og.png)
 
 UTXO (Unspent Transaction Output)
 
 Birçok blockchain örneğinin temelinde yatan bir konuyla yazı dizisine devam ediyoruz. Bugünün konusu Unspent Transaction Output (UTXO). “Ödenmemiş İşlem Çıktısı” diye çevirmek tam içime sinmese de yine en iyi çeviri bu olur sanırım.
 
-![](https://miro.medium.com/max/704/0*eFNT-TXPNwCWoHHk.jpg)
+![](/images/2017-12-25-unspent-transaction-output-utxo/0_eFNT-TXPNwCWoHHk.jpg)
 
 Elinizde bir miktar paranız var örneğin 840 lira. Bu parayla kocaman bir tablet çikolata aldınız, çikolatanız bir değer, her bir parçası da 20 lira ediyor(42 kare var). Bu değer başka değerlerle takas edilebilir veya tekrar paraya çevirilebilir(bu durumda aslında para da bir değer oluyor ki zaten öyle).
 
 Çikolatanızdan 9 parça koparıp bir kazak karşılığında takas yaptınız. Artık size 42 parçalık çikolatadan 33 parça kaldı, 9 parça da kazakçıda.
 
-![](https://miro.medium.com/max/704/0*wssmknZdjyhpfALw.jpg)
+![](/images/2017-12-25-unspent-transaction-output-utxo/0_wssmknZdjyhpfALw.jpg)
 
 Gözünüzde havuz problemine dönüşmeden son bir işlem daha yapacağız. Kazakçının sattığı kazakları müşterisine vermeden önce koymak için poşete ihtiyacı var, elindeki 9 parça çikolatanın 4üyle poşet alacak. Sizin de evde çöp poşetiniz bitmiş, 1 parça ile de siz poşet aldınız. Son görüntü şu şekilde;
 
-![](https://miro.medium.com/max/704/0*7nV2rsA-pLolUFoB.png)
+![](/images/2017-12-25-unspent-transaction-output-utxo/0_7nV2rsA-pLolUFoB.png)
 
 Farkındaysanız bir işlem inputlarından(kazak satma) doğan output(9 parça çikolata) ile  **kazakçı bu outputu tekrar paraya çevirmeden**  başka bir işlem inputu(poşet satınalma) yaratmak suretiyle yeni bir output(4 parça çikolata) oluşturabiliyorsa bu yapıya**Unspent Transaction Output(UTXO)**  ismi verilir.
 

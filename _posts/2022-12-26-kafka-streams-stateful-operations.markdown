@@ -13,7 +13,7 @@ image: https://miro.medium.com/max/150/0*jZhKkFZoAWCuZzs0.webp
 3.  Yazı:  [Kafka Streams Stateful Operations](https://www.mehmetcemyucel.com/2022/kafka-streams-stateful-operations)
 4.  Yazı:  [Kafka Streams Windowing](https://www.mehmetcemyucel.com/2022/kafka-streams-windowing)
 
-![](https://miro.medium.com/max/1400/0*jZhKkFZoAWCuZzs0.jpg)
+![](/images/2022-12-26-kafka-streams-stateful-operations/0_jZhKkFZoAWCuZzs0.jpg)
 
 {% include feed-ici-yazi-1.html %}
 
@@ -53,23 +53,23 @@ public class ReduceExample {
 
 Bir reducer yarattık ve topicten okuduğu eski değerlerin özeti ile yeni gelen değerin çıktısını birbirine concatenate edecek şekilde tanımladık. Input topicimize aynı key ile ardarda 3 value gönderdik.
 
-![](https://miro.medium.com/max/1400/1*HMHcEwVBJ4jnnAPs789aMg.png)
+![](/images/2022-12-26-kafka-streams-stateful-operations/1_HMHcEwVBJ4jnnAPs789aMg.png)
 
 Belirli bir süre geçtikten sonra uygulamamızın loglarına aşağıdaki satırlar düştü.
 
-![](https://miro.medium.com/max/530/1*vPS2DhjmBMHmDLHYjZ0naw.png)
+![](/images/2022-12-26-kafka-streams-stateful-operations/1_vPS2DhjmBMHmDLHYjZ0naw.png)
 
 Output topic imizin çıktısı da 4. adımda oluşan reduce çıktısı gibi oldu.
 
-![](https://miro.medium.com/max/1400/1*6DwjziXD2hC_gCpKkrZipw.png)
+![](/images/2022-12-26-kafka-streams-stateful-operations/1_6DwjziXD2hC_gCpKkrZipw.png)
 
 Muhtemelen akla gelen soru, yeni gelen kayıtların son durumu ne olacak sorusu. Yani 10005, 10006 vb gönderirsem output topicine en baştan mı yoksa kalınan noktadan itibaren mi kayıt gelir.
 
-![](https://miro.medium.com/max/1400/1*ELJHtwWtERXdUmeVd4StHg.png)
+![](/images/2022-12-26-kafka-streams-stateful-operations/1_ELJHtwWtERXdUmeVd4StHg.png)
 
 Cevabı aşağıdaki gibi. Aslında cache ile store arasında bir fark bulunmuyor, sadece belirli periyotlarda bir emit ediliyor.
 
-![](https://miro.medium.com/max/1400/1*Hh0SDvPp2V0wcleGXbbNrA.png)
+![](/images/2022-12-26-kafka-streams-stateful-operations/1_Hh0SDvPp2V0wcleGXbbNrA.png)
 
 {% include feed-ici-yazi-2.html %}
 
@@ -103,9 +103,9 @@ public class AggregationExample {
 
 Burada String,String olarak başladığımız streami bir aggregator aracılığıyla manipule edip String,Long’a çeviriyoruz. Başlangıç değerini alabilmesi için de bir Initializer tanımlıyoruz. Değerlerimizi gönderdiğimizde Long olarak dönüşmüş çıktımızı alıyoruz.
 
-![](https://miro.medium.com/max/1400/1*0CRFb92VC5yNISIQ7sCDXA.png)
+![](/images/2022-12-26-kafka-streams-stateful-operations/1_0CRFb92VC5yNISIQ7sCDXA.png)
 
-![](https://miro.medium.com/max/1400/1*xexhzd2iGS-58xXkMWcRCQ.png)
+![](/images/2022-12-26-kafka-streams-stateful-operations/1_xexhzd2iGS-58xXkMWcRCQ.png)
 
 ## Count
 
@@ -143,11 +143,11 @@ Diğer soru, multi-instance çalıştığım durumda her instance taki storelar 
 
 Aslında bu sonuçta ne elde etmek istediğinize göre değişen ve tercihlerimizi buna göre yapmamız gereken bir durum. Örneğin bir sayma işlemi yapıyorsanız, recordların geliş sırasının bir önemi yoksa aynı Kafka Consumer Group’taki n farklı instance ın toplam sonuca bir race condition yaratmayacağını öngörürüz. Sıralama önemli ise farklı maliyetlere katlanıp sıralamayı kaybetmemeyi sağlayabiliriz. Store’lar arasında eşitleme de yaratılan store için Kafka’nın arka planda yarattığı changelog topicleri ile garanti altına alınmaktadır.
 
-![](https://miro.medium.com/max/1400/1*f4AGs8zY5GgK15AoBwLe9A.png)
+![](/images/2022-12-26-kafka-streams-stateful-operations/1_f4AGs8zY5GgK15AoBwLe9A.png)
 
 Changelog topic inin çıktısı reducer örneğindeki output’a bastığımız nihai stream in çıktısı ile aynı.
 
-![](https://miro.medium.com/max/1400/1*tJ7DQNAubsVniMZraN20CA.png)
+![](/images/2022-12-26-kafka-streams-stateful-operations/1_tJ7DQNAubsVniMZraN20CA.png)
 
 {% include feed-ici-yazi-1.html %}
 

@@ -8,7 +8,7 @@ image: https://cdn-images-1.medium.com/max/150/0*FkLBCYZHIKTm97it.gif
 
 Java ve Spring dünyasında **Aspect Oriented Programming (AOP)** meslekteki ilk yıllarımda bana hep ilginç gelen başlıklardan olmuştu. **AOP** sayesinde metoda bir annotation ekliyorsun, hop metodun çalışmasından önce ve/veya sonra başka özel bir kod çalışıyor. Bu sıradan bir GOTO gibi değil; o metodun tüm giriş ve çıkış noktalarını kontrol edip gerektiğinde düzenleyebileceğiniz tam tabiri caizse o metodu elinde tutan sihir gibi mekanizma sunuyor. Vay be! Bişiy yaparım ben bunla ki!..
 
-![](https://cdn-images-1.medium.com/max/800/0*FkLBCYZHIKTm97it.gif)
+![](/images/2025-10-23-javada-aspect-oriented-programming-aop-ve-decorator-pattern-adim-adim-orneklerle/0_FkLBCYZHIKTm97it.gif)
 
 Aspect Oriented Programming
 

@@ -13,7 +13,7 @@ image: https://miro.medium.com/max/150/1*hV308VnNWS1xlrSaztOHkw.png
 -   Monitoring (prometheus & go-kit)
 -   Open-api/Swagger desteği (swaggo)
 
-![](https://miro.medium.com/max/1400/1*hV308VnNWS1xlrSaztOHkw.png)
+![](/images/2022-05-16-golang-api-management/1_hV308VnNWS1xlrSaztOHkw.png)
 
 ## HTTP Router
 
@@ -48,7 +48,7 @@ Yukarıdaki kod örneğinde prometheus kit içerisine 2 farklı toplamda 3 metri
 
 Yukarıda requestCount’u, latency’yi ve countResult gibi custom parametreleri prom.metrics’e işledik. Hatırlarsanız Echo frameworkun route’larını bind ederken  `/metrics`  path i tanımlamıştık. İşte bu endpoint toplanan uygulamanın metriklerinin ve custom metriklerin prometheus’un anlayabileceği dilde bir uçtan paylaşılabilmesi için açılmış bir endpointtir. Bu adrese gittiğimizde aşağıdaki formatta uygulamamıza ait tüm metrikleri edinebiliriz.
 
-![](https://miro.medium.com/max/1400/1*mOKPTHZ3nyUf2UU7lEsoMg.png)
+![](/images/2022-05-16-golang-api-management/1_mOKPTHZ3nyUf2UU7lEsoMg.png)
 
 Örneğin üst satırlarda uygulamamızın Check endpointine 3 istek geldiğini, bunların toplamda ~5sn sürdüğünü(breakpoint vardı :)) custom metriclerimiz aracılığı ile görebiliyoruz. Aynı şekilde memory istatistiklerini ve daha fazlası da yine buradan erişilebilir durumda olacaktır. Bu metrikleri prometheus aracılığıyla collect edip Grafana’da monitoring dashboardları hazırlayabilir, anomali durumlarında haberdar olabilmek için alarmlar tanımlayabilirsiniz.
 
@@ -71,11 +71,11 @@ Swagger için router’da handlerının binding ini yapmıştık. Handler için 
 
 Bu komutla uygulamamın başlangıcı burası ve oluşturacağın dökümantasyonu bu dosyanın altına bırak demiş oluyoruz. Çalıştırdığımızda aşağıdaki dosyalar oluşuyor. Buradaki bilgiler ışığında birazdan swagger ekranımız render olacak.
 
-![](https://miro.medium.com/max/688/1*Gfe_jMayVH78OvPBiyh11A.png)
+![](/images/2022-05-16-golang-api-management/1_Gfe_jMayVH78OvPBiyh11A.png)
 
 Uygulamanın  `http://localhost:8080/swagger/index.html`  adresine gittiğimizde swaggerımıza artık erişebiliriz.
 
-![](https://miro.medium.com/max/1400/1*TvREd2RT4xaKjXaVJW9pXA.png)
+![](/images/2022-05-16-golang-api-management/1_TvREd2RT4xaKjXaVJW9pXA.png)
 
 Buradaki önemli nokta, Echo serverınızı yarattığınız noktada Swagger’ın ve dökümanların yaratıldığı klasörün static importlarını eklemeyi unutmayın ki uygulamanın contextine dahil olabilsin.
 

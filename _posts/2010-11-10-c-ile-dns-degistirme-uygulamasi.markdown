@@ -14,7 +14,7 @@ Yavaş yavaş uygulamamıza giriş yapalım. Öncelikle bir bilgisayarda program
 Programımızın arayüzü bu şekilde. Ağ bağdaştırıcısı seçildikten sonra var olan DNS IP'leri içerisinden istediğimizi seçerek DNS adresimizi değiştirebiliyoruz. İstersek bu adres listesine kendi istediğimiz sunucuların IP'lerini de aşağıdaki kısımdan ekleyebiliyoruz. Böylece kullanımı esnek bir yapıya taşımış oluyoruz.  
   
 
-[![](http://3.bp.blogspot.com/_-PvBeE2cwcg/TLLmHYE35XI/AAAAAAAAAQg/blzCdyM0QqU/s1600/Capture.PNG)](http://3.bp.blogspot.com/_-PvBeE2cwcg/TLLmHYE35XI/AAAAAAAAAQg/blzCdyM0QqU/s1600/Capture.PNG)
+[![](/images/2010-11-10-c-ile-dns-degistirme-uygulamasi/Capture.PNG)](/images/2010-11-10-c-ile-dns-degistirme-uygulamasi/Capture.PNG)
 
 ﻿Resim 1: Program Arayüzü
 
@@ -26,7 +26,7 @@ Yapmamız gereken ilk şey bilgisayarımızdaki bağdaştırıcıların listesin
 
   
 
-[![](http://1.bp.blogspot.com/_-PvBeE2cwcg/TLLom5M9CsI/AAAAAAAAAQk/AtEM7BWFZVM/s1600/2.PNG)](http://1.bp.blogspot.com/_-PvBeE2cwcg/TLLom5M9CsI/AAAAAAAAAQk/AtEM7BWFZVM/s1600/2.PNG)
+[![](/images/2010-11-10-c-ile-dns-degistirme-uygulamasi/2.PNG)](/images/2010-11-10-c-ile-dns-degistirme-uygulamasi/2.PNG)
 
   
 
@@ -36,7 +36,7 @@ anahtar düğümünün altında bulunuyor. Kendi makinemdeki görüntü şu şek
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-[![](http://1.bp.blogspot.com/_-PvBeE2cwcg/TLLpOnMD_cI/AAAAAAAAAQo/XdNhYZlTmG0/s1600/3.PNG)](http://1.bp.blogspot.com/_-PvBeE2cwcg/TLLpOnMD_cI/AAAAAAAAAQo/XdNhYZlTmG0/s1600/3.PNG)
+[![](/images/2010-11-10-c-ile-dns-degistirme-uygulamasi/3.PNG)](/images/2010-11-10-c-ile-dns-degistirme-uygulamasi/3.PNG)
 
 Resim 2: Regedit Altındaki Ağ Bağdaştırıcıları Listesi
 
@@ -50,7 +50,7 @@ Resim 2: Regedit Altındaki Ağ Bağdaştırıcıları Listesi
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-[![](http://1.bp.blogspot.com/_-PvBeE2cwcg/TLLqzQ0-OyI/AAAAAAAAAQs/TBq9VtL_W6k/s1600/4.PNG)](http://1.bp.blogspot.com/_-PvBeE2cwcg/TLLqzQ0-OyI/AAAAAAAAAQs/TBq9VtL_W6k/s1600/4.PNG)
+[![](/images/2010-11-10-c-ile-dns-degistirme-uygulamasi/4.PNG)](/images/2010-11-10-c-ile-dns-degistirme-uygulamasi/4.PNG)
 
 Resim 3: ID'ler ve İsimleri
 
@@ -64,7 +64,7 @@ Bizim yapmamız gereken bu id'leri ve bu id'lere eşleşen bağdaştırıcı isi
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-[![](http://3.bp.blogspot.com/_-PvBeE2cwcg/TLLrkOl-GSI/AAAAAAAAAQw/dz_yaLbTJQY/s1600/5.PNG)](http://3.bp.blogspot.com/_-PvBeE2cwcg/TLLrkOl-GSI/AAAAAAAAAQw/dz_yaLbTJQY/s1600/5.PNG)
+[![](/images/2010-11-10-c-ile-dns-degistirme-uygulamasi/5.PNG)](/images/2010-11-10-c-ile-dns-degistirme-uygulamasi/5.PNG)
 
 Resim 4: Adapter.cs
 
@@ -74,7 +74,7 @@ Aynı şekilde programda kayıtlı olan DNS IP'lerini de bir yerde tutmamız laz
   
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------  
 
-[![](http://1.bp.blogspot.com/_-PvBeE2cwcg/TLLv19WTrdI/AAAAAAAAAQ4/X1iIhN1aS1o/s1600/7.PNG)](http://1.bp.blogspot.com/_-PvBeE2cwcg/TLLv19WTrdI/AAAAAAAAAQ4/X1iIhN1aS1o/s1600/7.PNG)
+[![](/images/2010-11-10-c-ile-dns-degistirme-uygulamasi/7.PNG)](/images/2010-11-10-c-ile-dns-degistirme-uygulamasi/7.PNG)
 
 Resim 5: Server.cs
 
@@ -84,7 +84,7 @@ Ekranımız ilk açıldığında yapılması gereken birkaç tane görev var. Bi
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-[![](http://1.bp.blogspot.com/_-PvBeE2cwcg/TLLt_bPx0fI/AAAAAAAAAQ0/eOBp80bEfIE/s1600/6.PNG)](http://1.bp.blogspot.com/_-PvBeE2cwcg/TLLt_bPx0fI/AAAAAAAAAQ0/eOBp80bEfIE/s1600/6.PNG)
+[![](/images/2010-11-10-c-ile-dns-degistirme-uygulamasi/6.PNG)](/images/2010-11-10-c-ile-dns-degistirme-uygulamasi/6.PNG)
 
 Resim 6: Programın Çalıştırılması
 
@@ -106,11 +106,11 @@ Service.getAdapterList(ADAPTER_ADDRESSES); methodunu inceleyelim. Aşağıdaki k
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-[![](http://1.bp.blogspot.com/_-PvBeE2cwcg/TLLwq3MD45I/AAAAAAAAAQ8/gY0A8YiJcDc/s1600/8.PNG)](http://1.bp.blogspot.com/_-PvBeE2cwcg/TLLwq3MD45I/AAAAAAAAAQ8/gY0A8YiJcDc/s1600/8.PNG)
+[![](/images/2010-11-10-c-ile-dns-degistirme-uygulamasi/8.PNG)](/images/2010-11-10-c-ile-dns-degistirme-uygulamasi/8.PNG)
 
   
 
-[![](http://1.bp.blogspot.com/_-PvBeE2cwcg/TLLw-paKE5I/AAAAAAAAARA/XWd8v7iTmPg/s1600/9.PNG)](http://1.bp.blogspot.com/_-PvBeE2cwcg/TLLw-paKE5I/AAAAAAAAARA/XWd8v7iTmPg/s1600/9.PNG)
+[![](/images/2010-11-10-c-ile-dns-degistirme-uygulamasi/9.PNG)](/images/2010-11-10-c-ile-dns-degistirme-uygulamasi/9.PNG)
 
 Resim 7: Ağ Bağdaştırıcı Listesinin Alınması
 
@@ -130,7 +130,7 @@ Ekranımız açılırken yapılan ikinci işlem ise xml dosyasından DNS IP bilg
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-[![](http://2.bp.blogspot.com/_-PvBeE2cwcg/TLL0Hynk3OI/AAAAAAAAARE/Yh8AO50ZJRc/s1600/10.PNG)](http://2.bp.blogspot.com/_-PvBeE2cwcg/TLL0Hynk3OI/AAAAAAAAARE/Yh8AO50ZJRc/s1600/10.PNG)
+[![](/images/2010-11-10-c-ile-dns-degistirme-uygulamasi/10.PNG)](/images/2010-11-10-c-ile-dns-degistirme-uygulamasi/10.PNG)
 
 Resim 8: XML Şeması
 
@@ -144,7 +144,7 @@ XML şeması dnsServers altındaki Server düğümlerinden oluşuyor. Her sunucu
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-[![](http://2.bp.blogspot.com/_-PvBeE2cwcg/TLL00AhNMGI/AAAAAAAAARI/MEjP_33uJjM/s1600/11.PNG)](http://2.bp.blogspot.com/_-PvBeE2cwcg/TLL00AhNMGI/AAAAAAAAARI/MEjP_33uJjM/s1600/11.PNG)
+[![](/images/2010-11-10-c-ile-dns-degistirme-uygulamasi/11.PNG)](/images/2010-11-10-c-ile-dns-degistirme-uygulamasi/11.PNG)
 
 Resim 9: DNS Bilgilerinin Alınması
 
@@ -162,7 +162,7 @@ Programımız açıldığında yapılan 3. ve son işlem bu elde edilen Adapter 
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-[![](http://4.bp.blogspot.com/_-PvBeE2cwcg/TLL2wygXqiI/AAAAAAAAARM/sFEK5pa2mxA/s1600/12.PNG)](http://4.bp.blogspot.com/_-PvBeE2cwcg/TLL2wygXqiI/AAAAAAAAARM/sFEK5pa2mxA/s1600/12.PNG)
+[![](/images/2010-11-10-c-ile-dns-degistirme-uygulamasi/12.PNG)](/images/2010-11-10-c-ile-dns-degistirme-uygulamasi/12.PNG)
 
 Resim 10: ComboBox'ların Doldurulması
 
@@ -178,7 +178,7 @@ Artık buton eventlarımızı yazmanın vakti. Elimizde açıldığında regedit
 
   
 
-[![](http://3.bp.blogspot.com/_-PvBeE2cwcg/TLL6IAi9s2I/AAAAAAAAARQ/0X7Q4qyUJa8/s1600/13.PNG)](http://3.bp.blogspot.com/_-PvBeE2cwcg/TLL6IAi9s2I/AAAAAAAAARQ/0X7Q4qyUJa8/s1600/13.PNG)
+[![](/images/2010-11-10-c-ile-dns-degistirme-uygulamasi/13.PNG)](/images/2010-11-10-c-ile-dns-degistirme-uygulamasi/13.PNG)
 
 Resim 11: DNS Değiştirme Event'ı
 
@@ -194,7 +194,7 @@ ComboBox'ların seçili olup olmadığı kontrol edildikten sonra yine Service s
 
   
 
-[![](http://3.bp.blogspot.com/_-PvBeE2cwcg/TLMDvMv160I/AAAAAAAAARU/EKqZ7o5d8Cw/s1600/14.PNG)](http://3.bp.blogspot.com/_-PvBeE2cwcg/TLMDvMv160I/AAAAAAAAARU/EKqZ7o5d8Cw/s1600/14.PNG)
+[![](/images/2010-11-10-c-ile-dns-degistirme-uygulamasi/14.PNG)](/images/2010-11-10-c-ile-dns-degistirme-uygulamasi/14.PNG)
 
 Resim 12: DNS Değişikliğinin Yapılması ve FlushDns
 
@@ -206,7 +206,7 @@ Burada yeni bir registry key instance ı alıp bu instance ımızın değerini d
 
   
 
-[![](http://2.bp.blogspot.com/_-PvBeE2cwcg/TLMEsq27E4I/AAAAAAAAARY/tPaP3ZVg1hQ/s1600/15.PNG)](http://2.bp.blogspot.com/_-PvBeE2cwcg/TLMEsq27E4I/AAAAAAAAARY/tPaP3ZVg1hQ/s1600/15.PNG)
+[![](/images/2010-11-10-c-ile-dns-degistirme-uygulamasi/15.PNG)](/images/2010-11-10-c-ile-dns-degistirme-uygulamasi/15.PNG)
 
 altında ilgili ağ bağdaştırıcısının id'si ile devam etmekte. Sonuna \"adapterId" verildiğinde bu düğümün altındaki NameServer anahtarının değeri değiştirildiğinde DNS adresimiz değişmiş olacak. Bu dediklerimizi changeDnsServer adlı metodumuz gerçekleştiriyor. Metodumuzun sonunda flushDns metodunu çağırıyoruz.  
 
@@ -222,11 +222,11 @@ Aynı şekilde DNS ayarının sıfırlanması da aynı anahtarın değerinin nul
 
   
 
-[![](http://4.bp.blogspot.com/_-PvBeE2cwcg/TLMMhCSFb7I/AAAAAAAAARc/jANQ6gQvJtc/s1600/16.PNG)](http://4.bp.blogspot.com/_-PvBeE2cwcg/TLMMhCSFb7I/AAAAAAAAARc/jANQ6gQvJtc/s1600/16.PNG)
+[![](/images/2010-11-10-c-ile-dns-degistirme-uygulamasi/16.PNG)](/images/2010-11-10-c-ile-dns-degistirme-uygulamasi/16.PNG)
 
   
 
-[![](http://2.bp.blogspot.com/_-PvBeE2cwcg/TLMMzd5oiHI/AAAAAAAAARg/l3f-iiTCtzs/s1600/17.PNG)](http://2.bp.blogspot.com/_-PvBeE2cwcg/TLMMzd5oiHI/AAAAAAAAARg/l3f-iiTCtzs/s1600/17.PNG)
+[![](/images/2010-11-10-c-ile-dns-degistirme-uygulamasi/17.PNG)](/images/2010-11-10-c-ile-dns-degistirme-uygulamasi/17.PNG)
 
 Resim 13: DNS Ayarlarını Sıfırlama
 
@@ -242,7 +242,7 @@ Bu adımlardan sonra son bir adım yeni bir DNS adresinin kaydedilmesi adımı. 
 
   
 
-[![](http://4.bp.blogspot.com/_-PvBeE2cwcg/TLMOGZHgDRI/AAAAAAAAARk/-dCKU3IRYdk/s1600/18.PNG)](http://4.bp.blogspot.com/_-PvBeE2cwcg/TLMOGZHgDRI/AAAAAAAAARk/-dCKU3IRYdk/s1600/18.PNG)
+[![](/images/2010-11-10-c-ile-dns-degistirme-uygulamasi/18.PNG)](/images/2010-11-10-c-ile-dns-degistirme-uygulamasi/18.PNG)
 
 Resim 14: DNS Adresi Ekleme
 

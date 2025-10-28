@@ -8,13 +8,13 @@ image: https://cdn-images-1.medium.com/max/150/1*3DEG7NE6l9h0XIiivEne8Q.jpeg
 
 Hepimiz Rest servisleri uygulamalarımızda yoğun olarak kullanıyoruz. Peki, bu servislerin entegrasyon testlerini yazarken sıklıkla yapılan o hataya siz de düşüyor olabilir misiniz? Bugün bir Spring Boot uygulamasında Rest servislere 2 farklı test yazımını inceleyeceğiz. Birisi gerçekten bir integration testi, diğeri de tüm Spring Context'ini ayağa kaldırarak yapılan uçtan uca testi örnekleyecek.
 
-![](https://cdn-images-1.medium.com/max/873/1*3DEG7NE6l9h0XIiivEne8Q.jpeg)
+![](/images/2019-03-03-spring-boot-rest-servis-birim-entegrasyon-testi/1_3DEG7NE6l9h0XIiivEne8Q.jpeg)
 
 ## 1. Test Piramidi
 Test piramidinin en tabanında birim testler(unit tests) bulunur. Sonrasında entegrasyon testleri(integration tests), kontrat testleri(contract tests), arayüz testleri(UI tests) diye devam eder. Bu testler ile ilgili [Martin Fowler'ın yazısını](https://martinfowler.com/articles/practical-test-pyramid.html) okumanızı tavsiye ederim. 
 
 
-![Martin Fowler Test Pyramid](https://martinfowler.com/articles/practical-test-pyramid/testPyramid.png)https://martinfowler.com/articles/practical-test-pyramid/testPyramid.png
+![Martin Fowler Test Pyramid](/images/2019-03-03-spring-boot-rest-servis-birim-entegrasyon-testi/testPyramid.png)/images/2019-03-03-spring-boot-rest-servis-birim-entegrasyon-testi/testPyramid.png
 
 Bu piramidin en güçlü olması gereken yeri tabii ki tabanıdır. Taban katmanının gücü üzerine üzerine diğer katmanlar yerleşir. Bu sebeple en geniş kapsamlı testleri birim testlerde kodlarız. Bu testlerimizin adetlerinin çok olmasından dolayı hızlı çalışmaları lazımdır. Örneğin bir CI/CD pipeline'ında kodunuz build edilirken bu testleriniz çalıştırılacaktır. Bir mikroservis mimaride ancak 3 dakikada deploy olabilen kod sahibi olmak bir çok problemi doğuracaktır. Bu sebeple özellikle birim testleri hiçbir bağımlılık olmadan çalışabilmelidir. Entegrasyon testlerinin de doğru mock, fake, spy veya stub yöntemleri ile izolasyonu mutlaka sağlanmalıdır.
 
@@ -28,7 +28,7 @@ Buradan itibaren kodumuza dönelim. Bir RestController'ımız, bir de onun kulla
 
 Post metod açan bu sınıfımızın testini nasıl yazmalıyız? Google'da "spring boot rest test" anahtar kelimeleri ile aramamızı yaptığımızda çıkan 5 site aşağıdaki gibi. Bunlardan ikisi de Spring'in kendi sitesi :)
 
-![](https://cdn-images-1.medium.com/max/873/1*R1g_-Lyj95XwmNAbK3ElnQ.png)
+![](/images/2019-03-03-spring-boot-rest-servis-birim-entegrasyon-testi/1_R1g_-Lyj95XwmNAbK3ElnQ.png)
 
 ### 2.1 Web Context Entegrasyon Testi
 

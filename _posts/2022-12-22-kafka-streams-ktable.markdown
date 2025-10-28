@@ -22,17 +22,17 @@ image: https://miro.medium.com/max/150/0*DowA3KXXNQ-W6i1b
 
 İlk yazımızda Kafka’nın key-value ikilileri ile çalıştığından bahsetmiştik ancak producerda gönderdiğimiz recordlarda hiç key kullanmamıştık. Hatta consoleda key leri null olarak gözlemlemiştik.
 
-![](https://miro.medium.com/max/778/0*aHxoUeVW_l8RW2F7.png)
+![](/images/2022-12-22-kafka-streams-ktable/0_aHxoUeVW_l8RW2F7.png)
 
 Bu kez producer’ımızı farklı şekilde açıyoruz ve bir seperator ile ayrılmış veriyi key-value ikilisi olarak almasını sağlıyoruz.
 
-![](https://miro.medium.com/max/1400/1*9krBuC6l5L9JHkJFTQdKQA.png)
+![](/images/2022-12-22-kafka-streams-ktable/1_9krBuC6l5L9JHkJFTQdKQA.png)
 
 ```bash
 bin/kafka-console-producer.sh --broker-list localhost:9092 --topic  basic-stream-input-topic --property "parse.key=true" --property "key.separator=:"
 ```
 
-![](https://miro.medium.com/max/1400/1*03YyrrYfnvqTVdWxCt4a-Q.png)
+![](/images/2022-12-22-kafka-streams-ktable/1_03YyrrYfnvqTVdWxCt4a-Q.png)
 
 Key değerimiz bu kez null yerine dolu bir değer içeriyor.
 
@@ -70,13 +70,13 @@ public class KTableExample {
 
 Sonrasında key1 anahtarıyla 10002 değerini producerımızdan gönderiyoruz.
 
-![](https://miro.medium.com/max/1400/1*7OV-mcGqNNfm2C_FCBiF8g.png)
+![](/images/2022-12-22-kafka-streams-ktable/1_7OV-mcGqNNfm2C_FCBiF8g.png)
 
 10002 göndermemizde hiçbir hareketlilik olmadığı için ardarda value u 1er artırarak recordlar göndermeye devam ettiğimizde ilginç bir görüntü ile karşılaşıyoruz.
 
-![](https://miro.medium.com/max/1400/1*GRvJfrzq3p2KGQQ22MyIHQ.png)
+![](/images/2022-12-22-kafka-streams-ktable/1_GRvJfrzq3p2KGQQ22MyIHQ.png)
 
-![](https://miro.medium.com/max/1400/1*VyxCAhD9I6jGJyxS4z86nQ.png)
+![](/images/2022-12-22-kafka-streams-ktable/1_VyxCAhD9I6jGJyxS4z86nQ.png)
 
 Çok sayıda record göndersek de sadece 3 ve 6 yı consoleda ve output topicinde görebildik. Bu ne demek, ne anlama geliyor?
 
@@ -119,7 +119,7 @@ public class StoreRestController {
 
 Store’umuza erişip key’imizle arama yapıp sonucunu dönecek bir servis açtık. Browserdan bir istekle deneyelim.
 
-![](https://miro.medium.com/max/1160/1*aPT4chaTaGQ-7_UhQ7DsBA.png)
+![](/images/2022-12-22-kafka-streams-ktable/1_aPT4chaTaGQ-7_UhQ7DsBA.png)
 
 KTable konusuna burada nokta koyalım. Sıradaki yazılarda Stateful operasyonlara ve windowing konusuna değineceğim.
 

@@ -18,7 +18,7 @@ Aklınıza şu geliyor olabilir, ben zaten Kafka ile ihtiyacım olan şeyleri ge
 
 Öyle bir kod yazmalıyız ki çok threadli ve çok işlemcili bir mimaride robust bir şekilde çalışabilsin ve bunun için immutabilityi mimarisinin orta noktasına koysun. Immutability mimarimizin merkezine oturduğunda declerative programming bunu implement etmenin belki de en güzel yolu. Bu noktada bir okuma önerisi ile gelebilirim,  [Robert C. Martin’in Clean Architecture kitabı](https://www.amazon.com/Clean-Architecture-Craftsmans-Software-Structure/dp/0134494164)nın Functional Programming başlığına bir göz atın.
 
-![](https://miro.medium.com/max/1400/1*gNhxKQM1FtjzVsJf0UVTkg.png)
+![](/images/2022-12-22-kafka-streams-nedir/1_gNhxKQM1FtjzVsJf0UVTkg.png)
 
 {% include feed-ici-yazi-1.html %}
 
@@ -33,7 +33,7 @@ Kavramları ortaklaştırdığımıza göre yavaştan başlayabiliriz. Anlamak i
 
 Kafka’yı ayağa kaldırmak için  [https://kafka.apache.org/quickstart](https://kafka.apache.org/quickstart)  adresindeki yönergeleri izleyebilirsiniz. Tercih ettiğim 3.3.1 sürümü ile birlikte  [consensus](https://www.mehmetcemyucel.com/2018/centralized-decentralized-distributed-networkler-ve-bizans-general-problemi/)  problemini çözmek için artık  [Zookeeper’a](https://zookeeper.apache.org/)  ihtiyaç bulunmuyor. Zookeeper’a alternatif olarak pakete dahil gelen  [KRaft](https://developer.confluent.io/learn/kraft/)’ın shutdown lar sonrası recovery sürelerinin majör şekilde iyileştirmesi en önemli özelliği. Ben de bugün Kafka’yı KRaft ile ayağa kaldıracağım.
 
-![](https://miro.medium.com/max/1400/1*TuWEWPWj3GDDaXiIxuOwZQ.png)
+![](/images/2022-12-22-kafka-streams-nedir/1_TuWEWPWj3GDDaXiIxuOwZQ.png)
 
 ```bash
 KAFKA_CLUSTER_ID="$(bin/kafka-storage.sh random-uuid)"
@@ -43,13 +43,13 @@ bin/kafka-server-start.sh config/kraft/server.properties
 
 Tek Broker’lı Kafka Cluster’ımız demo için artık hazır. 9092 portundan bootstrap serverımız yayın yaparak oluşturduğumuz cluster hakkında metadata paylaşımında bulunuyor. Bu veri içerisinde topic’ler, onların partition’ları, bu partitionlar için leader brokerlar gibi bilgiler yer alıyor. Bir Spring Boot projesi yaratalım.
 
-![](https://miro.medium.com/max/1400/1*2ycPS60teyl4n7Kjzn7FBg.png)
+![](/images/2022-12-22-kafka-streams-nedir/1_2ycPS60teyl4n7Kjzn7FBg.png)
 
 Kafka, Kafka Streams, Web ve Lombok bağımlılıklarımızı ekleyip projemizi yaratıyoruz.
 
 Oluşan projemizin application.properties dosyasına uygulamamız ayağa kalkarken kafka clusterına erişebilmesi için gerekli metadayı edinebileceği bootstrap yapılandırmasını ekliyoruz.
 
-![](https://miro.medium.com/max/1400/1*8OihGGav6hU5JJxyS8KcSA.png)
+![](/images/2022-12-22-kafka-streams-nedir/1_8OihGGav6hU5JJxyS8KcSA.png)
 
 Bu yapılandırma bilgisi ile konfigürasyonumuzu tamamlayalım.
 
@@ -79,7 +79,7 @@ public class KafkaConfig {
 
 Apache Kafka key-value ikilileri ile çalışır. Key ve valuelar transfer edilebilmeleri için serileştirilmeye ihtiyaçları vardır. Projemize eklediğimiz bağımlılıkların içerisindeki Serdes sınıfında bazı hazır serializerlar vardır. Kompleks objeler için Custom Serdes’ler yaratabilirsiniz. JSON, Avro veya Protobuf kullanıyorsanız yine hazır Serdes’ler mevcut.
 
-![](https://miro.medium.com/max/1244/1*B-Fa4UW_2b9dAuiPzc9sXA.png)
+![](/images/2022-12-22-kafka-streams-nedir/1_B-Fa4UW_2b9dAuiPzc9sXA.png)
 
 {% include feed-ici-yazi-2.html %}
 
@@ -88,7 +88,7 @@ Apache Kafka key-value ikilileri ile çalışır. Key ve valuelar transfer edile
 
 Artık konfigürasyonumuz hazır olduğuna göre önce topiclerimizi yaratalım, sonrasında da basit bir stream pipelineı yaratalım ve temel fonksiyonları tanıyalım.
 
-![](https://miro.medium.com/max/1400/1*r60WGvq7MCfx9HmOTZR8Ww.png)
+![](/images/2022-12-22-kafka-streams-nedir/1_r60WGvq7MCfx9HmOTZR8Ww.png)
 
 ```bash
 bin/kafka-topics.sh --create --topic basic-stream-input-topic --bootstrap-server localhost:9092
@@ -132,22 +132,22 @@ bin/kafka-console-consumer.sh --topic basic-stream-output-topic --from-beginning
 
 Test etmek için 10002 içerikli bir recordu produce request olarak ilettik.
 
-![](https://miro.medium.com/max/1400/1*30RrLsBdnO00hR7NPanl8Q.png)
+![](/images/2022-12-22-kafka-streams-nedir/1_30RrLsBdnO00hR7NPanl8Q.png)
 
 
 Bu değer stream olarak ele alındığında aşağıdaki şekilde steplerden geçti.
 
-![](https://miro.medium.com/max/1400/1*kg9b1ynDbuxLl74iCyOoPQ.png)
+![](/images/2022-12-22-kafka-streams-nedir/1_kg9b1ynDbuxLl74iCyOoPQ.png)
 
 
 Son adım olarak da output topic inin içerisinde maplenerek değişmiş haliyle kaydımızı gözlemledik.
 
-![](https://miro.medium.com/max/1400/1*CqVzPCn5Kv5yvWKpXJbmFw.png)
+![](/images/2022-12-22-kafka-streams-nedir/1_CqVzPCn5Kv5yvWKpXJbmFw.png)
 
 
 Aynı işlemi 10000 recordu için tekrarladığımızda filterdan geçemediği için sonraki adım gerçekleşmemiş oldu.
 
-![](https://miro.medium.com/max/778/1*RRDCwXqfXQkZKo9myyXxFg.png)
+![](/images/2022-12-22-kafka-streams-nedir/1_RRDCwXqfXQkZKo9myyXxFg.png)
 
 {% include feed-ici-yazi-1.html %}
 

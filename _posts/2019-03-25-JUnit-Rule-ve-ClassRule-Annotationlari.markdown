@@ -12,7 +12,7 @@ Bugün birim test(unit test) ve entegrasyon testleri(integration test) yazıyors
 
 >"Tüm yazılım geliştiricilerin bilmesi gereken temel prensipler vardır, bunlara KISS, DRY, YAGNI, vb örnek verilebilir. Ama gözden kaçan bir nokta, bunların sadece business taşıyan kodlar için geçerli olduğu düşünülür. Ya test kodları? **Örneğin _Don’t Repeat Yourself_(DRY) gerçekten de test kodları için de önemli bir konu değil midir?**"
 
-![](https://cdn-images-1.medium.com/max/800/0*PI13arzqtcC-oXBh.jpg)
+![](/images/2019-03-25-JUnit-Rule-ve-ClassRule-Annotationlari/0_PI13arzqtcC-oXBh.jpg)
 
 Rule kavramını ilk duyduğunuzda aklınıza ne geldi? Muhtemelen kelime anlamından **testlerin hangi şartlar altında çalışacağının tanımlandığı kuralları barındıran bir yapı** olduğunu aklınızdan geçirmişsinizdir. Eğer öyle ise bingo, yaklaşımınız doğru!
 

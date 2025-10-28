@@ -28,11 +28,11 @@ image: https://miro.medium.com/max/150/0*tA4cZb1i9Mxds-Uz
 
 ### 1.1. SSO Akışı
 
-![sso process](https://miro.medium.com/max/1235/1*bOtq30aQI2_tComa_dMezg.png)
+![sso process](/images/2020-04-26-Access-Management-3-SSO-SAML-Kerberos-User-Federation/1_bOtq30aQI2_tComa_dMezg.png)
 
 Tekrar SAML’a dönecek olursak, XML bazlı çalışan bu güvenlik protokolü açık kaynak kodludur. Authentication akışı aşağıdaki gibi çalışmaktadır.
 
-![SAML Authentication Process](https://miro.medium.com/max/1345/1*7zleRist5o_p8NJtbZf5oA.png)
+![SAML Authentication Process](/images/2020-04-26-Access-Management-3-SSO-SAML-Kerberos-User-Federation/1_7zleRist5o_p8NJtbZf5oA.png)
 
 {% include feed-ici-yazi-1.html %}
 
@@ -42,7 +42,7 @@ Farkettiyseniz bir önceki yazımızdaki bahsettiğimiz OAuth2'deki authorizatio
 
 SAML’ı kullanan sistemlerden birisi de **Kerberos**’tur. Kerberos, tamamen güvensiz bir networkte güvenli iletişim başlatmak için ortaya koyulan **Ticket(bilet)** temelli çalışan bir yaklaşımdır. Aşağıdaki gibi çalışmaktadır.
 
-![Kerberos Authentication Process](https://miro.medium.com/max/971/1*VsOhg01a3Gr1qma4Mcv3hQ.png)
+![Kerberos Authentication Process](/images/2020-04-26-Access-Management-3-SSO-SAML-Kerberos-User-Federation/1_VsOhg01a3Gr1qma4Mcv3hQ.png)
 
 {% include feed-ici-yazi-2.html %}
 

@@ -8,7 +8,7 @@ image: https://miro.medium.com/max/150/0*6pQrd5Dnhivf8Tp8.png
 
 “Golang ile Uçtan Uca Proje Yapımı Serisi” 4. yazısında Go’da db migrationı nasıl yapılır sorusunun cevabını arayacağız. Ayrıca  **RDBMS**([**Postgre**](https://www.postgresql.org/)) entegrasyonunu bir  **ORM** toolu([**Gorm**](https://gorm.io/index.html)) kullanarak nasıl yapabileceğimize değineceğiz.
 
-![](https://miro.medium.com/max/1400/0*6pQrd5Dnhivf8Tp8.png)
+![](/images/2022-05-15-golang-db-migration-rdbms-orm-integration/0_6pQrd5Dnhivf8Tp8.png)
 
 
 ## DB Migration
@@ -17,11 +17,11 @@ Bir uygulamanız olduğunu hayal edin, çalışmadan önce yaratılmış olması
 
 Bu tarz ihtiyaçları karşılayabilmek için db migration toolları piyasada bulunmaktadır. Java için  [**Liquibase**](https://www.liquibase.org/),  [**Flyway**](https://flywaydb.org/)  gibi toollar olduğu gibi Golang dünyasında da benzer toollar bulunuyor. DB migration’ı için  [**Migrate**](https://github.com/golang-migrate/migrate)  toolunu kullanacağız.
 
-<script src="https://gist.github.com/mehmetcemyucel/3785084c5a4eb3df27eb3d7f82b6dd48.js"></script>
+<script src="/images/2022-05-15-golang-db-migration-rdbms-orm-integration/3785084c5a4eb3df27eb3d7f82b6dd48.js"></script>
 
 Migrate toolunu yapılandırmak için bağlanacağımız dbnin bilgilerini ve hangi dbye bağlanacaksak o dbnin connector’ını eklememiz gerekiyor. Migrate edilecek dosyaları  `./db`  klasörünün altına koyulacak şekilde yapılandırmasını yaptım.
 
-![](https://miro.medium.com/max/696/1*loy2lfoKZWZshQVHJ1_qRQ.png)
+![](/images/2022-05-15-golang-db-migration-rdbms-orm-integration/1_loy2lfoKZWZshQVHJ1_qRQ.png)
 
 Burada dosya isimlendirme formatının bir anlamı bulunuyor.
 
@@ -39,15 +39,15 @@ Bir changesetin hem up hem de down dosyasının yazılması zorunludur. İlk def
 
 ## RDBMS & ORM Integration
 
-<script src="https://gist.github.com/mehmetcemyucel/df62cbfa63c4b0f4cbf6c335f70a0937.js"></script>
+<script src="/images/2022-05-15-golang-db-migration-rdbms-orm-integration/df62cbfa63c4b0f4cbf6c335f70a0937.js"></script>
 
 Db entegrasyonu da benzer yapılandırma parametreleri ile sağlanıyor. Farklı olarak ben projeye bir ORM toolu da ekleyerek projenin mappinginin daha kolay yönetilmesini tercih ettim.  [**Gorm**](https://gorm.io/index.html)  Golang için güçlü bir ORM toolu, DB schemasının yaratımı, object mapping, kendi query dili gibi özellikler barındırıyor. Aşağıda bir entity ve tablosunun örneğini ve bu entity yi oluşturmak için gereken repository için bir örneği bulabilirsiniz.
 
-<script src="https://gist.github.com/mehmetcemyucel/11c1a7fa1681c55db90d8d96bf5f3c2e.js"></script>
+<script src="/images/2022-05-15-golang-db-migration-rdbms-orm-integration/11c1a7fa1681c55db90d8d96bf5f3c2e.js"></script>
 
-![](https://miro.medium.com/max/1400/1*iSROcv-sOPToKJNZAARfYg.png)
+![](/images/2022-05-15-golang-db-migration-rdbms-orm-integration/1_iSROcv-sOPToKJNZAARfYg.png)
 
-<script src="https://gist.github.com/mehmetcemyucel/ddc98ffc4f331b87feb3d8fd5a3af202.js"></script>
+<script src="/images/2022-05-15-golang-db-migration-rdbms-orm-integration/ddc98ffc4f331b87feb3d8fd5a3af202.js"></script>
 
 {% include feed-ici-yazi-2.html %}
 

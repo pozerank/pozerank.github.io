@@ -8,7 +8,7 @@ image: https://cdn-images-1.medium.com/max/150/1*mn7YQ-djF1q_lFiQTx4V0Q.jpeg
 
 Üniversiteyi kazandınız, hayırlı olsun. Uzun sınav hazırlıkları bitti ve artık sosyalleşeceğiniz bir ortama yelken açtınız. İlk sene, yeni arkadaşlarla tanıştınız. Bir sene geçti, çömezliği üzerinizden attınız, belki hazırlık okudunuz. Bir çevre edindiniz, çok iyi arkadaşlarınız var. Artık 2 senenin sonrasında aranız o kadar iyi ki birlikte eve çıkmaya karar verdiniz. Tabii öğrenci adamsınız, mali durumlar sıkışık. Başladınız emlakçı emlakçı gezmeye, en uygunundan bir kiralık ev bulmak için...
 
-![](https://miro.medium.com/max/515/1*mn7YQ-djF1q_lFiQTx4V0Q.jpeg)
+![](/images/2018-01-08-smart-contrat-akilli-sozlesmeler-nedir/1_mn7YQ-djF1q_lFiQTx4V0Q.jpeg)
 
 Neyse bir yerde karar kıldınız ve artık her şey anlaşıldı önünüze imzalamak üzere bir kağıt koyuldu. Kağıtta şunlar yazıyor:
 

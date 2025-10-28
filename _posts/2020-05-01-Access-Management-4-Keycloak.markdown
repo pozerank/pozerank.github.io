@@ -21,7 +21,7 @@ image: https://miro.medium.com/max/150/0*n4KiIGqzdC2PX4QU.png
 
 ## 1. Keycloak Nedir
 
-![keycloak](https://miro.medium.com/max/1250/0*n4KiIGqzdC2PX4QU.png)
+![keycloak](/images/2020-05-01-Access-Management-4-Keycloak/0_n4KiIGqzdC2PX4QU.png)
 
 >"Keycloak is an open source Identity and Access Management solution aimed at modern applications and services. It makes it easy to secure applications and services with little to no code."
 
@@ -49,7 +49,7 @@ OIDC protokolü üzerinden çok sayıda dil için [adapter](https://www.keycloak
 
 Bütün bu işlemleri kendi arayüzü aracılığıyla gerçekleştirebilirsiniz. Sisteminizde kayıtlı kullanıcıların kendi şifrelerini resetlemeleri, sisteme dahil olmaları gibi konuları da yine ayrı arayüzler üzerinden gerçekleştirebilirsiniz.
 
-![](https://miro.medium.com/max/1041/0*Xx4tAv-JfKtR9tVX.png)
+![](/images/2020-05-01-Access-Management-4-Keycloak/0_Xx4tAv-JfKtR9tVX.png)
 
 {% include feed-ici-yazi-2.html %}
 

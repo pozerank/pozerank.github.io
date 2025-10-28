@@ -8,7 +8,7 @@ image: https://cdn-images-1.medium.com/max/150/1*B3whQzJCrXdbHdyIu0-1Dw.png
 
 Blockchain uygulamalarının getirdiği yenilikler dünyanın gidişatını değiştirecek seviyede. Hayatımızın her yanını etkileyecek bu gelişmeler sayesinde alışkanlıklarımız da kalıcı şekilde değişecek. Örneğin marketten aldığınız yiyeceğin tohumdan itibaren her anını takip edebilecek tedarik zincirlerini online olarak takip edebileceksiniz. Çünkü Endüstri 4.0 ile birlikte Internet of Things(IoT) cihazları, sensörler yediğiniz domatesin serada hangi nem miktarında büyüdüğünü görebilecek, hangi soğuk hava zinciri araçlarında kaç derecelik havada nakliye edildiğini takip edebileceksiniz. O domates defalarca aracı değiştirse de bütün bu aracıların ortaklaşa veri paylaşacağı ortam tabii ki distributed ledgerlar olacaktır. Yolda araç bozulduysa ve soğuk hava zinciri bozulduysa bunu görebilecek ve markette o ürünü almamayı tercih edebileceksiniz. Bu örnek kulaklarımıza hayal gibi geliyorsa aşağıdaki videoya göz atmanızı önerebilirim
 
-![](https://miro.medium.com/max/400/1*B3whQzJCrXdbHdyIu0-1Dw.png)
+![](/images/2018-02-26-dagitik-uygulamalar-icin-isletim-sistemi-aragonos/1_B3whQzJCrXdbHdyIu0-1Dw.png)
 
 Wallmart Supply Chain with Hyperledger
 
