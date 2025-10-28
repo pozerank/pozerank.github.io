@@ -1,8 +1,8 @@
 ---
 title:  "Chain Of Responsibility Design Pattern"
 date:   2014-02-20 20:04:23
-categories: [java, design patterns]
-tags: [java, design, tasarım, patterns, paternleri, chain, responsibility]
+categories: [java, design patterns, blog]
+tags: [java, design patterns, tasarım kaliplari, chain of responsibility, blog]
 ---
 
 Bugün behavioral(davranışsal) bir design pattern(tasarım şablonu) olan Chain of Responsibility(Sorumluluk Zinciri) inceliyor ve örnek yapıyor olacağız.  

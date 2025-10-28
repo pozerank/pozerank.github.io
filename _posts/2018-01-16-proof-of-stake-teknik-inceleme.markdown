@@ -1,8 +1,8 @@
 ---
 title:  "Proof of Stake Teknik İnceleme"
 date:   2018-01-16 12:04:23
-categories: [blockchain]
-tags: [cryptocurrency, proof, of, stake, pok, pow, work, java, nedir, distributed, legder, blockchain, bitcoin, utxo, block, blockchainturk, blockchainturk.net]
+categories: [blockchain, blog]
+tags: [cryptocurrency, proof, of, stake, pok, pow, work, java, nedir, distributed, legder, blockchain, bitcoin, utxo, block, blog]
 image: https://cdn-images-1.medium.com/max/150/1*_b-FnHy6qE0o7mvD3szw_w.jpeg
 ---
 

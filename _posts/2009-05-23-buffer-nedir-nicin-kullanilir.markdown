@@ -1,8 +1,8 @@
 ---
 title:  "Buffer Nedir Niçin Kullanılır"
 date:   2009-05-23 20:04:23
-categories: [hardware, architecture]
-tags: [bellek, hardware, buffer, saha, tampon, türkçe, yazılım, blog, blogger, mehmet cem yücel]
+categories: [hardware, architecture, blog]
+tags: [bellek, hardware, buffer, saha, tampon, türkçe, yazılım, blog, mehmet cem yücel]
 ---
 
 Buffer (tampon saha), verilerin IO işlemlerinden sonra belleğe yazılmadan önce uğradıkları bir sahadır. Bufferlar IO işlemi sırasında kullanıcının beklemesini engellemek için kullanılırlar. Bellekten okumak ve belleğe yazmak maliyetli bir işlemdir. Sistemi yorar ve hız olarak yavaştır. IO aygıtlarından gelen veriler bu sebeple önce bir havuzda toplanır. Böylece bu havuz belirli miktarlarda dolduktan sonra toplu olarak belleğe yazılır. Bu sisteme performans kazandıran bir harekettir.

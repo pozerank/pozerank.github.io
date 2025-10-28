@@ -1,8 +1,8 @@
 ---
 title:  "Kafka Streams Windowing"
 date:   2022-12-26 11:00:00
-categories: [architecture, microservices, java, spring, spring boot]
-tags: [kafka, streams, topic, tumbling, sliding, windowing, stateful, operations, api, best, practices, service, message broker, design, tasarım, queue, mikroservis, microservice, türkçe, yazılım, blog, nedir, örnek, nasıl yapılır, mehmet cem yücel]
+categories: [architecture, microservices, java, spring, spring boot, blog]
+tags: [kafka, streams, topic, tumbling, sliding, windowing, stateful, operations, api, best, practices, service, message broker, design, tasarım, queue, mikroservis, microservice, blog, nasil yapilir, mehmet cem yucel]
 image: https://miro.medium.com/max/150/0*Dg0Gr6w92tALzjGh.webp
 ---
 

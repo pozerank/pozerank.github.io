@@ -1,8 +1,8 @@
 ---
 title:  "Ustasız Çırak"
 date:   2023-08-18 12:00:00
-categories: [agile]
-tags: [is bulma, yazilim, bilgisayar muhendisi, yazilim muhendisi, oneriler, tavsiyeler, neden bilgisayar muhendisligi, türkçe, mehmet cem yücel]
+categories: [agile, blog]
+tags: [is bulma, yazilim, bilgisayar muhendisi, yazilim muhendisi, oneriler, tavsiyeler, neden bilgisayar muhendisligi, blog, nasil yapilir, mehmet cem yucel]
 image: https://miro.medium.com/v2/resize:fit:150/0*TA6_vaDeOWZ4XUc3.jpeg
 ---
 

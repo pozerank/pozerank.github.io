@@ -1,8 +1,8 @@
 ---
 title:  "Java Daemon Thread"
 date:   2015-08-03 20:04:23
-categories: [jvm, java, architecture]
-tags: [ java, jvm, daemon, thread, heap, memory bellek]
+categories: [jvm, java, architecture, blog]
+tags: [java, jvm, daemon, thread, heap memory, bellek, blog]
 ---
 
 Bir java uygulamanın sonlanması için main thread'in sonlanması ve başka hiçbir aktif user thread'in olmaması gerekir. Bu sonlanmayı main thread sonlandırıldığında aktifleşen DestroyJavaVM isimli thread yönetir.  

@@ -1,8 +1,8 @@
 ---
 title:  "java.lang.OutOfMemoryError"
 date:   2010-11-25 20:04:23
-categories: [java, jvm]
-tags: [java, outofmemoryerror, hata, exception, error]
+categories: [java, jvm, blog]
+tags: [java, outofmemoryerror, hata, exception, error, blog]
 ---
 
 Programlar bilgisayarlarımıza ilk kurulduklarında hangi argümanlara göre çalışacaklarına kendileri karar verirler. **Default** olarak gelen bu değerler her zaman uygulamamızın doğasına uygun olmayabilir. Örneğin enterprise uygulamalar üzerinde çalışıyorsak bu bu başlangıç değerleri projemizin isteğini karşılamıyor olabilir. Daha **fazla bellek alanı** tahsis etmemiz, işlemciyi isteklerimize uygun olarak kullanmak isteyebiliriz. Hatta belirlediğimiz uygulamaların bu kaynakları ne şekillerde paylaşacaklarını ayarlamamız da gerekebilir.  

@@ -1,8 +1,8 @@
 ---
 title:  "Eclipse Formatter On Off"
 date:   2015-11-09 20:04:23
-categories: [ide, tools]
-tags: [ java, jvm, formatter, on, off, sql, style, eclipse, ide]
+categories: [ide, tools, blog]
+tags: [java, jvm, formatter, on, off, sql, style, eclipse, ide, blog]
 ---
 
 Eclipse'in formatter özelliği developerlar için tartışmasız bir nimet. O kadar ki kodlama yaparken iki satır kod yazdıktan sonraki ilk refleksim  

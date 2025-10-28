@@ -1,8 +1,8 @@
 ---
 title:  "Java Final Keyword ve Performans Etkileri"
 date:   2015-01-15 20:04:23
-categories: [java, jvm, architecture]
-tags: [ java, jvm, final, keyword, heap, memory, bellek]
+categories: [java, jvm, architecture, blog]
+tags: [java, jvm, final, keyword, heap, memory, bellek, blog]
 ---
 
 Bugün zaten bildiğimiz final anahtar kelimesine biraz farklı açılardan bakacağız.  

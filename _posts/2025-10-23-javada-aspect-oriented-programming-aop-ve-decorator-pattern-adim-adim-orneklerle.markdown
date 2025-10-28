@@ -1,8 +1,8 @@
 ---
 title:  "Java'da Aspect Oriented Programming (AOP) ve Decorator Pattern: Adım Adım Örneklerle"
 date:   2025-10-23 12:00:00
-categories: [java, spring, jvm, design patterns, spring boot, microservices]
-tags: [aop, spring boot, decorator pattern, nedir, nasıl yapılır, mehmetcemyucel, türkçe, mehmet cem yücel]
+categories: [java, spring, jvm, design patterns, spring boot, microservices, blog]
+tags: [aop, spring boot, decorator pattern, blog, nasil yapilir, mehmet cem yucel]
 image: https://cdn-images-1.medium.com/max/150/0*FkLBCYZHIKTm97it.gif
 ---
 

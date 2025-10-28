@@ -1,8 +1,8 @@
 ---
 title:  "Dağıtık Uygulamalar İçin İşletim Sistemi AragonOS"
 date:   2018-02-26 12:04:23
-categories: [blockchain]
-tags: [sanal, kripto, distributed, legder, blockchain, bitcoin,  blockchainturk, blockchainturk.net]
+categories: [blockchain, blog]
+tags: [distributed applications, dagitik uygulamalar, blockchain, araganos, blog]
 image: https://cdn-images-1.medium.com/max/150/1*B3whQzJCrXdbHdyIu0-1Dw.png
 ---
 

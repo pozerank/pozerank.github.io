@@ -1,8 +1,8 @@
 ---
 title:  "Mikroservisler-Service Mesh Nedir"
 date:   2019-02-24 15:04:23
-categories: [microservices, cloud, architecture]
-tags: [service mesh, microservice, mikroservis, circuit breaker, load balancer, kubernetes, istio, sidecar proxy, türkçe, yazılım, blog, blogger, nedir, örnek, nasıl yapılır, mehmet cem yücel]
+categories: [microservices, cloud, architecture, blog]
+tags: [service mesh, microservice, mikroservis, blog, nasil yapilir, mehmet cem yucel]
 image: https://cdn-images-1.medium.com/max/150/0*FhgA8Ersxk6Tr40r.jpg
 ---
 

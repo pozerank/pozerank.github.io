@@ -1,8 +1,8 @@
 ---
 title:  "Statik Kod Analiz Araçları"
 date:   2012-01-27 20:04:23
-categories: [tools, ide]
-tags: [java, static, statik, kod, code, analiz, analysis, tools, araçları, findbugs, sonarqube, sonarlint]
+categories: [tools, ide, blog]
+tags: [java, static code analysis, statik kod analizi, analiz, code analysis tools, kod analiz araçları, findbugs, sonarqube, sonarlint, blog]
 ---
 
 İyi kod yazmak için dikkat edilmesi gereken bir çok detay var. Bazı zamanlar gereksiz döngülerde zaman harcarız kimi zaman da normalde yapmayacağımız hatalı kodlar yazarız. Hatta zaman zaman o hatalı kodlarımız çalışır, ta ki o kodun çalışmayacağı case gerçekleşene kadar.  

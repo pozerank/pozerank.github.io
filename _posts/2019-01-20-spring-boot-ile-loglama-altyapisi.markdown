@@ -1,8 +1,8 @@
 ---
 title:  "Spring Boot ile SLF4j ve Log4j Loglama Altyapısı"
 date:   2019-01-20 15:04:23
-categories: [java, spring, spring boot, tools]
-tags: [spring boot, slf4j, log4j, log, logback, slf4j, logback, türkçe, yazılım, blog, blogger, nedir, örnek, nasıl yapılır, mehmet cem yücel]
+categories: [java, spring, spring boot, tools, blog]
+tags: [spring boot, slf4j, log4j, log, logback, slf4j, logback, blog]
 image: https://cdn-images-1.medium.com/max/150/1*wZTB6apo5T0lV0GljiJRBg.jpeg
 ---
 

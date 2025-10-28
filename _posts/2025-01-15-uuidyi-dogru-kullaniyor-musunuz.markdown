@@ -1,8 +1,8 @@
 ---
 title:  "UUID'yi Doğru Kullanıyor Musunuz?"
 date:   2025-01-15 12:00:00
-categories: [architecture, microservices]
-tags: [uuid, uuid v4, uuid v7, collision, entropi, entropy, determinism, determinizm, nasıl yapılır, technical, debt, technicaldebt, mehmetcemyucel, türkçe, mehmet cem yücel]
+categories: [architecture, microservices, blog, youtube]
+tags: [uuid, uuid v4, uuid v7, collision, entropi, entropy, determinism, determinizm, blog, nasil yapilir, mehmet cem yucel, youtube]
 image: https://miro.medium.com/v2/resize:fit:150/1*D2iR6MW3V6qPekeo18WuBQ.png
 ---
 
@@ -45,7 +45,10 @@ Aşağıdaki videoda  **ID**,  **Unique ID**,  **Universally Unique ID**  kavram
 - UUID Versiyonları Detayları
 - Farklı versiyonların kod örnekleri gibi bir çok ekstra konuyu inceledik. İlgileniyorsanız göz atabilirsiniz.
 
-![# UUID ve GUID Versiyonları Hakkında Bilmedikleriniz! Gerçekten Unique Mi, Nasıl Çalışır, Güvenli Mi?](https://img.youtube.com/vi/CJ_8Cd8WxyI/0.jpg)](https://www.youtube.com/watch?v=CJ_8Cd8WxyI "UUID ve GUID Versiyonları Hakkında Bilmedikleriniz! Gerçekten Unique Mi, Nasıl Çalışır, Güvenli Mi?")
+
+<div class="video-container">
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/CJ_8Cd8WxyI?si=qLnx2eAICk2cTNSe" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
 
 # Sonuç
 
