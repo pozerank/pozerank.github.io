@@ -1,0 +1,30 @@
+{% comment %}
+  Pagination component for category listings.
+  Expected parameters:
+    - current_page: current page number (1..n)
+    - total_pages: total number of pages (>= 1)
+    - base_path: base path for the section, e.g. "/youtube"
+{% endcomment %}
+{% assign current = include.current_page | default: 1 | plus: 0 %}
+{% assign total = include.total_pages | default: 1 | plus: 0 %}
+{% assign base = include.base_path | default: "" %}
+
+{% if total > 1 %}
+  <nav class="pagination" role="navigation">
+    {% if current > 1 %}
+      {% assign prev = current | minus: 1 %}
+      {% if prev == 1 %}
+        <a rel="prev" class="posts newer btn small" href="{{ site.baseurl }}{{ base }}/">← Newer</a>
+      {% else %}
+        <a rel="prev" class="posts newer btn small" href="{{ site.baseurl }}{{ base }}/page{{ prev }}/">← Newer</a>
+      {% endif %}
+    {% endif %}
+
+    <span class="pagination__page-number">Page {{ current }} of {{ total }}</span>
+
+    {% if current < total %}
+      {% assign next = current | plus: 1 %}
+      <a rel="next" class="posts older btn small" href="{{ site.baseurl }}{{ base }}/page{{ next }}/">Older →</a>
+    {% endif %}
+  </nav>
+{% endif %}
