@@ -1,8 +1,8 @@
 ---
-title:  "Spring Boot Property’lerini Jasypt ile Şifrelemek"
-date:   2019-02-03 20:04:23
-categories: [java, spring, spring boot, security, tools, blog]
-tags: [spring boot, jasypt, encoding, decoding, encryption, decryption, blog, nasil yapilir, mehmet cem yucel]
+title: "Spring Boot Property’lerini Jasypt ile Şifrelemek"
+date: 2019-02-03 20:04:23
+categories: [java, spring, spring-boot, security, tools, blog]
+tags: [spring-boot, jasypt, encoding, decoding, encryption, decryption, blog, nasil-yapilir, mehmet-cem-yucel]
 image: https://cdn-images-1.medium.com/max/150/1*9oEKN6s0vnoxVTmjuFgymw.png 
 ---
 

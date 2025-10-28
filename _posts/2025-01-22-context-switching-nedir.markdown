@@ -1,8 +1,8 @@
 ---
-title:  "Context Switch Nedir?"
-date:   2025-01-22 12:00:00
+title: "Context Switch Nedir?"
+date: 2025-01-22 12:00:00
 categories: [management, agile, youtube, blog]
-tags: [context switch, cpu, context switching, blog, nasil yapilir, mehmet cem yucel]
+tags: [context-switch, cpu, context-switching, blog, nasil-yapilir, mehmet-cem-yucel]
 image: https://miro.medium.com/v2/resize:fit:150/0*OY_UArzB24N2vguf.png
 ---
 

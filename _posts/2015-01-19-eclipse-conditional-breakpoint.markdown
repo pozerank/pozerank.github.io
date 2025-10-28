@@ -1,8 +1,8 @@
 ---
-title:  "Eclipse Conditional Breakpoint"
-date:   2015-01-19 20:04:23
+title: "Eclipse Conditional Breakpoint"
+date: 2015-01-19 20:04:23
 categories: [ide, tools, blog]
-tags: [ java, jvm, eclipse, debug, debugging, koşullu, şartlı, conditional breakpoint, blog]
+tags: [java, jvm, eclipse, debug, debugging, kosullu, sartli, conditional-breakpoint, blog]
 ---
 
 Genelde kodda değişiklik yaparak çözme yoluna gittiğimiz ama aslında hazır bir özellikle işin içinden kolayca çıkabileceğimiz bir özelliği paylaşmak istiyorum.  

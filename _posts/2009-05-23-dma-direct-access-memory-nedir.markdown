@@ -1,8 +1,8 @@
 ---
-title:  "DMA Direct Access Memory Nedir"
-date:   2017-12-25 20:04:23
+title: "DMA Direct Access Memory Nedir"
+date: 2017-12-25 20:04:23
 categories: [hardware, architecture, blog]
-tags: [dma, direct access memory, hardware, direct, access, memory, blog]
+tags: [dma, direct-access-memory, hardware, direct, access, memory, blog]
 ---
 
 DMA( Direct Access Memory), bellek ile diğer aygıtlar arasındaki veri iletişimi için kullanılan bir yapıdır. Avantajı, bu veri iletişimini sağlarken merkezi işlem birimini kısmen devre dışı bırakarak veri akışını hızlandırmak ve merkezi işlem birimini daha az meşgul etmektir. Böylece merkezi işlem birimi veri akışında temel unsur olmaktan çıkıp diğer süreçlere fırsat tanıyabilecek, öbür taraftan veri akışı da daha kısa bir yol dolaşmış olacağından dolayı hızlanmış olacaktır.

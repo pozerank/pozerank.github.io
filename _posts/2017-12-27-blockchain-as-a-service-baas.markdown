@@ -1,8 +1,8 @@
 ---
-title:  "Blockchain as a Service-BaaS"
-date:   2017-12-27 12:04:23
+title: "Blockchain as a Service-BaaS"
+date: 2017-12-27 12:04:23
 categories: [blockchain, blog]
-tags: [service, distributed, legder, blockchain, bitcoin, nedir, örnek, block, blog]
+tags: [service, distributed, legder, blockchain, bitcoin, nedir, ornek, block, blog]
 image: https://cdn-images-1.medium.com/max/150/1*CZ8sloO2sJRL8hbgI992fQ.png
 ---
 

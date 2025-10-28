@@ -1,6 +1,6 @@
 ---
-title:  "Transaction marked as RollbackOnly"
-date:   2010-11-09 20:04:23
+title: "Transaction marked as RollbackOnly"
+date: 2010-11-09 20:04:23
 categories: [java, jpa, spring, blog]
 tags: [java, transaction, rollback, jpa, hibernate, hata, blog]
 ---

@@ -1,8 +1,8 @@
 ---
-title:  "Spring Native ve GraalVM"
-date:   2021-03-28 13:04:23
-categories: [architecture, java, spring, jvm, spring boot, maven, blog]
-tags: [native, spring native, java, spring boot, graalvm, mikroservis, microservice, kubernetes, ahead of time, just in time, compiler, native, image, docker, blog, nasil yapilir, mehmet cem yucel]
+title: "Spring Native ve GraalVM"
+date: 2021-03-28 13:04:23
+categories: [architecture, java, spring, jvm, spring-boot, maven, blog]
+tags: [native, spring-native, java, spring-boot, graalvm, mikroservis, microservice, kubernetes, ahead-of-time, just-in-time, compiler, image, docker, blog, nasil-yapilir, mehmet-cem-yucel]
 image: https://miro.medium.com/max/150/0*rSA-gwY01_KDq7Nk
 ---
 

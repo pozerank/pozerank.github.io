@@ -1,8 +1,8 @@
 ---
-title:  "Access Management 5-Spring RestTemplate Feign Keycloak"
-date:   2020-05-25 21:04:23
+title: "Access Management 5-Spring RestTemplate Feign Keycloak"
+date: 2020-05-25 21:04:23
 categories: [architecture, security]
-tags: [keycloak, authentication, authorization, feign, client, spring, boot, resttemplate, oauth2, ldap, oidc, oauth, openid connect, spring, security, blog, nasil yapilir, mehmet cem yucel]
+tags: [keycloak, authentication, authorization, feign, client, spring, boot, resttemplate, oauth2, ldap, oidc, oauth, openid-connect, security, blog, nasil-yapilir, mehmet-cem-yucel]
 image: https://cdn-images-1.medium.com/max/150/0*knMgRQMoNMWQciZs.jpg
 ---
 

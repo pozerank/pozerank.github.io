@@ -1,8 +1,8 @@
 ---
-title:  "12 Factor Nedir Türkçe ve Java Örnekleri"
-date:   2019-02-06 20:04:23
+title: "12 Factor Nedir Türkçe ve Java Örnekleri"
+date: 2019-02-06 20:04:23
 categories: [java, microservices, cloud, architecture, blog]
-tags: [twelve factor, 12 faktör, cloud, microservice, mikroservis, blog, nedir, mehmet cem yucel]
+tags: [twelve-factor, 12-faktor, cloud, microservice, mikroservis, blog, nedir, mehmet-cem-yucel]
 image: https://cdn-images-1.medium.com/max/150/1*A0OnarMzmEUJWQeHTHCgig.png
 ---
 

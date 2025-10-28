@@ -1,8 +1,8 @@
 ---
-title:  "Çanakkale 18 Mart Üniversitesi Gençsen Geleceksin 3.0"
-date:   2010-02-27 20:04:23
+title: "Çanakkale 18 Mart Üniversitesi Gençsen Geleceksin 3.0"
+date: 2010-02-27 20:04:23
 categories: [microsoft, etkinlik]
-tags: [microsoft student partner, gençsen geleceksin, etkinlik]
+tags: [microsoft-student-partner, gencsen-geleceksin, etkinlik]
 ---
 
 

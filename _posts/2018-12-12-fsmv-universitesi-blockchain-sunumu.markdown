@@ -1,8 +1,8 @@
 ---
-title:  "FSMV Üniversitesi Blockchain Sunumu"
-date:   2018-12-12 12:04:23
+title: "FSMV Üniversitesi Blockchain Sunumu"
+date: 2018-12-12 12:04:23
 categories: [blockchain, etkinlik]
-tags: [blockchain, solidity, FSMV üniversitesi, smart contracts, consensus, etkinlik]
+tags: [blockchain, solidity, fsmv-universitesi, smart-contracts, consensus, etkinlik]
 image: https://cdn-images-1.medium.com/max/150/1*FOSTit_q9bjS-26yrO9CSg.jpeg
 ---
 

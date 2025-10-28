@@ -1,8 +1,8 @@
 ---
-title:  "Otomatik Fare Kontrolü"
-date:   2010-02-18 20:04:23
-categories: [microsoft, c#, blog]
-tags: [otomatik fare kontrolü, interop services, API, blog]
+title: "Otomatik Fare Kontrolü"
+date: 2010-02-18 20:04:23
+categories: [microsoft, c-sharp, blog]
+tags: [otomatik-fare-kontrolu, interop-services, api, blog]
 ---
 Bugün interop servisleri aracılığıyla windows işletim sistemi üzerinde fare hareketlerini kontrol etme örneği yapacağız.
 

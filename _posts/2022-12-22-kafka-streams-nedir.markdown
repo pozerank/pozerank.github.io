@@ -1,8 +1,8 @@
 ---
-title:  "Kafka Streams Nedir"
-date:   2022-12-22 10:00:00
-categories: [architecture, microservices, java, spring, spring boot, blog]
-tags: [kafka, streams, topic, queue, api, design, best, practices, http, service, message broker, design, tasarım,  mikroservis, microservice, kubernetes, blog, nasil yapilir, mehmet cem yucel]
+title: "Kafka Streams Nedir"
+date: 2022-12-22 10:00:00
+categories: [architecture, microservices, java, spring, spring-boot, blog]
+tags: [kafka, streams, topic, queue, api, design, best, practices, http, service, message-broker, tasarim, mikroservis, microservice, kubernetes, blog, nasil-yapilir, mehmet-cem-yucel]
 image: https://miro.medium.com/max/150/1*gNhxKQM1FtjzVsJf0UVTkg.webp
 ---
 Apache Kafka’yı çoğumuz duymuştur, kendisini açık kaynak dağıtık bir event streaming platformu olarak tanımlıyor. Bugün Kafka’nın standart message broker özelliklerinden ziyade Kafka Streams’i irdeleyeceğiz.

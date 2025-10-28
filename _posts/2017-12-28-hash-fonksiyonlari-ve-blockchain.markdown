@@ -1,8 +1,8 @@
 ---
-title:  "Hash Fonksiyonları ve Blockchain"
-date:   2017-12-28 12:04:23
+title: "Hash Fonksiyonları ve Blockchain"
+date: 2017-12-28 12:04:23
 categories: [blockchain, security, blog]
-tags: [hash, fonksiyon, nedir, örnek, blockchain, bitcoin, distributed, legder, block, blog]
+tags: [hash, fonksiyon, nedir, ornek, blockchain, bitcoin, distributed, legder, block, blog]
 image: https://cdn-images-1.medium.com/max/150/1*EPyEPIIU2NmpqufwBAPTBQ.jpeg
 ---
 

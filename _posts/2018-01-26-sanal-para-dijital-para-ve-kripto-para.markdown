@@ -1,8 +1,8 @@
 ---
-title:  "Sanal Para - Dijital Para ve Kripto Para"
-date:   2018-01-26 12:04:23
+title: "Sanal Para - Dijital Para ve Kripto Para"
+date: 2018-01-26 12:04:23
 categories: [blockchain, blog]
-tags: [cryptocurrency, digital currency, virtual currency, crypto currency, blog]
+tags: [cryptocurrency, digital-currency, virtual-currency, crypto-currency, blog]
 image: https://cdn-images-1.medium.com/max/150/1*fVM79n9-2msT4dNFiUjJSA.jpeg
 ---
 

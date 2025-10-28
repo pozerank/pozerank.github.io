@@ -1,8 +1,8 @@
 ---
-title:  "Bir Yazılımcının Bilmesi Gereken 15 Madde"
-date:   2019-02-18 14:04:23
-categories: [java, microservices, cloud, architecture, ide, jpa, hardware, c#, tools, design patterns, blog]
-tags: [yazilim, blog, nasil yapilir, mehmet cem yucel]
+title: "Bir Yazılımcının Bilmesi Gereken 15 Madde"
+date: 2019-02-18 14:04:23
+categories: [java, microservices, cloud, architecture, ide, jpa, hardware, c-sharp, tools, design-patterns, blog]
+tags: [yazilim, blog, nasil-yapilir, mehmet-cem-yucel]
 image: https://cdn-images-1.medium.com/max/150/1*8uAU58KQ17hL28KJhTA1dA.jpeg
 ---
 

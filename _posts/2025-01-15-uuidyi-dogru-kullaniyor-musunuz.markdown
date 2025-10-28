@@ -1,8 +1,8 @@
 ---
-title:  "UUID'yi Doğru Kullanıyor Musunuz?"
-date:   2025-01-15 12:00:00
+title: "UUID'yi Doğru Kullanıyor Musunuz?"
+date: 2025-01-15 12:00:00
 categories: [architecture, microservices, blog, youtube]
-tags: [uuid, uuid v4, uuid v7, collision, entropi, entropy, determinism, determinizm, blog, nasil yapilir, mehmet cem yucel, youtube]
+tags: [uuid, uuid-v4, uuid-v7, collision, entropi, entropy, determinism, determinizm, blog, nasil-yapilir, mehmet-cem-yucel, youtube]
 image: https://miro.medium.com/v2/resize:fit:150/1*D2iR6MW3V6qPekeo18WuBQ.png
 ---
 

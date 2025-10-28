@@ -1,8 +1,8 @@
 ---
-title:  "Centralized-Decentralized-Distributed Networkler ve Bizans General Problemi"
-date:   2018-01-21 12:04:23
+title: "Centralized-Decentralized-Distributed Networkler ve Bizans General Problemi"
+date: 2018-01-21 12:04:23
 categories: [blockchain, blog]
-tags: [cryptocurrency, decentralized networks, consensus, byzantine general problem, bizans general problemi, distributed legder, blockchain, blog]
+tags: [cryptocurrency, decentralized-networks, consensus, byzantine-general-problem, bizans-general-problemi, distributed-legder, blockchain, blog]
 image: https://cdn-images-1.medium.com/max/150/1*veQ2_LO2geVmGhwFGc7o9A.jpeg
 ---
 

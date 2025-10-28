@@ -1,8 +1,8 @@
 ---
-title:  "Türkçe Solidity Dersleri - 1"
-date:   2018-02-27 12:04:23
-categories: [blockchain, smart contracts]
-tags: [solidity, cryptocurrency, blockchaing, smart contracts, blog]
+title: "Türkçe Solidity Dersleri - 1"
+date: 2018-02-27 12:04:23
+categories: [blockchain, smart-contracts]
+tags: [solidity, cryptocurrency, blockchaing, smart-contracts, blog]
 image: https://cdn-images-1.medium.com/max/150/1*bkQ65Bgo5_4Fi0BnsDYO1A.jpeg
 ---
 

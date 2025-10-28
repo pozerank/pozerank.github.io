@@ -1,6 +1,6 @@
 ---
-title:  "Eclipse Formatter On Off"
-date:   2015-11-09 20:04:23
+title: "Eclipse Formatter On Off"
+date: 2015-11-09 20:04:23
 categories: [ide, tools, blog]
 tags: [java, jvm, formatter, on, off, sql, style, eclipse, ide, blog]
 ---

@@ -1,6 +1,6 @@
 ---
-title:  "Mutable - Immutable Types"
-date:   2012-01-25 20:04:23
+title: "Mutable - Immutable Types"
+date: 2012-01-25 20:04:23
 categories: [java, jvm, blog]
 tags: [java, mutable, immutable, type, nedir, blog]
 ---

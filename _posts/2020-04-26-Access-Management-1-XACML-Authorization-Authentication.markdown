@@ -1,8 +1,8 @@
 ---
-title:  "Access Management 1-XACML Authorization Authentication"
-date:   2020-04-26 17:04:23
+title: "Access Management 1-XACML Authorization Authentication"
+date: 2020-04-26 17:04:23
 categories: [architecture, security, blog]
-tags: [authentication, authorization, keycloak, sso, oauth2, openid connect, blog, nasil yapilir, mehmet cem yucel]
+tags: [authentication, authorization, keycloak, sso, oauth2, openid-connect, blog, nasil-yapilir, mehmet-cem-yucel]
 image: https://miro.medium.com/max/150/1*AevTigjmr7CmH-RV_OtzNA.png
 ---
 

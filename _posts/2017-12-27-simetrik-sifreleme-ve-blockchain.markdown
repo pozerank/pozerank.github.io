@@ -1,8 +1,8 @@
 ---
-title:  "Simetrik Şifreleme ve Blockchain"
-date:   2017-12-27 12:04:23
+title: "Simetrik Şifreleme ve Blockchain"
+date: 2017-12-27 12:04:23
 categories: [blockchain, security, blog]
-tags: [dlt, encryption, şifreleme, simetrik, asimetrik, anahtarlama, distributed, legder, blockchain, bitcoin, block, blog]
+tags: [dlt, encryption, sifreleme, simetrik, asimetrik, anahtarlama, distributed, legder, blockchain, bitcoin, block, blog]
 image: https://cdn-images-1.medium.com/max/150/1*kQJWhkNIuQ-kWnV1LGUm6w.jpeg
 ---
 

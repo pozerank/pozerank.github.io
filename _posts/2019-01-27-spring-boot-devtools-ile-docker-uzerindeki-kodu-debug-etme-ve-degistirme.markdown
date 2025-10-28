@@ -1,8 +1,8 @@
 ---
-title:  "Spring Boot Devtools ile Docker Üzerindeki Kodu Debug Etme ve Değiştirme"
-date:   2019-01-27 15:04:23
-categories: [java, spring, spring boot, docker, maven, microservices]
-tags: [spring boot, spring, devtools, blog, nasil yapilir, mehmet cem yucel]
+title: "Spring Boot Devtools ile Docker Üzerindeki Kodu Debug Etme ve Değiştirme"
+date: 2019-01-27 15:04:23
+categories: [java, spring, spring-boot, docker, maven, microservices]
+tags: [spring-boot, spring, devtools, blog, nasil-yapilir, mehmet-cem-yucel]
 image: https://cdn-images-1.medium.com/max/150/1*nf9ajj-L2uZ2ztybaLHMWA.jpeg
 ---
 

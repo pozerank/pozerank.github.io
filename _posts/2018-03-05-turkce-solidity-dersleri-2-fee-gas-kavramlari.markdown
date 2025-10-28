@@ -1,8 +1,8 @@
 ---
-title:  "Türkçe Solidity Dersleri -2- Fee, Gas Kavramları"
-date:   2018-03-05 12:04:23
-categories: [blockchain, smart contracts]
-tags: [solidity, blockchain, crpytocurrency, smart contracts, blog]
+title: "Türkçe Solidity Dersleri -2- Fee, Gas Kavramları"
+date: 2018-03-05 12:04:23
+categories: [blockchain, smart-contracts]
+tags: [solidity, blockchain, crpytocurrency, smart-contracts, blog]
 image: https://cdn-images-1.medium.com/max/150/1*K9pkxGaDtjcJidMJBFl_Cg.jpeg
 ---
 

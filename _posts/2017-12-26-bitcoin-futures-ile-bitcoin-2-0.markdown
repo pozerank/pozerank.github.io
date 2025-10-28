@@ -1,6 +1,6 @@
 ---
-title:  "Bitcoin Futures ile Bitcoin 2.0"
-date:   2017-12-26 12:04:23
+title: "Bitcoin Futures ile Bitcoin 2.0"
+date: 2017-12-26 12:04:23
 categories: [blockchain, blog]
 tags: [dlt, futures, distributed, legder, blockchain, bitcoin, block, blog]
 image: https://cdn-images-1.medium.com/max/150/1*nd56s97FhQYI_5l4uJYb1A.jpeg

@@ -1,6 +1,6 @@
 ---
-title:  "Bitcoin, Blockchain, Distributed Ledger Technology"
-date:   2017-12-25 20:04:23
+title: "Bitcoin, Blockchain, Distributed Ledger Technology"
+date: 2017-12-25 20:04:23
 categories: [blockchain, blog]
 tags: [dlt, distributed, legder, blockchain, bitcoin, genesis, block, satoshi, hyperledger, blog]
 image: https://cdn-images-1.medium.com/max/150/1*JBV7VVSxXvoZ97b0-FAMFA.png
