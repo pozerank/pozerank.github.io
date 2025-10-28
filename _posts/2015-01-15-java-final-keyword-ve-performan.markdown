@@ -1,8 +1,8 @@
 ---
 title: "Java Final Keyword ve Performans Etkileri"
 date: 2015-01-15 20:04:23
-categories: [java, jvm, architecture, blog]
-tags: [java, jvm, final, keyword, heap, memory, bellek, blog]
+categories: [java, jvm, architecture]
+tags: [java, jvm, final, performance, mehmet-cem-yucel]
 ---
 
 Bugün zaten bildiğimiz final anahtar kelimesine biraz farklı açılardan bakacağız.  
@@ -140,4 +140,3 @@ Performans kaygıları bir kenara, kodumuzun temiz bir kod olması açısından 
 ***En yalın haliyle***
 
 [**Mehmet Cem Yücel**](https://www.mehmetcemyucel.com)
-

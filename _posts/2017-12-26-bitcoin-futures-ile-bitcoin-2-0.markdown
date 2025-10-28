@@ -1,8 +1,8 @@
 ---
 title: "Bitcoin Futures ile Bitcoin 2.0"
 date: 2017-12-26 12:04:23
-categories: [blockchain, blog]
-tags: [dlt, futures, distributed, legder, blockchain, bitcoin, block, blog]
+categories: [blockchain, finance]
+tags: [bitcoin-futures, derivatives, blockchain, finance, mehmet-cem-yucel]
 image: https://cdn-images-1.medium.com/max/150/1*nd56s97FhQYI_5l4uJYb1A.jpeg
 ---
 Blockchain dünyası ve bu dünyadaki örnekler çok hızlı değişiyor.  [Buradaki](https://medium.com/blockchainturk/blockchain-evrimi-ve-blockchain-3-0-4f1af18ef619) yazımızda Blockchain 1.0 olarak tanımladığımız currency aktarımı sağlayan Bitcoin’e  [CME Group](http://www.cmegroup.com/trading/bitcoin-futures.html)  BTC borsasında yeni bir özellik hayata geçti. Aslında hayata geçen bir smart contract örneğinin chainin kendi döngüsü dışında hayata geçirilmiş versiyonu da denebilir, bu özellik gelecek bir tarihte belirlenen bir tutardan Bitcoin alım ve satım yapma anlaşmasını yapabilmeye olanak sağlıyor.

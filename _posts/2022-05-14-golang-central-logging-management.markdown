@@ -1,8 +1,8 @@
 ---
 title: "Golang Central Logging Management"
 date: 2022-05-14 10:00:00
-categories: [architecture, go, microservices, blog]
-tags: [go, golang, rest, api, design, best, practices, http, service, web-service, tasarim, java, spring-boot, mikroservis, microservice, kubernetes, blog, nasil-yapilir, mehmet-cem-yucel]
+categories: [golang, observability, blog]
+tags: [golang, centralized-logging, zap-logger, filebeat, elk-stack, kafka, log-management, kubernetes, mehmet-cem-yucel]
 image: https://miro.medium.com/max/150/0*u2bTNB7kf_jjWm9s.jpeg
 ---
 

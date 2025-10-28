@@ -1,8 +1,8 @@
 ---
 title: "JUnit - @Rule ve @ClassRule Annotationları"
 date: 2019-03-03 15:04:23
-categories: [java, test, blog]
-tags: [junit, birim-test, unit-test, classrule, rule, rulechain, blog, nasil-yapilir, mehmet-cem-yucel]
+categories: [java, testing, blog]
+tags: [junit, unit-testing, rule, classrule, test-automation, mehmet-cem-yucel]
 image: https://cdn-images-1.medium.com/max/150/0*PI13arzqtcC-oXBh.jpg
 ---
 

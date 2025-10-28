@@ -1,8 +1,8 @@
 ---
 title: "Peki Lombok'u Nasıl Kullanacağım?"
 date: 2019-01-30 20:04:23
-categories: [java, spring, spring-boot, tools, blog]
-tags: [lombok, eclipse, intellij, ide, blog, nasil-yapilir, mehmet-cem-yucel]
+categories: [java, tools, blog]
+tags: [lombok, ide-setup, eclipse, spring-boot, mehmet-cem-yucel]
 image: https://cdn-images-1.medium.com/max/150/1*v_NiWtOaQEt5plnvrPLf_g.jpeg
 ---
 

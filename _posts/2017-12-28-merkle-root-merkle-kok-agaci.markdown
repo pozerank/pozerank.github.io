@@ -1,8 +1,8 @@
 ---
 title: "Merkle Root Merkle Kök Ağacı"
 date: 2017-12-28 12:04:23
-categories: [blockchain, blog]
-tags: [dlt, merkle, root, kok, agaci, distributed, legder, blockchain, bitcoin, utxo, block, blog]
+categories: [blockchain, fundamentals]
+tags: [merkle-tree, merkle-root, blockchain, data-integrity, mehmet-cem-yucel]
 image: https://cdn-images-1.medium.com/max/150/0*JKeTzfaJAjzXq_Lq.PNG
 ---
 

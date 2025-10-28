@@ -1,8 +1,8 @@
 ---
 title: "Java ile Örnek Proof of Work Gerçekleştirimi ve Mining"
 date: 2018-01-02 12:04:23
-categories: [blockchain, java, blog]
-tags: [proof-of-work, ornek, nedir, distributed, legder, blockchain, bitcoin, block, blog]
+categories: [blockchain, java]
+tags: [proof-of-work, mining, blockchain, java, tutorial, mehmet-cem-yucel]
 image: https://cdn-images-1.medium.com/max/150/1*16MNLKRn_jkLv8xBEA6oIw.png
 ---
 

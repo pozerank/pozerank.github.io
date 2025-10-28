@@ -1,8 +1,8 @@
 ---
 title: "Java Daemon Thread"
 date: 2015-08-03 20:04:23
-categories: [jvm, java, architecture, blog]
-tags: [java, jvm, daemon, thread, heap-memory, bellek, blog]
+categories: [java, jvm, architecture]
+tags: [java, jvm, daemon-thread, concurrency, mehmet-cem-yucel]
 ---
 
 Bir java uygulamanın sonlanması için main thread'in sonlanması ve başka hiçbir aktif user thread'in olmaması gerekir. Bu sonlanmayı main thread sonlandırıldığında aktifleşen DestroyJavaVM isimli thread yönetir.  
@@ -110,4 +110,3 @@ Bu kez ilk thread'imiz daemon thread olarak tanımlı ve main thread ve ikinci t
 Kodlara aşağıdaki linkten erişebilirsiniz.  
   
 [https://github.com/mehmetcemyucel/blog/tree/master/DaemonThread](https://github.com/mehmetcemyucel/blog/tree/master/DaemonThread)
-

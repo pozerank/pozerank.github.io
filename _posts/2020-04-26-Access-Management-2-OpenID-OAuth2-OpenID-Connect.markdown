@@ -1,8 +1,8 @@
 ---
 title: "Access Management 2-OpenID OAuth2 OpenID Connect"
 date: 2020-04-26 19:04:23
-categories: [architecture, security, blog]
-tags: [sso, authentication, authorization, single-sign-on, keycloak, kerberos, oauth2, openid-connect, protokol, federation, blog, nasil-yapilir, mehmet-cem-yucel]
+categories: [security, identity-access-management, blog]
+tags: [oauth2, openid-connect, openid, delegated-authorization, federated-authentication, mehmet-cem-yucel]
 image: https://miro.medium.com/max/150/0*ipuyew2--zak9w2i.png
 ---
 

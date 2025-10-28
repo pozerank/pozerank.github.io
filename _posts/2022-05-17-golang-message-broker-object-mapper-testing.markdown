@@ -1,8 +1,8 @@
 ---
-title: "Golang Message Broker Object Mapper Testing"
+title: "Golang Message Broker, Object Mapping ve Testing"
 date: 2022-05-17 10:00:00
-categories: [architecture, go, microservices, blog]
-tags: [go, golang, rest, api, design, best, practices, http, service, web-service, tasarim, java, spring-boot, mikroservis, microservice, kubernetes, blog, nasil-yapilir, mehmet-cem-yucel]
+categories: [golang, architecture, blog]
+tags: [golang, kafka, sarama, message-broker, object-mapping, dto, unit-testing, mocks, kubernetes, mehmet-cem-yucel]
 image: https://miro.medium.com/max/150/0*d70VvJL7EhiARvgS.png
 ---
 

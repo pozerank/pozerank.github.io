@@ -1,8 +1,8 @@
 ---
 title: "Kafka Streams KTable"
 date: 2022-12-22 11:00:00
-categories: [architecture, microservices, java, spring, spring-boot, blog]
-tags: [kafka, streams, ktable, rocksdb, rocks, store, topic, queue, design, best, practices, service, message-broker, tasarim, mikroservis, microservice, kubernetes, blog, nasil-yapilir, mehmet-cem-yucel]
+categories: [architecture, streaming, blog]
+tags: [kafka-streams, ktable, state-store, rocksdb, stream-processing, event-driven-architecture, java, spring-boot, kubernetes, mehmet-cem-yucel]
 image: https://miro.medium.com/max/150/0*DowA3KXXNQ-W6i1b
 ---
 

@@ -1,8 +1,8 @@
 ---
 title: "Spring Native Örnek Uygulama"
 date: 2021-04-18 13:04:23
-categories: [architecture, java, spring, jvm, spring-boot, maven, graalvm, blog]
-tags: [native, spring-native, java, spring-boot, graalvm, mikroservis, microservice, kubernetes, ahead-of-time, just-in-time, compiler, image, docker, blog, nasil-yapilir, mehmet-cem-yucel]
+categories: [java, spring, graalvm, blog]
+tags: [spring-native, graalvm, native-image, spring-boot, ahead-of-time-compilation, docker, microservices, mehmet-cem-yucel]
 image: https://cdn-images-1.medium.com/max/150/1*uPfmqByjfzpW8Y6iBFrpTg.png
 ---
 [Önceki yazımızda](https://www.mehmetcemyucel.com/2021/spring-native-ve-graalvm/) girişini yaptığımız [**Spring Native**](https://docs.spring.io/spring-native/docs/current/reference/htmlsingle/)  nedir, nasıl çalışır gibi konuların uygulaması niteliğinde bir yazıyla devam ediyoruz. Bu yazımızda bahsettiğimiz konular hakkında örnek bir uygulama yaparken karşınıza çıkabilecek problemler ve çözüm yollarını birlikte inceleyeceğiz. [GraalVM](https://www.graalvm.org/) nedir, [LLVM](https://llvm.org/) nedir, nasıl çalışır gibi bilgiler bu çalışmamızda karşılaşacağımız problemlerin çözümlerini anlayabilmek için gerekebilecek temel bilgiler, bunun için de takıldığınız yerde ilk yazımıza göz atmanızı öneririm.

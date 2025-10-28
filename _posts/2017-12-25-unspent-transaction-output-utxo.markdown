@@ -1,8 +1,8 @@
 ---
 title: "Unspent Transaction Output UTXO"
 date: 2017-12-25 22:04:23
-categories: [blockchain, blog]
-tags: [dlt, unspent, transaction, output, distributed, legder, blockchain, bitcoin, utxo, block, blockchainturk, blog]
+categories: [blockchain, fundamentals]
+tags: [utxo, transactions, blockchain, bitcoin, mehmet-cem-yucel]
 image: https://cdn-images-1.medium.com/max/150/1*xFpHRPhxSWbQZoLTxRk8og.png
 ---
 ![](https://miro.medium.com/max/550/1*xFpHRPhxSWbQZoLTxRk8og.png)

@@ -1,8 +1,8 @@
 ---
 title: "Mutable - Immutable Types"
 date: 2012-01-25 20:04:23
-categories: [java, jvm, blog]
-tags: [java, mutable, immutable, type, nedir, blog]
+categories: [java, jvm]
+tags: [java, mutable, immutable, performance, mehmet-cem-yucel]
 ---
 
 Bugün bir çoğumuzun bildiği ama çoğu zaman dikkat etmediğimiz bir konuya dikkat çekmek istiyorum. [Mutable](http://en.wikipedia.org/wiki/Mutable#Java)(değişebilir) ve [immutable](http://en.wikipedia.org/wiki/Mutable#Java)(değişemez) tipler. Hangi veri tiplerimiz niçin bu özellikte, performansa etkileri ne şekilde bunlar üzerinde yorumlar yapacağız.  

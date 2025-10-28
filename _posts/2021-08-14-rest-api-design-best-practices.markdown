@@ -1,8 +1,8 @@
 ---
-title: "Rest Api Design Best Practices"
+title: "REST API Design Best Practices"
 date: 2021-08-14 21:24:23
-categories: [architecture, java, spring, jvm, spring-boot, blog]
-tags: [rest, api, design, best, practices, http, service, web-service, rest-service, tasarim, java, spring-boot, mikroservis, microservice, kubernetes, blog, nasil-yapilir, mehmet-cem-yucel]
+categories: [architecture, api-design, blog]
+tags: [rest-api, api-design, http-methods, http-status-codes, richardson-maturity-model, microservices, kubernetes, mehmet-cem-yucel]
 image: https://miro.medium.com/max/150/1*mdijc3xUzEbA2XuyBW5SWg.png
 ---
 Hepimiz uygulamalarımızın birbirleri ile haberleşebilmesi için Rest Servisler sunuyoruz veya tüketiyoruz. Peki bu servisleri oluştururken best practiceleri gerçekten uyguluyor muyuz? Richardson Maturity Model’a, HTTP metotlarına, statü kodlarına, URI tasarım prensiplerine dikkat ediyor muyuz? Farklı başlıklarda bu pratikleri ele alalım.
@@ -254,7 +254,6 @@ Text tabanlı yapılandırılmış veri alışverişi yapmak amacıyla kullanıl
 ## Representation Tasarımı(Body)
 
 -   **43#** Json resource representation support edilmelidir. plain/text dönüşler yapılmamalıdır.
-
 
 
 

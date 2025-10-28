@@ -1,8 +1,8 @@
 ---
 title: "C# ile DNS Degistirme Uygulaması"
 date: 2010-11-10 20:04:23
-categories: [microsoft, c-sharp, blog]
-tags: [c-sharp, c, dns, degistirme, regedit, blog]
+categories: [microsoft, c-sharp]
+tags: [c-sharp, dns, windows, registry, mehmet-cem-yucel]
 ---
 
 Bildiğiniz gibi [Youtube](http://www.youtube.com/) video paylaşım sitesine erişim ülkemizde engellendikten sonra bu kervana [Google](http://www.google.com.tr/) servisleri de eklenmişti. Bu durum elbette site ve servislere erişebilmeyeceğimiz anlamına gelmiyor. Erişebilmek için yöntemler de zaten birçoğumuz tarafından biliniyor. Bunlardan birisi tünel kavramı. Bazı siteler bizim ilgili siteyle kendi üzerinden bağlanmamız konusunda yardımcı oluyor. Bu sitelerden en popüler olanlarından birisi [KTunnel](http://www.ktunnel.com/) mesela. Bir başka yol bilgisayarımızın [sunucu dosyasını](http://tr.wikipedia.org/wiki/Sunucu_dosyas%C4%B1) düzenlemekten geçiyor.  

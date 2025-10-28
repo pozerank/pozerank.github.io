@@ -1,8 +1,8 @@
 ---
 title: "Spring Boot Projesini Maven ile Dockerize Etmek"
 date: 2019-01-27 20:04:23
-categories: [java, spring, spring-boot, docker, microservices, maven, blog]
-tags: [spring-boot, maven, docker, blog, nasil-yapilir, mehmet-cem-yucel]
+categories: [spring, docker, blog]
+tags: [docker, maven, spring-boot, containerization, mehmet-cem-yucel]
 image: https://cdn-images-1.medium.com/max/150/1*nxoL5MIJYyvW60mkAPZpLw.jpeg
 ---
 

@@ -1,8 +1,8 @@
 ---
 title: "Blockchain Evrimi ve Blockchain 3.0"
 date: 2017-12-25 22:04:23
-categories: [blockchain, blog]
-tags: [distributed, legder, blockchain, bitcoin, utxo, block, blockchainturk, blog]
+categories: [blockchain, fundamentals]
+tags: [blockchain-evolution, smart-contracts, dapps, blockchain, mehmet-cem-yucel]
 image: https://cdn-images-1.medium.com/max/150/1*ITEGfqVQIwkwrYALodhjIA.jpeg
 ---
 

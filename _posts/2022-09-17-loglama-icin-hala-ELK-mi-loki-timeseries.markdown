@@ -1,8 +1,8 @@
 ---
-title: "Loglama İçin Hala ELK Mı Kullanıyorsunuz 1- Loki ve Time Series Databaseler"
+title: "Loglama İçin Hala ELK mı Kullanıyorsunuz? Loki ve Time Series Veritabanları"
 date: 2022-09-17 10:00:00
-categories: [architecture, microservices, blog]
-tags: [loki, elk, timeseries, api, design, best, practices, http, service, web-service, tasarim, database, loglama, mikroservis, microservice, kubernetes, blog, nasil-yapilir, mehmet-cem-yucel]
+categories: [observability, devops, blog]
+tags: [loki, elk, time-series-database, log-aggregation, grafana, prometheus, kubernetes, logging-architecture, mehmet-cem-yucel]
 image: https://miro.medium.com/max/150/1*D_Yu51tJZBK70suixBWPlQ.jpeg
 ---
 

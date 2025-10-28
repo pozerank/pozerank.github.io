@@ -1,8 +1,8 @@
 ---
 title: "Technical Debt"
 date: 2025-01-01 12:00:00
-categories: [tools, youtube]
-tags: [youtube, nasil-yapilir, mehmet-cem-yucel]
+categories: [blog, youtube, announcement]
+tags: [technical-debt, youtube-duyurusu, 2025-planlari, mehmet-cem-yucel]
 image: https://miro.medium.com/v2/resize:fit:150/1*7sqtjRMVm0lAytRPMIC01g.png
 ---
 

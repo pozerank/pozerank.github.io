@@ -1,8 +1,8 @@
 ---
-title: "Golang Api Management"
+title: "Golang API Management"
 date: 2022-05-16 10:00:00
-categories: [architecture, go, microservices, blog]
-tags: [go, golang, rest, api, design, best, practices, http, service, web-service, tasarim, java, spring-boot, mikroservis, microservice, kubernetes, blog, nasil-yapilir, mehmet-cem-yucel]
+categories: [golang, architecture, blog]
+tags: [golang, api-management, echo-framework, fasthttp, prometheus-metrics, swagger, monitoring, kubernetes, mehmet-cem-yucel]
 image: https://miro.medium.com/max/150/1*hV308VnNWS1xlrSaztOHkw.png
 ---
 

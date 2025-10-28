@@ -1,8 +1,8 @@
 ---
 title: "Transaction marked as RollbackOnly"
 date: 2010-11-09 20:04:23
-categories: [java, jpa, spring, blog]
-tags: [java, transaction, rollback, jpa, hibernate, hata, blog]
+categories: [java, spring, jpa]
+tags: [transaction, rollbackonly, spring, jpa, mehmet-cem-yucel]
 ---
 
 Programlar bilgisayarlarımıza ilk kurulduklarında hangi argümanlara göre çalışacaklarına kendileri karar verirler. **Default** olarak gelen bu değerler her zaman uygulamamızın doğasına uygun olmayabilir. Örneğin enterprise uygulamalar üzerinde çalışıyorsak bu bu başlangıç değerleri projemizin isteğini karşılamıyor olabilir. Daha **fazla bellek alanı** tahsis etmemiz, işlemciyi isteklerimize uygun olarak kullanmak isteyebiliriz. Hatta belirlediğimiz uygulamaların bu kaynakları ne şekillerde paylaşacaklarını ayarlamamız da gerekebilir.  

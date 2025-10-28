@@ -1,8 +1,8 @@
 ---
 title: "Chain Of Responsibility Design Pattern"
 date: 2014-02-20 20:04:23
-categories: [java, design-patterns, blog]
-tags: [java, design-patterns, tasarim-kaliplari, chain-of-responsibility, blog]
+categories: [java, design-patterns]
+tags: [java, design-patterns, chain-of-responsibility, mehmet-cem-yucel]
 ---
 
 Bugün behavioral(davranışsal) bir design pattern(tasarım şablonu) olan Chain of Responsibility(Sorumluluk Zinciri) inceliyor ve örnek yapıyor olacağız.  
@@ -63,4 +63,3 @@ Artık test etme vakti;
 Uygulamanın kodlarına aşağıdaki adresten erişebilirsiniz.
 
 [https://github.com/mehmetcemyucel/blog/tree/master/ChainOfResponsibility](https://github.com/mehmetcemyucel/blog/tree/master/ChainOfResponsibility)
-

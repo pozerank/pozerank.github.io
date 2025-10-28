@@ -1,8 +1,8 @@
 ---
 title: "Spring Boot Rest Servis Entegrasyon Testi"
 date: 2019-03-03 15:04:23
-categories: [microservices, java, spring, test, blog]
-tags: [rest, entegrasyon-test, integration-test, test, mockmvc, unit-test, blog, nasil-yapilir, mehmet-cem-yucel]
+categories: [spring, testing, blog]
+tags: [mockmvc, integration-testing, spring-boot, rest-api, test-automation, mehmet-cem-yucel]
 image: https://cdn-images-1.medium.com/max/150/1*3DEG7NE6l9h0XIiivEne8Q.jpeg
 ---
 

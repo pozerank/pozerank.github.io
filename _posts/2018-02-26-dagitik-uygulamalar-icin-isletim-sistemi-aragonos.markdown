@@ -1,8 +1,8 @@
 ---
 title: "Dağıtık Uygulamalar İçin İşletim Sistemi AragonOS"
 date: 2018-02-26 12:04:23
-categories: [blockchain, blog]
-tags: [distributed-applications, dagitik-uygulamalar, blockchain, araganos, blog]
+categories: [blockchain, decentralized-applications]
+tags: [distributed-applications, blockchain, aragonos, dapp, mehmet-cem-yucel]
 image: https://cdn-images-1.medium.com/max/150/1*B3whQzJCrXdbHdyIu0-1Dw.png
 ---
 

@@ -1,8 +1,8 @@
 ---
 title: "Alternatif JVM’ler ve Javanın Geleceği Podcasti"
 date: 2019-12-22 15:04:23
-categories: [java, jvm, quarkus, microservices, graalvm, architecture, podcast]
-tags: [podcast, istanbul-jug, jvm, mehmet-cem-yucel]
+categories: [java, podcast, blog]
+tags: [podcast, istanbul-jug, jvm, graalvm, quarkus, mehmet-cem-yucel]
 image: https://miro.medium.com/max/150/1*gp7kdBQxRzDUmAMRa74LEg.png
 ---
 

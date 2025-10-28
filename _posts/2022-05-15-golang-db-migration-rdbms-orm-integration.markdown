@@ -1,8 +1,8 @@
 ---
-title: "Golang DB Migration RDBMS ORM Integration"
+title: "Golang DB Migration, RDBMS ve ORM Entegrasyonu"
 date: 2022-05-15 10:00:00
-categories: [architecture, go, microservices, blog]
-tags: [go, golang, rest, api, design, best, practices, http, service, web-service, tasarim, java, spring-boot, mikroservis, microservice, kubernetes, blog, nasil-yapilir, mehmet-cem-yucel]
+categories: [golang, architecture, blog]
+tags: [golang, database-migration, migrate-tool, gorm, postgresql, orm, devops, mehmet-cem-yucel]
 image: https://miro.medium.com/max/150/0*6pQrd5Dnhivf8Tp8.png
 ---
 

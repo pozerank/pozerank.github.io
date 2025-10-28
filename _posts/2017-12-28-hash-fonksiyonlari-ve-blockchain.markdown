@@ -1,8 +1,8 @@
 ---
 title: "Hash Fonksiyonları ve Blockchain"
 date: 2017-12-28 12:04:23
-categories: [blockchain, security, blog]
-tags: [hash, fonksiyon, nedir, ornek, blockchain, bitcoin, distributed, legder, block, blog]
+categories: [blockchain, security]
+tags: [hash-functions, blockchain, cryptography, proof-of-work, mehmet-cem-yucel]
 image: https://cdn-images-1.medium.com/max/150/1*EPyEPIIU2NmpqufwBAPTBQ.jpeg
 ---
 
@@ -38,5 +38,4 @@ Aslında ertelemek zorunda değilsiniz, bütün fotoğrafların ayrı ayrı hash
 Özetlemek gerekirse, hash fonksiyonları Proof of Work’ün tam kalbidir. Diğer Blockchain örneklerinde de kullanılan birer tekil tanımlama fonksiyonlarıdırlar. Hash fonksiyonlarının teknik detaylarına ileride bir yazıda değinmeyi düşünüyoruz, şu an için detaylı bilgi almak isteyenler  [buradaki](https://en.wikipedia.org/wiki/Hash_function) wiki sayfasından bilgi edinebilir.
 
 Yazılarımızın devamlılığını sağlayabilmemiz için lütfen yorumlarınızı iletmeyi unutmayınız. Ve bizi  [**LinkedIn**](http://linkedin.com/groups/13568839)  ve  [**Facebook’ta**](https://www.facebook.com/blockchainturknet/) takip edin, topluluğumuzun bir parçası olun.
-
 
