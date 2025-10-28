@@ -16,6 +16,12 @@ Geçtiğimiz sene başladığım eğitim macerasına bu sene de hız kesmeden de
 
 Bu kanalı niçin açtığım, kimlere hitap ettiği, ne tür içerikler olacağı gibi konuları paylaştığım “[**Niçin Technical Debt**](https://www.youtube.com/watch?v=FbUHty6yB0k)” videosuna göz atmak isteyebilirsiniz.
 
+<div class="video-container">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/FbUHty6yB0k?si=0qMaPABa84eFo0eI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
+
+
+
 Eğer içerikler hoşunuza giderse birlikte büyüyebilmek için zaten artık ezbere bilinen :) bazı şeyleri sizden rica edeceğim. Ayrıca aktif bir yön çizebilmek için de yorumlarınızla feedbacklerinize ihtiyacım olacak.
 
 Sonraki yazılarda ve videolarda görüşmek üzere.

@@ -1,6 +1,6 @@
 # Site settings
 title: Mehmet Cem Yücel
-description: 'Technical Writings.<br/> Architecture, Security, Java, Golang, Devops, Microservices, Spring Boot, Kafka, Distributed Systems and Blockchain'
+description: 'Software Architecture, Distributed Systems, AI & DevOps Insights'
 keywords: 'Mehmet Cem Yücel, Türkçe, Yazılım, Bilgisayar, örnek, kod, Blog, Blogger, Nedir, Nasıl yapılır, Spring, Java, Mikroservis, Blockchain, Cloud, framework, servis, uygulama'
 url: 'https://www.mehmetcemyucel.com'
 baseurl: ''

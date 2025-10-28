@@ -6,8 +6,6 @@ tags: [uuid, uuid v4, uuid v7, collision, entropi, entropy, determinism, determi
 image: https://miro.medium.com/v2/resize:fit:150/1*D2iR6MW3V6qPekeo18WuBQ.png
 ---
 
-# Giriş
-
 Hepimizin unique bir ID gereksinimi duyduğumuzda sığındığımız güvenilir liman UUID’ler. Peki UUID’nin 7 farklı versiyonu olduğunu ve hepsinin farklı konulara göre özel çözümler sunduğunu biliyor musunuz? Gelin birlikte inceleyelim.
 
 ![](https://miro.medium.com/v2/resize:fit:700/1*D2iR6MW3V6qPekeo18WuBQ.png)

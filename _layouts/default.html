@@ -13,5 +13,44 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       </div>
       {% include footer.html %}
     </div>
+    <script>
+  function copyToClipboard(event, text) {
+    event.preventDefault();
+
+    // Modern clipboard API (destek varsa)
+    if (navigator.clipboard && window.isSecureContext) {
+      navigator.clipboard.writeText(text).then(() => {
+        showCopyStatus("Bağlantı panoya kopyalandı ✅");
+      }).catch(err => {
+        console.error("Kopyalama hatası:", err);
+        showCopyStatus("Kopyalama başarısız ❌");
+      });
+    } else {
+      // Eski yöntem (input hack)
+      const tempInput = document.createElement("input");
+      tempInput.value = text;
+      document.body.appendChild(tempInput);
+      tempInput.select();
+      try {
+        document.execCommand("copy");
+        showCopyStatus("Bağlantı panoya kopyalandı ✅");
+      } catch (err) {
+        showCopyStatus("Kopyalama başarısız ❌");
+      }
+      document.body.removeChild(tempInput);
+    }
+  }
+
+  function showCopyStatus(message) {
+    const el = document.getElementById("copy-status");
+    if (el) {
+      el.textContent = message;
+      el.style.opacity = 1;
+      setTimeout(() => { el.style.opacity = 0; }, 2500);
+    } else {
+      alert(message);
+    }
+  }
+</script>
   </body>
 </html>
