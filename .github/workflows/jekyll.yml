@@ -9,18 +9,33 @@ on:
   schedule:
     - cron: '0 10 * * *' 
 
+# Gerekli izinleri ayarlayın
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
 jobs:
   jekyll:
+    # GitHub Pages için standart runner
     runs-on: ubuntu-latest
+
+    # Jekyll Actions ortamını yapılandır
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
     steps:
     - name: Checkout Code
       uses: actions/checkout@v4
 
-    # 1. Ruby kurulumu (YouTube veri çekme ve Bundler uyumluluğu için)
+    # 1. Ruby kurulumu (YouTube betiği için zorunlu 3.3.0)
+    # Bu adım sadece betiği çalıştırmak için gerekli.
     - name: Set up Ruby (For Data Fetching)
       uses: ruby/setup-ruby@v1
       with:
-        ruby-version: '3.3.0' # Spesifik sürüm
+        # 3.3.0 güncel ve modern bir sürüm
+        ruby-version: '3.3.0' 
         bundler-cache: true 
 
     # 2. YouTube Verilerini Çekme
@@ -29,11 +44,25 @@ jobs:
       env:
         YOUTUBE_API_KEY: ${{ secrets.YOUTUBE_API_KEY }}
 
-    # 3. Jekyll'ı Derleme ve Dağıtma
-    - name: Build and Deploy
-      uses: helaili/jekyll-action@v2
+    # 3. GitHub Pages Ortamını Ayarla
+    # Bu adım, GitHub'ın kendi derleme ortamını kurar ve modern Bundler/Ruby kullanır.
+    - name: Setup Pages
+      uses: actions/configure-pages@v5
+
+    # 4. Sitenizi Derleyin
+    - name: Build with Jekyll
+      uses: actions/jekyll-build-pages@v1
       with:
-        token: ${{ secrets.GITHUB_TOKEN }}
-        target_branch: gh-pages # Burayı sitenizin yayınlandığı branch ile değiştirin
-        # 🚨 YENİ KRİTİK ÇÖZÜM: Derleme için Ruby sürümünü doğrudan eyleme bildiriyoruz.
-        ruby_version: '3.3.0'
+        source: ./
+        destination: ./_site
+
+    # 5. Dağıtım Artifact'ı Oluştur
+    - name: Upload artifact
+      uses: actions/upload-pages-artifact@v3
+      with:
+        path: './_site'
+
+    # 6. Sitenizi GitHub Pages'a Dağıt
+    - name: Deploy to GitHub Pages
+      id: deployment
+      uses: actions/deploy-pages@v4
