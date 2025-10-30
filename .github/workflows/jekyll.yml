@@ -4,6 +4,10 @@ on:
   push:
     branches:
       - master # Burayı ana branch adınızla (main veya master) değiştirin
+      
+  # Her gün Türkiye saatiyle 13:00 civarında çalışır (UTC 10:00)
+  schedule:
+    - cron: '0 10 * * *' 
 
 jobs:
   jekyll:
@@ -12,19 +16,24 @@ jobs:
     - name: Checkout Code
       uses: actions/checkout@v4
 
-    - name: Set up Ruby
+    # 1. Ruby kurulumu (YouTube veri çekme ve Bundler uyumluluğu için)
+    - name: Set up Ruby (For Data Fetching)
       uses: ruby/setup-ruby@v1
       with:
-        ruby-version: '3.3'
+        ruby-version: '3.3.0' # Spesifik sürüm
         bundler-cache: true 
 
+    # 2. YouTube Verilerini Çekme
     - name: Run YouTube Data Fetch Script
       run: ruby fetch_youtube_videos.rb
       env:
         YOUTUBE_API_KEY: ${{ secrets.YOUTUBE_API_KEY }}
 
+    # 3. Jekyll'ı Derleme ve Dağıtma
     - name: Build and Deploy
       uses: helaili/jekyll-action@v2
       with:
         token: ${{ secrets.GITHUB_TOKEN }}
         target_branch: gh-pages # Burayı sitenizin yayınlandığı branch ile değiştirin
+        # KRİTİK ÇÖZÜM: Derleme için Ruby sürümü zorlandı
+        JEKYLL_BUILD_OPTIONS: '--ruby-version 3.3.0'
