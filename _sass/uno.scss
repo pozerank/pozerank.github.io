@@ -1688,13 +1688,14 @@ input[type="tel"] {
 				width: 25.8%; }
 
 	.content-wrapper {
-		width: 80%;
+		width: 92%;
 		max-width: none;
 		margin: 0 auto; }
 
 	.content-wrapper__inner {
 		margin-right: 0;
-		margin-left: 0; }
+		margin-left: 0;
+		padding: 18px 0; }
 
 	.navigation__item {
 		width: 100%;

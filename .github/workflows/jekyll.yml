@@ -47,8 +47,9 @@ jobs:
     # 3. Sitenizi Derleyin (Hata Veren actions/jekyll-build-pages Eylemi Yerine)
     - name: Build with Modern Jekyll Environment
       run: |
-        # Bu, Adım 1'de kurulan modern Ruby 3.3.0 ortamını kullanır
-        bundle exec jekyll build --destination ./_site
+        # Bu, Adım 1'de kurulan modern Ruby 3.3.0 ortamını kullanır.
+        # 'vendor/' dizinini hariç tutarak, gem'lerin içindeki Jekyll şablonlarının yanlışlıkla işlenmesini engeller.
+        bundle exec jekyll build --destination ./_site --exclude vendor/
 
     # 4. GitHub Pages Ortamını Ayarla
     - name: Setup Pages
