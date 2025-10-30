@@ -1,7 +1,7 @@
 ---
 title: "Liskov Substitution Principle (LSP) Nedir? — SOLID'in Üçüncü Adımı"
 date: 2025-02-11 12:00:00
-categories: [software, principles, solid, youtube, blog]
+categories: [software, principles, solid, youtube, blog, podcast]
 tags: [solid, lsp, yazilimm-mimarisi, clean-code, design-patterns, mehmet-cem-yucel]
 image: https://img.youtube.com/vi/YM2kcSZo4IM/maxresdefault.jpg
 excerpt: "SOLID prensiplerinin üçüncü adımı olan Liskov Substitution Principle (LSP) nedir? Gerçek örneklerle, hatalı kalıtım ilişkilerini nasıl tespit edip doğru soyutlamalarla çözebileceğimizi inceliyoruz."

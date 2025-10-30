@@ -1,0 +1,30 @@
+name: Deploy Jekyll with YouTube Data
+
+on:
+  push:
+    branches:
+      - master # Burayı ana branch adınızla (main veya master) değiştirin
+
+jobs:
+  jekyll:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout Code
+      uses: actions/checkout@v4
+
+    - name: Set up Ruby
+      uses: ruby/setup-ruby@v1
+      with:
+        ruby-version: '3.x'
+        bundler-cache: true 
+
+    - name: Run YouTube Data Fetch Script
+      run: ruby fetch_youtube_videos.rb
+      env:
+        YOUTUBE_API_KEY: ${{ secrets.YOUTUBE_API_KEY }}
+
+    - name: Build and Deploy
+      uses: helaili/jekyll-action@v2
+      with:
+        token: ${{ secrets.GITHUB_TOKEN }}
+        target_branch: gh-pages # Burayı sitenizin yayınlandığı branch ile değiştirin

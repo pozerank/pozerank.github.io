@@ -1,7 +1,7 @@
 ---
 title: "Interface Segregation Principle (ISP) Nedir? — SOLID'in Dördüncü Adımı"
 date: 2025-02-18 12:00:00
-categories: [software, principles, solid, youtube, blog]
+categories: [software, principles, solid, youtube, blog, podcast]
 tags: [solid, isp, yazilim-mimarisi, clean-code, design-patterns, mehmet-cem-yucel]
 image: https://img.youtube.com/vi/NOJIeu4aTSg/maxresdefault.jpg
 excerpt: "SOLID prensiplerinin dördüncü adımı olan Interface Segregation Principle (ISP) nedir? Gerçek bir e-ticaret örneğiyle, esnek ve yeniden kullanılabilir interface tasarımını ele alıyoruz."

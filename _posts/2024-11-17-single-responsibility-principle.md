@@ -1,7 +1,7 @@
 ---
 title: "Single Responsibility Principle (SRP) Nedir? — SOLID'in İlk Adımı"
 date: 2024-11-17 12:00:00 
-categories: [software, principles, solid, youtube, blog]
+categories: [software, principles, solid, youtube, blog, podcast]
 tags: [solid, srp, yazilim-mimarisi, clean-code, mehmet-cem-yucel]
 image: https://img.youtube.com/vi/ZUBrL_b12xM/maxresdefault.jpg
 excerpt: "SOLID prensiplerinin ilk adımı olan Single Responsibility Principle'ı (SRP) gerçek bir örnekle açıklıyorum. Neden önemlidir, yanlış uygulandığında neler olur ve doğru kurgulamak kod mimarisini nasıl değiştirir?"

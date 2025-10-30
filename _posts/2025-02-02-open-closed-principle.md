@@ -1,7 +1,7 @@
 ---
 title: "Open/Closed Principle (OCP) Nedir? — SOLID'in İkinci Adımı"
 date: 2025-02-02 12:00:00
-categories: [software, principles, solid, youtube, blog]
+categories: [software, principles, solid, youtube, blog, podcast]
 tags: [solid, ocp, yazilim-mimarisi, clean-code, design-patterns, mehmet-cem-yucel]
 image: https://img.youtube.com/vi/jZZhHxzoU10/maxresdefault.jpg
 excerpt: "SOLID prensiplerinin ikinci adımı olan Open/Closed Principle (OCP) nedir, neden önemlidir ve gerçek bir örnekle nasıl uygulanır? Kodunuzu değiştirmeden genişletebilmeyi öğrenin."

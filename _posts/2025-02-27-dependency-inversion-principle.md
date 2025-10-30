@@ -1,14 +1,19 @@
 ---
 title: "Dependency Inversion Principle (DIP) Nedir? — SOLID'in Beşinci ve Son Adımı"
 date: 2025-02-27 12:00:00
-categories: [software, principles, solid, youtube, blog]
+categories: [software, principles, solid, youtube, blog, podcast]
 tags: [solid, dip, dependency-inversion, yazilim-mimarisi, clean-code, design-patterns,  mehmet-cem-yucel]
 image: https://img.youtube.com/vi/79UltiA5DCs/maxresdefault.jpg
 excerpt: "SOLID prensiplerinin son adımı olan Dependency Inversion Principle (DIP) nedir? Katmanlı mimarilerde bağımlılık yönünü tersine çevirerek esnek ve sürdürülebilir sistemler tasarlamayı öğreniyoruz."
 canonical_url: https://youtu.be/79UltiA5DCs
 ---
 
-Yazının ana kaynağı [YouTube](https://youtu.be/79UltiA5DCs) videosudur. Bu içerik AI destekli olarak YouTube videosu temel alınarak oluşturulmuştur.
+
+  ***Not:** İçeriğin orjinali ve alternatif dağıtımları hakkındaki bilgiler aşağıda paylaşılmıştır.*
+ - *[YouTube](https://youtu.be/79UltiA5DCs) (orjinal içerik)*
+ - *[Blog]({{ page.url | relative_url }}) (orjinal içerik temelli AI destekli)*
+ - *[Podcast]({{ page.url | relative_url }}) (orjinal içeriğe ait ses)*
+
 
 > “High-level modules should not depend on low-level modules. Both should depend on abstractions.”  
 > — Robert C. Martin
@@ -151,9 +156,6 @@ Yüksek seviyeli modüllerin, düşük seviyeli detaylardan bağımsız olmasın
 
 Böylece SOLID prensiplerinin beşini de tamamlamış olduk 🎯  
 Artık elinizde sürdürülebilir, genişletilebilir ve bakımı kolay sistemler kurmak için güçlü bir temel var.
-
-> **Unutma Devler:**  
-> *Borç yiğidin kamçısıdır!*
 
 ---
 

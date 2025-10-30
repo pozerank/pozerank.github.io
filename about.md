@@ -1,6 +1,6 @@
 ---
 layout: about
-title: Hakkında
+title: 
 permalink: /about/
 robots: all
 profile_image: /images/11.png
@@ -23,7 +23,7 @@ profile_social:
     icon_color_hover: '#ffffff'
     shadow: '0 10px 22px rgba(15, 118, 110, 0.22)'
     hover_shadow: '0 14px 28px rgba(15, 118, 110, 0.3)'
-    caption: İşbirliği ve konuşma davetleri için mail atın
+    caption: İletişim / İşbirliği / Danışma
   - label: YouTube
     url: https://youtube.com/@technicaldebt-tr
     icon: icon-social-youtube
@@ -87,7 +87,7 @@ profile_social:
     icon_color_hover: '#ffffff'
     shadow: '0 10px 20px rgba(228, 64, 95, 0.28)'
     hover_shadow: '0 14px 28px rgba(228, 64, 95, 0.36)'
-    caption: Duyurular, kesitler ve perde arkası anlar
+    caption: Duyurular & kesitler 
   - label: X (Twitter)
     url: https://twitter.com/mehmetcemyucel
     icon: icon-x
@@ -103,7 +103,7 @@ profile_social:
     icon_color_hover: '#ffffff'
     shadow: '0 10px 20px rgba(0, 0, 0, 0.28)'
     hover_shadow: '0 14px 28px rgba(0, 0, 0, 0.38)'
-    caption: Kısa paylaşımlar ve gündem notları
+    caption: Duyurular & kesitler
   - label: RSS
     url: /feed.xml
     icon: icon-rss

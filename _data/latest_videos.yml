@@ -1,0 +1,361 @@
+---
+- title: 'Loglama Sanatı: Doğru Loglar, Sağlam Sistemler (Best Practices ve Kaçınılması
+    Gerekenler)'
+  description: "Her yazılımcı log atar ama her log doğru değildir!\n\nBu videoda,
+    loglamayı sadece hataları görmekten ibaret sanan yaklaşımların ötesine geçiyoruz.
+    Uygulama loglarından güvenlik loglarına, dağıtık loglamadan performans önerilerine,
+    local ortamdan prod'a kadar loglamanın tüm yönlerini sistematik şekilde ele alıyoruz.\n\n\U0001F50D
+    Videoda Neler Var?\n\nLog türleri: Uygulama, erişim, güvenlik, denetim, sistem,
+    performans, entegrasyon\n\nLog seviyeleri: TRACE, DEBUG, INFO, WARN, ERROR, FATAL\n\nOrtama
+    göre eşik yönetimi: Local, test ve prod arasında geçiş\n\nLog nereye atılmalı:
+    Console, dosya, veritabanı, remote server\n\nSync vs Async loglama farkları ve
+    performansa etkileri\n\nRolling stratejileri ve yasal log saklama yükümlülükleri\n\nDağıtık
+    sistemlerde log sıralaması ve merkezi loglama altyapıları\n\nLog formatlama, şablonlar
+    ve hassas verilerin korunması\n\nHatalı pratikler: Yanlış seviye, eşik, layout
+    kullanımı\n\n\U0001F3AF Hedefimiz: Sadece log atmak değil, sisteminize değer katan
+    bir log altyapısı kurmak.\n\n\U0001F449 Videoyu beğendiyseniz beğen tuşuna basmayı
+    ve kanala abone olmayı unutmayın!\n\U0001F4CC Yorumlarda kendi loglama tecrübelerinizi
+    veya sorularınızı paylaşabilirsiniz.\nVideoda Ele Alınan Konular:\n\n\n00:00 Giriş\n01:23
+    Log Türleri\n05:40 Log Seviyeleri\n09:44 Ortam Eşikleri\n13:32 Ortamlarda Eşikleri
+    Değiştirmek\n15:27 Nereye Loglamalı\n19:03 Log Retention ve Arşivleme\n20:55 Dağıtık
+    Mimari ve Loglama\n21:31 Log Şablonu ve Layout\n23:51 Log Filtreleme ve Gizleme\n26:09
+    Merkezi Loglama & Kötü Pratikler\n34:28 Kapanış\n\n\nVideomuzu beğenmeyi ve kanalımıza
+    abone olmayı unutmayın! Sorularınız veya yorumlarınız varsa, aşağıda bizimle paylaşabilirsiniz.\n\n#youtube
+    #trending #mehmetcemyucel"
+  date: '2025-07-08T12:07:49Z'
+  video_id: E4kLraHJMuY
+- title: Standart Git Akışları Yetmiyor mu? Çözüm Burada!
+  description: |-
+    Git Versiyon Kontrolü video serisine hoş geldiniz! Bu seride, temel Git Kavramları ve etkili versiyon yönetim stratejilerinin arkasındaki mantığı keşfedeceğiz. İster yeni başlayan olun, ister becerilerinizi geliştirmek isteyin, bu video serisi, Git Flow ve GitHub Flow gibi branch stratejileri ile Trunk Based development hakkında bilmeniz gereken her şeyi kapsıyor.
+
+    Bu videonun konusu Custom Git Flow. Avantajları, dezavantajları, kullanım senaryosu hakkında her detaya gireceğiz. Diğer alternatifleri ile karşılaştırmalarını yapıp hangi ekip ve kod yapılanmalarında kullanmanın daha anlamlı olduğunu konuşacağız.
+
+    Daha fazla bilgi için beğenmeyi, abone olmayı ve bildirim zilini açmayı unutmayın! Git'i ustaca kullanmayı ve geliştirme iş akışınızı iyileştirmeyi öğrenmek için bizimle kalın!
+
+    00:00 Giriş
+    00:39 Problem
+    03:40 Senaryo
+    06:15 Conflict Çözümü
+    10:25 Son Dakika Değişikliği
+    11:59 Hotfix
+    14:24 Kapanış
+
+    #YouTube #mehmetcemyucel #git #github #gitflow #trunk #yazılım #software #developer #development #trunkbased #githubflow #github #custom #customgitflow
+  date: '2025-05-23T12:00:01Z'
+  video_id: aCz55DlwfGU
+- title: Github Flow İPUÇLARI ile Kodunuzun Kontrolünü Elinize Alın!
+  description: |-
+    Git Versiyon Kontrolü video serisine hoş geldiniz! Bu seride, temel Git Kavramları ve etkili versiyon yönetim stratejilerinin arkasındaki mantığı keşfedeceğiz. İster yeni başlayan olun, ister becerilerinizi geliştirmek isteyin, bu video serisi, Git Flow ve GitHub Flow gibi branch stratejileri ile Trunk Based development hakkında bilmeniz gereken her şeyi kapsıyor.
+
+    Bu videonun konusu Github Flow. Avantajları, dezavantajları, kullanım senaryosu hakkında her detaya gireceğiz. Diğer alternatifleri ile karşılaştırmalarını yapıp hangi ekip ve kod yapılanmalarında kullanmanın daha anlamlı olduğunu konuşacağız.
+
+    Daha fazla bilgi için beğenmeyi, abone olmayı ve bildirim zilini açmayı unutmayın! Git'i ustaca kullanmayı ve geliştirme iş akışınızı iyileştirmeyi öğrenmek için bizimle kalın!
+
+    00:00 Giriş
+    00:29 Trunk-Based Hatırlatma
+    01:15 Github Flow
+    03:42 Nerede Mantıklı?
+    05:40 Nerede Tehlikeli?
+    07:35 Hotfix Branchi
+    08:34 Kapanış
+
+    #YouTube #mehmetcemyucel #git #github #gitflow #trunk #yazılım #software #developer #development #trunkbased #githubflow #github
+  date: '2025-04-11T13:00:06Z'
+  video_id: JqQCE3apaJw
+- title: Git Flow ile Kod Yönetiminde Yapılan En Büyük Hatalar!
+  description: |-
+    Git Versiyon Kontrolü video serisine hoş geldiniz! Bu seride, temel Git Kavramları ve etkili versiyon yönetim stratejilerinin arkasındaki mantığı keşfedeceğiz. İster yeni başlayan olun, ister becerilerinizi geliştirmek isteyin, bu video serisi, Git Flow ve GitHub Flow gibi branch stratejileri ile Trunk Based development hakkında bilmeniz gereken her şeyi kapsıyor.
+
+    Bu videonun konusu Gitflow. Avantajları, dezavantajları, kullanım senaryosu hakkında her detaya gireceğiz. Diğer alternatifleri ile karşılaştırmalarını yapıp hangi ekip ve kod yapılanmalarında kullanmanın daha anlamlı olduğunu konuşacağız.
+
+    Daha fazla bilgi için beğenmeyi, abone olmayı ve bildirim zilini açmayı unutmayın! Git'i ustaca kullanmayı ve geliştirme iş akışınızı iyileştirmeyi öğrenmek için bizimle kalın!
+
+    00:00 Giriş
+    00:30 Develop Branchi
+    03:00 Release Branchi
+    03:42 Nerede Mantıklı?
+    05:40 Nerede Tehlikeli?
+    07:35 Hotfix Branchi
+    08:34 Kapanış
+
+    #YouTube #technicaldebt #technicaldebttr #technicaldebt-tr #mehmetcemyucel #git #github #gitflow #trunk #yazılım #software #developer #development #trunkbased
+  date: '2025-03-25T09:00:06Z'
+  video_id: vlKHFx6l6Vw
+- title: VPN Neden ÖNEMLİ? DigitalOcean ile Kendi Sunucunu Kur!
+  description: "VPN Nedir, nasıl çalışır? Digital Ocean ve Outline VPN kullanarak
+    cloud sunucularında kendi VPN sunucunuzu kuruyoruz! \n\nVPN (Virtual Private Network
+    - Sanal Özel Ağ), internet bağlantınızı şifreleyerek gizliliğinizi koruyan ve
+    güvenli bir şekilde internete erişmenizi sağlayan bir teknolojidir.\n\nNe İşe
+    Yarar?\nGizlilik ve Anonimlik: VPN, IP adresinizi gizleyerek internette anonim
+    olmanızı sağlar.\nGüvenli Bağlantı: İnternet trafiğinizi şifrelediği için, özellikle
+    halka açık Wi-Fi ağlarında güvenli bir şekilde veri alışverişi yapmanıza yardımcı
+    olur.\nBölgesel Kısıtlamaları Aşma: Farklı bir ülkenin sunucusuna bağlanarak,
+    o ülkedeki içeriklere erişebilirsiniz (örneğin, Netflix'in farklı bölgelerdeki
+    içeriklerini izlemek).\nSansürü Aşma: İnternet erişimi kısıtlanan ülkelerde veya
+    kurumlarda VPN kullanarak engellenmiş sitelere girebilirsiniz.\nUzaktan Çalışma:
+    Şirketler, çalışanların uzaktan güvenli bir şekilde şirket ağına bağlanabilmesi
+    için VPN kullanır.\n\nBunlar ve daha fazlasına değindiğimiz videomuza davetlisiniz!\n\n\nVideoda
+    bir sponsorluk anlaşması söz konusu değildir. Son kullanıcı için kurması ve kullanması
+    en kolay alternatiflerden tercihler yapılmıştır\n\n#vpn #digitalocean #Outlinevpn
+    #reklamdeğil"
+  date: '2025-03-23T05:48:11Z'
+  video_id: DBEm9QrxzwA
+- title: Trunk-Based Development ile Kod Kalitesini NASIL Artırırsınız?
+  description: |-
+    Git Versiyon Kontrolü video serisine hoş geldiniz! Bu seride, temel Git Kavramları ve etkili versiyon yönetim stratejilerinin arkasındaki mantığı keşfedeceğiz. İster yeni başlayan olun, ister becerilerinizi geliştirmek isteyin, bu video serisi, Git Flow ve GitHub Flow gibi branch stratejileri ile Trunk Based development hakkında bilmeniz gereken her şeyi kapsıyor.
+
+    Bu videonun konusu Trunk Based Development. Avantajları, dezavantajları, kullanım senaryosu hakkında her detaya gireceğiz. Diğer alternatifleri ile karşılaştırmalarını yapıp hangi ekip ve kod yapılanmalarında kullanmanın daha anlamlı olduğunu konuşacağız.
+
+    Daha fazla bilgi için beğenmeyi, abone olmayı ve bildirim zilini açmayı unutmayın! Git'i ustaca kullanmayı ve geliştirme iş akışınızı iyileştirmeyi öğrenmek için bizimle kalın!
+
+    00:00 Giriş
+    00:29 Trunk Ne Demek?
+    01:40 Nasıl Çalışır?
+    05:03 Nerelerde Kullanılır?
+    06:23 Kapanış
+
+    #YouTube #technicaldebt #technicaldebttr #technicaldebt-tr #mehmetcemyucel #git #github #gitflow #trunk #yazılım #software #developer #development #trunkbased
+  date: '2025-03-18T06:20:27Z'
+  video_id: 5GbLYEtY7ok
+- title: Yapay Zeka Çağında OOP Mi Olur? | Beytek Topluluğu Ortak Canlı Yayın
+  description: "Yapay zeka, yazılım geliştirme ve mülakat süreçlerini kökten değiştiriyor.
+    Peki, bu değişime nasıl ayak uydurmalıyız? Yapay zeka otobüsü tamamen emanet edebileceğimiz,
+    güvenebileceğimiz bir şoför mü yoksa nasıl konumlandırmalıyız? Bu teknolojilerden
+    en iyi nasıl faydalanabiliriz, nerelerde dikkat etmemiz gerekir, bunları tartışacağımız
+    Beylikdüzü Teknoloji Topluluğu ile ortak canlı yayınımıza davetlisiniz.\U0001F680\n\nYapay
+    Sinir Ağlarından(Neural Network) Large Language Modellere(LLM), Domain Driven
+    Design'dan(DDD) Object Oriented Programing'e(OOP) bir çok başlığa değindiğimiz
+    videoda yapay zeka ve yazılım geliştirmenin geleceğine dair kendinize bir çok
+    anahtar kavram yakalayacaksınız.\n\n-------------------------------------------\nwebsite:
+    beytek.org\nyoutube:   @beytektoplulugu \ninstagram: instagram.com/beytektoplulugu
+    \ntwitter: x.com/beytektoplulugu \nlinkedin: linkedin.com/company/beytektoplulugu
+    \nkommunity: kommunity.com/beylikduzu-teknoloji-toplulugu/events"
+  date: '2025-03-11T09:44:33Z'
+  video_id: ESQVSwe_nvs
+- title: ISP ile Bölün Parçalayın ve Yönetin! | SOLID, Interface Segregation Principle
+  description: "SOLID prensiplerinden Interface Segregation Principle(ISP)'ın yazılımda
+    nasıl kullanılabileceğini inceliyoruz. \n\n\U0001F50D Videoda Neler Öğreneceksiniz?\n00:00
+    Giriş\n00:17 ISP Özet\n00:43 Demo \n03:59 Kapanış\n\nLearn about the Interface
+    Segrefation Principle, the fourth principle of SOLID software design. Understand
+    how to apply ICP to write cleaner and more maintainable code.\n\n#yazılım #software
+    #technicaldebt #youtube #solid #interfacesegregationprinciple #ISP #developer
+    #development #mehmetcemyucel #basicdevelopmentprinciples"
+  date: '2025-02-18T14:49:04Z'
+  video_id: NOJIeu4aTSg
+- title: LSP ile Yazılımınızı Doğru Hiyerarşide Kurun! | SOLID
+  description: "SOLID prensiplerinden Liskov Substution Principle(LSP)'ın yazılımda
+    nasıl kullanılabileceğini inceliyoruz. \n\n\U0001F50D Videoda Neler Öğreneceksiniz?\n00:00
+    Giriş\n00:15 LSP Özet\n01:08 Demo \n07:56 Kapanış\n\nLearn about the Liskov Substution
+    Principle, the third principle of SOLID software design. Understand how to apply
+    LCP to write cleaner and more maintainable code.\n\n#yazılım #software #technicaldebt
+    #youtube #solid #liskovsubstutionprinciple #LSP #developer #development #mehmetcemyucel
+    #basicdevelopmentprinciples"
+  date: '2025-02-11T14:06:46Z'
+  video_id: YM2kcSZo4IM
+- title: OCP ve SOLID ile Kötü Kod yazmaktan KURTULUN
+  description: "SOLID prensiplerinden Open Closed Principle'ı inceliyoruz. \n\n\U0001F50D
+    Videoda Neler Öğreneceksiniz?\n00:00 Giriş\n00:15 SRP Özet\n01:19 Tanım\n04:05
+    Demo Giriş\n08:46 Demo Polimorphism\n13:25 Demo Reflection\n17:41 Kapanış\n\nLearn
+    about the Open Closed Principle, the second principle of SOLID software design.
+    Understand how to apply OCP to write cleaner and more maintainable code.\n\n#yazılım
+    #software #technicaldebt #youtube #solid #openclosedprinciple #OCP #developer
+    #development #mehmetcemyucel #basicdevelopmentprinciples"
+  date: '2025-02-02T20:45:43Z'
+  video_id: jZZhHxzoU10
+- title: 'Context Switching: Performansı Artırmanın Yolları ve Multitasking''in Sırları'
+  description: |-
+    Bu videoda, işletim sistemlerinde context switching kavramını derinlemesine inceliyoruz. Multitasking ve performans optimizasyonu ile ilgili en iyi pratikleri keşfedecek, CPU scheduling ve thread management süreçlerinin nasıl çalıştığını öğreneceksiniz. Ayrıca, latency ve resource allocation konularında bilgi sahibi olarak, sisteminizin verimliliğini artırmanın yollarını keşfedeceksiniz.
+
+    Bu video işletim sistemlerinin concurrency ve task switching süreçlerini daha iyi kavramanızı sağlayacak. Bu videoyu izleyerek, context switching, thread switching, program counter, process control block, task scheduler, timer, stack memory, cache memory gibi kavramlar hakkında da bilgi sahibi olacaksınız..
+
+    Eğer siz de işletim sistemleri hakkında daha fazla bilgi edinmek ve context switching ile ilgili derinlemesine bir anlayış geliştirmek istiyorsanız, videomuzu izlemeyi unutmayın!
+
+    #ContextSwitching #İşletimSistemleri #Multitasking #PerformansOptimizasyonu #CPUScheduling #ThreadManagement #Latency #ResourceAllocation #KernelMode #UserMode #Concurrency #TaskSwitching #VirtualMemory #LoadBalancing #Teknoloji #SoftwareDevelopment
+  date: '2025-01-20T14:01:09Z'
+  video_id: yLh9hAuBPr8
+- title: Olmak ya da Olmamak! | Bloom Filter Algoritması Nedir, Nasıl Çalışır?
+  description: "\U0001F31F Bloom Filter Algoritması Nedir? \U0001F31F\n\nBu videoda,
+    veri yapıları ve algoritmalar dünyasında önemli bir yere sahip olan Bloom Filter
+    konusunu keşfedeceğiz! Bloom Filter, büyük veri kümelerinde elemanların varlığını
+    hızlı ve bellek verimli bir şekilde kontrol etmemizi sağlayan yenilikçi bir veri
+    yapısıdır.\n\n\U0001F50D Videoda Neler Öğreneceksiniz?\n00:00 Giriş\n01:20 Problemin
+    Büyüklüğü\n02:46 DB Çözüm Mü\n06:05 Cache Çözüm Mü\n07:17 Çözüm - Hash Fonksiyonları\n12:08
+    Sonuç Uzayını Daraltma - Collision\n15:20 False Positive Azaltma\n18:23 Olasılık
+    Modeli, Optimizasyon\n22:04 Örnek Kod\n26:37 Kapanış\n\n\U0001F4A1 Neden Önemli?\nBloom
+    filtreleri, veritabanları, web tarayıcıları ve ağ güvenliği gibi birçok alanda
+    kullanılır. Bu video ile, bu güçlü veri yapısının nasıl çalıştığını ve nerelerde
+    kullanıldığını öğrenerek, bilgisayar bilimi ve veri bilimi konularında bilginizi
+    derinleştireceksiniz.\n\n\U0001F4CC Bizi Takip Edin!\nEğer bu tür içeriklerin
+    devamını istiyorsanız, kanalımıza abone olmayı ve bildirimleri açmayı unutmayın!
+    Yorumlarınızı ve sorularınızı aşağıda bizimle paylaşın.\n\nTeşekkürler ve iyi
+    seyirler! \U0001F3A5✨\n#bloomfilter #technicaldebt #technicaldebttr #youtube #developer
+    #webdevelopment #yazılım"
+  date: '2025-01-14T17:06:16Z'
+  video_id: aDjiTRqb_uY
+- title: UUID ve GUID Versiyonları Hakkında Bilmedikleriniz! Gerçekten Unique Mi,
+    Nasıl Çalışır, Güvenli Mi?
+  description: |-
+    Bu videoda, Universally Unique Identifier (UUID) kavramını derinlemesine inceliyoruz. ID nedir, Unique ID ve Universally Unique ID arasındaki farklar nelerdir? UUID'lerin ne kadar random değer ürettiğini, collision resistance, entropiyi ve determinizmi ele alıyoruz. Ayrıca, farklı UUID versiyonları, çalışma mekanizmaları ve GUID (Globally Unique Identifier) ile farklarını birlikte inceliyoruz.
+
+    Dağıtık sistemler ve veritabanları üzerindeki kullanım alanlarını keşfederken, UUID'lerin güvenlik açısından hangi versiyonlarının tercih edilmesi gerektiğini de tartışıyoruz. Eğer yazılım geliştirme, veri yönetimi veya güvenlik konularına ilgi duyuyorsanız, bu video tam size göre!
+
+    Videoda Ele Alınan Konular:
+
+
+    00:00 Giriş
+    00:46 ID, Unique ID
+    01:55 Universally Unique ID Nedir?
+    03:58 Collision Resistance
+    04:45 Determinizm ve Entropi
+    05:32 Entropi Havuzları
+    07:20 UUID Yapısı
+    09:25 UUID Ne Kadar Tekil
+    11:46 Globally Unique Identifier (GUID)
+    12:15 UUID Türleri
+    13:30 Versiyon 1
+    14:33 Versiyon 2
+    15:00 Versiyon 6
+    15:59 Versiyon 4
+    17:30 Güvenlik Açısından UUID
+    18:36 Versiyon 3 ve 5
+    21:28 Versiyon 7
+    22:05 Kapanış
+
+
+    Videomuzu beğenmeyi ve kanalımıza abone olmayı unutmayın! Sorularınız veya yorumlarınız varsa, aşağıda bizimle paylaşabilirsiniz.
+
+    #technicaldebt #technicaldebttr #youtube #trending #mehmetcemyucel
+  date: '2025-01-06T13:30:14Z'
+  video_id: CJ_8Cd8WxyI
+- title: "#technicaldebt: Yazılım Dünyasında Bilgi ve Deneyim Paylaşımının Önemi"
+  description: "\U0001F3A5 Technical Debt Kanalına Hoş Geldiniz!\n\nBu videoda, \"Technical
+    Debt\" kanalının vizyonunu ve misyonunu bulacaksınız. Kanalın adının niçin \"Technical
+    Debt\" olduğuna, kimlere hitap ettiğine, ne tür içerikler barındıracağına ve diğer
+    bir çok sorunun cevabına erişebileceksiniz. \n\n\U0001F50D Neler Bulacaksınız?\n\n00:00
+    Giriş\n00:26 Kanalı Niçin Açtım\n02:31 Niçin Technical Debt\n04:17 Kimlere Hitap
+    Ediyor\n04:37 Yeni Başlayanlar İçin\n05:50 Tecrübeliler İçin\n06:34 Hangi Dil
+    ve Teknolojiler\n07:48 Konuların Ele Alınış Yöntemi\n08:39 Hangi Konular Ele Alınacak\n09:18
+    Diğer Kanallardan Farklı Yanı\n\n\U0001F4AC Sizin İçin Buradayız!\nSiz de yazılım
+    geliştirme ile ilgili sorularınızı ve merak ettiklerinizi bizimle paylaşın. Her
+    hafta yeni içerikler ile karşınızda olacağız!\n\n\U0001F4CC Abone Olun ve Bizi
+    Takip Edin!\nEğer yazılım geliştirme, teknik borç ve kod kalitesi hakkında daha
+    fazla bilgi edinmek istiyorsanız, kanalımıza abone olmayı unutmayın!"
+  date: '2025-01-01T10:10:25Z'
+  video_id: FbUHty6yB0k
+- title: Dependency Inversion Principle | SOLID | DIP
+  description: "SOLID prensiplerinden Dependency Inversion Principle'ı inceliyoruz.
+    \n\n\nLearn about the Dependency Inversion Principle, the last principle of SOLID
+    software design. Understand how to apply DIP to write cleaner and more maintainable
+    code.\n\n#yazılım #software #technicaldebt #youtube #solid #singleresponsibilityprinciple
+    #dip #developer #development #mehmetcemyucel #basicdevelopmentprinciples"
+  date: '2024-12-31T11:14:37Z'
+  video_id: 79UltiA5DCs
+- title: GIT Versiyonlama Stratejilerinde Uzmanlaşmak | 2-GIT İçselleştirmek, Farklı
+    Senaryoları Yönetebilmek
+  description: "Git Versiyon Kontrolü dünyasına hoş geldiniz! Bu videoda, temel Git
+    Kavramları ve etkili versiyon yönetim stratejilerinin arkasındaki mantığı keşfedeceğiz.
+    İster yeni başlayan olun, ister becerilerinizi geliştirmek isteyin, bu video serisi,
+    Git Flow ve GitHub Flow gibi branch stratejileri ile Trunk Based development hakkında
+    bilmeniz gereken her şeyi kapsıyor.\n\nMerge Conflict'leri güvenle nasıl yöneteceğinizi
+    öğreneceğiz, farklı stratejilerle oturtacağınız iş akışlarınızın SDLC adımlarınıza
+    maksimum uyumu nasıl sağlayabileceğinizi birlikte keşvedeceğiz.\n\nSürümleme süreçlerine
+    dalarak, ekibinizin verimliliğini artırabilecek işbirlikçi geliştirme tekniklerini
+    keşfedeceğiz. Ayrıca, yaygın Git hatalarından kaçınma yollarını ve projelerinize
+    sürekli entegrasyon eklemenin önemini vurgulayacağız.\n\n00:00 Giriş\n00:58 İlk
+    Video Özet\n03:02 Kodların Geriye Alınması\n10:36 Remote Repo (Github)\n13:45
+    Local-Remote Seknronizasyonu\n18:15 git log graph\n18:51 git diff \n23:33 git
+    stash\n28:09 Kapanış\n\nDaha fazla bilgi için beğenmeyi, abone olmayı ve bildirim
+    zilini açmayı unutmayın! Git'i ustaca kullanmayı ve geliştirme iş akışınızı iyileştirmeyi
+    öğrenmek için bizimle kalın!\n\n#YouTube #technicaldebt #technicaldebttr #technicaldebt-tr
+    #mehmetcemyucel #git #github #gitflow #trunk #yazılım #software #developer #development"
+  date: '2024-12-19T16:23:42Z'
+  video_id: _LTslTQcuL0
+- title: GIT Versiyonlama Stratejilerinde Uzmanlaşmak | 1- Etkili Sürüm Kontrolünün
+    Temelleri ve Mantığı
+  description: "Git Versiyon Kontrolü dünyasına hoş geldiniz! Bu videoda, temel Git
+    Kavramları ve etkili versiyon yönetim stratejilerinin arkasındaki mantığı keşfedeceğiz.
+    İster yeni başlayan olun, ister becerilerinizi geliştirmek isteyin, bu video serisi,
+    Git Flow ve GitHub Flow gibi branch stratejileri ile Trunk Based development hakkında
+    bilmeniz gereken her şeyi kapsıyor.\n\nMerge Conflict'leri güvenle nasıl yöneteceğinizi
+    öğreneceğiz, farklı stratejilerle oturtacağınız iş akışlarınızın SDLC adımlarınıza
+    maksimum uyumu nasıl sağlayabileceğinizi birlikte keşvedeceğiz.\n\nSürümleme süreçlerine
+    dalarak, ekibinizin verimliliğini artırabilecek işbirlikçi geliştirme tekniklerini
+    keşfedeceğiz. Ayrıca, yaygın Git hatalarından kaçınma yollarını ve projelerinize
+    sürekli entegrasyon eklemenin önemini vurgulayacağız.\n\nDaha fazla bilgi için
+    beğenmeyi, abone olmayı ve bildirim zilini açmayı unutmayın! Git'i ustaca kullanmayı
+    ve geliştirme iş akışınızı iyileştirmeyi öğrenmek için bizimle kalın!\n\n00:00
+    Giriş\n02:12 Versiyonlama İhtiyacı\n04:08 Git Ne Yapıyor?\n09:00 Repo Yaratımı
+    \n12:35 Branch Kavramı\n17:35 Conflict Kavramı\n21:15 .git Klasörünün İçeriği\n25:15
+    Conflict'in Çözümü\n26:55 Kapanış\n\n#YouTube #technicaldebt #technicaldebttr
+    #technicaldebt-tr #mehmetcemyucel #git #github #gitflow #trunk #yazılım #software
+    #developer #development"
+  date: '2024-12-12T14:00:42Z'
+  video_id: f5_rV5p5mZo
+- title: 'Linux vs. Unix: Tarihsel Geçmişlerine ve Karşılaştırmalarına Derinlemesine
+    Bakış'
+  description: "Bu videoda, Linux ve Unix'in büyüleyici yolculuğunu keşfederek zengin
+    tarihlerini ve önemli karşılaştırmalarını ele alıyoruz. Unix'in kökenlerini ve
+    Linux'un gelişimine nasıl zemin hazırladığını öğreneceğiz; açık kaynaklı bu teknolojiler,
+    bilişim dünyasını kökten değiştirdi.\n\nEle alacağımız ana konular şunlar:\n\n00:00
+    Giriş \n00:37 Unix öncesinde yazılım dünyası\n01:02 Unix'in temelleri ve devrimi\n03:05
+    POSIX nedir?\n04:06 Linux'ün doğuşu\n04:35 GNU/Linux kavramı\n04:50 Unix ile Linux'un
+    farklılıkları ve kullanım alanları\n06:59 Kapanış\n\nİster temel bilgileri öğrenmek
+    isteyen bir başlangıç seviyesi kullanıcı olun, ister bilgilerini derinleştirmek
+    isteyen deneyimli bir teknoloji tutkunu, bu video Linux ve Unix'in tarihine, özelliklerine
+    ve günümüz teknoloji dünyasındaki önemine dair değerli bilgiler sunuyor.\n\nDaha
+    fazla Linux eğitimi, açık kaynak yazılım ve sistem yönetimi ipuçları için beğenmeyi,
+    abone olmayı ve bildirim zilini açmayı unutmayın!\n\n--------------------------------------------------\nGörsellerin
+    Edinildiği Kaynaklar:\nhttps://en.wikipedia.org/wiki/Tux_%28mascot%29\nhttps://medium.com/@sdbutalla/the-top-7-must-have-command-line-tools-to-kill-boredom-c188f419b559\nhttps://medium.com/@sruthk/cracking-assembly-introduction-to-assembly-language-a4ad14e601a1\nhttps://www.researchgate.net/figure/POSIX-OSE-Reference-Model_fig4_2486016\nhttps://science.nasa.gov/mission/mars-2020-perseverance/rover-components/\nhttps://www.geeksforgeeks.org/fork-execute-processes-bottom-using-wait/\nhttps://www.facebook.com/Newegg/posts/on-this-day-in-1991-the-first-linux-kernel-version-001-was-released-version-002-/10156766683699168/\nhttps://gnu.org\nhttps://www.thehansindia.com/technology/tech-news/nasas-pathfinder-space-probe-lands-on-surface-of-mars-807062\nhttps://tr.wikipedia.org/wiki/Dosya:Apollo_11_Lunar_Lander_-_5927_NASA.jpg\n\n#YouTube
+    #technicaldebt #mehmetcemyucel #linux #unix #linuxforbeginners #yazılım #software
+    #developer #development"
+  date: '2024-12-04T14:00:01Z'
+  video_id: a6oJHZNCfIE
+- title: Bunu Yapmayı Bırakın! | Dockerfile ile Yapılan Yaygın Hatalar ve Multistage
+    Çözümleri
+  description: "Docker multistage buildleri, container görüntülerinizi optimize etmenin
+    güçlü bir yoludur, ancak büyük image'lara ve verimsiz iş akışlarına yol açabilecek
+    yaygın tuzaklar vardır. Bu videoda, geliştiricilerin Multistage Dockerfile'ları
+    kullanırken yaptıkları en sık hataları ve bunlardan nasıl kaçınılacağını inceleyeceğiz.\n\n00:00
+    Giriş\n00:44 Yaşanan Problemler\n01:53 Multistage Docker File\n02:44 Örnek Kodlar\n03:38
+    Testler ve Sonuçları\n04:10 Kapanış\n\n\U0001F50D Öğrenecekleriniz:\n- Docker'da
+    çok aşamalı derlemelerin önemi\n- Daha büyük görüntü boyutlarına yol açan yaygın
+    hatalar\n- Verimli Dockerfile'lar yazmak için en iyi uygulamalar\n- Derleme sürelerini
+    ve performansı iyileştirmek için ipuçları\n- Yaygın sorunlara yönelik gerçek dünya
+    örnekleri ve çözümler\n\nİster yeni başlayan ister deneyimli bir geliştirici olun,
+    bu video Docker iş akışınızı kolaylaştırmanıza ve daha verimli uygulamalar oluşturmanıza
+    yardımcı olacaktır. Daha fazla ipucu videosu ve eğitimi için beğenmeyi, abone
+    olmayı ve bildirim zilini açmayı unutmayın!\n\n\n\n\U0001F4AC Yorumlara Katılın:\nÇok
+    aşamalı Dockerfile'larla ilgili herhangi bir zorlukla karşılaştınız mı? Deneyimlerinizi
+    aşağıdaki yorumlarda paylaşın!\n\n#YouTube #technicaldebt #technicaldebttr #technicaldebt-tr
+    #mehmetcemyucel #docker #multistage #multistagedockerfile #yazılım #software #developer
+    #development"
+  date: '2024-11-26T14:00:34Z'
+  video_id: Besx2W41atU
+- title: Single Responsibility Principle | SOLID | SRP
+  description: "SOLID prensiplerinden Single Responsibility Principle'ı inceliyoruz.
+    \n\n00:00 Giriş\n00:28 SOLID tanım\n01:09 Single Resposibility Principle\n01:36
+    Örnek SRP Uyumsuz Kod\n05:13 Örnek SRP Uygun Kod\n07:05 Kapanış\n\nLearn about
+    the Single Responsibility Principle, the first principle of SOLID software design.
+    Understand how to apply SRP to write cleaner and more maintainable code.\n\n#yazılım
+    #software #technicaldebt #youtube #solid #singleresponsibilityprinciple #srp #developer
+    #development #mehmetcemyucel #basicdevelopmentprinciples"
+  date: '2024-11-19T14:00:37Z'
+  video_id: ZUBrL_b12xM
+- title: RabbitMQ vs Kafka | Queue vs Topic
+  description: |-
+    Popüler message brokerlardan RabbitMQ ve Kafka'nın altında yatan mimari farklılıklar. Topic ile Queue kavramlarının farklılıkları, hangisi ne için kullanılırlar? Teknik olarak avantajları ve dezavantajları. Güncel yaşam örnekleri ile masaya yatırıyoruz.
+
+    00:00 Giriş
+    01:40 Queue
+    07:37 Topic
+    11:31 Özet ve Sorular
+    13:15 Kapanış
+
+    --------------------------------
+
+    We delve into the architectural differences underlying RabbitMQ and Kafka, two of the most popular message brokers. What distinguishes the concepts of Topic and Queue? What are their respective use cases? We’ll explore their technical advantages and disadvantages, all illustrated with real-world examples.
+
+
+    #YouTube #technicaldebt #mehmetcemyucel #kafka #rabbitmq #yazılım #software #developer #development
+  date: '2024-11-12T15:00:38Z'
+  video_id: Vc6WkrYVbqU
