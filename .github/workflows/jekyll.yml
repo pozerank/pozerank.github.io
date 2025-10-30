@@ -35,5 +35,5 @@ jobs:
       with:
         token: ${{ secrets.GITHUB_TOKEN }}
         target_branch: gh-pages # Burayı sitenizin yayınlandığı branch ile değiştirin
-        # KRİTİK ÇÖZÜM: Derleme için Ruby sürümü zorlandı
-        JEKYLL_BUILD_OPTIONS: '--ruby-version 3.3.0'
+        # 🚨 YENİ KRİTİK ÇÖZÜM: Derleme için Ruby sürümünü doğrudan eyleme bildiriyoruz.
+        ruby_version: '3.3.0'
