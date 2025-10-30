@@ -446,20 +446,20 @@ hr.solid {
 
   .category-chronology {
     max-width: 100%;
-    padding: 1.5rem clamp(0.85rem, 6vw, 1.3rem) 2.4rem;
+    padding: 1.1rem clamp(0.8rem, 5vw, 1.2rem) 2rem;
   }
 
   .category-chronology__header {
-    margin-bottom: 1.4rem;
+    margin-bottom: 1.2rem;
   }
 
   .category-chronology__title {
-    font-size: clamp(1.6rem, 7vw, 2.1rem);
+    font-size: clamp(1.5rem, 6vw, 2rem);
   }
 
   .category-chronology__year {
-    font-size: 1.15rem;
-    margin: 1.4rem 0 0.75rem;
+    font-size: 1.1rem;
+    margin: 1.2rem 0 0.65rem;
   }
 
   .category-chronology__item {
@@ -479,7 +479,7 @@ hr.solid {
   }
 
   .category-chronology__item-link {
-    font-size: 0.95rem;
+    font-size: 0.9rem;
   }
 
   .category-chronology__subscribe {
