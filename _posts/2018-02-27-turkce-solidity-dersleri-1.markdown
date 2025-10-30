@@ -1,7 +1,7 @@
 ---
 title: "Türkçe Solidity Dersleri - 1"
 date: 2018-02-27 12:04:23
-categories: [blockchain, smart-contracts]
+categories: [blockchain, smart-contracts, blog]
 tags: [solidity, blockchain, ethereum, smart-contracts, tutorials, mehmet-cem-yucel]
 image: https://cdn-images-1.medium.com/max/150/1*bkQ65Bgo5_4Fi0BnsDYO1A.jpeg
 ---

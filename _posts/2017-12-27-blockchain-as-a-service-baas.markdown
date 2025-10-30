@@ -1,7 +1,7 @@
 ---
 title: "Blockchain as a Service-BaaS"
 date: 2017-12-27 12:04:23
-categories: [blockchain, cloud]
+categories: [blockchain, cloud, blog]
 tags: [baas, blockchain-services, cloud, hyperledger, mehmet-cem-yucel]
 image: https://cdn-images-1.medium.com/max/150/1*CZ8sloO2sJRL8hbgI992fQ.png
 ---

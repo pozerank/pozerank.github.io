@@ -1,7 +1,7 @@
 ---
 title: "Unspent Transaction Output UTXO"
 date: 2017-12-25 22:04:23
-categories: [blockchain, fundamentals]
+categories: [blockchain, fundamentals, blog]
 tags: [utxo, transactions, blockchain, bitcoin, mehmet-cem-yucel]
 image: https://cdn-images-1.medium.com/max/150/1*xFpHRPhxSWbQZoLTxRk8og.png
 ---

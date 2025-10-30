@@ -1,7 +1,7 @@
 ---
 title: "Transaction marked as RollbackOnly"
 date: 2010-11-09 20:04:23
-categories: [java, spring, jpa]
+categories: [java, spring, jpa, blog]
 tags: [transaction, rollbackonly, spring, jpa, mehmet-cem-yucel]
 ---
 

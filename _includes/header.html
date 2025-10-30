@@ -20,8 +20,11 @@
 
           <nav class="cover-navigation cover-navigation--primary">
             <ul class="navigation">
-              <li class="navigation__item"><a href="{{ site.baseurl }}/categories/" title="link to {{ site.title }} categories" class="blog-button">Categories</a></li>
-              <li class="navigation__item"><a href="{{ site.baseurl }}/about/" title="link to {{ site.title }} about" class="blog-button">About</a></li>
+              <li class="navigation__item"><a href="{{ site.baseurl }}/" title="link to {{ site.title }} homepage" class="blog-button">Anasayfa</a></li>
+              <li class="navigation__item"><a href="{{ site.baseurl }}/blog/" title="link to {{ site.title }} blog" class="blog-button">Blog</a></li>
+              <li class="navigation__item"><a href="{{ site.baseurl }}/youtube/" title="link to {{ site.title }} youtube" class="blog-button">Youtube</a></li>
+              <li class="navigation__item"><a href="{{ site.baseurl }}/podcast/" title="link to {{ site.title }} podcast" class="blog-button">Podcast</a></li>
+              <li class="navigation__item"><a href="{{ site.baseurl }}/about/" title="link to {{ site.title }} about" class="blog-button">Hakkında</a></li>
             </ul>
           </nav>
 
@@ -36,16 +39,6 @@
                 </a>
               </li>
               {% endif %}
-            {% if site.author.twitter_username %}
-              <!-- Twitter -->
-              <li class="navigation__item">
-                <a href="http://twitter.com/{{ site.author.twitter_username }}" title="@{{ site.author.twitter_username }} on Twitter" target="_blank">
-                  <i class="icon icon-social-twitter"></i>
-                  <span class="label">Twitter</span>
-                </a>
-              </li>
-            {% endif %}
-
             {% if site.author.linkedin_username %}
               <!-- LinkedIn -->
               <li class="navigation__item">
@@ -65,12 +58,23 @@
                 </a>
               </li>
             {% endif %}
+            {% if site.author.twitter_username %}
+              <!-- Twitter -->
+              <li class="navigation__item">
+                <a href="http://twitter.com/{{ site.author.twitter_username }}" title="@{{ site.author.twitter_username }} on Twitter" target="_blank">
+                  <i class="icon icon-social-twitter"></i>
+                  <span class="label">Twitter</span>
+                </a>
+              </li>
+            {% endif %}
 
-            {% if site.author.stackoverflow_username %}
+            
+
+            {% if site.author.instagram_username %}
           <!-- Facebook -->
           <li class="navigation__item">
-            <a href="https://stackoverflow.com/story/{{ site.author.stackoverflow_username }}" title="{{ site.author.stackoverflow_username }} on Stackoverflow" target="_blank">
-              <i class="icon icon-social-stack-overflow"></i>
+            <a href="https://instagram.com/{{ site.author.instagram_username }}" title="{{ site.author.instagram_username }} on Instagram" target="_blank">
+              <i class="icon icon-social-instagram"></i>
             </a>
           </li>
         {% endif %}

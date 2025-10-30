@@ -1,0 +1,53 @@
+---
+layout: default
+---
+{% assign category_name = page.category | default: page.title | strip %}
+{% assign posts_in_category = site.categories[category_name] %}
+{% if posts_in_category == nil %}
+  {% assign posts_in_category = "" | split: "" %}
+{% endif %}
+{% assign sorted_posts = posts_in_category | sort: "date" | reverse %}
+
+<div class="category-chronology">
+  <header class="category-chronology__header">
+    <h1 class="category-chronology__title">{{ page.title | default: category_name }}</h1>
+    {% if page.description %}
+      <p class="category-chronology__description">{{ page.description }}</p>
+    {% endif %}
+  </header>
+
+  {% if sorted_posts == empty %}
+    <p class="category-chronology__empty">
+      {{ page.empty_message | default: "Bu kategoride henüz içerik bulunmuyor." }}
+    </p>
+  {% else %}
+    {% assign current_year = "" %}
+    <section class="category-chronology__timeline">
+      {% for post in sorted_posts %}
+        {% assign year = post.date | date: "%Y" %}
+        {% if year != current_year %}
+          {% unless forloop.first %}
+            </ul>
+          {% endunless %}
+          <h2 class="category-chronology__year">{{ year }}</h2>
+          <ul class="category-chronology__list">
+          {% assign current_year = year %}
+        {% endif %}
+        <li class="category-chronology__item">
+          <span class="category-chronology__item-date">{{ post.date | date: "%b %d" }}</span>
+          {% if post.image %}
+          <span class="category-chronology__thumb-wrap">
+            <img class="category-chronology__thumb" src="{{ post.image | relative_url }}" alt="{{ post.title }}">
+          </span>
+          {% else %}
+          <span class="category-chronology__item-dot" aria-hidden="true"></span>
+          {% endif %}
+          <a class="category-chronology__item-link" href="{{ post.url | relative_url }}">{{ post.title }}</a>
+        </li>
+        {% if forloop.last %}
+          </ul>
+        {% endif %}
+      {% endfor %}
+    </section>
+  {% endif %}
+</div>

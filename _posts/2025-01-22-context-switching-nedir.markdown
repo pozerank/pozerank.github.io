@@ -1,7 +1,7 @@
 ---
 title: "Context Switch Nedir?"
 date: 2025-01-22 12:00:00
-categories: [management, productivity, blog]
+categories: [management, productivity, blog, youtube]
 tags: [context-switching, odak-yonetimi, task-management, cpu-context-switch, youtube-video, mehmet-cem-yucel]
 image: https://miro.medium.com/v2/resize:fit:150/0*OY_UArzB24N2vguf.png
 ---

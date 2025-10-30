@@ -1,7 +1,7 @@
 ---
 title: "Otomatik Fare Kontrolü"
 date: 2010-02-18 20:04:23
-categories: [microsoft, c-sharp]
+categories: [microsoft, c-sharp, blog]
 tags: [c-sharp, mouse-automation, windows, interop-services, mehmet-cem-yucel]
 ---
 Bugün interop servisleri aracılığıyla windows işletim sistemi üzerinde fare hareketlerini kontrol etme örneği yapacağız.

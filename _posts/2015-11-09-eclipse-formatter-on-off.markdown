@@ -1,7 +1,7 @@
 ---
 title: "Eclipse Formatter On Off"
 date: 2015-11-09 20:04:23
-categories: [ide, tools]
+categories: [ide, tools, blog]
 tags: [eclipse, java, formatter, productivity, mehmet-cem-yucel]
 ---
 

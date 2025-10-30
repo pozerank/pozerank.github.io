@@ -1,7 +1,7 @@
 ---
 title: "Java Daemon Thread"
 date: 2015-08-03 20:04:23
-categories: [java, jvm, architecture]
+categories: [java, jvm, architecture, blog]
 tags: [java, jvm, daemon-thread, concurrency, mehmet-cem-yucel]
 ---
 

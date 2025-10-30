@@ -1,7 +1,7 @@
 ---
 title: "C# ile DNS Degistirme Uygulaması"
 date: 2010-11-10 20:04:23
-categories: [microsoft, c-sharp]
+categories: [microsoft, c-sharp, blog]
 tags: [c-sharp, dns, windows, registry, mehmet-cem-yucel]
 ---
 

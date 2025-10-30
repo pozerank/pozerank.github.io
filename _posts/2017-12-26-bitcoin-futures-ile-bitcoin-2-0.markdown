@@ -1,7 +1,7 @@
 ---
 title: "Bitcoin Futures ile Bitcoin 2.0"
 date: 2017-12-26 12:04:23
-categories: [blockchain, finance]
+categories: [blockchain, finance, blog]
 tags: [bitcoin-futures, derivatives, blockchain, finance, mehmet-cem-yucel]
 image: https://cdn-images-1.medium.com/max/150/1*nd56s97FhQYI_5l4uJYb1A.jpeg
 ---

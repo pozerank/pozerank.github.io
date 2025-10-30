@@ -1,7 +1,7 @@
 ---
 title: "Hash Fonksiyonları ve Blockchain"
 date: 2017-12-28 12:04:23
-categories: [blockchain, security]
+categories: [blockchain, security, blog]
 tags: [hash-functions, blockchain, cryptography, proof-of-work, mehmet-cem-yucel]
 image: https://cdn-images-1.medium.com/max/150/1*EPyEPIIU2NmpqufwBAPTBQ.jpeg
 ---

@@ -76,3 +76,319 @@ hr.solid {
   margin-left: auto;
   margin-right: auto;
 }
+
+.about-page__content {
+  max-width: 760px;
+  margin: 0 auto 3rem;
+  width: 100%;
+}
+
+.about-page__title {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin: 0 auto 2rem;
+  text-align: center;
+}
+
+.about-page__sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  max-width: 520px;
+  margin: 0 auto;
+  align-items: center;
+}
+
+.about-page__avatar {
+  width: 100%;
+  max-width: 520px;
+  height: auto;
+  border-radius: 18px;
+  border: 4px solid #fff;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  object-fit: cover;
+  margin: 0 auto;
+  align-self: stretch;
+}
+
+.about-page__name {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.75rem;
+  text-align: center;
+  margin: 0;
+}
+
+.about-page__subtitle {
+  font-size: 1rem;
+  text-align: center;
+  color: #666;
+  line-height: 1.5;
+  margin: 0;
+}
+
+.about-page__description {
+  font-size: 0.95rem;
+  text-align: center;
+  color: #444;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.about-page__links {
+  display: flex;
+  flex-direction: column;
+  gap: 1.05rem;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.about-page__links--social {
+  margin-top: 0.75rem;
+}
+
+.about-page__links-item {
+  list-style: none;
+}
+
+.about-page__link {
+  display: flex;
+  align-items: center;
+  gap: 0.9rem;
+  padding: 0.56rem 1.1rem;
+  border-radius: 12px;
+  border: 1px solid var(--link-border, rgba(226, 84, 64, 0.45));
+  background: var(--link-bg, rgba(226, 84, 64, 0.08));
+  background-image: var(
+    --link-gradient,
+    linear-gradient(270deg, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.05))
+  );
+  color: var(--link-text, #1c1c1c);
+  font-weight: 600;
+  text-decoration: none;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease, color 0.2s ease;
+  box-shadow: var(--link-shadow, 0 10px 25px rgba(0, 0, 0, 0.08));
+  width: 90%;
+}
+
+.about-page__link:hover {
+  background: var(--link-bg-hover, #e25440);
+  background-image: var(
+    --link-gradient-hover,
+    linear-gradient(270deg, rgba(255, 255, 255, 0.38), rgba(255, 255, 255, 0.08))
+  );
+  color: var(--link-text-hover, #fff);
+  transform: translateY(-4px);
+  box-shadow: var(--link-shadow-hover, 0 16px 30px rgba(226, 84, 64, 0.28));
+  border-color: var(--link-border-hover, rgba(226, 84, 64, 0.75));
+}
+
+.about-page__link-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  border-radius: 8px;
+  background: var(--link-icon-bg, rgba(255, 255, 255, 0.8));
+  color: var(--link-icon-color, #e25440);
+  font-size: 1.05rem;
+  flex-shrink: 0;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+.about-page__link:hover .about-page__link-icon {
+  background: var(--link-icon-bg-hover, rgba(255, 255, 255, 0.9));
+  color: var(--link-icon-color-hover, #e25440);
+}
+
+.about-page__link-text {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.about-page__link-label {
+  font-size: 1.05rem;
+}
+
+.about-page__link-caption {
+  font-size: 0.9rem;
+  font-weight: 400;
+  color: var(--link-caption-color, rgba(28, 28, 28, 0.68));
+}
+
+.about-page__link:hover .about-page__link-caption {
+  color: var(--link-caption-color-hover, rgba(255, 255, 255, 0.92));
+}
+
+.category-chronology {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 2.5rem clamp(1rem, 6vw, 2.5rem) 4rem;
+}
+
+.category-chronology__header {
+  text-align: left;
+  margin-bottom: 2.5rem;
+}
+
+.category-chronology__title {
+  font-family: 'Montserrat', sans-serif;
+  font-size: clamp(2rem, 4vw, 2.8rem);
+  margin: 0 0 0.75rem;
+}
+
+.category-chronology__description {
+  color: #555;
+  font-size: 1rem;
+  margin: 0 auto;
+  max-width: 540px;
+}
+
+.category-chronology__timeline {
+  display: block;
+}
+
+.category-chronology__year {
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin: 2rem 0 1rem;
+}
+
+.category-chronology__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+
+.category-chronology__item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.6rem 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+.category-chronology__item-date {
+  min-width: 4.25rem;
+  font-size: 0.95rem;
+  color: #8d8d8d;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+
+.category-chronology__thumb-wrap {
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.08);
+  flex-shrink: 0;
+  background: #f2f2f2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.category-chronology__thumb {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.category-chronology__item-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #e76f5c, #e25440);
+  box-shadow: 0 0 0 2px rgba(226, 84, 64, 0.18);
+  display: inline-block;
+  flex-shrink: 0;
+}
+
+.category-chronology__item-link {
+  color: #1a1a1a;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.2s ease;
+}
+
+.category-chronology__item-link:hover {
+  color: #e25440;
+}
+
+.category-chronology__empty {
+  text-align: center;
+  color: #888;
+  font-size: 1.05rem;
+}
+
+@media (max-width: 640px) {
+  .category-chronology {
+    padding-top: 1.8rem;
+  }
+
+  .category-chronology__item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.45rem;
+  }
+
+  .category-chronology__item-date {
+    min-width: 0;
+    font-size: 0.85rem;
+  }
+
+  .category-chronology__item-dot {
+    width: 8px;
+    height: 8px;
+  }
+
+  .category-chronology__thumb-wrap {
+    width: 42px;
+    height: 42px;
+  }
+}
+
+.about-page__social-nav {
+  margin-top: 1.5rem;
+}
+
+.about-page__social-nav .navigation {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.about-page__social-nav .navigation__item a {
+  border-radius: 999px;
+  border: 1px solid rgba(226, 84, 64, 0.35);
+  padding: 0.6rem 0.8rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+}
+
+.about-page__social-nav .navigation__item a:hover {
+  background: #e25440;
+  border-color: #e25440;
+  color: #fff;
+}
+
+@media (max-width: 600px) {
+  .about-page__title {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .about-page__link {
+    flex-direction: row;
+    align-items: center;
+  }
+}

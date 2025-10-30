@@ -1,7 +1,7 @@
 ---
 title: "Statik Kod Analiz Araçları"
 date: 2012-01-27 20:04:23
-categories: [tools, ide]
+categories: [tools, ide, blog]
 tags: [static-code-analysis, sonarqube, findbugs, code-quality, mehmet-cem-yucel]
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: "FSMV Üniversitesi Blockchain Sunumu"
 date: 2018-12-12 12:04:23
-categories: [blockchain, events]
+categories: [blockchain, event]
 tags: [blockchain, solidity, fsmv-universitesi, smart-contracts, consensus, etkinlik, mehmet-cem-yucel]
 image: https://cdn-images-1.medium.com/max/150/1*FOSTit_q9bjS-26yrO9CSg.jpeg
 ---

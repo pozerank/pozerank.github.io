@@ -1,7 +1,7 @@
 ---
 title: "DMA Direct Access Memory Nedir"
 date: 2017-12-25 20:04:23
-categories: [hardware, architecture]
+categories: [hardware, architecture, blog]
 tags: [dma, direct-memory-access, hardware, architecture, mehmet-cem-yucel]
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: "Chain Of Responsibility Design Pattern"
 date: 2014-02-20 20:04:23
-categories: [java, design-patterns]
+categories: [java, design-patterns, blog]
 tags: [java, design-patterns, chain-of-responsibility, mehmet-cem-yucel]
 ---
 

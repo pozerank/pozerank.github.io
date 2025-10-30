@@ -1,7 +1,7 @@
 ---
 title: "Smart Contract Akıllı Sözleşmeler Nedir?"
 date: 2018-01-08 12:04:23
-categories: [blockchain, smart-contracts]
+categories: [blockchain, smart-contracts, blog]
 tags: [smart-contracts, ethereum, oracles, blockchain, mehmet-cem-yucel]
 image: https://cdn-images-1.medium.com/max/150/1*mn7YQ-djF1q_lFiQTx4V0Q.jpeg
 ---

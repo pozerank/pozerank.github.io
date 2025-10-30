@@ -1,7 +1,7 @@
 ---
 title: "Türkçe Solidity Dersleri -2- Fee, Gas Kavramları"
 date: 2018-03-05 12:04:23
-categories: [blockchain, smart-contracts]
+categories: [blockchain, smart-contracts, blog]
 tags: [solidity, blockchain, cryptocurrency, smart-contracts, gas-fees, mehmet-cem-yucel]
 image: https://cdn-images-1.medium.com/max/150/1*K9pkxGaDtjcJidMJBFl_Cg.jpeg
 ---

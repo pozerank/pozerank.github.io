@@ -1,7 +1,7 @@
 ---
 title: "Private-Public-Permissioned-Permissionless Blockchain"
 date: 2017-12-29 12:04:23
-categories: [blockchain, fundamentals]
+categories: [blockchain, fundamentals, blog]
 tags: [public-blockchain, private-blockchain, permissioned, permissionless, blockchain, mehmet-cem-yucel]
 image: https://cdn-images-1.medium.com/max/150/1*f4zE0-PANixv_5Olpk5MNg.jpeg
 ---

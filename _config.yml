@@ -1,6 +1,6 @@
 # Site settings
 title: Mehmet Cem Yücel
-description: 'Software Architecture, Distributed Systems, AI & DevOps Insights'
+description: 'Yazılım mimarisi, dağıtık sistemler ve yapay zeka odağında içerik üreten teknoloji meraklısı'
 keywords: 'Mehmet Cem Yücel, Türkçe, Yazılım, Bilgisayar, örnek, kod, Blog, Blogger, Nedir, Nasıl yapılır, Spring, Java, Mikroservis, Blockchain, Cloud, framework, servis, uygulama'
 url: 'https://www.mehmetcemyucel.com'
 baseurl: ''
@@ -11,14 +11,15 @@ revisit-after: 14 days
 environment: production
 author:
   name: 'Mehmet Cem Yücel'
-  email: mehmetcemyucel@outlook.com
+  email: admin@mehmetcemyucel.com
   twitter_username: mehmetcemyucel
   facebook_username: m.cem.yucel
   github_username:  mehmetcemyucel
   linkedin_username:  mehmetcemyucel
   youtube_username: technicaldebt-tr
+  instagram_username: mehmet.cem.yucel
 adsense:
-  opened: true
+  opened: false
   feed_ici:
     opened: false
   yazi_ici:

@@ -1,7 +1,7 @@
 ---
 title: "Java Final Keyword ve Performans Etkileri"
 date: 2015-01-15 20:04:23
-categories: [java, jvm, architecture]
+categories: [java, jvm, architecture, blog]
 tags: [java, jvm, final, performance, mehmet-cem-yucel]
 ---
 

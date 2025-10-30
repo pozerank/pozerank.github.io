@@ -1,7 +1,7 @@
 ---
 title: "Ustasız Çırak"
 date: 2023-08-18 12:00:00
-categories: [career, mentorship, blog]
+categories: [career, mentorship, blog, youtube, podcast]
 tags: [kariyer-planlama, junior-gelistirici, mentor, yazilim-sektoru, youtube-video, mehmet-cem-yucel]
 image: https://miro.medium.com/v2/resize:fit:150/0*TA6_vaDeOWZ4XUc3.jpeg
 ---

@@ -1,63 +1,61 @@
 ---
 layout: default
 ---
-<h1>About Me:</h1>
+<div class="about-page">
+  {% if page.title %}
+  <h1 class="about-page__title">{{ page.title }}</h1>
+  {% endif %}
 
-  <section class="post">
+  {% assign about_body = content | strip_newlines | strip %}
+  {% if about_body != '' %}
+  <section class="about-page__content post">
     {{ content }}
-</section>   
+  </section>
+  {% endif %}
 
+  <section class="about-page__sidebar">
+    {% if page.profile_image %}
+    <img class="about-page__avatar" src="{{ page.profile_image | relative_url }}" alt="{{ page.profile_name | default: site.author.name }}">
+    {% endif %}
 
+    {% if page.profile_name %}
+    <h2 class="about-page__name">{{ page.profile_name}}</h2>
+    {% endif %}
 
-<div class="navigation-wrapper">
-    <nav class="cover-navigation navigation--social--about">
-        <ul class="navigation">
+    {% if page.profile_subtitle %}
+    <p class="about-page__subtitle">{{ page.profile_subtitle }}</p>
+    {% endif %}
 
-        {% if site.author.youtube_username %}
-        <!-- Youtube -->
-        <li class="navigation__item">
-            <a href="https://youtube.com/@{{ site.author.youtube_username }}" title="{{ site.author.youtube_username }} on Youtube" target="_blank">
-                <i class="icon icon-social-youtube"></i>
-            </a>
-        </li>
-        {% endif %}
-        {% if site.author.twitter_username %}
-          <!-- Twitter -->
-          <li class="navigation__item">
-            <a href="http://twitter.com/{{ site.author.twitter_username }}" title="@{{ site.author.twitter_username }} on Twitter" target="_blank">
-              <i class="icon icon-social-twitter"></i>
-            </a>
-          </li>
-        {% endif %}
+    {% if page.profile_description %}
+    <p class="about-page__description">{{ page.profile_description }}</p>
+    {% endif %}
 
-        {% if site.author.linkedin_username %}
-          <!-- LinkedIn -->
-          <li class="navigation__item">
-            <a href="https://www.linkedin.com/in/{{ site.author.linkedin_username }}" title="{{ site.author.linkedin_username }} on LinkedIn" target="_blank">
-              <i class="icon icon-social-linkedin"></i>
-            </a>
-          </li>
-        {% endif %}
+    {% if page.profile_social %}
+    <ul class="about-page__links about-page__links--social">
+      {% for item in page.profile_social %}
+      <li class="about-page__links-item">
+        <a class="about-page__link about-page__link--social"
+           href="{{ item.url }}"
+           target="_blank"
+           rel="noopener"
+           title="{{ item.label }}"
+           style="{% if item.background %}--link-bg: {{ item.background }};--link-border: {{ item.background }};{% endif %}{% if item.hover_background %}--link-bg-hover: {{ item.hover_background }};--link-border-hover: {{ item.hover_background }};{% endif %}{% if item.text_color %}--link-text: {{ item.text_color }};--link-caption-color: {{ item.text_color }};{% endif %}{% if item.hover_text_color %}--link-text-hover: {{ item.hover_text_color }};--link-caption-color-hover: {{ item.hover_text_color }};{% endif %}{% if item.icon_background %}--link-icon-bg: {{ item.icon_background }};{% endif %}{% if item.icon_background_hover %}--link-icon-bg-hover: {{ item.icon_background_hover }};{% endif %}{% if item.icon_color %}--link-icon-color: {{ item.icon_color }};{% endif %}{% if item.icon_color_hover %}--link-icon-color-hover: {{ item.icon_color_hover }};{% endif %}{% if item.shadow %}--link-shadow: {{ item.shadow }};{% endif %}{% if item.hover_shadow %}--link-shadow-hover: {{ item.hover_shadow }};{% endif %}">
+          {% if item.icon %}
+          <span class="about-page__link-icon">
+            <i class="icon {{ item.icon }}"></i>
+          </span>
+          {% endif %}
+          <span class="about-page__link-text">
+            <span class="about-page__link-label">{{ item.label }}</span>
+            {% if item.caption %}
+            <span class="about-page__link-caption">{{ item.caption }}</span>
+            {% endif %}
+          </span>
+        </a>
+      </li>
+      {% endfor %}
+    </ul>
+    {% endif %}
 
-        {% if site.author.github_username %}
-          <!-- GitHub -->
-          <li class="navigation__item">
-            <a href="https://www.github.com/{{ site.author.github_username }}" title="{{ site.author.github_username }} on GitHub" target="_blank">
-              <i class="icon icon-social-github"></i>
-            </a>
-          </li>
-        {% endif %}
-
-
-
-        {% if site.author.email %}
-          <!-- Email -->
-          <li class="navigation__item">
-            <a href="mailto:{{ site.author.email }}" title="Email {{ site.author.email }}" target="_blank">
-              <i class="icon icon-mail"></i>
-            </a>
-          </li>
-        {% endif %}
-        </ul>
-      </nav>
+  </section>
 </div>

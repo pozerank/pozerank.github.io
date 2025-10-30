@@ -1,7 +1,7 @@
 ---
 title: "Merkle Root Merkle Kök Ağacı"
 date: 2017-12-28 12:04:23
-categories: [blockchain, fundamentals]
+categories: [blockchain, fundamentals, blog]
 tags: [merkle-tree, merkle-root, blockchain, data-integrity, mehmet-cem-yucel]
 image: https://cdn-images-1.medium.com/max/150/0*JKeTzfaJAjzXq_Lq.PNG
 ---

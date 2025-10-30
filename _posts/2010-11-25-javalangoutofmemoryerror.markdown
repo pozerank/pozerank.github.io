@@ -1,7 +1,7 @@
 ---
 title: "java.lang.OutOfMemoryError"
 date: 2010-11-25 20:04:23
-categories: [java, jvm]
+categories: [java, jvm, blog]
 tags: [java, outofmemoryerror, jvm, troubleshooting, mehmet-cem-yucel]
 ---
 

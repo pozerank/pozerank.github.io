@@ -1,7 +1,7 @@
 ---
 title: "JVM Memory Usage OutOfMemoryError"
 date: 2015-08-05 20:04:23
-categories: [java, jvm, architecture]
+categories: [java, jvm, architecture, blog]
 tags: [java, jvm, memory, outofmemoryerror, mehmet-cem-yucel]
 ---
 

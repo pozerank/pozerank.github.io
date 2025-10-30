@@ -1,7 +1,7 @@
 ---
 title: "Proof of Stake Teknik İnceleme"
 date: 2018-01-16 12:04:23
-categories: [blockchain, consensus-algorithms]
+categories: [blockchain, consensus-algorithms, blog]
 tags: [proof-of-stake, consensus, blockchain, cryptocurrency, staking, mehmet-cem-yucel]
 image: https://cdn-images-1.medium.com/max/150/1*_b-FnHy6qE0o7mvD3szw_w.jpeg
 ---

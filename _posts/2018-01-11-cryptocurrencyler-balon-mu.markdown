@@ -1,7 +1,7 @@
 ---
 title: "Cryptocurrencyler ve Değer Anlayışı Balon Mu?"
 date: 2018-01-11 12:04:23
-categories: [blockchain, finance]
+categories: [blockchain, finance, blog]
 tags: [cryptocurrency, value-perception, blockchain, finance, mehmet-cem-yucel]
 image: https://cdn-images-1.medium.com/max/150/1*Jp8ajkGPZN3zBo5jL8dXtg.jpeg
 ---

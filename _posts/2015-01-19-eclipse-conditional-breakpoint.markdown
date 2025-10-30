@@ -1,7 +1,7 @@
 ---
 title: "Eclipse Conditional Breakpoint"
 date: 2015-01-19 20:04:23
-categories: [ide, tools]
+categories: [ide, tools, blog]
 tags: [eclipse, debugging, conditional-breakpoint, java, mehmet-cem-yucel]
 ---
 
