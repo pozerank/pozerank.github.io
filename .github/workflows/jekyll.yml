@@ -29,13 +29,13 @@ jobs:
     - name: Checkout Code
       uses: actions/checkout@v4
 
-    # 1. Ruby kurulumu (YouTube betiği için zorunlu 3.3.0)
-    # Bu adım sadece betiği çalıştırmak için gerekli.
-    - name: Set up Ruby (For Data Fetching)
+    # 1. Ruby kurulumu (Veri çekme ve derleme için zorunlu modern ortam)
+    - name: Set up Ruby and Install Dependencies
       uses: ruby/setup-ruby@v1
       with:
         # 3.3.0 güncel ve modern bir sürüm
         ruby-version: '3.3.0' 
+        # Proje Gemfile ve Gemfile.lock'taki tüm gem'leri kurar
         bundler-cache: true 
 
     # 2. YouTube Verilerini Çekme
@@ -44,17 +44,15 @@ jobs:
       env:
         YOUTUBE_API_KEY: ${{ secrets.YOUTUBE_API_KEY }}
 
-    # 3. GitHub Pages Ortamını Ayarla
-    # Bu adım, GitHub'ın kendi derleme ortamını kurar ve modern Bundler/Ruby kullanır.
+    # 3. Sitenizi Derleyin (Hata Veren actions/jekyll-build-pages Eylemi Yerine)
+    - name: Build with Modern Jekyll Environment
+      run: |
+        # Bu, Adım 1'de kurulan modern Ruby 3.3.0 ortamını kullanır
+        bundle exec jekyll build --destination ./_site
+
+    # 4. GitHub Pages Ortamını Ayarla
     - name: Setup Pages
       uses: actions/configure-pages@v5
-
-    # 4. Sitenizi Derleyin
-    - name: Build with Jekyll
-      uses: actions/jekyll-build-pages@v1
-      with:
-        source: ./
-        destination: ./_site
 
     # 5. Dağıtım Artifact'ı Oluştur
     - name: Upload artifact
