@@ -463,7 +463,9 @@ article.post-container {
   background: var(--color-surface-muted);
   border: 1px solid rgba(16, 24, 38, 0.05);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
-  width: 92%;
+  width: 100%;
+  box-sizing: border-box;
+  margin: 0 auto;
 }
 
 .post-card:hover,
@@ -573,6 +575,10 @@ article.post-container {
 
   .featured-highlights__grid {
     grid-template-columns: 1fr;
+  }
+
+  .post-card {
+    padding: 1.2rem 1.3rem;
   }
 }
 
