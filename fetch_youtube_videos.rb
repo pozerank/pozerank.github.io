@@ -7,10 +7,24 @@ API_KEY = ENV['YOUTUBE_API_KEY']
 CHANNEL_ID = 'UC5glzJc5aNLMilAuoMn6aFQ'
 PLAYLIST_ID = "UU#{CHANNEL_ID[2..-1]}"
 
+def ensure_api_key!(key)
+  return unless key.nil? || key.strip.empty?
+
+  warn 'HATA: YOUTUBE_API_KEY secretı veya ortam değişkeni tanımlı değil.'
+  warn 'GitHub Actions > Settings > Secrets bölümünden API anahtarını ekleyin.'
+  exit 1
+end
+
+def ensure_data_dir!
+  Dir.mkdir('_data') unless Dir.exist?('_data')
+end
+
 # API çağrısının "part" kısmına 'contentDetails' ekledik, ancak 
 # publishedAt verisi zaten 'snippet' içinde olduğu için sadece 'snippet' yeterli.
 # Ancak bazen sadece playlistItems sadece snippet ile tam tarihi vermeyebilir. 
 # Kontrol amaçlı publishedAt'ı çekiyoruz.
+
+ensure_api_key!(API_KEY)
 
 begin
   # API çağrısı, maxResults'u 100'e kadar çıkarabiliriz eğer çok video istiyorsak
@@ -31,13 +45,16 @@ begin
       }
   end
 
-  Dir.mkdir('_data') unless File.exist?('_data')
-  File.open('_data/latest_videos.yml', 'w') { |file| file.write(videos.to_yaml) }
+  ensure_data_dir!
+  File.write('_data/latest_videos.yml', videos.to_yaml)
 
   puts "YouTube'dan #{videos.count} video başarıyla çekildi ve _data/latest_videos.yml'ye yazıldı."
 
 rescue => e
-  puts "HATA: YouTube verisi çekilemedi. #{e.message}"
-  Dir.mkdir('_data') unless File.exist?('_data')
-  File.open('_data/latest_videos.yml', 'w') { |file| file.write("[]") }
+  warn "HATA: YouTube verisi çekilemedi. #{e.message}"
+  ensure_data_dir!
+  unless File.exist?('_data/latest_videos.yml')
+    File.write('_data/latest_videos.yml', [].to_yaml)
+  end
+  exit 1
 end
