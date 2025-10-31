@@ -39,10 +39,22 @@ jobs:
         uses: actions/configure-pages@v5
 
       - name: Fetch YouTube data
+        id: fetch_youtube
         if: ${{ env.YOUTUBE_API_KEY != '' }}
         run: bundle exec ruby fetch_youtube_videos.rb
 
+      - name: Show fetched videos summary
+        if: ${{ steps.fetch_youtube.outcome == 'success' }}
+        run: |
+          if [ -f _data/latest_videos.yml ]; then
+            echo "_data/latest_videos.yml içeriği:"
+            head -n 40 _data/latest_videos.yml
+          else
+            echo "_data/latest_videos.yml bulunamadı."
+          fi
+
       - name: Build site
+        if: ${{ steps.fetch_youtube.outcome == 'success' || env.YOUTUBE_API_KEY == '' }}
         env:
           JEKYLL_ENV: production
         run: bundle exec jekyll build --destination ./_site
