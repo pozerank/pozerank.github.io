@@ -8,7 +8,7 @@ layout: default
 {% endif %}
 
 {% if category_name == "youtube" %}
-  {% assign combined_items = site.data.latest_videos %}
+  {% assign combined_items = site.data.latest_videos | default: site.data.latest_videos_yml %}
   {% if combined_items == nil %}
     {% assign combined_items = "" | split: "" %}
   {% endif %}
