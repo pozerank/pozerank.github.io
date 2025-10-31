@@ -6,6 +6,7 @@ require 'yaml'
 API_KEY = ENV['YOUTUBE_API_KEY']
 CHANNEL_ID = 'UC5glzJc5aNLMilAuoMn6aFQ'
 PLAYLIST_ID = "UU#{CHANNEL_ID[2..-1]}"
+REFERER = (ENV['YOUTUBE_REFERER'] || 'https://www.mehmetcemyucel.com/').strip
 
 def ensure_api_key!(key)
   return unless key.nil? || key.strip.empty?
@@ -29,8 +30,19 @@ ensure_api_key!(API_KEY)
 begin
   # API çağrısı, maxResults'u 100'e kadar çıkarabiliriz eğer çok video istiyorsak
   uri = URI("https://www.googleapis.com/youtube/v3/playlistItems?part=snippet&playlistId=#{PLAYLIST_ID}&maxResults=1000&key=#{API_KEY}") # Max sonuç sayısını artırdım
-  response = Net::HTTP.get(uri)
-  data = JSON.parse(response)
+  http = Net::HTTP.new(uri.host, uri.port)
+  http.use_ssl = true
+
+  request = Net::HTTP::Get.new(uri)
+  request['Referer'] = REFERER unless REFERER.empty?
+
+  response = http.request(request)
+
+  unless response.is_a?(Net::HTTPSuccess)
+    raise "YouTube API Hatası: HTTP #{response.code} #{response.message}"
+  end
+
+  data = JSON.parse(response.body)
 
   if data.key?('error')
     raise "YouTube API Hatası: #{data['error']['message']}"
