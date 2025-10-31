@@ -22,6 +22,8 @@ jobs:
     environment:
       name: github-pages
       url: ${{ steps.deploy.outputs.page_url }}
+    env:
+      YOUTUBE_API_KEY: ${{ secrets.YOUTUBE_API_KEY }}
 
     steps:
       - name: Checkout repository
@@ -37,9 +39,7 @@ jobs:
         uses: actions/configure-pages@v5
 
       - name: Fetch YouTube data
-        if: ${{ secrets.YOUTUBE_API_KEY != '' }}
-        env:
-          YOUTUBE_API_KEY: ${{ secrets.YOUTUBE_API_KEY }}
+        if: ${{ env.YOUTUBE_API_KEY != '' }}
         run: bundle exec ruby fetch_youtube_videos.rb
 
       - name: Build site
