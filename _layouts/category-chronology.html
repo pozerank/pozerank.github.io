@@ -12,6 +12,11 @@ layout: default
   {% if combined_items == nil %}
     {% assign combined_items = "" | split: "" %}
   {% endif %}
+{% elsif category_name == "podcast" %}
+  {% assign combined_items = site.data.latest_podcasts | default: site.data.latest_podcasts_yml %}
+  {% if combined_items == nil %}
+    {% assign combined_items = "" | split: "" %}
+  {% endif %}
 {% else %}
   {% assign combined_items = posts_in_category %}
 {% endif %}
@@ -78,6 +83,27 @@ layout: default
             </h3>
           </div>
         </article>
+        {% endfor %}
+      </section>
+    {% endif %}
+  {% elsif category_name == "podcast" %}
+    {% if sorted_items == empty %}
+      <p class="category-chronology__empty">
+        {{ page.empty_message | default: "Bu kategoride henüz bölüm bulunmuyor." }}
+      </p>
+    {% else %}
+      <section class="podcast-embeds">
+        {% for episode in sorted_items %}
+        <div class="podcast-embeds__frame">
+          <iframe
+            src="{{ episode.embed_url }}"
+            width="50%"
+            height="1"
+            frameborder="0"
+            allowfullscreen=""
+            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+            loading="lazy"></iframe>
+        </div>
         {% endfor %}
       </section>
     {% endif %}

@@ -420,6 +420,20 @@ hr.solid {
   margin: 0;
 }
 
+.podcast-embeds {
+  display: flex;
+  flex-direction: column;
+  gap: 1.0rem;
+  margin-bottom: 1rem;
+}
+
+.podcast-embeds__frame iframe {
+  width: 100%;
+  min-height: 165px;
+  border: none;
+  border-radius: 12px;
+}
+
 @media (max-width: 640px) {
   .youtube-grid {
     grid-template-columns: 1fr;

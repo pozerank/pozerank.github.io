@@ -4,3 +4,7 @@ _site
 *.sublime-project
 *.sublime-workspace
 .DS_Store
+
+# Generated data files (created during CI)
+_data/latest_videos.yml
+_data/latest_podcasts.yml

@@ -24,6 +24,8 @@ jobs:
       url: ${{ steps.deploy.outputs.page_url }}
     env:
       YOUTUBE_API_KEY: ${{ secrets.YOUTUBE_API_KEY }}
+      SPOTIFY_CLIENT_ID: ${{ secrets.SPOTIFY_CLIENT_ID }}
+      SPOTIFY_CLIENT_SECRET: ${{ secrets.SPOTIFY_CLIENT_SECRET }}
 
     steps:
       - name: Checkout repository
@@ -53,8 +55,23 @@ jobs:
             echo "_data/latest_videos.yml bulunamadı."
           fi
 
+      - name: Fetch Spotify podcasts
+        id: fetch_spotify
+        if: ${{ env.SPOTIFY_CLIENT_ID != '' && env.SPOTIFY_CLIENT_SECRET != '' }}
+        run: bundle exec ruby fetch_spotify_podcasts.rb
+
+      - name: Show fetched podcasts summary
+        if: ${{ steps.fetch_spotify.outcome == 'success' }}
+        run: |
+          if [ -f _data/latest_podcasts.yml ]; then
+            echo "_data/latest_podcasts.yml içeriği:"
+            head -n 40 _data/latest_podcasts.yml
+          else
+            echo "_data/latest_podcasts.yml bulunamadı."
+          fi
+
       - name: Build site
-        if: ${{ steps.fetch_youtube.outcome == 'success' || env.YOUTUBE_API_KEY == '' }}
+        if: ${{ (steps.fetch_youtube.outcome == 'success' || env.YOUTUBE_API_KEY == '') && (steps.fetch_spotify.outcome == 'success' || env.SPOTIFY_CLIENT_ID == '' || env.SPOTIFY_CLIENT_SECRET == '') }}
         env:
           JEKYLL_ENV: production
         run: bundle exec jekyll build --destination ./_site
