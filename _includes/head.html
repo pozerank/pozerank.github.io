@@ -61,6 +61,9 @@
   <meta name="msapplication-TileColor" content="#ffc40d">
   <meta name="msapplication-TileImage" content="{{ site.baseurl }}/images/favicons/mstile-144x144.png">
   <meta name="theme-color" content="#ffffff">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   
   <link rel="stylesheet" href="{{ site.baseurl }}/css/main.css?{{site.time | date: '%s%N'}}">
   <link rel="canonical" href="{% if page.canonical %}{{ page.canonical }}{% else %}{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}{% endif %}">

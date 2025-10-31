@@ -7,6 +7,8 @@ layout: default
   {% assign posts_in_category = "" | split: "" %}
 {% endif %}
 
+{% assign chronology_classes = "category-chronology" %}
+
 {% if category_name == "youtube" %}
   {% assign combined_items = site.data.latest_videos | default: site.data.latest_videos_yml %}
   {% if combined_items == nil %}
@@ -24,34 +26,31 @@ layout: default
 {% comment %} Tüm öğeleri (gönderi + video) tarihe göre sırala {% endcomment %}
 {% assign sorted_items = combined_items | sort: "date" | reverse %}
 
-  {% assign computed_title = page.title %}
-  {% assign computed_title = computed_title | strip %}
-
+<div class="{{ chronology_classes }}">
+  {% assign computed_title = page.title | strip %}
   {% if computed_title %}
-  <header class="category-chronology__header">
-    <h1 class="category-chronology__title">{{ computed_title }}</h1>
-    {% if page.description %}
-      <p class="category-chronology__description">{{ page.description }}</p>
-    {% endif %}
-  </header>
+    <header class="category-chronology__header">
+      <h1 class="category-chronology__title">{{ computed_title }}</h1>
+      {% if page.description %}
+        <p class="category-chronology__description">{{ page.description }}</p>
+      {% endif %}
+    </header>
   {% endif %}
-  <div class="category-chronology">
   
   {% if category_name == "youtube" %}
     <div class="category-chronology__subscribe">
-      <script async defer src="https://apis.google.com/js/platform.js"></script>
       <div class="category-chronology__subscribe-box">
         <div class="category-chronology__subscribe-header">
           <img src="https://www.gstatic.com/youtube/img/branding/youtubelogo/svg/youtubelogo.svg" alt="YouTube" class="category-chronology__subscribe-logo">
           <div class="category-chronology__subscribe-text">
-            <span class="category-chronology__subscribe-title">Mehmet Cem Yücel</span>
-            <span class="category-chronology__subscribe-sub">Teknoloji & Yazılım Videoları</span>
+            <span class="category-chronology__subscribe-title"> Mehmet Cem Yücel </span>
+            <span class="category-chronology__subscribe-sub"> Teknoloji & Yazılım Videoları </span>
           </div>
         </div>
        <a href="https://www.youtube.com/channel/UC5glzJc5aNLMilAuoMn6aFQ?sub_confirmation=1" 
          target="_blank" 
          class="custom-subscribe-button">
-        ŞİMDİ ARAMIZA KATIL!
+        ►   ABONE OL
       </a>
       </div>
     </div>
@@ -72,6 +71,8 @@ layout: default
             <iframe src="https://www.youtube.com/embed/{{ video.video_id }}?rel=0"
                     title="{{ video.title }}"
                     loading="lazy"
+                    decoding="async"
+                    referrerpolicy="strict-origin-when-cross-origin"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                     allowfullscreen></iframe>
           </div>
@@ -94,16 +95,83 @@ layout: default
     {% else %}
       <section class="podcast-embeds">
         {% for episode in sorted_items %}
-        <div class="podcast-embeds__frame">
+        <article class="podcast-embeds__item">
+          <header class="podcast-embeds__meta">
+            <h3 class="podcast-embeds__title">{{ episode.episode_name | default: episode.title }}</h3>
+            {% if episode.release_date %}
+            <time class="podcast-embeds__date" datetime="{{ episode.release_date }}">{{ episode.release_date | date: "%-d %b %Y" }}</time>
+            {% endif %}
+          </header>
+          <div class="podcast-embeds__frame">
           <iframe
             src="{{ episode.embed_url }}"
-            width="50%"
-            height="1"
+            width="250"
+            height="180"
             frameborder="0"
             allowfullscreen=""
             allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-            loading="lazy"></iframe>
-        </div>
+            loading="lazy"
+            title="{{ episode.episode_name | default: 'Spotify podcast bölümü' }}"></iframe>
+          </div>
+          {% if episode.url %}
+          <footer class="podcast-embeds__footer">
+            <a href="{{ episode.url }}" target="_blank" rel="noopener" class="podcast-embeds__cta">Spotify'da dinle</a>
+          </footer>
+          {% endif %}
+        </article>
+        {% endfor %}
+      </section>
+    {% endif %}
+  {% elsif category_name == "blog" %}
+    {% if sorted_items == empty %}
+      <p class="category-chronology__empty">
+        {{ page.empty_message | default: "Bu kategoride henüz içerik bulunmuyor." }}
+      </p>
+    {% else %}
+      <section class="archive-years archive-years--blog">
+        {% assign current_year = "" %}
+        {% for item in sorted_items %}
+          {% assign year = item.date | date: "%Y" %}
+          {% if year != current_year %}
+            {% unless forloop.first %}
+                </div>
+              </div>
+            {% endunless %}
+            <div class="archive-year archive-year--compact">
+              <h2 class="archive-year__title">{{ year }}</h2>
+              <div class="archive-grid archive-grid--compact">
+            {% assign current_year = year %}
+          {% endif %}
+          <article class="archive-card archive-card--compact">
+            <div class="archive-card__meta">
+              <time datetime="{{ item.date | date_to_xmlschema }}" class="archive-card__date">
+                {{ item.date | date: "%b %d" }}
+              </time>
+            </div>
+            <div class="archive-card__thumb archive-card__thumb--compact">
+              {% if item.image %}
+                <img src="{{ item.image | relative_url }}" alt="{{ item.title }}">
+              {% else %}
+                <span class="archive-card__thumb-placeholder" aria-hidden="true"></span>
+              {% endif %}
+            </div>
+            <div class="archive-card__content archive-card__content--compact">
+              <h3 class="archive-card__heading">
+                <a href="{{ item.url | relative_url }}">{{ item.title }}</a>
+              </h3>
+              {% if item.tags %}
+              <div class="archive-card__tags archive-card__tags--compact">
+                {% for tag in item.tags %}
+                  <span><a href="{{ site.baseurl }}/tags/#{{ tag }}">{{ tag }}</a></span>
+                {% endfor %}
+              </div>
+              {% endif %}
+            </div>
+          </article>
+          {% if forloop.last %}
+              </div>
+            </div>
+          {% endif %}
         {% endfor %}
       </section>
     {% endif %}
@@ -113,31 +181,45 @@ layout: default
         {{ page.empty_message | default: "Bu kategoride henüz içerik bulunmuyor." }}
       </p>
     {% else %}
-      {% assign current_year = "" %}
-      <section class="category-chronology__timeline">
+      <section class="archive-years">
+        {% assign current_year = "" %}
         {% for item in sorted_items %}
           {% assign year = item.date | date: "%Y" %}
           {% if year != current_year %}
             {% unless forloop.first %}
-              </ul>
+                </div>
+              </div>
             {% endunless %}
-            <h2 class="category-chronology__year">{{ year }}</h2>
-            <ul class="category-chronology__list">
+            <div class="archive-year">
+              <h2 class="archive-year__title">{{ year }}</h2>
+              <div class="archive-grid">
             {% assign current_year = year %}
           {% endif %}
-          <li class="category-chronology__item">
-            <span class="category-chronology__item-date">{{ item.date | date: "%b %d" }}</span>
+          <article class="archive-card">
+            <div class="archive-card__meta">
+              <time datetime="{{ item.date | date_to_xmlschema }}" class="archive-card__date">
+                {{ item.date | date: "%b %d" }}
+              </time>
+            </div>
             {% if item.image %}
-            <span class="category-chronology__thumb-wrap">
-              <img class="category-chronology__thumb" src="{{ item.image | relative_url }}" alt="{{ item.title }}">
-            </span>
-            {% else %}
-            <span class="category-chronology__item-dot" aria-hidden="true"></span>
+              <div class="archive-card__thumb">
+                <img src="{{ item.image | relative_url }}" alt="{{ item.title }}">
+              </div>
             {% endif %}
-            <a class="category-chronology__item-link" href="{{ item.url | relative_url }}">{{ item.title }}</a>
-          </li>
+            <div class="archive-card__content">
+              <h3 class="archive-card__heading">
+                <a href="{{ item.url | relative_url }}">{{ item.title }}</a>
+              </h3>
+              {% if item.excerpt %}
+                <p class="archive-card__excerpt">
+                  {{ item.excerpt | strip_html | truncatewords: 26 }}
+                </p>
+              {% endif %}
+            </div>
+          </article>
           {% if forloop.last %}
-            </ul>
+              </div>
+            </div>
           {% endif %}
         {% endfor %}
       </section>

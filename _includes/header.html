@@ -1,123 +1,71 @@
-<span class="mobile btn-mobile-menu">
-  <i class="icon icon-list btn-mobile-menu__icon"></i>
-  <i class="icon icon-x-circle btn-mobile-close__icon hidden"></i>
-</span>
-
-<header class="panel-cover panel-cover--collapsed" style="background-image: url({{ site.baseurl }}/images/cover.jpg)">
-  <div class="panel-main">
-
-    <div class="panel-main__inner panel-inverted">
-    <div class="panel-main__content">
-        <a href="{{ site.baseurl }}/" title="link to home of {{ site.title }}">
-          <img src="{{ site.baseurl }}/images/profile.jpg" class="user-image" alt="My Profile Photo">
-          <h1 class="panel-cover__title panel-title">{{ site.title }}</h1>
-        </a>
-        <hr class="panel-cover__divider">
-        <p class="panel-cover__description">{{ site.description }}</p>
-        <hr class="panel-cover__divider panel-cover__divider--secondary">
-
-        <div class="navigation-wrapper">
-
-          <nav class="cover-navigation cover-navigation--primary">
-            <ul class="navigation">
-              <li class="navigation__item"><a href="{{ site.baseurl }}/" title="link to {{ site.title }} homepage" class="blog-button">Anasayfa</a></li>
-              <li class="navigation__item"><a href="{{ site.baseurl }}/blog/" title="link to {{ site.title }} blog" class="blog-button">Blog</a></li>
-              <li class="navigation__item"><a href="{{ site.baseurl }}/youtube/" title="link to {{ site.title }} youtube" class="blog-button">Youtube</a></li>
-              <li class="navigation__item"><a href="{{ site.baseurl }}/podcast/" title="link to {{ site.title }} podcast" class="blog-button">Podcast</a></li>
-              <li class="navigation__item"><a href="{{ site.baseurl }}/about/" title="link to {{ site.title }} about" class="blog-button">Hakkında</a></li>
-            </ul>
-          </nav>
-
-          <nav class="cover-navigation navigation--social">
-            <ul class="navigation">
-
-              {% if site.author.youtube_username %}
-              <!-- Youtube -->
-              <li class="navigation__item">
-                <a href="https://youtube.com/@{{ site.author.youtube_username }}" title="{{ site.author.youtube_username }} on Youtube" target="_blank">
-                  <i class="icon icon-social-youtube"></i>
-                </a>
-              </li>
-              {% endif %}
-            {% if site.author.linkedin_username %}
-              <!-- LinkedIn -->
-              <li class="navigation__item">
-                <a href="https://www.linkedin.com/in/{{ site.author.linkedin_username }}" title="{{ site.author.linkedin_username }} on LinkedIn" target="_blank">
-                  <i class="icon icon-social-linkedin"></i>
-                  <span class="label">LinkedIn</span>
-                </a>
-              </li>
-            {% endif %}
-
-            {% if site.author.github_username %}
-              <!-- GitHub -->
-              <li class="navigation__item">
-                <a href="https://www.github.com/{{ site.author.github_username }}" title="{{ site.author.github_username }} on GitHub" target="_blank">
-                  <i class="icon icon-social-github"></i>
-                  <span class="label">GitHub</span>
-                </a>
-              </li>
-            {% endif %}
-            {% if site.author.twitter_username %}
-              <!-- Twitter -->
-              <li class="navigation__item">
-                <a href="http://twitter.com/{{ site.author.twitter_username }}" title="@{{ site.author.twitter_username }} on Twitter" target="_blank">
-                  <i class="icon icon-social-twitter"></i>
-                  <span class="label">Twitter</span>
-                </a>
-              </li>
-            {% endif %}
-
-            
-
-            {% if site.author.instagram_username %}
-          <!-- Facebook -->
-          <li class="navigation__item">
-            <a href="https://instagram.com/{{ site.author.instagram_username }}" title="{{ site.author.instagram_username }} on Instagram" target="_blank">
-              <i class="icon icon-social-instagram"></i>
-            </a>
-          </li>
-        {% endif %}
-
-            {% if site.author.email %}
-              <!-- Email -->
-              <li class="navigation__item">
-                <a href="mailto:{{ site.author.email }}" title="Email {{ site.author.email }}" target="_blank">
-                  <i class="icon icon-mail"></i>
-                  <span class="label">Email</span>
-                </a>
-              </li>
-            {% endif %}
-
-            <!-- RSS -->
-            <li class="navigation__item">
-              <a href="{{ site.baseurl }}/feed.xml" title="Subscribe" target="_blank">
-                <i class="icon icon-rss"></i>
-                <span class="label">RSS</span>
-              </a>
-            </li>
-
-            </ul>
-          </nav>
-          <hr class="panel-cover__divider panel-cover__divider--secondary">
-		  <nav class="cover-navigation">
-            <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-				<ins class="adsbygoogle"
-					 style="display:block"
-					 data-ad-format="fluid"
-					 data-ad-layout-key="-gw-3+1f-3d+2z"
-					 data-ad-client="ca-pub-3264551064582672"
-					 data-ad-slot="5737360845"></ins>
-				<script>
-					 (adsbygoogle = window.adsbygoogle || []).push({});
-			</script>
-          </nav>
-        </div>
-
-      </div>
-
-    </div>
-
-    <div class="panel-cover--overlay"></div>
+<header class="site-header">
+  <div class="site-header__inner">
+    <a class="site-header__brand" href="{{ site.baseurl }}/">
+      <img src="{{ site.baseurl }}/images/profile.jpg" alt="{{ site.title }}" class="site-header__brand-avatar">
+      <span class="site-header__brand-name">{{ site.title }}</span>
+    </a>
+    <nav class="site-nav" id="site-main-nav" aria-label="Ana menü">
+      <button class="site-nav__close" data-nav-close aria-label="Menüyü kapat">
+        <span class="icon icon-x-circle"></span>
+      </button>
+      <ul class="site-nav__list">
+        <li class="site-nav__item"><a href="{{ site.baseurl }}/" class="site-nav__link">Anasayfa</a></li>
+        <li class="site-nav__item"><a href="{{ site.baseurl }}/about/" class="site-nav__link">Hakkında</a></li>
+      </ul>
+    </nav>
+    <button class="site-header__toggle" data-nav-toggle aria-label="Menüyü aç">
+      <span class="icon icon-list"></span>
+    </button>
   </div>
 </header>
+
+<section class="site-hero">
+  <div class="site-hero__inner">
+    <div class="site-hero__media">
+      <a class="site-header__brand" href="{{ site.baseurl }}/">
+        <img src="{{ site.baseurl }}/images/profile.jpg" alt="{{ site.title }}" class="site-hero__avatar">
+      </a>
+    </div>
+    <div class="site-hero__content">
+      <p class="site-hero__eyebrow">Teknoloji & Yapay Zeka</p>
+      <h1 class="site-hero__title">{{ site.title }}</h1>
+      <p class="site-hero__description">{{ site.description }}</p>
+      <div class="site-hero__actions">
+        <a class="btn btn-secondary" href="{{ site.baseurl }}/blog/">Blogu keşfet</a>
+        <a class="btn btn-primary" href="{{ site.baseurl }}/youtube/">YouTube kanalım</a>
+        <a class="btn btn-tertiary" href="{{ site.baseurl }}/podcast/">Podcast dinle</a>
+      </div>
+      <div class="site-hero__social">
+        {% if site.author.email %}
+          <a href="mailto:{{ site.author.email }}" aria-label="E-posta"><i class="icon icon-mail"></i></a>
+        {% endif %}
+        {% if site.author.youtube_username %}
+          <a href="https://youtube.com/@{{ site.author.youtube_username }}" target="_blank" rel="noopener" aria-label="YouTube">
+            <i class="icon icon-social-youtube"></i>
+          </a>
+        {% endif %}
+        {% if site.author.linkedin_username %}
+          <a href="https://www.linkedin.com/in/{{ site.author.linkedin_username }}" target="_blank" rel="noopener" aria-label="LinkedIn">
+            <i class="icon icon-social-linkedin"></i>
+          </a>
+        {% endif %}
+        {% if site.author.github_username %}
+          <a href="https://www.github.com/{{ site.author.github_username }}" target="_blank" rel="noopener" aria-label="GitHub">
+            <i class="icon icon-social-github"></i>
+          </a>
+        {% endif %}
+        {% if site.author.twitter_username %}
+          <a href="https://twitter.com/{{ site.author.twitter_username }}" target="_blank" rel="noopener" aria-label="X (Twitter)">
+            <i class="icon icon-social-twitter"></i>
+          </a>
+        {% endif %}
+        {% if site.author.instagram_username %}
+          <a href="https://instagram.com/{{ site.author.instagram_username }}" target="_blank" rel="noopener" aria-label="Instagram">
+            <i class="icon icon-social-instagram"></i>
+          </a>
+        {% endif %}
+        <a href="{{ site.baseurl }}/feed.xml" target="_blank" rel="noopener" aria-label="RSS"><i class="icon icon-rss"></i></a>
+      </div>
+    </div>
+  </div>
+</section>

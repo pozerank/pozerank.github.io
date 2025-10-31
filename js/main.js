@@ -5,34 +5,40 @@ sitemap:
 ---
 
 $(document).ready(function () {
-  $('a.blog-button').click(function (e) {
-    if ($('.panel-cover').hasClass('panel-cover--collapsed')) return
-    currentWidth = $('.panel-cover').width()
-    if (currentWidth < 960) {
-      $('.panel-cover').addClass('panel-cover--collapsed')
-      $('.content-wrapper').addClass('animated slideInRight')
+  const nav = $('#site-main-nav')
+  const toggle = $('[data-nav-toggle]')
+  const closeBtn = $('[data-nav-close]')
+  const header = $('.site-header')
+
+  function openNav () {
+    nav.addClass('is-open')
+    $('body').addClass('nav-open')
+    header.addClass('is-nav-open')
+  }
+
+  function closeNav () {
+    nav.removeClass('is-open')
+    $('body').removeClass('nav-open')
+    header.removeClass('is-nav-open')
+  }
+
+  toggle.on('click', function () {
+    if (nav.hasClass('is-open')) {
+      closeNav()
     } else {
-      $('.panel-cover').css('max-width', currentWidth)
-      $('.panel-cover').animate({'max-width': '530px', 'width': '40%'}, 400, swing = 'swing', function () {})
+      openNav()
     }
   })
 
-  if (window.location.hash && window.location.hash == '#blog') {
-    $('.panel-cover').addClass('panel-cover--collapsed')
-  }
+  closeBtn.on('click', closeNav)
 
-  if (window.location.pathname !== '{{ site.baseurl }}/' && window.location.pathname !== '{{ site.baseurl }}/index.html') {
-    $('.panel-cover').addClass('panel-cover--collapsed')
-  }
-
-  $('.btn-mobile-menu').click(function () {
-    $('.navigation-wrapper').toggleClass('visible animated bounceInDown')
-    $('.btn-mobile-menu__icon').toggleClass('icon-list icon-x-circle animated fadeIn')
+  nav.find('a').on('click', function () {
+    closeNav()
   })
 
-  $('.navigation-wrapper .blog-button').click(function () {
-    $('.navigation-wrapper').toggleClass('visible')
-    $('.btn-mobile-menu__icon').toggleClass('icon-list icon-x-circle animated fadeIn')
+  $(document).on('keyup', function (event) {
+    if (event.key === 'Escape' && nav.hasClass('is-open')) {
+      closeNav()
+    }
   })
-
 })
