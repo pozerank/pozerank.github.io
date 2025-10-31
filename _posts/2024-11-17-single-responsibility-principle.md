@@ -8,6 +8,15 @@ excerpt: "SOLID prensiplerinin ilk adımı olan Single Responsibility Principle'
 canonical_url: https://www.youtube.com/watch?v=ZUBrL_b12xM
 ---
 
+
+***Not:** İçeriğin orjinali ve alternatif dağıtımları hakkındaki bilgiler aşağıda paylaşılmıştır.*
+ - *[YouTube](https://www.youtube.com/watch?v=ZUBrL_b12xM) (orjinal içerik)*
+ - *[Blog]({{ page.url | relative_url }}) (orjinal içerik temelli AI destekli)*
+ - *[Podcast](https://open.spotify.com/episode/4J4b4aIl7QyZpiuMLNN53x?si=ukGsznKXQR6Qk3HF2aP2vA) (orjinal içeriğe ait ses)*
+
+<iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/episode/4J4b4aIl7QyZpiuMLNN53x?utm_source=generator" width="100%" height="100" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+
+
 > “Bir sınıfın yalnızca tek bir sorumluluğu olmalı.”  
 > — Robert C. Martin (Uncle Bob)
 

@@ -8,7 +8,12 @@ excerpt: "SOLID prensiplerinin üçüncü adımı olan Liskov Substitution Princ
 canonical_url: https://youtu.be/YM2kcSZo4IM
 ---
 
-Yazının ana kaynağı [YouTube](https://youtu.be/YM2kcSZo4IM) videosudur. Bu içerik AI destekli olarak YouTube videosu temel alınarak oluşturulmuştur.
+  ***Not:** İçeriğin orjinali ve alternatif dağıtımları hakkındaki bilgiler aşağıda paylaşılmıştır.*
+ - *[YouTube](https://youtu.be/YM2kcSZo4IM) (orjinal içerik)*
+ - *[Blog]({{ page.url | relative_url }}) (orjinal içerik temelli AI destekli)*
+ - *[Podcast](https://open.spotify.com/episode/5qGbEzGY1qpoEURPA34oPQ?si=cK6awOpYT56LXUKSgdNnLQ) (orjinal içeriğe ait ses)*
+
+ <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/episode/5qGbEzGY1qpoEURPA34oPQ?utm_source=generator" width="100%" height="100" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
 
 > “Objects of a superclass should be replaceable with objects of its subclasses without breaking the application.”  
 > — Barbara Liskov

@@ -7,7 +7,13 @@ image: https://img.youtube.com/vi/NOJIeu4aTSg/maxresdefault.jpg
 excerpt: "SOLID prensiplerinin dördüncü adımı olan Interface Segregation Principle (ISP) nedir? Gerçek bir e-ticaret örneğiyle, esnek ve yeniden kullanılabilir interface tasarımını ele alıyoruz."
 canonical_url: https://youtu.be/NOJIeu4aTSg
 ---
-Yazının ana kaynağı [YouTube](https://youtu.be/NOJIeu4aTSg) videosudur. Bu içerik AI destekli olarak YouTube videosu temel alınarak oluşturulmuştur.
+
+  ***Not:** İçeriğin orjinali ve alternatif dağıtımları hakkındaki bilgiler aşağıda paylaşılmıştır.*
+ - *[YouTube](https://youtu.be/NOJIeu4aTSg) (orjinal içerik)*
+ - *[Blog]({{ page.url | relative_url }}) (orjinal içerik temelli AI destekli)*
+ - *[Podcast](https://open.spotify.com/episode/4sIgD2ffbSCHazsGnMyTgF?si=doWsDsAgSc-eRLGv1VquZw) (orjinal içeriğe ait ses)*
+
+ <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/episode/4sIgD2ffbSCHazsGnMyTgF?utm_source=generator" width="100%" height="100" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
 
 > “Clients should not be forced to depend upon interfaces that they do not use.”  
 > — Robert C. Martin

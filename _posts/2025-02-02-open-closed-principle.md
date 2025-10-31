@@ -8,10 +8,16 @@ excerpt: "SOLID prensiplerinin ikinci adımı olan Open/Closed Principle (OCP) n
 canonical_url: https://youtu.be/jZZhHxzoU10
 ---
 
+  ***Not:** İçeriğin orjinali ve alternatif dağıtımları hakkındaki bilgiler aşağıda paylaşılmıştır.*
+ - *[YouTube](https://youtu.be/jZZhHxzoU10) (orjinal içerik)*
+ - *[Blog]({{ page.url | relative_url }}) (orjinal içerik temelli AI destekli)*
+ - *[Podcast](https://open.spotify.com/episode/5veA0j5MlG4DZ7q4GCgI5A?si=Bd2CPycDTzacylcfHkjzHg) (orjinal içeriğe ait ses)*
+ - 
+<iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/episode/5veA0j5MlG4DZ7q4GCgI5A?utm_source=generator" width="100%" height="100" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+
 > “Software entities should be open for extension, but closed for modification.”  
 > — Bertrand Meyer
 
-Yazının ana kaynağı [YouTube](https://youtu.be/jZZhHxzoU10) videosudur. Bu içerik AI destekli olarak YouTube videosu temel alınarak oluşturulmuştur.
 
 Bu yazıda **SOLID prensiplerinin ikinci adımı** olan **Open/Closed Principle (OCP)** konusunu ele alıyoruz.  
 Kısaca: Kodunuzu *değiştirmeden* yeni davranışlar ekleyebilmek.

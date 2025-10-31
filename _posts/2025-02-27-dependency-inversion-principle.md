@@ -12,7 +12,9 @@ canonical_url: https://youtu.be/79UltiA5DCs
   ***Not:** İçeriğin orjinali ve alternatif dağıtımları hakkındaki bilgiler aşağıda paylaşılmıştır.*
  - *[YouTube](https://youtu.be/79UltiA5DCs) (orjinal içerik)*
  - *[Blog]({{ page.url | relative_url }}) (orjinal içerik temelli AI destekli)*
- - *[Podcast]({{ page.url | relative_url }}) (orjinal içeriğe ait ses)*
+ - *[Podcast](https://open.spotify.com/episode/6Aw1yPbKUhBpRposXFNeDE?si=te7Y9uQIToCgr32INjO8zg) (orjinal içeriğe ait ses)*
+
+ <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/episode/6Aw1yPbKUhBpRposXFNeDE?utm_source=generator" width="100%" height="100" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
 
 
 > “High-level modules should not depend on low-level modules. Both should depend on abstractions.”  
