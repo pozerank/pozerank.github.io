@@ -1,67 +1,57 @@
-name: Deploy Jekyll with YouTube Data
+name: Build and Deploy Jekyll
 
 on:
   push:
     branches:
-      - master # Burayı ana branch adınızla (main veya master) değiştirin
-      
-  # Her gün Türkiye saatiyle 13:00 civarında çalışır (UTC 10:00)
+      - master
   schedule:
-    - cron: '0 10 * * *' 
+    - cron: '0 10 * * *'
 
-# Gerekli izinleri ayarlayın
 permissions:
-  contents: write
+  contents: read
   pages: write
   id-token: write
 
-jobs:
-  jekyll:
-    # GitHub Pages için standart runner
-    runs-on: ubuntu-latest
+concurrency:
+  group: pages
+  cancel-in-progress: true
 
-    # Jekyll Actions ortamını yapılandır
+jobs:
+  build:
+    runs-on: ubuntu-latest
     environment:
       name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
+      url: ${{ steps.deploy.outputs.page_url }}
 
     steps:
-    - name: Checkout Code
-      uses: actions/checkout@v4
+      - name: Checkout repository
+        uses: actions/checkout@v4
 
-    # 1. Ruby kurulumu (Veri çekme ve derleme için zorunlu modern ortam)
-    - name: Set up Ruby and Install Dependencies
-      uses: ruby/setup-ruby@v1
-      with:
-        # 3.3.0 güncel ve modern bir sürüm
-        ruby-version: '3.3.0' 
-        # Proje Gemfile ve Gemfile.lock'taki tüm gem'leri kurar
-        bundler-cache: true 
+      - name: Set up Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.3.0'
+          bundler-cache: true
 
-    # 2. YouTube Verilerini Çekme
-    - name: Run YouTube Data Fetch Script
-      run: ruby fetch_youtube_videos.rb
-      env:
-        YOUTUBE_API_KEY: ${{ secrets.YOUTUBE_API_KEY }}
+      - name: Configure Pages
+        uses: actions/configure-pages@v5
 
-    # 3. Sitenizi Derleyin (Hata Veren actions/jekyll-build-pages Eylemi Yerine)
-    - name: Build with Modern Jekyll Environment
-      run: |
-        # Bu, Adım 1'de kurulan modern Ruby 3.3.0 ortamını kullanır.
-        # 'vendor/' dizinini hariç tutarak, gem'lerin içindeki Jekyll şablonlarının yanlışlıkla işlenmesini engeller.
-        bundle exec jekyll build --destination ./_site --exclude vendor/
+      - name: Fetch YouTube data
+        if: ${{ secrets.YOUTUBE_API_KEY != '' }}
+        env:
+          YOUTUBE_API_KEY: ${{ secrets.YOUTUBE_API_KEY }}
+        run: bundle exec ruby fetch_youtube_videos.rb
 
-    # 4. GitHub Pages Ortamını Ayarla
-    - name: Setup Pages
-      uses: actions/configure-pages@v5
+      - name: Build site
+        env:
+          JEKYLL_ENV: production
+        run: bundle exec jekyll build --destination ./_site
 
-    # 5. Dağıtım Artifact'ı Oluştur
-    - name: Upload artifact
-      uses: actions/upload-pages-artifact@v3
-      with:
-        path: './_site'
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
 
-    # 6. Sitenizi GitHub Pages'a Dağıt
-    - name: Deploy to GitHub Pages
-      id: deployment
-      uses: actions/deploy-pages@v4
+      - name: Deploy to GitHub Pages
+        id: deploy
+        uses: actions/deploy-pages@v4
