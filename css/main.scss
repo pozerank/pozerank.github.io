@@ -109,6 +109,7 @@ article.post-container {
   display: flex;
   flex-direction: column;
   gap: clamp(1.5rem, 4vw, 2.5rem);
+  box-sizing: border-box;
 }
 
 
@@ -118,7 +119,8 @@ article.post-container {
   gap: 2.5rem;
 }
 
-.archive-years--blog {
+.archive-years--blog,
+.archive-years--podcast {
   gap: 2rem;
 }
 
@@ -135,7 +137,8 @@ article.post-container {
   gap: 1rem;
 }
 
-.archive-grid--compact {
+.archive-grid--compact,
+.archive-grid--podcast {
   gap: 0.75rem;
 }
 
@@ -151,7 +154,8 @@ article.post-container {
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-.archive-card--compact {
+.archive-card--compact,
+.archive-card--podcast {
   grid-template-columns: auto 64px minmax(0, 1fr);
   gap: 0.9rem;
   padding: 0.9rem 1.1rem;
@@ -191,10 +195,12 @@ article.post-container {
   box-shadow: 0 10px 24px rgba(15, 23, 42, 0.12);
 }
 
-.archive-card__thumb--compact {
+.archive-card__thumb--compact,
+.archive-card__thumb--podcast {
   width: 56px;
   height: 56px;
   border-radius: 14px;
+  overflow: hidden;
 }
 
 .archive-card__thumb img {
@@ -218,7 +224,8 @@ article.post-container {
   gap: 0.5rem;
 }
 
-.archive-card__content--compact {
+.archive-card__content--compact,
+.archive-card__content--podcast {
   gap: 0.35rem;
 }
 
@@ -1125,6 +1132,7 @@ hr.solid {
   transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease, color 0.2s ease;
   box-shadow: var(--link-shadow, 0 10px 25px rgba(0, 0, 0, 0.08));
   width: 100%;
+  box-sizing: border-box;
 }
 
 .about-page__link:hover {
@@ -1360,8 +1368,8 @@ hr.solid {
 }
 
 .podcast-embeds {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  display: flex;
+  flex-direction: column;
   gap: 1.5rem;
   width: 100%;
 }
@@ -1627,6 +1635,19 @@ hr.solid {
   .about-page__link {
     flex-direction: row;
     align-items: center;
+    padding: 0.5rem 0.8rem;
+  }
+
+  .about-page__link-text {
+    font-size: 0.95rem;
+  }
+
+  .about-page__link-label {
+    font-size: 1rem;
+  }
+
+  .about-page__link-caption {
+    font-size: 0.82rem;
   }
 }
 @media (max-width: 768px) {
@@ -1651,7 +1672,23 @@ hr.solid {
   color: inherit;
 }
 
+.archive-card__cta {
+  margin-top: 0.4rem;
+  font-weight: 600;
+  color: var(--color-primary);
+}
+
+.archive-card__cta:hover,
+.archive-card__cta:focus {
+  color: var(--color-primary-dark);
+}
+
 .archive-card__tags a:hover,
 .archive-card__tags a:focus {
   color: var(--color-primary);
+}
+.archive-card--podcast .archive-card__thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }

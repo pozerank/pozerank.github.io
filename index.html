@@ -12,7 +12,7 @@ robots: all
 <section class="featured-highlights card-surface">
   <header class="featured-highlights__header">
     <p class="eyebrow">Öne çıkanlar</p>
-    <h2>Yeni Ne Var?</h2>
+    <h2>❓Yeni Ne Var?</h2>
     <p class="featured-highlights__intro">
       Haftanın blog yazısını, son YouTube videosunu ve podcast bölümünü tek ekranda yakala.
     </p>
@@ -20,7 +20,7 @@ robots: all
   <div class="featured-highlights__grid">
     {% if latest_post %}
     <article class="highlight-card highlight-card--blog">
-      <a class="highlight-card__badge" href="{{ '/blog/' | relative_url }}">Blog</a>
+      <a class="highlight-card__badge" href="{{ '/blog/' | relative_url }}">📑 Blog</a>
       <h3 class="highlight-card__title">
         <a href="{{ latest_post.url | relative_url }}">{{ latest_post.title }}</a>
       </h3>
@@ -34,7 +34,7 @@ robots: all
 
     {% if latest_video %}
     <article class="highlight-card highlight-card--video">
-      <a class="highlight-card__badge" href="{{ '/youtube/' | relative_url }}">Video</a>
+      <a class="highlight-card__badge" href="{{ '/youtube/' | relative_url }}">📸 Video</a>
       <h3 class="highlight-card__title">
         <a href="https://www.youtube.com/watch?v={{ latest_video.video_id }}" target="_blank" rel="noopener">
           {{ latest_video.title }}
@@ -52,7 +52,7 @@ robots: all
 
     {% if latest_podcast %}
     <article class="highlight-card highlight-card--podcast">
-      <a class="highlight-card__badge" href="{{ '/podcast/' | relative_url }}">Podcast</a>
+      <a class="highlight-card__badge" href="{{ '/podcast/' | relative_url }}">🎙️ Podcast</a>
       <h3 class="highlight-card__title">
         <a href="{{ latest_podcast.url }}" target="_blank" rel="noopener">
           {{ latest_podcast.episode_name }}
