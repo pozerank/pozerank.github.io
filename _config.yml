@@ -18,6 +18,10 @@ author:
   linkedin_username:  mehmetcemyucel
   youtube_username: technicaldebt-tr
   instagram_username: mehmet.cem.yucel
+subscribe:
+  iframe_src: https://subscribe.mehmetcemyucel.com/embed
+  iframe_title: 'Teknoloji Bülteni Abonelik Formu'
+  iframe_height: 240
 adsense:
   opened: false
   feed_ici:

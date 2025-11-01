@@ -787,6 +787,77 @@ article.post-container {
   transform: translateY(-2px);
 }
 
+.subscribe-card {
+  max-width: min(880px, 100%);
+  margin: clamp(2rem, 6vw, 3rem) auto 0;
+  display: flex;
+  flex-direction: column;
+  gap: clamp(1.5rem, 4vw, 2.25rem);
+}
+
+.subscribe-card__header {
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+}
+
+.subscribe-card__header h2 {
+  margin: 0;
+  font-size: clamp(1.9rem, 3vw, 2.5rem);
+}
+
+.subscribe-card__header p {
+  margin: 0;
+  color: var(--color-text-muted);
+  font-size: 1.05rem;
+}
+
+.subscribe-card__form iframe {
+  width: 100%;
+  border: 0;
+  border-radius: 16px;
+  min-height: 200px;
+  background: transparent;
+}
+
+.subscribe-card__form {
+  padding: 0px;
+}
+
+.subscribe-card__details {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.subscribe-card__details h3 {
+  margin: 0;
+  font-size: clamp(1.3rem, 2vw, 1.6rem);
+}
+
+.subscribe-card__benefits {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+  color: var(--color-text);
+  font-size: 1rem;
+}
+
+.subscribe-card__benefits li {
+  display: flex;
+  gap: 0.6rem;
+  align-items: flex-start;
+}
+
+.subscribe-card__disclaimer {
+  margin: 0;
+  color: var(--color-text-muted);
+  font-size: 0.92rem;
+}
+
 .btn {
   display: inline-flex;
   align-items: center;
@@ -849,6 +920,19 @@ article.post-container {
   background: linear-gradient(135deg, #4f46e5, #7c3aed);
   transform: translateY(-2px);
   box-shadow: 0 20px 36px rgba(76, 29, 149, 0.38);
+}
+
+.btn-subscribe {
+  background: linear-gradient(135deg, #fb7185, #ec4899);
+  color: #fff;
+  box-shadow: 0 18px 32px rgba(236, 72, 153, 0.35);
+}
+
+.btn-subscribe:hover,
+.btn-subscribe:focus {
+  background: linear-gradient(135deg, #ec4899, #db2777);
+  transform: translateY(-2px);
+  box-shadow: 0 20px 38px rgba(219, 39, 119, 0.42);
 }
 
 @media (max-width: 1040px) {
