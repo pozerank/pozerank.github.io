@@ -365,7 +365,6 @@ article.post-container {
 
 .highlight-card--blog .highlight-card__badge {
   background: linear-gradient(135deg, #22d3ee, #0ea5e9);
-  color: #03283b;
 }
 
 .highlight-card--podcast {
@@ -1775,4 +1774,68 @@ hr.solid {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+/* === CODE BLOCKS / SYNTAX HIGHLIGHT === */
+
+.highlight {
+  background: #0e1523; /* koyu lacivert ton, site arka planıyla uyumlu */
+  color: #e4e4e7;
+  border-radius: 14px;
+  padding: 1.1rem 1.25rem;
+  margin: 1.6rem 0;
+  overflow-x: auto;
+  font-family: 'JetBrains Mono', 'Fira Code', monospace;
+  font-size: 0.95rem;
+  line-height: 1.55;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.highlight pre {
+  background: transparent;
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+.highlight code {
+  background: transparent;
+  color: inherit;
+}
+
+/* Rouge token renkleri (VSCode / Monokai karışımı) */
+.highlight .k   { color: #c792ea; }  /* keyword */
+.highlight .kc  { color: #c792ea; }  /* constants */
+.highlight .kd  { color: #82aaff; }  /* declarations */
+.highlight .kn  { color: #f78c6c; }  /* import, new */
+.highlight .s   { color: #ecc48d; }  /* string */
+.highlight .se  { color: #ffcb6b; }  /* string escape */
+.highlight .c   { color: #5c6370; font-style: italic; } /* comment */
+.highlight .n   { color: #a6accd; }  /* names/identifiers */
+.highlight .nf  { color: #82aaff; }  /* function name */
+.highlight .o   { color: #89ddff; }  /* operators */
+.highlight .mi  { color: #f78c6c; }  /* number */
+.highlight .p   { color: #d4d4d4; }  /* punctuation */
+.highlight .err { color: #ff5370; background: #3b0000; } /* error */
+
+.highlight .gd  { color: #ff5370; }  /* deleted */
+.highlight .gi  { color: #9ccc65; }  /* inserted */
+
+/* Inline code (örneğin `Thread.start()`) */
+code, tt {
+  background: rgba(255, 255, 255, 0.06);
+  padding: 0.25em 0.45em;
+  border-radius: 6px;
+  color: #f8fafc;
+  font-family: 'JetBrains Mono', 'Fira Code', monospace;
+  font-size: 90%;
+}
+
+@media (max-width: 768px) {
+  .highlight {
+    border-radius: 10px;
+    margin: 1rem;
+    padding: 0.9rem 1rem;
+  }
 }
