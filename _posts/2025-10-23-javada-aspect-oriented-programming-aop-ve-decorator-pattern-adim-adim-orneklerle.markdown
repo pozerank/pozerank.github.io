@@ -458,6 +458,12 @@ Ee peki ya interface’imiz yoksa? İşte orada da Spring **CGLIB(Code Generatio
 
 Yaa işte, bir Aspect’in kabaca hikayesi bu şekilde. Aspect dedik tasarım paternlerine zıpladık, Spring dedik IoC, DI, Proxyleme konularına değinmeden geçemedik. Ama artık uçtan uca neler yaşandığını biliyoruz. Daha fazlası için takibi unutmayın, [Youtube](https://www.youtube.com/@technicaldebt-tr) kanalıma da beklerim.
 
+Bu yazının video versiyonu için aşağıya göz atabilirsiniz.
+
+<div class="video-container">
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/CTl_jFJF2pw?si=gXRzjCs8xWZL1vcC" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
+
 Kendinize iyi bakın 🤙
 
 Mehmet Cem Yücel
