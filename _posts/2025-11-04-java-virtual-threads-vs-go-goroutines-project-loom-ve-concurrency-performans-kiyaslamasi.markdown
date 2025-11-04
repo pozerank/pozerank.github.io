@@ -487,6 +487,12 @@ Detaylarıyla bu kıyaslamayı yapmak gerçekten ayrı bir yazının konusu olab
 
 En özetle fark Go’nun tamamen concurrency ve performans üzerine bir mimaride odaklanmış mekanizmalara(user-space concurrency engine) sahip iken Java halen eldekileri daha iyi kullanmaya çalışan(managed kernel-level carrier thread abstraction) bir mimaride çalışmaktadır.
 
+Bu yazının video versiyonu için aşağıya göz atabilirsiniz.
+
+<div class="video-container">
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/CTl_jFJF2pw?si=gXRzjCs8xWZL1vcC" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
+
 Sonraki yazılarda görüşmek üzere.
 
 Mehmet Cem Yücel
