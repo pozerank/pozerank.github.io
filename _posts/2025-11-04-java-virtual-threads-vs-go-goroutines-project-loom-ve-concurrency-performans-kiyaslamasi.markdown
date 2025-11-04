@@ -98,7 +98,7 @@ public class MainPlatformThread {
         long memAfter = usedMemoryMB();  
         long endtime = System.currentTimeMillis();  
   
-        System.out.printf("→ Completed %,d tasks | Time: %d ms | Mem before: %d MB | Mem after: %d MB%n",  
+        System.out.printf("→ Completed %d tasks | Time: %d ms | Mem before: %d MB | Mem after: %d MB%n",  
                 count, (endtime - starttime), memBefore, memAfter);  
     }  
   
@@ -230,7 +230,7 @@ public class MainVirtualThread {
         long memAfter = usedMemoryMB();  
         long endtime = System.currentTimeMillis();  
   
-        System.out.printf("→ Completed %,d tasks | Time: %d ms | Mem before: %d MB | Mem after: %d MB%n",  
+        System.out.printf("→ Completed %d tasks | Time: %d ms | Mem before: %d MB | Mem after: %d MB%n",  
                 count, (endtime - starttime), memBefore, memAfter);  
     }  
   
@@ -392,7 +392,7 @@ func runStep(count int) {
  runtime.ReadMemStats(&memAfter)  
  duration := time.Since(start)  
   
- fmt.Printf("→ Completed %,d tasks | Time: %v | Mem before: %d MB | Mem after: %d MB\n",  
+ fmt.Printf("→ Completed %d tasks | Time: %v | Mem before: %d MB | Mem after: %d MB\n",  
   count,  
   duration,  
   memBefore.Alloc/1024/1024,  
@@ -434,7 +434,7 @@ Started 6000000 goroutines
 Started 7000000 goroutines  
 Started 8000000 goroutines  
 Started 9000000 goroutines  
-→ Completed %!,(int=10000000)d tasks | Time: 15.502655416s | Mem before: 671 MB | Mem after: 1166 MB  
+→ Completed 10000000 tasks | Time: 15.502655416s | Mem before: 671 MB | Mem after: 1166 MB  
   
 All ramped-up steps completed.  
   
@@ -459,7 +459,7 @@ Warmup done.
 ...  
 ...  
 Started 99000000 goroutines  
-→ Completed %!,(int=100000000)d tasks | Time: 3m1.683121833s | Mem before: 645 MB | Mem after: 1296 MB  
+→ Completed 100000000 tasks | Time: 3m1.683121833s | Mem before: 645 MB | Mem after: 1296 MB  
   
 All ramped-up steps completed.  
   
@@ -486,12 +486,6 @@ Detaylarıyla bu kıyaslamayı yapmak gerçekten ayrı bir yazının konusu olab
 - GC thread stack taraması M tabanlı (P/M/G mimarisi)
 
 En özetle fark Go’nun tamamen concurrency ve performans üzerine bir mimaride odaklanmış mekanizmalara(user-space concurrency engine) sahip iken Java halen eldekileri daha iyi kullanmaya çalışan(managed kernel-level carrier thread abstraction) bir mimaride çalışmaktadır.
-
-Bu yazının video versiyonu için aşağıya göz atabilirsiniz.
-
-<div class="video-container">
-  <iframe width="560" height="315" src="https://www.youtube.com/embed/CTl_jFJF2pw?si=gXRzjCs8xWZL1vcC" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-</div>
 
 Sonraki yazılarda görüşmek üzere.
 
