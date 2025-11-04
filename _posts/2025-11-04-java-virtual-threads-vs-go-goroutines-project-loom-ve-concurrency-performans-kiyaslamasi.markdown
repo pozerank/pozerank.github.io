@@ -8,15 +8,15 @@ description: "Java 21 ile gelen Virtual Threads (Project Loom) sonunda Go'nun co
 excerpt: "Java 21 ile gelen Virtual Threads (Project Loom) sonunda Go’nun concurrency modeline meydan okuyor. Gerçek testlerle farklarını görmek ister misiniz?"
 image: /images/2025-11-04-java-virtual-threads-vs-go-goroutines-project-loom-ve-concurrency-performans-kiyaslamasi/govsjava.png
 og_image: /images/2025-11-04-java-virtual-threads-vs-go-goroutines-project-loom-ve-concurrency-performans-kiyaslamasi/govsjava.png
-canonical_url: https://www.mehmetcemyucel.com/2025/java-virtual-threads-vs-go-goroutines-project-loom-ve-concurrency-performans-kiyaslamasi/
+canonical: https://www.mehmetcemyucel.com/2025/java-virtual-threads-vs-go-goroutines-project-loom-ve-concurrency-performans-kiyaslamasi/
 
 ---
 
 Kurumsal tarafta, büyük ölçekli projelerde en uzun zaman geçirdiğim dil için Java diyebilirim. Sebebi aşikar, [bu yazıda](https://www.mehmetcemyucel.com/2019/Spring-ve-Java-Hantal-Mi-GraalVM-ve-Quarkus-Inceleme/) uzun uzun anlatmıştım. Ancak her gücün ağır bir bedeli oluyor, o da runtime… Örneğin 2GB bellek ayırmadan bir Spring Boot projesini kullanmak zordu. 1:1 modelde her thread bir kernel thread iken hafiflik kelimesi Java’ya uzun süre hiç uğramadı.
 
-![](/images/2025-11-04-java-virtual-threads-vs-go-goroutines-project-loom-ve-concurrency-performans-kiyaslamasi/govsjava.png)
+![Go vs Java Kıyaslaması](/images/2025-11-04-java-virtual-threads-vs-go-goroutines-project-loom-ve-concurrency-performans-kiyaslamasi/govsjava.png)
 
-Go vs Java
+
 
 ## Green Threads / Light Threads
 
@@ -169,7 +169,7 @@ Exception in thread "main" java.lang.OutOfMemoryError: unable to create native t
  at com.mehmetcemyucel.MainPlatformThread.main(MainPlatformThread.java:9)
 ```
 
-![](/images/2025-11-04-java-virtual-threads-vs-go-goroutines-project-loom-ve-concurrency-performans-kiyaslamasi/4kjava.png)
+![Java Thread Performansı](/images/2025-11-04-java-virtual-threads-vs-go-goroutines-project-loom-ve-concurrency-performans-kiyaslamasi/4kjava.png)
 
 Gördüğünüz gibi platform threadlerinde her bir treadin yaratılma maliyeti bizi 4bin civarında thread yaratıldığı anda stack memory anlamında sıkıştırdı, 4GB’lık memory yetersiz kaldı ve daha fazla thread yaratımına çalışılmaya devam edildiği için uygulama crash oldu ve kapandı.
 
@@ -301,7 +301,7 @@ Submitted 7000000 tasks
 Submitted 8000000 tasks  
 Submitted 9000000 tasks
 ```
-![](/images/2025-11-04-java-virtual-threads-vs-go-goroutines-project-loom-ve-concurrency-performans-kiyaslamasi/10mjava.png)
+![Java Virtual Threads Performansı](/images/2025-11-04-java-virtual-threads-vs-go-goroutines-project-loom-ve-concurrency-performans-kiyaslamasi/10mjava.png)
 
 Bu kez farkettiğiniz üzere heap space daha aktif. Stack memory’deki ihtiyacın 1MB’dan 1KB civarına düşmesi daha fazla threadin çalışmaya hazır şekilde bekleyebilmesine olanak sağlıyor. Ama farkettiyseniz thread yaratımı için stack memory’nin düştüğünden bahsetmemize rağmen bizi deli gibi şişiren heap memory. Bunun sebebi virtual thread’in metadatasının, scheduling state’i gibi alanların halen heap’te tutuluyor olması. Ki zaten platform threadlerinde 4bin istekte uygulamamız crash olmuşken burada 9milyon threadi uygulamaya yükleyebildik. Ancak Visual VM görüntüsünün sağ alt tarafına baktığımızda 8.4 milyon Virtual Thread(VT) queue’da çalıştırılmak üzere beklemesine rağmen sadece 8 tanesi gerçek OS threadleri üzerinde çalıştırılabiliyor.
 
@@ -313,7 +313,7 @@ Bunun tek bir özeti var, hata alıp kapanmıyor çünkü çalışıyor. Ama öy
 
 Go’nun default davranışı bulabildiği memory’i kullanmak üzeredir. Bunu engellemek için Go19+’ta kullanabildiğimiz env değişkeni olarak GOMEMLIMIT=4GiB set ederek koşulları eşitliyoruz. Bu kez go kodumuz aynı mantıkla aşağıdaki gibi;
 
-```java
+```go
 package main  
   
 import (  
@@ -441,7 +441,7 @@ All ramped-up steps completed.
 Process finished with the exit code 0  
  ```
   
-![](/images/2025-11-04-java-virtual-threads-vs-go-goroutines-project-loom-ve-concurrency-performans-kiyaslamasi/10mgo.png)
+![Goroutines Performansı](/images/2025-11-04-java-virtual-threads-vs-go-goroutines-project-loom-ve-concurrency-performans-kiyaslamasi/10mgo.png)
 
 Biraz daha zorlamak istedim, acaba 10M isteği 100M yapsam görüntüde ne değişirdi acaba
 
@@ -465,7 +465,7 @@ All ramped-up steps completed.
   
 Process finished with the exit code 0
 ```
-![](/images/2025-11-04-java-virtual-threads-vs-go-goroutines-project-loom-ve-concurrency-performans-kiyaslamasi/100mgo.png)
+![Goroutines Performansı](/images/2025-11-04-java-virtual-threads-vs-go-goroutines-project-loom-ve-concurrency-performans-kiyaslamasi/100mgo.png)
 
 Ne oldu da 100Milyon istek biterken yaklaşık 2GB bir memory kullanımı ile bu işi en ufak tekleme olmadan tamamladı? Aslında bu 2 runtime’ın concurrency modellerinin temel felsefelerinin tamamen farklı olmasından kaynaklı.
 
