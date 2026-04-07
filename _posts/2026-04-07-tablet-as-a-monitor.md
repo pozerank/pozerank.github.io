@@ -1,6 +1,6 @@
 ---
 title: "Android Tabletimi MacBooka İkinci Monitor Yaptım"
-date: 2026-06-07 10:00:00
+date: 2026-04-07 10:00:00
 author: "Mehmet Cem Yücel"
 categories: [go, architecture, android, golang, software, blog]
 tags: [go,  goroutines,  performance, adb, CGVirtualDisplay, mehmet-cem-yucel]
