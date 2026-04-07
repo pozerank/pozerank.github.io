@@ -18,7 +18,7 @@ Android tabletimi MacBook’umla çalışırken ikinci bir ekran/monitor olarak 
 [YouTube](https://www.youtube.com/@mehmetcemyucel),  [LinkedIn](https://www.linkedin.com/in/mehmetcemyucel/),  [Instagram](https://instagram.com/mehmet.cem.yucel),  [WebSitem](https://www.mehmetcemyucel.com/subscribe/)
 
 
-![TaaM](/images/2025-11-04-java-virtual-threads-vs-go-goroutines-project-loom-ve-concurrency-performans-kiyaslamasi/govsjava.png)
+![TaaM](/images/2026-04-07-tablet-as-a-monitor/1_reNQ1C39uUiBEIN6vGawQw.webp)
 
 
 
